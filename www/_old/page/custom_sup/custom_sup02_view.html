@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+      <title>U잡스</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta property="og:title" content="U잡스">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="">
+      <meta property="og:image" content="../../img/logo.png">
+      <meta property="og:image:type" content="../../image/png">
+      <meta property="og:image:width" content="173">
+      <meta property="og:image:height" content="65">
+      <meta property="og:description" content="">
+
+      <link rel="stylesheet" href="../../css/@default.css" />
+      <link rel="stylesheet" href="../../css/main.css">
+      <link rel="stylesheet" href="../../css/font.css">
+      <link rel="stylesheet" href="../../css/swiper.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet">
+
+
+      <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+      <script type="text/javascript" src="../../js/slick.min.js"></script>
+      <script type="text/javascript" src="../../js/swiper.min.js"></script>
+      <script type="text/javascript" src="../../js/main.js"></script>
+      <script type="text/javascript" src="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.js"></script>
+</head>
+
+<body>
+	<div id="header" class="sub_header">
+		<div class="inner clearfix"> 
+			<h1 class="logo">
+				<a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+			</h1>
+			<ul id="main_gnb">
+				<li>
+					<a href="page/project_sch/project_sch.html">프로젝트 검색 </a>
+				</li>
+				<li>
+					<a href="page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+				</li>
+				<li>
+					<a href="page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+				</li>
+				<li>
+					<a href="page/partner_sch/partner.html">파트너 검색</a>
+				</li>
+				<li>
+					<a href="#">WEE.P 소개
+					</a>
+				</li>
+			
+			</ul>
+			<ul class="clearfix small-txt">
+				<li>
+					<a href="#">이용안내</a>
+				</li>
+				<li>
+					<a href="page/custom_sup/custom_sup01.html">지원센터</a>
+				</li>
+			</ul>
+			
+			<ul class="util clear">
+				<li>
+					<a href="page/login/login01.html">로그인</a>
+				</li>
+				<li>
+					<a href="#">회원가입</a>
+				</li>
+
+				<div class="memberImg">
+					<img src="/img/bg_member.png" alt="회원가입혜택">
+				</div>
+			</ul>
+			<ul class="login-util clear">
+				<li>
+					<a href="javascript:;"><img src="/img/member-icon.png" alt="회원이미지" class="member-img">홍길동</a>
+					<ul class="member-menu">
+						<li>
+							<a href="">프로필 관리</a>
+						</li>
+						<li>
+							<a href="">로그아웃</a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	<nav id="navi" style="top: 186px;">
+		<div class="project">
+			<div class="project-con">
+				<h2>최근 본 프로젝트 <span class="num">5</span></h2>
+				<ul>
+					<li>
+						<a href="#" class="on">비상주 오프라인 매장</a>
+					</li>
+					<li>
+						<a href="#">안드로이드 프론트</a>
+					</li>
+					<li>
+						<a href="#">비상주 오프라인 매장</a>
+					</li>
+					<li>
+						<a href="#">인천국제공항</a>
+					</li>
+				</ul>
+				<div class="more">
+					<a href="">더보기</a>
+				</div>
+			</div>
+			<div class="freelan-con">
+				<h2>최근 본 프리랜서 <span class="num">2</span></h2>
+				<ul>
+					
+					<li>
+						<a href="#" class="on">김철수</a>
+					</li>
+					<li>
+						<a href="#">홍길동</a>
+					</li>
+					<li>
+						<a href="#">비상주</a>
+					</li>
+					<li>
+						<a href="#">김길동</a>
+					</li>
+				</ul>
+				<div class="more">
+					<a href="">더보기</a>
+				</div>
+			</div>
+		</div>
+		<ul class="banner">
+			<li>
+				<a href="#">
+					<img src="img/navi_banner01.png" alt="네비배너1">
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<script>
+		$(function () {
+			$(window).scroll(function () {
+				var scroll = $(this).scrollTop();
+				var navi_top = $("#navi").offset().top;
+
+				console.log(scroll);
+				console.log(navi_top);
+
+				if (scroll > 186) {
+					  $("#navi").css({
+							"position": "fixed",
+							"top": "20px"
+					  })
+				} else {
+					  $("#navi").css({
+							"position": "absolute",
+							"top": "186px"
+					  })
+				}
+			})
+		})
+	</script>
+
+      <div id="sub_contents">
+            <div class="sub_tit">
+                  <div class="inner">
+                        <h1>고객지원</h1>
+                  </div>
+            </div>
+
+            <div id="sub_content" class="custom_sch">
+                  <div class="inner">
+                        <div class="left_menu">
+                              <ul>
+                                    <li>
+                                          <a href="../../page/custom_sup/custom_sup01.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                          <a class="on" href="../../page/custom_sup/custom_sup02.html">뉴스/언론</a>
+                                    </li>
+                                    <li>
+                                          <a href="../../page/custom_sup/custom_sup03.html">자주 찾는 질문</a>
+                                    </li>
+                                    <li>
+                                          <a href="../../page/custom_sup/custom_sup04.html">온라인 1:1 문의</a>
+                                    </li>
+
+                              </ul>
+                        </div>
+                        <div class="content_info">
+                              <div class="content">
+
+                                    <div id="tab1">
+                                          <h2 class="sub_title02">뉴스/언론</h2>
+                                          <div class="custom_view_wrap">
+                                                <div class="custom_view_top">
+                                                      <h2>이제 프로젝트 진행 상황을 '프로젝트 기록'에 남겨보세요!</h2>
+                                                      <div class="desc">
+                                                            <div class="lef">
+                                                                  <span class="pr">관리자</span>
+                                                                  <span class="low"></span>
+                                                                  <span class="date">2020-01-01 18:25</span>
+                                                                  <span class="low"></span>
+                                                                  <span class="view">
+                                                                        <img src="../../img/c_view.png" alt="조회수 이미지"> 3,288
+                                                                  </span>
+                                                            </div>
+                                                            <div class="ref">
+                                                                  <span class="fr">
+                                                                        <a href="#">
+                                                                              <img src="../../img/printer.png" alt="프린터 이미지">
+                                                                              프린터하기
+                                                                        </a>
+                                                                  </span>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div class="custom_view_info">
+                                                      <div class="img">
+                                                            <img src="../../img/cu_img01.png" alt="view 이미지">
+                                                      </div>
+                                                      <p>
+                                                            안녕하세요, IT아웃소싱 중개 플랫폼 잡스인입니다. <br>
+                                                            프로젝트 계약 관리 페이지에 '프로젝트 기록'이 추가되었습니다! <br>
+                                                            프로젝트 착수 전까지는 전체 업무 범위를 100% 파악할 수 없기 때문에, 계약 당시에 협의하지 못했던
+                                                            내용들은 <br>
+                                                            대부분 프로젝트를 진행하면서 구체화 해나가게 됩니다. <br>
+                                                            이 과정에서,업무 범위에 대한 견해 차이가 발생하기도 하지요. 원만한 협의를 위해 이전 회의 자료를 급히
+                                                            찾아보지만.. <br>
+                                                            <br>
+                                                            "구두로 협의했더니 남아있는 기록이 없어요." <br>
+                                                            "회의록을 작성하시던데.. 공유받은 게 없어요." <br>
+                                                            이런 경험, 한 번쯤은 있으셨을 겁니다. <br>
+                                                            이제, '프로젝트 기록'에 프로젝트 진행 내역을 기록하고 공유함으로써서로 업무범위에 대한 이해를
+                                                            일치시키고, <br>
+                                                            혹시 모를 분쟁도 예방할 수 있게 되었습니다.
+
+                                                      </p>
+                                                      <!-- <div class="page_move">
+                                                            <ul>
+                                                              <li class="prev"><img src="../../img/icon_b_prev.png" alt="">이전글</li>
+                                                              <li class="prev_tit"> <a href="?st=view&amp;idx=67&amp;page=1&amp;bwf_mode=board_notice&amp;page=1">계약 과정을 진행 바랍니다.</a> </li>
+                                                              <li class="prev_date">2019-06-26</li>
+                                                            </ul>
+                                                            <ul>
+                                                              <li class="prev"><img src="../../img/icon_b_next.png" alt="">다음글</li>
+                                                              <li class="prev_tit"> 다음 글이 없습니다. </li>
+                                                              <li class="prev_date"></li>
+                                                            </ul>
+                                                      </div> -->
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <div id="footer_info">
+            <div id="footer">
+                  <div class="footer_top">
+                        <div class="inner">
+                              <ul>
+                                    <li>
+                                          <a href="#">회사소개</a>
+                                    </li>
+                                    <li>
+                                          <a href="#"> 프로젝트 문의</a>
+                                    </li>
+                                    <li>
+                                          <a href="#"> 프리랜서 문의</a>
+                                    </li>
+                                    <li>
+                                          <a href="#">인재채용</a>
+                                    </li>
+                                    <li>
+                                          <a href="#">이용약관 </a>
+                                    </li>
+                                    <li>
+                                          <a href="#">개인정보처리방침 </a>
+                                    </li>
+                                    <li>
+                                          <a href="#">고객센터</a>
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+
+                  <div class="footer_inner">
+                        <div class="inner">
+                              <div class="wrap">
+                                    <article>
+                                          <div class="f_logo">
+                                                <img src="../..//img/f_logo.png" alt="">
+                                          </div>
+                                          <address>
+                                                주식회사 케이엘큐브 <br>
+                                                대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                                                사업자등록번호: 100-11-22203 <br>
+                                                통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                                                호스팅 사업자: Amazon Web Service(AWS)
+                                          </address>
+                                    </article>
+                                    <article class="right">
+                                          <h2>IT잡스 SNS 채널</h2>
+                                          <ul class="sns">
+                                                <li>
+                                                      <a href="#">
+                                                            <img src="../../img/f_sns01.png" alt="">
+                                                      </a>
+                                                </li>
+                                                <li>
+                                                      <a href="#">
+                                                            <img src="../../img/f_sns02.png" alt="">
+                                                      </a>
+                                                </li>
+                                                <li>
+                                                      <a href="#">
+                                                            <img src="../../img/f_sns03.png" alt="">
+                                                      </a>
+                                                </li>
+                                                <li>
+                                                      <a href="#">
+                                                            <img src="../../img/f_sns04.png" alt="">
+                                                      </a>
+                                                </li>
+                                          </ul>
+                                          <div class="phone">
+                                                <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+                                          </div>
+                                    </article>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="footer_bottom">
+                        <div class="inner">
+                              <p>
+                                    잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한
+                                    책임은 각 판매자가 부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+                              </p>
+                              <p class="copy">
+                                    Copyright © 2020 Jons In. Inc. All rights reserved.
+                              </p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</body>
+
+
+</html>

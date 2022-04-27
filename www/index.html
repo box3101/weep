@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+    <title>WEEP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="WEEP">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/@default.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> <!--datepicker 플러그인-->
+	<!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/flatpickr"></script> <!--datepicker 플러그인-->
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+	<!-- <script type="text/javascript" src="js/jquery.easing.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="../../js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var scroll = $(this).scrollTop();
+                var navi_top = $("#navi").offset().top;
+                if( scroll > 450 ) {
+                    $("#navi").css({"top" : ( scroll + 100 )});
+                } else {
+                    $("#navi").css({"top" : 550 });
+                }
+            })
+        })
+    </script>
+</head>
+
+<body class="body-main">
+<div id="wrap">
+    <div class="wrap-common">
+        <div id="header_info">
+            <nav id="navi">
+                <div class="project">
+    				<div class="project-con">
+    					<h2>최근 본 프로젝트 <span class="num">5</span></h2>
+    					<ul>
+    						<li>
+    							<a href="#" class="on">비상주 오프라인 매장</a>
+    						</li>
+    						<li>
+    							<a href="#">안드로이드 프론트</a>
+    						</li>
+    						<li>
+    							<a href="#">비상주 오프라인 매장</a>
+    						</li>
+    						<li>
+    							<a href="#">인천국제공항</a>
+    						</li>
+    					</ul>
+    					<div class="more">
+    						<a href="">더보기</a>
+    					</div>
+    				</div>
+    				<div class="freelan-con">
+    					<h2>최근 본 프리랜서 <span class="num">2</span></h2>
+    					<ul>
+
+    						<li>
+    							<a href="#" class="on">김철수</a>
+    						</li>
+    						<li>
+    							<a href="#">홍길동</a>
+    						</li>
+    						<li>
+    							<a href="#">비상주</a>
+    						</li>
+    						<li>
+    							<a href="#">김길동</a>
+    						</li>
+    					</ul>
+    					<div class="more">
+    						<a href="">더보기</a>
+    					</div>
+    				</div>
+                </div>
+                <ul class="banner">
+                    <li>
+                        <a href="#">
+                            <img src="img/navi_banner01.png" alt="네비배너1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/navi_banner02.png" alt="네비배너2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/navi_banner03.png" alt="네비배너3">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/navi_banner04.png" alt="네비배너4">
+                        </a>
+                    </li>
+                </ul>
+    		</nav>
+    		<div class="head-wrap">
+    			<div id="header">
+    				<div class="inner clearfix">
+    					<h1 class="logo">
+    						<a href="/index.html"><img src="img/logo-new.png" alt="로고 이미지"></a>
+    					</h1>
+						<!-- 2021-01-15 {  -->
+						<div class="memberImg">
+							<img src="img/bg_member.png" alt="회원가입혜택">
+						</div>
+						<!-- } 2021-01-15 -->
+
+    					<ul id="main_gnb">
+    						<li>
+    							<a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+    						</li>
+    						<li>
+    							<a href="/page/ai_sch/ai_sch.html">AI 추천</a>
+    						</li>
+    						<li>
+    							<a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+    						</li>
+    						<li>
+    							<a href="/page/partner/partner_sch.html">파트너 검색</a>
+    						</li>
+    						<li>
+    							<a href="/page/company/intro.html">WEE.P 소개</a>
+    						</li>
+    					</ul>
+    					<!-- <ul class="clearfix small-txt">
+    						<li>
+    							<a href="#">이용안내</a>
+    						</li>
+    						<li>
+    							<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+    						</li>
+    					</ul> -->
+    					<!-- 클라이언트 메뉴 -->
+    					<ul id="main_gnb" class="client_menu" style="position: absolute; top:100px; display: none;">
+    						<li>
+    							<a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+    						</li>
+    						<li>
+    							<a href="/page/outsourcing/outsourcing_sch.html">파트너 검색</a>
+    						</li>
+    						<li>
+    							<a href="/page/freelance_sch/freelance_sch.html">스마트 매칭</a>
+    						</li>
+    						<li>
+    							<a href="/page/partner_sch/partner.html">프리랜서 관리</a>
+    						</li>
+    						<li>
+    							<a href="/page/partner_sch/partner.html">파트너 관리</a>
+    						</li>
+    						<li>
+    							<a href="#">프로젝트 활동</a>
+    						</li>
+    						<li>
+    							<a href="#">이용안내
+    							</a>
+    						</li>
+    						<li>
+    							<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+    						</li>
+    					</ul>
+    					<!-- 프리랜서 메뉴 -->
+    					<ul id="main_gnb" class="free_menu" style="position: absolute; top:140px; display: none;">
+    						<li>
+    							<a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+    						</li>
+    						<li>
+    							<a href="/page/outsourcing/outsourcing_sch.html">스마트 매칭</a>
+    						</li>
+    						<li>
+    							<a href="/page/freelance_sch/freelance_sch.html">프로젝트 활동</a>
+    						</li>
+    						<li>
+    							<a href="/page/partner_sch/partner.html">프로필 관리</a>
+    						</li>
+    						<li>
+    							<a href="#">이용안내
+    							</a>
+    						</li>
+    						<li>
+    							<a href="/page/partner_sch/partner.html">WEE.P 소개</a>
+    						</li>
+    						<li>
+    							<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+    						</li>
+    					</ul>
+    					<!-- 파트너 메뉴 -->
+    					<ul id="main_gnb" class="part_menu" style="position: absolute; top:180px; display: none;">
+    						<li>
+    							<a href="/page/project_sch/project_sch.html">아웃소싱 검색 </a>
+    						</li>
+    						<li>
+    							<a href="/page/outsourcing/outsourcing_sch.html">스마트 매칭</a>
+    						</li>
+    						<li>
+    							<a href="/page/freelance_sch/freelance_sch.html">아웃소싱 활동</a>
+    						</li>
+    						<li>
+    							<a href="/page/partner_sch/partner.html">프로필 관리</a>
+    						</li>
+    						<li>
+    							<a href="#">이용안내</a>
+    						</li>
+    						<li>
+    							<a href="/page/partner_sch/partner.html">WEE.P 소개</a>
+    						</li>
+    						<li>
+    							<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+    						</li>
+    					</ul>
+    					<ul class="util01 clear" style="position: absolute; top:100px; display: none;">
+    						<li>
+    							<a href="#" class="on">프로젝트 등록</a>
+    						</li>
+    					</ul>
+						<a href="#!" class="register_project_btn">무료프로젝트 등록</a>
+    					<ul class="util clear">
+							<!-- <li><a href="#!" class="register_project_btn">무료프로젝트 등록</a></li> -->
+    						<li>
+    							<a href="/page/login/login01.html">로그인</a>
+    						</li>
+    						<li>
+    							<a href="/page/login/login02.html">회원가입</a>
+    						</li>
+
+    						
+    					</ul>
+						
+    					<ul class="login-util clear" style="display: none;">
+    						<li>
+    							<a href="javascript:;"><img src="../img/member-icon.png" alt="회원이미지" class="member-img">홍길동</a>
+    							<ul class="member-menu">
+    								<li>
+    									<a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+    								</li>
+    								<li>
+    									<a href="#!">로그아웃</a>
+    								</li>
+    							</ul>
+    						</li>
+    					</ul>
+    				</div>
+
+    				<div class="main_txt">
+    					업계 최초 인공지능 (AI) 기술을 도입한
+    					<span>위프(WEE.<b class="main_og_color">P</b>)에서 새롭게 시작해 보세요</span>
+    					<!--
+    					<img src="img/bg_main_txt0915.png" alt="">
+    					-->
+    				</div>
+    				<div class="seach_wrap">
+    					<input type="text" placeholder="프로젝트 검색" id="Mid_searchProject" class="ui-autocomplete-input ui-widget">
+    					<button type="submit"></button>
+    				</div>
+    				<div class="main_btn_wrap">
+						<a href="javascript:;" class="project-txt">무료 이력서 등록하기 +</a>
+						<a href="javascript:;" class="project-txt">무료 프로젝트 등록하기 +</a>
+					</div>
+    			</div>
+    		</div>
+        </div>
+    	<script>
+    	$(function() {
+    		// 참고 주소 : https://offbyone.tistory.com/260
+    		var availableCity = ["프로젝트1","프로젝트2","프로젝트3"];
+    		$("#Mid_searchProject").autocomplete({
+    				source: availableCity,
+    				select: function(event, ui) {
+    					console.log(ui.item);
+    				},
+    				focus: function(event, ui) {
+    					return false;
+    					//event.preventDefault();
+    				}
+    		});
+
+
+
+
+    	});
+    	</script>
+        <div class="inner">
+            <div class="d-flex align-items-center m-t-50 m-b-25">
+                <h2 class="main-title m-b-0">다양한 분야의 전문가를 만나보세요.</h2>
+                <div class="main-expert">
+                    <label class="custom-control custom-control-radio">
+                        <input type="radio" id="a1" name="chk"><span>프로젝트</span><i></i>
+                    </label>
+                    <label class="custom-control custom-control-radio">
+                        <input type="radio" id="a2" name="chk"><span>아웃소싱</span><i></i>
+                    </label>
+                    <label class="custom-control custom-control-radio">
+                        <input type="radio" id="a3" name="chk"><span>프리랜서</span><i></i>
+                    </label>
+                    <label class="custom-control custom-control-radio">
+                        <input type="radio" id="a4" name="chk"><span>파트너</span><i></i>
+                    </label>
+                </div>
+            </div>
+			<style>
+				.a2 { display:none; }
+			</style>
+            <ul class="main-category"><!-- 이미지경로 변경/이미지변경 2020-11-30 { -->
+				<!-- 프로젝트 && 프리랜서 { -->
+                <li class="a1">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro01_pm.png" alt="">
+                            <p>웹/모바일 개발</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a1">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro02_app.png" alt="">
+                            <p>앱(APP) 개발</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a1">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro03_server.png" alt="">
+                            <p>네트워크/서버/보안</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a1">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro04_maintain.png" alt="">
+                            <p>운영/유지보수</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a1">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro05_commerce.png" alt="">
+                            <p>커머스/쇼핑몰</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a1">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro01_pm2.png" alt="">
+                            <p>기획</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a1">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro06_design.png" alt="">
+                            <p>디자인</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a1">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro07_publishing.png" alt="">
+                            <p>퍼블리싱</p>
+                        </a>
+                    </div>
+                </li>
+				<!-- } 프로젝트 && 프리랜서 -->
+			
+				<!-- 아웃소싱 && 파트너 { -->
+				<li class="a2">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro08_web.png" alt="">
+                            <p>홈페이지 개발</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a2">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro02_app.png" alt="">
+                            <p>앱(APP) 제작</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a2">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro09_system.png" alt="">
+                            <p>업무시스템 구축</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a2">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro10_platform.png" alt="">
+                            <p>플랫폼 구축</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a2">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro04_maintain.png" alt="">
+                            <p>운영/유지보수</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a2">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro01_pm2.png" alt="">
+                            <p>기획</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a2">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro06_design.png" alt="">
+                            <p>디자인</p>
+                        </a>
+                    </div>
+                </li>
+				<li class="a2">
+                    <div class="box">
+                        <a href="#">
+                            <img src="img/pro07_publishing.png" alt="">
+                            <p>퍼블리싱</p>
+                        </a>
+                    </div>
+                </li>
+				<!-- }  아웃소싱 && 파트너 -->
+            </ul>
+
+			<!-- 2020-12-18 new board list added { -->
+			<!-- freelancer display -->
+			<div class="main_board_wrap free">
+				<div class="ai_board">
+					<p class="main-title">
+						<a href="http://weep2020.cafe24.com/page/ai_sch/ai_sch.html">AI가 추천하는 프로젝트</a>
+						<!-- 2021-01-18 { -->
+						<!-- <select class="board_select">
+							<option>전체</option>
+							<option>프로젝트1</option>
+							<option>프로젝트2</option>
+							<option>프로젝트3</option>
+						</select> -->
+						<!-- } 2021-01-18 -->
+					</p>
+					<div class="list_box">
+						<img style="text-align: center;" src="/img/no_reco.jpg" alt="">
+					</div>
+				</div>
+				<div class="manager_board">
+					<p class="main-title">
+						<a href="http://weep2020.cafe24.com/page/project_sch/project_sch05.html">매니저가 추천하는 프로젝트</a>
+						<!-- 2021-01-18 { -->
+						<!-- <select class="board_select">
+							<option>전체</option>
+							<option>프로젝트1</option>
+							<option>프로젝트2</option>
+							<option>프로젝트3</option>
+						</select> -->
+						<!-- } 2021-01-18 -->	
+					</p>
+					<div class="list_box">
+						<ul>
+							<li>
+								<a href="#!">
+									<div class="num">1.</div>
+									<div class="subject">대구은행 홈페이지 개편</div>
+									<div class="period">2.0개월</div>
+									<div class="date_cnt">D-12</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">2.</div>
+									<div class="subject">KB국민은행 펀드시스템 개편</div>
+									<div class="period">3.1개월</div>
+									<div class="date_cnt">D-9</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">3.</div>
+									<div class="subject">IBK기업은행 방카시스템 개편</div>
+									<div class="period">6.0개월</div>
+									<div class="date_cnt">D-15</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">4.</div>
+									<div class="subject">DB생명 보험상품시스템 개편</div>
+									<div class="period">5.0개월</div>
+									<div class="date_cnt">D-21</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">5.</div>
+									<div class="subject">삼성생명 보험지급시스템 개편</div>
+									<div class="period">5.5개월</div>
+									<div class="date_cnt">D-15</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- freelancer display -->
+
+
+			<!-- outsaucing display -->
+			<div class="main_board_wrap free">
+				<div class="ai_board">
+					<p class="main-title">
+						<a href="http://weep2020.cafe24.com/page/ai_sch/ai_sch.html">AI가 추천하는 아웃소싱</a>
+						<!-- 2021-01-18 { -->
+						<!-- <select class="board_select">
+							<option>전체</option>
+							<option>프로젝트1</option>
+							<option>프로젝트2</option>
+							<option>프로젝트3</option>
+						</select> -->
+						<!-- } 2021-01-18 -->	
+					</p>
+					<div class="list_box">
+						<ul>
+							<li>
+								<a href="#!">
+									<div class="num">1.</div>
+									<div class="subject">프랜차이즈 IT시스템 구축 및 운영</div>
+									<div class="period">2.0개월</div>
+									<div class="date_cnt">D-12</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">2.</div>
+									<div class="subject">삼성카드 영업시스템 구축</div>
+									<div class="period">3.1개월</div>
+									<div class="date_cnt">D-9</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">3.</div>
+									<div class="subject">KB국민은행 펀드시스템 개편</div>
+									<div class="period">6.0개월</div>
+									<div class="date_cnt">D-15</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">4.</div>
+									<div class="subject">하나카드 대출시스템 개편</div>
+									<div class="period">5.0개월</div>
+									<div class="date_cnt">D-21</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">5.</div>
+									<div class="subject">교보생명 퇴직연금시스템 개편</div>
+									<div class="period">5.5개월</div>
+									<div class="date_cnt">D-15</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="manager_board">
+					<p class="main-title">
+						<a href="http://weep2020.cafe24.com/page/outsourcing/outsourcing05.html">매니저가 추천하는 아웃소싱</a>
+						<!-- 2021-01-18 { -->
+						<!-- <select class="board_select">
+							<option>전체</option>
+							<option>프로젝트1</option>
+							<option>프로젝트2</option>
+							<option>프로젝트3</option>
+						</select> -->
+						<!-- } 2021-01-18 -->	
+					</p>
+					<div class="list_box">
+						<ul>
+							<li>
+								<a href="#!">
+									<div class="num">1.</div>
+									<div class="subject">대구은행 홈페이지 개편</div>
+									<div class="period">2.0개월</div>
+									<div class="date_cnt">D-12</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">2.</div>
+									<div class="subject">KB국민은행 펀드시스템 개편</div>
+									<div class="period">3.1개월</div>
+									<div class="date_cnt">D-9</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">3.</div>
+									<div class="subject">IBK기업은행 방카시스템 개편</div>
+									<div class="period">6.0개월</div>
+									<div class="date_cnt">D-15</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">4.</div>
+									<div class="subject">DB생명 보험상품시스템 개편</div>
+									<div class="period">5.0개월</div>
+									<div class="date_cnt">D-21</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">5.</div>
+									<div class="subject">삼성생명 보험지급시스템 개편</div>
+									<div class="period">5.5개월</div>
+									<div class="date_cnt">D-15</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- outsaucing display -->
+
+			<!-- client display -->
+			<div class="main_board_wrap client">
+				<div class="ai_board">
+					<p class="main-title">
+						<a href="http://weep2020.cafe24.com/page/ai_sch/ai_sch.html">AI가 추천하는 프리랜서</a>
+						<!-- 2021-01-18 { -->
+						<!-- <select class="board_select">
+							<option>전체</option>
+							<option>프로젝트1</option>
+							<option>프로젝트2</option>
+							<option>프로젝트3</option>
+						</select> -->
+						<!-- } 2021-01-18 -->	
+					</p>
+					<div class="list_box">
+						<ul>
+							<li>
+								<a href="#!">
+									<div class="num">1.</div>
+									<div class="name">김영남</div>
+									<div class="gender">남/27세</div>
+									<div class="job">개발</div>
+									<div class="career">10년 6개월</div>
+									<div class="grade">특급</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">2.</div>
+									<div class="name">이하나</div>
+									<div class="gender">여/32세</div>
+									<div class="job">디자이너</div>
+									<div class="career">5년 3개월</div>
+									<div class="grade">중급</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">3.</div>
+									<div class="name">김철수</div>
+									<div class="gender">남/32세</div>
+									<div class="job">디자이너</div>
+									<div class="career">15년 3개월</div>
+									<div class="grade">고급</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">4.</div>
+									<div class="name">박희철</div>
+									<div class="gender">남/29세</div>
+									<div class="job">개발</div>
+									<div class="career">3년 4개월</div>
+									<div class="grade">초급</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">5.</div>
+									<div class="name">강지환</div>
+									<div class="gender">남/28세</div>
+									<div class="job">기획</div>
+									<div class="career">3년 1개월</div>
+									<div class="grade">초급</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="manager_board">
+					<p class="main-title">
+						<a href="http://weep2020.cafe24.com/page/freelance_sch/freelance_sch05.html">매니저가 추천하는 프리랜서</a>
+						<!-- 2021-01-18 { -->
+						<!-- <select class="board_select">
+							<option>전체</option>
+							<option>프로젝트1</option>
+							<option>프로젝트2</option>
+							<option>프로젝트3</option>
+						</select> -->
+						<!-- } 2021-01-18 -->	
+					</p>
+					<div class="list_box">
+						<ul>
+							<li>
+								<a href="#!">
+									<div class="num">1.</div>
+									<div class="name">김영남</div>
+									<div class="gender">남/27세</div>
+									<div class="job">개발</div>
+									<div class="career">10년 6개월</div>
+									<div class="grade">특급</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">2.</div>
+									<div class="name">이하나</div>
+									<div class="gender">여/32세</div>
+									<div class="job">디자이너</div>
+									<div class="career">5년 3개월</div>
+									<div class="grade">중급</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">3.</div>
+									<div class="name">김철수</div>
+									<div class="gender">남/32세</div>
+									<div class="job">디자이너</div>
+									<div class="career">15년 3개월</div>
+									<div class="grade">고급</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">4.</div>
+									<div class="name">박희철</div>
+									<div class="gender">남/29세</div>
+									<div class="job">개발</div>
+									<div class="career">3년 4개월</div>
+									<div class="grade">초급</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="num">5.</div>
+									<div class="name">강지환</div>
+									<div class="gender">남/28세</div>
+									<div class="job">기획</div>
+									<div class="career">3년 1개월</div>
+									<div class="grade">초급</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- client display -->
+
+
+
+			<!-- } 2020-12-18 new board list added -->
+
+
+
+            <div class="tab m-b-40">
+                <ul>
+                    <li><a href="#tab1" class="on">프리랜서 정보</a></li>
+                    <li><a href="#tab2" >파트너 정보</a></li>
+                    <li><a href="#tab3">진행 중 프로젝트</a></li>
+                    <li><a href="#tab4">진행 중 아웃소싱</a></li>
+                </ul>
+                <!-- <div class="use">
+                    <label><input id="check" type="checkbox"><i></i></label>
+                </div> -->
+            </div>
+
+            <!-- 프리랜서정보 -->
+            <div id="tab1">
+                <h2 class="main-title">프리랜서 정보</h2>
+                <div class="project-card row">
+                    <div class="col-6">
+                        <article>
+                            <div class="project-card-subject in-main">
+                                <a href="javascript:;"><i class="icon-star"></i></a>
+                                <h3>
+                                    <a href="#">
+                                        공공기관의 포털사이트 구축, 업무시스템 개발, 서버 환경 셋팅 등 10년 경력
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="profile">
+                                <div class="pic">
+                                    <img src="img/basic-profile.png"alt="회원얼굴사진">
+                                </div>
+                                <div class="profile-summary">
+                                    <div>
+                                        <span class="badge badge-outline-red">즉시 투입가능</span>
+                                    </div>
+                                    <div>
+                                        <h2 class="name">김OO <span>남, 41세</span></h2>
+                                    </div>
+                                    <div class="career">
+                                        <span class="job">개발</span>
+                                        <span class="period">10년 6개월</span>
+                                        <span class="badge badge-sm badge-pink">특급</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mainwork">
+                                <h2>주요작업</h2>
+                                <ul class="mwList">
+                                    <li>국가생명윤리정책원 평가인증 및 통합관리시스템 구축</li>
+                                    <li>부천종합운동장 주요설비 IoT 모니터링 시스템 구축 용역</li>
+                                    <li>인천국제공항공사 인증 및 통합관리시스템 구축</li>
+                                </ul>
+                            </div>
+
+
+
+							<!-- 2020-12-30 { -->
+                            <ul class="project-wNum">
+                                <li>
+									공공<span><a href="#!" class="project_cnt">9</a></span>
+									<div class="project_wNum_list">
+										<div class="project_wNum_title">공공 프로젝트 수행</div>
+										<ul class="nano2">
+											<!-- 로그인 전 -->
+											<li><a href="#!" onclick="alert('상세내용을 보기 위해선 로그인이 필요합니다. 로그인 페이지로 이동하시겠습니까?')">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축 시스템 구축 세스템 구축</a></li>
+											<!-- 로그인 후 이력서 상세 페이지로 이동 -->
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+										</ul>
+									</div>
+								</li>
+                                <li>
+									금융<span><a href="#!" class="project_cnt">2</a></span>
+									<div class="project_wNum_list">
+										<div class="project_wNum_title">공공 프로젝트 수행</div>
+										<ul class="nano2">
+											<!-- 로그인 전 -->
+											<li><a href="#!" onclick="alert('상세내용을 보기 위해선 로그인이 필요합니다. 로그인 페이지로 이동하시겠습니까?')">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축 시스템 구축 세스템 구축</a></li>
+											<!-- 로그인 후 이력서 상세 페이지로 이동 -->
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+										</ul>
+									</div>
+								</li>
+                                <li>증권/보험<span>0</span></li>
+                                <li>커머스<span>12</span></li>
+                                <li>증권<span>6</span></li>
+                            </ul>
+							<!-- } 2020-12-30 -->
+                            <div class="area">
+                                <span class="area1">근무지역</span>
+                                <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                            </div>
+                            <div class="skill">
+                                <div>JSP</div>
+                                <div>C</div>
+                                <div>MySQL</div>
+                                <div>MongoDB</div>
+                                <div>PHP</div>
+                                <div>Node.js</div>
+                                <div>ASP</div>
+                                <div>Python</div>
+                                <div>Swift</div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6">
+                        <article>
+                            <div class="project-card-subject in-main">
+                                <a href="javascript:;"><i class="icon-star"></i></a>
+                                <h3>
+                                    <a href="#">
+                                        공공기관의 포털사이트 구축, 업무시스템 개발
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="profile">
+                                <div class="pic">
+                                    <img src="img/basic-profile.png"alt="회원얼굴사진">
+                                </div>
+                                <div class="profile-summary">
+                                    <!-- <div>
+                                        <span class="badge badge-outline-red">즉시 투입가능</span>
+                                    </div> -->
+                                    <div>
+                                        <h2 class="name">김OO <span>남, 41세</span></h2>
+                                    </div>
+                                    <div class="career">
+                                        <span class="job text-orange">개발</span>
+                                        <span class="job text-blue">기획</span>
+                                        <span class="job text-green">디자인</span>
+                                        <span class="job text-red">퍼블리셔</span>
+                                        <span class="period">10년 6개월</span>
+                                        <span class="badge badge-sm badge-pink">특급</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mainwork">
+                                <h2>주요작업</h2>
+                                <ul class="mwList">
+                                    <li>국가생명윤리정책원 평가인증 및 통합관리시스템 구축</li>
+                                    <li>부천종합운동장 주요설비 IoT 모니터링 시스템 구축 용역</li>
+                                    <li>인천국제공항공사 인증 및 통합관리시스템 구축</li>
+                                </ul>
+                            </div>
+                            <ul class="project-wNum">
+                                <li>
+									공공<span><a href="#!" class="project_cnt">9</a></span>
+									<div class="project_wNum_list">
+										<div class="project_wNum_title">공공 프로젝트 수행</div>
+										<ul class="nano2">
+											<!-- 로그인 전 -->
+											<li><a href="#!" onclick="alert('상세내용을 보기 위해선 로그인이 필요합니다. 로그인 페이지로 이동하시겠습니까?')">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축 시스템 구축 세스템 구축</a></li>
+											<!-- 로그인 후 이력서 상세 페이지로 이동 -->
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+											<li><a href="#!">부산항 신항제덕 3개 물양장 정비공사 건설사업관리용 시스템 구축</a></li>
+										</ul>
+									</div>
+								</li>
+                                <li>금융<span>2</span></li>
+                                <li>증권/보험<span>0</span></li>
+                                <li>커머스<span>12</span></li>
+                                <li>증권<span>6</span></li>
+                            </ul>
+                            <div class="area">
+                                <span class="area1">근무지역</span>
+                                <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                            </div>
+                            <div class="skill">
+                                <div>JSP</div>
+                                <div>C</div>
+                                <div>MySQL</div>
+                                <div>MongoDB</div>
+                                <div>PHP</div>
+                                <div>Node.js</div>
+                                <div>ASP</div>
+                                <div>Python</div>
+                                <div>Swift</div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!--paging 수정::200807 -->
+                <div class="paging_wrap">
+                    <div class="paging">
+                        <div class="page_prev">
+                            <a class="page_prev_link" href="#">
+                                <i class="fas fa-angle-double-left"></i>
+                            </a>
+                            <a class="page_prev_link" href="#">
+                                <i class="fas fa-angle-left"></i>
+                            </a>
+                        </div>
+                        <div class="page_num">
+                            <a href="#" class="page_num_link on">1</a>
+                            <a href="#" class="page_num_link">2</a>
+                            <a href="#" class="page_num_link">3</a>
+                            <a href="#" class="page_num_link">4</a>
+                            <a href="#" class="page_num_link">5</a>
+                        </div>
+                        <div class="page_next">
+                            <a href="#" class="page_next_link">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                            <a href="#" class="page_next_link">
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 파트너 정보 -->
+            <div id="tab2" class="hidden">
+                <h2 class="main-title">파트너 정보</h2>
+                <div class="project-card row">
+                    <div class="col-6">
+                        <article>
+                            <div class="project-card-subject in-main">
+                                <a href="javascript:;"><i class="icon-star"></i></a>
+                                <h3>
+                                    <a href="#">
+                                        공공기관의 포털사이트 구축, 업무시스템 개발, 서버 환경 셋팅 등 10년 경력
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="profile">
+                                <div class="pic">
+                                    <img src="img/basic-profile.png"alt="회원얼굴사진">
+                                </div>
+                                <div class="profile-summary">
+                                    <div>
+                                        <span class="badge badge-outline-red">즉시 투입가능</span>
+                                    </div>
+                                    <div>
+                                        <h2 class="name">김OO <span>남, 41세</span></h2>
+                                    </div>
+                                    <div class="career">
+                                        <span class="job">개발</span>
+                                        <span class="period">10년 6개월</span>
+                                        <span class="badge badge-sm badge-pink">특급</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mainwork">
+                                <h2>주요작업</h2>
+                                <ul class="mwList">
+                                    <li>국가생명윤리정책원 평가인증 및 통합관리시스템 구축</li>
+                                    <li>부천종합운동장 주요설비 IoT 모니터링 시스템 구축 용역</li>
+                                    <li>인천국제공항공사 인증 및 통합관리시스템 구축</li>
+                                </ul>
+                            </div>
+                            <ul class="project-wNum">
+                                <li>공공<span>9</span></li>
+                                <li>금융<span>2</span></li>
+                                <li>증권/보험<span>0</span></li>
+                                <li>커머스<span>12</span></li>
+                                <li>증권<span>6</span></li>
+                            </ul>
+                            <div class="area">
+                                <span class="area1">근무지역</span>
+                                <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                            </div>
+                            <div class="skill">
+                                <div>JSP</div>
+                                <div>C</div>
+                                <div>MySQL</div>
+                                <div>MongoDB</div>
+                                <div>PHP</div>
+                                <div>Node.js</div>
+                                <div>ASP</div>
+                                <div>Python</div>
+                                <div>Swift</div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6">
+                        <article>
+                            <div class="project-card-subject in-main">
+                                <a href="javascript:;"><i class="icon-star"></i></a>
+                                <h3>
+                                    <a href="#">
+                                        공공기관의 포털사이트 구축, 업무시스템 개발
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="profile">
+                                <div class="pic">
+                                    <img src="img/basic-profile.png"alt="회원얼굴사진">
+                                </div>
+                                <div class="profile-summary">
+                                    <!-- <div>
+                                        <span class="badge badge-outline-red">즉시 투입가능</span>
+                                    </div> -->
+                                    <div>
+                                        <h2 class="name">김OO <span>남, 41세</span></h2>
+                                    </div>
+                                    <div class="career">
+                                        <span class="job text-orange">개발</span>
+                                        <span class="job text-blue">기획</span>
+                                        <span class="job text-green">디자인</span>
+                                        <span class="job text-red">퍼블리셔</span>
+                                        <span class="period">10년 6개월</span>
+                                        <span class="badge badge-sm badge-pink">특급</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mainwork">
+                                <h2>주요작업</h2>
+                                <ul class="mwList">
+                                    <li>국가생명윤리정책원 평가인증 및 통합관리시스템 구축</li>
+                                    <li>부천종합운동장 주요설비 IoT 모니터링 시스템 구축 용역</li>
+                                    <li>인천국제공항공사 인증 및 통합관리시스템 구축</li>
+                                </ul>
+                            </div>
+                            <ul class="project-wNum">
+                                <li>공공<span>9</span></li>
+                                <li>금융<span>2</span></li>
+                                <li>증권/보험<span>0</span></li>
+                                <li>커머스<span>12</span></li>
+                                <li>증권<span>6</span></li>
+                            </ul>
+                            <div class="area">
+                                <span class="area1">근무지역</span>
+                                <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                            </div>
+                            <div class="skill">
+                                <div>JSP</div>
+                                <div>C</div>
+                                <div>MySQL</div>
+                                <div>MongoDB</div>
+                                <div>PHP</div>
+                                <div>Node.js</div>
+                                <div>ASP</div>
+                                <div>Python</div>
+                                <div>Swift</div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!--paging 수정::200807 -->
+                <div class="paging_wrap">
+                    <div class="paging">
+                        <div class="page_prev">
+                            <a class="page_prev_link" href="#">
+                                <i class="fas fa-angle-double-left"></i>
+                            </a>
+                            <a class="page_prev_link" href="#">
+                                <i class="fas fa-angle-left"></i>
+                            </a>
+                        </div>
+                        <div class="page_num">
+                            <a href="#" class="page_num_link on">1</a>
+                            <a href="#" class="page_num_link">2</a>
+                            <a href="#" class="page_num_link">3</a>
+                            <a href="#" class="page_num_link">4</a>
+                            <a href="#" class="page_num_link">5</a>
+                        </div>
+                        <div class="page_next">
+                            <a href="#" class="page_next_link">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                            <a href="#" class="page_next_link">
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 진행 중 프로젝트 -->
+            <div id="tab3" class="hidden">
+                <h2 class="main-title">진행 중 프로젝트</h2>
+                <div class="project-card row">
+                    <div class="col-6">
+                        <article>
+                            <div class="project-card-top">
+                                <div>
+                                    <a href="javascript:;"><i class="icon-star"></i></a>
+                                    <span class="deadline lg">5월 5일 마감</span>
+                                    <span class="badge badge-orange">D-12</span>
+                                </div>
+                                <div>
+                                    <span class="badge badge-outline-orange">개발</span>
+                                    <span class="badge badge-outline-green">모집중</span>
+                                    <span class="badge badge-outline-blue">NEW</span>
+                                </div>
+                            </div>
+                            <div class="project-card-subject">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="project-recruit-number">
+                                <span>
+                                    <img src="../../img/info_img01.png" alt="모집">
+                                    <b>모집</b>
+                                    <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                </span>
+                                <span>
+                                    <img src="../../img/support.png" alt="지원">
+                                    <b>지원자수</b>
+                                    <span class="num">1</span>명
+                                </span>
+                            </div>
+                            <div class="price_wrap">
+                                <a href="#" class="price">
+                                    <img src="../../img/pro_price.png" alt="">월 <span>5,000,000 ~ 10,000,000</span>원
+                                </a>
+                                <a href="#" class="dates">
+                                    <img src="../../img/pro_time.png" alt="">
+                                    <span>
+                                        6월 중순 ∼9월 하순
+                                        <span class="da">(4.5개월)</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="need-skills">
+                                <span class="path">
+                                    개발 > 앱
+                                </span>
+                                <span class="skill">
+                                    HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                </span>
+                            </div>
+                            <div class="way">
+                                <dl>
+                                    <dt>진행 방식</dt>
+                                    <dd>
+                                        최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>근무지역</dt>
+                                    <dd>
+                                        서울시 4호선 충무로역 2번 출구 3분 거리
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="profile-simple">
+                                <div>
+                                    <div class="profile">
+                                        <div class="pic">
+                                            <img src="../../img/@img-profile.png" alt="">
+                                        </div>
+                                        <div class="name">KIKI_92<span>서울</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="company">
+                                    <a href="#">회사소개</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!--paging 수정::200807 -->
+                <div class="paging_wrap">
+                    <div class="paging">
+                        <div class="page_prev">
+                            <a class="page_prev_link" href="#">
+                                <i class="fas fa-angle-double-left"></i>
+                            </a>
+                            <a class="page_prev_link" href="#">
+                                <i class="fas fa-angle-left"></i>
+                            </a>
+                        </div>
+                        <div class="page_num">
+                            <a href="#" class="page_num_link on">1</a>
+                            <a href="#" class="page_num_link">2</a>
+                            <a href="#" class="page_num_link">3</a>
+                            <a href="#" class="page_num_link">4</a>
+                            <a href="#" class="page_num_link">5</a>
+                        </div>
+                        <div class="page_next">
+                            <a href="#" class="page_next_link">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                            <a href="#" class="page_next_link">
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 진행중 아웃소싱 -->
+            <div id="tab4" class="hidden">
+                <h2 class="main-title">진행 중 아웃소싱</h2>
+                <div class="project-card row">
+                    <div class="col-6">
+                        <article>
+                            <div class="project-card-top">
+                                <div>
+                                    <a href="javascript:;"><i class="icon-star"></i></a>
+                                    <span class="deadline lg">5월 5일 마감</span>
+                                    <span class="badge badge-orange">D-12</span>
+                                </div>
+                                <div>
+                                    <span class="badge badge-outline-orange">개발</span>
+                                    <span class="badge badge-outline-green">모집중</span>
+                                    <span class="badge badge-outline-blue">NEW</span>
+                                </div>
+                            </div>
+                            <div class="project-card-subject">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="project-recruit-number">
+                                <span>
+                                    <img src="../../img/info_img01.png" alt="모집">
+                                    <b>모집</b>
+                                    <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                </span>
+                                <span>
+                                    <img src="../../img/support.png" alt="지원">
+                                    <b>지원자수</b>
+                                    <span class="num">1</span>명
+                                </span>
+                            </div>
+                            <div class="price_wrap">
+                                <a href="#" class="price">
+                                    <img src="../../img/pro_price.png" alt="">월 <span>5,000,000 ~ 10,000,000</span>원
+                                </a>
+                                <a href="#" class="dates">
+                                    <img src="../../img/pro_time.png" alt="">
+                                    <span>
+                                        6월 중순 ∼9월 하순
+                                        <span class="da">(4.5개월)</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="need-skills">
+                                <span class="path">
+                                    개발 > 앱
+                                </span>
+                                <span class="skill">
+                                    HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                </span>
+                            </div>
+                            <div class="way">
+                                <dl>
+                                    <dt>진행 방식</dt>
+                                    <dd>
+                                        최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>근무지역</dt>
+                                    <dd>
+                                        서울시 4호선 충무로역 2번 출구 3분 거리
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="profile-simple">
+                                <div>
+                                    <div class="profile">
+                                        <div class="pic">
+                                            <img src="../../img/@img-profile.png" alt="">
+                                        </div>
+                                        <div class="name">KIKI_92<span>서울</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="company">
+                                    <a href="#">회사소개</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!--paging 수정::200807 -->
+                <div class="paging_wrap">
+                    <div class="paging">
+                        <div class="page_prev">
+                            <a class="page_prev_link" href="#">
+                                <i class="fas fa-angle-double-left"></i>
+                            </a>
+                            <a class="page_prev_link" href="#">
+                                <i class="fas fa-angle-left"></i>
+                            </a>
+                        </div>
+                        <div class="page_num">
+                            <a href="#" class="page_num_link on">1</a>
+                            <a href="#" class="page_num_link">2</a>
+                            <a href="#" class="page_num_link">3</a>
+                            <a href="#" class="page_num_link">4</a>
+                            <a href="#" class="page_num_link">5</a>
+                        </div>
+                        <div class="page_next">
+                            <a href="#" class="page_next_link">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                            <a href="#" class="page_next_link">
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                $('.tab a').on('click',function(e){
+                    e.preventDefault();
+                    var $t = $($(this).attr('href'));
+
+                    $(this).parent().siblings().find('a').removeClass('on');
+                    $(this).addClass('on');
+
+                    $t.siblings('[id^=tab]').hide();
+                    $t.fadeIn(150);
+                });
+            });
+        </script>
+
+        <div id="ad_two"></div>
+
+        <div class="main-guide-proc">
+            <div class="inner">
+                <h3 class="main-guide-tit">위프(WEE.P) 진행 프로세스</h3>
+                <div class="tab">
+                    <ul>
+                        <li><a href="#tabPrco1" class="on">프리랜서</a></li>
+                        <li><a href="#tabPrco2" >파트너</a></li>
+                        <li><a href="#tabPrco3">클라이언트</a></li>
+                    </ul>
+                    <!-- <div class="use">
+                        <label><input id="check" type="checkbox"><i></i></label>
+                    </div> -->
+                </div>
+                <div id="tabPrco1" class="guide-proc-wrap">
+                    <div class="guide-proc-tab">
+                        <ul>
+                            <li><a href="#tabGuide01" class="on">1</a></li>
+                            <li><a href="#tabGuide02">2</a></li>
+                            <li><a href="#tabGuide03">3</a></li>
+                            <li><a href="#tabGuide04">4</a></li>
+                            <li><a href="#tabGuide05">5</a></li>
+                        </ul>
+                        <div class="guide-proc-deco">
+                            <div class="deco-black-line"></div>
+                            <div class="deco-fill-line"></div>
+                        </div>
+                    </div>
+                    <div id="tabGuide01" class="guide-proc-box on">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_01.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 01</span>
+                                <h4 class="guide-proc-tit">이력서 등록 및 상담</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                프로필을 등록하게 되면 프로젝트 지원 및 매칭이 가능합니다. 최신의 정보를 유지해 주시면 AI가 프로젝트를 추천하며, 담당 매니저가 전담하여 관리합니다. 
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="" class="guide-proc--prev"></a>
+                                    <a href="#tabGuide02" class="guide-proc--link">프로젝트 검색(맞춤, AI)<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide02" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_02.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 02</span>
+                                <h4 class="guide-proc-tit">프로젝트 검색(맞춤, AI)</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                등록된 프로필을 기준으로 AI 추천 프로젝트 또는 직접 조건검색하여 프로젝트에 지원하게 됩니다.</br>
+                                매니저들은 클라이언트(기업) 회원이 등록한 프로젝트와 프리랜서의 매칭을 위해 초기 상담을 진행하고, 계약까지 체계적으로 관리하게 됩니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide01" class="guide-proc--prev"><span><</span>이력서 등록 및 상담</a>
+                                    <a href="#tabGuide03" class="guide-proc--link">인터뷰 진행<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide03" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_03.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 03</span>
+                                <h4 class="guide-proc-tit">인터뷰 진행</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                프로젝트에 지원 후 클라이언트와 인터뷰를 진행하게 됩니다.</br>
+                                인터뷰는 클라이언트가 지정한 인터뷰 장소나 위프의 사무실에서 진행하게 됩니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide02" class="guide-proc--prev"><span><</span>프로젝트 검색(맞춤, AI)</a>
+                                    <a href="#tabGuide04" class="guide-proc--link">프로젝트 계약<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide04" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_04.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 04</span>
+                                <h4 class="guide-proc-tit">프로젝트 계약</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                프리랜서 회원의 계약에 대한 별도의 이용요금이나 수수료는 발생하지 않습니다.</br>
+                                프로젝트 대금 및 과업범위 보호를 위한 에스크로 표준계약서를 작성해 드립니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide03" class="guide-proc--prev"><span><</span>인터뷰 진행</a>
+                                    <a href="#tabGuide05" class="guide-proc--link">프로젝트 진행 및 완료<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide05" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_05.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 05</span>
+                                <h4 class="guide-proc-tit">프로젝트 진행 및 완료</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                위프에서는 프로젝트 계약후 완료까지 진행에 대하여 체계적인 관리를 통해 상호 만족도를 높입니다.</br>
+                                프로젝트 완료시 계약관계에 따른 정산을 도와 드리고, 상호 분쟁이 발생하지 않도록 중재와 적극적인 소통을 지원합니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide04" class="guide-proc--prev"><span><</span>프로젝트 계약</a>
+                                    <a href="#" onclick="return false;" class="guide-proc--link">프로젝트 진행 및 완료<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabPrco2" class="guide-proc-wrap hidden">
+                    <div class="guide-proc-tab">
+                        <ul>
+                            <li><a href="#tabGuide11" class="on">1</a></li>
+                            <li><a href="#tabGuide12">2</a></li>
+                            <li><a href="#tabGuide13">3</a></li>
+                            <li><a href="#tabGuide14">4</a></li>
+                            <li><a href="#tabGuide15">5</a></li>
+                        </ul>
+                        <div class="guide-proc-deco">
+                            <div class="deco-black-line"></div>
+                            <div class="deco-fill-line"></div>
+                        </div>
+                    </div>
+                    <div id="tabGuide11" class="guide-proc-box on">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_01.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 01</span>
+                                <h4 class="guide-proc-tit">이력서 등록 및 상담</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                프로필을 등록하게 되면, 아웃소싱 지원 및 매칭이 가능합니다.</br>
+                                프로필 관리에서 최신의 정보를 유지해 주시면 AI가 아웃소싱을 추천하며, 담당 매니저가 전담하여 관리합니다. 
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="" class="guide-proc--prev"></a>
+                                    <a href="#tabGuide12" class="guide-proc--link">아웃소싱 검색(맞춤, AI)<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide12" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_02.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 02</span>
+                                <h4 class="guide-proc-tit">아웃소싱 검색(맞춤, AI)</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                등록된 프로필을 기준으로 AI 추천 프로젝트 또는 직접 조건검색하여 아웃소싱에 지원하게 됩니다. 매니저들은 클라이언트(기업) 회원이 등록한 아웃소싱과 파트너의 매칭을 위해 초기 상담을 진행하고, 계약까지 체계적으로 관리하게 됩니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide11" class="guide-proc--prev"><span><</span>이력서 등록 및 상담</a>
+                                    <a href="#tabGuide13" class="guide-proc--link">인터뷰 진행<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide13" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_03.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 03</span>
+                                <h4 class="guide-proc-tit">인터뷰 진행</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                아웃소싱에 지원 후 클라이언트와 인터뷰를 진행하게 됩니다.</br>
+                                인터뷰는 클라이언트가 지정한 인터뷰 장소나 위프의 사무실에서 진행하게 됩니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide12" class="guide-proc--prev"><span><</span>아웃소싱 검색(맞춤, AI)</a>
+                                    <a href="#tabGuide14" class="guide-proc--link">프로젝트 계약<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide14" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_04.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 04</span>
+                                <h4 class="guide-proc-tit">프로젝트 계약</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                파트너 회원의 계약에 대한 별도의 이용요금이나 수수료는 발생하지 않습니다.</br>
+                                아웃소싱 대금 및 과업범위 보호를 위한에스크로 표준계약서를 작성해 드립니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide13" class="guide-proc--prev"><span><</span>인터뷰 진행</a>
+                                    <a href="#tabGuide15" class="guide-proc--link">프로젝트 진행 및 완료<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide15" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_05.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 05</span>
+                                <h4 class="guide-proc-tit">프로젝트 진행 및 완료</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                위프에서는 아웃소싱 계약후 완료까지 진행에 대하여 체계적인 관리를 통해 상호 만족도를 높입니다.</br>
+                                아웃소싱 완료시 계약관계에 따른 정산을 도와 드리고, 상호 분쟁이 발생하지 않도록 중재와 적극적인 소통을 지원합니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide14" class="guide-proc--prev"><span><</span>프로젝트 계약</a>
+                                    <a href="#" onclick="return false;" class="guide-proc--link">프로젝트 진행 및 완료<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabPrco3" class="guide-proc-wrap hidden">
+                    <div class="guide-proc-tab">
+                        <ul>
+                            <li><a href="#tabGuide21" class="on">1</a></li>
+                            <li><a href="#tabGuide22">2</a></li>
+                            <li><a href="#tabGuide23">3</a></li>
+                            <li><a href="#tabGuide24">4</a></li>
+                            <li><a href="#tabGuide25">5</a></li>
+                        </ul>
+                        <div class="guide-proc-deco">
+                            <div class="deco-black-line"></div>
+                            <div class="deco-fill-line"></div>
+                        </div>
+                    </div>
+                    <div id="tabGuide21" class="guide-proc-box on">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_01.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 01</span>
+                                <h4 class="guide-proc-tit">프로젝트/아웃소싱 등록 및 상담</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                프로젝트와 아웃소싱을 등록하시면 담당 매니저가 전담하여 관리하며 AI와 매니저가 검증된 인재를 추천합니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="" class="guide-proc--prev"></a>
+                                    <a href="#tabGuide22" class="guide-proc--link">프리랜서/파트너 검색(맞춤, AI)<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide22" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_02.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 02</span>
+                                <h4 class="guide-proc-tit">프리랜서/파트너 검색(맞춤, AI)</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                클라이언트 회원이 프로젝트를 등록하게 되면, 프리랜서가 직접 지원하거나 AI와 매니저가 프리랜서를 추천하게 됩니다.</br>
+                                클라이언트 회원이 아웃소싱을 등록하게 되면, 파트너가 직접 지원하거나 AI와 매니저가 파트너를 추천하게 됩니다. 
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide21" class="guide-proc--prev"><span><</span>프로젝트/아웃소싱 등록 및 상담</a>
+                                    <a href="#tabGuide23" class="guide-proc--link">인터뷰 진행<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide23" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_03.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 03</span>
+                                <h4 class="guide-proc-tit">인터뷰 진행</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                프로젝트/아웃소싱에 지원한 프리랜서/파트너는 클라이언트와 인터뷰를 진행하게 됩니다.</br>
+                                아웃소싱의 경우 파트너에게 인터뷰 전 견적요청을 할 수 있습니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide22" class="guide-proc--prev"><span><</span>프리랜서/파트너 검색(맞춤, AI)</a>
+                                    <a href="#tabGuide24" class="guide-proc--link">프로젝트/아웃소싱 계약<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide24" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_04.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 04</span>
+                                <h4 class="guide-proc-tit">프로젝트/아웃소싱 계약</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                클라이언트 회원은 프리랜서/파트너, 위프와 3자 계약을 진행하게 되며 계약에 대하여 10%의 수수료가 발생됩니다.</br>
+                                </br>
+                                클라이언트와 업무 관련하여 분쟁의 소지가 있어 매니저의 철저한 관리로 프로젝트/아웃소싱 업무가 진행되게 됩니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide23" class="guide-proc--prev"><span><</span>인터뷰 진행</a>
+                                    <a href="#tabGuide25" class="guide-proc--link">프로젝트/아웃소싱 진행 및 완료<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabGuide25" class="guide-proc-box">
+                        <div class="guide-proc-img">
+                            <img src="img/ico_guideProc_05.png" alt=""/>
+                        </div>
+                        <div class="guide-proc-content">
+                            <div class="guide-proc-top">
+                                <span class="guide-proc-step">STEP 05</span>
+                                <h4 class="guide-proc-tit">프로젝트/아웃소싱 진행 및 완료</h4>
+                            </div>
+                            <p class="guide-proc-txt">
+                                위프에서는 프로젝트/아웃소싱 계약후 완료까지 진행에 대하여 체계적인 관리를 통해 상호 만족도를 높입니다.</br>
+                                프로젝트/아웃소싱 완료시 계약관계에 따른 정산을 도와 드리고, 상호 분쟁이 발생하지 않도록 중재와 적극적인 소통을 지원합니다.
+                            </p>
+                            <div class="guide-proc-bot">
+                                <div class="guide-proc-label">
+                                    <a href="#tabGuide24" class="guide-proc--prev"><span><</span>프로젝트/아웃소싱 계약</a>
+                                    <a href="#" onclick="return false;" class="guide-proc--link">프로젝트 진행 및 완료<span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function(){
+                $('.guide-proc-tab a').on('click',function(e){
+                    e.preventDefault();
+                    var $gplLink = $($(this).attr('href')),
+                        $gpl = $(this).parent(),
+                        $gplIndex = $gpl.index() + 1,
+                        $gplW = $gpl.width();
+
+                    $gpl.siblings().find('a').removeClass('on already');
+                    $gpl.prevAll().find('a').addClass('already');
+                    $(this).removeClass('already');
+                    $(this).addClass('on');
+                    $(this).parents("ul").siblings().find(".deco-fill-line").width($gplW * $gplIndex);
+                    $gplLink.siblings('[id^=tab]').removeClass('on');
+                    $gplLink.addClass('on');
+                });
+                $('.guide-proc--link, .guide-proc--prev').on('click',function(e){
+                    e.preventDefault();
+                    var $liLink = $($(this).attr('href')),
+                        $liIndex = $liLink.index(),
+                        $subGpl = $(this).parents('.guide-proc-wrap').children(".guide-proc-tab").children("ul"),
+                        $subGplList = $subGpl.children();
+                        $subGplW = $subGplList.width();
+
+                    $liLink.siblings('[id^=tab]').removeClass('on');
+                    $liLink.addClass('on');
+                    $subGplList.find('a').removeClass('on already');
+                    $subGplList.eq($liIndex-1).prevAll().find('a').addClass('already');
+                    $subGplList.eq($liIndex-1).children("a").addClass('on');
+                    $subGpl.siblings().find(".deco-fill-line").width($subGplW * $liIndex);
+                });
+            })
+        </script>
+
+        <div class="main-weep-review">
+    		<div class="main-weep-review-top">
+    			<h2>위프 <span class="top_dot">후</span><span class="top_dot">기</span></h2>
+    			<p>위프를 사용하신 사용자들의 생생한 후기를 만나보세요</p>
+    		</div>
+    		<div class="review-swiper">
+    			<div class="swiper-container">
+    				<div class="swiper-wrapper">
+    					<div class="swiper-slide">
+                            <div class="item">
+                                <div><i class="icon-quotes"></i></div>
+								<p class="review_tit">프리랜서에게 너무 좋은 싸이트!</p>
+        						<p class="cont">기존에 외주를 구하는데 많은 어려움이 있었는데, 위프에서 적절한 프리랜서와
+                                    편리하게 채팅으로 대화하며 조율이 가능한게 큰 장점인것 같습니다.
+                                    맞춤검색도 매우 편리하네요. 좋은 기억으로 앞으로 꾸준히 사용해보겠습니다. </p>
+        						<div class="profile">
+                                    <div class="pic">
+                                        <img src="img/@img-profile.png" alt="회원얼굴사진">
+                                    </div>
+                                    <div class="name">UIUX_02</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div><i class="icon-quotes"></i></div>
+								<p class="review_tit">프리랜서에게 너무 좋은 싸이트!</p>
+        						<p class="cont">하루만에 8명의 지원자가발생해서 빠르게 프로젝트를완료할 수 있었습니다.</p>
+        						<div class="profile">
+                                    <div class="pic">
+                                        <img src="img/@img-profile.png" alt="회원얼굴사진">
+                                    </div>
+                                    <div class="name">UIUX_02</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div><i class="icon-quotes"></i></div>
+								<p class="review_tit">프리랜서에게 너무 좋은 싸이트!</p>
+        						<p class="cont">하루만에 8명의 지원자가발생해서 빠르게 프로젝트를완료할 수 있었습니다.</p>
+        						<div class="profile">
+                                    <div class="pic">
+                                        <img src="img/@img-profile.png" alt="회원얼굴사진">
+                                    </div>
+                                    <div class="name">UIUX_02</div>
+                                </div>
+                            </div>
+                        </div>
+    				</div>
+    			</div>
+    		</div>
+            <script>
+                var reviewSwiper = new Swiper('.review-swiper .swiper-container', {
+                    effect: 'coverflow',
+                    grapCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    coverflowEffect: {
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 250,
+                        modifier: 1,
+                        slideShadows: false,
+                    },
+                    speed: 1000,
+                    //autoplay: {
+                    //    delay: 6000,
+                    //},
+                    loop: true,
+                });
+            </script>
+        </div>
+
+        <div class="main-customer">
+            <div class="inner">
+                <div class="row">
+    				<div class="col">
+                        <article class="">
+                            <h2>공지사항</h2>
+                            <div class="notice">
+                                <ul>
+                                    <li>
+                                        <a href="javascript: ;">
+                                            <span class="type">공지</span>
+                                            <span class="tit">위프 오픈 이벤트 진행</span>
+                                            <span class="date">2020.10.28</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript: ;">
+                                            <span class="type">공지</span>
+                                            <span class="tit"> 5월 1일 노동절 휴무</span>
+                                            <span class="date">2020.10.28</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript: ;">
+                                            <span class="type">공지</span>
+                                            <span class="tit">위프 워크샵 휴무공지 안내</span>
+                                            <span class="date">2020.10.28</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript: ;">
+                                            <span class="type">공지</span>
+                                            <span class="tit">위프 동영상인터뷰 진행 안내</span>
+                                            <span class="date">2020.10.28</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript: ;">
+                                            <span class="type">공지</span>
+                                            <span class="tit">위프 운영 점검 공지</span>
+                                            <span class="date">2020.10.28</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-auto">
+                	    <h2>이용안내</h2>
+                        <div class="row">
+                            <div class="col">
+                                <article>
+                                    <div class="guide">
+                                        <a href="#">
+                                            <img src="img/main_banner1.png" alt="">
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article>
+                                    <div class="client">
+                                        <a href="#">
+                                            <img src="img/main_banner2.png" alt="">
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    	<!--
+        <div id="banner">
+            <div class="inner">
+
+                <div class="swiper-banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/banner_img01.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner_img02.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner_img03.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner_img04.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner_img05.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner_img01.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner_img02.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner_img03.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner_img04.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner_img05.png" alt="">
+                        </div>
+                    </div>
+                </div>
+    			-->
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper2 = new Swiper('.swiper-banner', {
+                        slidesPerView: 5,
+                        loop: true,
+                        spaceBetween: 30,
+                        autoplay: true,
+                        speed: 1000,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+
+        <div id="footer">
+          
+			<div class="footer_inner">
+				<div class="inner">
+					<div class="wrap">
+						<div class="left">
+							<div class="f_logo">
+								<img src="img/f_logo_new.png" alt="">
+								<p>주식회사 케이엘큐브</p>
+							</div>
+							<div class="contact">
+								<span class="bar">지원센터:  02-3442-5001</span>
+								<span>운영시간 : 평일 09:00~18:00 / 주말.공휴일 휴무</span>
+							</div>
+							<div class="address">
+								<span class="bar">개인정보보호책임자 : 유영복</span><span>사업자등록번호 : 154-81-00795</span><br/>
+								<span class="bar">주소 : 서울시 강남구 선릉로 133길 4 아이큐빌딩 3층</span><span class="bar">통신판매업신고 : 제 2020-서울강남-02210 호</span><span>직업정보제공사업 신고번호 : J1200020210006</span>
+							</div>
+						</div>
+						<div class="right help">
+							<div>
+								<p><a href="#!">회사소개</a></p>
+								<p><a href="#!">지원센터</a></p>
+							</div>
+							<div>
+								<p><a href="#!">프로젝트 문의</a></p>
+								<p><a href="#!">프리랜서 문의</a></p>
+							</div>
+							<div>
+								<p><a href="/page/service/agreement.html">이용약관</a></p>
+								<p><a href="/page/service/privacy.html">개인정보처리방침</a></p>
+							</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="f_bottom">
+					<p class="copy"> Copyright © 2020 WEEP. Inc. All rights reserved.</p>
+					<p>위프는 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가 부담하고, 이에 대하여 위프인은 일체 책임지지 않습니다.</p>
+				</div>
+	
+			</div>
+        </div>
+    </div>
+</div>
+
+<!-- 회사주소 찾기 팝업 -->
+<div id="adress_pop" class="overlay">
+    <div class="popup">
+        <a href="#none" class="close">×</a>
+        <h2>주소찾기</h2>
+        <div class="info">
+            <div class="fle">
+                <div class="lef">
+                    <div class="wrap">
+                        <dl class="w50">
+                            <dt>시도</dt>
+                            <dd>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <dl class="w50">
+                            <dt>시군구</dt>
+                            <dd>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p class="tit">
+                        * 찾으시는 시도와 시군구를 선택 후, 주소를 검색하세요.
+                    </p>
+                    <p class="txt">
+                        예)테헤란로, 삼성동, 송암빌딩, 반포 자이아파트
+                    </p>
+                    <div class="btn_wrap">
+                        <a href="#" class="btn">취소</a><a href="#" class="btn on">저장</a>
+                    </div>
+                </div>
+                <div class="ref">
+                    <input type="button" value="검색" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 회사주소 찾기 팝업 -->
+<!-- 아이디 찾기 -->
+<div id="find_id" class="overlay">
+    <div class="popup">
+        <ul class="find_id">
+            <li>
+                <a href="#">프리랜서 회원</a>
+            </li>
+            <li>
+                <a href="#">아웃소싱 회원</a>
+            </li>
+            <li>
+                <a href="#">클라이언트 회원</a>
+            </li>
+        </ul>
+        <a href="#none" class="close">×</a>
+        <h2>아이디 찾기</h2>
+
+
+        <div class="info">
+            <div class="fle">
+                <div class="lef">
+                    <div class="wrap">
+                        <dl class="w50">
+                            <dt>시도</dt>
+                            <dd>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <dl class="w50">
+                            <dt>시군구</dt>
+                            <dd>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p class="tit">
+                        * 찾으시는 시도와 시군구를 선택 후, 주소를 검색하세요.
+                    </p>
+                    <p class="txt">
+                        예)테헤란로, 삼성동, 송암빌딩, 반포 자이아파트
+                    </p>
+                    <div class="btn_wrap">
+                        <a href="#" class="btn">취소</a><a href="#" class="btn on">저장</a>
+                    </div>
+                </div>
+                <div class="ref">
+                    <input type="button" value="검색" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+</html>

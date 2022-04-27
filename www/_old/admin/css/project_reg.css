@@ -1,0 +1,858 @@
+/* 20200722 css 수정사항*/
+input[type="radio"]{
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.roundInput>select{
+  border: none;
+  height: auto;
+  border-radius:0;  
+  -webkit-appearance:none;  
+  -moz-appearance:none;  
+  appearance:none;
+  background: none;
+}
+div.textProject_add {}
+
+div.textProject_add div.wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 54px;
+  line-height: 54px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+div.textProject_add div.wrap article {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+div.textProject_add div.wrap article img {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+div.textProject_add div.wrap article:nth-of-type(2) {
+  color: #999999;
+  position: relative;
+}
+
+div.textProject_add div.wrap article:nth-of-type(2) {
+  padding-right: 30px;
+}
+
+div.textProject_add div.wrap article:nth-of-type(2)>span.btn {
+  position: absolute;
+  right: -10px;
+  top: 65%;
+  transform: translateY(-50%);
+}
+div.textProject_add div.wrap article:nth-of-type(2)>span.btn{}
+div.textProject_add div.wrap article:nth-of-type(2)>span.btn>a{}
+.btnBox {
+  text-align: center;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.roundInput>input.sm {
+  width: 30px !important;
+  margin-right: 10px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  text-indent: 5px !important;
+  top: 1px;
+  position: relative;
+}
+
+.roundInput>input.sm::placeholder {
+  color: #333;
+  font-weight: bold;
+}
+
+/* 20200722 css 수정사항*/
+
+.content_info:not(.search_box .datepicker) input {
+  opacity: 1;
+  display: none;
+}
+
+.datepicker {background: url(../admin_img/date.png) no-repeat center right;}
+
+.content_info input:checked+label {
+  background: url(../admin_img/bg_radio_gender_on.png) no-repeat;
+  opacity: 1;
+  padding-left: 22px;
+  vertical-align: top;
+  font-size: 14px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-position: left center;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.content_info label {
+  background: url(../admin_img/bg_radio_gender_off.png) no-repeat;
+  opacity: 1;
+  padding-left: 22px;
+  vertical-align: top;
+  font-size: 14px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-position: left center;
+  /* margin-right: 5px; */
+  display: inline-block;
+}
+
+.content_info input[type="checkbox"]+label {
+  background: url(../admin_img/input_check1_off.png);
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  padding-left: 22px;
+  
+}
+
+.content_info .field input[type="checkbox"]+label {width: 120px;}
+
+.content_info .detail_sel input[type="checkbox"]+label {width: 120px; margin-bottom: 15px;}
+
+.processCotent .detail_sel .textProject {padding: 15px 10px 0 10px;}
+
+.content_info input[type="checkbox"]:checked+label {
+  background: url(../admin_img/input_check1_on.png);
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  padding-left: 22px;
+}
+
+.content_info label input, .content_info label label {
+  opacity: 1;
+}
+
+.content_info:not(.search_box) .content {
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.content_info .proLnb {
+  display: flex;
+  background: #fff;
+}
+
+.content_info .proLnb li {
+  flex: 1;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  border-bottom: 3px solid #999;
+  padding: 20px;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+.content_info .proLnb li.on {
+  color: #f38f1e;
+  border-bottom: 3px solid #f38f1e;
+}
+
+.content_info .littleTit {
+  font-size: 20px;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.content_info .notice {
+  display: flex;
+  align-items: center;
+  color: #adadad;
+  font-size: 13px;
+  margin-left: calc(33.3% + 20px);
+  padding-bottom: 50px;
+}
+
+.content_info.btnBox {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.processCotent {
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.processCotent .cProcessBox {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.processCotent .cProcessBox .cProcess {
+  padding: 50px 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.processCotent .cProcessBox .cProcess li {
+  flex: 1;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.processCotent .cProcessBox .cProcess li .cProcessTit {
+  font-size: 34px;
+}
+
+.processCotent .cProcessBox .cProcess li .uBar {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30px;
+  height: 2px;
+  background: #333;
+}
+
+.processCotent .cProcessBox .cProcess li .cPBtnBox {
+  border-radius: 30px;
+  height: 300px;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 30px #ccc;
+}
+
+.processCotent .cProcessBox .cProcess li .cPBtnBox img {
+  padding-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.processCotent .cProcessBox .cProcess li .cPBtnBox .cPBtnBoxTit {
+  font-size: 20px;
+}
+
+.processCotent .cProcessBox .cProcess li .cPBtnBox .cPBtnBoxDesc {
+  padding: 30px 0;
+  font-weight: normal;
+}
+
+.processCotent .cProcessBox .cProcess li .cPBtnBox .cPBtn {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px #ccc;
+}
+
+.processCotent .cProcessBox .cProcess li .cPBtnBox.on {
+  color: #fff;
+  background-color: #354fb1;
+}
+
+.processCotent .cProcessBox .cProcess li .cPBtnBox.on .cPBtn {
+  color: #354fb1;
+  box-shadow: none;
+}
+
+.processCotent .cProcessBox .cProcess li.cPMethodBox {
+  flex: 2;
+}
+
+.processCotent .cProcessBox .cProcess li.cPMethodBox .cPMethod li {
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px #ccc;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.processCotent .cProcessBox .cProcess li.cPMethodBox .cPMethod li img {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.processCotent .cProcessBox .cProcess li.cPMethodBox .cPMethod li.on {
+  border: 2px solid #354fb1;
+}
+
+.processCotent .textProject {
+  padding: 15px 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.processCotent .pl20 {padding:15px 20px;}
+
+/* .processCotent .textProject input[type='text'] {padding-left:15px;} */
+
+.processCotent .textProject > p {margin-bottom: 10px;}
+.processCotent .textProject > p:last-child {margin-bottom: 0;}
+
+.tPtime {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.tPtime .selectList {
+  display: flex;
+  align-items: center;
+  width: 51.1%;
+  margin-left: 26px;
+}
+
+.tPtime .sel {margin-left:7px;}
+
+.tPtime .selectList.sel span.blank {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.tPtime .selectList.sel>li {
+  flex: 0 1 50px;
+  margin-right: 5px;
+}
+
+.tPtime .selectList>li {
+  flex: auto;
+  position: relative;
+  margin: 0 5px;
+  height: 40px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.tPtime .selectList.sel>li>select {
+  width: 50px;
+}
+
+.tPtime .selectList>li>select {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: solid 1px #dbdbdb;
+  background-color: #ffffff;
+  letter-spacing: -0.52px;
+  text-align: left;
+  color: #333333;
+  padding-left: 8px;
+  font-weight: bold;
+  /* background: url(/img/bg_smail_sel.png) no-repeat center right 10px; */
+  background-color: #fff;
+  font-weight: 400;
+}
+
+.tPtime .cTextInputL {
+  flex: 1;
+  padding: 5px 0;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+
+.tPtime>.cTextInput {
+  flex: 9;
+  margin-right: 20px;
+}
+
+.processCotent .textProject.blockList>div {
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.processCotent .textProject input[type="text"] {
+  display: inline-block;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+}
+
+.processCotent .textProject input[type="text"].cTextInput {
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+  height: 40px;
+  padding-left: 15px;
+}
+
+.processCotent .textProject input[type="text"].cTextInput {}
+
+.processCotent .textProject label {
+  margin-left: 15px;
+}
+.processCotent .textProject label.noneLabel {margin-left: 0;}
+
+
+
+.processCotent .textProject label.vm {margin-top: 11px;}
+
+.processCotent .textProject.on {
+  border: 1px solid #f38f1e;
+}
+
+.processCotent .initialInfo {
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.processCotent .initialInfo .initialInfoTit {
+  padding: 10px 0 20px;
+  font-size: 18px;
+}
+
+.processCotent .initialInfo .detailJobDesc {
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.processCotent .initialInfo .detailJobDesc:last-child {
+  padding-bottom: 20px;
+}
+
+.processCotent .initialInfo .detailJobDesc::before {
+  content: "\2027";
+}
+
+.processCotent .initialInfo .detailJobDesc.danger {
+  text-indent: 10px;
+  color: #d74444;
+}
+
+.processCotent .initialInfo .detailJobDesc.danger::before {
+  content: "\203B";
+}
+
+.processCotent .detailInfo {
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.processCotent .initialInfo .detailInfo {
+  padding: 20px 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.processCotent .initialInfo .msg {
+  font-family: "Noto Sans KR", NanumGothic, "Malgun Gothic", sans-serif;
+  width: 100%;
+  height: 200px;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 0 15px!important;
+  box-sizing: border-box;
+}
+
+.processCotent .dDesc {
+  font-size: 14px;
+  color: #666;
+  padding: 0px 0px 20px;
+  box-sizing: border-box;
+}
+
+.processCotent .noneLabel {
+  background: none;
+  width: 100%;
+  padding: 0;
+}
+
+.processCotent .fileProject {
+  padding: 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.processCotent .fileDesc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#fileUpload {display:none;}
+
+.processCotent .fileDesc .fileUploadDesc {
+  flex: 4;
+  text-indent: 10px;
+  color: #999;
+  padding-left: 15px;
+}
+
+.processCotent .fileDesc .fileUploadBtn {
+  flex: 1;
+  height: 50px;
+  font-weight: bold;
+  background: #333;
+  color: #fff;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  text-align: center;
+  line-height: 50px;
+}
+
+.processCotent .addSup li ul.addSupList {
+  display: flex;
+  align-items: center;
+}
+
+.processCotent .addSup li ul.addSupList li {
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.processCotent .addSup li ul.addSupList li.addSupListDesc {
+  flex: 3;
+}
+
+.processCotent .addSup li ul.addSupList li.addSupListDesc::before {
+  content: "\2027";
+}
+
+.processCotent .addSup li ul.addSupList li.yes {
+  flex: 1;
+  display: flex;
+}
+
+.processCotent .addSup li ul.addSupList li.yes input, .processCotent .addSup li ul.addSupList li.yes label {
+  margin: 0;
+  color: #999;
+}
+
+.processCotent .addSup li ul.addSupList li.yes input .on, .processCotent .addSup li ul.addSupList li.yes label .on {
+  color: #333;
+}
+
+.processCotent .addSup li ul.addSupList li.yes .alignC {
+  align-items: center;
+}
+
+.processCotent .addSup li ul.addSupList li.no {
+  flex: 1;
+}
+
+.processCotent .calBudget {
+  background: #f4f5f7;
+}
+
+.processCotent .calBudget li {
+  width: 100%;
+}
+
+.processCotent .calBudget li ul.calBudgetLi {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.processCotent .calBudget li ul.calBudgetLi li {
+  display: flex;
+  justify-content: space-around;
+  margin: 2.5px 10px;
+}
+
+.processCotent .calBudget li ul.calBudgetLi li span {
+  margin-right: 30px;
+}
+
+.processCotent .calBudget li ul.calBudgetLi li:nth-child(1) {
+  flex: 2;
+}
+
+.processCotent .calBudget li ul.calBudgetLi li:nth-child(2) {
+  margin-right: 50px;
+  flex: 2;
+  line-height: 16px;
+}
+
+.processCotent .calBudget li ul.calBudgetLi li:nth-child(3) {
+  flex: 3;
+}
+
+.processCotent .calBudget li ul.calBudgetLi li:nth-child(4) {
+  flex: 3;
+}
+
+.processCotent .calBudget li ul.calBudgetLi li:nth-child(5) {
+  flex: 1;
+  justify-content: start;
+  padding-right: 13px;
+  box-sizing: border-box;
+}
+
+.processCotent .calBudget li ul.calBudgetLi li img {
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.processCotent .roundInput {
+  border: 1px solid #dfdfdf;
+  border-radius: 15px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background: #fff;
+  height: 40px;
+  line-height: 18px;
+}
+
+.processCotent .textProject input.datepicker {
+  width:125px;
+  height: 20px;
+  position: relative;
+  top: -2px;
+  font-size: 14px;
+}
+
+.processCotent .roundInput img {
+  width: 15px;
+  padding-left: 60px;
+  object-fit: contain;
+}
+
+.processCotent div.projectTab {
+  margin-left: 20px;
+  width: calc(100% - 40px);
+  display: table;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.processCotent div.projectTab ul.projTabRow {
+  display: table-row;
+}
+
+.processCotent div.projectTab ul.projTabRow li {
+  display: table-cell;
+  border: 1px solid #ddd;
+}
+
+.processCotent div.projectTab ul.projTabRow li.projTabTit {
+  width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.processCotent div.projectTab ul.projTabRow li.projTabDesc {
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.processCotent div.comDesc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.processCotent div.comDesc .comDescImgD {
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.processCotent div.comDesc img.comDescImg {
+  object-fit: contain;
+}
+
+.processCotent div.comDesc p.comDescTit {
+  font-size: 26px;
+  font-weight: bold;
+  padding: 15px 0 25px;
+  box-sizing: border-box;
+}
+
+.processCotent div.comDesc p.comDescP {
+  color: #666666;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.processCotent div.comDesc .btnBox .btn01:last-child {
+  width: 200px;
+}
+
+.processCotent .ResProjDescDetail {
+  background: #f4f4f4;
+  width: 90%;
+  margin: 20px 5% 50px;
+  padding: 40px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.processCotent .ResProjDescDetail li::before {
+  content: "\2027";
+}
+
+.processCotent .deadline {
+  display: flex;
+  align-items: center;
+}
+
+.processCotent .deadline li {
+  margin: 0px 10px;
+}
+
+.processCotent .deadline li.deadlineTit {
+  flex: 1;
+}
+
+.processCotent .deadline li.roundInputch {
+  flex: 2;
+  border: 1px solid #dfdfdf;
+  border-radius: 15px;
+  padding: 8px 15px;
+  height: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  background: #fff;
+}
+
+.processCotent .deadline li.roundInputch .deadlineDate01_1 {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.processCotent .deadline li.deadlineDesc {
+  flex: 7;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.processCotent .deadline li.deadlineDesc>p {
+  color: #745e5e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.processCotent .freeApplicant {
+  background-color: #f4f5f7;
+}
+
+.processCotent .freeApplicant .appliList {
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-collapse: collapse;
+  height: 92px;
+}
+
+.processCotent .freeApplicant .appliList li {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.processCotent .freeApplicant .appliList li.appliListDesc {
+  flex: 8;
+  border-right: none;
+  height: 62px;
+}
+
+.processCotent .freeApplicant .appliList li.appliListDesc input[type="text"] {
+  text-indent: 0;
+}
+
+.processCotent .freeApplicant .appliList li.appliListBtn {
+  flex: 1.5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.processCotent .freeApplicant .appliList li.appliListBtn2 {
+  padding: 0 20px;
+  height: 62px;
+}
+
+.processCotent .freeApplicant .appliList li.appliListBtn a {
+  /* margin-right: 10px;
+  margin-left: 10px; */
+  /* margin:0 10px; */
+}
+
+.processCotent .freeApplicant .appliList li.appliListBtn a:first-child {
+  margin:0 5px 0 10px;
+}
+
+.processCotent .freeApplicant .appliList li.appliListBtn a img {
+  /* width: 16px;
+  height: 16px; */
+}
+
+.processCotent .freeApplicant .appliList li.appliListBtn .appliListBtnl {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../admin_img/input_check_off.png) no-repeat center left 10px;
+  background-size: contain;
+}
+
+.processCotent .freeApplicant .appliList li.appliListBtn .appliListBtnl.on {
+  background: url(../admin_img/input_check_on.png) no-repeat center left 10px;
+  background-size: contain;
+}
+
+.processCotent .bgBlack {
+  background: #333;
+  color: #fff;
+}
+
+.processCotent .qIcon {
+  margin-left: 10px;
+}
+.tab_reg>ul>li>a.on{
+  color: #f38f1e;
+}
+.tab_reg>ul>li>a{
+  display: flex;
+  justify-content: center;
+  line-height: 33px;
+  color: #999;
+}
+
+/*# sourceMappingURL=project_reg.css.map */
+.flex1{
+  flex: 1 !important;
+}
+.flex2{
+  flex: 2 !important;
+}
+.flex3{
+  flex: 3 !important;
+}

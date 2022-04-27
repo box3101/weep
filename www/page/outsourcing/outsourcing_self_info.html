@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+      <title>위프</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta property="og:title" content="위프">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="">
+      <meta property="og:image" content="../../img/logo.png">
+      <meta property="og:image:type" content="../../image/png">
+      <meta property="og:image:width" content="173">
+      <meta property="og:image:height" content="65">
+      <meta property="og:description" content="">
+
+      <link rel="stylesheet" href="../../css/@default.css" />
+      <link rel="stylesheet" href="../../css/main.css">
+      <link rel="stylesheet" href="../../css/font.css">
+      <link rel="stylesheet" href="../../css/swiper.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet">
+
+
+      <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+      <script type="text/javascript" src="../../js/slick.min.js"></script>
+      <script type="text/javascript" src="../../js/swiper.min.js"></script>
+      <script type="text/javascript" src="../../js/main.js"></script>
+      <script type="text/javascript" src="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.js"></script>
+</head>
+
+<body>
+	<div id="header" class="sub_header">
+		<div class="inner clearfix">
+			<h1 class="logo">
+				<a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+			</h1>
+			<ul id="main_gnb">
+				<li>
+					<a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+				</li>
+				<li>
+					<a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+				</li>
+				<li>
+					<a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+				</li>
+				<li>
+					<a href="/page/partner_sch/partner.html">파트너 검색</a>
+				</li>
+				<li>
+					<a href="#">WEE.P 소개
+					</a>
+				</li>
+
+			</ul>
+			<ul class="clearfix small-txt">
+				<li>
+					<a href="#">이용안내</a>
+				</li>
+				<li>
+					<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+				</li>
+			</ul>
+
+			<ul class="util clear">
+				<li>
+					<a href="/page/login/login01.html">로그인</a>
+				</li>
+				<li>
+					<a href="#">회원가입</a>
+				</li>
+
+				<div class="memberImg">
+					<img src="/img/bg_member.png" alt="회원가입혜택">
+				</div>
+			</ul>
+			<ul class="login-util clear">
+				<li>
+					<a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지" class="member-img"></span>홍길동</a>
+					<ul class="member-menu">
+						<li>
+							<a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+						</li>
+						<li>
+							<a href="">로그아웃</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	<nav id="navi" style="top: 186px;">
+		<div class="project">
+			<div class="project-con">
+				<h2>최근 본 프로젝트 <span class="num">5</span></h2>
+				<ul>
+					<li>
+						<a href="#" class="on">비상주 오프라인 매장</a>
+					</li>
+					<li>
+						<a href="#">안드로이드 프론트</a>
+					</li>
+					<li>
+						<a href="#">비상주 오프라인 매장</a>
+					</li>
+					<li>
+						<a href="#">인천국제공항</a>
+					</li>
+				</ul>
+				<div class="more">
+					<a href="">더보기</a>
+				</div>
+			</div>
+			<div class="freelan-con">
+				<h2>최근 본 프리랜서 <span class="num">2</span></h2>
+				<ul>
+
+					<li>
+						<a href="#" class="on">김철수</a>
+					</li>
+					<li>
+						<a href="#">홍길동</a>
+					</li>
+					<li>
+						<a href="#">비상주</a>
+					</li>
+					<li>
+						<a href="#">김길동</a>
+					</li>
+				</ul>
+				<div class="more">
+					<a href="">더보기</a>
+				</div>
+			</div>
+		</div>
+		<ul class="banner">
+			<li>
+				<a href="#">
+					<img src="img/navi_banner01.png" alt="네비배너1">
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<script>
+		$(function () {
+			$(window).scroll(function () {
+				var scroll = $(this).scrollTop();
+				var navi_top = $("#navi").offset().top;
+
+				console.log(scroll);
+				console.log(navi_top);
+
+				if (scroll > 186) {
+					  $("#navi").css({
+							"position": "fixed",
+							"top": "20px"
+					  })
+				} else {
+					  $("#navi").css({
+							"position": "absolute",
+							"top": "186px"
+					  })
+				}
+			})
+		})
+	</script>
+
+      <div id="sub_contents">
+            <div class="sub_tit">
+                  <div class="inner">
+                        <div class="top_wrap">
+                              <h1>
+                                     아웃소싱 검색
+                              </h1>
+                              <ul class="s_util wrap">
+                                    <li>
+                                          <a href="#">
+                                                <!--img src="../../img/" alt="" -->
+                                          </a>
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+            </div>
+
+            <div id="project_self">
+                  <div class="inner">
+                        <div class="top_wrap">
+                              <div class="top">
+                                    <h2> 정보</h2>
+                                    <div class="top_info">
+                                          <div class="lef">
+                                                <div class="top_txt">
+                                                      <p>
+                                                            <span class="btn_s01">모집중</span>
+                                                            <span class="date">
+                                                                  시작일
+                                                                  <b>2020. 05 .07(목)</b>
+                                                            </span>
+                                                            <img src="../../img/project_top_arrow.png" alt="화살표">
+                                                            <span class="date">
+                                                                  마감일
+                                                                  <b>2020. 05 .07(목)</b>
+                                                            </span>
+                                                            <span class="date_d_day">
+                                                                  6일 23:28:00
+                                                            </span>
+                                                            <img src="../../img/calander.png" alt="달력 이미지">
+                                                      </p>
+                                                      <h3>[중급~고급 /FLUTTER/2개월/내방역]모바일포인트서비스 플랫폼 구축</h3>
+                                                </div>
+                                                <ul class="info">
+                                                      <li>
+                                                            <dl>
+                                                                  <dt>투입기간</dt>
+                                                                  <dd class="yel">2020. 04. 30 ~ 20V7. 30</dd>
+                                                            </dl>
+                                                      </li>
+                                                      <li>
+                                                            <dl>
+                                                                  <dt>근무지역</dt>
+                                                                  <dd>대전(숙소제공)</dd>
+                                                            </dl>
+                                                      </li>
+                                                      <li>
+                                                            <dl>
+                                                                  <dt>전문기술</dt>
+                                                                  <dd>JSP, Oracle</dd>
+                                                            </dl>
+                                                      </li>
+                                                      <li>
+                                                            <dl>
+                                                                  <dt>모집인원</dt>
+                                                                  <dd>2명</dd>
+                                                            </dl>
+                                                      </li>
+                                                      <li>
+                                                            <dl>
+                                                                  <dt>모집요건</dt>
+                                                                  <dd>JSP 개발자</dd>
+                                                            </dl>
+                                                      </li>
+                                                      <li>
+                                                            <dl>
+                                                                  <dt>예상금액</dt>
+                                                                  <dd>월 500 ~ 600만원</dd>
+                                                            </dl>
+                                                      </li>
+                                                </ul>
+                                          </div>
+                                          <div class="ref">
+                                                <div class="wrap">
+                                                      <div class="logo_img">
+                                                            <img src="../../img/ex_logo.png" alt="로고 이미지">
+                                                      </div>
+                                                      <p class="tit">클라이언트정보</p>
+                                                      <div class="dl_wrap">
+                                                            <dl>
+                                                                  <dt>회사명</dt>
+                                                                  <dd>(주)마이원시스템즈</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                  <dt>업종</dt>
+                                                                  <dd>전산시스템개발</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                  <dt>사원수</dt>
+                                                                  <dd>27명</dd>
+                                                            </dl>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <ul class="btns_wrap">
+                                    <li>
+                                          <a href="#" class="btn02 on">
+                                                <img src="../../img/files.png" alt="파일이미지">
+                                                 지원
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="#" class="btn02">
+                                                <img src="../../img/heart.png" alt="하트이미지">
+                                                관심  등록
+                                          </a>
+                                    </li>
+                              </ul>
+                        </div>
+
+                        <div class="info_wrap">
+                              <ul>
+                                    <li>
+                                          <a href="#none" class="on"
+                                                onclick="location.href='/page/outsourcing/outsourcing_self_info.html'">기본정보</a>
+                                    </li>
+                                    <li>
+                                          <a href="#none"
+                                                onclick="location.href='/page/outsourcing/outsourcing_self_info02.html'">상세정보</a>
+                                    </li>
+                                    <li>
+                                          <a href="#none"
+                                                onclick="location.href='/page/outsourcing/outsourcing_self_info03.html'">수행조건</a>
+                                    </li>
+                                    <li>
+                                          <a href="#none"
+                                                onclick="location.href='/page/outsourcing/outsourcing_self_info04.html'">모집요건</a>
+                                    </li>
+                                    <li>
+                                          <a href="#none"
+                                                onclick="location.href='/page/outsourcing/outsourcing_self_info05.html'">
+                                                문의</a>
+                                    </li>
+                                    <li>
+                                          <a href="#none">
+                                                지원자 수 <span>21</span> 명
+                                          </a>
+                                    </li>
+                              </ul>
+                              <div class="info">
+                                    <h2> 상세업무</h2>
+                                    <p class="txt">-기획 PL, 웹기획, 앱기획
+                                    </p>
+                                    <h2>의 현재 상황
+                                    </h2>
+                                    <div class="dl_wrap">
+                                          <dl>
+                                                <dt> 진행 분류
+                                                </dt>
+                                                <dd>- 신규  진행
+                                                </dd>
+
+                                          </dl>
+                                          <dl>
+                                                <dt> 상태 </dt>
+                                                <dd>
+                                                      -  계획 중(내부 계획수립 또는 고객사 제안 단계) <br>
+                                                      -  착수 준비 중 <br>
+                                                      -  착수 및 요구사항을 분석 중
+                                                </dd>
+                                          </dl>
+                                          <dl>
+                                                <dt>기획 상태</dt>
+                                                <dd>
+                                                      - 기획 전 <br>
+                                                      - 요구사항정의서 완료 <br>
+                                                      - 화면설계서(스토리보드, 와이어프레임) 작성 중
+                                                </dd>
+                                          </dl>
+                                          <dl>
+                                                <dt> 협업 가능 인력 상황
+                                                </dt>
+                                                <dd>
+                                                      IT  경험이 있는 인력이 있습니다. <br>
+                                                      - 협업 가능 인력 : 개발자
+                                                </dd>
+                                          </dl>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="similar_project">
+                              <h2>유사 </h2>
+
+                              <div class="wrap">
+                                    <article>
+                                          <a href="#" class="star">
+                                                <img src="../../img/star_off.png" alt="별">
+                                          </a>
+                                          <h2 class="pro_header">
+                                                <span class="left">
+                                                      <p>
+                                                            5월 5일 마감
+                                                            <span class="date">D-12</span>
+                                                      </p>
+                                                </span>
+                                                <span class="right">
+                                                      <span class="dif_de">개발</span>
+                                                      <span class="a1">모집중</span>
+                                                      <span class="a2">NEW</span>
+                                                </span>
+                                          </h2>
+                                          <h3>
+                                                [상주] 자사 인공지능 영상 솔루션 <br>
+                                                UI/UX 기획자 모집
+                                          </h3>
+                                          <ul>
+                                                <li>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/dates2.png" alt="기간이미지"> 기간
+                                                            </dt>
+                                                            <dd>
+                                                                  2020.05.04 ~ 2020.09.19(5개월)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_price.png" alt="비용이미지"> 비용
+                                                            </dt>
+                                                            <dd>
+                                                                  <span class="yel">300</span>만원 ~ <span
+                                                                        class="yel">550</span>만원 (경력에 따른 협의)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_file.png" alt="형태이미지"> 형태
+                                                            </dt>
+                                                            <dd>
+                                                                  파견 (파견은 월급여 지급)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_simple.png" alt="투입이미지"> 투입
+                                                            </dt>
+                                                            <dd>
+                                                                  인터뷰 후 바로 투입, 5월11일부터 즉시
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/vew.png" alt="조건이미지"> 조건
+                                                            </dt>
+                                                            <dd>
+                                                                  경력 5년 이상, 즉시 출근 가능자 우대
+                                                            </dd>
+                                                      </dl>
+                                                </li>
+                                          </ul>
+                                          <div class="area">
+                                                <span class="area1">근무지역</span>
+                                                <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                          </div>
+                                    </article>
+                                    <article>
+                                          <a href="#" class="star">
+                                                <img src="../../img/star_off.png" alt="별">
+                                          </a>
+                                          <h2 class="pro_header">
+                                                <span class="left">
+                                                      <p>
+                                                            5월 5일 마감
+                                                            <span class="date">D-12</span>
+                                                      </p>
+                                                </span>
+                                                <span class="right">
+                                                      <span class="dif_de">개발</span>
+                                                      <span class="a1">모집중</span>
+                                                      <span class="a2">NEW</span>
+                                                </span>
+                                          </h2>
+                                          <h3>
+                                                [상주] 자사 인공지능 영상 솔루션 <br>
+                                                UI/UX 기획자 모집
+                                          </h3>
+                                          <ul>
+                                                <li>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/dates2.png" alt="기간이미지"> 기간
+                                                            </dt>
+                                                            <dd>
+                                                                  2020.05.04 ~ 2020.09.19(5개월)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_price.png" alt="비용이미지"> 비용
+                                                            </dt>
+                                                            <dd>
+                                                                  <span class="yel">300</span>만원 ~ <span
+                                                                        class="yel">550</span>만원 (경력에 따른 협의)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_file.png" alt="형태이미지"> 형태
+                                                            </dt>
+                                                            <dd>
+                                                                  파견 (파견은 월급여 지급)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_simple.png" alt="투입이미지"> 투입
+                                                            </dt>
+                                                            <dd>
+                                                                  인터뷰 후 바로 투입, 5월11일부터 즉시
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/vew.png" alt="조건이미지"> 조건
+                                                            </dt>
+                                                            <dd>
+                                                                  경력 5년 이상, 즉시 출근 가능자 우대
+                                                            </dd>
+                                                      </dl>
+                                                </li>
+                                          </ul>
+                                          <div class="area">
+                                                <span class="area1">근무지역</span>
+                                                <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                          </div>
+                                    </article>
+                                    <article>
+                                          <a href="#" class="star">
+                                                <img src="../../img/star_off.png" alt="별">
+                                          </a>
+                                          <h2 class="pro_header">
+                                                <span class="left">
+                                                      <p>
+                                                            5월 5일 마감
+                                                            <span class="date">D-12</span>
+                                                      </p>
+                                                </span>
+                                                <span class="right">
+                                                      <span class="dif_de">개발</span>
+                                                      <span class="a1">모집중</span>
+                                                      <span class="a2">NEW</span>
+                                                </span>
+                                          </h2>
+                                          <h3>
+                                                [상주] 자사 인공지능 영상 솔루션 <br>
+                                                UI/UX 기획자 모집
+                                          </h3>
+                                          <ul>
+                                                <li>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/dates2.png" alt="기간이미지"> 기간
+                                                            </dt>
+                                                            <dd>
+                                                                  2020.05.04 ~ 2020.09.19(5개월)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_price.png" alt="비용이미지"> 비용
+                                                            </dt>
+                                                            <dd>
+                                                                  <span class="yel">300</span>만원 ~ <span
+                                                                        class="yel">550</span>만원 (경력에 따른 협의)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_file.png" alt="형태이미지"> 형태
+                                                            </dt>
+                                                            <dd>
+                                                                  파견 (파견은 월급여 지급)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_simple.png" alt="투입이미지"> 투입
+                                                            </dt>
+                                                            <dd>
+                                                                  인터뷰 후 바로 투입, 5월11일부터 즉시
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/vew.png" alt="조건이미지"> 조건
+                                                            </dt>
+                                                            <dd>
+                                                                  경력 5년 이상, 즉시 출근 가능자 우대
+                                                            </dd>
+                                                      </dl>
+                                                </li>
+                                          </ul>
+                                          <div class="area">
+                                                <span class="area1">근무지역</span>
+                                                <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                          </div>
+                                    </article>
+                                    <article>
+                                          <a href="#" class="star">
+                                                <img src="../../img/star_off.png" alt="별">
+                                          </a>
+                                          <h2 class="pro_header">
+                                                <span class="left">
+                                                      <p>
+                                                            5월 5일 마감
+                                                            <span class="date">D-12</span>
+                                                      </p>
+                                                </span>
+                                                <span class="right">
+                                                      <span class="dif_de">개발</span>
+                                                      <span class="a1">모집중</span>
+                                                      <span class="a2">NEW</span>
+                                                </span>
+                                          </h2>
+                                          <h3>
+                                                [상주] 자사 인공지능 영상 솔루션 <br>
+                                                UI/UX 기획자 모집
+                                          </h3>
+                                          <ul>
+                                                <li>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/dates2.png" alt="기간이미지"> 기간
+                                                            </dt>
+                                                            <dd>
+                                                                  2020.05.04 ~ 2020.09.19(5개월)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_price.png" alt="비용이미지"> 비용
+                                                            </dt>
+                                                            <dd>
+                                                                  <span class="yel">300</span>만원 ~ <span
+                                                                        class="yel">550</span>만원 (경력에 따른 협의)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_file.png" alt="형태이미지"> 형태
+                                                            </dt>
+                                                            <dd>
+                                                                  파견 (파견은 월급여 지급)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_simple.png" alt="투입이미지"> 투입
+                                                            </dt>
+                                                            <dd>
+                                                                  인터뷰 후 바로 투입, 5월11일부터 즉시
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/vew.png" alt="조건이미지"> 조건
+                                                            </dt>
+                                                            <dd>
+                                                                  경력 5년 이상, 즉시 출근 가능자 우대
+                                                            </dd>
+                                                      </dl>
+                                                </li>
+                                          </ul>
+                                          <div class="area">
+                                                <span class="area1">근무지역</span>
+                                                <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                          </div>
+                                    </article>
+                                    <article>
+                                          <a href="#" class="star">
+                                                <img src="../../img/star_off.png" alt="별">
+                                          </a>
+                                          <h2 class="pro_header">
+                                                <span class="left">
+                                                      <p>
+                                                            5월 5일 마감
+                                                            <span class="date">D-12</span>
+                                                      </p>
+                                                </span>
+                                                <span class="right">
+                                                      <span class="dif_de">개발</span>
+                                                      <span class="a1">모집중</span>
+                                                      <span class="a2">NEW</span>
+                                                </span>
+                                          </h2>
+                                          <h3>
+                                                [상주] 자사 인공지능 영상 솔루션 <br>
+                                                UI/UX 기획자 모집
+                                          </h3>
+                                          <ul>
+                                                <li>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/dates2.png" alt="기간이미지"> 기간
+                                                            </dt>
+                                                            <dd>
+                                                                  2020.05.04 ~ 2020.09.19(5개월)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_price.png" alt="비용이미지"> 비용
+                                                            </dt>
+                                                            <dd>
+                                                                  <span class="yel">300</span>만원 ~ <span
+                                                                        class="yel">550</span>만원 (경력에 따른 협의)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_file.png" alt="형태이미지"> 형태
+                                                            </dt>
+                                                            <dd>
+                                                                  파견 (파견은 월급여 지급)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_simple.png" alt="투입이미지"> 투입
+                                                            </dt>
+                                                            <dd>
+                                                                  인터뷰 후 바로 투입, 5월11일부터 즉시
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/vew.png" alt="조건이미지"> 조건
+                                                            </dt>
+                                                            <dd>
+                                                                  경력 5년 이상, 즉시 출근 가능자 우대
+                                                            </dd>
+                                                      </dl>
+                                                </li>
+                                          </ul>
+                                          <div class="area">
+                                                <span class="area1">근무지역</span>
+                                                <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                          </div>
+                                    </article>
+                                    <article>
+                                          <a href="#" class="star">
+                                                <img src="../../img/star_off.png" alt="별">
+                                          </a>
+                                          <h2 class="pro_header">
+                                                <span class="left">
+                                                      <p>
+                                                            5월 5일 마감
+                                                            <span class="date">D-12</span>
+                                                      </p>
+                                                </span>
+                                                <span class="right">
+                                                      <span class="dif_de">개발</span>
+                                                      <span class="a1">모집중</span>
+                                                      <span class="a2">NEW</span>
+                                                </span>
+                                          </h2>
+                                          <h3>
+                                                [상주] 자사 인공지능 영상 솔루션 <br>
+                                                UI/UX 기획자 모집
+                                          </h3>
+                                          <ul>
+                                                <li>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/dates2.png" alt="기간이미지"> 기간
+                                                            </dt>
+                                                            <dd>
+                                                                  2020.05.04 ~ 2020.09.19(5개월)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_price.png" alt="비용이미지"> 비용
+                                                            </dt>
+                                                            <dd>
+                                                                  <span class="yel">300</span>만원 ~ <span
+                                                                        class="yel">550</span>만원 (경력에 따른 협의)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_file.png" alt="형태이미지"> 형태
+                                                            </dt>
+                                                            <dd>
+                                                                  파견 (파견은 월급여 지급)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_simple.png" alt="투입이미지"> 투입
+                                                            </dt>
+                                                            <dd>
+                                                                  인터뷰 후 바로 투입, 5월11일부터 즉시
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/vew.png" alt="조건이미지"> 조건
+                                                            </dt>
+                                                            <dd>
+                                                                  경력 5년 이상, 즉시 출근 가능자 우대
+                                                            </dd>
+                                                      </dl>
+                                                </li>
+                                          </ul>
+                                          <div class="area">
+                                                <span class="area1">근무지역</span>
+                                                <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                          </div>
+                                    </article>
+                                    <article>
+                                          <a href="#" class="star">
+                                                <img src="../../img/star_off.png" alt="별">
+                                          </a>
+                                          <h2 class="pro_header">
+                                                <span class="left">
+                                                      <p>
+                                                            5월 5일 마감
+                                                            <span class="date">D-12</span>
+                                                      </p>
+                                                </span>
+                                                <span class="right">
+                                                      <span class="dif_de">개발</span>
+                                                      <span class="a1">모집중</span>
+                                                      <span class="a2">NEW</span>
+                                                </span>
+                                          </h2>
+                                          <h3>
+                                                [상주] 자사 인공지능 영상 솔루션 <br>
+                                                UI/UX 기획자 모집
+                                          </h3>
+                                          <ul>
+                                                <li>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/dates2.png" alt="기간이미지"> 기간
+                                                            </dt>
+                                                            <dd>
+                                                                  2020.05.04 ~ 2020.09.19(5개월)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_price.png" alt="비용이미지"> 비용
+                                                            </dt>
+                                                            <dd>
+                                                                  <span class="yel">300</span>만원 ~ <span
+                                                                        class="yel">550</span>만원 (경력에 따른 협의)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_file.png" alt="형태이미지"> 형태
+                                                            </dt>
+                                                            <dd>
+                                                                  파견 (파견은 월급여 지급)
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/self_simple.png" alt="투입이미지"> 투입
+                                                            </dt>
+                                                            <dd>
+                                                                  인터뷰 후 바로 투입, 5월11일부터 즉시
+                                                            </dd>
+                                                      </dl>
+                                                      <dl>
+                                                            <dt>
+                                                                  <img src="../../img/vew.png" alt="조건이미지"> 조건
+                                                            </dt>
+                                                            <dd>
+                                                                  경력 5년 이상, 즉시 출근 가능자 우대
+                                                            </dd>
+                                                      </dl>
+                                                </li>
+                                          </ul>
+                                          <div class="area">
+                                                <span class="area1">근무지역</span>
+                                                <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                          </div>
+                                    </article>
+                              </div>
+                            <!--paging 수정::200807 -->
+							<div class="paging_wrap">
+							<div class="paging">
+								<div class="page_prev">
+									<a class="page_prev_link" href="#">
+										<i class="fas fa-angle-double-left"></i>
+									</a>
+									<a class="page_prev_link" href="#">
+										<i class="fas fa-angle-left"></i>
+									</a>
+								</div>
+								<div class="page_num">
+									<a href="#" class="page_num_link on">1</a>
+									<a href="#" class="page_num_link">2</a>
+									<a href="#" class="page_num_link">3</a>
+									<a href="#" class="page_num_link">4</a>
+									<a href="#" class="page_num_link">5</a>
+								</div>
+								<div class="page_next">
+									<a href="#" class="page_next_link">
+										<i class="fas fa-angle-right"></i>
+									</a>
+									<a href="#" class="page_next_link">
+										<i class="fas fa-angle-double-right"></i>
+									</a>
+								</div>
+							</div>
+							</div>
+								</div>
+						  </div>
+					</div>
+			  </div>
+
+      <div id="footer_info">
+            <div id="footer">
+                  <div class="footer_top">
+                        <div class="inner">
+                              <ul>
+                                    <li>
+                                          <a href="#">회사소개</a>
+                                    </li>
+                                    <li>
+                                          <a href="#">  문의</a>
+                                    </li>
+                                    <li>
+                                          <a href="#"> 프리랜서 문의</a>
+                                    </li>
+                                    <li>
+                                          <a href="#">인재채용</a>
+                                    </li>
+                                    <li>
+                                          <a href="#">이용약관 </a>
+                                    </li>
+                                    <li>
+                                          <a href="#">개인정보처리방침 </a>
+                                    </li>
+                                    <li>
+                                          <a href="#">고객센터</a>
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+
+                  <div class="footer_inner">
+                        <div class="inner">
+                              <div class="wrap">
+                                    <article>
+                                          <div class="f_logo">
+                                                <img src="../..//img/f_logo.png" alt="">
+                                          </div>
+                                          <address>
+                                                주식회사 케이엘큐브 <br>
+                                                대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                                                사업자등록번호: 100-11-22203 <br>
+                                                통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                                                호스팅 사업자: Amazon Web Service(AWS)
+                                          </address>
+                                    </article>
+                                    <article class="right">
+                                          <h2>IT잡스 SNS 채널</h2>
+                                          <ul class="sns">
+                                                <li>
+                                                      <a href="#">
+                                                            <img src="../../img/f_sns01.png" alt="">
+                                                      </a>
+                                                </li>
+                                                <li>
+                                                      <a href="#">
+                                                            <img src="../../img/f_sns02.png" alt="">
+                                                      </a>
+                                                </li>
+                                                <li>
+                                                      <a href="#">
+                                                            <img src="../../img/f_sns03.png" alt="">
+                                                      </a>
+                                                </li>
+                                                <li>
+                                                      <a href="#">
+                                                            <img src="../../img/f_sns04.png" alt="">
+                                                      </a>
+                                                </li>
+                                          </ul>
+                                          <div class="phone">
+                                                <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+                                          </div>
+                                    </article>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="footer_bottom">
+                        <div class="inner">
+                              <p>
+                                    잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한
+                                    책임은 각 판매자가 부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+                              </p>
+                              <p class="copy">
+                                    Copyright © 2020 Jons In. Inc. All rights reserved.
+                              </p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script>
+            $(function () {
+                  // $("#header_info").load("../../inc/header.html"); //파일내용을 불러와서 includeLoad에 뿌려준다.
+                  $("#projuct_left_menu").load("../../inc/project_left_ment.html"); //파일내용을 불러와서 includeLoad에 뿌려준다.
+                  $("#sub_headers").load("../../inc/project_top_menu.html");
+            });
+      </script>
+</body>
+
+
+</html>

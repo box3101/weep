@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+	<title>AI 프로젝트 검색</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:title" content="U잡스">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="../../img/logo.png">
+	<meta property="og:image:type" content="../../image/png">
+	<meta property="og:image:width" content="173">
+	<meta property="og:image:height" content="65">
+	<meta property="og:description" content="">
+
+	<link rel="stylesheet" href="../../css/@default.css" />
+	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="../../css/font.css">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/project_reg.css">
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../../css/jquery.mCustomScrollbar.css">
+
+
+	<script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="../../js/slick.min.js"></script>
+	<script type="text/javascript" src="../../js/swiper.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../../js/main.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div id="header" class="sub_header">
+		<div class="inner clearfix">
+			<h1 class="logo">
+				<a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+			</h1>
+			<ul id="main_gnb">
+				<li>
+					<a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+				</li>
+				<li>
+					<a href="/page/ai_sch/ai_sch.html">AI 추천</a>
+				</li>
+				<li>
+					<a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+				</li>
+				<li>
+					<a href="/page/partner_sch/partner.html">파트너 검색</a>
+				</li>
+				<li>
+					<a href="#">WEE.P 소개
+					</a>
+				</li>
+
+			</ul>
+			<ul class="clearfix small-txt">
+				<li>
+					<a href="#">이용안내</a>
+				</li>
+				<li>
+					<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+				</li>
+			</ul>
+
+			<ul class="util clear">
+				<li>
+					<a href="/page/login/login01.html">로그인</a>
+				</li>
+				<li>
+					<a href="#">회원가입</a>
+				</li>
+
+				<div class="memberImg">
+					<img src="/img/bg_member.png" alt="회원가입혜택">
+				</div>
+			</ul>
+			<ul class="login-util clear">
+				<li>
+					<a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지"
+								class="member-img"></span>홍길동</a>
+					<ul class="member-menu">
+						<li>
+							<a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+						</li>
+						<li>
+							<a href="">로그아웃</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	</div>
+	<nav id="navi" style="top: 186px;">
+		<div class="project">
+			<div class="project-con">
+				<h2>최근 본 프로젝트 <span class="num">5</span></h2>
+				<ul>
+					<li>
+						<a href="#" class="on">비상주 오프라인 매장</a>
+					</li>
+					<li>
+						<a href="#">안드로이드 프론트</a>
+					</li>
+					<li>
+						<a href="#">비상주 오프라인 매장</a>
+					</li>
+					<li>
+						<a href="#">인천국제공항</a>
+					</li>
+				</ul>
+				<div class="more">
+					<a href="">더보기</a>
+				</div>
+			</div>
+			<div class="freelan-con">
+				<h2>최근 본 프리랜서 <span class="num">2</span></h2>
+				<ul>
+
+					<li>
+						<a href="#" class="on">김철수</a>
+					</li>
+					<li>
+						<a href="#">홍길동</a>
+					</li>
+					<li>
+						<a href="#">비상주</a>
+					</li>
+					<li>
+						<a href="#">김길동</a>
+					</li>
+				</ul>
+				<div class="more">
+					<a href="">더보기</a>
+				</div>
+			</div>
+		</div>
+		<ul class="banner">
+			<li>
+				<a href="#">
+					<img src="img/navi_banner01.png" alt="네비배너1">
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<script>
+		$(function () {
+			$(window).scroll(function () {
+				var scroll = $(this).scrollTop();
+				var navi_top = $("#navi").offset().top;
+
+				//console.log(scroll);
+				//console.log(navi_top);
+
+				if (scroll > 186) {
+					$("#navi").css({
+						"position": "fixed",
+						"top": "20px"
+					})
+				} else {
+					$("#navi").css({
+						"position": "absolute",
+						"top": "186px"
+					})
+				}
+			})
+		})
+	</script>
+
+	<div id="sub_contents">
+		<div class="sub_tit">
+			<div class="inner">
+				<h1>프로젝트 검색</h1>
+			</div>
+		</div>
+
+		<div id="sub_content" style="background-color:#f4f5f7">
+			<div class="inner">
+				<div class="left_menu">
+					<ul>
+						<li>
+							<a href="/page/project_sch/project_sch.html">프로젝트 검색</a>
+						</li>
+						<li>
+							<a href="/page/project_sch/project_sch02-1.html">프로젝트 관리</a>
+							<ul class="sub_menu">
+								<li><a href="/page/project_sch/project_sch02-1.html">관심 프로젝트</a></li>
+								<li><a href="/page/project_sch/project_sch02-2.html">오늘 본 프로젝트</a></li>
+								<li><a href="/page/project_sch/project_sch02-3.html">나를 찜한 프로젝트</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="/page/project_sch/project_sch03.html" class="on">AI 프로젝트 검색</a>
+						</li>
+						<li>
+							<a href="/page/project_sch/project_sch04.html">이달의 프로젝트</a>
+						</li>
+
+						<div class="ple_sch">
+							<a href="#">
+								<img src="../../img/ple_sch.png" alt="">
+							</a>
+						</div>
+					</ul>
+				</div>
+				
+
+
+				<!-- 2020-12-18 added for new category tabs { -->
+				<div class="content_info search_box ai_box">
+					<div class="content">
+						<div id="tab1">
+							
+							<div class="title_tab_box">
+								<ul>
+									<li><a href="/page/project_sch/project_sch.html">맞춤 검색</a></li>
+									<li class="on"><a href="/page/project_sch/project_ai_sch.html">AI 검색</a></li>
+								</ul>
+							</div>
+
+							<div class="title_tab_box">
+								<h1 class="custom_tit">
+									<span class="left">
+										AI 검색<!-- 2020-12-24 shortened -->
+									</span>
+								</h1>
+								<div class="search_form_wrap">
+									<p>위프에서 만나는 업체최초 인공지능 AI 검색</p>
+									<div class="search_input_box">
+										<input type="text" placeholder="AI 검색어를 입력해주세요!" />
+										<button class="sch_btn">검색</button>
+									</div>
+									<span>(문장으로 찾아보세요! 예: 공공기관에 3개월 이상의 프로테그툴 서울및 경기근무, 웹기획 업무)</span>
+								</div>
+							</div>
+						</div>				
+					</div>
+				</div>
+				<!-- } 2020-12-18 added for new category tabs -->
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div id="profile_wrap02" class="project_sch ai_sch">
+		<div class="inner">
+			<div class="page-top">
+				<div class="page-title">
+					<h2>AI 추천 프로젝트</h2>
+				</div>
+			</div>
+
+			<div class="project-card row">
+				<div class="col-6">
+					<article>
+						<div class="project-card-top">
+							<div>
+								<a href="javascript:;"><i class="icon-star"></i></a>
+								<span class="deadline lg">5월 5일 마감</span>
+								<span class="badge badge-orange">D-12</span>
+							</div>
+							<div>
+								<span class="badge badge-outline-orange">개발</span>
+								<span class="badge badge-outline-green">모집중</span>
+								<span class="badge badge-outline-blue">NEW</span>
+							</div>
+						</div>
+						<div class="project-card-subject">
+							<h3>
+								<a href="#">
+									<span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+								</a>
+							</h3>
+						</div>
+						<div class="project-recruit-number">
+							<span>
+								<img src="../../img/info_img01.png" alt="모집">
+								<b>모집</b>
+								<span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+							</span>
+							<span>
+								<img src="../../img/support.png" alt="지원">
+								<b>지원자수</b>
+								<span class="num">1</span>명
+							</span>
+						</div>
+						<div class="price_wrap">
+							<a href="#" class="price">
+								<img src="../../img/pro_price.png" alt="">월 <span>5,000,000 ~ 10,000,000</span>원
+							</a>
+							<a href="#" class="dates">
+								<img src="../../img/pro_time.png" alt="">
+								<span>
+									6월 중순 ∼9월 하순
+									<span class="da">(4.5개월)</span>
+								</span>
+							</a>
+						</div>
+						<div class="need-skills">
+							<span class="path">
+								개발 &gt; 앱
+							</span>
+							<span class="skill">
+								HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+							</span>
+						</div>
+						<div class="way">
+							<dl>
+								<dt>진행 방식</dt>
+								<dd>
+									최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+								</dd>
+							</dl>
+							<dl>
+								<dt>근무지역</dt>
+								<dd>
+									서울시 4호선 충무로역 2번 출구 3분 거리
+								</dd>
+							</dl>
+						</div>
+						<div class="profile-simple">
+							<div>
+								<div class="profile">
+									<div class="pic">
+										<img src="../../img/@img-profile.png" alt="">
+									</div>
+									<div class="name">KIKI_92<span>서울</span></div>
+								</div>
+							</div>
+
+							<div class="company">
+								<a href="#">회사소개</a>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="col-6">
+					<article>
+						<div class="project-card-top">
+							<div>
+								<a href="javascript:;"><i class="icon-star"></i></a>
+								<span class="deadline lg">5월 5일 마감</span>
+								<span class="badge badge-orange">D-12</span>
+							</div>
+							<div>
+								<span class="badge badge-outline-orange">개발</span>
+								<span class="badge badge-outline-green">모집중</span>
+								<span class="badge badge-outline-blue">NEW</span>
+							</div>
+						</div>
+						<div class="project-card-subject">
+							<h3>
+								<a href="#">
+									<span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+								</a>
+							</h3>
+						</div>
+						<div class="project-recruit-number">
+							<span>
+								<img src="../../img/info_img01.png" alt="모집">
+								<b>모집</b>
+								<span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+							</span>
+							<span>
+								<img src="../../img/support.png" alt="지원">
+								<b>지원자수</b>
+								<span class="num">1</span>명
+							</span>
+						</div>
+						<div class="price_wrap">
+							<a href="#" class="price">
+								<img src="../../img/pro_price.png" alt="">월 <span>5,000,000 ~ 10,000,000</span>원
+							</a>
+							<a href="#" class="dates">
+								<img src="../../img/pro_time.png" alt="">
+								<span>
+									6월 중순 ∼9월 하순
+									<span class="da">(4.5개월)</span>
+								</span>
+							</a>
+						</div>
+						<div class="need-skills">
+							<span class="path">
+								개발 &gt; 앱
+							</span>
+							<span class="skill">
+								HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+							</span>
+						</div>
+						<div class="way">
+							<dl>
+								<dt>진행 방식</dt>
+								<dd>
+									최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+								</dd>
+							</dl>
+							<dl>
+								<dt>근무지역</dt>
+								<dd>
+									서울시 4호선 충무로역 2번 출구 3분 거리
+								</dd>
+							</dl>
+						</div>
+						<div class="profile-simple">
+							<div>
+								<div class="profile">
+									<div class="pic">
+										<img src="../../img/@img-profile.png" alt="">
+									</div>
+									<div class="name">KIKI_92<span>서울</span></div>
+								</div>
+							</div>
+
+							<div class="company">
+								<a href="#">회사소개</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+
+			<!--paging 수정::200807 -->
+			<div class="paging_wrap">
+				<div class="paging">
+					<div class="page_prev">
+						<a class="page_prev_link" href="#">
+							<i class="fas fa-angle-double-left"></i>
+						</a>
+						<a class="page_prev_link" href="#">
+							<i class="fas fa-angle-left"></i>
+						</a>
+					</div>
+					<div class="page_num">
+						<a href="#" class="page_num_link on">1</a>
+						<a href="#" class="page_num_link">2</a>
+						<a href="#" class="page_num_link">3</a>
+						<a href="#" class="page_num_link">4</a>
+						<a href="#" class="page_num_link">5</a>
+					</div>
+					<div class="page_next">
+						<a href="#" class="page_next_link">
+							<i class="fas fa-angle-right"></i>
+						</a>
+						<a href="#" class="page_next_link">
+							<i class="fas fa-angle-double-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="sub_banner">
+		<div class="inner">
+			<img src="../../img/sub_banner.png" alt="서브배너">
+		</div>
+	</div>
+
+	
+
+
+<div id="footer">  
+		<div class="footer_inner">
+			<div class="inner">
+				<div class="wrap">
+					<div class="left">
+						<div class="f_logo">
+							<img src="../../img/f_logo_new.png" alt="">
+							<p>주식회사 케이엘큐브</p>
+						</div>
+						<div class="contact">
+							<span class="bar">지원센터:  02-3442-5001</span>
+							<span>운영시간 : 평일 09:00~18:00 / 주말.공휴일 휴무</span>
+						</div>
+						<div class="address">
+							<span class="bar">대표 : 하윤호</span><span class="bar">개인정보보호책임자 : 유영복</span><span>사업자등록번호 : 154-81-00795</span><br/>
+							<span class="bar">주소 : 서울시 강남구 선릉로 133길 4 아이큐빌딩 3층</span><span>통신판매업신고 : 제 2020-서울강남-02210 호<span>
+						</div>
+					</div>
+					<div class="right help">
+						<div>
+							<p><a href="#!">회사소개</a></p>
+							<p><a href="#!">지원센터</a></p>
+						</div>
+						<div>
+							<p><a href="#!">프로젝트 문의</a></p>
+							<p><a href="#!">프리랜서 문의</a></p>
+						</div>
+						<div>
+							<p><a href="agreement.html">이용약관</a></p>
+							<p><a href="privacy.html">개인정보처리방침</a></p>
+						</div>
+					</div>
+					
+				</div>
+			
+			</div>
+			<div class="f_bottom">
+				<p class="copy"> Copyright © 2020 WEEP. Inc. All rights reserved.</p>
+				<p>위프는 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가 부담하고, 이에 대하여 위프인은 일체 책임지지 않습니다.</p>
+			</div>
+
+		</div>
+	</div>
+	<script>
+		$(function () {
+			$(".nano > ul, #demo2 > ul").mCustomScrollbar({
+				//axis:"y", // vertical and horizontal scrollbar
+				theme: "dark-thick"
+			});
+
+
+		})
+	</script>
+</body>
+
+
+</html>

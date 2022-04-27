@@ -1,0 +1,226 @@
+<html lang="ko">
+    <head style="overflow-y:hidden;">
+        <title>layerPopup</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta property="og:title" content="U잡스">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="/img/logo.png">
+        <meta property="og:image:type" content="/image/png">
+        <meta property="og:image:width" content="173">
+        <meta property="og:image:height" content="65">
+        <meta property="og:description" content="">
+    
+        <link rel="stylesheet" href="../../css/common.css">
+        <link rel="stylesheet" href="../../css/font.css">
+        <link rel="stylesheet" href="../../css/admin.css">
+        <link rel="stylesheet" href="../../css/popup.css">
+        <link rel="stylesheet" href="../../css/project_reg.css">
+        <link rel="stylesheet" href="../../css/datepicker.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+    
+        <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../../js/slick.min.js"></script>
+        <script type="text/javascript" src="../../js/swiper.min.js"></script>
+        <script type="text/javascript" src="../../js/customTab.js"></script>
+        <script type="text/javascript" src="../../js/sideBar_toggle.js"></script>
+        <script type="text/javascript" src="../../js/admin_common.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script> 
+        <script>
+            $(function () {
+               //datepicker 
+               $(".day_input").datepicker({
+                  language: 'en',
+                  autoClose: true,
+                  dateFormat:'yyyy.mm.dd'
+                  //minDate: new Date()
+               });
+            });
+        </script>
+    </head>
+<body style="padding:50px";>
+    <div style="height: 300px;"></div>
+<a href="#" onclick="view_layer('layer');">매니저 등록</a>
+<div id="layer" style="display: none;">
+    <div class="dim-layer">
+        <div class="dimBg"></div>
+        <div class="pop-layer">
+            <div class="pop-container">
+                <div class="manager_registerInner">
+                    <div class="manager_title mb30">
+                        <h3>매니저 등록</h3>
+                        <div class="btn-r">
+                            <a href="#" class="btn-layerClose" onclick="close_layer('layer');"></a>
+                        </div>
+                    </div>
+                    <div class="manager_contents">
+                        <form>
+                            <ul class="mb40">
+                                <li>
+                                    <span>아이디</span><input type="text" class="w310">
+                                    <div class="btn_check"><a href="">중복체크</a></div>
+                                </li>
+                                <li><span>이름</span><input type="text"></li>
+                                <li><span>휴대폰번호</span><input type="text" placeholder="'~'없이 숫자만 입력"></li>
+                                <li><span>이메일</span><input type="text"></li>
+                                <li><span>비밀번호</span><input type="text" placeholder="8자 이상입력 영문,문자,특수문자 입력"></li>
+                                <li><span>비밀번호확인</span><input type="text"></li>
+                                <li>
+                                    <span>업무지정</span>
+                                    <div class="div_wrap clearfix">
+                                        <div class="wrap_component">
+                                            <input type="radio" name="task" id="a1">
+                                            <label for="a1" class="checkL">총괄</label>
+                                        </div>
+                                        <div class="wrap_component">
+                                            <input type="radio" name="task" id="a2">
+                                            <label for="a2" class="checkL">파트너</label>
+                                        </div>
+                                        <div class="wrap_component">
+                                            <input type="radio" name="task" id="a3">
+                                            <label for="a3" class="checkL">프리랜서</label>
+                                        </div>
+                                        <div class="wrap_component">
+                                            <input type="radio" name="task" id="a4">
+                                            <label for="a4" class="checkL">클라이언트</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="form_fot">
+                                <div class="btn_submit"><a href="" >등록</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+<br/>
+<a href="#" onclick="view_layer('layer2');">매니저 수정</a>
+<div id="layer2" style="display: none;">
+    <div class="dim-layer">
+        <div class="dimBg"></div>
+        <div class="pop-layer">
+            <div class="pop-container">
+                <div class="manager_fixInner">
+                    <div class="manager_title mb25">
+                        <h3>매니저 수정</h3>
+                        <div class="btn-r">
+                            <a href="#" class="btn-layerClose" onclick="close_layer('layer2');"></a>
+                        </div>
+                    </div>
+                    <div class="manager_contents">
+                        <div class="tableBox">
+                            <div class="list_number clearfix">
+                                <div class="lef">
+                                    <h3>기본정보</h3>
+                                </div>
+                                <div class="ref flex">
+                                    <div class="btn_subTitle"><a href="">SMS발송</a></div>
+                                    <div class="btn_subTitle"><a href="">메일발송</a></div>
+                                    <div class="btn_subTitle"><a href="">비밀번호 초기화</a></div>
+                                </div>
+                            </div>
+                            <form>
+                                <table class="borderNone mb15">
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col width="15%">
+                                        <col width="35%">
+                                        <col width="15%">
+                                        <col width="35%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>상태</th>
+                                            <td>
+                                                <input type="radio" name="stat" id="s1">
+                                                <label for="s1" class="radioL">정상</label>
+                                                <input type="radio" name="stat" id="s2">
+                                                <label for="s2" class="radioL">정지</label>
+                                            </td>
+                                            <th>등록일</th>
+                                            <td>2020.08.06 13:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>등록자</th>
+                                            <td>마스터</td>
+                                            <th>정지일</th>
+                                            <td class="c_orange">
+                                                2020.08.06 13:00
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>아이디</th>
+                                            <td>weep0514</td>
+                                            <th>최근접속일</th>
+                                            <td>2020.08.06 13:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>이름</th>
+                                            <td><input type="text" placeholder="성함을 입력하세요"></td>
+                                            <th>비밀번호</th>
+                                            <td><input type="text" placeholder="8자 이상 입력 영문,숫자,특수문자 포함"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>이메일</th>
+                                            <td><input type="text" placeholder="이메일을 입력하세요"></td>
+                                            <th>비밀번호 확인</th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>휴대폰번호</th>
+                                            <td><input type="text" placeholder="010-0000-0000"></td>
+                                            <th></th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>전화번호</th>
+                                            <td><input type="text" placeholder="'-'없이 숫자만 입력"></td>
+                                            <th></th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>업무지정</th>
+                                            <td colspan="3">
+                                                <input type="radio" name="task" id="t1">
+                                                <label for="t1" class="checkL">총괄</label>
+                                                <input type="radio" name="task" id="t2">
+                                                <label for="t2" class="checkL">파트너</label>
+                                                <input type="radio" name="task" id="t3">
+                                                <label for="t3" class="checkL">프리랜서</label>
+                                                <input type="radio" name="task" id="t4">
+                                                <label for="t4" class="checkL">클라이언트</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="table_bot clearfix">
+                                    <div class="lef">
+                                        <span><a href=""><img src="../../admin_img/trash.png" alt="">삭제하기</a></span>
+                                    </div>
+                                </div>
+                                <div class="form_fot">
+                                    <div class="btn_submit mr10"><a href="" >저장</a></div>
+                                    <div class="btn_submit"><a href="" class="bgWhite">취소</a></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

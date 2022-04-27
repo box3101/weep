@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+  <title>이력서 수정</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="U잡스">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="../../img/logo.png">
+  <meta property="og:image:type" content="../../image/png">
+  <meta property="og:image:width" content="173">
+  <meta property="og:image:height" content="65">
+  <meta property="og:description" content="">
+
+  <link rel="stylesheet" href="../../css/datepicker.css">
+  <link rel="stylesheet" href="../../css/@default.css" />
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/font.css">
+  <link rel="stylesheet" href="../../css/swiper.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="../../js/slick.min.js"></script>
+  <script type="text/javascript" src="../../js/swiper.min.js"></script>
+  <script src="../../js/datepicker.js"></script>
+ <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script> -->
+  <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+
+<body>
+	<div id="header" class="sub_header">
+		<div class="inner clearfix">
+			<h1 class="logo">
+				<a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+			</h1>
+			<ul id="main_gnb">
+				<li>
+					<a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+				</li>
+				<li>
+					<a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+				</li>
+				<li>
+					<a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+				</li>
+				<li>
+					<a href="/page/partner_sch/partner.html">파트너 검색</a>
+				</li>
+				<li>
+					<a href="#">WEE.P 소개
+					</a>
+				</li>
+
+			</ul>
+			<ul class="clearfix small-txt">
+				<li>
+					<a href="#">이용안내</a>
+				</li>
+				<li>
+					<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+				</li>
+			</ul>
+
+			<ul class="util clear">
+				<li>
+					<a href="/page/login/login01.html">로그인</a>
+				</li>
+				<li>
+					<a href="/page/login/login02.html">회원가입</a>
+				</li>
+
+				<div class="memberImg">
+					<img src="/img/bg_member.png" alt="회원가입혜택">
+				</div>
+			</ul>
+			<ul class="login-util clear">
+				<li>
+					<a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지" class="member-img"></span>홍길동</a>
+					<ul class="member-menu">
+						<li>
+							<a href="">프로필 관리</a>
+						</li>
+						<li>
+							<a href="">로그아웃</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+    <div id="sub_contents">
+      <div class="sub_tit">
+        <div class="inner">
+          <h1>마이페이지</h1>
+        </div>
+      </div>
+	<div class="image_popup">
+		<div class="title">
+			<h2>이미지 업로드</h2>
+			<a href="javascript:;" class="pop_close"></a>
+		</div>
+		<form action="" method="post">
+			<div class="image_file">
+				<div class="file_row clearfix">
+					<input type="text" class="upload_text" readonly="readonly">
+					<div class="upload-btn_wrap">
+						<button type="button" title="파일찾기">
+							<span>찾아보기</span>
+						</button>
+						<input type="file" class="input_file" title="파일찾기">
+					</div>
+				</div>
+				<p class="desc">
+					권장 사진 사이즈는 108*132픽셀이며, Gif, jpg, jpge 이미지 파일만 등록 가능합니다. <br>
+					파일 선택 후 마우스를 드래그하여 사진크기를 편집하세요.
+				</p>
+			</div>
+			<div class="images_ex">
+				<img src="../../img/file_ex_img.jpg" alt="">
+			</div>
+			<div class="upload_btn">
+				<button type="submit">등록하기</button>
+			</div>
+		</form>
+	</div>
+	<div class="black_screen"></div>
+    <div id="sub_content">
+        <div class="inner">
+          <div class="left_menu">
+            <ul>
+              <li>
+                <a href="/page/project_sch/project_sch.html">나의 정보/설정</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch02-1.html" class="on">이력서 관리</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch03.html">나의 문의 내역</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch04.html">나의 결제 내역</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch05.html">보유 캐시 / 충전</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch06.html">적립금 내역</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch06.html">쿠폰 관리</a>
+              </li>
+			  <li>
+                <a href="/page/project_sch/project_sch06.html">광고 신청/관리</a>
+              </li>
+			  <li>
+                <a href="/page/project_sch/project_sch06.html">수익 관리</a>
+              </li>
+			  <li>
+                <a href="/page/project_sch/project_sch06.html">비밀번호 변경</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="right edit_wrap resume_wrap">
+				<div class="title">
+					<h2 class="littleTit2">이력서</h2>
+				</div>
+				<div class="resume_main">
+					<h2>기획, PM, 사업관리 외에도 맡은 바 업무를 기대 이상으로 수행합니다.기획, PM, 사업관리 외에도 맡은 바 업무를 기대 이상으로 수행합니다.</h2>
+					<div class="resume_info clearfix">
+						<div class="person_img"><img src="/img/@img-profile.png" alt=""></div>
+						<div class="person_txt">
+							<div class="p_title clearfix">
+								<div class="left clearfix">
+									<div class="name">홍길동</div>
+									<div class="sex">남</div>
+									<div class="birth">1977년,</div>
+									<div class="age">41세</div>
+								</div>
+								<div class="right clearfix">
+									<div class="job">개발자</div>
+									<div class="job_career">10년 6개월</div>
+								</div>
+							</div>
+							<div class="bottom_t">
+								<ul class="clearfix">
+									<li>
+										<dl>
+											<dt>전화번호</dt>
+											<dd>010-0000-0000</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>메일주소</dt>
+											<dd>비공개</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>주소</dt>
+											<dd>서울시 중량구 공덕동 서울시 중량구 공덕동서울시 중량구 공덕동</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="edit_profile" style="display: none;">
+
+					<div class="pro_subject">
+						<input type="text" value="기획, PM, 사업관리 외에도 맡은 바 업무를 기대 이상으로 수행합니다.">
+					</div>
+					<div class="content">
+						<div class="img_wrap">
+							<div class="img"><img src="../../img/resume_img.jpg" alt=""></div>
+							<div class="txt">
+								<a href="">초기화</a>
+								<a href="">변경</a>
+							</div>
+						</div>
+						<div class="input_wrap">
+							<ul>
+								<li class="clearfix">
+									<div class="item name">
+										<label for="">이름<span>*</span></label>
+										<input type="text" name="" value="" id="" class="w233" placeholder="홍길동" required>
+									</div>
+									<div class="item birth">
+										<label for="">생년월일<span>*</span></label>
+										<input type="text" name="" value="" id="" class="w233 datepicker" placeholder="2000.00.00" required>
+									</div>
+									<div class="item sex">
+										<label for="">성별<span>*</span></label>
+										<select name="" id="" required>
+											<option value="">선택</option>
+											<option value="">남자</option>
+											<option value="">여자</option>
+										</select>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="item email">
+										<label for="">이메일<span>*</span></label>
+										<input type="text" name="" value="" id="" class="w233" placeholder="weepman@naver.com" required>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="item hp">
+										<label for="">휴대폰<span>*</span></label>
+										<input type="text" name="" value="" id="" class="w265" placeholder="000-0000-0000" required>
+									</div>
+									<div class="item call">
+										<label for="">전화번호</label>
+										<input type="text" name="" value="" id="" class="w265" placeholder="000-0000-0000">
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="item homepage">
+										<label for="">홈페이지</label>
+										<input type="text" name="" value="" id="" class="w100p" placeholder="http:/myportpolio.co.kr" required>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="item address">
+										<label for="">주소</label>
+										<div class="add_div">
+											<input type="text" name="" value="" id="" class="w100p" placeholder="주소를 입력하세요." required>
+											<a href="javascript:;" class="add_search">주소검색</a>
+										</div>
+										<div class="add_div2">
+											<input type="text" name="" value="" id="" class="w100p" placeholder="상세주소" required>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="tab_list">
+					<ul class="clearfix">
+						<li class="on"><a href="">자기소개</a></li>
+						<li><a href="">수행 프로젝트</a></li>
+						<li><a href="">보유 기술</a></li>
+						<li><a href="">경력 정보</a></li>
+						<li><a href="">포트폴리오</a></li>
+						<li><a href="">인터뷰</a></li>
+					</ul>
+				</div>
+				<!-- 학력사항 -->
+				<div class="info_wrtie">
+                    <div class="info_wrap">
+                        <div class="info_top">
+                            <h2 class="fw">
+                                학력사항
+                            </h2>
+                        </div>
+                        <ul class="write_lists academic_list">
+                            <li>
+                                <a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+
+                                <div class="first">
+                                    <dl>
+                                        <dt>학교구분</dt>
+                                        <dd>
+                                            <select name="" id="">
+                                                <option value="">고등학교</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="second">
+                                    <dl>
+                                        <dt>학교명</dt>
+                                        <dd>
+                                            <input type="text" class="sl sl2" placeholder="대한 고등학교"> <!--클래스 sl2 추가 0811-->
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>연도</dt>
+                                        <dd>
+                                            <select name="" id="" class="sm">
+                                                <option value="">1992</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>졸업상태</dt>
+                                        <dd>
+                                            <select name="" id="" class="sm">
+                                                <option value="">졸업</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="chk">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>
+                                            <input type="checkbox" id="b3" class="chk01">
+                                            <label for="b3" class="mi">대입검정고시</label>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+                                <div class="first">
+                                    <dl>
+                                        <dt>학교구분</dt>
+                                        <dd>
+                                            <select name="" id="">
+                                                <option value="">고등학교</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="second">
+                                    <dl>
+                                        <dt>학교명</dt>
+                                        <dd>
+                                            <input type="text" class="sl sl2" placeholder="대한 고등학교">
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>연도</dt>
+                                        <dd>
+                                            <select name="" id="" class="sm">
+                                                <option value="">1992</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>졸업상태</dt>
+                                        <dd>
+                                            <select name="" id="" class="sm">
+                                                <option value="">졸업</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>전공명</dt>
+                                        <dd>
+                                            <input type="text" class="sl sl2" placeholder="전공 입력">
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>연도</dt>
+                                        <dd>
+                                            <select name="" id="" class="sm">
+                                                <option value="">1992</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>졸업상태</dt>
+                                        <dd>
+                                            <select name="" id="" class="sm">
+                                                <option value="">졸업</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="chk">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>
+                                            <input type="checkbox" id="b4" class="chk01">
+                                            <label for="b4" class="mi">대입검정고시</label>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+						<ul class="add_ul">
+							<li>
+                                <a href="#">
+                                    <img src="../../img/white_plus.png" alt="플러스버튼" class="mr5">
+                                    학력사항 추가
+                                </a>
+                            </li>
+						</ul>
+                    </div>
+                </div>
+				<!-- //학력사항 -->
+				<!-- 자격증 -->
+				<div class="info_wrtie">
+                    <div class="info_wrap">
+                        <div class="info_top">
+                            <h2 class="fw">
+                                자격증
+                            </h2>
+                        </div>
+                        <ul class="Certificate">
+                            <li>
+                                <a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+                                <div class="wrap">
+                                    <article class="mr10">
+                                        <dl>
+                                            <dt>자격증명</dt>
+                                            <dd>
+                                                <input type="text" placeholder="정보처리기사">
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                    <article class="mr10">
+                                        <dl>
+                                            <dt>발행처</dt>
+                                            <dd>
+                                                <input type="text" placeholder="한국산업인력관리공단">
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                    <article>
+                                        <dl>
+                                            <dt>취득년월</dt>
+                                            <dd>
+                                                <input type="text" placeholder="2019. 09" class="datepicker-here" data-language='en'>
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+                                <div class="wrap">
+                                    <article class="mr10">
+                                        <dl>
+                                            <dt>자격증명</dt>
+                                            <dd>
+                                                <input type="text" placeholder="정보처리기사">
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                    <article class="mr10">
+                                        <dl>
+                                            <dt>발행처</dt>
+                                            <dd>
+                                                <input type="text" placeholder="한국산업인력관리공단">
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                    <article>
+                                        <dl>
+                                            <dt>취득년월</dt>
+                                            <dd>
+                                                <input type="text" placeholder="2019.09" class="datepicker-here" data-language='en'>
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+                                <div class="wrap">
+                                    <article class="mr10">
+                                        <dl>
+                                            <dt>자격증명</dt>
+                                            <dd>
+                                                <input type="text" placeholder="정보처리기사">
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                    <article class="mr10">
+                                        <dl>
+                                            <dt>발행처</dt>
+                                            <dd>
+                                                <input type="text" placeholder="한국산업인력관리공단">
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                    <article>
+                                        <dl>
+                                            <dt>취득년월</dt>
+                                            <dd>
+                                                <input type="text" placeholder="2019.09" class="datepicker-here" data-language='en'>
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                </div>
+                            </li>
+
+                        </ul>
+						<ul class="add_ul bb_line"> <!--태그 추가 0814-->
+							<li>
+                                <a href="#" style="color:#333">
+                                    <img src="../../img/white_plus.png" alt="플러스버튼" class="mr5">
+                                    자격증 추가
+                                </a>
+                            </li>
+						</ul>
+                    </div>
+                </div>
+				<!-- //자격증 -->
+
+				<!-- 2020-12-29 { -->
+				<!-- // 교육정보 -->
+				<div class="info_wrtie">
+                    <div class="info_wrap">
+                        <div class="info_top">
+                            <h2 class="fw">
+                                교육
+                            </h2>
+                        </div>
+                        <ul class="education">
+                            <li>
+                                <a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+                                <div class="wrap">
+                                    <article class="mr10">
+                                        <dl>
+                                            <dt>교육명</dt>
+                                            <dd>
+                                                <input type="text" placeholder="교육명">
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                    <article class="mr10">
+                                        <dl>
+                                            <dt>교육기관</dt>
+                                            <dd>
+                                                <input type="text" placeholder="교육기관">
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                    <article class="edu_period">
+                                        <dl>
+                                            <dt>시작년월</dt>
+                                            <dd>
+                                                <input type="text" placeholder="시작년월" class="datepicker-here" data-language='en'>
+                                            </dd>
+                                        </dl>
+										<dl>
+                                            <dt>종료년월</dt>
+                                            <dd>
+                                                <input type="text" placeholder="종료년월" class="datepicker-here" data-language='en'>
+                                            </dd>
+                                        </dl>
+                                    </article>
+									
+                                </div>
+                            </li>
+							<li>
+								<div class="wrap">
+									<article>
+										<dl>
+											<dt class="away">이수한 교육과정</dt>
+											<dd>
+												<textarea placeholder="이수하신 교육과정에 대해 적어주세요."></textarea>
+											</dd>
+										</dl>
+									</article>
+								</div>
+							</li>
+                        </ul>
+						<ul class="add_ul bb_line"> 
+							<li>
+                                <a href="#" style="color:#333">
+                                    <img src="../../img/white_plus.png" alt="플러스버튼" class="mr5">
+                                    교육 추가
+                                </a>
+                            </li>
+						</ul>
+                    </div>
+                </div>
+				<!-- // 교육정보 -->
+				<!-- } 2020-12-29 -->
+
+
+
+
+
+				<!-- 희망근무조건 -->
+				<div class="info_wrtie">
+                    <div class="info_wrap">
+                        <div class="info_top">
+                            <h2 class="fw">
+                                희망근무조건
+                            </h2>
+                        </div>
+                        <ul class="Certificate two">
+                            <li>
+                                <a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+                                <div class="wrap">
+                                    <article>
+                                        <dl>
+                                            <dt>고용형태</dt>
+                                            <dd>
+                                                <select name="" id="">
+                                                    <option value="">파트너, 정규직</option>
+                                                </select>
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                    <article>
+                                        <dl>
+                                            <dt>희망보수</dt>
+                                            <dd class="d-flex align-items-center">
+                                                <input type="radio" name="pClass" id="kosaY3">
+                                                <label for="kosaY3">월급여</label>
+                                                <input type="radio" name="pClass" id="kosaY33">
+                                                <label for="kosaY33">연봉</label>
+                                                <div class="sel_box">
+                                                    <select name="" id="" class="sl sl2">
+                                                        <option value="">400만</option>
+                                                    </select>
+                                                    ~
+                                                    <select name="" id="" class="sl sl2">
+                                                        <option value="">500만</option>
+                                                    </select>
+                                                </div>
+												<div class="chk m-l-15">
+													<input type="checkbox" id="b10" class="chk01">
+													<label for="b10" class="mi">면접 후 결정</label>
+												</div>
+                                            </dd>
+                                        </dl>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="workspace">
+                                    <div class="top_txt">
+                                        <h3>직무키워드</h3>
+                                        <a href="#">희망근무지 추가 <i class="fas fa-search"></i></a>
+                                    </div>
+                                    <div class="info mt0">
+                                        <div class="date">
+                                            서울전지역
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            인천광역시
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            경기수원시
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            서울전지역
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            서울전지역
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            서울전지역
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            서울전지역
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            서울전지역
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            서울전지역
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            서울전지역
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="workspace">
+                                    <div class="top_txt">
+                                        <h3>직무키워드</h3>
+                                        <a href="#">직무 추가 <i class="fas fa-search"></i></a>
+                                    </div>
+                                    <div class="info mt0">
+                                        <div class="date">
+                                            웹기획
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            스토리보드
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            정보설계
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            웹기획
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            웹기획
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            웹기획
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            웹기획
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            웹기획
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            웹기획
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                        <div class="date">
+                                            웹기획
+											<a href="" class="del"><img src="../../img/date_del_btn.png" alt=""></a> <!--태그 추가 0811-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+				<!-- //희망근무조건 -->
+				<!-- 경력사항 -->
+				<div class="info_wrtie">
+					<div class="top">
+                        <div class="fle">
+                            <h2>
+                                경력 사항
+                                <!-- <span class="chk">
+                                    <input type="checkbox" id="b3" class="chk01"><label for="b3" class="mi">중복되는 기간
+                                        빼기</label>
+                                </span> -->
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="info_wrap">
+                        <ul class="write_lists bb_d">
+							<div class="info_table">
+								<li class="bb_n">
+									<a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+									<div class="first mr10">
+										<dl>
+											<dt>회사명</dt>
+											<dd>
+												<input type="text" class="sl sl2 w100" placeholder="시스템개발부" /> <!--클래스 sl2 추가 0810-->
+											</dd>
+										</dl>
+									</div>
+									<div class="second flex3">
+										<dl class="w32 mr10">
+											<dt>부서명</dt>
+											<dd>
+												<input type="text" class="sl sl2 w100" placeholder="시스템개발부"> <!--클래스 추가 sl2 0810-->
+											</dd>
+										</dl>
+										<dl class="w32 mr10">
+											<dt>입사년월</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">2012.04</option>
+												</select>
+											</dd>
+										</dl>
+										<dl class="w32">
+											<dt>퇴사년월</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">2012.04</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="chk">
+										<dl>
+											<dt></dt>
+											<dd>
+												<input type="checkbox" id="b3" class="chk01">
+												<label for="b3" class="mi">재직중</label>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="bb_n">
+									<div class="first mr10">
+										<dl>
+											<dt>직위</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">부장</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="second flex3">
+										<dl class="w49">
+											<dt>부서명</dt>
+											<dd>
+												<input type="text" class="sl sl2 w100" placeholder="PM, 기획총괄"> <!--클래스 추가 sl2 0810-->
+											</dd>
+										</dl>
+										<dl class="w49">
+											<dt>연봉</dt>
+											<dd>
+												<input type="text" class="sl sl2 w100" placeholder="3,000 "> <!--클래스 추가 sl2 0810-->
+											</dd>
+										</dl>
+									</div>
+									<div class="chk">
+										<dl>
+											<dt></dt>
+											<dd>
+												<input type="checkbox" id="b3" class="chk01">
+												<label for="b3" class="mi">노출</label>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="bb_n">
+									<div class="txtarea career">
+										<dl>
+											<dt>담당성과</dt>
+											<dd>
+												<textarea name="" id=""class="mt12" placeholder="담당한 업무의 성과나 역할에 대해 간단 명료하게 적어 주세요!"></textarea>
+												<span class="chk_span">
+														<input type="checkbox" id="agree" class="chk01"><label for="agree" class="mi">홈페이지에 회사명 비공개</label>
+												</span>
+											</dd>
+										</dl>
+									</div>
+								</li>
+							</div>
+                        </ul>
+						<ul class="add_ul bb_line">
+							<li class="">
+                                <a href="#">
+                                    <img src="../../img/white_plus.png" alt="플러스버튼" class="mr5">
+                                    경력사항 추가
+                                </a>
+                            </li>
+						</ul>
+                    </div>
+				</div>
+				<!-- //경력사항 -->
+				<!-- 수행 프로젝트 -->
+				<div class="info_wrtie">
+					<div class="top">
+						<div class="fle">
+							<h2>수행 아웃소싱</h2>
+						</div>
+					</div>
+					<div class="info_wrap">
+						<ul class="write_lists">
+							<div class="info_table">
+								<li>
+									<a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+									<div class="first mr10">
+										<dl>
+											<dt>아웃소싱구분</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">공공기관</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="second flex1">
+										<dl class="w100">
+											<dt>담당 역할</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">기획</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="first flex1">
+										<dl>
+											<dt>아웃소싱명</dt>
+											<dd>
+												<input type="text" class="w100 sl sl2" placeholder="등기빅데이터 시스템 구축 사업">
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="first">
+										<dl>
+											<dt>고객사</dt>
+											<dd>
+												<select name="" id="" class="w90">
+													<option value="">대법원</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="second flex2">
+										<dl class="">
+											<dt>시작일</dt>
+											<dd>
+												<input type="text" name="" id="" class="w95 datepicker-here" data-language='en' placeholder="2018.08.08"> <!-- 태그 변경 0831 -->
+											</dd>
+										</dl>
+										<dl class="">
+											<dt>종료일</dt>
+											<dd>
+												<input type="text" name="" id="" class="w95 datepicker-here" data-language='en' placeholder="2018.08.08"> <!-- 태그 변경 0831 -->
+											</dd>
+										</dl>
+									</div>
+									<div class="chk">
+										<dl>
+											<dt></dt>
+											<dd>
+												<input type="checkbox" id="b3" class="chk01">
+												<label for="b3" class="mi">수행중</label>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="first">
+										<dl>
+											<dt>담당업무</dt>
+											<dd>
+												<textarea name="" id="" cols="30" rows="10"  class="w100 mt10" placeholder="담당한 업무의 성과나 역할에 대해 간단 명료하게 적어 주세요!"></textarea>
+											</dd>
+										</dl>
+									</div>
+								</li>
+							</div>
+						</ul>
+						<ul class="add_ul"> <!--태그 추가 0813-->
+							<li>
+								<a href="#">
+									<img src="../../img/white_plus.png" alt="플러스버튼" class="mr5">
+									수행 아웃소싱 추가
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //수행 프로젝트 -->
+				<!-- 보유기술 -->
+				<div class="info_wrtie">
+					<div class="top">
+                        <div class="fle">
+                            <h2>보유 기술 관리</h2>
+                        </div>
+                    </div>
+                    <div class="info_wrap">
+                        <ul class="write_lists">
+							<div class="info_table"> <!--태그 추가 info_table 0824-->
+								<li>
+									<a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+									<div class="first mr10">
+										<dl>
+											<dt>분야 선택</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">기획</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="second flex1 mr10">
+										<dl class="w100">
+											<dt>구분 선택</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">응용 프로그램</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="flex1">
+										<dl class="w100">
+											<dt>보유 기술 선택</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">JSP</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="first mr10">
+										<dl>
+											<dt>숙련도</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">숙련도 선택</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="second flex1 mr10">
+										<dl class="w100">
+											<dt>경험 기간</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">기간 선택</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="flex1"></div>
+								</li>
+							</div>
+							<div class="info_table"> <!--태그 추가 info_table 0824-->
+								<li>
+									<a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+									<div class="first mr10">
+										<dl>
+											<dt>분야 선택</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">기획</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="second flex1 mr10">
+										<dl class="w100">
+											<dt>구분 선택</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">응용 프로그램</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="flex1">
+										<dl class="w100">
+											<dt>보유 기술 선택</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">JSP</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="first mr10">
+										<dl>
+											<dt>숙련도</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">숙련도 선택</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="second flex1 mr10">
+										<dl class="w100">
+											<dt>경험 기간</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">기간 선택</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+									<div class="flex1"></div>
+								</li>
+							</div>
+                        </ul>
+						<ul class="add_ul"> <!--태그 추가 0813-->
+							<li>
+                                <a href="#">
+                                    <img src="../../img/white_plus.png" alt="플러스버튼" class="mr5">
+                                    보유 기술 추가
+                                </a>
+                            </li>
+						</ul>
+                    </div>
+				</div>
+				<!-- //보유기술 -->
+				<!-- 자기소개 -->
+				<div class="top">
+                    <div class="fle">
+                        <h2>자기소개</h2>
+                    </div>
+                </div>
+				<div class="info_wrtie self_write">
+					<div class="info_write">
+						<div class="title_wrap">
+							<div class="titles">
+								<h2>제목</h2>
+							</div>
+							<input type="text" placeholder="기획 경력 20년차로 공공기관, 금융기관, 커머스 등 다수의 아웃소싱을 수행하였습니다." />
+						</div>
+						<div class="info_wrap m-t-20 m-b-0">
+							<div class="titles">
+								<h2>소개 내용(2000자 이내)</h2>
+							</div>
+							<textarea class="m-t-15" name="" id="" cols="30" rows="10"
+								placeholder="아웃소싱에 임할 때는 회사의 사업적인 측면에서 고민합니다.주어진 자원에서 가장 효율적인 업무를 추진하며,함께 하는 구성원들의 입장과 역할을 존중하며 협력하여 아웃소싱을 진행합니다.[장점 10가지] 1. 경험이 많습니다.PM(크고 작은 아웃소싱, 공공기관, 대기업, 중소기업 등)으로서, 기획자(웹기획, 광고기획, 사업기획, 서비스기획, 운영기획 등등)로서, 다양한 분야(SI, 웹, 모바일, 앱(APP) 등)에,조직관리(소규모 아웃소싱, 대형 아웃소싱, 회사 팀 운영 등등)에서도제안작업(공공아웃소싱 제안작업 다수 진행, 아웃소싱 제안서, 서비스 제안서, 운영/사업 제안서 등)에서도 리스크관리(다양한 사업의 책임자로 아웃소싱 수행, 회사의 책임자로서  업무수행 등)에서도 다양한 경험을 두루두루 거쳤습니다.그러므로, 업무에 대한 이해도가 높고, 맡는 아웃소싱을 창의적으로 주도적으로 잘 수행합니다."></textarea>
+							<div class="text-right m-t-5">
+								<div class="byte">
+								(<span>0</span>/2000자)
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //자기소개 -->
+				<!-- 인터뷰 -->
+				<div class="info_wrtie">
+					<div class="top">
+                        <div class="fle">
+                            <h2>인터뷰</h2>
+                        </div>
+                    </div>
+					<div class="info_wrap">
+						<ul class="write_lists bb_d">
+							<div class="info_table">
+								<li class="bb_n">
+									<a href="#none" class="close"><img src="../../img/edit_close.jpg" alt=""></a>
+									<div class="first">
+										<dl>
+											<dt>인터뷰 질문 선택</dt>
+											<dd>
+												<select name="" id="" class="w100">
+													<option value="">인터뷰 질문 선택</option>
+												</select>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="bb_n">
+									<div class="txtarea">
+										<dl>
+											<dt>답변 내용</dt>
+											<dd>
+												<textarea name="" id="" cols="30" rows="10" class="w100 mt10" placeholder="인터뷰 내용을 작성해 주세요!"></textarea>
+											</dd>
+										</dl>
+									</div>
+									<p class="desc">※ 인터뷰 내용은 신중하게 작성해 주세요!</p>
+								</li>
+							</div>
+						</ul>
+						<ul class="add_ul bb_line">
+							<li class="bb_n ">
+								<a href="#">
+									<img src="../../img/white_plus.png" alt="플러스버튼" class="mr5">
+									인터뷰 추가 하기
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //인터뷰 -->
+				<div class="btnBox">
+				  <a href="javascript:;" class="btn01">임시저장</a>
+				  <a href="javascript:;" class="btn01 bgBlack">작성완료</a>
+				</div>
+        </div>
+
+    </div>
+<script>
+$(function () {
+	//datepicker
+	$(".datepicker-here").datepicker({
+		//language: 'en',
+		autoClose: true,
+		dateFormat:'yyyy.mm.dd'
+		//minDate: new Date()
+	});
+});
+</script>
+
+  <div id="footer_info">
+    <div id="footer">
+      <div class="footer_top">
+        <div class="inner">
+          <ul>
+            <li>
+              <a href="#">회사소개</a>
+            </li>
+            <li>
+              <a href="#"> 프로젝트 문의</a>
+            </li>
+            <li>
+              <a href="#"> 프리랜서 문의</a>
+            </li>
+            <li>
+              <a href="#">인재채용</a>
+            </li>
+            <li>
+              <a href="#">이용약관 </a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침 </a>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_inner">
+        <div class="inner">
+          <div class="wrap">
+            <article>
+              <div class="f_logo">
+                <img src="../..//img/f_logo.png" alt="">
+              </div>
+              <address>
+                주식회사 케이엘큐브 <br>
+                대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                사업자등록번호: 100-11-22203 <br>
+                통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                호스팅 사업자: Amazon Web Service(AWS)
+              </address>
+            </article>
+            <article class="right">
+              <h2>IT잡스 SNS 채널</h2>
+              <ul class="sns">
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns01.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns02.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns03.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns04.png" alt="">
+                  </a>
+                </li>
+              </ul>
+              <div class="phone">
+                <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="inner">
+          <p>
+            잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가
+            부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+          </p>
+          <p class="copy">
+            Copyright © 2020 Jons In. Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+
+</html>

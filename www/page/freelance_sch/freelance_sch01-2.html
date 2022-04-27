@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+    <title>U잡스</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="../../img/logo.png">
+    <meta property="og:image:type" content="../../image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/@default.css" />
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.js"></script>
+</head>
+
+<body>
+	<div id="header" class="sub_header">
+		<div class="inner clearfix">
+			<h1 class="logo">
+				<a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+			</h1>
+			<ul id="main_gnb">
+				<li>
+					<a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+				</li>
+				<li>
+					<a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+				</li>
+				<li>
+					<a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+				</li>
+				<li>
+					<a href="/page/partner_sch/partner.html">파트너 검색</a>
+				</li>
+				<li>
+					<a href="#">WEE.P 소개
+					</a>
+				</li>
+
+			</ul>
+			<ul class="clearfix small-txt">
+				<li>
+					<a href="#">이용안내</a>
+				</li>
+				<li>
+					<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+				</li>
+			</ul>
+
+			<ul class="util clear">
+				<li>
+					<a href="/page/login/login01.html">로그인</a>
+				</li>
+				<li>
+					<a href="/page/login/login02.html">회원가입</a>
+				</li>
+
+				<div class="memberImg">
+					<img src="/img/bg_member.png" alt="회원가입혜택">
+				</div>
+			</ul>
+			<ul class="login-util clear">
+				<li>
+					<a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지" class="member-img"></span>홍길동</a>
+					<ul class="member-menu">
+						<li>
+							<a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+						</li>
+						<li>
+							<a href="">로그아웃</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	<nav id="navi" style="top: 186px;">
+		<div class="project">
+			<div class="project-con">
+				<h2>최근 본 프로젝트 <span class="num">5</span></h2>
+				<ul>
+					<li>
+						<a href="#" class="on">비상주 오프라인 매장</a>
+					</li>
+					<li>
+						<a href="#">안드로이드 프론트</a>
+					</li>
+					<li>
+						<a href="#">비상주 오프라인 매장</a>
+					</li>
+					<li>
+						<a href="#">인천국제공항</a>
+					</li>
+				</ul>
+				<div class="more">
+					<a href="">더보기</a>
+				</div>
+			</div>
+			<div class="freelan-con">
+				<h2>최근 본 프리랜서 <span class="num">2</span></h2>
+				<ul>
+
+					<li>
+						<a href="#" class="on">김철수</a>
+					</li>
+					<li>
+						<a href="#">홍길동</a>
+					</li>
+					<li>
+						<a href="#">비상주</a>
+					</li>
+					<li>
+						<a href="#">김길동</a>
+					</li>
+				</ul>
+				<div class="more">
+					<a href="">더보기</a>
+				</div>
+			</div>
+		</div>
+		<ul class="banner">
+			<li>
+				<a href="#">
+					<img src="img/navi_banner01.png" alt="네비배너1">
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<script>
+		$(function () {
+			$(window).scroll(function () {
+				var scroll = $(this).scrollTop();
+				var navi_top = $("#navi").offset().top;
+
+				console.log(scroll);
+				console.log(navi_top);
+
+				if (scroll > 186) {
+					  $("#navi").css({
+							"position": "fixed",
+							"top": "20px"
+					  })
+				} else {
+					  $("#navi").css({
+							"position": "absolute",
+							"top": "186px"
+					  })
+				}
+			})
+		})
+	</script>
+
+    <div id="sub_contents">
+        <div class="sub_tit">
+            <div class="inner">
+                <h1>프리랜서 검색</h1>
+            </div>
+        </div>
+
+        <div id="sub_content">
+            <div class="inner">
+                <div class="left_menu">
+                    <ul>
+                        <li>
+                            <a href="../../page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+                        </li>
+                        <li>
+                            <a href="../../page/freelance_sch/freelance_sch02.html">프리랜서 관리</a>
+                            <ul class="sub_menu">
+                                <li><a href="../../page/freelance_sch/freelance_sch02.html">관심 프리랜서</a></li>
+                                <li><a href="../../page/freelance_sch/freelance_sch02-1.html">오늘 본 프리랜서</a></li>
+                                <li><a href="../../page/freelance_sch/freelance_sch02-2.html">프로젝트 관심 프리랜서</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../page/freelance_sch/freelance_sch03.html">인터뷰 요청 프리랜서</a>
+                        </li>
+                        <li>
+                            <a href="../../page/freelance_sch/freelance_sch04.html">인터뷰 예약 프리랜서</a>
+                        </li>
+                        <li>
+                            <a href="../../page/freelance_sch/freelance_sch05.html">추천받은 프리랜서</a>
+                        </li>
+                        <li>
+                            <a href="../../page/freelance_sch/freelance_sch06.html">자주찾는질문</a>
+                        </li>
+
+                        <div class="ple_sch">
+                            <a href="#">
+                                <img src="../../img/ple_sch.png" alt="">
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="content_info search_box">
+                    <div class="content">
+                        <div class="custom_sch">
+                            <ul class="custom_tab">
+                                <li>
+                                    <a href="../../page/freelance_sch/freelance_sch.html" >맞춤검색</a>
+                                </li>
+                                <li>
+                                    <a href="../../page/freelance_sch/freelance_sch01-2.html" class="on">AI검색</a>
+                                </li>
+                                <li>
+                                    <a href="../../page/freelance_sch/freelance_sch01-3.html">동영상 인터뷰 인재</a>
+                                </li>
+                                <li>
+                                    <a href="../../page/freelance_sch/freelance_sch01-4.html">추천 프리랜서</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="tab1">
+                            <div class="ai_wrap">
+                                <img src="../../img/ai_img.png" alt="ai검색 소개" style="height: 575px;">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="ai_search_wrap">
+            <div class="inner">
+                <div class="wrap">
+                    <article class="lef">
+                        <div class="input_wrap">
+                            <input type="text" placeholder="AI검색어를 입력해 주세요!">
+                            <a href="#" class="btn">
+                                <img src="../../img/ai_search.png" alt="ai 검색버튼">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="ref">
+                        <div class="txt_wrap">
+                        <p class="tit">경력, 나이, 경력, 직무도 키워드로 검색해 보세요.
+                        </p>
+                        <p class="ex">(ex. 기획 7년차, 금융권, 월 500만)</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <div id="profile_wrap02">
+            <div class="inner">
+                <h1 class="pageh1">TOP 인재</h1>
+
+                <div class="wrap">
+                    <article>
+                        <div class="profile">
+                            <div class="pic">
+                                <img src="../../img/face2.png" alt="회원얼굴사진">
+                            </div>
+                            <div class="proile_txt">
+                                <span class="psb">즉시 투입가능</span>
+                                <h2>김OO <span>(남 41세)</span>
+                                    <span class="heart">
+                                        <img src="../../img/icons8_love_48px.png" alt="">
+                                    </span></h2>
+                                <span class="pSpan">
+                                    개발
+                                </span>
+                                <span class="date">
+                                    10년 6개월
+                                </span>
+                                <span class="dif">
+                                    <a href="#" class="spa">특급</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="date">
+                            <li>
+                                <p>10건</p>
+                                <b>공공</b>
+                            </li>
+                            <li>
+                                <p>22건</p>
+                                <b>금융</b>
+                            </li>
+                            <li>
+                                <p>2건</p>
+                                <b>증권/보험</b>
+                            </li>
+                            <li>
+                                <p>15건</p>
+                                <b>커머스</b>
+                            </li>
+                            <li>
+                                <p>10건</p>
+                                <b>민간</b>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="mainwork">
+                            <ul class="mwList">
+                                <li><a href="#">· 고용정보원 인력관리시스템 개발 </a></li>
+                                <li><a href="#">· 고양시 정비사업 e-조합시스템 구축 용역 새발 PL
+                                    </a></li>
+                                <li><a href="#">· 서울미래대학교 지능형학사행정시스템 구축사업 용역
+                                    </a></li>
+                                <li><a href="#">· 인천국제공항공사 인증 및 통합관리시스템 구축 </a></li>
+
+                            </ul>
+                        </div>
+                        <div class="area">
+                            <span class="area1">근무지역</span>
+                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                        </div>
+                        <div class="skill">
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div class="more">
+                                <img src="../../img/card_more.png" alt="더보기">
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="profile">
+                            <div class="pic">
+                                <img src="../../img/face.png" alt="회원얼굴사진">
+                            </div>
+                            <div class="proile_txt">
+                                <span class="psb">즉시 투입가능</span>
+                                <h2>김OO <span>(남 41세)</span>
+                                    <span class="heart">
+                                        <img src="../../img/icons8_love_48px.png" alt="">
+                                    </span></h2>
+                                <span class="pSpan">
+                                    개발
+                                </span>
+                                <span class="date">
+                                    10년 6개월
+                                </span>
+                                <span class="dif">
+                                    <a href="#" class="spa">특급</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="date">
+                            <li>
+                                <p>10건</p>
+                                <b>공공</b>
+                            </li>
+                            <li>
+                                <p>22건</p>
+                                <b>금융</b>
+                            </li>
+                            <li>
+                                <p>2건</p>
+                                <b>증권/보험</b>
+                            </li>
+                            <li>
+                                <p>15건</p>
+                                <b>커머스</b>
+                            </li>
+                            <li>
+                                <p>10건</p>
+                                <b>민간</b>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="mainwork">
+                            <ul class="mwList">
+                                <li><a href="#">· 고용정보원 인력관리시스템 개발 </a></li>
+                                <li><a href="#">· 고양시 정비사업 e-조합시스템 구축 용역 새발 PL
+                                    </a></li>
+                                <li><a href="#">· 서울미래대학교 지능형학사행정시스템 구축사업 용역
+                                    </a></li>
+                                <li><a href="#">· 인천국제공항공사 인증 및 통합관리시스템 구축 </a></li>
+
+                            </ul>
+                        </div>
+                        <div class="area">
+                            <span class="area1">근무지역</span>
+                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                        </div>
+                        <div class="skill">
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div class="more">
+                                <img src="../../img/card_more.png" alt="더보기">
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="profile">
+                            <div class="pic">
+                                <img src="../../img/face2.png" alt="회원얼굴사진">
+                            </div>
+                            <div class="proile_txt">
+                                <span class="psb">즉시 투입가능</span>
+                                <h2>김OO <span>(남 41세)</span>
+                                    <span class="heart">
+                                        <img src="../../img/icons8_love_48px.png" alt="">
+                                    </span></h2>
+                                <span class="pSpan">
+                                    개발
+                                </span>
+                                <span class="date">
+                                    10년 6개월
+                                </span>
+                                <span class="dif">
+                                    <a href="#" class="spa">특급</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="date">
+                            <li>
+                                <p>10건</p>
+                                <b>공공</b>
+                            </li>
+                            <li>
+                                <p>22건</p>
+                                <b>금융</b>
+                            </li>
+                            <li>
+                                <p>2건</p>
+                                <b>증권/보험</b>
+                            </li>
+                            <li>
+                                <p>15건</p>
+                                <b>커머스</b>
+                            </li>
+                            <li>
+                                <p>10건</p>
+                                <b>민간</b>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="mainwork">
+                            <ul class="mwList">
+                                <li><a href="#">· 고용정보원 인력관리시스템 개발 </a></li>
+                                <li><a href="#">· 고양시 정비사업 e-조합시스템 구축 용역 새발 PL
+                                    </a></li>
+                                <li><a href="#">· 서울미래대학교 지능형학사행정시스템 구축사업 용역
+                                    </a></li>
+                                <li><a href="#">· 인천국제공항공사 인증 및 통합관리시스템 구축 </a></li>
+
+                            </ul>
+                        </div>
+                        <div class="area">
+                            <span class="area1">근무지역</span>
+                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                        </div>
+                        <div class="skill">
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div class="more">
+                                <img src="../../img/card_more.png" alt="더보기">
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="profile">
+                            <div class="pic">
+                                <img src="../../img/face2.png" alt="회원얼굴사진">
+                            </div>
+                            <div class="proile_txt">
+                                <span class="psb">즉시 투입가능</span>
+                                <h2>김OO <span>(남 41세)</span>
+                                    <span class="heart">
+                                        <img src="../../img/icons8_love_48px.png" alt="">
+                                    </span></h2>
+                                <span class="pSpan">
+                                    개발
+                                </span>
+                                <span class="date">
+                                    10년 6개월
+                                </span>
+                                <span class="dif">
+                                    <a href="#" class="spa">특급</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="date">
+                            <li>
+                                <p>10건</p>
+                                <b>공공</b>
+                            </li>
+                            <li>
+                                <p>22건</p>
+                                <b>금융</b>
+                            </li>
+                            <li>
+                                <p>2건</p>
+                                <b>증권/보험</b>
+                            </li>
+                            <li>
+                                <p>15건</p>
+                                <b>커머스</b>
+                            </li>
+                            <li>
+                                <p>10건</p>
+                                <b>민간</b>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="mainwork">
+                            <ul class="mwList">
+                                <li><a href="#">· 고용정보원 인력관리시스템 개발 </a></li>
+                                <li><a href="#">· 고양시 정비사업 e-조합시스템 구축 용역 새발 PL
+                                    </a></li>
+                                <li><a href="#">· 서울미래대학교 지능형학사행정시스템 구축사업 용역
+                                    </a></li>
+                                <li><a href="#">· 인천국제공항공사 인증 및 통합관리시스템 구축 </a></li>
+
+                            </ul>
+                        </div>
+                        <div class="area">
+                            <span class="area1">근무지역</span>
+                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                        </div>
+                        <div class="skill">
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div class="more">
+                                <img src="../../img/card_more.png" alt="더보기">
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="profile">
+                            <div class="pic">
+                                <img src="../../img/face.png" alt="회원얼굴사진">
+                            </div>
+                            <div class="proile_txt">
+                                <span class="psb">즉시 투입가능</span>
+                                <h2>김OO <span>(남 41세)</span>
+                                    <span class="heart">
+                                        <img src="../../img/icons8_love_48px.png" alt="">
+                                    </span></h2>
+                                <span class="pSpan">
+                                    개발
+                                </span>
+                                <span class="date">
+                                    10년 6개월
+                                </span>
+                                <span class="dif">
+                                    <a href="#" class="spa">특급</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="date">
+                            <li>
+                                <p>10건</p>
+                                <b>공공</b>
+                            </li>
+                            <li>
+                                <p>22건</p>
+                                <b>금융</b>
+                            </li>
+                            <li>
+                                <p>2건</p>
+                                <b>증권/보험</b>
+                            </li>
+                            <li>
+                                <p>15건</p>
+                                <b>커머스</b>
+                            </li>
+                            <li>
+                                <p>10건</p>
+                                <b>민간</b>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="mainwork">
+                            <ul class="mwList">
+                                <li><a href="#">· 고용정보원 인력관리시스템 개발 </a></li>
+                                <li><a href="#">· 고양시 정비사업 e-조합시스템 구축 용역 새발 PL
+                                    </a></li>
+                                <li><a href="#">· 서울미래대학교 지능형학사행정시스템 구축사업 용역
+                                    </a></li>
+                                <li><a href="#">· 인천국제공항공사 인증 및 통합관리시스템 구축 </a></li>
+
+                            </ul>
+                        </div>
+                        <div class="area">
+                            <span class="area1">근무지역</span>
+                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                        </div>
+                        <div class="skill">
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div class="more">
+                                <img src="../../img/card_more.png" alt="더보기">
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="profile">
+                            <div class="pic">
+                                <img src="../../img/face2.png" alt="회원얼굴사진">
+                            </div>
+                            <div class="proile_txt">
+                                <span class="psb">즉시 투입가능</span>
+                                <h2>김OO <span>(남 41세)</span>
+                                    <span class="heart">
+                                        <img src="../../img/icons8_love_48px.png" alt="">
+                                    </span></h2>
+                                <span class="pSpan">
+                                    개발
+                                </span>
+                                <span class="date">
+                                    10년 6개월
+                                </span>
+                                <span class="dif">
+                                    <a href="#" class="spa">특급</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="date">
+                            <li>
+                                <p>10건</p>
+                                <b>공공</b>
+                            </li>
+                            <li>
+                                <p>22건</p>
+                                <b>금융</b>
+                            </li>
+                            <li>
+                                <p>2건</p>
+                                <b>증권/보험</b>
+                            </li>
+                            <li>
+                                <p>15건</p>
+                                <b>커머스</b>
+                            </li>
+                            <li>
+                                <p>10건</p>
+                                <b>민간</b>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="mainwork">
+                            <ul class="mwList">
+                                <li><a href="#">· 고용정보원 인력관리시스템 개발 </a></li>
+                                <li><a href="#">· 고양시 정비사업 e-조합시스템 구축 용역 새발 PL
+                                    </a></li>
+                                <li><a href="#">· 서울미래대학교 지능형학사행정시스템 구축사업 용역
+                                    </a></li>
+                                <li><a href="#">· 인천국제공항공사 인증 및 통합관리시스템 구축 </a></li>
+
+                            </ul>
+                        </div>
+                        <div class="area">
+                            <span class="area1">근무지역</span>
+                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                        </div>
+                        <div class="skill">
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div class="more">
+                                <img src="../../img/card_more.png" alt="더보기">
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="profile">
+                            <div class="pic">
+                                <img src="../../img/face.png" alt="회원얼굴사진">
+                            </div>
+                            <div class="proile_txt">
+                                <span class="psb">즉시 투입가능</span>
+                                <h2>김OO <span>(남 41세)</span>
+                                    <span class="heart">
+                                        <img src="../../img/icons8_love_48px.png" alt="">
+                                    </span></h2>
+                                <span class="pSpan">
+                                    개발
+                                </span>
+                                <span class="date">
+                                    10년 6개월
+                                </span>
+                                <span class="dif">
+                                    <a href="#" class="spa">특급</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="date">
+                            <li>
+                                <p>10건</p>
+                                <b>공공</b>
+                            </li>
+                            <li>
+                                <p>22건</p>
+                                <b>금융</b>
+                            </li>
+                            <li>
+                                <p>2건</p>
+                                <b>증권/보험</b>
+                            </li>
+                            <li>
+                                <p>15건</p>
+                                <b>커머스</b>
+                            </li>
+                            <li>
+                                <p>10건</p>
+                                <b>민간</b>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="mainwork">
+                            <ul class="mwList">
+                                <li><a href="#">· 고용정보원 인력관리시스템 개발 </a></li>
+                                <li><a href="#">· 고양시 정비사업 e-조합시스템 구축 용역 새발 PL
+                                    </a></li>
+                                <li><a href="#">· 서울미래대학교 지능형학사행정시스템 구축사업 용역
+                                    </a></li>
+                                <li><a href="#">· 인천국제공항공사 인증 및 통합관리시스템 구축 </a></li>
+
+                            </ul>
+                        </div>
+                        <div class="area">
+                            <span class="area1">근무지역</span>
+                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                        </div>
+                        <div class="skill">
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div class="more">
+                                <img src="../../img/card_more.png" alt="더보기">
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="profile">
+                            <div class="pic">
+                                <img src="../../img/face.png" alt="회원얼굴사진">
+                            </div>
+                            <div class="proile_txt">
+                                <span class="psb">즉시 투입가능</span>
+                                <h2>김OO <span>(남 41세)</span>
+                                    <span class="heart">
+                                        <img src="../../img/icons8_love_48px.png" alt="">
+                                    </span></h2>
+                                <span class="pSpan">
+                                    개발
+                                </span>
+                                <span class="date">
+                                    10년 6개월
+                                </span>
+                                <span class="dif">
+                                    <a href="#" class="spa">특급</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="date">
+                            <li>
+                                <p>10건</p>
+                                <b>공공</b>
+                            </li>
+                            <li>
+                                <p>22건</p>
+                                <b>금융</b>
+                            </li>
+                            <li>
+                                <p>2건</p>
+                                <b>증권/보험</b>
+                            </li>
+                            <li>
+                                <p>15건</p>
+                                <b>커머스</b>
+                            </li>
+                            <li>
+                                <p>10건</p>
+                                <b>민간</b>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="mainwork">
+                            <ul class="mwList">
+                                <li><a href="#">· 고용정보원 인력관리시스템 개발 </a></li>
+                                <li><a href="#">· 고양시 정비사업 e-조합시스템 구축 용역 새발 PL
+                                    </a></li>
+                                <li><a href="#">· 서울미래대학교 지능형학사행정시스템 구축사업 용역
+                                    </a></li>
+                                <li><a href="#">· 인천국제공항공사 인증 및 통합관리시스템 구축 </a></li>
+
+                            </ul>
+                        </div>
+                        <div class="area">
+                            <span class="area1">근무지역</span>
+                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                        </div>
+                        <div class="skill">
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div class="more">
+                                <img src="../../img/card_more.png" alt="더보기">
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="profile">
+                            <div class="pic">
+                                <img src="../../img/face.png" alt="회원얼굴사진">
+                            </div>
+                            <div class="proile_txt">
+                                <span class="psb">즉시 투입가능</span>
+                                <h2>김OO <span>(남 41세)</span>
+                                    <span class="heart">
+                                        <img src="../../img/icons8_love_48px.png" alt="">
+                                    </span></h2>
+                                <span class="pSpan">
+                                    개발
+                                </span>
+                                <span class="date">
+                                    10년 6개월
+                                </span>
+                                <span class="dif">
+                                    <a href="#" class="spa">특급</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="date">
+                            <li>
+                                <p>10건</p>
+                                <b>공공</b>
+                            </li>
+                            <li>
+                                <p>22건</p>
+                                <b>금융</b>
+                            </li>
+                            <li>
+                                <p>2건</p>
+                                <b>증권/보험</b>
+                            </li>
+                            <li>
+                                <p>15건</p>
+                                <b>커머스</b>
+                            </li>
+                            <li>
+                                <p>10건</p>
+                                <b>민간</b>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="mainwork">
+                            <ul class="mwList">
+                                <li><a href="#">· 고용정보원 인력관리시스템 개발 </a></li>
+                                <li><a href="#">· 고양시 정비사업 e-조합시스템 구축 용역 새발 PL
+                                    </a></li>
+                                <li><a href="#">· 서울미래대학교 지능형학사행정시스템 구축사업 용역
+                                    </a></li>
+                                <li><a href="#">· 인천국제공항공사 인증 및 통합관리시스템 구축 </a></li>
+
+                            </ul>
+                        </div>
+                        <div class="area">
+                            <span class="area1">근무지역</span>
+                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                        </div>
+                        <div class="skill">
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div>JSP</div>
+                            <div>Java Script</div>
+                            <div>MySQL</div>
+                            <div class="more">
+                                <img src="../../img/card_more.png" alt="더보기">
+                            </div>
+                        </div>
+                    </article>
+                    <!--paging 수정::200807 -->
+					<div class="paging_wrap">
+                    <div class="paging">
+                        <div class="page_prev">
+                            <a class="page_prev_link" href="#">
+								<i class="fas fa-angle-double-left"></i>
+                            </a>
+                            <a class="page_prev_link" href="#">
+								<i class="fas fa-angle-left"></i>
+                            </a>
+                        </div>
+                        <div class="page_num">
+                            <a href="#" class="page_num_link on">1</a>
+                            <a href="#" class="page_num_link">2</a>
+                            <a href="#" class="page_num_link">3</a>
+                            <a href="#" class="page_num_link">4</a>
+                            <a href="#" class="page_num_link">5</a>
+                        </div>
+                        <div class="page_next">
+                            <a href="#" class="page_next_link">
+								<i class="fas fa-angle-right"></i>
+                            </a>
+                            <a href="#" class="page_next_link">
+								<i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+					</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sub_banner">
+            <div class="inner">
+                <img src="../../img/sub_banner.png" alt="서브배너">
+            </div>
+        </div>
+
+        <div id="sub_top_people">
+            <div class="inner">
+                <div class="top_sch">
+                    <div class="fl">
+                        총 <span>1,234</span>개
+                    </div>
+                    <div class="fr">
+                        <div class="put_wrap">
+                            <input type="text" placeholder="결과 내 재검색">
+                            <a href="#" class="search_btn">
+                                <img src="../../img/top_sch_btn.png" alt="찾기버튼이미지">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sch_menu">
+                    <div class="lef">
+                        <a href="#">최신순↓ <span>·</span> </a>
+
+                        <a href="#">등록일순</a> <span>·</span>
+                        <a href="#">수정일순</a> <span>·</span>
+                        <a href="#">예상금액순</a> <span>·</span>
+                        <a href="#">마감순</a>
+                    </div>
+                    <div class="ref">
+                        <span>
+                            <select name="" id="">
+                                <option value="">구직상태</option>
+                            </select>
+                        </span>
+                        <span>
+                            <select name="" id="">
+                                <option value="">업데이트일</option>
+                            </select>
+                        </span>
+                        <span>
+                            <select name="" id="">
+                                <option value="">등록일 순</option>
+                            </select>
+                        </span>
+                        <span>
+                            <select name="" id="">
+                                <option value="">보기</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <ul class="card_list">
+                    <li>
+                        <div class="card_top">
+                            <div class="oh">
+                                <div class="lef">
+                                    <div class="profile">
+                                        <div class="pic">
+                                            <img src="../../img/face.png" alt="회원얼굴사진">
+                                        </div>
+                                        <div class="proile_txt">
+                                            <span class="psb">즉시 투입가능</span>
+                                            <h2>김OO <span>(남 41세)</span>
+                                                <span class="heart">
+                                                <img src="../../img/icons8_love_48px.png" alt="">
+                                            </span></h2>
+                                            <span class="pSpan">
+                                            개발
+                                        </span>
+                                            <span class="date">
+                                            10년 6개월
+                                        </span>
+                                            <span class="dif">
+                                            <a href="#" class="spa">특급</a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                          <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ref">
+                                    <ul class="date_bot">
+                                        <li>
+                                            <p>
+                                                <span>15</span> 건
+                                            </p>
+                                            <span>인터뷰 영상</span>
+                                        </li>
+                                        <li>
+                                            <p><span>22</span>건</p>
+                                            <span>포트폴리오</span>
+                                        </li>
+                                        <li>
+                                            <p><span>11</span>건</p>
+                                            <span>계약</span>
+                                        </li>
+                                        <li>
+                                            <p><span>1,000,000</span></p>
+                                            <span>누적금액</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="date">
+                                        <li>
+                                            <p>10건</p>
+                                            <b>공공</b>
+                                        </li>
+                                        <li>
+                                            <p>22건</p>
+                                            <b>금융</b>
+                                        </li>
+                                        <li>
+                                            <p>2건</p>
+                                            <b>증권/보험</b>
+                                        </li>
+                                        <li>
+                                            <p>15건</p>
+                                            <b>커머스</b>
+                                        </li>
+                                        <li>
+                                            <p>10건</p>
+                                            <b>민간</b>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap">
+                                        <div class="area">
+                                            <span class="area1">근무지역</span>
+                                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                        </div>
+                                        <div class="skill">
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div>MySQL</div>
+                                            <div>Photoshop</div>
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div class="more">
+                                                <img src="../../img/card_more.png" alt="더보기">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card_top">
+                            <div class="oh">
+                                <div class="lef">
+                                    <div class="profile">
+                                        <div class="pic">
+                                            <img src="../../img/face2.png" alt="회원얼굴사진">
+                                        </div>
+                                        <div class="proile_txt">
+                                            <span class="psb">즉시 투입가능</span>
+                                            <h2>김OO <span>(남 41세)</span>
+                                                <span class="heart">
+                                                <img src="../../img/icons8_love_48px.png" alt="">
+                                            </span></h2>
+                                            <span class="pSpan">
+                                            개발
+                                        </span>
+                                            <span class="date">
+                                            10년 6개월
+                                        </span>
+                                            <span class="dif">
+                                            <a href="#" class="spa">특급</a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                          <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ref">
+                                    <ul class="date_bot">
+                                        <li>
+                                            <p>
+                                                <span>15</span> 건
+                                            </p>
+                                            <span>인터뷰 영상</span>
+                                        </li>
+                                        <li>
+                                            <p><span>22</span>건</p>
+                                            <span>포트폴리오</span>
+                                        </li>
+                                        <li>
+                                            <p><span>11</span>건</p>
+                                            <span>계약</span>
+                                        </li>
+                                        <li>
+                                            <p><span>1,000,000</span></p>
+                                            <span>누적금액</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="date">
+                                        <li>
+                                            <p>10건</p>
+                                            <b>공공</b>
+                                        </li>
+                                        <li>
+                                            <p>22건</p>
+                                            <b>금융</b>
+                                        </li>
+                                        <li>
+                                            <p>2건</p>
+                                            <b>증권/보험</b>
+                                        </li>
+                                        <li>
+                                            <p>15건</p>
+                                            <b>커머스</b>
+                                        </li>
+                                        <li>
+                                            <p>10건</p>
+                                            <b>민간</b>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap">
+                                        <div class="area">
+                                            <span class="area1">근무지역</span>
+                                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                        </div>
+                                        <div class="skill">
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div>MySQL</div>
+                                            <div>Photoshop</div>
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div class="more">
+                                                <img src="../../img/card_more.png" alt="더보기">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card_top">
+                            <div class="oh">
+                                <div class="lef">
+                                    <div class="profile">
+                                        <div class="pic">
+                                            <img src="../../img/face.png" alt="회원얼굴사진">
+                                        </div>
+                                        <div class="proile_txt">
+                                            <span class="psb">즉시 투입가능</span>
+                                            <h2>김OO <span>(남 41세)</span>
+                                                <span class="heart">
+                                                <img src="../../img/icons8_love_48px.png" alt="">
+                                            </span></h2>
+                                            <span class="pSpan">
+                                            개발
+                                        </span>
+                                            <span class="date">
+                                            10년 6개월
+                                        </span>
+                                            <span class="dif">
+                                            <a href="#" class="spa">특급</a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                          <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ref">
+                                    <ul class="date_bot">
+                                        <li>
+                                            <p>
+                                                <span>15</span> 건
+                                            </p>
+                                            <span>인터뷰 영상</span>
+                                        </li>
+                                        <li>
+                                            <p><span>22</span>건</p>
+                                            <span>포트폴리오</span>
+                                        </li>
+                                        <li>
+                                            <p><span>11</span>건</p>
+                                            <span>계약</span>
+                                        </li>
+                                        <li>
+                                            <p><span>1,000,000</span></p>
+                                            <span>누적금액</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="date">
+                                        <li>
+                                            <p>10건</p>
+                                            <b>공공</b>
+                                        </li>
+                                        <li>
+                                            <p>22건</p>
+                                            <b>금융</b>
+                                        </li>
+                                        <li>
+                                            <p>2건</p>
+                                            <b>증권/보험</b>
+                                        </li>
+                                        <li>
+                                            <p>15건</p>
+                                            <b>커머스</b>
+                                        </li>
+                                        <li>
+                                            <p>10건</p>
+                                            <b>민간</b>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap">
+                                        <div class="area">
+                                            <span class="area1">근무지역</span>
+                                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                        </div>
+                                        <div class="skill">
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div>MySQL</div>
+                                            <div>Photoshop</div>
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div class="more">
+                                                <img src="../../img/card_more.png" alt="더보기">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card_top">
+                            <div class="oh">
+                                <div class="lef">
+                                    <div class="profile">
+                                        <div class="pic">
+                                            <img src="../../img/face2.png" alt="회원얼굴사진">
+                                        </div>
+                                        <div class="proile_txt">
+                                            <span class="psb">즉시 투입가능</span>
+                                            <h2>김OO <span>(남 41세)</span>
+                                                <span class="heart">
+                                                <img src="../../img/icons8_love_48px.png" alt="">
+                                            </span></h2>
+                                            <span class="pSpan">
+                                            개발
+                                        </span>
+                                            <span class="date">
+                                            10년 6개월
+                                        </span>
+                                            <span class="dif">
+                                            <a href="#" class="spa">특급</a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                          <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ref">
+                                    <ul class="date_bot">
+                                        <li>
+                                            <p>
+                                                <span>15</span> 건
+                                            </p>
+                                            <span>인터뷰 영상</span>
+                                        </li>
+                                        <li>
+                                            <p><span>22</span>건</p>
+                                            <span>포트폴리오</span>
+                                        </li>
+                                        <li>
+                                            <p><span>11</span>건</p>
+                                            <span>계약</span>
+                                        </li>
+                                        <li>
+                                            <p><span>1,000,000</span></p>
+                                            <span>누적금액</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="date">
+                                        <li>
+                                            <p>10건</p>
+                                            <b>공공</b>
+                                        </li>
+                                        <li>
+                                            <p>22건</p>
+                                            <b>금융</b>
+                                        </li>
+                                        <li>
+                                            <p>2건</p>
+                                            <b>증권/보험</b>
+                                        </li>
+                                        <li>
+                                            <p>15건</p>
+                                            <b>커머스</b>
+                                        </li>
+                                        <li>
+                                            <p>10건</p>
+                                            <b>민간</b>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap">
+                                        <div class="area">
+                                            <span class="area1">근무지역</span>
+                                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                        </div>
+                                        <div class="skill">
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div>MySQL</div>
+                                            <div>Photoshop</div>
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div class="more">
+                                                <img src="../../img/card_more.png" alt="더보기">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card_top">
+                            <div class="oh">
+                                <div class="lef">
+                                    <div class="profile">
+                                        <div class="pic">
+                                            <img src="../../img/face.png" alt="회원얼굴사진">
+                                        </div>
+                                        <div class="proile_txt">
+                                            <span class="psb">즉시 투입가능</span>
+                                            <h2>김OO <span>(남 41세)</span>
+                                                <span class="heart">
+                                                <img src="../../img/icons8_love_48px.png" alt="">
+                                            </span></h2>
+                                            <span class="pSpan">
+                                            개발
+                                        </span>
+                                            <span class="date">
+                                            10년 6개월
+                                        </span>
+                                            <span class="dif">
+                                            <a href="#" class="spa">특급</a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                          <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ref">
+                                    <ul class="date_bot">
+                                        <li>
+                                            <p>
+                                                <span>15</span> 건
+                                            </p>
+                                            <span>인터뷰 영상</span>
+                                        </li>
+                                        <li>
+                                            <p><span>22</span>건</p>
+                                            <span>포트폴리오</span>
+                                        </li>
+                                        <li>
+                                            <p><span>11</span>건</p>
+                                            <span>계약</span>
+                                        </li>
+                                        <li>
+                                            <p><span>1,000,000</span></p>
+                                            <span>누적금액</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="date">
+                                        <li>
+                                            <p>10건</p>
+                                            <b>공공</b>
+                                        </li>
+                                        <li>
+                                            <p>22건</p>
+                                            <b>금융</b>
+                                        </li>
+                                        <li>
+                                            <p>2건</p>
+                                            <b>증권/보험</b>
+                                        </li>
+                                        <li>
+                                            <p>15건</p>
+                                            <b>커머스</b>
+                                        </li>
+                                        <li>
+                                            <p>10건</p>
+                                            <b>민간</b>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap">
+                                        <div class="area">
+                                            <span class="area1">근무지역</span>
+                                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                        </div>
+                                        <div class="skill">
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div>MySQL</div>
+                                            <div>Photoshop</div>
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div class="more">
+                                                <img src="../../img/card_more.png" alt="더보기">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card_top">
+                            <div class="oh">
+                                <div class="lef">
+                                    <div class="profile">
+                                        <div class="pic">
+                                            <img src="../../img/face2.png" alt="회원얼굴사진">
+                                        </div>
+                                        <div class="proile_txt">
+                                            <span class="psb">즉시 투입가능</span>
+                                            <h2>김OO <span>(남 41세)</span>
+                                                <span class="heart">
+                                                <img src="../../img/icons8_love_48px.png" alt="">
+                                            </span></h2>
+                                            <span class="pSpan">
+                                            개발
+                                        </span>
+                                            <span class="date">
+                                            10년 6개월
+                                        </span>
+                                            <span class="dif">
+                                            <a href="#" class="spa">특급</a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                          <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ref">
+                                    <ul class="date_bot">
+                                        <li>
+                                            <p>
+                                                <span>15</span> 건
+                                            </p>
+                                            <span>인터뷰 영상</span>
+                                        </li>
+                                        <li>
+                                            <p><span>22</span>건</p>
+                                            <span>포트폴리오</span>
+                                        </li>
+                                        <li>
+                                            <p><span>11</span>건</p>
+                                            <span>계약</span>
+                                        </li>
+                                        <li>
+                                            <p><span>1,000,000</span></p>
+                                            <span>누적금액</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="date">
+                                        <li>
+                                            <p>10건</p>
+                                            <b>공공</b>
+                                        </li>
+                                        <li>
+                                            <p>22건</p>
+                                            <b>금융</b>
+                                        </li>
+                                        <li>
+                                            <p>2건</p>
+                                            <b>증권/보험</b>
+                                        </li>
+                                        <li>
+                                            <p>15건</p>
+                                            <b>커머스</b>
+                                        </li>
+                                        <li>
+                                            <p>10건</p>
+                                            <b>민간</b>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap">
+                                        <div class="area">
+                                            <span class="area1">근무지역</span>
+                                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                        </div>
+                                        <div class="skill">
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div>MySQL</div>
+                                            <div>Photoshop</div>
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div class="more">
+                                                <img src="../../img/card_more.png" alt="더보기">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card_top">
+                            <div class="oh">
+                                <div class="lef">
+                                    <div class="profile">
+                                        <div class="pic">
+                                            <img src="../../img/face.png" alt="회원얼굴사진">
+                                        </div>
+                                        <div class="proile_txt">
+                                            <span class="psb">즉시 투입가능</span>
+                                            <h2>김OO <span>(남 41세)</span>
+                                                <span class="heart">
+                                                <img src="../../img/icons8_love_48px.png" alt="">
+                                            </span></h2>
+                                            <span class="pSpan">
+                                            개발
+                                        </span>
+                                            <span class="date">
+                                            10년 6개월
+                                        </span>
+                                            <span class="dif">
+                                            <a href="#" class="spa">특급</a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                          <li>
+                                            · 부산항 신항 제덕 3개 물양장 정비공사 건설사업관리용역
+                                        </li>
+                                        <li>
+                                            · 부산광역시 부산시 정비사업 e-조합시스템 구축 용역
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ref">
+                                    <ul class="date_bot">
+                                        <li>
+                                            <p>
+                                                <span>15</span> 건
+                                            </p>
+                                            <span>인터뷰 영상</span>
+                                        </li>
+                                        <li>
+                                            <p><span>22</span>건</p>
+                                            <span>포트폴리오</span>
+                                        </li>
+                                        <li>
+                                            <p><span>11</span>건</p>
+                                            <span>계약</span>
+                                        </li>
+                                        <li>
+                                            <p><span>1,000,000</span></p>
+                                            <span>누적금액</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="date">
+                                        <li>
+                                            <p>10건</p>
+                                            <b>공공</b>
+                                        </li>
+                                        <li>
+                                            <p>22건</p>
+                                            <b>금융</b>
+                                        </li>
+                                        <li>
+                                            <p>2건</p>
+                                            <b>증권/보험</b>
+                                        </li>
+                                        <li>
+                                            <p>15건</p>
+                                            <b>커머스</b>
+                                        </li>
+                                        <li>
+                                            <p>10건</p>
+                                            <b>민간</b>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap">
+                                        <div class="area">
+                                            <span class="area1">근무지역</span>
+                                            <span class="area2">[서울] 금천구,구로구,종로구,영등포구</span>
+                                        </div>
+                                        <div class="skill">
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div>MySQL</div>
+                                            <div>Photoshop</div>
+                                            <div>JSP</div>
+                                            <div>Java Script</div>
+                                            <div class="more">
+                                                <img src="../../img/card_more.png" alt="더보기">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--paging 수정::200807 -->
+				<div class="paging_wrap">
+				<div class="paging">
+					<div class="page_prev">
+						<a class="page_prev_link" href="#">
+							<i class="fas fa-angle-double-left"></i>
+						</a>
+						<a class="page_prev_link" href="#">
+							<i class="fas fa-angle-left"></i>
+						</a>
+					</div>
+					<div class="page_num">
+						<a href="#" class="page_num_link on">1</a>
+						<a href="#" class="page_num_link">2</a>
+						<a href="#" class="page_num_link">3</a>
+						<a href="#" class="page_num_link">4</a>
+						<a href="#" class="page_num_link">5</a>
+					</div>
+					<div class="page_next">
+						<a href="#" class="page_next_link">
+							<i class="fas fa-angle-right"></i>
+						</a>
+						<a href="#" class="page_next_link">
+							<i class="fas fa-angle-double-right"></i>
+						</a>
+					</div>
+				</div>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_info">
+        <div id="footer">
+            <div class="footer_top">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <a href="#">회사소개</a>
+                        </li>
+                        <li>
+                            <a href="#"> 프로젝트 문의</a>
+                        </li>
+                        <li>
+                            <a href="#"> 프리랜서 문의</a>
+                        </li>
+                        <li>
+                            <a href="#">인재채용</a>
+                        </li>
+                        <li>
+                            <a href="#">이용약관 </a>
+                        </li>
+                        <li>
+                            <a href="#">개인정보처리방침 </a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_inner">
+                <div class="inner">
+                    <div class="wrap">
+                        <article>
+                            <div class="f_logo">
+                                <img src="../../img/f_logo.png" alt="">
+                            </div>
+                            <address>
+                                주식회사 케이엘큐브 <br>
+                                대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                                사업자등록번호: 100-11-22203 <br>
+                                통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                                호스팅 사업자: Amazon Web Service(AWS)
+                            </address>
+                        </article>
+                        <article class="right">
+                            <h2>IT잡스 SNS 채널</h2>
+                            <ul class="sns">
+                                <li>
+                                    <a href="#">
+                                        <img src="../../img/f_sns01.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../../img/f_sns02.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../../img/f_sns03.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../../img/f_sns04.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="phone">
+                                <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="inner">
+                    <p>
+                        잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가 부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+                    </p>
+                    <p class="copy">
+                        Copyright © 2020 Jons In. Inc. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+          // $("#header_info").load("../../inc/header.html"); //파일내용을 불러와서 includeLoad에 뿌려준다.
+          $("#projuct_left_menu").load("../../inc/freelance_left_ment.html"); //파일내용을 불러와서 includeLoad에 뿌려준다.
+          $("#sub_headers").load("../../inc/freelance_top_menu.html");
+      });
+  </script>
+</body>
+
+
+</html>

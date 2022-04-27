@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head style="overflow-y:hidden;">
+    <title>AM00332</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:image:type" content="/image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/project_reg.css">
+    <link rel="stylesheet" href="../../css/datepicker.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/customTab.js"></script>
+    <script type="text/javascript" src="../../js/sideBar_toggle.js"></script>
+    <script type="text/javascript" src="../../js/admin_common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script> 
+    <script>
+        $(function () {
+           //datepicker 
+           $(".day_input").datepicker({
+              language: 'en',
+              autoClose: true,
+              dateFormat:'yyyy.mm.dd'
+              //minDate: new Date()
+           });
+        });
+    </script>
+</head>
+
+
+<body>
+<!-- admin_header : S ---------->
+<div id="header">
+    <div class="adminLogo">
+        <a href="/admin/main.html"><img src="../../admin_img/admin_logo.png" alt="관리자메인으로 바로가기"></a>
+    </div>
+    <ul id="adminGnb">
+        <li>
+            <a href="../../page/AM00100/AM00101.html">프로젝트</a>
+        </li>
+        <li>
+            <a href="../../page/AM00200/AM00201.html">아웃소싱</a>
+        </li>
+        <li class="on"> 
+            <a href="../../page/AM00300/AM00301.html">프리랜서</a>
+        </li>
+        <li>
+            <a href="../../page/AM00400/AM00401.html">파트너</a>
+        </li>
+        <li>
+            <a href="../../page/AM00500/AM00500.html">클라이언트</a>
+        </li>
+        <li>
+            <a href="../../page/AM00600/AM00601.html">매니저</a>
+        </li>
+        <li>
+            <a href="../../page/AM00700/AM00701.html">회원</a>
+        </li>
+        <li>
+            <a href="../../page/AM00800/AM00801.html">계약</a>
+        </li>
+        <li>
+            <a href="../../page/AM00900/AM00901.html">정산</a>
+        </li>
+        <li>
+            <a href="../../page/AM01000/AM01001.html">유료상품</a>
+        </li>
+        <li>
+            <a href="../../page/AM01200/AM01201.html">사이트관리</a>
+        </li>
+    </ul>
+</div>
+<!-- admin_header : E ---------->
+
+<!-- admin_wrapper : S ---------->
+<div class="wrapper clearfix">
+<!-- admin_sidebar : S ---->
+    <div id="sidebar">
+        <div class="info">
+            <div class="info_icon">
+                <button id="sidebarCollapse">
+                </button>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="홈버튼">
+                        <img src="../../admin_img/left_home_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="잠금버튼">
+                        <img src="../../admin_img/left_lock_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="마이페이지">
+                        <img src="../../admin_img/my_page_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="../../page/AM01100/AM01101.html">
+                    <span data-tooltip-text="현황 및 통계">
+                        <img src="../../admin_img/AM01100_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="../../page/AM01300/AM01301.html">
+                    <span data-tooltip-text="게시판 관리">
+                        <img src="../../admin_img/AM01300_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="../../page/AM01400/AM01401.html">
+                    <span data-tooltip-text="시스템 관리">
+                        <img src="../../admin_img/AM01400_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="nav_side">
+            <div class="SNB_title">
+                <img src="../../admin_img/admin_leftLnb.png" alt="">
+                <h1>프리랜서관리</h1>
+            </div>
+            <ul class="SNB">
+                <li><a href="../../page/AM00300/AM00301.html">프리랜서 등록현황</a></li>
+                <li><a href="../../page/AM00300/AM00311.html">이력서 등록현황</a></li>
+                <li><a href="../../page/AM00300/AM00321.html">프리랜서 찜 관리</a></li>
+                <li class="on">
+                    <a href="#none">인터뷰 관리</a>
+                    <ul class="sub_SNB">
+                        <li class="on"><a href="../../page/AM00300/AM00331.html">인터뷰 요청</a></li>
+                        <li><a href="../../page/AM00300/AM00333.html">인터뷰 취소</a></li>
+                        <li><a href="../../page/AM00300/AM00334.html">인터뷰 확정</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../page/AM00300/AM00351.html">프리랜서 계약관리</a></li>
+                <li><a href="../../page/AM00300/AM00361.html">프리랜서 추천관리</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- admin_sidebar : E ---->
+
+<!-- admin_contents : S ---->
+    <div id="contents">
+        <div class="inner">
+            <div class="title clearfix">
+                <h2>요청한 인터뷰</h2>
+                <ul class="breadcrumb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="../../page/AM00300/AM00301.html">프리랜서관리</a></li>
+                    <li><a href="../../page/AM00300/AM00331.html">인터뷰 관리</a></li>
+                    <li><a href="../../page/AM00300/AM00331.html">인터뷰 요청</a></li>
+                </ul>
+            </div>
+            <section class="content_detail">
+                <div class="detail_title">
+                    <h3>[상주] 오프라인 매장 주문 플랫폼 Admin Front-end 개발</h3>
+                </div>
+                <form action="">
+                    <table class="detail">
+                        <caption class="hidden"></caption>
+                        <colgroup>
+                          <col width="10%">
+                          <col width="30%">
+                          <col width="10%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>클라이언트</th>
+                                <td>(주)아이티최고(itchiogo)</td>
+                                <th>등록일/마감일</th>
+                                <td>2020.00.00 00:00 ~ 2020.00.00 00:00</td>
+                            </tr>
+                            <tr>
+                                <th>직무구분</th>
+                                <td>디자인</td>
+                                <th>담당 매니저</th>
+                                <td>호이호이 둘리</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </section>
+            <div class="searchBox clearfix">
+                <div class="searchOption">
+                    <div class="option_calender">
+                        <span class="w100">기간</span>
+                        <select class="w120 mr5" name="" id="" title="등록일을 선택해주세요">
+                            <option value="">요청일</option>
+                            <option value="">확정일</option>
+                            <option value="">최소일</option>
+                        </select>
+                        <input type="text" class="day_input w120" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요."/>
+                        
+                        <span class="mr8 ml8">~</span>
+                        <input type="text" class="day_input w120" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요."/>
+                        
+                        <ul class="calender_radio">
+                            <li>
+                                <input type="radio" name="term" id="OTD" value="당일">
+                                <label for="OTD"><span>당일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day1" value="1일">
+                                <label for="day1"><span>1일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day7" value="7일">
+                                <label for="day7"><span>7일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day10" value="10일">
+                                <label for="day10"><span>10일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day15" value="15일">
+                                <label for="day15"><span>15일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month1" value="1개월">
+                                <label for="month1"><span>1개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month3" value="3개월">
+                                <label for="month3"><span>3개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month6" value="6개월">
+                                <label for="month6"><span>6개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="whole" value="전체">
+                                <label for="whole"><span>전체</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="option_name">
+                        <div class="lef wAuto"> 
+                            <span class="w100">직무구분</span>
+                            <div class="opName_wrap w398 ml3">
+                                <input type="radio" name="op" id="op1">
+                                <label for="op1" class="checkL">전체</label>
+                                <input type="radio" name="op" id="op2">
+                                <label for="op2" class="checkL">요청</label>
+                                <input type="radio" name="op" id="op3">
+                                <label for="op3" class="checkL">확인</label>
+                                <input type="radio" name="op" id="op4">
+                                <label for="op4" class="checkL">취소</label>
+                                <input type="radio" name="op" id="op5">
+                            </div>
+                        </div>
+                        <div class="ref wAuto">
+                            <span class="w100">참석 여부</span>
+                            <div class="opName_wrap w354 ml3">
+                                <input type="radio" name="ch" id="ch1">
+                                <label for="ch1" class="checkL">전체</label>
+                                <input type="radio" name="ch" id="ch2">
+                                <label for="ch2" class="checkL">참석</label>
+                                <input type="radio" name="ch" id="ch3">
+                                <label for="ch3" class="checkL">미참석</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option_name">
+                        <span class="w100"><label for="">검색</label></span>
+                        <input type="text" id="" class="w893" placeholder="프로젝트명, 클라이언트명 검색">
+                    </div>
+                </div>
+                <div class="ref">
+                        <div class="btn_search">
+                            <a href="">검색</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="tableBox">
+                <div class="list_number clearfix">
+                    <div class="lef">
+                            <p>총 <span class="c_orange">50</span>건</p>
+                        </div>
+                    <div class="ref">
+                            <select name="" id="">
+                                <option value="" selected>보기</option>
+                                <option value="">10</option>
+                                <option value="">15</option>
+                                <option value="">20</option>
+                                <option value="">25</option>
+                                <option value="">30</option>
+                            </select>
+                        </div>
+                </div>
+                <form action="">
+                    <table summery="분야,아이디,가입명,프로젝트명,모집인원,마감일등을 포함한 프로젝트 등록현황 테이블">
+                        <caption class="hidden">분야,아이디,가입명,프로젝트명,모집인원,마감일등을 포함한 프로젝트 등록현황 테이블</caption>
+                        <thead>
+                            <th>
+                                <!-- <input type="checkbox" name="c1" id="c1">
+                                <label for="c1"></label> -->
+                            </th>
+                            <th>No</th>
+                            <th>인터뷰 상태</th>
+                            <th>아이디</th>
+                            <th>이름</th>
+                            <th>휴대폰 번호</th>
+                            <th>이메일</th>
+                            <th>요청일</th>
+                            <th>확정일</th>
+                            <th>취소일</th>
+                            <th>참석여부</th>
+                            <th>인터뷰 관리</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c2">
+                                    <label for="c2"></label>
+                                </td>
+                                <td>100</td>
+                                <td><span>확정</span></td>
+                                <td>weepSOS</td>
+                                <td>패트릭</td>
+                                <td>010-1111-2222</td>
+                                <td>helpme@naver.com</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><span>참석</span></td>
+                                <td>
+                                    <div class="btn_table04 mr2"><a href="#" onclick="view_layer('interview_layer1');">보기</a></div>
+                                    <div class="btn_table04 orange"><a href="#" onclick="view_layer('interview_layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c3">
+                                    <label for="c3"></label>
+                                </td>
+                                <td>99</td>
+                                <td><span>확정</span></td>
+                                <td>weepSOS</td>
+                                <td>패트릭</td>
+                                <td>010-1111-2222</td>
+                                <td>helpme@naver.com</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><span>참석</span></td>
+                                <td>
+                                    <div class="btn_table04 mr2"><a href="#" onclick="view_layer('interview_layer1');">보기</a></div>
+                                    <div class="btn_table04 orange"><a href="#" onclick="view_layer('interview_layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c4">
+                                    <label for="c4"></label>
+                                </td>
+                                <td>98</td>
+                                <td><span>확정</span></td>
+                                <td>weepSOS</td>
+                                <td>패트릭</td>
+                                <td>010-1111-2222</td>
+                                <td>helpme@naver.com</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><span>참석</span></td>
+                                <td>
+                                    <div class="btn_table04 mr2"><a href="#" onclick="view_layer('interview_layer1');">보기</a></div>
+                                    <div class="btn_table04 orange"><a href="#" onclick="view_layer('interview_layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c5">
+                                    <label for="c5"></label>
+                                </td>
+                                <td>97</td>
+                                <td><span>확정</span></td>
+                                <td>weepSOS</td>
+                                <td>패트릭</td>
+                                <td>010-1111-2222</td>
+                                <td>helpme@naver.com</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><span>참석</span></td>
+                                <td>
+                                    <div class="btn_table04 mr2"><a href="#" onclick="view_layer('interview_layer1');">보기</a></div>
+                                    <div class="btn_table04 orange"><a href="#" onclick="view_layer('interview_layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c6">
+                                    <label for="c6"></label>
+                                </td>
+                                <td>96</td>
+                                <td><span>확정</span></td>
+                                <td>weepSOS</td>
+                                <td>패트릭</td>
+                                <td>010-1111-2222</td>
+                                <td>helpme@naver.com</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><span>참석</span></td>
+                                <td>
+                                    <div class="btn_table04 mr2"><a href="#" onclick="view_layer('interview_layer1');">보기</a></div>
+                                    <div class="btn_table04 orange"><a href="#" onclick="view_layer('interview_layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c7">
+                                    <label for="c7"></label>
+                                </td>
+                                <td>95</td>
+                                <td><span>취소</span></td>
+                                <td>weepSOS</td>
+                                <td>패트릭</td>
+                                <td>010-1111-2222</td>
+                                <td>helpme@naver.com</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><span>-</span></td>
+                                <td>
+                                    <div class="btn_table04 mr2"><a href="#" onclick="view_layer('interview_layer1');">보기</a></div>
+                                    <div class="btn_table04 orange"><a href="#" onclick="view_layer('interview_layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c8">
+                                    <label for="c8"></label>
+                                </td>
+                                <td>94</td>
+                                <td><span>취소</span></td>
+                                <td>weepSOS</td>
+                                <td>패트릭</td>
+                                <td>010-1111-2222</td>
+                                <td>helpme@naver.com</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><span>-</span></td>
+                                <td>
+                                    <div class="btn_table04 mr2"><a href="#" onclick="view_layer('interview_layer1');">보기</a></div>
+                                    <div class="btn_table04 orange"><a href="#" onclick="view_layer('interview_layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c9">
+                                    <label for="c9"></label>
+                                </td>
+                                <td>93</td>
+                                <td><span>취소</span></td>
+                                <td>weepSOS</td>
+                                <td>패트릭</td>
+                                <td>010-1111-2222</td>
+                                <td>helpme@naver.com</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><span>-</span></td>
+                                <td>
+                                    <div class="btn_table04 mr2"><a href="#" onclick="view_layer('interview_layer1');">보기</a></div>
+                                    <div class="btn_table04 orange"><a href="#" onclick="view_layer('interview_layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c10">
+                                    <label for="c10"></label>
+                                </td>
+                                <td>92</td>
+                                <td><span>취소</span></td>
+                                <td>weepSOS</td>
+                                <td>패트릭</td>
+                                <td>010-1111-2222</td>
+                                <td>helpme@naver.com</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><span>-</span></td>
+                                <td>
+                                    <div class="btn_table04 mr2"><a href="#" onclick="view_layer('interview_layer1');">보기</a></div>
+                                    <div class="btn_table04 orange"><a href="#" onclick="view_layer('interview_layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c11">
+                                    <label for="c11"></label>
+                                </td>
+                                <td>91</td>
+                                <td><span>취소</span></td>
+                                <td>weepSOS</td>
+                                <td>패트릭</td>
+                                <td>010-1111-2222</td>
+                                <td>helpme@naver.com</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><span>-</span></td>
+                                <td>
+                                    <div class="btn_table04 mr2"><a href="#" onclick="view_layer('interview_layer1');">보기</a></div>
+                                    <div class="btn_table04 orange"><a href="#" onclick="view_layer('interview_layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="table_bot clearfix">
+                    <div class="lef">
+                        <div class="btn_delete">
+                            <a href="">
+                                <img src="../../admin_img/trash.png" alt="">삭제하기
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ref">
+                        <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                    </div>
+                </div>
+                <div class="table_pagination">
+                    <ul class="pagination">
+                        <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""/></a></li>
+                        <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""/></a></li>
+                        <li class="active"><a href="" class="on">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">6</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">8</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">10</a></li>
+                        <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""/></a></li>
+                        <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function confirm_cancle() {
+            var confirm_cancle = confirm("프로젝트 지원건이 확인전이므로\n취소하실 수 있습니다\n\n취소하겠습니까?");
+     
+            if ( confirm_cancle == true ) {
+                alert("프로젝트 지원이 취소되었습니다.");
+            } else if ( confirm_cancle == false ) {
+            }
+        }
+        function confirm_cancle02() {
+            var confirm_cancle = confirm("삭제하시겠습니까?");
+     
+            if ( confirm_cancle == true ) {
+                alert("삭제되었습니다.");
+            } else if ( confirm_cancle == false ) {
+            }
+        }
+    </script>
+    <script>
+        function openWindowPop(url, name) {
+            var options = 'top=0, left=0, width=1260, height=800, status=no, menubar=no, toolbar=no, resizable=no scrollbars=1';
+            window.open(url, name, options);
+        }
+    </script>
+
+<!-- admin_contents : E ---->
+</div>
+<!-- admin_wrapper : E ---------->
+<div class="dim-layer" id="interview_layer1">
+    <div class="dimBg h100p"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="interview_inner">
+                <div class="manager_title mb30">
+                    <h3 class="title_h3">인터뷰 상세 내용</h3>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="close_layer('interview_layer1');"></a>
+                    </div>
+                </div>
+                <div class="info_wrap m0">
+                    <div class="tab_reg">
+                        <ul class="proLnb tap_style">
+                            <li>
+                                    <a href="#tab1" class="on">인터뷰 정보</a>
+                            </li>
+                            <li>
+                                    <a href="#tab2" class="">진행 상세내역</a>
+                            </li>
+                        </ul>
+                        <!-- <script>
+                            $(function(){
+                                    $(".proLnb li").on("click",function(){
+                                            $(".proLnb li").find("a").removeClass("on");
+                                            $(this).find("a").addClass("on");
+        
+                                            var showTab = $(this).find("a").attr("href");
+                                            showTab.addclass("on");
+                                    });
+                            });
+                        </script> -->
+                        <div id="tab1" class="box on" style="display: block;">
+                            <div class="info tapCon_style">
+                                <section class="content_detail pop_pad mb30">
+                                    <div class="detail_title">
+                                        <h3>[상주] 오프라인 매장 주문 플랫폼 Admin Front-end 개발</h3>
+                                    </div>
+                                    <form action="">
+                                        <table class="detail">
+                                            <caption class="hidden"></caption>
+                                            <tbody>
+                                                <tr>
+                                                    <th>클라이언트</th>
+                                                    <td>(주)아이티최고(itchiogo)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>직무구분</th>
+                                                    <td>디자인</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>등록일/마감일</th>
+                                                    <td>2020.00.00 00:00 ~ 2020.00.00 00:00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>담당 매니저</th>
+                                                    <td>호이호이 둘리</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                </section>
+                                <section>
+                                    <div class="tableBox">
+                                        <div class="list_number clearfix">
+                                            <div class="lef">
+                                                <h4>프리랜서 정보</h4>
+                                        </div>
+                                        <form action="">
+                                            <table summery="">
+                                                <caption class="hidden"></caption>
+                                                <thead>
+                                                        <th>아이디</th>
+                                                        <th>이름</th>
+                                                        <th>휴대폰번호</th>
+                                                        <th>이메일</th>
+                                                        <th>인터뷰 상태</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>weep1004</td>
+                                                        <td>홍길동</td>
+                                                        <td>010-0000-0000</td>
+                                                        <td>weef20202@naver.com</td>
+                                                        <td><span>확정</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </div>
+                                </section>
+                                <section class="wrap_detail">
+                                    <h4>인터뷰 요청내역</h4>
+                                    <section class="content_detail pop_pad mb30 noShad">
+                                        <form action="">
+                                            <table class="detail">
+                                                <caption class="hidden"></caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>날짜</th>
+                                                        <td>2020.09.12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>시간</th>
+                                                        <td>18:30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>장소</th>
+                                                        <td>서울시 남구로역 3번출구</td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <th class="p0">내용</th>
+                                                        <td class="p0 td_popup02">인터뷰 요청드립니다.인터뷰 요청드립니다.인터뷰 요청드립니다.인터뷰 요청드립니다.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tab2" class="box" style="display: none;">
+                            <div class="info tapCon_style">
+                                <section class="mt50">
+                                    <div class="tableBox">
+                                        <form action="">
+                                            <table summery="">
+                                                <caption class="hidden"></caption>
+                                                <thead>
+                                                        <th>전송일자</th>
+                                                        <th>상태</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span>2020.00.00 00:00</span></td>
+                                                        <td><span>확정</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span>2020.00.00 00:00</span></td>
+                                                        <td><span>요청</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="wrap_btn">
+                    <div class="btn_submit"><a href="" >확인</a></div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dim-layer" id="interview_layer1">
+    <div class="dimBg h100p"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="interview_inner">
+                <div class="manager_title mb30">
+                    <h3 class="title_h3">인터뷰 상세 내용</h3>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="close_layer('interview_layer1');"></a>
+                    </div>
+                </div>
+                <div class="info_wrap m0">
+                    <div class="tab_reg">
+                        <ul class="proLnb tap_style">
+                            <li>
+                                    <a href="#tab1" class="on">인터뷰 정보</a>
+                            </li>
+                            <li>
+                                    <a href="#tab2" class="">진행 상세내역</a>
+                            </li>
+                        </ul>
+                        <!-- <script>
+                            $(function(){
+                                    $(".proLnb li").on("click",function(){
+                                            $(".proLnb li").find("a").removeClass("on");
+                                            $(this).find("a").addClass("on");
+        
+                                            var showTab = $(this).find("a").attr("href");
+                                            showTab.addclass("on");
+                                    });
+                            });
+                        </script> -->
+                        <div id="tab1" class="box on" style="display: block;">
+                            <div class="info tapCon_style">
+                                <section class="content_detail pop_pad mb30">
+                                    <div class="detail_title">
+                                        <h3>[상주] 오프라인 매장 주문 플랫폼 Admin Front-end 개발</h3>
+                                    </div>
+                                    <form action="">
+                                        <table class="detail">
+                                            <caption class="hidden"></caption>
+                                            <tbody>
+                                                <tr>
+                                                    <th>클라이언트</th>
+                                                    <td>(주)아이티최고(itchiogo)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>직무구분</th>
+                                                    <td>디자인</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>등록일/마감일</th>
+                                                    <td>2020.00.00 00:00 ~ 2020.00.00 00:00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>담당 매니저</th>
+                                                    <td>호이호이 둘리</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                </section>
+                                <section>
+                                    <div class="tableBox">
+                                        <div class="list_number clearfix">
+                                            <div class="lef">
+                                                <h4>프리랜서 정보</h4>
+                                        </div>
+                                        <form action="">
+                                            <table summery="">
+                                                <caption class="hidden"></caption>
+                                                <thead>
+                                                        <th>아이디</th>
+                                                        <th>이름</th>
+                                                        <th>휴대폰번호</th>
+                                                        <th>이메일</th>
+                                                        <th>인터뷰 상태</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>weep1004</td>
+                                                        <td>홍길동</td>
+                                                        <td>010-0000-0000</td>
+                                                        <td>weef20202@naver.com</td>
+                                                        <td><span>확정</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </div>
+                                </section>
+                                <section class="wrap_detail">
+                                    <h4>인터뷰 요청내역</h4>
+                                    <section class="content_detail pop_pad mb30 noShad">
+                                        <form action="">
+                                            <table class="detail">
+                                                <caption class="hidden"></caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>날짜</th>
+                                                        <td>2020.09.12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>시간</th>
+                                                        <td>18:30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>장소</th>
+                                                        <td>서울시 남구로역 3번출구</td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <th class="p0">내용</th>
+                                                        <td class="p0 td_popup02">인터뷰 요청드립니다.인터뷰 요청드립니다.인터뷰 요청드립니다.인터뷰 요청드립니다.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tab2" class="box" style="display: none;">
+                            <div class="info tapCon_style">
+                                <section class="mt50">
+                                    <div class="tableBox">
+                                        <form action="">
+                                            <table summery="">
+                                                <caption class="hidden"></caption>
+                                                <thead>
+                                                        <th>전송일자</th>
+                                                        <th>상태</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span>2020.00.00 00:00</span></td>
+                                                        <td><span>확정</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span>2020.00.00 00:00</span></td>
+                                                        <td><span>요청</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="wrap_btn">
+                    <div class="btn_submit"><a href="" >확인</a></div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dim-layer" id="interview_layer2">
+    <div class="dimBg h100p"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="interview_inner">
+                <div class="manager_title mb30">
+                    <h3 class="title_h3">인터뷰 확정 관리</h3>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="close_layer('interview_layer2');"></a>
+                    </div>
+                </div>
+                <section class="content_detail pop_pad mb30">
+                    <div class="detail_title">
+                        <h3>[상주] 오프라인 매장 주문 플랫폼 Admin Front-end 개발</h3>
+                    </div>
+                    <form action="">
+                        <table class="detail">
+                            <caption class="hidden"></caption>
+                            <tbody>
+                                <tr>
+                                    <th>클라이언트</th>
+                                    <td>(주)아이티최고(itchiogo)</td>
+                                </tr>
+                                <tr>
+                                    <th>직무구분</th>
+                                    <td>디자인</td>
+                                </tr>
+                                <tr>
+                                    <th>등록일/마감일</th>
+                                    <td>2020.00.00 00:00 ~ 2020.00.00 00:00</td>
+                                </tr>
+                                <tr>
+                                    <th>담당 매니저</th>
+                                    <td>호이호이 둘리</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </section>
+                <section>
+                    <div class="tableBox">
+                        <div class="list_number clearfix">
+                            <div class="lef">
+                                <h4>프리랜서 정보</h4>
+                        </div>
+                        <form action="">
+                            <table summery="">
+                                <caption class="hidden"></caption>
+                                <thead>
+                                        <th>아이디</th>
+                                        <th>이름</th>
+                                        <th>휴대폰번호</th>
+                                        <th>이메일</th>
+                                        <th>인터뷰 상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>weep1004</td>
+                                        <td>홍길동</td>
+                                        <td>010-0000-0000</td>
+                                        <td>weef20202@naver.com</td>
+                                        <td><span>확정</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <div class="tableBox">
+                        <div class="list_number clearfix">
+                            <div class="lef w100p">
+                                <h4>인터뷰 확정 관리</h4>
+                            </div>
+                        </div>
+                        <form action="" class="m0">
+                            <table>
+                                <caption class="hidden"></caption>
+                                <tbody>
+                                    <tr>
+                                        <th>인터뷰 참석여부</th>
+                                        <td>
+                                            <input type="radio" name="ch" id="ch01">
+                                            <label for="ch01" class="radioL fs13">참석</label>
+                                            <input type="radio" name="ch" id="ch02">
+                                            <label for="ch02" class="radioL fs13">미참석</label>
+                                        </td>
+                                        <th>합격 여부</th>
+                                        <td>
+                                            <input type="radio" name="POP_PS" id="POP_PS01">
+                                            <label for="POP_PS01" class="radioL fs13">합격</label>
+                                            <input type="radio" name="POP_PS" id="POP_PS02">
+                                            <label for="POP_PS02" class="radioL fs13">불합격</label>
+                                            <input type="radio" name="POP_PS" id="POP_PS03">
+                                            <label for="POP_PS03" class="radioL fs13">예비합격</label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <form action="">
+                            <textarea class="w100p noResiz" name="" id="" cols="30" rows="10"></textarea>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <div class="tableBox">
+                        <div class="list_number clearfix">
+                            <div class="lef">
+                                <h4>담당자 메모</h4>
+                        </div>
+                        <form action="">
+                            <textarea class="w100p noResiz" name="" id="" cols="30" rows="10"></textarea>
+                        </form>
+                    </div>
+                </section>
+                <section class="wrap_btn">
+                    <div class="btn_submit"><a class="bgWhite" href="" >취소</a></div>
+                    <div class="btn_submit"><a href="" >저장</a></div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <title>위프(WEEP) IT인력중개플랫폼</title>
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="assets/css/stylesheet.css" />
+  <script src="assets/js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- HEADER -->
+    <header>
+      <div class="header-box">
+        <h2 class="page-tit">아이디/비밀번호 찾기</h2>
+        <button type="button" class="btn-page-back"><span class="ir">뒤로</span></button>
+        <button class="btn-gnb" type="button"><span class="ir">전체메뉴</span></button>
+      </div>
+      <div class="gnb-wrap">
+        <div class="gnb-box">
+          <div class="members">
+            <span class="img-logo">wee.p</span>
+            <button class="btn-close" type="button">메뉴닫기</button>
+          </div>
+          <div class="links">
+            <div class="link-login"><a href="#none">로그인</a></div>
+            <div class="link-join"><a href="#none">회원가입</a></div>
+          </div>
+          <nav class="gnb">
+            <ul class="main-menu">
+              <li>
+                <a class="depth1" href="#none">프로젝트 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">아웃소싱 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">프리랜서 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">파트너 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">WEE.P 소개</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="side-menu">
+              <li>
+                <a class="depth1" href="#none">위프 이용안내</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">위프 지원센터</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="boards">
+            <a href="#none">1:1 온라인 문의</a>
+            <a href="#none">자주찾는질문</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //HEADER -->
+
+    <div class="contents" data-name="login-find">
+      <div class="info-text">가입 시 입력한 본인정보를 입력해 주세요.</div>
+      <nav class="tabmenu type1">
+        <ul>
+          <li class="active" data-tab="find-id"><a href="#none">아이디 찾기</a></li>
+          <!-- 활성화시 li에 'active' 클래스추가-->
+          <li data-tab="find-pw"><a href="#none">비밀번호 찾기</a></li>
+        </ul>
+      </nav>
+
+      <!-- 아이디 찾기 -->
+      <section id="find-id" class="tab-content active">
+        <form action="">
+          <fieldset>
+            <legend> 로그인 정보입력</legend>
+            <div class="radiobox-wrap">
+              <div class="radiobox type-blue">
+                <input id="f1" type="radio" name="r1" value="e" checked>
+                <label for="f1">이메일 인증</label>
+              </div>
+              <div class="radiobox type-blue">
+                <input id="f2" type="radio" name="r1" value="c">
+                <label for="f2">휴대폰 인증</label>
+              </div>
+            </div>
+            <div class="selectbox type-bg">
+              <select name="" id="sel" onchange="selectbox(this);">
+                <option value="" selected>프리랜서 회원</option>
+                <option value="">파트너 회원</option>
+                <option value="">클라이언트 회원</option>
+              </select>
+              <label for="sel">프리랜서 회원</label>
+            </div>
+            <div class="inputbox">
+              <input type="text" placeholder="이름을 입력하세요" title="이름을 입력하세요">
+            </div>
+            <div class="inputbox">
+              <input type="text" id="email" placeholder="이메일을 입력하세요" title="이메일주소">
+            </div>
+            <div class="inputbox">
+              <input type="text" id="cell" placeholder="휴대폰번호를 입력하세요" title="휴대폰번호">
+            </div>
+            <button class="btn typeAll" type="button">아이디 찾기</button>
+          </fieldset>
+        </form>
+      </section>
+      <!-- //아이디 찾기 -->
+
+      <!-- 비밀번호 찾기 -->
+      <section id="find-pw" class="tab-content">
+        <form action="">
+          <fieldset>
+            <legend> 로그인 정보입력</legend>
+            <div class="radiobox-wrap">
+              <div class="radiobox type-blue">
+                <input id="f3" type="radio" name="r1" value="e" checked>
+                <label for="f3">이메일 인증</label>
+              </div>
+              <div class="radiobox type-blue">
+                <input id="f4" type="radio" name="r1" value="c">
+                <label for="f4">휴대폰 인증</label>
+              </div>
+            </div>
+            <div class="selectbox type-bg">
+              <select name="" id="sel2" onchange="selectbox(this);">
+                <option value="" selected>프리랜서 회원</option>
+                <option value="">파트너 회원</option>
+                <option value="">클라이언트 회원</option>
+              </select>
+              <label for="sel2">프리랜서 회원</label>
+            </div>
+            <div class="inputbox">
+              <input type="text" placeholder="아이디를 입력하세요" title="아이디">
+            </div>
+            <div class="inputbox">
+              <input type="text" placeholder="이메일 인증/휴대폰 인증" title="이메일 인증/휴대폰 인증">
+            </div>
+            <div class="inputbox">
+              <input type="text" id="email2" placeholder="이메일을 입력하세요" title="이메일">
+            </div>
+            <div class="inputbox">
+              <input type="text" id="cell2" placeholder="휴대폰번호를 입력하세요" title="휴대폰번호">
+            </div>
+            <button class="btn typeAll" type="button">비밀번호 찾기</button>
+          </fieldset>
+        </form>
+      </section>
+      <!-- //비밀번호 찾기 -->
+    </div>
+  </div>
+  <script src="assets/js/common.js"></script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      tabmenuActive(); // 상단탭메뉴.      
+
+
+      //s 퍼블리싱용.개발반영하지마세요
+      $('#cell').css('display', 'none');
+      $('#cell2').css('display', 'none');
+
+      $('#f1').click(function () {
+        $('#email').show(); $('#cell').hide();
+      })
+      $('#f2').click(function () {
+        $('#cell').show(); $('#email').hide();
+      })
+      $('#f3').click(function () {
+        $('#email2').show(); $('#cell2').hide();
+      })
+      $('#f4').click(function () {
+        $('#email2').hide(); $('#cell2').show();
+      })
+
+
+      function init() {
+        document.getElementById('name').style.display = 'none';
+        document.getElementById('cell').style.display = 'none';
+        document.getElementById('choice-content3').style.display = 'none';
+      }
+      //e 퍼블리싱용.개발반영하지마세요
+    });
+  </script>
+</body>
+
+</html>

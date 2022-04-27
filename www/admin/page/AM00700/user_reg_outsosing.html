@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head style="overflow-y:hidden;">
+    <title>user_reg_outsosing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:image:type" content="/image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/project_reg.css">
+    <link rel="stylesheet" href="../../css/datepicker.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/customTab.js"></script>
+    <script type="text/javascript" src="../../js/sideBar_toggle.js"></script>
+    <script type="text/javascript" src="../../js/admin_common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script> 
+    <script>
+        $(function () {
+           //datepicker 
+           $(".day_input").datepicker({
+              language: 'en',
+              autoClose: true,
+              dateFormat:'yyyy.mm.dd'
+              //minDate: new Date()
+           });
+        });
+    </script>
+</head>
+
+
+<body>
+    <!-- admin_header : S ---------->
+    <div id="header">
+        <div class="adminLogo">
+            <a href="/admin/main.html"><img src="../../admin_img/admin_logo.png" alt="관리자메인으로 바로가기"></a>
+        </div>
+        <ul id="adminGnb">
+            <li>
+                <a href="../../page/AM00100/AM00101.html">프로젝트</a>
+            </li>
+            <li>
+                <a href="../../page/AM00200/AM00201.html">아웃소싱</a>
+            </li>
+            <li>
+                <a href="../../page/AM00300/AM00301.html">프리랜서</a>
+            </li>
+            <li>
+                <a href="../../page/AM00400/AM00401.html">파트너</a>
+            </li>
+            <li>
+                <a href="../../page/AM00500/AM00500.html">클라이언트</a>
+            </li>
+            <li>
+                <a href="../../page/AM00600/AM00601.html">매니저</a>
+            </li>
+            <li class="on">
+                <a href="../../page/AM00700/AM00701.html">회원</a>
+            </li>
+            <li>
+                <a href="../../page/AM00800/AM00801.html">계약</a>
+            </li>
+            <li>
+                <a href="../../page/AM00900/AM00901.html">정산</a>
+            </li>
+            <li>
+                <a href="../../page/AM01000/AM01001.html">유료상품</a>
+            </li>
+            <li>
+                <a href="../../page/AM01200/AM01201.html">사이트관리</a>
+            </li>
+        </ul>
+    </div>
+    <!-- admin_header : E ---------->
+
+    <!-- admin_wrapper : S ---------->
+    <div class="wrapper clearfix">
+        <!-- admin_sidebar : S ---->
+        <div id="sidebar">
+            <div class="info">
+                <div class="info_icon">
+                    <button id="sidebarCollapse">
+                    </button>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/left_home_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/left_lock_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/my_page_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/AM01100_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/AM01300_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/AM01400_icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="nav_side">
+                <div class="SNB_title">
+                    <img src="../../admin_img/admin_leftLnb.png" alt="">
+                    <h1>회원관리</h1>
+                </div>
+                <ul class="SNB">
+                    <li class="on"><a href="../../page/AM00700/AM00701.html">회원목록</a></li>
+                    <li><a href="../../page/AM00700/AM00711.html">휴면회원</a></li>
+                    <li><a href="../../page/AM00700/AM00721.html">탈퇴회원</a></li>
+                    <li><a href="../../page/AM00700/AM00731.html">프리랜서 SMS/메일링</a></li>
+                    <li><a href="../../page/AM00700/AM00741.html">아웃소싱 SMS/메일링</a></li>
+                    <li><a href="../../page/AM00700/AM00751.html">클라이언트 SMS/메일링</a></li>
+                    <li><a href="../../page/AM00700/AM00761.html">휴면회원설정</a></li>
+                    <li><a href="../../page/AM00700/AM00771.html">비밀번호변경 설정</a></li>
+                    <li><a href="../../page/AM00700/AM00781.html">위프톡 관리</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- admin_sidebar : E ---->
+
+        <!-- admin_contents : S ---->
+        <div id="contents">
+            <div class="inner">
+                <div class="title clearfix">
+                    <h2>회원등록</h2>
+                    <ul class="breadcrumb">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">회원관리</a></li>
+                        <li><a href="#">회원목록</a></li>
+						<li><a href="#">프리랜서 회원 등록</a></li>
+                    </ul>
+                </div>
+
+				<div class="subContent mb30">
+					<div class="title_wrap">
+						<h5>기본 정보</h5>
+					</div>
+					<div class="subContent_table">
+						<form action="">
+							<table>
+								<caption></caption>
+								<tbody>
+									<tr>
+										<th>
+											<span class="c_red">&#42;</span>성명
+										</th>
+										<td>
+											<input type="text" id="" placeholder="">
+										</td>
+										<th>
+											<span class="c_red">&#42;</span>아이디
+										</th>
+										<td>
+											<input type="text" id="" placeholder="">
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<span class="c_red">&#42;</span>패스워드
+										</th>
+										<td>
+											<input type="text" id="" placeholder="비밀번호 (6~16자의 영문, 숫자, 특수기호)">
+										</td>
+										<th>
+											<span class="c_red">&#42;</span>패스워드 확인
+										</th>
+										<td>
+											<input type="text" id="" placeholder="">
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<span class="c_red">&#42;</span>휴대폰번호
+										</th>
+										<td>
+											<input type="text" id="" placeholder="">
+										</td>
+										<th>
+											<span class="c_red">&#42;</span>이메일
+										</th>
+										<td>
+											<input type="text" id="" placeholder="">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+					</div>
+				</div>
+
+				<div class="subContent mb30">
+					<div class="title_wrap">
+						<h5>연락 가능 시간 설정</h5>
+					</div>
+					<div class="cont-box">
+						<form action="">
+							<select name="" id="" class="w100" title="">
+                                <option value="">09시</option>
+                                <option value="">10시</option>
+                            </select>
+							<span class="mr5 ml5">~</span>
+							<select name="" id="" class="w100" title="">
+                                <option value="">9시</option>
+                                <option value="">10시</option>
+                            </select>
+							<input type="text" class="w300" placeholder="지정 휴대폰 010-3123-1234
+"/>
+						</form>
+					</div>
+				</div>
+
+				<div class="subContent mb30">
+					<div class="title_wrap">
+						<h5>나의 현재 상태 표시</h5>
+					</div>
+					<div class="cont-box">
+						<form action="">
+							<div class="rad-wrap">
+								<input type="radio" name="pr" id="pr00" />
+								<label for="pr00" class="radioL">프로젝트 지원중</label>
+								<span class="pr_chk">
+									<input type="checkbox" name="" id="chk_00_01" />
+									<label for="chk_00_01" class="checkL">즉시투입가능</label>
+									<input type="checkbox" name="" id="chk_00_02" />
+									<label for="chk_00_02" class="checkL">면접 후 협의</label>
+									<input type="checkbox" name="" id="chk_00_03" />
+									<label for="chk_00_03" class="checkL">직접 입력</label>
+									<input type="text" />
+								</span>
+							</div>
+							<div class="rad-wrap">
+								<input type="radio" name="pr" id="pr01" />
+								<label for="pr01" class="radioL">프로젝트 진행중</label>
+								<input type="radio" name="pr" id="pr02" />
+								<label for="pr02" class="radioL">휴가중</label>
+								<input type="radio" name="pr" id="pr03" />
+								<label for="pr03" class="radioL">프로젝트 지원의사 없음</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+        </div>
+        <!-- admin_contents : E ---->
+    </div>
+    <!-- admin_wrapper : E ---------->
+    <script>
+		$('input[name="pr"]').click(function() {
+			$('#pr00').prop('checked') ? $('.pr_chk').addClass('on') : $('.pr_chk').removeClass('on');
+		})
+        function confirm_cancle() {
+            var confirm_cancle = confirm("프로젝트 지원건이 확인전이므로\n취소하실 수 있습니다\n\n취소하겠습니까?");
+     
+            if ( confirm_cancle == true ) {
+                alert("프로젝트 지원이 취소되었습니다.");
+            } else if ( confirm_cancle == false ) {
+            }
+        }
+        function confirm_cancle02() {
+            var confirm_cancle = confirm("삭제하시겠습니까?");
+     
+            if ( confirm_cancle == true ) {
+                alert("삭제되었습니다.");
+            } else if ( confirm_cancle == false ) {
+            }
+        }
+    </script>
+    <script>
+        function openWindowPop(url, name) {
+            var options = 'top=0, left=0, width=1260, height=800, status=no, menubar=no, toolbar=no, resizable=no scrollbars=1';
+            window.open(url, name, options);
+        }
+    </script>
+</body>
+
+
+</html>

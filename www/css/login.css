@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* 20200717 íšŒì›ê°€ìž… msg ì¶”ê°€ */
+.notice_msg { display: none; z-index: 9100; position: absolute; left: -1px; top: 60px; min-width: 100px; padding: 5px 7px 6px; border: 1px solid #ffbcb9; background-color: #ffeeec; color: #555; box-sizing: border-box; white-space: nowrap; font-size: 12px; letter-spacing: -1px; }
+
+.mbrRegist .mbr_zipcode .notice_msg:after, .notice_msg:after { content: ''; display: block; position: absolute; left: 9px; top: -11px; width: 19px; height: 11px; background: url("../img/sprite-icon.png") no-repeat 0 -145px; }
+
+.mbrRegist .mbr_zipcode .notice_msg.success, .notice_msg.success { border-color: #b7dbff; background-color: #f7fbff; }
+
+.mbrRegist .mbr_zipcode .notice_msg.success:after, .notice_msg.success:after { width: 18px; background: url("../img/sprite-icon.png") no-repeat 0 -124px; }
+
+/* 20200717 //íšŒì›ê°€ìž… msg ì¶”ê°€ */
+.processCotent .fileDesc .fileUploadBtn { flex: 1; height: 50px; font-weight: bold; background: #333; color: #fff; outline: none; box-sizing: border-box; display: flex; justify-content: center; align-items: center; margin-right: 0 !important; padding-left: 0 !important; }
+
+.processCotent .calBudget li ul.calBudgetLi li { position: relative; }
+
+.processCotent .roundInput { border: none !important; }
+
+.processCotent .calBudget li ul.calBudgetLi li select { position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; border: solid 1px #dbdbdb; background-color: #ffffff; letter-spacing: -0.52px; text-align: left; color: #333333; padding-left: 14px; font-weight: bold; background: url(../img/bg_smail_sel.png) no-repeat center right 20px; background-color: #fff; font-weight: 400; height: 40px; }
+
+.processCotent .textProject { position: relative; }
+
+.processCotent .textProject span.txt { position: absolute; font-size: 13px; color: #999999; bottom: 20px; right: 22px; }
+
+.processCotent .textProject label { margin-right: 0 !important; }
+
+.processCotent .initialInfo textarea { font-size: 14px; color: #555555; }
+
+.processCotent .initialInfo textarea::placeholder { font-size: 14px; color: #999999; }
+
+.out_input { margin: 20px 0; padding-bottom: 0px; margin-top: 0; }
+
+.out_input span { margin-right: 7px; font-size: 14px; }
+
+div#login03 div.inner div.last_mem { padding: 140px 0; text-align: center; }
+
+div#login03 div.inner div.last_mem h2 { margin-top: 21px; font-weight: bold; margin-bottom: 26px; font-size: 28px; letter-spacing: -1px; }
+
+div#login03 div.inner div.last_mem h3 { word-break: keep-all; display: inline-block; line-height: 1.4; }
+
+.personal { margin-bottom: 40px; border-top: 1px solid #ddd; padding-top: 50px; }
+
+.personal .tit { font-size: 24px; letter-spacing: -0.96px; margin-bottom: 40px; line-height: 1; }
+
+.personal .agree_wrap .custom-control { padding-left: 25px; }
+
+.personal .agree_wrap .custom-control span { font-size: 15px; letter-spacing: -0.6px; }
+
+.personal .agree_top { border-bottom: 1px solid #ddd; padding-bottom: 30px; margin-bottom: 40px; }
+
+.personal .agree_top .custom-control span { font-size: 18px; font-weight: 500; }
+
+.personal .agree_top p { font-size: 14px; line-height: 1.43; letter-spacing: -0.56px; color: #999; padding-left: 25px; margin-top: 8px; }
+
+.personal .agree_info li { display: flex; justify-content: space-between; align-items: center; }
+
+.personal .agree_info li + li { margin-top: 18px; }
+
+.personal .agree_info a { font-size: 13px; color: #999; }
+
+.join { width: 520px; margin: 0 auto; margin-top: 5px; }
+
+.join .tab a { border-bottom: 0 !important; transition: none; }
+
+.join .tab a.on { background: #000; border: 1px solid #000; width: 200px; }
+
+.join .sns_wrap { margin-bottom: 49px; }
+
+.join .sns_wrap h2 { font-size: 25px; letter-spacing: -0.88px; font-weight: 400; margin-bottom: 10px; }
+
+.join .sns_wrap p { font-size: 14px; letter-spacing: -0.56px; color: #666666; }
+
+.join .sns_wrap .sns { margin-top: 22px; }
+
+.join .sns_wrap .sns li + li { margin-top: 9px; }
+
+.join .sns_wrap .sns img { vertical-align: top; }
+
+.join .inner { padding: 72px 70px; width: auto; border: 1px solid #ddd; border-top: 2px solid #333; }
+
+.members_wrap + .members_wrap { border-top: 1px solid #ddd; padding-top: 40px; }
+
+.members_wrap .tit .welcome { font-size: 18.5px; letter-spacing: -0.74px; margin-bottom: 22px; font-weight: 400; }
+
+.members_wrap .tit h2 { font-size: 23.5px; letter-spacing: -0.98px; margin-bottom: 20px; font-weight: 400; }
+
+.members_wrap .input-help { display: block; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); }
+
+.members_wrap .input-help i { cursor: pointer; vertical-align: top; }
+
+.members_wrap .input-help .death { position: absolute; right: 0; display: none; bottom: 36px; right: -44px; min-width: 435px; border: solid 1px #333333; background-color: #ffffff; padding: 32px; font-size: 13px; font-weight: normal; line-height: 2; letter-spacing: -0.48px; text-align: left; color: #666666; }
+
+.members_wrap .input-help .death h3 { font-size: 16px; font-weight: 500; letter-spacing: -0.35px; text-align: left; color: #333333; }
+
+.members_wrap .input-help .death::after { content: ""; position: absolute; right: 46px; bottom: -8px; width: 16px; height: 9px; background: url(../img/sprite-icon.png) no-repeat 0px -45.5px; z-index: 11; }
+
+.members_wrap .input-eye { position: absolute; right: 40px; top: 50%; transform: translateY(-50%); }
+
+.members_wrap .input-eye i { cursor: pointer; vertical-align: top; }
+
+.members_wrap .input_wrap { padding-bottom: 50px; }
+
+.members_wrap .input_wrap li { position: relative; }
+
+.members_wrap .input_wrap li + li { margin-top: 12px; }
+
+.members_wrap .input_wrap .btn { font-size: 13px; margin-left: -1px; }
+
+div#login01 { padding: 85px 0; }
+
+div#login01 div.inner h1 { font-family: Noto Sans KR; font-size: 22px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 2.45; letter-spacing: -0.88px; text-align: left; color: #333333; margin-bottom: 11px; font-weight: bold; }
+
+div#login01 div.inner h1 span { font-size: 14px; font-stretch: normal; font-style: normal; line-height: 0.71; letter-spacing: -0.56px; text-align: left; color: #666666; margin-left: 8px; }
+
+div#login01 div.inner div.login_wrap div.wrap { overflow: hidden; }
+
+div#login01 div.inner div.login_wrap div.wrap > div.lef { width: 654px; padding-top: 37px; padding-bottom: 70px; padding-left: 91px; padding-right: 91px; box-sizing: border-box; border: 1px solid #ddd; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_top { display: flex; align-items: center; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_top div.img { margin-right: 13px; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_top div.txt h3 { font-size: 20px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: 25px; letter-spacing: -0.8px; text-align: left; color: #333; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_top div.txt p { margin-top: 4px; font-size: 14px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: 1.78; letter-spacing: -0.56px; text-align: left; color: #666666; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_info { margin-top: 25px; display: flex; justify-content: space-between; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_info ul.input li + li { margin-top: 8px; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_info ul.input li input { height: 50px; border: solid 1px #dddddd; width: 331px; background-color: #ffffff; text-indent: 23px; font-size: 14px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 4.78; letter-spacing: -0.35px; text-align: left; color: #bbbbbb; }
+
+.btn-login { width: 130px; height: 100%; margin-left: 5px; border: none; background: #f8a03c; font-size: 17px; font-weight: 600; color: #fff; letter-spacing: -0.45px; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sto { margin-top: 12px; display: flex; justify-content: space-between; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sto div.lef label { font-size: 14px; font-weight: normal; font-stretch: normal; font-style: normal; /* line-height: 4.78; */ letter-spacing: -0.56px; text-align: left; color: #666666; min-width: 200px; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sto div.ref a { font-size: 14px; font-weight: 400; font-stretch: normal; font-style: normal; /* line-height: 4.78; */ letter-spacing: -0.56px; text-align: left; color: #666666; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sto div.ref span { display: inline-block; margin: 0 4px; color: #eee; font-size: 7px; position: relative; top: -2px; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sns_wrap { margin-top: 28px; display: flex; align-items: center; font-weight: bold; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sns_wrap p { font-weight: 500; margin-right: 23px; letter-spacing: -1px; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sns_wrap div.sns a { display: inline-block; margin-right: 12px; }
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.member a.btn { position: relative; display: inline-block; width: 100%; height: 52px; text-align: center; line-height: 52px; border: solid 1px #333333; margin-top: 25px; font-size: 16px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: 48px; letter-spacing: -0.64px; text-align: center; color: #333333; }
+/* 2021-02-08 div#login01 div.inner div.login_wrap div.wrap div.lef div.member a.btn::after 수정 */
+div#login01 div.inner div.login_wrap div.wrap div.lef div.member a.btn::after { content: ""; display: inline-block; background: url(/img/bg_member.png) no-repeat; width: 174px; height: 37px; position: absolute; top: 67px; left: 32%; animation: moveColLog 1s ease-in-out infinite; }
+
+@keyframes moveColLog { 0% { top: 67px; }
+  50% { top: 65px; }
+  100% { top: 67px; } }
+
+div#login01 div.inner div.login_wrap div.wrap > div.ref { float: right; width: 518px; height: 518px; border: 1px solid #dbdbdb; }
+
+div#login01 div.inner div.login_wrap div.wrap > div.ref a { display: block; height: 100%; }
+
+div#login01 div.inner div.login_wrap div.wrap > div.ref .img { width: 100%; height: 100%; display: inline-block; background: #f7f7f7 url(../img/bg_login_info.png) no-repeat 50% 100%; }
+
+input[class="find_id_radio"]:checked + label { background: url(../img/id_radio_on.png) no-repeat !important; height: 18px; padding-left: 26px; }
+
+div#login_id_find { padding-top: 100px; padding-bottom: 130px; }
+
+div#login_id_find .inner { width: 440px; margin: 0 auto; text-align: center; }
+
+div#login_id_find .inner h2 { opacity: 1; margin-bottom: 19px; }
+
+div#login_id_find .inner p.tit { font-size: 16px; line-height: 1; opacity: 1; color: #666; margin-bottom: 42px; }
+
+div#login_id_find .inner ul.find_id { opacity: 1; display: flex; justify-content: center; }
+
+div#login_id_find .inner ul.find_id li { opacity: 1; margin: 0 16px; }
+
+div#login_id_find .inner ul.find_id li:first-of-type a::after { position: absolute; right: -18px; content: ""; top: 4px; position: absolute; width: 1px; height: 15px; background: #dddddd; }
+
+div#login_id_find .inner ul.find_id li a { display: inline-block; position: relative; font-size: 18px; color: #333333; }
+
+div#login_id_find .inner ul.find_id a.on { font-weight: bold; padding-bottom: 8px; border-bottom: 3px solid #6c7cb8; }
+
+div#login_id_find .inner ul.certified { display: flex; margin-top: 34px; justify-content: center; }
+
+div#login_id_find .inner ul.certified li { opacity: 1; margin: 0 13px; }
+
+div#login_id_find .inner ul.certified li input#a1 { opacity: 1; }
+
+div#login_id_find .inner ul.certified li label { background: url(../img/id_radio_off.png) no-repeat; height: 18px; display: flex; align-items: center; padding-left: 26px; }
+
+div#login_id_find .inner div.select_type { opacity: 1; margin-top: 40px; }
+
+div#login_id_find .inner div.select_type select { opacity: 1; background: #6c7cb8 url(../img/bg_id_select.png) no-repeat center right 20px; width: 100%; height: 60px; padding-left: 25px; color: #fff; font-size: 16px; font-weight: bold; opacity: 1; }
+
+div#login_id_find .inner div.select_type select option { opacity: 1; background: #ffffff; color: #333333; }
+
+div#login_id_find .inner ul.fre { opacity: 1; }
+
+div#login_id_find .inner ul.fre li { opacity: 1; }
+
+div#login_id_find .inner ul.fre li input { opacity: 1; width: 100%; height: 60px; padding-left: 25px; box-sizing: border-box; border: 1px solid #dddddd; margin-top: 13px; font-size: 16px; color: #666666; }
+
+div#login_id_find .inner ul.fre li input::placeholder { font-size: 16px; color: #666666; }
+
+div#login_id_find .inner ul.fre li select { margin-top: 13px; opacity: 1; background: #fff url(../img/bg_id_select2.png) no-repeat center right 20px; width: 100%; height: 60px; padding-left: 25px; color: #666; font-size: 16px; border: 1px solid #dddddd; }
+
+div#login_id_find .inner ul.fre li select::placeholder { font-size: 16px; color: #666666; }
+
+div#login_id_find .inner ul.fre li .email { width: 45%; box-sizing: border-box; }
+
+div#login_id_find .inner ul.fre li span { display: inline-block; width: 8.55%; }
+
+div#login_id_find .inner div.login_com_btn a { margin-top: 30px; width: 100%; height: 60px; line-height: 60px; color: #ffffff; text-align: center; font-size: 18px; background: #333333; color: #ffffff; }
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <title>weep 퍼블리싱</title>
+  <style type="text/css">
+    body,
+    html,
+    td,
+    h1,
+    th {
+      font-family: '맑은 고딕', '돋움', Dotum, AppleGothic, Helvetica, sans-serif;
+      word-break: keep-all;
+    }
+
+    h1 {
+      width: 100%;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    table {
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #eee;
+    }
+
+    th,
+    td {
+      padding: 8px 5px;
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      font-size: 12px;
+    }
+
+    .frame {
+      width: 100%;
+    }
+
+    .complete {
+      background: #fdfabf;
+      font-weight: 700;
+      color: #085e77;
+      text-align: center;
+    }
+
+    .recent {
+      background: #0788da;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+    }
+
+    .bor {
+      padding: 0;
+      height: 1px;
+      background-color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>weep 퍼블리싱</h1>
+  <div class="frame">
+    <table cellpadding="0" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+          <th colspan="3">메뉴명</th>
+          <th rowspan="2">File Name/링크</th>
+          <th rowspan="2">진행</th>
+        </tr>
+        <tr>
+          <th>Depth1</th>
+          <th>Depth2</th>
+          <th>Depth3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>메인</td>
+          <td>로그인전</td>
+          <td></td>
+          <td><a href="index.html">index.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>로그인후_클라이언트</td>
+          <td></td>
+          <td><a href="index_login_client.html">index_login_client.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>로그인후_프리</td>
+          <td></td>
+          <td><a href="index_login_free.html">index_login_free.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>로그인후_파트너</td>
+          <td></td>
+          <td><a href="index_login_partner.html">index_login_partner.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td colspan="5" class="bor"></td>
+        </tr>
+        <tr>
+          <td>회원가입</td>
+          <td>sns로그인</td>
+          <td></td>
+          <td><a href="member_join_intro.html">member_join_intro.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>프리랜서</td>
+          <td></td>
+          <td><a href="member_join_free.html">member_join_free.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>파트너</td>
+          <td></td>
+          <td><a href="member_join_partner.html">member_join_partner.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>클라이언트</td>
+          <td></td>
+          <td><a href="member_join_client.html">member_join_client.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>이용약관 동의</td>
+          <td></td>
+          <td><a href="agreement_use.html">agreement_use.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>개인정보 수집 및 이용 동의</td>
+          <td></td>
+          <td><a href="agreement_personal.html">agreement_personal.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>가입완료</td>
+          <td></td>
+          <td><a href="member_join_done.html">member_join_done.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td colspan="5" class="bor"></td>
+        </tr>
+        <tr>
+          <td>로그인</td>
+          <td>프리랜서/파트너/클라이언트 회원</td>
+          <td></td>
+          <td><a href="member_login.html">member_login.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>팝업_로그인상태유지경고</td>
+          <td></td>
+          <td><a href="member_login_popup1.html">member_login_popup1.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>팝업_아이디패쓰입력경고</td>
+          <td></td>
+          <td><a href="member_login_popup2.html">member_login_popup2.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>프리랜서/파트너/클라이언트 회원</td>
+          <td></td>
+          <td><a href="member_login.html">member_login.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>아이디/비번찾기</td>
+          <td>프리랜서</td>
+          <td><a href="member_find_idpw_free.html">member_find_idpw_free.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>파트너</td>
+          <td><a href="member_find_idpw_partner.html">member_find_idpw_partner.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>클라이언트</td>
+          <td><a href="member_find_idpw_client.html">member_find_idpw_client.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td colspan="5" class="bor"></td>
+        </tr>
+        <tr>
+          <td>공통(비로그인)</td>
+          <td>프로젝트 검색</td>
+          <td>맞춤 검색</td>
+          <td><a href="search_matching.html">search_matching.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>AI 검색</td>
+          <td><a href="search_ai.html">search_ai.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>이달의 프로젝트</td>
+          <td><a href="search_month_project.html">search_month_project.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>아웃소싱 검색</td>
+          <td>맞춤 검색</td>
+          <td><a href="search_out_matching.html">search_out_matching.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>AI 검색</td>
+          <td><a href="search_out_ai.html">search_out_ai.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>이달의 아웃소싱</td>
+          <td><a href="search_month_outsourcing.html">search_month_outsourcing.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>프리랜서 검색</td>
+          <td>맞춤 검색</td>
+          <td><a href="search_free_matching.html">search_free_matching.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>AI검색</td>
+          <td><a href="search_free_ai.html">search_free_ai.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>동영상 인터뷰 인재 검색</td>
+          <td><a href="search_free_interview.html">search_free_interview.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>이달의 프리랜서</td>
+          <td><a href="search_month_free.html">search_month_free.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>파트너 검색</td>
+          <td>맞춤 검색</td>
+          <td><a href="search_partner_matching.html">search_partner_matching.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>AI검색</td>
+          <td><a href="search_partner_ai.html">search_partner_ai.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>동영상 인터뷰 파트너</td>
+          <td><a href="search_partner_interview.html">search_partner_interview.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>추천 파트너</td>
+          <td><a href="search_partner_recomm.html">search_partner_recomm.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>지원센터</td>
+          <td>공지사항 리스트</td>
+          <td><a href="board_notice_list.html">board_notice_list.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>공지사항 상세화면</td>
+          <td><a href="board_notice_view.html">board_notice_view.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>뉴스/언론 리스트</td>
+          <td><a href="board_news_list.html">board_news_list.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>뉴스/언론 상세화면</td>
+          <td><a href="board_news_view.html">board_news_view.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>이벤트(진행중인 이벤트) 리스트</td>
+          <td><a href="board_event_list.html">board_event_list.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>이벤트(진행중인 이벤트) 상세화면</td>
+          <td><a href="board_event_view.html">board_event_view.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>당첨자 발표 리스트</td>
+          <td><a href="board_winner_list.html">board_winner_list.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>당첨자 발표 상세화면</td>
+          <td><a href="board_winner_view.html">board_winner_view.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>자주찾는 질문</td>
+          <td><a href="board_qa.html">board_qa.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>온라인 1:1 문의</td>
+          <td><a href="online_question.html">online_question.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>온라인 1:1 문의(완료)</td>
+          <td><a href="online_question_done.html">online_question_done.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td>wee.p 소개</td>
+          <td>홍보자료</td>
+          <td>리스트</td>
+          <td><a href="weep_pr_list.html">weep_pr_list.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>상세화면</td>
+          <td><a href="weep_pr_view.html">weep_pr_view.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>주요고객사</td>
+          <td><a href="weep_customer.html">weep_customer.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td colspan="5" class="bor"></td>
+        </tr>
+        <tr>
+          <td>프리랜서 검색</td>
+          <td></td>
+          <td></td>
+          <td>
+            <a href="client_search_1.html">client_search_1.html</a>
+          </td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a href="client_search_2.html">client_search_2.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a href="client_search_3.html">client_search_3.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a href="client_search_4.html">client_search_4.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td colspan="5" class="bor"></td>
+        </tr>
+        <tr>
+          <td>스마트 매칭</td>
+          <td></td>
+          <td></td>
+          <td>
+            <a href="matching.html">matching.html</a>
+          </td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td colspan="5" class="bor"></td>
+        </tr>
+        <tr>
+          <td>프리랜서 관리</td>
+          <td></td>
+          <td></td>
+          <td>
+            <a href="client_manage_1.html">client_manage_1.html</a>
+          </td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a href="client_manage_2.html">client_manage_2.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a href="client_manage_3.html">client_manage_3.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a href="client_manage_4.html">client_manage_4.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a href="client_manage_5.html">client_manage_5.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a href="client_manage_6.html">client_manage_6.html</a></td>
+          <td class="complete">완료</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

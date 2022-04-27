@@ -1,0 +1,1099 @@
+/* 20200717 íšŒì›ê°€ìž… msg ì¶”ê°€ */
+
+.notice_msg {
+  display: none;
+  z-index: 9100;
+  position: absolute;
+  left: -1px;
+  top: 60px;
+  min-width: 100px;
+  padding: 5px 7px 6px;
+  border: 1px solid #ffbcb9;
+  background-color: #ffeeec;
+  color: #555;
+  box-sizing: border-box;
+  white-space: nowrap;
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+.mbrRegist .mbr_zipcode .notice_msg:after, .notice_msg:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 9px;
+  top: -11px;
+  width: 19px;
+  height: 11px;
+  background: url('../img/sprite-icon.png') no-repeat 0 -145px;
+}
+
+.mbrRegist .mbr_zipcode .notice_msg.success, .notice_msg.success {
+  border-color: #b7dbff;
+  background-color: #f7fbff;
+}
+
+.mbrRegist .mbr_zipcode .notice_msg.success:after, .notice_msg.success:after {
+  width: 18px;
+  background: url('../img/sprite-icon.png') no-repeat 0 -124px;
+}
+
+/* 20200717 //íšŒì›ê°€ìž… msg ì¶”ê°€ */
+
+.processCotent .fileDesc .fileUploadBtn {
+  flex: 1;
+  height: 50px;
+  font-weight: bold;
+  background: #333;
+  color: #fff;
+  outline: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.processCotent .calBudget li ul.calBudgetLi li {
+  position: relative;
+}
+
+.processCotent .roundInput {
+  border: none!important;
+}
+
+.processCotent .calBudget li ul.calBudgetLi li select {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: solid 1px #dbdbdb;
+  background-color: #ffffff;
+  letter-spacing: -0.52px;
+  text-align: left;
+  color: #333333;
+  padding-left: 14px;
+  font-weight: bold;
+  background: url(../img/bg_smail_sel.png) no-repeat center right 20px;
+  background-color: #fff;
+  font-weight: 400;
+  height: 40px;
+}
+
+.processCotent .textProject {
+  position: relative;
+}
+
+.processCotent .textProject span.txt {
+  position: absolute;
+  font-size: 13px;
+  color: #999999;
+  bottom: 20px;
+  right: 22px;
+}
+
+.processCotent .textProject label {
+  margin-right: 0 !important;
+}
+
+.processCotent .initialInfo textarea {
+  font-size: 14px;
+  color: #555555;
+}
+
+.processCotent .initialInfo textarea::placeholder {
+  font-size: 14px;
+  color: #555555;
+}
+
+.out_input {
+  margin: 20px 0;
+  padding-bottom: 0px;
+  margin-top: 0;
+}
+
+.out_input span {
+  margin-right: 7px;
+  font-size: 14px;
+}
+
+.out_input span label {}
+
+.overlay div.popup {}
+
+.overlay div.popup a.close {}
+
+.overlay div.popup h2 {
+  padding-bottom: 19px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.overlay div.popup div.info {
+  margin-top: 15px;
+}
+
+.overlay div.popup div.info div.fle {}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef {
+  width: 80%;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap {}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl.w50 {
+  float: left;
+  width: 50%;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl.w50 dt {
+  float: left;
+  margin-right: 15px;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl.w50 dd {}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl.w50 dd select {
+  width: 115px;
+  height: 34px;
+  border: solid 1px #bbbbbb;
+  background-color: #ffffff;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl dt {
+  float: left;
+  margin-right: 15px;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl dd {}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl dd select {
+  width: 308px;
+  height: 34px;
+  border: solid 1px #bbbbbb;
+  background-color: #ffffff;
+  padding-left: 12px;
+  color: #999999;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl dd select option {}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef p.tit {
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #666666;
+  padding-left: 50px;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef p.txt {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #999;
+  padding-left: 50px;
+  letter-spacing: 0.3px;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.btn_wrap {
+  margin-top: 35px;
+  position: relative;
+  left: 50%;
+  width: 100%;
+  transform: translate(-23.5px);
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.btn_wrap a.btn {
+  width: 63px;
+  height: 27px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: #999999;
+  text-align: center;
+  margin: 0 4px;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.btn_wrap a.btn.on {
+  background: #f8a03c;
+  color: #ffffff;
+  border: #f8a03c;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.btn_wrap a.btn.on {}
+
+div#adress_pop.overlay div.popup div.info div.fle div.ref {}
+
+div#adress_pop.overlay div.popup div.info div.fle div.ref input {
+  width: 88px;
+  height: 84px;
+  background-color: #f8a03c;
+  color: #fff;
+  border: none;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+div#login03 {}
+
+div#login03 div.inner {}
+
+div#login03 div.inner div.last_mem {
+  padding: 140px 0;
+  text-align: center;
+}
+
+div#login03 div.inner div.last_mem img {}
+
+div#login03 div.inner div.last_mem h2 {
+  margin-top: 21px;
+  font-weight: bold;
+  margin-bottom: 26px;
+  font-size: 28px;
+  letter-spacing: -1px;
+}
+
+div#login03 div.inner div.last_mem h3 {
+  word-break: keep-all;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+div.personal {}
+
+div.personal div.agree_wrap {
+  margin-top: 25px;
+}
+
+div.personal div.agree_wrap div.agree_top {
+  border: 1px solid #dbdbdb;
+  display: flex;
+  height: 82px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 38px;
+  border: solid 1px #dddddd;
+  background-color: #f2f2f2;
+}
+
+div.personal div.agree_wrap div.agree_top p {
+  font-weight: bold;
+}
+
+div.personal div.agree_wrap div.agree_top input#c1.chk02 {}
+
+div.personal div.agree_wrap div.agree_top label.mi2 {}
+
+div.personal div.agree_wrap div.agree_info {
+  padding: 35px;
+  border: 1px solid #dbdbdb;
+  border-top: none;
+}
+
+div.personal div.agree_wrap div.agree_info ul {}
+
+div.personal div.agree_wrap div.agree_info ul li.fle.just_s {
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.personal div.agree_wrap div.agree_info ul li.fle.just_s p {}
+
+div.personal div.agree_wrap div.agree_info ul li.fle.just_s span {}
+
+div.personal div.agree_wrap div.agree_info ul li.fle.just_s span a {
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.48px;
+  text-align: right;
+  color: #333333;
+  margin-right: 17px;
+  text-decoration: underline;
+}
+
+div.personal div.agree_wrap div.agree_info ul li.fle.just_s span input#c1.chk03 {}
+
+div.personal div.agree_wrap div.agree_info ul li.fle.just_s span label.mi3 {}
+
+.member_wrap .inner {
+  width: 750px;
+  margin: 0;
+}
+
+div.members_wrap {
+  border: 1px solid #dbdbdb;
+  padding: 50px 100px;
+  border-top: none;
+}
+
+div.members_wrap div.fle {
+  width: 101%;
+  justify-content: space-between;
+}
+
+div.members_wrap div.fle h2 {
+  text-shadow: 3.1px 3.9px 10px rgba(0, 0, 0, 0.14);
+  font-family: Noto Sans KR;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3;
+  letter-spacing: -0.72px;
+  text-align: left;
+  color: #333333;
+  font-weight: 600;
+}
+
+div.members_wrap div.fle>p {
+  text-shadow: 3.1px 3.9px 10px rgba(0, 0, 0, 0.14);
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 4.5;
+  letter-spacing: -0.48px;
+  color: #666666;
+}
+
+div.members_wrap div.fle.pon {
+  width: 101%;
+}
+
+div.members_wrap div.fle.pon>a.btn {
+  height: 54px;
+  background: #333333;
+  color: #ffffff;
+  text-align: center;
+  text-indent: 0px;
+  position: relative;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+div.members_wrap div.fle.pon2 {}
+
+div.members_wrap div.fle.pon2>div:first-of-type {
+  width: 370px;
+  display: flex;
+}
+
+div.members_wrap div.fle.pon2>div:first-of-type input {
+  height: 54px;
+}
+
+div.members_wrap div.fle.pon2>div:first-of-type input:nth-of-type(2) {
+  height: 54px;
+  width: 175px;
+  border: solid 1px #dddddd;
+  background-color: #f3f3f3;
+  text-align: center;
+  text-indent: 0;
+}
+
+div.members_wrap div.fle.pon2>div:nth-of-type(2) {}
+
+div.members_wrap div.fle.pon2 a {
+  display: inline-block;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  padding: 0 33px;
+  border: solid 1px #333333;
+  background-color: #ffffff;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: #333333;
+}
+
+div.members_wrap div.fle p span.st {
+  color: #e92e2e;
+}
+
+div.members_wrap div.fle .left {
+  position: relative;
+  width: 88%;
+}
+
+div.members_wrap div.fle .left .focus {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 25%;
+  right: 12px;
+}
+
+div.members_wrap div.fle .left .focus .death::after {
+  content: "";
+  position: absolute;
+  right: 46px;
+  bottom: -9px;
+  width: 16px;
+  height: 9px;
+  background: url(../img/sprite-icon.png) no-repeat 0px -46px;
+  z-index: 11;
+}
+
+div.members_wrap div.fle .left .focus .death {
+  position: absolute;
+  right: 0;
+  display: none;
+  bottom: 36px;
+  /* left: 0; */
+  right: -44px;
+  /* min-width: 395px; */
+  min-width: 435px;
+  /* height: 170px; */
+  border: solid 1px #333333;
+  background-color: #ffffff;
+  padding: 32px;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: -0.48px;
+  text-align: left;
+  color: #666666;
+}
+
+div.members_wrap div.fle .left .focus .death h3 {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: #333333;
+}
+
+div.members_wrap div.fle .left img {}
+
+div.members_wrap div.fle .right {}
+
+div.members_wrap ul.input_wrap {}
+
+div.members_wrap ul.input_wrap li {
+  position: relative;
+  box-sizing: border-box;
+}
+
+div.members_wrap ul.input_wrap li a {
+  display: inline-block;
+  width: 100%;
+}
+
+div.members_wrap ul.input_wrap li input::placeholder span {
+  color: red;
+}
+
+div.members_wrap ul.input_wrap li input[class="wid_t"] {
+  width: 100%;
+}
+
+label.mi.width_a {
+  width: 68px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  margin-left: 9px;
+}
+
+input[class="chk01"]:checked+label.mi.width_a {
+  background: url(../img/l_hide_on.png) no-repeat;
+  width: 68px;
+  display: inline-block;
+  display: flex;
+  vertical-align: top;
+  position: relative;
+  top: 18px;
+  background-position-y: 4px;
+}
+
+div.members_wrap ul.input_wrap li input {
+  width: 101%;
+  height: 54px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+  text-indent: 20px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: #666666;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+div.members_wrap ul.input_wrap li select {
+  background: url(../img/bg_smail_sel.png) no-repeat center right 20px;
+  width: 101%;
+  height: 53px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+  text-indent: 20px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: #666666;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+div.member_wrap {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+div.member_wrap ul.custom_tab {
+  overflow: hidden;
+}
+
+div.member_wrap ul.custom_tab li {
+  float: left;
+  width: 250px;
+  height: 55px;
+  text-align: center;
+  border: solid 1px #dddddd;
+  border-right: 0;
+}
+
+div.member_wrap ul.custom_tab li:last-child {border-right: 1px solid #ddd;}
+
+div.member_wrap ul.custom_tab li.on {
+	border:1px solid #333;
+	color: #fff;
+}
+
+div.member_wrap ul.custom_tab li.on a {color: #fff; background: #333;}
+
+div.member_wrap ul.custom_tab li a {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 55px;
+  letter-spacing: -0.4px;
+  color: #999999;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+div.member_wrap ul.custom_tab li a.on {
+  background: #333;
+  color: #ffffff;
+}
+
+div.member_wrap undefined {}
+
+div.member_wrap div#tab1 {}
+
+div.member_wrap div#tab1 div.inner {}
+
+div.member_wrap div#tab1 div.inner div.sns_wrap {
+  padding: 70px 64px;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  border-top: none;
+}
+
+div.member_wrap div#tab1 div.inner div.sns_wrap h2 {
+  font-size: 25px;
+  /* font-weight: 500; */
+  /* font-stretch: normal; */
+  /* font-style: normal; */
+  /* line-height: 0.45; */
+  letter-spacing: -0.88px;
+  /* text-align: left; */
+  /* color: #333333; */
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+div.member_wrap div#tab1 div.inner div.sns_wrap h3 {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: 1.57; */
+  letter-spacing: -0.56px;
+  text-align: center;
+  color: #666666;
+}
+
+div.member_wrap div#tab1 div.inner div.sns_wrap ul.sns {
+  margin-top: 22px;
+}
+
+div.member_wrap div#tab1 div.inner div.sns_wrap ul.sns li a {
+  margin-bottom: 7px;
+}
+
+div.member_wrap div#tab1 div.inner div.sns_wrap ul.sns li a img {}
+
+div#login01 {
+  padding: 85px 0;
+}
+
+div#login01 div.inner {}
+
+div#login01 div.inner h1 {
+  text-shadow: 3.1px 3.9px 10px rgba(0, 0, 0, 0.14);
+  font-family: Noto Sans KR;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.45;
+  letter-spacing: -0.88px;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 11px;
+  font-weight: bold;
+}
+
+div#login01 div.inner h1 span {
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.71;
+  letter-spacing: -0.56px;
+  text-align: left;
+  color: #666666;
+  margin-left: 8px;
+}
+
+div#login01 div.inner div.login_wrap {}
+
+div#login01 div.inner div.login_wrap div.wrap {
+  overflow: hidden;
+}
+
+div#login01 div.inner div.login_wrap div.wrap>div.lef {
+  margin-top: 10px;
+  float: left;
+  width: 654px;
+  padding-top: 37px;
+  padding-bottom: 70px;
+  padding-left: 91px;
+  padding-right: 91px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_top {
+  display: flex;
+  align-items: center;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_top div.img {
+  margin-right: 13px;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_top div.txt {}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_top div.txt h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 25px;
+  letter-spacing: -0.8px;
+  text-align: left;
+  color: #333;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_top div.txt p {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.78;
+  letter-spacing: -0.56px;
+  text-align: left;
+  color: #666666;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_info {
+  margin-top: 25px;
+  display: flex;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_info ul.input {}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_info ul.input li {}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_info ul.input li input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 8px;
+  border: solid 1px #dddddd;
+  width: 331px;
+  background-color: #ffffff;
+  text-indent: 23px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 4.78;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: #bbbbbb;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_info div.btn {}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.login_info div.btn input {
+  width: 130px;
+  height: 116px;
+  margin-left: 5px;
+  border: none;
+  background: #f8a03c;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.45px;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sto {
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sto div.lef {}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sto div.lef input#a1 {}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sto div.lef label {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: 4.78; */
+  letter-spacing: -0.56px;
+  text-align: left;
+  color: #666666;
+  min-width: 200px;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sto div.ref a {
+  font-size: 14px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: 4.78; */
+  letter-spacing: -0.56px;
+  text-align: left;
+  color: #666666;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sto div.ref span {
+  display: inline-block;
+  margin: 0 4px;
+  color: #eee;
+  font-size: 7px;
+  position: relative;
+  top: -2px;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sns_wrap {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sns_wrap p {
+  font-weight: 500;
+  margin-right: 23px;
+  letter-spacing: -1px;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sns_wrap div.sns {}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sns_wrap div.sns a {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.sns_wrap div.sns a img {}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.member {}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.member a.btn {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  line-height: 52px;
+  border: solid 1px #333333;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 48px;
+  letter-spacing: -0.64px;
+  text-align: center;
+  color: #333333;
+}
+
+div#login01 div.inner div.login_wrap div.wrap div.lef div.member a.btn::after {
+  content: "";
+  display: inline-block;
+  background: url(../img/bg_con.png) no-repeat;
+  width: 160px;
+  height: 37px;
+  position: absolute;
+  top: 67px;
+  left: 32%;
+  animation: moveColLog 1s ease-in-out infinite;
+}
+@keyframes moveColLog {
+    0% {
+        top: 67px;
+    }
+    50% {
+        top: 65px;
+    }
+    100% {
+        top: 67px;
+    }
+}
+div#login01 div.inner div.login_wrap div.wrap>div.ref {
+  float: left;
+  width: 518px;
+  height: 518px;
+}
+
+div#login01 div.inner div.login_wrap div.wrap>div.ref a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+div#login01 div.inner div.login_wrap div.wrap>div.ref .img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: url(../img/bg_login_info.png) no-repeat;
+  margin-left: 13px;
+  margin-top: 10px;
+  background-size: cover;
+  border: 1px solid #dbdbdb;
+  border-top: none;
+  border-bottom: none;
+  background-position: center center;
+}
+
+input[class="find_id_radio"]:checked+label {
+  background: url(../img/id_radio_on.png) no-repeat !important;
+  height: 18px;
+  padding-left: 26px;
+}
+
+div#login_id_find {
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+div#login_id_find .inner {
+  width: 440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div#login_id_find .inner h2 {
+  opacity: 1;
+  margin-bottom: 19px;
+}
+
+div#login_id_find .inner p.tit {
+  font-size: 16px;
+  line-height: 1;
+  opacity: 1;
+  color: #666;
+  margin-bottom: 42px;
+}
+
+div#login_id_find .inner ul.find_id {
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+}
+
+div#login_id_find .inner ul.find_id li {
+  opacity: 1;
+  margin: 0 16px;
+}
+
+div#login_id_find .inner ul.find_id li:first-of-type a::after {
+  position: absolute;
+  right: -18px;
+  content: "";
+  top: 4px;
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  background: #dddddd;
+}
+
+div#login_id_find .inner ul.find_id li a {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  color: #333333;
+}
+
+div#login_id_find .inner ul.find_id a.on {
+  font-weight: bold;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #6c7cb8;
+}
+
+div#login_id_find .inner ul.certified {
+  display: flex;
+  margin-top: 34px;
+  justify-content: center;
+}
+
+div#login_id_find .inner ul.certified li {
+  opacity: 1;
+  margin: 0 13px;
+}
+
+div#login_id_find .inner ul.certified li input#a1 {
+  opacity: 1;
+}
+
+div#login_id_find .inner ul.certified li label {
+  background: url(../img/id_radio_off.png) no-repeat;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 26px;
+}
+
+div#login_id_find .inner div.select_type {
+  opacity: 1;
+  margin-top: 40px;
+}
+
+div#login_id_find .inner div.select_type select {
+  opacity: 1;
+  background: #6c7cb8 url(../img/bg_id_select.png) no-repeat center right 20px;
+  width: 100%;
+  height: 60px;
+  padding-left: 25px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+div#login_id_find .inner div.select_type select option {
+  opacity: 1;
+  background: #ffffff;
+  color: #333333;
+}
+
+div#login_id_find .inner ul.fre {
+  opacity: 1;
+}
+
+div#login_id_find .inner ul.fre li {
+  opacity: 1;
+}
+
+div#login_id_find .inner ul.fre li input {
+  opacity: 1;
+  width: 100%;
+  height: 60px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  margin-top: 13px;
+  font-size: 16px;
+  color: #666666;
+}
+
+div#login_id_find .inner ul.fre li input::placeholder {
+  font-size: 16px;
+  color: #666666;
+}
+
+div#login_id_find .inner ul.fre li select {
+  margin-top: 13px;
+  opacity: 1;
+  background: #fff url(../img/bg_id_select2.png) no-repeat center right 20px;
+  width: 100%;
+  height: 60px;
+  padding-left: 25px;
+  color: #666;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+}
+
+div#login_id_find .inner ul.fre li select::placeholder {
+  font-size: 16px;
+  color: #666666;
+}
+
+div#login_id_find .inner ul.fre li .email {
+  width: 45%;
+  box-sizing: border-box;
+}
+
+div#login_id_find .inner ul.fre li span {
+  display: inline-block;
+  width: 8.55%;
+}
+
+div#login_id_find .inner div.login_com_btn a {
+  margin-top: 30px;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  background: #333333;
+  color: #ffffff;
+}

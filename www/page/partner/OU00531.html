@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+  <title>나의 문의</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="U잡스">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="../../img/logo.png">
+  <meta property="og:image:type" content="../../image/png">
+  <meta property="og:image:width" content="173">
+  <meta property="og:image:height" content="65">
+  <meta property="og:description" content="">
+
+  <link rel="stylesheet" href="../../css/@default.css" />
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/font.css">
+  <link rel="stylesheet" href="../../css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="../../js/slick.min.js"></script>
+  <script type="text/javascript" src="../../js/swiper.min.js"></script>
+  <script type="text/javascript" src="../../js/main.js"></script>
+  <script src="../../client_version.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.js"></script>
+</head>
+
+<body>
+    <div id="sub_header">
+      <div class="inner">
+        <h1 class="logo2">
+          <a href="../../index.html">
+            <img src="../../img/logo2.png" alt="">
+          </a>
+        </h1>
+        <ul id="gnb">
+          <li>
+            <a href="/page/project_sch/project_sch.html">프로젝트 검색</a>
+          </li>
+          <li>
+            <a href="../page/outsourcing//outsourcing_sch.html">아웃소싱 검색</a>
+          </li>
+          <li>
+            <a href="../page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+          </li>
+          <li>
+            <a href="../page/partner/partner_sch.html">파트너 검색</a>
+          </li>
+          <li>
+            <a href="#">이용안내</a>
+          </li>
+          <li>
+            <a href="#">WEE.P 소개</a>
+          </li>
+          <li>
+            <a href="#">지원센터</a>
+          </li>
+        </ul>
+        <ul class="sub_login_menu">
+          <li>
+            <img src="../../img/sub_login.png" alt="로그인하기">
+          </li>
+          <li>
+            <a href="#">
+              로그인
+            </a>
+          </li>
+          <li>
+            <a href="#">회원가입</a>
+          </li>
+        </ul>
+        <div class="all_menu">
+          <a href="#">
+            <img src="../../img/all_menu.png" alt="메뉴모두보기">
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="sub_contents">
+      <div class="sub_tit">
+        <div class="inner">
+          <h1>마이페이지</h1>
+        </div>
+      </div>
+
+    <div id="sub_content">
+      <div class="inner">
+        <div class="left_menu">
+          <ul>
+            <li>
+              <a href="/page/freelance_sch/FRO0511.html">나의 정보/설정</a>
+            </li>
+            <li>
+              <a href="/page/freelance_sch/FRO0521.html">이력서 관리</a>
+            </li>
+            <li>
+              <a href="/page/project_sch/project_sch03.html" class="on">나의 문의 내역</a>
+            </li>
+            <li>
+              <a href="/page/project_sch/project_sch04.html">나의 결제 내역</a>
+            </li>
+            <li>
+              <a href="/page/project_sch/project_sch05.html">보유 캐시 / 충전</a>
+            </li>
+            <li>
+              <a href="/page/project_sch/project_sch06.html">적립금 내역</a>
+            </li>
+            <li>
+              <a href="/page/project_sch/project_sch06.html">쿠폰 관리</a>
+            </li>
+      <li>
+              <a href="/page/project_sch/project_sch06.html">광고 신청/관리</a>
+            </li>
+      <li>
+              <a href="/page/project_sch/project_sch06.html">수익 관리</a>
+            </li>
+      <li>
+              <a href="/page/project_sch/project_sch06.html">비밀번호 변경</a>
+            </li>
+          </ul>
+      </div>
+      <div class="content_info my_inquiry_wrap">
+
+        <div class="page-top">
+          <div class="page-title">
+            <h2>지원한 프로젝트 </h2>
+          </div>
+          <div class="view">
+            <select name="" id="">
+              <option value="5">5개씩 보기</option>
+              <option value="10" selected="">10개씩 보기</option>
+              <option value="20">15개씩 보기</option>
+              <option value="20">20개씩 보기</option>
+            </select>
+          </div>
+        </div>
+
+			<!--
+			<div class="title">
+				<h2 class="littleTit2">나의 문의</h2>
+			</div>
+			-->
+			<table class="my_inquiry_table">
+				<thead>
+					<tr>
+                        <th class="num">선택</th>
+                        <th>구분</th>
+						<th class="subject">제목</th>
+						<th class="date">등록일</th>
+						<th class="status">상태</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_chk">
+							<label class="custom-control custom-control-checkbox custom-control-checkbox-square mr-0">
+                            <input type="checkbox" id="" name=""><i></i>
+                            </label>
+                        </td>
+                        <td class="text-center">프로젝트</td>
+						<td class="my_subject"><a href="/page/partner/OU00533.html"><span class="type_t">[프로젝트]</span> 계약관련 문의 사항이 있습니다.</a></td>
+						<td class="my_date">2020-06-05</td>
+						<td class="my_status"><span class="my_btn_suc my_btn">완료</span></td>
+					</tr>
+					<tr>
+						<td class="td_chk">
+							<label class="custom-control custom-control-checkbox custom-control-checkbox-square mr-0">
+                            <input type="checkbox" id="" name=""><i></i>
+                            </label>
+                        </td>
+                        <td class="text-center">사업제휴</td>
+						<td class="my_subject"><a href="/page/partner/OU00533.html"><span class="type_t">[프리랜서]</span> 계약관련 문의 사항이 있습니다.</a></td>
+						<td class="my_date">2020-06-05</td>
+						<td class="my_status"><span class="my_btn_ing my_btn">처리중</span></td>
+					</tr>
+					<tr>
+						<td class="td_chk">
+							<label class="custom-control custom-control-checkbox custom-control-checkbox-square mr-0">
+                            <input type="checkbox" id="" name=""><i></i>
+                            </label>
+                        </td>
+                        <td class="text-center">고객의 소리</td>
+						<td class="my_subject"><a href="/page/partner/OU00533.html"><span class="type_t">[사업제휴]</span> 계약관련 문의 사항이 있습니다.</a></td>
+						<td class="my_date">2020-06-05</td>
+						<td class="my_status"><span class="my_btn_ing my_btn">처리중</span></td>
+					</tr>
+					<tr>
+						<td class="td_chk">
+							<label class="custom-control custom-control-checkbox custom-control-checkbox-square mr-0">
+                            <input type="checkbox" id="" name=""><i></i>
+                            </label>
+                        </td>
+                        <td class="text-center">기타</td>
+						<td class="my_subject"><a href="/page/partner/OU00533.html"><span class="type_t">[고객의 소리]</span> 계약관련 문의 사항이 있습니다.</a></td>
+						<td class="my_date">2020-06-05</td>
+						<td class="my_status"><span class="my_btn_ing my_btn">처리중</span></td>
+					</tr>
+					<tr>
+						<td class="td_chk">
+							<label class="custom-control custom-control-checkbox custom-control-checkbox-square mr-0">
+                            <input type="checkbox" id="" name=""><i></i>
+                            </label>
+                        </td>
+                        <td class="text-center">프로젝트</td>
+						<td class="my_subject"><a href="/page/partner/OU00533.html"><span class="type_t">[기타]</span> 계약관련 문의 사항이 있습니다.</a></td>
+						<td class="my_date">2020-06-05</td>
+						<td class="my_status"><span class="my_btn_ing my_btn">처리중</span></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="table_btn clearfix">
+				<a href="" class="del_btn">삭제</a>
+				<a href="/page/partner/OU00534.html" class="inquiry_btn">문의하기</a>
+			</div>
+			<!--paging 수정::200807 -->
+			<div class="paging_wrap">
+				<div class="paging">
+					<div class="page_prev">
+						<a class="page_prev_link" href="#">
+							<i class="fas fa-angle-double-left"></i>
+						</a>
+						<a class="page_prev_link" href="#">
+							<i class="fas fa-angle-left"></i>
+						</a>
+					</div>
+					<div class="page_num">
+						<a href="#" class="page_num_link on">1</a>
+						<a href="#" class="page_num_link">2</a>
+						<a href="#" class="page_num_link">3</a>
+						<a href="#" class="page_num_link">4</a>
+						<a href="#" class="page_num_link">5</a>
+					</div>
+					<div class="page_next">
+						<a href="#" class="page_next_link">
+							<i class="fas fa-angle-right"></i>
+						</a>
+						<a href="#" class="page_next_link">
+							<i class="fas fa-angle-double-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    </div>
+
+
+  <div id="footer_info">
+    <div id="footer">
+      <div class="footer_top">
+        <div class="inner">
+          <ul>
+            <li>
+              <a href="#">회사소개</a>
+            </li>
+            <li>
+              <a href="#"> 프로젝트 문의</a>
+            </li>
+            <li>
+              <a href="#"> 프리랜서 문의</a>
+            </li>
+            <li>
+              <a href="#">인재채용</a>
+            </li>
+            <li>
+              <a href="#">이용약관 </a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침 </a>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_inner">
+        <div class="inner">
+          <div class="wrap">
+            <article>
+              <div class="f_logo">
+                <img src="../..//img/f_logo.png" alt="">
+              </div>
+              <address>
+                주식회사 케이엘큐브 <br>
+                대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                사업자등록번호: 100-11-22203 <br>
+                통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                호스팅 사업자: Amazon Web Service(AWS)
+              </address>
+            </article>
+            <article class="right">
+              <h2>IT잡스 SNS 채널</h2>
+              <ul class="sns">
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns01.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns02.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns03.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns04.png" alt="">
+                  </a>
+                </li>
+              </ul>
+              <div class="phone">
+                <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="inner">
+          <p>
+            잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가
+            부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+          </p>
+          <p class="copy">
+            Copyright © 2020 Jons In. Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+
+</html>

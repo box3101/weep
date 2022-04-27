@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'notokr';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/notokr-light.woff2) format('woff2'), url(../fonts/notokr-light.woff) format('woff'), url(../fonts/notokr-light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'notokr';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/notokr-regular.woff2) format('woff2'), url(../fonts/notokr-regular.woff) format('woff'), url(../fonts/notokr-regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'notokr';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/notokr-medium.woff2) format('woff2'), url(../fonts/notokr-medium.woff) format('woff'), url(../fonts/notokr-medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'notokr';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/notokr-bold.woff2) format('woff2'), url(../fonts/notokr-bold.woff) format('woff'), url(../fonts/notokr-bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin set-bg($bg-x, $bg-y) {
+  background: {
+    image: url(../images/ico.png);
+    repeat: no-repeat;
+    position: $bg-x $bg-y;
+    size: 15rem;
+  }
+}
+
+$blue: #008cd0;
+$lightBlue: #b9c8ff;
+$purple: #6876b5;
+
+$mint: #1cbbb4;
+$green: #80c269;
+
+$orange: #f38f1e;
+$red: #d62d2d;
+$pink: #f26d7d;
+
+$black: #333;

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+    <title>weep</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="../../img/logo.png">
+    <meta property="og:image:type" content="../../image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/@default.css" />
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.js"></script>
+</head>
+
+<body>
+    <div id="header" class="sub_header">
+        <div class="inner clearfix">
+            <h1 class="logo">
+                <a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+            </h1>
+            <ul id="main_gnb">
+                <li>
+                    <a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+                </li>
+                <li>
+                    <a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+                </li>
+                <li>
+                    <a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+                </li>
+                <li>
+                    <a href="/page/partner_sch/partner.html">파트너 검색</a>
+                </li>
+                <li>
+                    <a href="#">WEE.P 소개
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="clearfix small-txt">
+                <li>
+                    <a href="#">이용안내</a>
+                </li>
+                <li>
+                    <a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+                </li>
+            </ul>
+
+            <ul class="util clear">
+                <li>
+                    <a href="/page/login/login01.html">로그인</a>
+                </li>
+                <li>
+                    <a href="/page/login/login02.html">회원가입</a>
+                </li>
+
+                <div class="memberImg">
+                    <img src="/img/bg_member.png" alt="회원가입혜택">
+                </div>
+            </ul>
+            <ul class="login-util clear">
+                <li>
+                    <a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지"
+                                class="member-img"></span>홍길동</a>
+                    <ul class="member-menu">
+                        <li>
+                            <a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+                        </li>
+                        <li>
+                            <a href="">로그아웃</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <nav id="navi" style="top: 186px;">
+        <div class="project">
+            <div class="project-con">
+                <h2>최근 본 프로젝트 <span class="num">5</span></h2>
+                <ul>
+                    <li>
+                        <a href="#" class="on">비상주 오프라인 매장</a>
+                    </li>
+                    <li>
+                        <a href="#">안드로이드 프론트</a>
+                    </li>
+                    <li>
+                        <a href="#">비상주 오프라인 매장</a>
+                    </li>
+                    <li>
+                        <a href="#">인천국제공항</a>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">더보기</a>
+                </div>
+            </div>
+            <div class="freelan-con">
+                <h2>최근 본 프리랜서 <span class="num">2</span></h2>
+                <ul>
+
+                    <li>
+                        <a href="#" class="on">김철수</a>
+                    </li>
+                    <li>
+                        <a href="#">홍길동</a>
+                    </li>
+                    <li>
+                        <a href="#">비상주</a>
+                    </li>
+                    <li>
+                        <a href="#">김길동</a>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">더보기</a>
+                </div>
+            </div>
+        </div>
+        <ul class="banner">
+            <li>
+                <a href="#">
+                    <img src="img/navi_banner01.png" alt="네비배너1">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var scroll = $(this).scrollTop();
+                var navi_top = $("#navi").offset().top;
+
+                console.log(scroll);
+                console.log(navi_top);
+
+                if (scroll > 186) {
+                    $("#navi").css({
+                        "position": "fixed",
+                        "top": "20px"
+                    })
+                } else {
+                    $("#navi").css({
+                        "position": "absolute",
+                        "top": "186px"
+                    })
+                }
+            })
+        })
+    </script>
+
+    <div id="sub_contents">
+        <div class="sub_tit">
+            <div class="inner">
+                <h1>고객지원</h1>
+            </div>
+        </div>
+
+        <div id="sub_content" class="custom_sch">
+            <div class="inner">
+                <div class="left_menu">
+                    <ul>
+                        <li>
+                            <a href="../../page/custom_sup/custom_sup01.html">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="../../page/custom_sup/custom_sup02.html">뉴스/언론</a>
+                        </li>
+                        <li>
+                            <a href="../../page/custom_sup/custom_cmc.html">CMC 멤버쉽</a>
+                        </li>
+                        <li>
+                            <a class="on" href="../../page/custom_sup/event.html">이벤트</a>
+                        </li>
+                        <li>
+                            <a href="../../page/custom_sup/custom_sup03.html">자주 찾는 질문</a>
+                        </li>
+                        <li>
+                            <a href="../../page/custom_sup/custom_sup04.html">온라인 1:1 문의</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content_info">
+					<div class="content">
+						<div id="tab1">
+							<h2 class="sub_title02">이벤트</h2>
+
+							<div class="custom_view_wrap">
+								<div class="custom_view_top">
+									<h2>홈페이지 오픈 이벤트 당첨자 발표</h2>
+									<div class="desc">
+										<div class="lef">
+											<span class="pr">등록일</span>
+											<span class="low"></span>
+											<span class="date">2020.12.16 17:02</span>
+											<span class="low"></span>
+											<span class="view">
+												<img src="../../img/c_view.png" alt="조회수 이미지">
+												<span name="Mnm_b1_cnt">11</span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="custom_view_info">
+									<div class="img">
+										<img src="../../img/cu_img01.png" alt="view 이미지">
+										</div>
+									<p>테스트입니다. 이벤트 내용을 입력합니다.</p>
+									<p>6월 신규 회원 가입시 커피를 무료로 드립니다.</p>
+								</div>
+
+								<div class="btns-center">
+									<a href="winner.html" class="btn btn-outline-dark">목록</a>
+								</div>
+							</div><!-- custom_view_wrap  -->
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+			<div class="footer_inner">
+				<div class="inner">
+					<div class="wrap">
+						<div class="left">
+							<div class="f_logo">
+								<img src="img/f_logo_new.png" alt="">
+								<p>주식회사 케이엘큐브</p>
+							</div>
+							<div class="contact">
+								<span class="bar">지원센터:  02-3442-5001</span>
+								<span>운영시간 : 평일 09:00~18:00 / 주말.공휴일 휴무</span>
+							</div>
+							<div class="address">
+								<span class="bar">대표 : 하윤호</span><span class="bar">개인정보보호책임자 : 유영복</span><span>사업자등록번호 : 154-81-00795</span><br/>
+								<span class="bar">주소 : 서울시 강남구 선릉로 133길 4 아이큐빌딩 3층</span><span>통신판매업신고 : 제 2020-서울강남-02210 호<span>
+							</div>
+						</div>
+						<div class="right help">
+							<div>
+								<p><a href="#!">회사소개</a></p>
+								<p><a href="#!">지원센터</a></p>
+							</div>
+							<div>
+								<p><a href="#!">프로젝트 문의</a></p>
+								<p><a href="#!">프리랜서 문의</a></p>
+							</div>
+							<div>
+								<p><a href="/page/service/agreement.html">이용약관</a></p>
+								<p><a href="/page/service/privacy.html">개인정보처리방침</a></p>
+							</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="f_bottom">
+					<p class="copy"> Copyright © 2020 WEEP. Inc. All rights reserved.</p>
+					<p>위프는 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가 부담하고, 이에 대하여 위프인은 일체 책임지지 않습니다.</p>
+				</div>
+	
+			</div>
+        </div>
+</body>
+
+
+</html>

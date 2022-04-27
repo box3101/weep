@@ -1,0 +1,2507 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head style="overflow-y:hidden;">
+    <title>AM00605</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:image:type" content="/image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/project_reg.css">
+    <link rel="stylesheet" href="../../css/datepicker.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/customTab.js"></script>
+    <script type="text/javascript" src="../../js/sideBar_toggle.js"></script>
+    <script type="text/javascript" src="../../js/admin_common.js"></script>
+    <script type="text/javascript" src="../../js/test_tab.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script> 
+    <script>
+        $(function () {
+           //datepicker 
+           $(".day_input").datepicker({
+              language: 'en',
+              autoClose: true,
+              dateFormat:'yyyy.mm.dd'
+              //minDate: new Date()
+           });
+        });
+    </script>
+</head>
+
+
+<body>
+<!-- admin_header : S ---------->
+<div id="header">
+    <div class="adminLogo">
+        <a href="/admin/main.html"><img src="../../admin_img/admin_logo.png" alt="관리자메인으로 바로가기"></a>
+    </div>
+    <ul id="adminGnb">
+        <li>
+            <a href="../../page/AM00100/AM00101.html">프로젝트</a>
+        </li>
+        <li>
+            <a href="../../page/AM00200/AM00201.html">아웃소싱</a>
+        </li>
+        <li>
+            <a href="../../page/AM00300/AM00301.html">프리랜서</a>
+        </li>
+        <li>
+            <a href="../../page/AM00400/AM00401.html">파트너</a>
+        </li>
+        <li>
+            <a href="../../page/AM00500/AM00500.html">클라이언트</a>
+        </li>
+        <li class="on">
+            <a href="../../page/AM00600/AM00601.html">매니저</a>
+        </li>
+        <li>
+            <a href="../../page/AM00700/AM00701.html">회원</a>
+        </li>
+        <li>
+            <a href="../../page/AM00800/AM00801.html">계약</a>
+        </li>
+        <li>
+            <a href="../../page/AM00900/AM00901.html">정산</a>
+        </li>
+        <li>
+            <a href="../../page/AM01000/AM01001.html">유료상품</a>
+        </li>
+        <li>
+            <a href="../../page/AM01200/AM01201.html">사이트관리</a>
+        </li>
+    </ul>
+</div>
+<!-- admin_header : E ---------->
+
+<!-- admin_wrapper : S ---------->
+<div class="wrapper clearfix">
+<!-- admin_sidebar : S ---->
+    <div id="sidebar">
+        <div class="info">
+            <div class="info_icon">
+                <button id="sidebarCollapse">
+                </button>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="홈버튼">
+                        <img src="../../admin_img/left_home_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="잠금버튼">
+                        <img src="../../admin_img/left_lock_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="마이페이지">
+                        <img src="../../admin_img/my_page_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="../../page/AM01100/AM01101.html">
+                    <span data-tooltip-text="현황 및 통계">
+                        <img src="../../admin_img/AM01100_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="../../page/AM01300/AM01301.html">
+                    <span data-tooltip-text="게시판 관리">
+                        <img src="../../admin_img/AM01300_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="../../page/AM01400/AM01401.html">
+                    <span data-tooltip-text="시스템 관리">
+                        <img src="../../admin_img/AM01400_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="nav_side">
+            <div class="SNB_title">
+                <img src="../../admin_img/admin_leftLnb.png" alt="">
+                <h1>매니저관리</h1>
+            </div>
+            <ul class="SNB">
+                <li class="on">
+                    <a href="../../page/AM00600/AM00601.html">업무관리</a>
+                    <ul class="sub_SNB">
+                        <li><a href="../../page/AM00600/AM00602.html">클라이언트</a></li>
+                        <li><a href="../../page/AM00600/AM00603.html">프로젝트/아웃소싱</a></li>
+                        <li class="on"><a href="../../page/AM00600/AM00605.html">프리랜서/파트너</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../page/AM00600/AM00611.html">계약관리</a></li>
+                <li><a href="../../page/AM00600/AM00621.html">완료 프로젝트</a></li>
+                <li><a href="../../page/AM00600/AM00631.html">완료 아웃소싱</a></li>
+                <li><a href="../../page/AM00600/AM00641.html">현황&등록</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- admin_sidebar : E ---->
+
+<!-- admin_contents : S ---->
+    <div id="contents">
+        <div class="inner">
+            <div class="title clearfix">
+                <h2>지원 프리랜서 관리</h2>
+                <ul class="breadcrumb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">매니저 관리</a></li>
+                    <li><a href="../../page/AM00600/AM00601.html">업무관리</a></li>
+                    <li><a href="../../page/AM00600/AM00605.html">프리랜서/파트너</a></li>
+                </ul>
+            </div>
+            <div class="tapBox">
+                <ul class="tab liN3">
+                    <li><a href="../../page/AM00600/AM00602.html">클라이언트</a></li>
+                    <li><a href="../../page/AM00600/AM00603.html">프로젝트/아웃소싱</a></li>
+                    <li class="on"><a href="../../page/AM00600/AM00605.html">프리랜서/파트너</a></li>
+                </ul>
+            </div>
+            <div class="searchBox clearfix">
+                <div class="searchOption">
+                    <div class="option_name">
+                        <div class="lef wAuto">
+                            <span class="w120"><label for="">매니저 선택</label></span>
+                            <select name="" id="" class="w300 ml3">
+                                <option value="" disabled="">선택</option>
+                            </select>
+                            <select name="" id="" class="w300 ml10">
+                                <option value="" disabled="" hidden="" selected=""> 클라이언트 선택</option>
+                            </select>
+                        </div>
+                        <div class="ref wAuto">
+                            <div class="btn_talk mr5"><a href="#" onclick="view_layer('layer6');">즐겨찾기</a></div>
+                            <div class="btn_talk"><a href="">위프톡</a></div>
+                        </div>
+                    </div>
+                    <div class="option_name">
+                        <div class="lef wAuto">
+                            <span class="w120"><label for="">프로젝트 명</label></span>
+                        </div>
+                        <div class="ref wAuto">
+                            <select name="" id="" class="w748">
+                                <option value="">[상주]오프라인 매장 주문 플랫폼 Admin Front-end 개발</option>
+                            </select>
+                            <div class="btn_talk ml5"><a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">보기</a></div>
+                        </div>
+                    </div>
+                    <div class="option_calender">
+                        <span class="w120">지원일</span>
+                        <input type="text" class="day_input w120" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                        
+                        <span class="mr8 ml8">~</span>
+                        <input type="text" class="day_input w120" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                        
+                        <ul class="calender_radio">
+                            <li>
+                                <input type="radio" name="term" id="OTD" value="당일">
+                                <label for="OTD"><span>당일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day1" value="1일">
+                                <label for="day1"><span>1일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day7" value="7일">
+                                <label for="day7"><span>7일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day10" value="10일">
+                                <label for="day10"><span>10일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day15" value="15일">
+                                <label for="day15"><span>15일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month1" value="1개월">
+                                <label for="month1"><span>1개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month3" value="3개월">
+                                <label for="month3"><span>3개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month6" value="6개월">
+                                <label for="month6"><span>6개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="whole" value="전체">
+                                <label for="whole"><span>전체</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="option_name clearfix nflex">
+                        <div class="lef wAuto"> 
+                            <span class="w120">직무 구분</span>
+                        </div>
+                        <div class="lef wAuto ml3">
+                            <div class="opName_wrap w536">
+                                <input type="radio" name="T" id="T1">
+                                <label for="T1" class="checkL ">전체</label>
+                                <input type="radio" name="T" id="T2">
+                                <label for="T2" class="checkL ">PM/업무/컨설팅</label>
+                                <input type="radio" name="T" id="T3">
+                                <label for="T3" class="checkL">기획</label>
+                                <input type="radio" name="T" id="T4">
+                                <label for="T4" class="checkL">디자인</label>
+                                <input type="radio" name="T" id="T5">
+                                <label for="T5" class="checkL">퍼블리싱</label>
+                                <input type="radio" name="T" id="T6">
+                                <label for="T6" class="checkL">개발</label>
+                            </div>
+                        </div>
+                        <div class="ref wAuto">
+                            <span class="w100 p0 mr5">이력서 열람 상태</span>
+                            <div class="opName_wrap w250 pr10">
+                                <input type="radio" name="RM" id="RM1">
+                                <label for="RM1" class="checkL m0">전체</label>
+                                <input type="radio" name="RM" id="RM2">
+                                <label for="RM2" class="checkL ">미열람</label>
+                                <input type="radio" name="RM" id="RM3">
+                                <label for="RM3" class="checkL">열람</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option_name">
+                        <div class="lef wAuto">
+                            <span class="w110">인터뷰 및 계약상태</span>
+                        </div>
+                        <div class="ref wAuto">
+                            <div class="opName_wrap w872">
+                                <input type="radio" name="STAT" id="STAT1">
+                                <label for="STAT1" class="checkL">인터뷰 요청</label>
+                                <input type="radio" name="STAT" id="STAT2">
+                                <label for="STAT2" class="checkL">인터뷰 취소</label>
+                                <input type="radio" name="STAT" id="STAT3">
+                                <label for="STAT3" class="checkL">인터뷰 확정</label>
+                                <input type="radio" name="STAT" id="STAT4">
+                                <label for="STAT4" class="checkL">인터뷰 완료</label>
+                                <input type="radio" name="STAT" id="STAT5">
+                                <label for="STAT5" class="checkL">계약진행</label>
+                                <input type="radio" name="STAT" id="STAT6">
+                                <label for="STAT6" class="checkL">계약완료</label>
+                                <input type="radio" name="STAT" id="STAT7">
+                                <label for="STAT7" class="checkL">계약취소</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option_name">
+                        <div class="lef wAuto"> 
+                            <span class="w110"><label for="">검색</label></span>
+                        </div>
+                        <div class="ref wAuto">
+                            <input type="text" id="" class="w872" placeholder="아이디, 프리랜서명, 이력서 제목, 조회 가능">
+                        </div>
+                    </div>
+                </div>
+                <div class="ref">
+                        <div class="btn_search01">
+                            <a href="">검색</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="tableBox">
+                <div class="list_number clearfix">
+                    <div class="lef">
+                        <p>총 <span class="c_orange">50</span>건</p>
+                    </div>
+                    <div class="ref">
+                        <select name="" id="" class="ref">
+                            <option value="" selected>보기</option>
+                            <option value="">10</option>
+                            <option value="">15</option>
+                            <option value="">20</option>
+                            <option value="">25</option>
+                            <option value="">30</option>
+                        </select>
+                        <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                        <div class="btn_exel mr5"><a href="#" onclick="view_layer('layer3');">프리랜서추천</a></div>
+                        <div class="btn_exel mr5"><a href="#" onclick="view_layer('recommend-project');">프로젝트추천</a></div>
+                    </div>
+                </div>
+                <form action="">
+                    <table summery="">
+                        <caption class="hidden"></caption>
+                        <thead>
+                            <th>
+                                <input type="checkbox" name="c1" id="c1">
+                                <label for="c1"></label>
+                            </th>
+                            <th>번호</th>
+                            <th>구분</th>
+                            <th>아이디</th>
+                            <th>프리랜서명</th>
+                            <th>이력서 제목</th>
+                            <th>지원일</th>
+                            <th>이력서 열람 상태</th>
+                            <th>인터뷰 및 계약상태</th>
+                            <th>매니저명</th>
+                            <th class="w15p">관리</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c2">
+                                    <label for="c2"></label>
+                                </td>
+                                <td>1</td>
+                                <td>PM/업무/컨설팅</td>
+                                <td>weep2020</td>
+                                <td>박진감(41)</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                </td>
+                                <td>2020-00-00 00:00</td>
+                                <td>미열람</td>
+                                <td>-</td>
+                                <td>김담당 (damdangK)</td>
+                                <td>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer1');">관리</a></div>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c3">
+                                    <label for="c3"></label>
+                                </td>
+                                <td>2</td>
+                                <td>PM/업무/컨설팅</td>
+                                <td>weep2020</td>
+                                <td>박진감(41)</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                </td>
+                                <td>2020-00-00 00:00</td>
+                                <td>열람</td>
+                                <td>인터뷰 요청</td>
+                                <td>김담당 (damdangK)</td>
+                                <td>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer1');">관리</a></div>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c4">
+                                    <label for="c3"></label>
+                                </td>
+                                <td>3</td>
+                                <td>PM/업무/컨설팅</td>
+                                <td>weep2020</td>
+                                <td>박진감(41)</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                </td>
+                                <td>2020-00-00 00:00</td>
+                                <td>열람</td>
+                                <td>인터뷰 요청</td>
+                                <td>김담당 (damdangK)</td>
+                                <td>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer1');">관리</a></div>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c5">
+                                    <label for="c3"></label>
+                                </td>
+                                <td>4</td>
+                                <td>PM/업무/컨설팅</td>
+                                <td>weep2020</td>
+                                <td>박진감(41)</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                </td>
+                                <td>2020-00-00 00:00</td>
+                                <td>열람</td>
+                                <td>인터뷰 요청</td>
+                                <td>김담당 (damdangK)</td>
+                                <td>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer1');">관리</a></div>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c6">
+                                    <label for="c3"></label>
+                                </td>
+                                <td>5</td>
+                                <td>PM/업무/컨설팅</td>
+                                <td>weep2020</td>
+                                <td>박진감(41)</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                </td>
+                                <td>2020-00-00 00:00</td>
+                                <td>열람</td>
+                                <td>인터뷰 요청</td>
+                                <td>김담당 (damdangK)</td>
+                                <td>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer1');">관리</a></div>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c7">
+                                    <label for="c3"></label>
+                                </td>
+                                <td>6</td>
+                                <td>PM/업무/컨설팅</td>
+                                <td>weep2020</td>
+                                <td>박진감(41)</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                </td>
+                                <td>2020-00-00 00:00</td>
+                                <td>열람</td>
+                                <td>인터뷰 요청</td>
+                                <td>김담당 (damdangK)</td>
+                                <td>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer1');">관리</a></div>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c8">
+                                    <label for="c3"></label>
+                                </td>
+                                <td>7</td>
+                                <td>PM/업무/컨설팅</td>
+                                <td>weep2020</td>
+                                <td>박진감(41)</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                </td>
+                                <td>2020-00-00 00:00</td>
+                                <td>열람</td>
+                                <td>인터뷰 요청</td>
+                                <td>김담당 (damdangK)</td>
+                                <td>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer1');">관리</a></div>
+                                    <div class="btn_table01"><a href="#" onclick="view_layer('layer2');">확정</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="table_bot clearfix">
+                    <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                    <div class="btn_exel mr5"><a href="#" onclick="view_layer('layer3');">프리랜서추천</a></div>
+                    <div class="btn_exel mr5"><a href="#" onclick="view_layer('recommend-project');">프로젝트추천</a></div>
+                </div>
+                <div class="table_pagination">
+                    <ul class="pagination">
+                        <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""/></a></li>
+                        <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""/></a></li>
+                        <li class="active"><a href="" class="on">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">6</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">8</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">10</a></li>
+                        <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""/></a></li>
+                        <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- admin_contents : E ---->
+</div>
+<!-- admin_wrapper : E ---------->
+<script>
+    function confirm_cancle() {
+        var confirm_cancle = confirm("프로젝트 지원건이 확인전이므로\n취소하실 수 있습니다\n\n취소하겠습니까?");
+ 
+        if ( confirm_cancle == true ) {
+            alert("프로젝트 지원이 취소되었습니다.");
+        } else if ( confirm_cancle == false ) {
+        }
+    }
+    function confirm_cancle02() {
+        var confirm_cancle = confirm("삭제하시겠습니까?");
+ 
+        if ( confirm_cancle == true ) {
+            alert("삭제되었습니다.");
+        } else if ( confirm_cancle == false ) {
+        }
+    }
+</script>
+<script>
+    function openWindowPop(url, name) {
+        var options = 'top=0, left=0, width=1260, height=800, status=no, menubar=no, toolbar=no, resizable=no scrollbars=1';
+        window.open(url, name, options);
+    }
+</script>
+<div class="dim-layer" id="layer1">
+    <div class="dimBg h100p"></div>
+    <div class="pop-layer">
+        <div class="pop-container1">
+            <div class="interview_inner w800">
+                <div class="manager_title mb30">
+                    <h3 class="title_h3 wAuto">프리랜서 상세보기</h3>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="close_layer('layer1');"></a>
+                    </div>
+                </div>
+                <div class="info_wrap m0">
+                    <div class="tab_reg">
+                        <ul class="proLnb tap_style">
+                            <li>
+                                    <a href="#tab1" class="on">인터뷰 정보</a>
+                            </li>
+                            <li>
+                                    <a href="#tab2" class="">진행 상세내역</a>
+                            </li>
+                        </ul>
+                        <div id="tab1" class="box on" style="display: block;">
+                            <div class="info tapCon_style">
+                                <section class="content_detail pop_pad mb30">
+                                    <div class="detail_title">
+                                        <h3><a class="c_orange" href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]오프라인 매장 주문 플랫폼 Admin Front-end 개발</a></h3>
+                                    </div>
+                                    <form action="">
+                                        <table class="detail">
+                                            <caption class="hidden"></caption>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="w110">클라이언트</th>
+                                                    <td>(주)아이티최고(itchiogo)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="w110">직무구분</th>
+                                                    <td>디자인</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="w110">등록일/마감일</th>
+                                                    <td>2020.00.00 00:00 ~ 2020.00.00 00:00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="w110p0">담당 매니저</th>
+                                                    <td class="p0">호이호이 둘리</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                </section>
+                                <section>
+                                    <div class="tableBox">
+                                        <div class="list_number clearfix">
+                                            <div class="lef">
+                                                <h4>프리랜서 정보</h4>
+                                        </div>
+                                        <form action="">
+                                            <table summery="">
+                                                <caption class="hidden"></caption>
+                                                <thead>
+                                                        <th>아이디</th>
+                                                        <th>이름</th>
+                                                        <th>휴대폰번호</th>
+                                                        <th>이메일</th>
+                                                        <th>이력서 열람 상태</th>
+                                                        <th>인터뷰 상태</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>weep1004</td>
+                                                        <td>홍길동</td>
+                                                        <td>010-0000-0000</td>
+                                                        <td>weef20202@naver.com</td>
+                                                        <td>열람</td>
+                                                        <td><span>확정</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </div>
+                                </section>
+                                <section class="wrap_detail">
+                                    <div class="wrap_title clearfix mb10">
+                                        <div class="lef">
+                                            <h4>인터뷰 요청내역</h4>
+                                        </div>
+                                        <div class="ref">
+                                            <div class="btn_subTitle"><a href="">인터뷰 확정</a></div>
+                                            <div class="btn_subTitle"><a href="">인터뷰 재요청</a></div>
+                                            <div class="btn_subTitle"><a href="">인터뷰 취소</a></div>
+                                            <div class="btn_subTitle"><a href="">인터뷰 일정변경</a></div>
+                                        </div>
+                                    </div>
+                                    <section class="content_detail pop_pad mb30 noShad">
+                                        <form action="">
+                                            <table class="detail">
+                                                <caption class="hidden"></caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="w50">날짜</th>
+                                                        <td>2020.09.12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="w50">시간</th>
+                                                        <td>18:30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="w50">장소</th>
+                                                        <td>서울시 남구로역 3번출구</td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <th class="w50 p0">내용</th>
+                                                        <td class="w415 p0 td_popup02">인터뷰 요청드립니다.인터뷰 요청드립니다.인터뷰 요청드립니다.인터뷰 요청드립니다.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </section>
+                                </section>
+                                <section class="mb50">
+                                    <div class="tableBox">
+                                        <div class="list_number clearfix">
+                                            <div class="lef">
+                                                <h4>담당자 메모</h4>
+                                        </div>
+                                        <form action="">
+                                            <textarea class="w100p noResiz" name="" cols="30" rows="10"></textarea>
+                                        </form>
+                                        <p class="c_red">프로젝트 지원을 클라이언트가 확인하였을 경우, 취소불가 합니다.</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tab2" class="box" style="display: none;">
+                            <div class="info tapCon_style">
+                                <section class="mt50">
+                                    <div class="tableBox">
+                                        <form action="">
+                                            <table summery="">
+                                                <caption class="hidden"></caption>
+                                                <thead>
+                                                        <th>전송일자</th>
+                                                        <th>상태</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span>2020.00.00 00:00</span></td>
+                                                        <td><span>확정</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span>2020.00.00 00:00</span></td>
+                                                        <td><span>요청</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="wrap_btn">
+                    <div class="btn_submit"><a href="" >취소</a></div>
+                    <div class="btn_submit"><a href="" >확인</a></div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dim-layer" id="layer2">
+    <div class="dimBg h100p"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="interview_inner">
+                <div class="manager_title mb30">
+                    <h3 class="title_h3">인터뷰 확정 관리</h3>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="close_layer('layer2');"></a>
+                    </div>
+                </div>
+                <section class="content_detail pop_pad mb30">
+                    <div class="detail_title">
+                        <h3><a class="c_orange" href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]오프라인 매장 주문 플랫폼 Admin Front-end 개발</a></h3>
+                    </div>
+                    <form action="">
+                        <table class="detail">
+                            <caption class="hidden"></caption>
+                            <tbody>
+                                <tr>
+                                    <th class="w110">클라이언트</th>
+                                    <td>(주)아이티최고(itchiogo)</td>
+                                </tr>
+                                <tr>
+                                    <th class="w110">직무구분</th>
+                                    <td>디자인</td>
+                                </tr>
+                                <tr>
+                                    <th class="w110">등록일/마감일</th>
+                                    <td>2020.00.00 00:00 ~ 2020.00.00 00:00</td>
+                                </tr>
+                                <tr>
+                                    <th class="w110p0">담당 매니저</th>
+                                    <td class="p0">호이호이 둘리</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </section>
+                <section>
+                    <div class="tableBox">
+                        <div class="list_number clearfix">
+                            <div class="lef">
+                                <h4>프리랜서 정보</h4>
+                        </div>
+                        <form action="">
+                            <table summery="">
+                                <caption class="hidden"></caption>
+                                <thead>
+                                        <th>아이디</th>
+                                        <th>이름</th>
+                                        <th>휴대폰번호</th>
+                                        <th>이메일</th>
+                                        <th>인터뷰 상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>weep1004</td>
+                                        <td>홍길동</td>
+                                        <td>010-0000-0000</td>
+                                        <td>weef20202@naver.com</td>
+                                        <td><span>확정</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <div class="tableBox">
+                        <div class="list_number clearfix">
+                            <div class="lef w100p">
+                                <h4>인터뷰 확정 관리</h4>
+                            </div>
+                        <form action="" class="m0">
+                            <table>
+                                <caption class="hidden"></caption>
+                                <tbody>
+                                    <tr>
+                                        <th>인터뷰 참석여부</th>
+                                        <td>
+                                            <input type="radio" name="ch" id="ch01">
+                                            <label for="ch01" class="radioL fs13">참석</label>
+                                            <input type="radio" name="ch" id="ch02">
+                                            <label for="ch02" class="radioL fs13">미참석</label>
+                                        </td>
+                                        <th>합격 여부</th>
+                                        <td>
+                                            <input type="radio" name="PS" id="PS01">
+                                            <label for="PS01" class="radioL fs13">합격</label>
+                                            <input type="radio" name="PS" id="PS02">
+                                            <label for="PS02" class="radioL fs13">불합격</label>
+                                            <input type="radio" name="PS" id="PS03">
+                                            <label for="PS03" class="radioL fs13">예비합격</label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <form action="">
+                            <textarea class="w100p noResiz" name="" cols="30" rows="10"></textarea>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <div class="tableBox">
+                        <div class="list_number clearfix">
+                            <div class="lef">
+                                <h4>담당자 메모</h4>
+                        </div>
+                        <form action="">
+                            <textarea class="w100p noResiz" name="" cols="30" rows="10"></textarea>
+                        </form>
+                        <div class="table_bot clearfix">
+                            <div class="ref">
+                                <a href="#" class="pop_a">계약진행</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="wrap_btn">
+                    <div class="btn_submit"><a class="bgWhite" href="" >취소</a></div>
+                    <div class="btn_submit"><a href="" >저장</a></div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dim-layer" id="layer3">
+    <div class="dimBg"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="manager_fixInner">
+                <div class="manager_title mb25">
+                    <h3>프리랜서 추천검색</h3>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="close_layer('layer3');"></a>
+                    </div>
+                </div>
+                <div class="manager_contents">
+                    <section class="content_detail pop_pad mb30">
+                        <div class="detail_title">
+                            <h3>[상주] 오프라인 매장 주문 플랫폼 Admin Front-end 개발</h3>
+                        </div>
+                        <form action="">
+                            <table class="detail">
+                                <caption class="hidden"></caption>
+                                <tbody>
+                                    <tr>
+                                        <th class="w110">클라이언트</th>
+                                        <td>(주)아이티최고(itchiogo)</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="w110">직무구분</th>
+                                        <td>디자인</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="w110">등록일/마감일</th>
+                                        <td>2020.00.00 00:00 ~ 2020.00.00 00:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </section>
+                    <div class="tableBox">
+                        <div class="list_number clearfix">
+                            <div class="lef">
+                                <h3>프리랜서 정보</h3>
+                            </div>
+                        </div>
+                        <form class="mb50">
+                            <table class="borderNone mb15">
+                                <caption></caption>
+                                <tbody>
+                                    <tr>
+                                        <th class="w10p">직무 구분</th>
+                                        <td>
+                                            <input type="radio" name="stat" id="s1">
+                                            <label for="s1" class="checkL mr20">전체</label>
+                                            <input type="radio" name="stat" id="s2">
+                                            <label for="s2" class="checkL mr20">PM/업무/컨설팅</label>
+                                            <input type="radio" name="stat" id="s3">
+                                            <label for="s3" class="checkL mr20">기획</label>
+                                            <input type="radio" name="stat" id="s4">
+                                            <label for="s4" class="checkL mr20">디자인</label>
+                                            <input type="radio" name="stat" id="s5">
+                                            <label for="s5" class="checkL mr20">퍼블리싱</label>
+                                            <input type="radio" name="stat" id="s6">
+                                            <label for="s6" class="checkL mr20">개발</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="w10p">검색</th>
+                                        <td class="pl0"><input type="text" placeholder="프리랜서 명, 아이디, 제목 검색"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form_fot">
+                                <div class="btn_submit mr10"><a href="" >검색</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="tableBox">
+                    <div class="list_number clearfix">
+                        <div class="lef">
+                            <div class="btn_exel mr5"><a href="#">추천하기</a></div>
+                        </div>
+                        <div class="ref">
+                            <select name="" id="">
+                                <option value="" selected>보기</option>
+                                <option value="">10</option>
+                                <option value="">15</option>
+                                <option value="">20</option>
+                                <option value="">25</option>
+                                <option value="">30</option>
+                            </select>
+                        </div>
+                    </div>
+                    <form action="">
+                        <table summery="">
+                            <caption class="hidden"></caption>
+                            <thead>
+                                <th>
+                                    <input type="checkbox" name="L3C" id="L3C1">
+                                    <label for="L3C1"></label>
+                                </th>
+                                <th>아이디</th>
+                                <th>프리랜서 명</th>
+                                <th>이메일</th>
+                                <th>휴대폰번호</th>
+                                <th>분야</th>
+                                <th>이력서 제목</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="L3C" id="L3C2">
+                                        <label for="L3C2"></label>
+                                    </td>
+                                    <td>damdangK</td>
+                                    <td>김담당</td>
+                                    <td>weep2020@naver.com</td>
+                                    <td>000-0000-0000</td>
+                                    <td>디자인</td>
+                                    <td class="td_popup center p0">
+                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="L3C" id="L3C3">
+                                        <label for="L3C3"></label>
+                                    </td>
+                                    <td>damdangP</td>
+                                    <td>박담당</td>
+                                    <td>weep2021@naver.com</td>
+                                    <td>000-0000-0000</td>
+                                    <td>기획</td>
+                                    <td class="td_popup center p0">
+                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <div class="table_pagination">
+                        <ul class="pagination">
+                            <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""/></a></li>
+                            <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""/></a></li>
+                            <li class="active"><a href="" class="on">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">6</a></li>
+                            <li><a href="">7</a></li>
+                            <li><a href="">8</a></li>
+                            <li><a href="">9</a></li>
+                            <li><a href="">10</a></li>
+                            <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""/></a></li>
+                            <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""/></a></li>
+                        </ul>
+                    </div>
+                    <section class="wrap_btn mt80">
+                        <div class="btn_submit"><a href="" class="bgWhite">취소</a></div>
+                        <div class="btn_submit"><a href="">저장</a></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="dim-layer" id="layer6">
+    <div class="dimBg"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="inner">
+                <div class="manager_title mb25">
+                    <h3>프리랜서/파트너 즐겨찾기</h3>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="close_layer('layer6');"></a>
+                    </div>
+                </div>
+                <div class="tab_wrap">
+                    <div class="tab_menu_container">
+                      <button class="tab_menu_btn1 tab_menu_btn on" type="button">전체</button>
+                      <button class="tab_menu_btn2 tab_menu_btn" type="button">PM/업무/컨설팅</button>
+                    </div>
+                  
+                    <div class="tab_box_container">
+                      <div class="tab_box1 tab_box on p0">
+                        <div class="searchBox clearfix">
+                            <div class="searchOption">
+                                <div class="option_name">
+                                    <div class="lef wAuto">
+                                        <span class="w100"><label for="">매니저 선택</label></span>
+                                        <select name="" id="" class="w310 ml3">
+                                            <option value="" disabled="">선택</option>
+                                        </select>
+                                    </div>
+                                    <div class="ref wAuto">
+                                        <div class="btn_talk"><a href="">위프톡</a></div>
+                                    </div>
+                                </div>
+                                <div class="option_calender">
+                                    <span class="w100">등록일</span>
+                                    <input type="text" class="day_input w197" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                                    
+                                    <span class="mr8 ml8">~</span>
+                                    <input type="text" class="day_input w197" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                                    
+                                    <ul class="calender_radio">
+                                        <li>
+                                            <input type="radio" name="term" id="OTD" value="당일">
+                                            <label for="OTD"><span>당일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day1" value="1일">
+                                            <label for="day1"><span>1일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day7" value="7일">
+                                            <label for="day7"><span>7일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day10" value="10일">
+                                            <label for="day10"><span>10일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day15" value="15일">
+                                            <label for="day15"><span>15일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month1" value="1개월">
+                                            <label for="month1"><span>1개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month3" value="3개월">
+                                            <label for="month3"><span>3개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month6" value="6개월">
+                                            <label for="month6"><span>6개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="whole" value="전체">
+                                            <label for="whole"><span>전체</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="option_name">
+                                    <div class="lef wAuto"> 
+                                        <span class="w100">상태</span>
+                                    </div>
+                                    <div class="ref wAuto">
+                                        <div class="opName_wrap w892">
+                                            <input type="radio" name="HIRE" id="HIRE1">
+                                            <label for="HIRE1" class="checkL ">전체</label>
+                                            <input type="radio" name="HIRE" id="HIRE2">
+                                            <label for="HIRE2" class="checkL ">구직중</label>
+                                            <input type="radio" name="HIRE" id="HIRE3">
+                                            <label for="HIRE3" class="checkL">계약대기</label>
+                                            <input type="radio" name="HIRE" id="HIRE4">
+                                            <label for="HIRE4" class="checkL">계약완료</label>
+                                            <input type="radio" name="HIRE" id="HIRE5">
+                                            <label for="HIRE5" class="checkL">진행중</label>
+                                            <input type="radio" name="HIRE" id="HIRE6">
+                                            <label for="HIRE6" class="checkL">완료</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option_name">
+                                    <span class="w100"><label for="">검색</label></span>
+                                    <input type="text" id="" class="w893 ml3" placeholder="아이디, 프리랜서명, 이력서명 조회 가능">
+                                </div>
+                            </div>
+                            <div class="ref pt114">
+                                    <div class="btn_search02">
+                                        <a href="">검색</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="tab_wrap">
+                            <div class="tab_menu_container">
+                              <button class="tab_menu_btn3 tab_menu_btn on" type="button">전체 목록</button>
+                              <button class="tab_menu_btn4 tab_menu_btn" type="button">즐겨찾기 목록</button>
+                            </div>
+                          
+                            <div class="tab_box_container">
+                              <div class="tab_box on">
+                                <div class="tableBox">
+                                    <div class="list_number clearfix">
+                                        <div class="lef">
+                                            <p>총 <span class="c_orange">50</span>건</p>
+                                        </div>
+                                        <div class="ref">
+                                            <select name="" id="">
+                                                <option value="" selected="">보기</option>
+                                                <option value="">10</option>
+                                                <option value="">15</option>
+                                                <option value="">20</option>
+                                                <option value="">25</option>
+                                                <option value="">30</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <form action="">
+                                        <table summery="">
+                                            <caption class="hidden"></caption>
+                                            <thead>
+                                                <tr><th>
+                                                    <input type="checkbox" name="L6T1C" id="L6T1C1">
+                                                    <label for="L6T1C1"></label>
+                                                </th>
+                                                <th style="padding: 0px 5px;">번호</th>
+                                                <th>구분</th>
+                                                <th>아이디</th>
+                                                <th>프리랜서명</th>
+                                                <th>이력서 제목</th>
+                                                <th>지원프로젝트</th>
+                                                <th>상태</th>
+                                                <th>매니저명</th>
+                                                <th>즐겨찾기</th>
+                                            </tr></thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" name="L6T1C" id="L6T1C2">
+                                                        <label for="L6T1C2"></label>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>PM/업무/컨설팅</td>
+                                                    <td>weep2020</td>
+                                                    <td>박진감(41)</td>
+                                                    <td class="td_popup">
+                                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                    </td>
+                                                    <td><a href="">16</a></td>
+                                                    <td>구직중</td>
+                                                    <td>김담당 (damdangK)</td>
+                                                    <td>
+                                                        <input type="checkbox" name="" id="BM1-1">
+                                                        <label for="BM1-1" class="bookmark"></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" name="L6T1C" id="L6T1C3">
+                                                        <label for="L6T1C3"></label>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>PM/업무/컨설팅</td>
+                                                    <td>weep2020</td>
+                                                    <td>박진감(41)</td>
+                                                    <td class="td_popup">
+                                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                    </td>
+                                                    <td><a href="">16</a></td>
+                                                    <td>계약대기</td>
+                                                    <td>김담당 (damdangK)</td>
+                                                    <td>
+                                                        <input type="checkbox" name="" id="BM1-2">
+                                                        <label for="BM1-2" class="bookmark"></label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                    <div class="table_bot clearfix">
+                                        <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                                    </div>
+                                    <div class="table_pagination">
+                                        <ul class="pagination">
+                                            <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""></a></li>
+                                            <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""></a></li>
+                                            <li class="active"><a href="" class="on">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li><a href="">3</a></li>
+                                            <li><a href="">4</a></li>
+                                            <li><a href="">5</a></li>
+                                            <li><a href="">6</a></li>
+                                            <li><a href="">7</a></li>
+                                            <li><a href="">8</a></li>
+                                            <li><a href="">9</a></li>
+                                            <li><a href="">10</a></li>
+                                            <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""></a></li>
+                                            <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="tab_box">
+                                <div class="tableBox">
+                                    <div class="list_number clearfix">
+                                        <div class="lef">
+                                            <p>총 <span class="c_orange">50</span>건</p>
+                                        </div>
+                                        <div class="ref">
+                                            <select name="" id="">
+                                                <option value="" selected="">보기</option>
+                                                <option value="">10</option>
+                                                <option value="">15</option>
+                                                <option value="">20</option>
+                                                <option value="">25</option>
+                                                <option value="">30</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <form action="">
+                                        <table summery="">
+                                            <caption class="hidden"></caption>
+                                            <thead>
+                                                <tr><th>
+                                                    <input type="checkbox" name="L6T2C" id="L6T2C1">
+                                                    <label for="L6T2C1"></label>
+                                                </th>
+                                                <th style="padding: 0px 5px;">번호</th>
+                                                <th>구분</th>
+                                                <th>아이디</th>
+                                                <th>프리랜서명</th>
+                                                <th>이력서 제목</th>
+                                                <th>지원프로젝트</th>
+                                                <th>상태</th>
+                                                <th>매니저명</th>
+                                                <th>즐겨찾기</th>
+                                            </tr></thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" name="L6T2C" id="L6T2C2">
+                                                        <label for="L6T2C2"></label>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>PM/업무/컨설팅</td>
+                                                    <td>weep2020</td>
+                                                    <td>박진감(41)</td>
+                                                    <td class="td_popup">
+                                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                    </td>
+                                                    <td><a href="">16</a></td>
+                                                    <td>구직중</td>
+                                                    <td>김담당 (damdangK)</td>
+                                                    <td>
+                                                        <input type="checkbox" name="" id="BM2-1">
+                                                        <label for="BM2-1" class="bookmark"></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" name="L6T2C" id="L6T2C3">
+                                                        <label for="L6T2C3"></label>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>PM/업무/컨설팅</td>
+                                                    <td>weep2020</td>
+                                                    <td>박진감(41)</td>
+                                                    <td class="td_popup">
+                                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                    </td>
+                                                    <td><a href="">16</a></td>
+                                                    <td>계약대기</td>
+                                                    <td>김담당 (damdangK)</td>
+                                                    <td>
+                                                        <input type="checkbox" name="" id="BM2-2">
+                                                        <label for="BM2-2" class="bookmark"></label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                    <div class="table_bot clearfix">
+                                        <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                                    </div>
+                                    <div class="table_pagination">
+                                        <ul class="pagination">
+                                            <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""></a></li>
+                                            <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""></a></li>
+                                            <li class="active"><a href="" class="on">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li><a href="">3</a></li>
+                                            <li><a href="">4</a></li>
+                                            <li><a href="">5</a></li>
+                                            <li><a href="">6</a></li>
+                                            <li><a href="">7</a></li>
+                                            <li><a href="">8</a></li>
+                                            <li><a href="">9</a></li>
+                                            <li><a href="">10</a></li>
+                                            <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""></a></li>
+                                            <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="tab_box2 tab_box p0">
+                        <div class="searchBox clearfix">
+                            <div class="searchOption">
+                                <div class="option_name">
+                                    <div class="lef wAuto">
+                                        <span class="w100"><label for="">매니저 선택</label></span>
+                                        <select name="" id="" class="w310 ml3">
+                                            <option value="" disabled="">선택</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="option_calender">
+                                    <span class="w100">기간</span>
+                                    <select class="w120 mr5" name="" id="" title="등록일을 선택해주세요">
+                                        <option value="">등록일</option>
+                                        <option value="">마감일</option>
+                                    </select>
+                                    <input type="text" class="day_input w197" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                                    
+                                    <span class="mr8 ml8">~</span>
+                                    <input type="text" class="day_input w197" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                                    
+                                    <ul class="calender_radio">
+                                        <li>
+                                            <input type="radio" name="term" id="OTD" value="당일">
+                                            <label for="OTD"><span>당일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day1" value="1일">
+                                            <label for="day1"><span>1일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day7" value="7일">
+                                            <label for="day7"><span>7일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day10" value="10일">
+                                            <label for="day10"><span>10일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day15" value="15일">
+                                            <label for="day15"><span>15일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month1" value="1개월">
+                                            <label for="month1"><span>1개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month3" value="3개월">
+                                            <label for="month3"><span>3개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month6" value="6개월">
+                                            <label for="month6"><span>6개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="whole" value="전체">
+                                            <label for="whole"><span>전체</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="option_name">
+                                    <div class="lef wAuto"> 
+                                        <span class="w100">상태</span>
+                                    </div>
+                                    <div class="ref wAuto">
+                                        <div class="opName_wrap w892">
+                                            <input type="radio" name="HIRE" id="HIRE1">
+                                            <label for="HIRE1" class="checkL ">전체</label>
+                                            <input type="radio" name="HIRE" id="HIRE2">
+                                            <label for="HIRE2" class="checkL ">구직중</label>
+                                            <input type="radio" name="HIRE" id="HIRE3">
+                                            <label for="HIRE3" class="checkL">계약대기</label>
+                                            <input type="radio" name="HIRE" id="HIRE4">
+                                            <label for="HIRE4" class="checkL">계약완료</label>
+                                            <input type="radio" name="HIRE" id="HIRE5">
+                                            <label for="HIRE5" class="checkL">진행중</label>
+                                            <input type="radio" name="HIRE" id="HIRE6">
+                                            <label for="HIRE6" class="checkL">완료</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option_name">
+                                    <span class="w100"><label for="">검색</label></span>
+                                    <input type="text" id="" class="w893 ml3" placeholder="클라이언트명, 제목, 계약자명 조회가능">
+                                </div>
+                            </div>
+                            <div class="ref pt114">
+                                    <div class="btn_search02">
+                                        <a href="">검색</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="tab_wrap">
+                            <div class="tab_menu_container">
+                              <button class="tab_menu_btn on" type="button">전체 목록</button>
+                              <button class="tab_menu_btn" type="button">즐겨찾기 목록</button>
+                            </div>
+                          
+                            <div class="tab_box_container">
+                              <div class="tab_box on">
+                                <div class="tableBox">
+                                    <div class="list_number clearfix">
+                                        <div class="lef">
+                                            <p>총 <span class="c_orange">50</span>건</p>
+                                        </div>
+                                        <div class="ref">
+                                            <select name="" id="">
+                                                <option value="" selected="">보기</option>
+                                                <option value="">10</option>
+                                                <option value="">15</option>
+                                                <option value="">20</option>
+                                                <option value="">25</option>
+                                                <option value="">30</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <form action="">
+                                        <table summery="">
+                                            <caption class="hidden"></caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                    <input type="checkbox" name="L6T3C" id="L6T3C1">
+                                                    <label for="L6T3C1"></label>
+                                                    </th>
+                                                    <th style="padding: 0px 5px;">번호</th>
+                                                    <th>구분</th>
+                                                    <th>아이디</th>
+                                                    <th>프리랜서명</th>
+                                                    <th>이력서 제목</th>
+                                                    <th>지원프로젝트</th>
+                                                    <th>상태</th>
+                                                    <th>매니저명</th>
+                                                    <th>즐겨찾기</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" name="L6T3C" id="L6T3C2">
+                                                        <label for="L6T3C2"></label>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>PM/업무/컨설팅</td>
+                                                    <td>weep2020</td>
+                                                    <td>박진감(41)</td>
+                                                    <td class="td_popup">
+                                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                    </td>
+                                                    <td><a href="">16</a></td>
+                                                    <td>구직중</td>
+                                                    <td>김담당 (damdangK)</td>
+                                                    <td>
+                                                        <input type="checkbox" name="" id="BM3-1">
+                                                        <label for="BM3-1" class="bookmark"></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" name="L6T3C" id="L6T3C3">
+                                                        <label for="L6T3C3"></label>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>PM/업무/컨설팅</td>
+                                                    <td>weep2020</td>
+                                                    <td>박진감(41)</td>
+                                                    <td class="td_popup">
+                                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                    </td>
+                                                    <td><a href="">16</a></td>
+                                                    <td>계약대기</td>
+                                                    <td>김담당 (damdangK)</td>
+                                                    <td>
+                                                        <input type="checkbox" name="" id="BM3-2">
+                                                        <label for="BM3-2" class="bookmark"></label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                    <div class="table_bot clearfix">
+                                        <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                                    </div>
+                                    <div class="table_pagination">
+                                        <ul class="pagination">
+                                            <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""></a></li>
+                                            <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""></a></li>
+                                            <li class="active"><a href="" class="on">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li><a href="">3</a></li>
+                                            <li><a href="">4</a></li>
+                                            <li><a href="">5</a></li>
+                                            <li><a href="">6</a></li>
+                                            <li><a href="">7</a></li>
+                                            <li><a href="">8</a></li>
+                                            <li><a href="">9</a></li>
+                                            <li><a href="">10</a></li>
+                                            <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""></a></li>
+                                            <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="tab_box">
+                                <div class="tableBox">
+                                    <div class="list_number clearfix">
+                                        <div class="lef">
+                                            <p>총 <span class="c_orange">50</span>건</p>
+                                        </div>
+                                        <div class="ref">
+                                            <select name="" id="">
+                                                <option value="" selected="">보기</option>
+                                                <option value="">10</option>
+                                                <option value="">15</option>
+                                                <option value="">20</option>
+                                                <option value="">25</option>
+                                                <option value="">30</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <form action="">
+                                        <table summery="">
+                                            <caption class="hidden"></caption>
+                                            <thead>
+                                                <tr><th>
+                                                    <input type="checkbox" name="L6T4C" id="L6T4C1">
+                                                    <label for="L6T4C1"></label>
+                                                </th>
+                                                <th style="padding: 0px 5px;">번호</th>
+                                                <th>구분</th>
+                                                <th>아이디</th>
+                                                <th>프리랜서명</th>
+                                                <th>이력서 제목</th>
+                                                <th>지원프로젝트</th>
+                                                <th>상태</th>
+                                                <th>매니저명</th>
+                                                <th>즐겨찾기</th>
+                                            </tr></thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" name="L6T4C" id="L6T4C2">
+                                                        <label for="L6T4C2"></label>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>PM/업무/컨설팅</td>
+                                                    <td>weep2020</td>
+                                                    <td>박진감(41)</td>
+                                                    <td class="td_popup">
+                                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                    </td>
+                                                    <td><a href="">16</a></td>
+                                                    <td>구직중</td>
+                                                    <td>김담당 (damdangK)</td>
+                                                    <td>
+                                                        <input type="checkbox" name="" id="BM4-1">
+                                                        <label for="BM4-1" class="bookmark"></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" name="L6T4C" id="L6T4C3">
+                                                        <label for="L6T4C3"></label>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>PM/업무/컨설팅</td>
+                                                    <td>weep2020</td>
+                                                    <td>박진감(41)</td>
+                                                    <td class="td_popup">
+                                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                    </td>
+                                                    <td><a href="">16</a></td>
+                                                    <td>계약대기</td>
+                                                    <td>김담당 (damdangK)</td>
+                                                    <td>
+                                                        <input type="checkbox" name="" id="BM4-2">
+                                                        <label for="BM4-2" class="bookmark"></label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                    <div class="table_bot clearfix">
+                                        <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                                    </div>
+                                    <div class="table_pagination">
+                                        <ul class="pagination">
+                                            <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""></a></li>
+                                            <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""></a></li>
+                                            <li class="active"><a href="" class="on">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li><a href="">3</a></li>
+                                            <li><a href="">4</a></li>
+                                            <li><a href="">5</a></li>
+                                            <li><a href="">6</a></li>
+                                            <li><a href="">7</a></li>
+                                            <li><a href="">8</a></li>
+                                            <li><a href="">9</a></li>
+                                            <li><a href="">10</a></li>
+                                            <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""></a></li>
+                                            <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="dim-layer" id="layer6">
+    <div class="dimBg"></div>
+    <div class="pop-layer">
+        <div class="pop-container1">
+            <div class="inner">
+                <div class="manager_title mb25">
+                    <h3>프리랜서/파트너 즐겨찾기</h3>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="close_layer('layer6');"></a>
+                    </div>
+                </div>
+                <div id="tabs">
+                    <ul>
+                      <li><a href="#tabs-1">전체</a></li>
+                      <li><a href="#tabs-2">PM/업무/컨설팅</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <div class="searchBox clearfix">
+                            <div class="searchOption">
+                                <div class="option_name">
+                                    <div class="lef wAuto">
+                                        <span class="w100"><label for="">매니저 선택</label></span>
+                                        <select name="" id="" class="w310 ml3">
+                                            <option value="" disabled="">선택</option>
+                                        </select>
+                                    </div>
+                                    <div class="ref wAuto">
+                                        <div class="btn_talk"><a href="">위프톡</a></div>
+                                    </div>
+                                </div>
+                                <div class="option_calender">
+                                    <span class="w100">등록일</span>
+                                    <input type="text" class="day_input w197" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                                    
+                                    <span class="mr8 ml8">~</span>
+                                    <input type="text" class="day_input w197" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                                    
+                                    <ul class="calender_radio">
+                                        <li>
+                                            <input type="radio" name="term" id="OTD" value="당일">
+                                            <label for="OTD"><span>당일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day1" value="1일">
+                                            <label for="day1"><span>1일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day7" value="7일">
+                                            <label for="day7"><span>7일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day10" value="10일">
+                                            <label for="day10"><span>10일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day15" value="15일">
+                                            <label for="day15"><span>15일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month1" value="1개월">
+                                            <label for="month1"><span>1개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month3" value="3개월">
+                                            <label for="month3"><span>3개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month6" value="6개월">
+                                            <label for="month6"><span>6개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="whole" value="전체">
+                                            <label for="whole"><span>전체</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="option_name">
+                                    <div class="lef wAuto"> 
+                                        <span class="w100">상태</span>
+                                    </div>
+                                    <div class="ref wAuto">
+                                        <div class="opName_wrap w892">
+                                            <input type="radio" name="HIRE" id="HIRE1">
+                                            <label for="HIRE1" class="checkL ">전체</label>
+                                            <input type="radio" name="HIRE" id="HIRE2">
+                                            <label for="HIRE2" class="checkL ">구직중</label>
+                                            <input type="radio" name="HIRE" id="HIRE3">
+                                            <label for="HIRE3" class="checkL">계약대기</label>
+                                            <input type="radio" name="HIRE" id="HIRE4">
+                                            <label for="HIRE4" class="checkL">계약완료</label>
+                                            <input type="radio" name="HIRE" id="HIRE5">
+                                            <label for="HIRE5" class="checkL">진행중</label>
+                                            <input type="radio" name="HIRE" id="HIRE6">
+                                            <label for="HIRE6" class="checkL">완료</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option_name">
+                                    <span class="w100"><label for="">검색</label></span>
+                                    <input type="text" id="" class="w893 ml3" placeholder="아이디, 프리랜서명, 이력서명 조회 가능">
+                                </div>
+                            </div>
+                            <div class="ref pt114">
+                                    <div class="btn_search02">
+                                        <a href="">검색</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="tabs-depth">
+                            <ul>
+                             <li class="active"><a href="#tabs-3">전체 목록</a></li>
+                             <li><a href="#tabs-4">즐겨찾기 목록</a></li>
+                           </ul>
+                           <div id="tabs-3">
+                            <div class="tableBox">
+                                <div class="list_number clearfix">
+                                    <div class="lef">
+                                        <p>총 <span class="c_orange">50</span>건</p>
+                                    </div>
+                                    <div class="ref">
+                                        <select name="" id="">
+                                            <option value="" selected="">보기</option>
+                                            <option value="">10</option>
+                                            <option value="">15</option>
+                                            <option value="">20</option>
+                                            <option value="">25</option>
+                                            <option value="">30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <form action="">
+                                    <table summery="">
+                                        <caption class="hidden"></caption>
+                                        <thead>
+                                            <tr><th>
+                                                <input type="checkbox" name="L6T1C" id="L6T1C1">
+                                                <label for="L6T1C1"></label>
+                                            </th>
+                                            <th style="padding: 0px 5px;">번호</th>
+                                            <th>구분</th>
+                                            <th>아이디</th>
+                                            <th>프리랜서명</th>
+                                            <th>이력서 제목</th>
+                                            <th>지원프로젝트</th>
+                                            <th>상태</th>
+                                            <th>매니저명</th>
+                                            <th>즐겨찾기</th>
+                                        </tr></thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" name="L6T1C" id="L6T1C2">
+                                                    <label for="L6T1C2"></label>
+                                                </td>
+                                                <td>1</td>
+                                                <td>PM/업무/컨설팅</td>
+                                                <td>weep2020</td>
+                                                <td>박진감(41)</td>
+                                                <td class="td_popup">
+                                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                </td>
+                                                <td><a href="">16</a></td>
+                                                <td>구직중</td>
+                                                <td>김담당 (damdangK)</td>
+                                                <td>
+                                                    <input type="checkbox" name="" id="BM1-1">
+                                                    <label for="BM1-1" class="bookmark"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" name="L6T1C" id="L6T1C3">
+                                                    <label for="L6T1C3"></label>
+                                                </td>
+                                                <td>2</td>
+                                                <td>PM/업무/컨설팅</td>
+                                                <td>weep2020</td>
+                                                <td>박진감(41)</td>
+                                                <td class="td_popup">
+                                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                </td>
+                                                <td><a href="">16</a></td>
+                                                <td>계약대기</td>
+                                                <td>김담당 (damdangK)</td>
+                                                <td>
+                                                    <input type="checkbox" name="" id="BM1-2">
+                                                    <label for="BM1-2" class="bookmark"></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                                <div class="table_bot clearfix">
+                                    <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                                </div>
+                                <div class="table_pagination">
+                                    <ul class="pagination">
+                                        <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""></a></li>
+                                        <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""></a></li>
+                                        <li class="active"><a href="" class="on">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href="">6</a></li>
+                                        <li><a href="">7</a></li>
+                                        <li><a href="">8</a></li>
+                                        <li><a href="">9</a></li>
+                                        <li><a href="">10</a></li>
+                                        <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""></a></li>
+                                        <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                           </div>
+                           <div id="tabs-4">
+                            <div class="tableBox">
+                                <div class="list_number clearfix">
+                                    <div class="lef">
+                                        <p>총 <span class="c_orange">50</span>건</p>
+                                    </div>
+                                    <div class="ref">
+                                        <select name="" id="">
+                                            <option value="" selected="">보기</option>
+                                            <option value="">10</option>
+                                            <option value="">15</option>
+                                            <option value="">20</option>
+                                            <option value="">25</option>
+                                            <option value="">30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <form action="">
+                                    <table summery="">
+                                        <caption class="hidden"></caption>
+                                        <thead>
+                                            <tr><th>
+                                                <input type="checkbox" name="L6T2C" id="L6T2C1">
+                                                <label for="L6T2C1"></label>
+                                            </th>
+                                            <th style="padding: 0px 5px;">번호</th>
+                                            <th>구분</th>
+                                            <th>아이디</th>
+                                            <th>프리랜서명</th>
+                                            <th>이력서 제목</th>
+                                            <th>지원프로젝트</th>
+                                            <th>상태</th>
+                                            <th>매니저명</th>
+                                            <th>즐겨찾기</th>
+                                        </tr></thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" name="L6T2C" id="L6T2C2">
+                                                    <label for="L6T2C2"></label>
+                                                </td>
+                                                <td>1</td>
+                                                <td>PM/업무/컨설팅</td>
+                                                <td>weep2020</td>
+                                                <td>박진감(41)</td>
+                                                <td class="td_popup">
+                                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                </td>
+                                                <td><a href="">16</a></td>
+                                                <td>구직중</td>
+                                                <td>김담당 (damdangK)</td>
+                                                <td>
+                                                    <input type="checkbox" name="" id="BM2-1">
+                                                    <label for="BM2-1" class="bookmark"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" name="L6T2C" id="L6T2C3">
+                                                    <label for="L6T2C3"></label>
+                                                </td>
+                                                <td>2</td>
+                                                <td>PM/업무/컨설팅</td>
+                                                <td>weep2020</td>
+                                                <td>박진감(41)</td>
+                                                <td class="td_popup">
+                                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                </td>
+                                                <td><a href="">16</a></td>
+                                                <td>계약대기</td>
+                                                <td>김담당 (damdangK)</td>
+                                                <td>
+                                                    <input type="checkbox" name="" id="BM2-2">
+                                                    <label for="BM2-2" class="bookmark"></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                                <div class="table_bot clearfix">
+                                    <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                                </div>
+                                <div class="table_pagination">
+                                    <ul class="pagination">
+                                        <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""></a></li>
+                                        <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""></a></li>
+                                        <li class="active"><a href="" class="on">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href="">6</a></li>
+                                        <li><a href="">7</a></li>
+                                        <li><a href="">8</a></li>
+                                        <li><a href="">9</a></li>
+                                        <li><a href="">10</a></li>
+                                        <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""></a></li>
+                                        <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        <div class="searchBox clearfix">
+                            <div class="searchOption">
+                                <div class="option_name">
+                                    <div class="lef wAuto">
+                                        <span class="w100"><label for="">매니저 선택</label></span>
+                                        <select name="" id="" class="w310 ml3">
+                                            <option value="" disabled="">선택</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="option_calender">
+                                    <span class="w100">기간</span>
+                                    <input type="text" class="day_input w197" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                                    
+                                    <span class="mr8 ml8">~</span>
+                                    <input type="text" class="day_input w197" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                                    
+                                    <ul class="calender_radio">
+                                        <li>
+                                            <input type="radio" name="term" id="OTD" value="당일">
+                                            <label for="OTD"><span>당일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day1" value="1일">
+                                            <label for="day1"><span>1일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day7" value="7일">
+                                            <label for="day7"><span>7일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day10" value="10일">
+                                            <label for="day10"><span>10일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="day15" value="15일">
+                                            <label for="day15"><span>15일</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month1" value="1개월">
+                                            <label for="month1"><span>1개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month3" value="3개월">
+                                            <label for="month3"><span>3개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="month6" value="6개월">
+                                            <label for="month6"><span>6개월</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="term" id="whole" value="전체">
+                                            <label for="whole"><span>전체</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="option_name">
+                                    <div class="lef wAuto"> 
+                                        <span class="w100">상태</span>
+                                    </div>
+                                    <div class="ref wAuto">
+                                        <div class="opName_wrap w892">
+                                            <input type="radio" name="HIRE" id="HIRE1">
+                                            <label for="HIRE1" class="checkL ">전체</label>
+                                            <input type="radio" name="HIRE" id="HIRE2">
+                                            <label for="HIRE2" class="checkL ">구직중</label>
+                                            <input type="radio" name="HIRE" id="HIRE3">
+                                            <label for="HIRE3" class="checkL">계약대기</label>
+                                            <input type="radio" name="HIRE" id="HIRE4">
+                                            <label for="HIRE4" class="checkL">계약완료</label>
+                                            <input type="radio" name="HIRE" id="HIRE5">
+                                            <label for="HIRE5" class="checkL">진행중</label>
+                                            <input type="radio" name="HIRE" id="HIRE6">
+                                            <label for="HIRE6" class="checkL">완료</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option_name">
+                                    <span class="w100"><label for="">검색</label></span>
+                                    <input type="text" id="" class="w893 ml3" placeholder="클라이언트명, 제목, 계약자명 조회가능">
+                                </div>
+                            </div>
+                            <div class="ref pt114">
+                                    <div class="btn_search02">
+                                        <a href="">검색</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="tabs-depth02">
+                            <ul>
+                             <li class="active"><a href="#tabs-5">전체 목록</a></li>
+                             <li><a href="#tabs-6">즐겨찾기 목록</a></li>
+                           </ul>
+                           <div id="tabs-5">
+                            <div class="tableBox">
+                                <div class="list_number clearfix">
+                                    <div class="lef">
+                                        <p>총 <span class="c_orange">50</span>건</p>
+                                    </div>
+                                    <div class="ref">
+                                        <select name="" id="">
+                                            <option value="" selected="">보기</option>
+                                            <option value="">10</option>
+                                            <option value="">15</option>
+                                            <option value="">20</option>
+                                            <option value="">25</option>
+                                            <option value="">30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <form action="">
+                                    <table summery="">
+                                        <caption class="hidden"></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                <input type="checkbox" name="L6T3C" id="L6T3C1">
+                                                <label for="L6T3C1"></label>
+                                                </th>
+                                                <th style="padding: 0px 5px;">번호</th>
+                                                <th>구분</th>
+                                                <th>아이디</th>
+                                                <th>프리랜서명</th>
+                                                <th>이력서 제목</th>
+                                                <th>지원프로젝트</th>
+                                                <th>상태</th>
+                                                <th>매니저명</th>
+                                                <th>즐겨찾기</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" name="L6T3C" id="L6T3C2">
+                                                    <label for="L6T3C2"></label>
+                                                </td>
+                                                <td>1</td>
+                                                <td>PM/업무/컨설팅</td>
+                                                <td>weep2020</td>
+                                                <td>박진감(41)</td>
+                                                <td class="td_popup">
+                                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                </td>
+                                                <td><a href="">16</a></td>
+                                                <td>구직중</td>
+                                                <td>김담당 (damdangK)</td>
+                                                <td>
+                                                    <input type="checkbox" name="" id="BM3-1">
+                                                    <label for="BM3-1" class="bookmark"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" name="L6T3C" id="L6T3C3">
+                                                    <label for="L6T3C3"></label>
+                                                </td>
+                                                <td>2</td>
+                                                <td>PM/업무/컨설팅</td>
+                                                <td>weep2020</td>
+                                                <td>박진감(41)</td>
+                                                <td class="td_popup">
+                                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                </td>
+                                                <td><a href="">16</a></td>
+                                                <td>계약대기</td>
+                                                <td>김담당 (damdangK)</td>
+                                                <td>
+                                                    <input type="checkbox" name="" id="BM3-2">
+                                                    <label for="BM3-2" class="bookmark"></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                                <div class="table_bot clearfix">
+                                    <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                                </div>
+                                <div class="table_pagination">
+                                    <ul class="pagination">
+                                        <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""></a></li>
+                                        <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""></a></li>
+                                        <li class="active"><a href="" class="on">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href="">6</a></li>
+                                        <li><a href="">7</a></li>
+                                        <li><a href="">8</a></li>
+                                        <li><a href="">9</a></li>
+                                        <li><a href="">10</a></li>
+                                        <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""></a></li>
+                                        <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                           </div>
+                           <div id="tabs-6">
+                            <div class="tableBox">
+                                <div class="list_number clearfix">
+                                    <div class="lef">
+                                        <p>총 <span class="c_orange">50</span>건</p>
+                                    </div>
+                                    <div class="ref">
+                                        <select name="" id="">
+                                            <option value="" selected="">보기</option>
+                                            <option value="">10</option>
+                                            <option value="">15</option>
+                                            <option value="">20</option>
+                                            <option value="">25</option>
+                                            <option value="">30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <form action="">
+                                    <table summery="">
+                                        <caption class="hidden"></caption>
+                                        <thead>
+                                            <tr><th>
+                                                <input type="checkbox" name="L6T4C" id="L6T4C1">
+                                                <label for="L6T4C1"></label>
+                                            </th>
+                                            <th style="padding: 0px 5px;">번호</th>
+                                            <th>구분</th>
+                                            <th>아이디</th>
+                                            <th>프리랜서명</th>
+                                            <th>이력서 제목</th>
+                                            <th>지원프로젝트</th>
+                                            <th>상태</th>
+                                            <th>매니저명</th>
+                                            <th>즐겨찾기</th>
+                                        </tr></thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" name="L6T4C" id="L6T4C2">
+                                                    <label for="L6T4C2"></label>
+                                                </td>
+                                                <td>1</td>
+                                                <td>PM/업무/컨설팅</td>
+                                                <td>weep2020</td>
+                                                <td>박진감(41)</td>
+                                                <td class="td_popup">
+                                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                </td>
+                                                <td><a href="">16</a></td>
+                                                <td>구직중</td>
+                                                <td>김담당 (damdangK)</td>
+                                                <td>
+                                                    <input type="checkbox" name="" id="BM4-1">
+                                                    <label for="BM4-1" class="bookmark"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" name="L6T4C" id="L6T4C3">
+                                                    <label for="L6T4C3"></label>
+                                                </td>
+                                                <td>2</td>
+                                                <td>PM/업무/컨설팅</td>
+                                                <td>weep2020</td>
+                                                <td>박진감(41)</td>
+                                                <td class="td_popup">
+                                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                                </td>
+                                                <td><a href="">16</a></td>
+                                                <td>계약대기</td>
+                                                <td>김담당 (damdangK)</td>
+                                                <td>
+                                                    <input type="checkbox" name="" id="BM4-2">
+                                                    <label for="BM4-2" class="bookmark"></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                                <div class="table_bot clearfix">
+                                    <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                                </div>
+                                <div class="table_pagination">
+                                    <ul class="pagination">
+                                        <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""></a></li>
+                                        <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""></a></li>
+                                        <li class="active"><a href="" class="on">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href="">6</a></li>
+                                        <li><a href="">7</a></li>
+                                        <li><a href="">8</a></li>
+                                        <li><a href="">9</a></li>
+                                        <li><a href="">10</a></li>
+                                        <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""></a></li>
+                                        <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dim-layer" id="recommend-project">
+    <div class="dimBg"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="manager_fixInner">
+                <div class="manager_title mb25">
+                    <h3>프로젝트 추천검색</h3>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="close_layer('layer3');"></a>
+                    </div>
+                </div>
+                <div class="manager_contents">
+                    <section class="content_detail pop_pad mb30">
+                        <form action="">
+                            <table class="detail">
+                                <caption class="hidden"></caption>
+                                <tbody>
+                                    <tr>
+                                        <th class="w110">프리랜서 명</th>
+                                        <td>김위프 (남) 41세</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="w110">경력</th>
+                                        <td>25년 2개월</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="w110">등급</th>
+                                        <td>특급</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="w110">직무구분</th>
+                                        <td>기획</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="w110">현재상태</th>
+                                        <td>프로젝트 지원 중</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </section>
+                    <div class="tableBox">
+                        <form class="mb50">
+                            <table class="borderNone mb15">
+                                <caption></caption>
+                                <tbody>
+                                    <tr>
+                                        <th class="w15p">선호 프로젝트</th>
+                                        <td>
+                                            <input type="radio" name="project-type" id="project-type1">
+                                            <label for="project-type1" class="checkL mr20">상주</label>
+                                            <input type="radio" name="project-type" id="project-type2">
+                                            <label for="project-type2" class="checkL mr20">비상주</label>
+                                            <input type="radio" name="project-type" id="project-type3">
+                                            <label for="project-type3" class="checkL mr20">반상주</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="w15p">지역</th>
+                                        <td class="pl0">
+                                            <select name="" id="">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="w15p">검색</th>
+                                        <td class="pl0"><input type="text" placeholder="프리랜서 명, 아이디, 제목 검색"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form_fot">
+                                <div class="btn_submit mr10"><a href="" >검색</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="tableBox">
+                    <!--
+                    <div class="list_number clearfix">
+                        <div class="lef">
+                            <div class="btn_exel mr5"><a href="#">추천하기</a></div>
+                        </div>
+                        <div class="ref">
+                            <select name="" id="">
+                                <option value="" selected>보기</option>
+                                <option value="">10</option>
+                                <option value="">15</option>
+                                <option value="">20</option>
+                                <option value="">25</option>
+                                <option value="">30</option>
+                            </select>
+                        </div>
+                    </div>
+                    -->
+                    <form action="">
+                        <table summery="">
+                            <caption class="hidden"></caption>
+                            <thead>
+                                <th>
+                                    <input type="checkbox" name="L3C" id="L3C1">
+                                    <label for="L3C1"></label>
+                                </th>
+                                <th>번호</th>
+                                <th>클라이언트 명</th>
+                                <th>아이디</th>
+                                <th>구분</th>
+                                <th>이력서 제목</th>
+                                <th>수행기간</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="L3C" id="L3C2">
+                                        <label for="L3C2"></label>
+                                    </td>
+                                    <td>14</td>
+                                    <td>김려진</td>
+                                    <td>damdangK</td>
+                                    <td>아웃소싱</td>
+                                    <td class="td_popup center p0">
+                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                    </td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="L3C" id="L3C2">
+                                        <label for="L3C2"></label>
+                                    </td>
+                                    <td>13</td>
+                                    <td>김려진</td>
+                                    <td>damdangK</td>
+                                    <td>아웃소싱</td>
+                                    <td class="td_popup center p0">
+                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                    </td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="L3C" id="L3C2">
+                                        <label for="L3C2"></label>
+                                    </td>
+                                    <td>12</td>
+                                    <td>김려진</td>
+                                    <td>damdangK</td>
+                                    <td>아웃소싱</td>
+                                    <td class="td_popup center p0">
+                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                    </td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="L3C" id="L3C2">
+                                        <label for="L3C2"></label>
+                                    </td>
+                                    <td>11</td>
+                                    <td>김려진</td>
+                                    <td>damdangK</td>
+                                    <td>아웃소싱</td>
+                                    <td class="td_popup center p0">
+                                        <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                    </td>
+                                    <td>98</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <div class="table_pagination">
+                        <ul class="pagination">
+                            <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""/></a></li>
+                            <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""/></a></li>
+                            <li class="active"><a href="" class="on">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">6</a></li>
+                            <li><a href="">7</a></li>
+                            <li><a href="">8</a></li>
+                            <li><a href="">9</a></li>
+                            <li><a href="">10</a></li>
+                            <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""/></a></li>
+                            <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""/></a></li>
+                        </ul>
+                    </div>
+                    <section class="wrap_btn mt80">
+                        <div class="btn_submit"><a href="" class="bgWhite">취소</a></div>
+                        <div class="btn_submit"><a href="">추천하기</a></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

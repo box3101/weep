@@ -1,0 +1,94 @@
+label.checkbox {
+  span {
+    display: inline-block;
+    padding-left: 1.4em;
+    font-size: 1.4rem;
+    &::before {
+      content: '';
+      position: absolute;
+      margin: 0 0 0 -1.4em;
+      width: 1.2em;
+      height: 1.2em;
+      background: #ddd url(../images/checkmark_white.png) no-repeat 55% 55% / 60% auto;
+    }
+  }
+  input {
+    display: none;
+    &:checked ~ span::before {
+      background-color: $orange;
+    }
+  }
+  &.checkbox-radius {
+    span::before {
+      border-radius: 50%;
+      background: #fff url(../images/checkmark.png) no-repeat 50% 55% / 60% auto;
+      border: 1px solid #bbb;
+    }
+    input:checked ~ span::before {
+      background-color: $orange;
+      background-image: url(../images/checkmark_white.png);
+      border-color: transparent;
+    }
+  }
+}
+.checkbox-group {
+  display: flex;
+  justify-content: space-between;
+}
+label.radio {
+  span {
+    display: inline-block;
+    padding-left: 1.4em;
+    font-size: 1.4rem;
+    &::before {
+      content: '';
+      position: absolute;
+      margin: 0.25em 0 0 -1.2em;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      border: 1px solid #333;
+    }
+  }
+  input {
+    display: none;
+    &:checked ~ span::before {
+      background-color: $orange;
+      border-color: $orange;
+    }
+  }
+}
+.radio-group {
+  display: flex;
+  .radio + .radio {
+    margin-left: 10px;
+  }
+}
+
+.select {
+  display: block;
+  padding: 17px 15px;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  /*
+  background: #f9f9f9 url(../images/caret_down_colored.png) no-repeat right 20px (center / 14px) auto;
+  */
+  background: #fff url(../images/arr_selectbox.png) no-repeat right 10px center / 10px auto;
+}
+
+.select-group {
+  display: flex;
+}
+
+.input-group {
+  .select {
+    background: #fff url(../images/arr_selectbox.png) no-repeat right 10px center / 10px auto;
+  }
+  textarea {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+}

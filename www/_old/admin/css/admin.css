@@ -1,0 +1,2533 @@
+/*reset*/
+a {
+  text-decoration: none;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+.inner {
+  width: 1274px;
+  position: relative;
+}
+.inner_reg{
+  width: 920px;             /*팝업 inner*/
+}
+.inner_fix{                 /*프론트page admin insert inner*/
+  margin: 0!important;
+  padding: 0!important;
+  width: 1274px!important;
+}
+select{
+  height: 30px;
+  appearance: none;
+  background: #ffffff url(../../admin_img/select_arrow.png) no-repeat center right 10px;
+  -webkit-appearance: none;
+}
+select::-ms-expand {
+  display: none;            /* 화살표 없애기 for IE10, 11*/
+}
+
+/*admin_header----S------------------------------------------------------------*/
+div#header {
+  background: #39467c;
+  height: 80px;
+  min-width: 1800px;
+}
+div#header::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+div#header div.adminLogo {
+  float: left;
+}
+div#header div.adminLogo a {
+  display: flex;
+  width: 275px;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+div#header div.adminLogo a img {
+  max-width: 100%;
+}
+div#header ul#adminGnb {
+  float: left;
+  z-index: 3;
+}
+
+div#header ul#adminGnb li {
+  float: left;
+  position: relative;
+}
+div#header ul#adminGnb li:before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #55639e;
+  opacity: 0.6;
+}
+div#header ul#adminGnb li:nth-last-of-type(1):after{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #55639e;
+  opacity: 0.6;
+}
+
+div#header ul#adminGnb li a {
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  line-height: 80px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  width: 115px;
+  box-sizing: border-box;
+}
+div#header ul#adminGnb li.on a{
+    background-color: #6876b5;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    font-weight: 500;
+  }
+div#header ul#adminGnb li a:hover{
+  background-color: #6876b5;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  font-weight: 500;
+}
+/* div#header ul#adminGnb li:hover~::before{
+  display: none;
+} */
+
+/*admin_header----E------------------------------------------------------------*/
+
+/*admin_wrapper----S-----------------------------------------------------------*/
+.wrapper{
+    position: relative;
+    padding-bottom: 100px;
+}
+/*admin_sidebar----S-----------------------------------------*/
+div#sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 275px;
+  height: 100%;
+  position: absolute;
+  min-height: 100vh;
+}
+div#sidebar::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+div#sidebar div.info {
+  background-color: #303030;
+  width: 48px;
+  z-index: 2;
+}
+div#sidebar div.info div.info_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  border-bottom: 1px solid #b9b9b9;
+}
+#sidebarCollapse{
+    background: url("../admin_img/sideBar_toggle.png") no-repeat center center;
+    width: 20px;
+    height: 20px;
+}
+#sidebarCollapse.active {
+    background: url("../admin_img/sideBar_toggle.png") no-repeat center center;
+    transform: rotate(180deg);
+    width: 20px;
+    height: 20px;
+}
+div#sidebar div.info div.info_icon a {
+}
+div#sidebar div.info div.info_icon a:hover{
+}
+div#sidebar div.info div.info_icon a img {
+  transition: 0.5s;
+  vertical-align: bottom;
+  display: block;
+}
+div#sidebar div.info div.info_icon:nth-of-type(1){
+  background-color: #222222;
+}
+div#sidebar div.nav_side {
+  background-color: #f3f3f3;
+  width: calc( 100% - 48px);
+  border-right: 1px solid #dddddd;
+  z-index: 1;
+  position: relative;
+}
+div#sidebar div.nav_side div.SNB_title {
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 112px;
+    border-bottom: 1px solid #dddddd;
+    padding: 46px 0px 24px 24px;
+}
+div#sidebar div.nav_side div.SNB_title img {
+  position: relative;
+  margin-right: 10px;
+}
+div#sidebar div.nav_side div.SNB_title h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+div#sidebar div.nav_side ul.SNB {
+
+}
+div#sidebar div.nav_side ul.SNB li.on{
+  position: relative;
+}
+div#sidebar div.nav_side ul.SNB>li.on>a::before{
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 1px;
+    background-color: #ffffff;
+    top: 46%;
+    right: 20px;
+    transform: rotate(45deg);
+}
+div#sidebar div.nav_side ul.SNB>li.on>a::after{
+  display: inline-block;
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 1px;
+    background-color: #ffffff;
+    top: 54%;
+    right: 20px;
+    transform: rotate(-45deg);
+}
+div#sidebar div.nav_side ul.SNB>li.on>a {
+  color: #ffffff;
+  background: #6876b5;
+  width: 227px;
+  position: relative;
+}
+div#sidebar div.nav_side ul.SNB>li {
+  text-align: left;
+}
+div#sidebar div.nav_side ul.SNB>li>a {
+  display: inline-block;
+  width: 100%;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 25px;
+  line-height: 56px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666666;
+  border-bottom: 1px solid #dddddd;
+}
+div#sidebar div.nav_side ul.SNB>li>a:hover {
+  color: #ffffff;
+  background: #6876b5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+div#sidebar div.nav_side ul.SNB>li>ul.sub_SNB{
+    display: none;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0px;
+    background-color: #ffffff;
+}
+div#sidebar div.nav_side ul.SNB>li>ul.sub_SNB li{
+    position: relative;
+    padding-left: 35px;
+}
+div#sidebar div.nav_side ul.SNB>li>ul.sub_SNB li:after{
+    position: absolute;
+    content: "";
+    display: block;
+    background: url(../admin_img/bg_lists.png) no-repeat;
+    width: 8px;
+    height: 12px;
+    left: 24px;
+    top: 10px;
+}
+div#sidebar div.nav_side ul.SNB>li>ul.sub_SNB li a{
+    display: inline-block;
+    width: 100%;
+    color: #666666;
+    margin: 5px 0;
+    font-size: 13px;
+    color: #666666;
+    padding-left: 10px;
+}
+div#sidebar div.nav_side ul.SNB>li>ul.sub_SNB li.on a{
+    font-weight: 600;
+    color: #6876b5;
+}
+/*admin_sidebar-----E----------------------------------------*/
+
+/*admin_contents----S----------------------------------------*/
+#contents{
+  float: left;
+  padding: 45px 0 0 45px;
+  margin-left: 275px;
+  position: relative;
+}
+#contents.active{
+  margin-left: 75px!important;
+}
+/*admin_contents----E----------------------------------------*/
+/*admin_wrapper---E------------------------------------------------------------*/
+
+/*admin_Login-----S------------------------------------------------------------*/
+div#adminLogin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 7vw 0px;
+}
+div#adminLogin:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+div#adminLogin div.loginTitle {
+  float: left;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+div#adminLogin div.loginTitle img{
+  margin-right: 10px;
+}
+div#adminLogin div.loginTitle h2 {
+  display: inline-block;
+  font-size: 45px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: "Play";
+  margin-bottom: 28px;
+}
+div#adminLogin div.loginTitle p{
+    font-size: 16px;
+    font-weight: 400;
+}
+div#adminLogin div.loginWrap {
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fafafa;
+  border: 1px solid #e7e7e7;
+  height: 601px;
+  padding: 45px 30px 0 40px;
+  letter-spacing: -1px;
+}
+div#adminLogin div.loginWrap div.loginNotice {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #dddddd;
+}
+div#adminLogin div.loginWrap div.loginNotice h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Play";
+}
+div#adminLogin div.loginWrap div.loginNotice ul {
+  margin-bottom: 40px;
+}
+div#adminLogin div.loginWrap div.loginNotice ul li {
+  line-height: 20px;
+  font-size: 14px;
+  color: #666666;
+  font-weight: 400;
+}
+div#adminLogin div.loginWrap div.loginNotice div.tel {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #eaeaea;
+  text-align: center;
+  width: 410px;
+  height: 70px;
+  margin-bottom: 50px;
+}
+div#adminLogin div.loginWrap div.loginNotice div.tel span {
+  line-height: 70px;
+  font-size: 20px;
+  font-weight: 700;
+}
+div#adminLogin div.loginWrap div.loginNotice div.tel span:nth-of-type(1) {
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+div#adminLogin div.loginWrap div.loginNotice div.tel span:nth-of-type(2) {
+   font-family: "Play";
+}
+div#adminLogin div.loginWrap div.loginForm {
+  width: 410px;
+}
+div#adminLogin div.loginWrap div.loginForm h3 {
+    margin-bottom: 14px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Noto Sans KR";
+}
+div#adminLogin div.loginWrap div.loginForm input {
+  width: 408px;
+  height: 55px;
+  margin-bottom: 8px;
+  text-indent: 15px;
+  border: 1px solid #e7e7e7;
+  padding: 0;
+  color: #bbbbbb;
+  font-size: 14px;
+  font-family: "Noto Sans KR";
+}
+div#adminLogin div.loginWrap div.loginForm div.btn_login a {
+  display: inline-block;
+  width: 410px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: #333333;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+div#adminLogin div.loginWrap div.loginForm div.btn_login a:hover {
+  font-weight: 700;
+}
+div#adminLogin div.loginWrap div.loginForm div.login_ {
+  text-align: center;
+  width: 100%;
+  padding-left: 24px;
+}
+div#adminLogin div.loginWrap div.loginForm div.login_ a {
+  color: #999999;
+}
+div#adminLogin div.loginWrap div.loginForm div.login_ a:nth-of-type(1) {
+  margin-right: 20px;
+  position: relative;
+}
+div#adminLogin div.loginWrap div.loginForm div.login_ a:nth-of-type(1):after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 15px;
+  background-color: #999999;
+  position: absolute;
+  right: -13px;
+  top: 3px;
+}
+div#adminLogin div.loginWrap div.loginForm div.login_ a:hover{
+  font-weight: 900;
+  text-decoration: underline;
+}
+div#adminLogin div.loginBanner {
+  float: right;
+}
+div#adminLogin div.loginBanner img {
+
+}
+/*admin_Login----E-------------------------------------------------------------*/
+
+/*admin_title----S-------------------------------------------------------------*/
+div.title {
+  margin-bottom: 20px;
+}
+div.title h2 {
+  float: left;
+  font-size: 28px;
+  font-weight: 500;
+}
+ul.breadcrumb {
+  float: right;
+  position: relative;
+  top: 20px;
+}
+ul.breadcrumb li {
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+}
+ul.breadcrumb li:nth-last-of-type(1){
+  margin-right: 0;
+}
+ul.breadcrumb li:nth-last-of-type(1)::before{
+  display: none;
+}
+ul.breadcrumb li:nth-last-of-type(1)::after{
+  display: none;
+}
+ul.breadcrumb li:before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 1px;
+  background-color: #999999;
+  top: 45%;
+  right: -12px;
+  transform: rotate(45deg);
+}
+ul.breadcrumb li:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 1px;
+  background-color: #999999;
+  top: 66%;
+  right: -12px;
+  transform: rotate(-45deg);
+}
+ul.breadcrumb li a {
+  font-size: 14px;
+  color: #999999;
+}
+.borderB{
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 10px;
+}
+/*admin_title----E-------------------------------------------------------------*/
+
+/*admin_tab-----S--------------------------------------------------------------*/
+ul.tab {
+  margin-bottom: 30px;
+}
+ul.tab::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+ul.tab li {
+  float: left;
+  width: calc(16.7%);
+  margin-right: -1px;
+}
+ul.tab li a {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  color: #666666;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 500;
+  font-size: 16px;
+}
+ul.tab li a:hover{
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #222222;
+}
+ul.tab li.on a {
+  height: 60px;
+  background: #333333;
+  border: 1px solid #343434;
+  color: #ffffff;
+  font-weight: 400;
+}
+/*---------tab width 값 설정 list 갯수----------*/
+.liN2>li{
+  width: 50%!important;
+}
+.liN3>li{
+  width: calc(33.3333% + 0.5px)!important;
+}
+.liN4>li{
+  width: calc(25%)!important;
+}
+.liN5>li{
+    width: calc(20% + 1px)!important;
+  }
+.liN7>li{
+  width: calc(100% / 7)!important;
+}
+ul.tab02 {
+  margin-bottom: 30px;
+}
+ul.tab02 li {
+    float: left;
+    width: calc( 100% / 7 );
+    margin-right: -1px;
+}
+ul.tab02 li a {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  color: #666666;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 500;
+  font-size: 16px;
+}
+ul.tab02 li a:hover{
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #222222;
+}
+ul.tab02 li.on a {
+  height: 60px;
+  background: #333333;
+  border: 1px solid #343434;
+  color: #ffffff;
+}
+.tab_reg{
+  position: relative;
+}
+.box {
+  display: none;
+}
+.box.on {display: inline-block;}
+.tab_4depth{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.tab_4depth>li {
+  margin: 0px 30px;
+}
+.tab_4depth>li>a{
+  font-size: 24px;
+  color: #3a3a3a;
+}
+.tab_4depth>li.on>a{
+  color: #e03b3b;
+}
+.tab_4depth>span{
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 9px;
+  background-color: #838383;
+  width: 2px;
+  height: 20px;
+}
+/*admin_tab-----E--------------------------------------------------------------*/
+
+/*admin_searchBox----S---------------------------------------------------------*/
+div.searchBox {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 35px 55px 35px;
+  background-color: #fafafa;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 30px;
+}
+div.searchBox div.searchOption {
+  float: left;
+  width: 996px;
+}
+input{
+  border: none;
+  border: 1px solid #dddddd;
+  padding-left: 10px;
+}
+select{
+  border: 1px solid #dddddd;
+  padding-left: 15px;
+  background: #ffffff url(../admin_img/select_arrow.png) no-repeat center right 10px;
+  height: 42px;
+}
+
+input[type="checkobx"]{
+  -webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+input[type="checkobx"]:checked{
+  background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+div.searchBox input{
+  height: 42px;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR";
+}
+/*admin_option_calender-----S----------------------------------------*/
+/* 검색조건 박스(admin_searchBox)의 날짜 section */
+div.searchBox div.searchOption div.option_calender {
+  margin-bottom: 18px;
+}
+div.searchBox div.searchOption div.option_calender>span{
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+}
+div.searchBox div.searchOption div.option_calender>img{
+  margin-left: 5px;
+  position: relative;
+  top: 5px;
+}
+div.searchBox div.searchOption div.option_calender select {
+    height: 42px;
+    vertical-align: bottom;
+    width: 158px;
+    margin-right: 19px;
+    font-family: "Noto Sans KR";
+    font-size: 13px;
+    color: #666666;
+}
+div.searchBox div.searchOption div.option_calender select option {}
+div.searchBox div.searchOption div.option_calender input.day_input {
+  width: 156px;
+  background: #fff url(../admin_img/admin_calender.png) no-repeat center right 15px;
+}
+input.day_input{
+  background: #fff url(../admin_img/admin_calender.png) no-repeat center right 15px;
+}
+div.searchBox div.searchOption div.option_calender img.calender_img {
+  position: relative;
+  top: 6px;
+}
+div.searchBox div.searchOption div.option_calender div.calender_radio {
+}
+div.searchBox div.searchOption div.option_calender div.calender_radio input {
+}
+ul.calender_radio{
+  width: 46%;
+  display: flex;
+  float: right;
+  vertical-align: bottom;
+}
+ul.calender_radio li{
+  float: left;
+}
+ul.calender_radio>li>label span{
+  display: inline-block;
+  height: 42px;
+  width: 51.8px;
+  line-height: 40px;
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  cursor: pointer;
+  color: #999999;
+  margin-right: -1px;
+}
+ul.calender_radio>li:nth-last-of-type(1)>label span{
+  border-right: 1px solid #dddddd;
+}
+ul.calender_radio>li>input[type="radio"] {
+  display: none;
+}
+ul.calender_radio>li>input[type="radio"]:checked + label>span {
+  color: #ffffff;
+  background: #6876b5;
+  border: 1px solid #6876b5;
+  border-right: 0.5px;
+  transition: 0.3s;
+}
+/*admin_option_calender-----E----------------------------------------*/
+/*admin_option_name---------S----------------------------------------*/
+/* 검색조건 박스(admin_searchBox)의 검색조건(Input) section */
+div.searchBox .user_state .wAuto .opName_wrap {display: inline-block;}
+
+div.searchBox div.searchOption div.option_name {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: #b0b0b0;
+}
+div.searchBox div.searchOption div.option_name:nth-last-of-type(1){
+  margin-bottom: 0;
+}
+div.searchBox div.searchOption div.option_name span {
+  display: inline-block;
+  width: 150px;
+  font-size: 14px;
+  color: #333333;
+  line-height: 42px;
+  font-weight: 500;
+}
+div.searchBox div.searchOption div.option_name span label{
+    font-size: 14px;
+    color: #333333;
+    font-weight: 500;
+  }
+div.opName_wrap{
+    height: 42px;
+    background: #ffffff;
+    line-height: 42px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+}
+div.opName_wrap label{
+    margin-left: 18px;
+}
+div.opName_wrap input + label.radioL {
+    background: url(../admin_img/bg_radio_gender_off.png) no-repeat;
+    font-size: 13px;
+    font-weight: 400;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 18px;
+    background-position: left;
+    color: #666666;
+    position: relative;
+    top: -2px;
+}
+div.opName_wrap input:checked + label.radioL { 
+    background: url(../admin_img/bg_radio_gender_on.png) no-repeat;
+    font-size: 13px;
+    font-weight: 400;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 18px;
+    background-position: left;
+    color: #333333;
+    position: relative;
+    top: -2px;
+}
+div.opName_wrap input + label.checkL {
+    background: url(../admin_img/input_check1_off.png) no-repeat left 14px;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 24px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666666;
+    position: relative;
+    top: -3px;
+}
+div.opName_wrap input:checked + label.checkL { 
+    background: url(../admin_img/input_check1_on.png) no-repeat left 14px;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 24px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333333;
+    position: relative;
+    top: -3px;
+}
+div.searchBox div.searchOption div.option_name input {
+  width: calc( 100% - 150px );
+}
+
+div.searchBox div.searchOption div.option_name div.lef {
+  width: 52%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+div.searchBox div.searchOption div.option_name div.lef input#ID {
+
+}
+div.searchBox div.searchOption div.option_SMS span {
+    display: inline-block;
+    font-size: 16px;
+    color: #424242;
+    line-height: 42px;
+    font-weight: 500;
+}
+div.searchBox div.searchOption div.option_name div.ref {
+  width: 46%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.w130{
+  width: 130px!important;
+}
+/*admin_option_name---------E----------------------------------------*/
+/*admin_option_SMS----------S----------------------------------------*/
+div.searchBox div.searchOption div.option_SMS {
+  width: 100%;
+  color: #b0b0b0;
+}
+div.searchBox div.searchOption div.option_SMS span{
+  display: inline-block;
+}
+div.searchBox div.searchOption div.option_SMS select{
+  height: 42px;
+  width: 135px;
+}
+/*admin_option_SMS----------E----------------------------------------*/
+/*admin_btn_search----------S----------------------------------------*/
+/* 검색조건 박스(admin_searchBox)의 검색 button */
+div.searchBox div.btn_search {
+  position: relative;
+  text-align: center;
+  bottom: -60px;
+}
+div.searchBox div.btn_search a {
+  display: inline-block;
+  width: 155px;
+  height: 96px;
+  background: #333333;
+  color: #fff;
+  line-height: 96px;
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+}
+div.searchBox div.btn_search01 {
+    position: relative;
+    text-align: center;
+    bottom: -60px;
+  }
+  div.searchBox div.btn_search01 a {
+    display: inline-block;
+    width: 155px;
+    height: 150px;
+    background: #333333;
+    color: #fff;
+    line-height: 150px;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+  }
+div.searchBox div.btn_search02 {
+  position: relative;
+  text-align: center;
+}
+div.searchBox div.btn_search02 a {
+  display: inline-block;
+  width: 155px;
+  height: 155px;
+  background: #333333;
+  color: #fff;
+  line-height: 155px;
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+}
+div.searchBox div.btn_search03 {
+    position: relative;
+    text-align: center;
+}
+div.searchBox div.btn_search03 a {
+    display: inline-block;
+    width: 155px;
+    height: 42px;
+    background: #333333;
+    color: #fff;
+    line-height: 42px;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+}
+.btn_talk{
+    display: inline-block;
+}
+.btn_talk a{
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    background: #ffffff;
+    color: #333333;
+    border: 1px solid #bbbbbb;
+}
+.btn_talk a:hover{
+    background: #333333;
+    color: #ffffff;
+    border: 1px solid #333333;
+}
+/*admin_btn_search----------E----------------------------------------*/
+/*admin_searchBox------------E-------------------------------------------------------------*/
+
+/*section_content_detail-----S-------------------------------------------------------------*/
+section.wrap_detail>h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 12px;
+}
+section.content_detail {
+    border: 1px solid #e6e6e6;
+    box-shadow: 0px 0px 7px 3px #e6e6e6;
+    padding: 30px 0px 40px 55px;
+}
+section.content_detail div.detail_title {
+    margin-bottom: 24px;
+}
+section.content_detail div.detail_title h3 {
+    font-size: 21px;
+    color: #333333;
+    font-weight: 700;
+}
+section.content_detail form table.detail tbody tr th {
+    width: 90px;
+    color: #888888;
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+section.content_detail form table.detail tbody tr td {
+    font-size: 14px;
+    color: #333333;;
+    padding-bottom: 10px;
+}
+section.content_detail02 {
+    border: 1px solid #e6e6e6;
+    box-shadow: 0px 0px 7px 3px #e6e6e6;
+    padding: 30px 60px 30px 60px;
+}
+section.content_detail02 div.detail_title {
+    margin-bottom: 24px;
+}
+section.content_detail02 div.detail_title h3 {
+    font-size: 21px;
+    color: #333333;
+    font-weight: 700;
+}
+section.content_detail02 form table.detail tbody tr th {
+    width: 90px;
+    color: #888888;
+    font-size: 22px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+section.content_detail02 form table.detail tbody tr td {
+    font-size: 21px;
+    color: #333333;
+    width: 230px;
+    padding-bottom: 10px;
+}
+/*section_content_detail-----E-------------------------------------------------------------*/
+
+/*admin_subContent-----------S-------------------------------------------------------------*/
+div.subCon_banner {
+  width: 100%;
+  height: 166px;
+}
+div.subCon_banner img {
+  max-width: 100%;
+  height: auto;
+}
+div.sub_inner {
+  padding: 38px;
+  box-sizing: border-box;
+  background: #fafafa;
+}
+div.sub_inner p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #343434;
+}
+div.subCon_footer {
+  height: 60px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+}
+div.subCon_footer p {
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: 400;
+}
+div.subCon_footer p span {
+
+}
+
+/*admin_subContent-----------E-------------------------------------------------------------*/
+
+/*admin_tableBox-------------S-------------------------------------------------------------*/
+/*----- page의 table section -----*/
+div.tableBox {
+    position: relative;
+}
+
+/*----- tableBox 상단 section -----*/
+div.tableBox div.list_number {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #7a7a7a;
+}
+div.tableBox div.list_number div.lef span {
+  line-height: 30px;
+  font-size: 16px;
+}
+div.tableBox>div.list_number>div.lef>select {
+  width: 120px;
+}
+div.tableBox div.list_number div.lef>p{
+    display: inline-block;
+    margin-right: 10px;
+}
+div.tableBox div.list_number div.lef>h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 12px;
+}
+div.tableBox div.list_number div.ref {
+  float: right;
+  height: 30px;
+}
+div.tableBox div.list_number div.ref span {
+  margin-right: 10px;
+  line-height: 30px;
+}
+div.tableBox div.list_number div.ref select {
+  width: 100px;
+  height: 34px;
+  line-height: 32px;
+  padding-left: 10px;
+  font-family: "Noto Sans KR";
+}
+div.tableBox form {
+  margin-bottom: 20px;
+}
+/*admin_tableBox_table-------S-------------------------------------*/
+div.tableBox form table {
+  border-top: 2px solid #222222;
+  width: 100%;
+  border-collapse: collapse;
+}
+div.tableBox form table thead tr th {
+  background: #fafafa;
+  height: 55px;
+  line-height: 55px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #343434;
+  border: 1px solid #e8e8e8;
+}
+div.tableBox form table tbody tr th {
+    background: #fafafa;
+    height: 55px;
+    line-height: 55px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #343434;
+    border: 1px solid #e8e8e8;
+  }
+div.tableBox form table tbody tr td {
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+}
+div.tableBox form table tbody tr td .day_input{
+    width: 156px;
+    background: #fff url(../admin_img/admin_calender.png) no-repeat center right 15px;
+    height: 42px;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR";
+}
+div.tableBox form table tbody tr td>a:hover{
+    text-decoration: underline;
+    font-weight: 500!important;
+}
+div.tableBox form table tbody tr td>a{
+    color: #55639e;
+}
+div.tableBox form table tbody tr td select{
+  height: 32px;
+  width: 120px;
+}
+div.tableBox form table tbody tr td.writting{
+    height: 800px;
+    max-width: 1095px;
+    vertical-align: top;
+    padding: 30px 10px!important;
+    text-align: left;
+}
+div.tableBox form table tbody tr td.writting textarea{
+    width: 100%;
+    max-width: 1074px;
+    height: 100%;
+    vertical-align: top;
+    padding: 30px 10px!important;
+    text-align: left;
+}
+.board_input{
+    height: 40px;
+    width: 1061px;
+    padding: 0px 10px;
+}
+.board_span{
+    line-height: 46px;
+}
+.btn_board{
+    display: inline-block;
+    position: relative;
+    top: 1.5px;
+}
+.btn_board a{
+    display: inline-block;
+    background: #333333;
+    color: #ffffff;
+    width: 100px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+.btn_board02{
+    display: inline-block;
+    position: relative;
+}
+.btn_board02 a{
+    display: inline-block;
+    background: #333333;
+    color: #ffffff;
+    width: 222px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+.btn_file {
+    display: inline-block;
+    margin-left: 5px;
+}
+.btn_file.reg_btn_file {margin-left: 0;}
+.btn_file a{
+    display: inline-block;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 28px;
+    font-size:13px;
+    background: #ffffff;
+    color: #333333;
+    border: 1px solid #bbbbbb; box-sizing: border-box;
+}
+.btn_file.btn_add a {height: 40px; line-height: 40px; padding: 0 20px;}
+.btn_file a:hover{
+    display: inline-block;
+    background: #333333;
+    color: #ffffff;
+    border: 1px solid #bbbbbb;
+}
+.btn_repet {
+    display: inline-block;
+    background: #eeeeee;
+    border: 1px solid #dddddd;
+    position: relative;
+    top: 1px;
+}
+.btn_repet a{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+}
+/*----- 사용자 얼굴 노출 -----*/
+th>label{
+  background: url(../admin_img/checkbox_off.png) no-repeat 0 center;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+th>input[type=checkbox]{
+  display: none;
+}
+th>input[type=checkbox]:checked+label{
+  background: url(../admin_img/input_check1_on.png) no-repeat 0 center;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+td>label{
+    background: url(../admin_img/checkbox_off.png) no-repeat center center;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    padding: 0 14px;
+}
+td>input[type=checkbox]{
+  display: none;
+}
+td>input[type=checkbox]+label.bookmark{
+    background: url(../admin_img/star_dark.png) no-repeat 0 center;
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+}
+td>input[type=checkbox]:checked+label.bookmark{
+    background: url(../admin_img/star.png) no-repeat 0 center;
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+}
+td>input[type=checkbox]:checked+label{
+    background: url(../admin_img/input_check1_on.png) no-repeat center center;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding: 0 14px;
+}
+.td_face{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 10px;
+}
+.td_face>img{
+  border-radius: 50%;
+}
+.td_ul{
+  text-indent: 25px;
+}
+.td_ul>li{
+}
+.p_input01{
+    height: 23px;
+    width: 35px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    top: -1px;
+}
+/*checkbox squere*/
+form table tbody tr td label.checkL{
+  background: url(../admin_img/input_check1_off.png) no-repeat left 6px;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #343434;
+}
+form table tbody tr td label.checkL:checked{
+    background: url(../admin_img/input_check1_on.png) no-repeat left 14px;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #343434;
+}
+form table tbody tr td input:checked + label.checkL{
+  background: url(../admin_img/input_check1_on.png) no-repeat left 6px;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #343434;
+}
+form table tbody tr th ul li label.checkL{
+    background: url(../admin_img/checkbox_off.png) no-repeat left 6px;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #343434;
+    background-position: left;
+  }
+  form table tbody tr th ul li input:checked + label.checkL{
+    background: url(../admin_img/checkbox_on.png) no-repeat left 6px;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #343434;
+    background-position: left;
+  }
+/*//checkbox squere*/
+/*checkbox round*/
+form table tbody tr td label.radioL{
+  background: url(../admin_img/bg_radio_gender_off.png) no-repeat;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 18px;
+  background-position: left;
+  color: #343434;
+  width: auto;
+}
+form table tbody tr td input:checked + label.radioL{
+  background: url(../admin_img/bg_radio_gender_on.png) no-repeat;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 18px;
+  background-position: left;
+  color: #343434;
+}
+/*//checkbox round*/
+/*----- td Button DIV ----------------S---*/
+.wrap_tdBtn{
+  width: 150px;
+  display: inline-block;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nflex{
+    display: block!important;
+}
+.td_popup{
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-size: 16px;
+}
+.td_popup>a{
+    color: #343434;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hg;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 10px;
+}
+.td_popup>a:hover{
+    text-decoration: underline;
+    font-weight: 700!important;
+}
+.td_popup02{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hg;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*----- td Button DIV ----------------E---*/
+/*----- table에 사용되는 버튼 모음 --------*/
+/*btn_table01 : 4개 집합시 Button*/
+.btn_table01 {
+  display: inline-block;
+  background: #eeeeee;
+  border: 1px solid #dddddd;
+}
+.btn_table01 a{
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 12px;
+}
+/*btn_table02 : 2개 집합시 Button*/
+.btn_table02 {
+  display: inline-block;
+  background: #eeeeee;
+  border: 1px solid #dddddd;
+}
+.btn_table02 a{
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+/*btn_table02 : 단독 사용시 Button*/
+.btn_table03 {
+  display: inline-block;
+  position: relative;
+  background: #eeeeee;
+  border: 1px solid #dddddd;
+  top: 1px;
+}
+.btn_table03 a{
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.btn_table04 {
+    display: inline-block;
+    position: relative;
+    background: #eeeeee;
+    border: 1px solid #dddddd;
+    top: 1px;
+  }
+  .btn_table04 a{
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    color: #999999;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+/*Button Color*/
+
+.red {
+  background-color: #e03b3b !important;
+}
+.orange{
+  background-color: #f38f2e!important;
+  border: 1px solid #f38f2e;
+}
+.orange>a{
+  background-color: #f38f2e!important;
+  color: #ffffff!important;
+}
+a.orange{
+  color: #ffffff;
+}
+.c_orange{
+  color: #f38f2e!important;
+}
+.c_yellow{
+  color: #f7a747!important;
+}
+.c_red{
+    color: #e03b3b!important;
+}
+.c_pink{
+  color: #e86b7d!important;
+}
+.c_blue{
+    color: #6876b5!important;
+}
+a.c_orange:hover{
+    text-decoration: underline;
+}
+/*admin_tableBox_table-------E--------------------------------------*/
+/*admin_table_bot------------S--------------------------------------*/
+/*----- tableBox 하단 section -----*/
+div.table_bot{
+  margin-bottom: 10px;
+}
+div.table_bot .desc-box .desc {
+  font-size: 12px; line-height: 1.2;
+  float: left;
+  display: inline-block;
+}
+div.btn_delete {
+    display: inline-block;
+}
+div.btn_delete a img{
+    margin-right: 5px;
+    top: 2px;
+    position: relative;
+}
+div.btn_delete a{
+    width: 86px;
+    display: inline-block;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    font-size: 14px;
+    color: #666666;
+}
+/* div.btn_delete a:hover{
+    width: 86px;
+    display: inline-block;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    font-size: 14px;
+    color: #ffffff;
+    background: #333333;
+} */
+
+
+
+div.btn_exel {
+  display: inline-block;
+  float: right;
+}
+div.btn_exel a {
+  display: inline-block;
+  background: #333333;
+  color: #ffffff;
+  width: 122px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+div.btn_exel a>img{
+  margin-right: 5px;
+}
+/*admin_table_bot------------E--------------------------------------*/
+/*admin_tableBox_paging------S--------------------------------------*/
+div.table_pagination{
+  display: flex;
+  justify-content: center;
+}
+ul.pagination {
+
+}
+ul.pagination li.pager a {
+  border: 1px solid #dddddd;
+}
+ul.pagination li.pager a img {
+  vertical-align: middle;
+  max-width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  bottom: 3px;
+}
+ul.pagination li {
+  float: left;
+  border: none;
+  text-align: center;
+  line-height: 30px;
+}
+ul.pagination li a {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: #424242;
+  font-size: 12px;
+  font-family: "Nanum Gothic";
+  border-radius: 5px;
+}
+ul.pagination li.active a{
+  background: #3a3a3a;
+  color: #ffffff;
+}
+ul.pagination li a:hover{
+  background: #3a3a3a;
+  color: #ffffff;
+}
+/*admin_tableBox_paging-------E-------------------------------------*/
+/*admin_table_footer----------S-------------------------------------*/
+/*----- tableBox 최하단 section -----*/
+div.table_footer {
+  height: 85px;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.table_footer span {
+  margin: 10px;
+  color: #343434;
+  font-weight: 400;
+}
+div.table_footer select {
+  height: 30px;
+  width: 200px;
+  margin-right: 10px;
+}
+/*admin_table_footer----------E-------------------------------------*/
+/*admin_tableBox-----E-------------------------------------------------------------*/
+
+/*adminProjectM_RS----S----*/
+section#adminContent div.inner div.content_search {
+  width: 100%;
+  height: 175px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 35px 85px 35px 75px;
+  background-color: #fafafa;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 35px;
+}
+
+section#adminContent div.inner div.content_search div.search_main {
+  width: 85%;
+  float: left;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.input_calender {
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin-bottom: 12px;
+  width: 940px;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.input_calender select {
+  height: 30px;
+  width: 160px;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.input_calender input {
+  height: 30px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.input_calender input.day_input {
+  width: 110px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+  margin-right: 4px;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.input_calender img.calender_img {
+  vertical-align: middle;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.input_calender div.dayBtn {
+  display: inline-block;
+  float: right;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.input_calender div.dayBtn input {
+  padding: 8px 8px;
+  border: 1px solid #343434;
+  font-size: 13px;
+  line-height: 13px;
+  background-color: #ffffff !important;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.searchInput_01 {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.searchInput_01 span {
+  display: inline-block;
+  float: left;
+  width: 110px;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.searchInput_01 input {
+  width: 330px;
+  float: right;
+  height: 30px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 7px;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.searchInput_02 {
+  float: right;
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 4px;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.searchInput_02 span {
+  display: inline-block;
+  float: left;
+  width: 110px;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.searchInput_02 input {
+  width: 330px;
+  float: right;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.searchInput_03 {
+  width: 100%;
+  float: right;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.searchInput_03 span {
+  float: left;
+  line-height: 30px;
+}
+
+section#adminContent div.inner div.content_search div.search_main div.searchInput_03 input {
+  width: 830px;
+  float: right;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 30px;
+}
+
+section#adminContent div.inner div.content_search div.search_submit {
+  float: right;
+}
+
+section#adminContent div.inner div.content_search div.search_submit input {
+  background: #7f7f7f;
+  width: 145px;
+  height: 115px;
+  float: right;
+  color: #fff;
+  font-size: 18px;
+  line-height: 115px;
+  font-weight: 700;
+  border: 0;
+}
+
+/* 툴팁 */
+[data-tooltip-text]:hover {
+	position: relative;
+}
+
+[data-tooltip-text]:hover:after {
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+    box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    color: #FFFFFF;
+    font-size: 12px;
+    content: attr(data-tooltip-text);
+
+    margin-bottom: 10px;
+    top: 30px;
+    left: 0;    
+    padding: 7px 12px;
+    position: absolute;
+    width: auto;
+    min-width: 60px;
+    max-width: 300px;
+    word-wrap: break-word;
+
+    z-index: 9999;
+}
+/*----------------------------------------  이력서수정페이지  ------------------------------S------------------------------*/
+.edit_wrap div.info_wrap {
+    border-bottom: 1px solid #dbdbdb;
+}
+.edit_wrap ul.write_lists {
+    border-top: 1px solid #dbdbdb;
+    margin-top: 19px;
+}
+ul.academic_list {
+    padding: 0;
+}
+ul.academic_list li {
+    padding: 20px 20px!important;
+    border-bottom: 1px solid #dbdbdb!important;
+}
+ul.write_lists {
+    /* padding: 20px 0; */
+    margin-top: 10px;
+    border: 1px solid #dbdbdb;
+    border-top: 1px solid #000;
+    background: #f4f5f7;
+}
+ul.write_lists li {
+    position: relative;
+    display: flex;
+    border-bottom: 0;
+    padding: 0 24px;
+    box-sizing: border-box;
+    border-bottom: none;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+ul.academic_list li .close {
+    top: 0!important;
+}
+ul.write_lists li .close {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    color: #000000;
+    transition: color 0.3s;
+    font-size: 30px;
+    line-height: 0.6em;
+    font-weight: bold;
+}
+ul.write_lists li div.first {
+    flex: 1;
+}
+ul.write_lists li dl {
+    margin-bottom: 8px;
+}
+ul.write_lists li dl dt {
+    color: #888;
+    font-size: 13px;
+}
+ul.write_lists li dl dd {
+    position: relative;
+}
+ul.write_lists dl dd select {
+    margin-top: 10px;
+    width: 215px;
+    border: 1px solid #dbdbdb;
+    height: 50px;
+    padding-left: 15px;
+    background: #fff url(../admin_img/bg_smail_sel.png) no-repeat center right 20px;
+}
+ul.write_lists li div.second {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.edit_wrap ul.write_lists li div.second dl {
+    width: auto;
+}
+ul.write_lists dl dd input.sl2 {
+    border: 1px solid #dbdbdb;
+}
+ul.write_lists dl dd input.sl {
+    margin-top: 10px;
+    width: 320px;
+    /* border: 1px solid #dbdbdb; */
+    height: 50px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+ul.write_lists input {
+    color: #333333;
+}
+ul.write_lists dl dd select.sm {
+    width: 180px;
+}
+ul.write_lists li div.chk {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 16px;
+    margin-top: 24px;
+}
+label.mi {
+    background: url(../admin_img/l_hide_off.png) no-repeat left center;
+    padding-left: 20px;
+    position: relative;
+    top: 0;
+    font-size: 13px;
+    background-size: 15px;
+}
+.edit_wrap input.chk01:checked + label.mi {
+    background: url(../admin_img/l_hide_on1.png) no-repeat left center !important;
+    background-size: 15px !important;
+}
+ul.add_ul {
+    background: #f4f5f7;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+}
+ul.add_ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 0;
+}
+ul.add_ul li a {
+    display: block;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+ul.write_lists li div.chk dl dd {
+    margin-top: 15px;
+}
+ul.Certificate {
+    opacity: 1;
+    background: #f4f5f7;
+    margin-top: 19px;
+}
+ul.Certificate li {
+    opacity: 1;
+    position: relative;
+    opacity: 1;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: none;
+}
+ul.Certificate li .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    transition: color 0.3s;
+    font-size: 30px;
+    line-height: 0.6em;
+    font-weight: bold;
+}
+ul.Certificate li div.wrap {
+    opacity: 1;
+    display: flex;
+}
+ul.Certificate li div.wrap article {
+    flex: 1;
+    opacity: 1;
+}
+ul.Certificate li div.wrap article dl {
+    opacity: 1;
+}
+ul.Certificate li div.wrap article dl dt {
+    opacity: 1;
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+ul.Certificate li div.wrap article dl dd {
+    opacity: 1;
+}
+ul.Certificate li div.wrap article dl dd input {
+    opacity: 1;
+    width: 80%;
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid #dbdbdb;
+}
+ul.Certificate .day_input {
+    background: #fff url(../admin_img/date.png) no-repeat center right 10px;
+}
+ul.add_ul.bb_line {
+    border-top: 1px solid #dbdbdb;
+}
+ul.Certificate.two li div.wrap {
+    width: 100%;
+}
+ul.Certificate li div.wrap {
+    opacity: 1;
+    display: flex;
+}
+ul.Certificate li div.wrap article {
+    flex: 1;
+    opacity: 1;
+}
+ul.Certificate.two li div.wrap article:nth-of-type(2) {
+    flex: 2;
+}
+ul.Certificate.two li div.wrap article dl dd > label {
+    background: url(../admin_img/bg_radio_gender_off.png) no-repeat;
+    opacity: 1;
+    padding-left: 20px;
+    vertical-align: middle;
+    font-size: 14px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-position: left center;
+    margin-right: 8px;
+    display: inline-block;
+}
+ul.Certificate.two li div.wrap article dl dd input:checked + label {
+    background: url(../admin_img/bg_radio_gender_on.png) no-repeat;
+    opacity: 1;
+    padding-left: 20px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-position: left center;
+    display: inline-block;
+}
+ul.Certificate.two li div.wrap article dl dd select {
+  width: 370px;
+  height: 50px;
+  padding-left: 10px;
+  background: #fff url(../admin_img/bg_smail_sel.png) no-repeat center right 20px;
+  border: 1px solid #dbdbdb;
+}
+ul.Certificate li div.wrap article dl dt {
+  opacity: 1;
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+ul.Certificate.two li div.wrap article dl dd .sel_box {
+  display: inline;
+  margin-left: 23px;
+  position: relative;
+}
+ul.Certificate.two li div.wrap article dl dd select.sl {
+  width: 200px;
+}
+ul.Certificate.two li div.wrap article dl dd .sel_box .chk {
+  position: absolute;
+  right: -100px;
+  bottom: 18px;
+}
+ul.Certificate.two li div.wrap article dl dd .sel_box .chk {
+  bottom: 0 !important;
+}
+div.workspace div.top_txt {
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+}
+div.workspace div.top_txt a {
+  font-size: 13px;
+  letter-spacing: -0.52px;
+  text-align: center;
+  color: #2076df;
+  position: relative;
+  right: 0;
+}
+div.workspace div.top_txt a i {
+  margin-left: 2px;
+  font-size: 11px;
+}
+div.workspace div.info {
+  opacity: 1;
+  margin-top: 10px !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.workspace div.info div.date {
+  opacity: 1;
+  display: inline-block;
+  width: 138.5px;
+  height: 38px;
+  /* line-height: 40px; */
+  border: 1px solid #ddd;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  padding: 0 12px;
+  color: #666666;
+  background: #ffffff;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+div.workspace div.info div.date a.del {
+  margin-left: 3px;
+  line-height: 37px;
+}
+div.info_wrap {
+  margin-bottom: 40px;
+}
+.write_lists.bb_d li .txtarea textarea {
+  padding: 15px;
+  height: 93px;
+}
+.edit_wrap .career textarea {
+  width: 970px;
+  resize: none;
+}
+textarea {
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.edit_wrap .write_lists.bb_d li .txtarea.career .chk_span {
+  position: absolute;
+  bottom: 40px;
+  right: 84px;
+}
+ul.write_lists .info_table {
+  padding: 20px 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+ul.write_lists li .close {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  color: #000;
+  transition: color 0.3s;
+  font-size: 30px;
+  line-height: 0.6em;
+  font-weight: bold;
+}
+ul.write_lists dl dd .day_input {
+  margin-top: 10px;
+  width: 145px;
+  border: 1px solid #dbdbdb;
+  height: 50px;
+  padding-left: 15px;
+  color: #333;
+  background: #fff url(../admin_img/date.png) no-repeat center right 10px;
+}
+ul.write_lists li .desc {
+  font-size: 13px;
+  color: #999;
+  margin: 0 0 0;
+}
+.write_lists.bb_d li .txtarea {
+  width: 100%;
+}
+.edit_wrap .self_write .info_write {
+  border: 1px solid #dbdbdb;
+  margin-top: 20px;
+}
+div.info_write div.title_wrap div.titles {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.info_write div.title_wrap input {
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  padding: 13px;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+div.info_write div.info_wrap textarea {
+  margin-top: 21px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #dbdbdb;
+  height: 93px;
+}
+div.info_write {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #f4f5f7;
+  margin-bottom: 35px;
+}
+div.info_write div.title_wrap div.titles h2 {
+  font-size: 14px;
+}
+div.info_write div.title_wrap div.titles div.txt {
+  font-size: 14px;
+}
+/*----------------------------------------  이력서수정페이지  ------------------------------E------------------------------*/
+
+/*----------------------------------------  SMS  -----------------------------------------S------------------------------*/
+div.subContent {
+
+}
+div.subContent div.title_wrap {
+
+}
+div.subContent div.title_wrap>h5 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+div.subContent div.title_wrap>p {
+  font-size: 17px;
+}
+div.subContent div.subContent_body {
+  border: 1px solid #e6e6e6;
+  background-color: #fafafa;
+  padding: 40px 40px;
+}
+div.subContent div.subContent_body div.SMS_img {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+div.SMS_img{
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+div.SMS_img textarea {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 22px;
+  resize: none;
+  border: none;
+}
+div.SMS_img02{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+div.SMS_img02 textarea {
+    position: absolute;
+    left: 50%;
+    width: 760px;
+    height: 110px;
+    transform: translateX(-50%);
+    bottom: 22px;
+    resize: none;
+    border: none;
+}
+div.subContent div.subContent_body div.SMS_img textarea {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 22px;
+  resize: none;
+  border: none;
+}
+div.subContent div.subContent_body div.body_wrap {
+
+}
+div.subContent div.subContent_body div.body_wrap p{
+  color: #7a7a7a;
+  font-weight: 400;
+}
+div.subContent div.subContent_body div.body_wrap input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 42px;
+  color: #7a7a7a;
+}
+div.subContent div.subContent_body div.body_wrap select {
+  width: 100%;
+  margin-bottom: 145px;
+  height: 42px;
+  color: #7a7a7a;
+}
+div.subContent div.subContent_body div.body_wrap select option {
+
+}
+div.subContent div.subContent_body div.body_wrap div.btn_SMS {
+  display: inline-block;
+}
+div.subContent div.subContent_body div.body_wrap div.btn_SMS a {
+  width: 248px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  display: inline-block;
+  text-align: center;
+  background: #333333;
+  color: #ffffff;
+}
+ul.SMS_time{}
+ul.SMS_time li .time_inp{
+    width: 172px!important;
+    margin-left: 5px;
+}
+ul.SMS_time li .time_selc{
+    width: 60px!important;
+    margin-left: 5px;
+}
+ul.SMS_time li:nth-last-of-type(2){
+    height: 103px;
+}
+/*----------------------------------------  SMS  ----------------------------------------E------------------------------*/
+/*----------------------------------------  MAIL  ---------------------------------------S------------------------------*/
+div.subContent div.subContent_table { }
+div.subContent div.subContent_table form { }
+
+div.subContent .cont-box {border: 1px solid #e6e6e6; padding: 15px; box-sizing: border-box;}
+div.subContent .cont-box .rad-wrap { line-height: 30px;}
+div.subContent .cont-box input[type="text"] {height: 42px; box-sizing: border-box;}
+div.subContent input + label.radioL { background: url(../admin_img/bg_radio_gender_off.png) no-repeat left; display: inline-block; cursor: pointer; padding-left: 20px;  color: #666666; position: relative; margin-right: 20px;}
+div.subContent input + label.radioL::last-of-type { margin-right: 0px;}
+div.subContent input:checked + label.radioL {
+   background: url(../admin_img/bg_radio_gender_on.png) no-repeat left;
+}
+div.subContent input + label.checkL { background: url(../admin_img/input_check1_off.png) no-repeat left; display: inline-block; cursor: pointer; padding-left: 20px;  color: #666666; position: relative; margin-right: 20px;}
+div.subContent input + label.checkL::last-of-type { margin-right: 0px;}
+div.subContent input:checked + label.checkL {
+   background: url(../admin_img/input_check1_on.png) no-repeat left;
+}
+div.subContent .pr_chk {display: none;}
+div.subContent .pr_chk input[type="text"] {height: 25px;}
+div.subContent .pr_chk.on {display: inline-block;}
+
+
+
+
+div.subContent div.subContent_table form table {
+ width: 100%;
+}
+div.subContent div.subContent_table form table caption {
+
+}
+div.subContent div.subContent_table form table tbody {
+
+}
+div.subContent div.subContent_table form table tbody tr {
+
+}
+div.subContent div.subContent_table form table tbody tr th {
+  width: 210px;
+  background-color: #fafafa;
+  border: 1px solid #e6e6e6;
+  color: #424242;
+  font-weight: 500;
+}
+div.subContent div.subContent_table form table tbody tr td {
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #7a7a7a;
+  width: 390px;
+}
+div.subContent div.subContent_table form table tbody tr td input {
+  height: 42px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR";
+}
+
+div.subContent div.subContent_table form table tbody tr td input.w51p { width: 51%;}
+div.subContent div.subContent_table form table tbody tr td input.w70p { width: 70%;}
+div.subContent div.subContent_table form table tbody tr td input.day_pic02 { width: 46.5%;
+}
+.day_pic02 { width: 46.5%;}
+
+div.subContent div.subContent_table form table tbody tr td p {
+  font-size: 14px;
+  font-weight: 400;
+}
+div.subContent div.subContent_table form table tbody tr td textarea {
+  width: 100%;
+}
+div.subContent.mb50 ul.sub_detail {
+
+}
+div.subContent.mb50 ul.sub_detail li {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+div.subContent div.btn_MAIL {
+  display: inline-block;
+}
+div.subContent div.btn_MAIL a {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+div.subContent div.btn_subCon {
+    display: inline-block;
+}
+div.subContent div.btn_subCon a {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #ffffff;
+    color: #333333;
+    border: 1px solid #333333;
+}
+div.subContent div.btn_subCon a:hover{
+    background: #333333;
+    color: #ffffff;
+}
+div.subContent div.btn_reset {
+  display: inline-block;
+}
+div.subContent div.btn_reset a {
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #333333;
+  color: #fff;
+  text-align: center;
+}
+.th_MAIL{
+  background-color: #f3f3f3!important;
+}
+/*----------------------------------------  MAIL  ---------------------------------------E------------------------------*/
+div.subContent_table form table tbody tr td input.day_input{
+    width: 156px;
+    background: #fff url(../admin_img/admin_calender.png) no-repeat center right 15px;
+}
+/*table_top*/
+.table_top{margin-bottom: 5px;}
+.table_top::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*----------------------------------------  CONTACT  ---------------------------------------S------------------------------*/
+.contact_ulTyp01>li:nth-of-type(1){
+    width: 55%;
+    float: left;
+}
+.contact_ulTyp01>li{
+    width: 45%;
+    float: left;
+}
+input.day_input02{
+    background: #fff url(../admin_img/admin_calender.png) no-repeat center right 15px;
+    width: 130px!important;
+    height: 26px!important;
+    margin-left: 10px;
+}
+/*----------------------------------------  CONTACT  ---------------------------------------E------------------------------*/

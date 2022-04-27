@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+  <title>U잡스</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="U잡스">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="../../img/logo.png">
+  <meta property="og:image:type" content="../../image/png">
+  <meta property="og:image:width" content="173">
+  <meta property="og:image:height" content="65">
+  <meta property="og:description" content="">
+
+  <link rel="stylesheet" href="../../css/@default.css" />
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/font.css">
+  <link rel="stylesheet" href="../../css/swiper.min.css">
+  <link rel="stylesheet" href="../../css/datepicker.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  
+  
+  <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="../../js/slick.min.js"></script>
+  <script type="text/javascript" src="../../js/swiper.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> --> <!--datepicker 플러그인 소스-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+
+<body>
+	<div id="header" class="sub_header">
+		<div class="inner clearfix"> 
+			<h1 class="logo">
+				<a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+			</h1>
+			<ul id="main_gnb">
+				<li>
+					<a href="page/project_sch/project_sch.html">프로젝트 검색 </a>
+				</li>
+				<li>
+					<a href="page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+				</li>
+				<li>
+					<a href="page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+				</li>
+				<li>
+					<a href="page/partner_sch/partner.html">파트너 검색</a>
+				</li>
+				<li>
+					<a href="#">WEE.P 소개
+					</a>
+				</li>
+			
+			</ul>
+			<ul class="clearfix small-txt">
+				<li>
+					<a href="#">이용안내</a>
+				</li>
+				<li>
+					<a href="page/custom_sup/custom_sup01.html">지원센터</a>
+				</li>
+			</ul>
+			
+			<ul class="util clear">
+				<li>
+					<a href="page/login/login01.html">로그인</a>
+				</li>
+				<li>
+					<a href="#">회원가입</a>
+				</li>
+
+				<div class="memberImg">
+					<img src="/img/bg_member.png" alt="회원가입혜택">
+				</div>
+			</ul>
+			<ul class="login-util clear">
+				<li>
+					<a href="javascript:;"><img src="/img/member-icon.png" alt="회원이미지" class="member-img">홍길동</a>
+					<ul class="member-menu">
+						<li>
+							<a href="">프로필 관리</a>
+						</li>
+						<li>
+							<a href="">로그아웃</a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+
+    <div id="sub_contents">
+      <div class="sub_tit">
+        <div class="inner">
+          <h1>프로젝트 활동</h1>
+        </div>
+      </div>
+
+      <div id="sub_content">
+        <div class="inner">
+          <div class="left_menu">
+            <ul>
+              <li>
+                <a href="../page/project_sch/project_sch.html">프로젝트 등록</a>
+              </li>
+              <li>
+                <a href="../page/project_sch/project_sch02-1.html">검수 중 프로젝트</a>
+              </li>
+              <li>
+                <a href="../page/project_sch/project_sch03.html">프로젝트 지원자</a>
+              </li>
+              <li>
+                <a href="../page/project_sch/project_sch04.html">매니저 추천</a>
+              </li>
+              <li>
+                <a href="../page/project_sch/project_sch05.html">계약 진행 프로젝트</a>
+              </li>
+              <li>
+                <a href="../page/project_sch/project_sch06.html">진행 중인 프로젝트</a>
+              </li>
+              <li>
+                <a href="../page/project_sch/project_sch06.html">완료한 프로젝트</a>
+              </li>
+            </ul>
+          </div>
+          <div class="content_info">
+            <h2 class="littleTit">프로젝트 모집조건</span></h2>
+            <div class="content">
+              <ul class="proLnb">
+                <li class="on">
+                  <img src="../../img/input_check_off.png" alt="">&nbsp;기본정보
+                </li>
+                <li class="on">
+                  <img src="../../img/input_check_off.png" alt="">&nbsp;상세정보
+                </li>
+                <li class="on">
+                  <img src="../../img/input_check_off.png" alt="">&nbsp;수행조건
+                </li>
+                <li class="on">
+                  <img src="../../img/input_check_off.png" alt="">&nbsp;모집요건
+                </li>
+                <li>
+                  <img src="../../img/input_check_off.png" alt="">&nbsp;등록 완료
+                </li>
+              </ul>
+              <div class="processCotent">
+                <div class="initialInfo">
+                  <h4 class="initialInfoTit">지원자 모집 마감일 &#8277;</h4>
+                  <div class="textProject">
+                    <ul class="deadline">
+                      <li class="deadlineTit">마감일</li>
+                      <li class="roundInputch">
+                        <input type="text" placeholder="2020.05.05" class="datepicker-here" data-language='en'> <!--클래스명 datepicker 추가-->
+                      </li>
+
+                      <!-- <img src="../../img/date.png" alt="" style="width:auto"> -->
+                      <li class="deadlineDesc">
+                        <p>지원자를 모집하는 기간은 최대 14일까지 가능합니다.</p>
+                        <p>지원자 모집 기간 중에도 프리랜서 선정과 계약 진행이 가능합니다.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="initialInfo">
+                  <h4 class="initialInfoTit">정부사업 여부</h4>
+                  <div class="textProject">
+                    <input type="radio" name="gov01" id="gov01_1">
+                    <label for="gov01_1">예(정부지원사업 또는 연구과제)</label>
+                    <input type="radio" name="gov01" id="gov01_2">
+                    <label for="gov01_2">아니오</label>
+                  </div>
+                </div>
+                <div class="initialInfo">
+                  <h4 class="detailInfo">프리랜서 지원 전 질문</h4>
+                  <p class="dDesc">
+                    프리랜서가 프로젝트에 지원할 때 답변해야 할 질문을 작성해 주세요.<br>
+                    최대 5개까지 입력 가능합니다. 클라이언트님이 프리랜서를 선정할 때 지원서와 함께 답변 내용을 검토할 수 있습니다.
+                  </p>
+                  <!-- D :: appliListBtnl class="on"일때 상태 변화 -->
+                  <div class="textProject freeApplicant">
+                    <ul class="appliList">
+                      <li class="appliListDesc">
+                        유사한 프로젝트를 수행한 경험이 있으신가요? 기술해 주세요!
+                      </li>
+                      <li class="appliListBtn">
+                        <input type="checkbox" name="" id="appliListBtn01_1">
+                        <label for="appliListBtn01_1" class="appliListBtnl on">비노출</label>
+                      </li>
+                    </ul>
+                    <ul class="appliList">
+                      <li class="appliListDesc">
+                        유사한 기술을 사용하여 프로젝트를 수행한 경험이 있나요?
+                      </li>
+                      <li class="appliListBtn">
+                        <input type="checkbox" name="" id="appliListBtn01_2">
+                        <label for="appliListBtn01_2" class="appliListBtnl">비노출</label>
+                      </li>
+                    </ul>
+                    <ul class="appliList">
+                      <li class="appliListDesc">
+                        이 프로젝트를 성공적으로 수행할 수 있는 제안이 있나요?
+                      </li>
+                      <li class="appliListBtn">
+                        <input type="checkbox" name="" id="appliListBtn01_3">
+                        <label for="appliListBtn01_3" class="appliListBtnl ">비노출</label>
+                      </li>
+                    </ul>
+                    <ul class="appliList">
+                      <li class="appliListDesc">
+                        지방 근무가 가능하신가요? 숙소제공합니다.
+                      </li>
+                      <li class="appliListBtn appliListBtn2"> <!--appliListBtn2 클래스추가 0807-->
+                        <a href="#">
+                          <img src="../../img/minusBtn2.png" alt="삭제">
+                        </a>
+                        <a href="#">
+                          <img src="../../img/addIcon.png" alt="추가">
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="appliList">
+                      <li class="appliListDesc">
+                        <input type="text" placeholder="질문을 입력해주세요.">
+                      </li>
+                      <li class="appliListBtn appliListBtn2"> <!--appliListBtn2 클래스추가 0807-->
+                        <a href="#">
+                          <img src="../../img/minusBtn.png" alt="삭제">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+				<div class="initialInfo">
+					<div class="textProject blockList it-check-list">
+						<div class="chk-box02 it-chk-box">
+							<p>프로젝트 지원 필수요건</p>
+							<p class="desc02">아래 조건에 맞는 아웃소싱 가능한 지원자를 받습니다. (복수선택 가능)</p>
+							<div class="chk-area">
+								<div>
+									<input type="checkbox" id="itchk01">
+									<label for="itchk01">개인 또는 팀 가능</label>
+								</div>
+								<div>
+									<input type="checkbox" id="itchk02">
+									<label for="itchk02">사업자 가능 (세금계산서 발행) ()</label>
+								</div>
+								<div>
+									<input type="checkbox" id="itchk03">
+									<label for="itchk03">업력 1년 이상</label>
+								</div>
+								<div>
+									<input type="checkbox" id="itchk04">
+									<label for="itchk04">보증보험 발급 가능</label>
+								</div>
+								<div>
+									<input type="checkbox" id="itchk05">
+									<label for="itchk05">기타(직접입력)</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <!-- div class="initialInfo">
+                              <h4 class="initialInfoTit">프로젝트 지원 필수요건</h4>
+                              <p class="dDesc">
+                                    아래 조건에 맞는 아웃소싱 가능한 지원자를 받습니다. (복수선택 가능)
+                                </p>
+                              <div class="textProject blockList">
+                                  <div>
+                                      <input type="checkbox" name="pNeedCon" id="pNeedCon01">
+                                      <label for="pNeedCon01">개인 또는 팀 가능</label>
+                                  </div>
+                                  <div>
+                                      <input type="checkbox" name="pNeedCon" id="pNeedCon02">
+                                      <label for="pNeedCon02">사업자 가능 (세금계산서 발행)
+                                          <input type="radio" name="pNeedCon02_con" id="pNeedCon02_con01">
+                                          <label for="pNeedCon02_con01">개인사업자</label>
+                                          <input type="radio" name="pNeedCon02_con" id="pNeedCon02_con02">
+                                          <label for="pNeedCon02_con02">법인사업자</label>
+                                      </label>
+                                  </div>
+                                  <div>
+                                      <input type="checkbox" name="pNeedCon" id="pNeedCon03">
+                                      <label for="pNeedCon03">업력 1년 이상</label>
+                                  </div>
+                                  <div>
+                                      <input type="checkbox" name="pNeedCon" id="pNeedCon04">
+                                      <label for="pNeedCon04">보증보험 발급 가능</label>
+                                  </div>
+                                  <div>
+                                      <input type="checkbox" name="pNeedCon" id="pNeedCon05">
+                                      <label for="pNeedCon05">
+                                          <input type="text" placeholder="직접입력" class="cTextInput">
+                                      </label>
+                                  </div>
+                              </div>
+                              </!-->
+                <div class="btnBox">
+                  <a class="btn01">이전</a>
+                  <a class="btn01 bgBlack">등록완료</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="profile_wrap02" class="project_sch">
+        <div class="inner">
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <div id="footer_info">
+    <div id="footer">
+      <div class="footer_top">
+        <div class="inner">
+          <ul>
+            <li>
+              <a href="#">회사소개</a>
+            </li>
+            <li>
+              <a href="#"> 프로젝트 문의</a>
+            </li>
+            <li>
+              <a href="#"> 프리랜서 문의</a>
+            </li>
+            <li>
+              <a href="#">인재채용</a>
+            </li>
+            <li>
+              <a href="#">이용약관 </a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침 </a>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_inner">
+        <div class="inner">
+          <div class="wrap">
+            <article>
+              <div class="f_logo">
+                <img src="../..//img/f_logo.png" alt="">
+              </div>
+              <address>
+                주식회사 케이엘큐브 <br>
+                대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                사업자등록번호: 100-11-22203 <br>
+                통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                호스팅 사업자: Amazon Web Service(AWS)
+              </address>
+            </article>
+            <article class="right">
+              <h2>IT잡스 SNS 채널</h2>
+              <ul class="sns">
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns01.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns02.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns03.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns04.png" alt="">
+                  </a>
+                </li>
+              </ul>
+              <div class="phone">
+                <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="initialInfo" style="display: none;">
+        <h4 class="initialInfoTit">기획상태</h4>
+        <div class="textProject blockList">
+          <p>
+            <input type="radio" name="pClass" id="kosaY">
+            <label for="kosaY">기획 전</label>
+          </p>
+          <p>
+            <input type="radio" name="pClass" id="kosaN">
+            <label for="kosaN">요구사항정의서 완료</label>
+          </p>
+          <p>
+            <input type="radio" name="pClass" id="kosaY">
+            <label for="kosaY">제안요청서 완료</label>
+          </p>
+          <p>
+            <input type="radio" name="pClass" id="kosaN">
+            <label for="kosaN">메뉴구조도(IA) 작성 완료</label>
+          </p>
+          <p>
+            <input type="radio" name="pClass" id="kosaN">
+            <label for="kosaN">화면설계서(스토리보드, 와이어프레임) 작성 중</label>
+          </p>
+          <p>
+            <input type="radio" name="pClass" id="kosaN">
+            <label for="kosaN">화면설계서 완료</label>
+          </p>
+          <p>
+            <input type="radio" name="pClass" id="kosaN">
+            <label for="kosaN">프로토타입(프로젝트 모델 결과물) 완료</label>
+          </p>
+          <p>
+            <input type="radio" name="pClass" id="kosaY">
+            <label for="kosaY">
+              <input type="text" placeholder="직접입력" class="cTextInput">
+            </label>
+          </p>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="inner">
+          <p>
+            잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가
+            부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+          </p>
+          <p class="copy">
+            Copyright © 2020 Jons In. Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+<script>
+$(function () {
+	//datepicker 
+	$(".datepicker-here").datepicker({
+		//language: 'en',
+		autoClose: true,
+		dateFormat:'yyyy.mm.dd'
+		//minDate: new Date()
+	});
+});
+</script>
+
+</body>
+
+
+</html>

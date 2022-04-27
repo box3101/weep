@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head style="overflow-y:hidden;">
+    <title>AM01002</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:image:type" content="/image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/project_reg.css">
+    <link rel="stylesheet" href="../../css/datepicker.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/customTab.js"></script>
+    <script type="text/javascript" src="../../js/sideBar_toggle.js"></script>
+    <script type="text/javascript" src="../../js/admin_common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script> 
+    <script>
+        $(function () {
+           //datepicker 
+           $(".day_input").datepicker({
+              language: 'en',
+              autoClose: true,
+              dateFormat:'yyyy.mm.dd'
+              //minDate: new Date()
+           });
+        });
+    </script>
+</head>
+
+
+<body>
+<!-- admin_header : S ---------->
+<div id="header">
+    <div class="adminLogo">
+        <a href="/admin/main.html"><img src="../../admin_img/admin_logo.png" alt="관리자메인으로 바로가기"></a>
+    </div>
+    <ul id="adminGnb">
+        <li>
+            <a href="../../page/AM00100/AM00101.html">프로젝트</a>
+        </li>
+        <li>
+            <a href="../../page/AM00200/AM00201.html">아웃소싱</a>
+        </li>
+        <li>
+            <a href="../../page/AM00300/AM00301.html">프리랜서</a>
+        </li>
+        <li>
+            <a href="../../page/AM00400/AM00401.html">파트너</a>
+        </li>
+        <li>
+            <a href="../../page/AM00500/AM00500.html">클라이언트</a>
+        </li>
+        <li>
+            <a href="../../page/AM00600/AM00601.html">매니저</a>
+        </li>
+        <li>
+            <a href="../../page/AM00700/AM00701.html">회원</a>
+        </li>
+        <li>
+            <a href="../../page/AM00800/AM00801.html">계약</a>
+        </li>
+        <li>
+            <a href="../../page/AM00900/AM00901.html">정산</a>
+        </li>
+        <li class="on">
+            <a href="../../page/AM01000/AM01001.html">유료상품</a>
+        </li>
+        <li>
+            <a href="../../page/AM01200/AM01201.html">사이트관리</a>
+        </li>
+    </ul>
+</div>
+<!-- admin_header : E ---------->
+
+<!-- admin_wrapper : S ---------->
+<div class="wrapper clearfix">
+<!-- admin_sidebar : S ---->
+    <div id="sidebar">
+        <div class="info">
+                <div class="info_icon">
+                    <button id="sidebarCollapse">
+                    </button>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <span data-tooltip-text="홈버튼">
+                            <img src="../../admin_img/left_home_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <span data-tooltip-text="잠금버튼">
+                            <img src="../../admin_img/left_lock_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <span data-tooltip-text="마이페이지">
+                            <img src="../../admin_img/my_page_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="../../page/AM01100/AM01101.html">
+                        <span data-tooltip-text="현황 및 통계">
+                            <img src="../../admin_img/AM01100_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="../../page/AM01300/AM01301.html">
+                        <span data-tooltip-text="게시판 관리">
+                            <img src="../../admin_img/AM01300_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="../../page/AM01400/AM01401.html">
+                        <span data-tooltip-text="시스템 관리">
+                            <img src="../../admin_img/AM01400_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        <div class="nav_side">
+            <div class="SNB_title">
+                <img src="../../admin_img/admin_leftLnb.png" alt="">
+                <h1>유료상품관리</h1>
+            </div>
+            <ul class="SNB">
+                <li class="on"><a href="../../page/AM01000/AM01001.html">유료상품 관리</a></li>
+                <li><a href="../../page/AM01000/AM01011.html">유료상품 결제내역</a></li>
+                <li><a href="../../page/AM01000/AM01021.html">유료상품 등록</a></li>
+                <li><a href="../../page/AM01000/AM01041.html">쿠폰관리</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- admin_sidebar : E ---->
+
+<!-- admin_contents : S ---->
+    <div id="contents">
+        <div class="inner">
+            <div class="title clearfix borderB">
+                <h2>유료상품 관리</h2>
+                <ul class="breadcrumb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">유료상품</a></li>
+                    <li><a href="#">유료상품 관리</a></li>
+                </ul>
+            </div>
+            <div class="subContent mb30">
+                <div class="title_wrap">
+                    <h5>회원 정보</h5>
+                </div>
+                <div class="subContent_table">
+                    <form action="">
+                        <table>
+                            <caption></caption>
+                            <tbody>
+                                <tr>
+                                    <th>회원명</th>
+                                    <td>유프리</td>
+                                    <th>회원아이디</th>
+                                    <td>kimfree</td>
+                                </tr>
+                                <tr>
+                                    <th>휴대폰</th>
+                                    <td>000-0000-0000</td>
+                                    <th>이메일</th>
+                                    <td>kimfree@naver.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="subContent mb30">
+                <div class="title_wrap">
+                    <h5>상품 정보</h5>
+                </div>
+                <div class="subContent_table">
+                    <form action="">
+                        <table class="">
+                            <caption></caption>
+                            <tbody>
+                                <tr>
+                                    <th>결제상품명</th>
+                                    <td>탑프리랜서</td>
+                                    <th>노출기간</th>
+                                    <td>
+                                        <span class="mr50">0000.00.00 ~ 0000.00.00</span>
+                                        <div class="btn_table02"><a href="#" onclick="view_layer('charge_layer1');">기간변경</a></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="subContent mb30">
+                <div class="title_wrap">
+                    <h5>결제 정보</h5>
+                </div>
+                <div class="subContent_table">
+                    <form action="">
+                        <table>
+                            <caption></caption>
+                            <tbody>
+                                <tr>
+                                    <th>상품금액</th>
+                                    <td>33,000원</td>
+                                    <th>실결제금액</th>
+                                    <td><span>22,000</span>원 (쿠폰 할인 <span>5,000</span>원, 적립금 할인 <span>6,000</span>원)</td>
+                                </tr>
+                                <tr>
+                                    <th>결제종류</th>
+                                    <td>신용카드</td>
+                                    <th>결제여부</th>
+                                    <td>
+                                        <span class="mr50">결제완료</span>
+                                        <div class="btn_table02"><a href="#" onclick="charge_cancel01();">결제취소</a></div>
+                                        <div class="btn_table02"><a href="#" onclick="view_layer('charge_layer2');">환불처리</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>결제신청일</th>
+                                    <td>0000.00.00 00:00:00</td>
+                                    <th>결제확인일</th>
+                                    <td>0000.00.00 00:00:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="tableBox">
+                <div class="list_number clearfix">
+                    <div class="lef">
+                        <h4>관리자 메모</h4>
+                    </div>
+                </div>
+                <form action="">
+                    <textarea class="w100p noResiz" name="" id="" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+            <div class="subContent mb50 center">
+                <div class="btn_subCon"><a href="../../page/AM00900/AM00911.html">목록으로</a></div>
+                <div class="btn_subCon"><a href="">수정하기</a></div>
+            </div>
+        </div>
+    </div>
+    <script>
+    function openWindowPop(url, name) {
+        var options = 'top=0, left=0, width=1260, height=800, status=no, menubar=no, toolbar=no, resizable=no scrollbars=1';
+        window.open(url, name, options);
+    }
+</script>
+<!-- admin_contents : E ---->
+</div>
+<!-- admin_wrapper : E ---------->
+<div class="dim-layer" id="charge_layer1">
+    <div class="dimBg h100p"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="interview_inner">
+                <div class="manager_title mb30">
+                    <h3 class="title_h3">유료상품 노출기간 연장</h3>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="close_layer('charge_layer1');"></a>
+                    </div>
+                </div>
+                <section>
+                    <div class="tableBox">
+                        <div class="list_number clearfix">
+                            <div class="lef">
+                                <h4>노출기간</h4>
+                            </div>
+                        </div>
+                        <form action="">
+                            <table class="cal_table2">
+                                <caption class="hidden"></caption>
+                                <tbody>
+                                    <tr>
+                                        <th>노출시작일</th>
+                                        <td>0000.00.00  00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>노출마감일</th>
+                                        <td>0000.00.00  00:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <div class="tableBox">
+                        <div class="list_number clearfix">
+                            <div class="lef">
+                                <h4>변경될 노출 기간</h4>
+                            </div>
+                        </div>
+                        <form action="">
+                            <table class="cal_table2">
+                                <caption class="hidden"></caption>
+                                <tbody>
+                                    <tr>
+                                        <th>노출시작일</th>
+                                        <td>
+                                            <input type="text" class="day_input w197 mr10" placeholder="" title="년,월.일별 날짜를 입력해주세요.">
+                                            <select name="" id="" class="w60 h42">
+                                                <option value=""></option>1</option>
+                                                <option value=""></option>2</option>
+                                                <option value=""></option>3</option>
+                                                <option value=""></option>4</option>
+                                                <option value=""></option>5</option>
+                                                <option value=""></option>6</option>
+                                                <option value=""></option>7</option>
+                                                <option value=""></option>8</option>
+                                                <option value=""></option>9</option>
+                                                <option value=""></option>10</option>
+                                                <option value=""></option>11</option>
+                                                <option value=""></option>12</option>
+                                                <option value=""></option>13</option>
+                                                <option value=""></option>14</option>
+                                                <option value=""></option>15</option>
+                                                <option value=""></option>16</option>
+                                                <option value=""></option>17</option>
+                                                <option value=""></option>18</option>
+                                                <option value=""></option>19</option>
+                                                <option value=""></option>20</option>
+                                                <option value=""></option>21</option>
+                                                <option value=""></option>22</option>
+                                                <option value=""></option>23</option>
+                                                <option value=""></option>24</option>
+                                            </select>
+                                            <span class="mr10">시</span>
+                                            <select name="" id="" class="w60 h42">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                                <option value="">32</option>
+                                                <option value="">33</option>
+                                                <option value="">34</option>
+                                                <option value="">35</option>
+                                                <option value="">36</option>
+                                                <option value="">37</option>
+                                                <option value="">38</option>
+                                                <option value="">39</option>
+                                                <option value="">40</option>
+                                                <option value="">41</option>
+                                                <option value="">42</option>
+                                                <option value="">43</option>
+                                                <option value="">44</option>
+                                                <option value="">45</option>
+                                                <option value="">46</option>
+                                                <option value="">47</option>
+                                                <option value="">48</option>
+                                                <option value="">49</option>
+                                                <option value="">50</option>
+                                                <option value="">51</option>
+                                                <option value="">52</option>
+                                                <option value="">53</option>
+                                                <option value="">54</option>
+                                                <option value="">55</option>
+                                                <option value="">56</option>
+                                                <option value="">57</option>
+                                                <option value="">58</option>
+                                                <option value="">59</option>
+                                                <option value="">60</option>
+                                            </select>
+                                            <span>분</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>노출마감일</th>
+                                        <td>
+                                            <input type="text" class="day_input w197 mr10" placeholder="" title="년,월.일별 날짜를 입력해주세요.">
+                                            <select name="" id="" class="w60 mr10">
+                                                <option value=""></option>1</option>
+                                                <option value=""></option>2</option>
+                                                <option value=""></option>3</option>
+                                                <option value=""></option>4</option>
+                                                <option value=""></option>5</option>
+                                                <option value=""></option>6</option>
+                                                <option value=""></option>7</option>
+                                                <option value=""></option>8</option>
+                                                <option value=""></option>9</option>
+                                                <option value=""></option>10</option>
+                                                <option value=""></option>11</option>
+                                                <option value=""></option>12</option>
+                                                <option value=""></option>13</option>
+                                                <option value=""></option>14</option>
+                                                <option value=""></option>15</option>
+                                                <option value=""></option>16</option>
+                                                <option value=""></option>17</option>
+                                                <option value=""></option>18</option>
+                                                <option value=""></option>19</option>
+                                                <option value=""></option>20</option>
+                                                <option value=""></option>21</option>
+                                                <option value=""></option>22</option>
+                                                <option value=""></option>23</option>
+                                                <option value=""></option>24</option>
+                                            </select>
+                                            <span>시</span>
+                                            <select name="" id="" class="w60">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                                <option value="">32</option>
+                                                <option value="">33</option>
+                                                <option value="">34</option>
+                                                <option value="">35</option>
+                                                <option value="">36</option>
+                                                <option value="">37</option>
+                                                <option value="">38</option>
+                                                <option value="">39</option>
+                                                <option value="">40</option>
+                                                <option value="">41</option>
+                                                <option value="">42</option>
+                                                <option value="">43</option>
+                                                <option value="">44</option>
+                                                <option value="">45</option>
+                                                <option value="">46</option>
+                                                <option value="">47</option>
+                                                <option value="">48</option>
+                                                <option value="">49</option>
+                                                <option value="">50</option>
+                                                <option value="">51</option>
+                                                <option value="">52</option>
+                                                <option value="">53</option>
+                                                <option value="">54</option>
+                                                <option value="">55</option>
+                                                <option value="">56</option>
+                                                <option value="">57</option>
+                                                <option value="">58</option>
+                                                <option value="">59</option>
+                                                <option value="">60</option>
+                                            </select>
+                                            <span>분</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+                <section class="wrap_btn">
+                    <div class="btn_submit"><a class="" href="">취소</a></div>
+                    <div class="btn_submit"><a href="" onclick="charge_alter01();">변경하기</a></div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dim-layer" id="charge_layer2">
+    <div class="dimBg h100p"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="interview_inner">
+                <div class="manager_title mb30">
+                    <h3 class="title_h3">환불처리</h3>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="close_layer('charge_layer2');"></a>
+                    </div>
+                </div>
+                <section>
+                    <div class="tableBox">
+                        <div class="list_number clearfix">
+                            <div class="lef">
+                                <h4>환불처리</h4>
+                            </div>
+                        </div>
+                        <form action="">
+                            <table class="cal_table2">
+                                <caption class="hidden"></caption>
+                                <tbody>
+                                    <tr>
+                                        <th>입금금액</th>
+                                        <td>10,000,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <th>환불금액</th>
+                                        <td><input type="text" class="mr10"/>원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <div class="tableBox">
+                        <div class="list_number clearfix">
+                            <div class="lef">
+                                <h4>환불계좌정보</h4>
+                            </div>
+                        </div>
+                        <form action="">
+                            <table class="cal_table2">
+                                <caption class="hidden"></caption>
+                                <tbody>
+                                    <tr>
+                                        <th>은행</th>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" selected hidden>은행선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>계좌번호</th>
+                                        <td><input type="text" class="w280"/> '-'없이 숫자만 입력</td>
+                                    </tr>
+                                    <tr>
+                                        <th>예금주</th>
+                                        <td><input type="text"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+                <section class="wrap_btn">
+                    <div class="btn_submit"><a class="" href="">취소</a></div>
+                    <div class="btn_submit"><a href="" onclick="charge_alter02();">확인</a></div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

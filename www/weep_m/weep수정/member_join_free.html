@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <title>위프(WEEP) IT인력중개플랫폼</title>
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="assets/css/stylesheet.css" />
+  <script src="assets/js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-box">
+        <h2 class="page-tit">회원가입</h2>
+        <button type="button" class="btn-page-back"><span class="ir">뒤로</span></button>
+        <button class="btn-gnb" type="button"><span class="ir">전체메뉴</span></button>
+      </div>
+      <div class="gnb-wrap">
+        <div class="gnb-box">
+          <div class="members">
+            <span class="img-logo">wee.p</span>
+            <button class="btn-close" type="button">메뉴닫기</button>
+          </div>
+          <div class="links">
+            <div class="link-login"><a href="#none">로그인</a></div>
+            <div class="link-join"><a href="#none">회원가입</a></div>
+          </div>
+          <nav class="gnb">
+            <ul class="main-menu">
+              <li>
+                <a class="depth1" href="#none">프로젝트 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">아웃소싱 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">프리랜서 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">파트너 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">WEE.P 소개</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="side-menu">
+              <li>
+                <a class="depth1" href="#none">위프 이용안내</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">위프 지원센터</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="boards">
+            <a href="#none">1:1 온라인 문의</a>
+            <a href="#none">자주찾는질문</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //HEADER -->
+
+    <div class="contents" data-name="member">
+      <nav class="tabmenu three">
+        <ul>
+          <li class="active"><a href="#none">프리랜서 회원</a></li>
+          <li><a href="#none">파트너 회원</a></li>
+          <li><a href="#none">클라이언트 회원</a></li>
+        </ul>
+      </nav>
+      <section class="tab-content">
+        <form action="">
+          <fieldset>
+            <legend>프리랜서 정보입력</legend>
+            <div class="form-row">
+              <div class="form-tit flex-left">
+                <div class="section-tit">
+                    <p class="welcome">회원가입하고 다양한 혜택을 누리세요!</p>
+                </div>
+              </div>
+              <div class="form-tit pt0">
+                <div class="radiobox type-orange2">
+                  <input type="radio" id="Lnm_F_partType1" name="Lnm_F_partType" value="PERSONAL" checked="">
+                  <label for="Lnm_F_partType1">개인</label>
+                  <input type="radio" id="Lid_F_partType2" name="Lnm_F_partType" value="COMPANY">
+                  <label for="Lid_F_partType2">회사소속</label>
+                </div>
+                <span class="desc"><span class="imp">*</span>필수 입력 정보입니다</span>
+              </div>
+              <div class="form-contents">
+                <div class="inputbox">
+                  <input type="text" id="f2" required />
+                  <label for="f2">이름(실명)<span class="imp">*</span></label>
+                </div>
+                <!--2021.01.14 아이디 layer 변경-->
+                <div class="certibox">
+                    <div class="row1">
+                        <div class="inputbox">
+                            <input type="text" id="f3" required />
+                            <label for="f3">아이디<span class="imp">*</span></label>
+                        </div>
+                      <button class="btn" type="button">중복체크</button>
+                    </div>
+                </div>
+                <div class="inputbox f-pw">
+                  <input type="password" id="f10" required />
+                  <label for="f10">비밀번호(6~16자의 영문, 숫자, 특수기호)<span class="imp">*</span></label>
+                  <span class="btn-eye" type="button"><span class="ir">비밀번호 보기</span></span>
+                </div>
+                <div class="alert-text">6~16자 영문, 숫자, 특수문자를 사용하세요.</div>
+                <div class="inputbox f-pw">
+                  <input type="password" id="f11" required />
+                  <label for="f11">비밀번호 확인</label>
+                  <span class="btn-eye" type="button"><span class="ir">비밀번호 보기</span></span>
+                </div>
+                <div class="alert-text">비밀번호가 일치하지 않습니다.</div>
+                <div class="inputbox">
+                  <input type="text" id="f13" required />
+                  <label for="f13">이메일<span class="imp">*</span></label>
+                </div>
+                <div class="certibox">
+                  <div class="row1">
+                    <div class="inputbox">
+                      <input type="text" id="f14" required />
+                      <label for="14">휴대폰 번호<span class="imp">*</span></label>
+                    </div>
+                    <button class="btn" type="button">인증번호 전송</button>
+                  </div>
+                  <div class="row2">
+                    <div class="inputbox">
+                      <input type="text" id="f15" required />
+                      <label for="f15">인증번호 입력<span class="imp">*</span></label>
+                    </div>
+                    <button class="btn type1" type="button">확인</button>
+                  </div>
+                  <div class="alert-text">인증번호를 발송했습니다. (유효시간 : 3:00 )<br>
+                    인증번호 입력 후 확인버튼을 선택해 주세요!</div>
+                  <!-- <div class="alert-text">인증되었습니다.</div> -->
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-tit flex-left">
+                  <h3 class="section-tit">약관 동의</h3>
+                </div>
+                <div class="form-row-check">
+                    <div class="check-all">
+                      <div class="texts">필수동의 항목 및 개인정보 수집 및 이용 동의(선택), 마케팅 정보 수신(선택)에 모두 동의합니다.</div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="chk-a" />
+                        <label for="chk-a">전체동의</label>
+                      </div>
+                    </div>
+                    <div class="check-list">
+                      <ul>
+                        <li>
+                          <div class="text"><em>[필수] </em>이용약관 동의</div>
+                          <a class="btn-view" href="agreement_use.html">내용보기</a>
+                          <div class="checkbox">
+                            <input type="checkbox" id="chk1" />
+                            <label for="chk1">동의</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="text"><em>[필수] </em>개인정보 수집 및 이용 동의</div>
+                          <a class="btn-view" href="agreement_personal.html">내용보기</a>
+                          <div class="checkbox">
+                            <input type="checkbox" id="chk2" />
+                            <label for="chk2">동의</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="text">[선택] 마케팅 정보 이메일 수신 동의</div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="chk4" />
+                            <label for="chk4">동의</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="text">[선택] 마케팅 정보 SMS 수신 동의</div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="chk5" />
+                            <label for="chk5">동의</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row-btns">
+              <button class="btn typeAll" type="button">회원가입 완료</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </div>
+  </div>
+  <script src="assets/js/common.js"></script>
+</body>
+
+</html>

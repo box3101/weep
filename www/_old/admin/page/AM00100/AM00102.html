@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head style="overflow-y:hidden;">
+    <title>AM00102</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:image:type" content="/image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/project_reg.css">
+    <link rel="stylesheet" href="../../css/datepicker.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/customTab.js"></script>
+    <script type="text/javascript" src="../../js/sideBar_toggle.js"></script>
+    <script type="text/javascript" src="../../js/admin_common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script> 
+    <script>
+        $(function () {
+           //datepicker 
+           $(".day_input").datepicker({
+              language: 'en',
+              autoClose: true,
+              dateFormat:'yyyy.mm.dd'
+              //minDate: new Date()
+           });
+        });
+    </script>
+</head>
+
+
+<body>
+<!-- admin_header : S ---------->
+<div id="header">
+  <div class="adminLogo">
+      <a href="/admin/main.html"><img src="../../admin_img/admin_logo.png" alt="관리자메인으로 바로가기"></a>
+  </div>
+  <ul id="adminGnb">
+      <li class="on">
+          <a href="../../page/AM00100/AM00101.html">프로젝트</a>
+      </li>
+      <li>
+          <a href="../../page/AM00200/AM00201.html">아웃소싱</a>
+      </li>
+      <li>
+          <a href="../../page/AM00300/AM00301.html">프리랜서</a>
+      </li>
+      <li>
+          <a href="../../page/AM00400/AM00401.html">파트너</a>
+      </li>
+      <li>
+          <a href="../../page/AM00500/AM00500.html">클라이언트</a>
+      </li>
+      <li>
+          <a href="../../page/AM00600/AM00601.html">매니저</a>
+      </li>
+      <li>
+          <a href="../../page/AM00700/AM00701.html">회원</a>
+      </li>
+      <li>
+          <a href="../../page/AM00800/AM00801.html">계약</a>
+      </li>
+      <li>
+          <a href="../../page/AM00900/AM00901.html">정산</a>
+      </li>
+      <li>
+          <a href="../../page/AM01000/AM01001.html">유료상품</a>
+      </li>
+      <li>
+          <a href="../../page/AM01200/AM01201.html">사이트관리</a>
+      </li>
+  </ul>
+</div>
+<!-- admin_header : E ---------->
+
+<!-- admin_wrapper : S ---------->
+<div class="wrapper clearfix">
+<!-- admin_sidebar : S ---->
+    <div id="sidebar">
+        <div class="info">
+            <div class="info_icon">
+                <button id="sidebarCollapse">
+                </button>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="홈버튼">
+                        <img src="../../admin_img/left_home_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="잠금버튼">
+                        <img src="../../admin_img/left_lock_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="마이페이지">
+                        <img src="../../admin_img/my_page_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="../../page/AM01100/AM01101.html">
+                    <span data-tooltip-text="현황 및 통계">
+                        <img src="../../admin_img/AM01100_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                    <a href="../../page/AM01300/AM01301.html">
+                        <span data-tooltip-text="게시판 관리">
+                            <img src="../../admin_img/AM01300_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            <div class="info_icon">
+                <a href="../../page/AM01400/AM01401.html">
+                    <span data-tooltip-text="시스템 관리">
+                        <img src="../../admin_img/AM01400_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="nav_side">
+            <div class="SNB_title">
+                <img src="../../admin_img/admin_leftLnb.png" alt="">
+                <h1>프로젝트관리</h1>
+            </div>
+            <ul class="SNB">
+                <li class="on"><a href="../../page/AM00100/AM00101.html">프로젝트 등록현황</a></li>
+                <li><a href="../../page/AM00100/AM00111.html">프로젝트 지원관리</a></li>
+                <li><a href="../../page/AM00100/AM00121.html">프로젝트 찜 관리</a></li><li>
+                    <a href="#none" onclick="">인터뷰 관리</a>
+                    <ul class="sub_SNB">
+                        <li><a href="../../page/AM00100/AM00131.html">인터뷰 요청</a></li>
+                        <li><a href="../../page/AM00100/AM00133.html">인터뷰 취소</a></li>
+                        <li><a href="../../page/AM00100/AM00134.html">인터뷰 확정</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../page/AM00100/AM00151.html">프로젝트 계약관리</a></li>
+                <li><a href="../../page/AM00100/AM00161.html">프로젝트 추천관리</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- admin_sidebar : E ---->
+
+<!-- admin_contents : S ---->
+    <div id="contents">
+        <div class="inner_reg">
+            <div class="title clearfix">
+                <h2>프로젝트 내용</h2>
+                <ul class="breadcrumb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="../../page/AM00100/AM00101.html">프로젝트 전체</a></li>
+                    <li><a href="#">프로젝트 내용</a></li>
+                </ul>
+            </div>
+            <div class="content_info">
+                <div class="content">
+                  <div class="tab_reg">
+                    <ul class="proLnb">
+                      <li>
+                        <a href="#tab1" class="on">&nbsp;기본정보</a>
+                      </li>
+                      <li>
+                        <a href="#tab2">&nbsp;상세정보</a>
+                      </li>
+                      <li>
+                        <a href="#tab3">&nbsp;수행조건</a>
+                      </li>
+                      <li>
+                        <a href="#tab4">&nbsp;모집요건</a>
+                      </li>
+                    </ul>
+                    
+                    <div id="tab1" class="box on">
+                      <div class="processCotent">
+                        <div class="initialInfo">
+                          <h4 class="initialInfoTit">프로젝트 제목</h4>
+                          <div class="textProject on">
+                            <input type="text" placeholder="프로젝트 제목을 입력해 주세요!">
+                          </div>
+                        </div>
+                        <div class="initialInfo">
+                          <h4 class="initialInfoTit">프로젝트 형태</h4>
+                          <div class="textProject">
+                            <input type="radio" name="pForm" id="pForm01">
+                            <label for="pForm01">상주</label>
+                            <input type="radio" name="pForm" id="pForm02">
+                            <label for="pForm02">비상주</label>
+                            <input type="radio" name="pForm" id="pForm03">
+                            <label for="pForm03">재택</label>
+                          </div>
+                        </div>
+                        <div class="initialInfo">
+                          <h4 class="initialInfoTit">프로젝트 산업 분류</h4>
+                          <div class="textProject">
+                            <input type="radio" name="pInClass" id="pInClass01">
+                            <label for="pInClass01">공공기관</label>
+                            <input type="radio" name="pInClass" id="pInClass02">
+                            <label for="pInClass02">기획</label>
+                            <input type="radio" name="pInClass" id="pInClass03">
+                            <label for="pInClass03">민간</label>
+                            <input type="radio" name="pInClass" id="pInClass04">
+                            <label for="pInClass04">커머스</label>
+                            <input type="radio" name="pInClass" id="pInClass05">
+                            <label for="pInClass05">은행</label>
+                            <input type="radio" name="pInClass" id="pInClass06">
+                            <label for="pInClass06">증권 등등</label>
+                          </div>
+                        </div>
+                        <div class="initialInfo field">
+                          <h4 class="initialInfoTit">프로젝트 분야</h4>
+                          <div class="textProject">
+                            <input type="checkbox" name="pNeedCon" id="pNeedCon01">
+                            <label for="pNeedCon01">PM</label>
+                            <input type="checkbox" name="pNeedCon" id="pNeedCon02">
+                            <label for="pNeedCon02">기획</label>
+                            <input type="checkbox" name="pNeedCon" id="pNeedCon03">
+                            <label for="pNeedCon03">디자인</label>
+                            <input type="checkbox" name="pNeedCon" id="pNeedCon04">
+                            <label for="pNeedCon04">퍼블리싱</label>
+                            <input type="checkbox" name="pNeedCon" id="pNeedCon05">
+                            <label for="pNeedCon05">개발</label>
+                          </div>
+                        </div>
+        
+        
+                        <div class="initialInfo detail_sel">
+                          <h4 class="initialInfoTit">상세업무 선택</h4>
+                          <div class="textProject">
+                            <input type="checkbox" id="kosaY">
+                            <label for="kosaY">총괄 PM</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">사업관리 </label>
+                            <input type="checkbox" id="kosaY">
+                            <label for="kosaY">품질관리 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">컨설팅 </label>
+                          </div>
+                          <div class="textProject">
+                            <input type="checkbox" id="kosaY">
+                            <label for="kosaY">기획 PL</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">웹기획</label>
+                            <input type="checkbox" id="kosaY">
+                            <label for="kosaY">앱기획</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">모바일기획</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">UI설계</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">스토리보드</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">서비스기획</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">콘텐츠기획</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">UI설계</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">유지보수</label>
+                          </div>
+                          <div class="textProject">
+                            <input type="checkbox" id="kosaY">
+                            <label for="kosaY">디자인 PL</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">웹기획</label>
+                            <input type="checkbox" id="kosaY">
+                            <label for="kosaY">웹디자인 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">앱디자인 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">모바일디자인 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">UI/UX디자인 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">그래픽 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">포토샵 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">일러스트 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">유지보수</label>
+                          </div>
+                          <div class="textProject">
+                            <input type="checkbox" id="kosaY">
+                            <label for="kosaY">퍼블리싱 PL</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">웹퍼블리싱 </label>
+                            <input type="checkbox" id="kosaY">
+                            <label for="kosaY">모바일퍼블리싱 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">웹접근성 코딩 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">Html코딩 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">CSS </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">CSS3 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">웹표준 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">자바스트립트 </label>
+                          </div>
+                          <div class="textProject">
+                            <input type="checkbox" id="kosaY">
+                            <label for="kosaY">개발 PL</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">웹개발 </label>
+                            <input type="checkbox" id="kosaY">
+                            <label for="kosaY">앱개발 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">모바일개발 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">애플리케이션 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">워드프레스 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">커머스, 쇼핑몰 </label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">일반 소프트웨어</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">응용 소프트웨어</label>
+                            <input type="checkbox" id="kosaN">
+                            <label for="kosaN">유지보수</label>
+                          </div>
+                        </div>
+                        <div class="initialInfo">
+                          <h4 class="initialInfoTit">프로젝트 진행 분류 </h4>
+                          <div class="textProject">
+                            <input type="radio" name="pClass" id="kosaY">
+                            <label for="kosaY" class="vm">신규 프로젝트</label>
+                            <input type="radio" name="pClass" id="kosaN">
+                            <label for="kosaN" class="vm">프로젝트 연장 </label>
+                            <input type="radio" name="pClass" id="kosaY">
+                            <label for="kosaY" class="vm">추가 인력 투입</label>
+                            <input type="radio" name="pClass" id="kosaY">
+                            <label for="kosaY">
+                              <input type="text" placeholder="직접입력" class="cTextInput">
+                            </label>
+                          </div>
+                        </div>
+                        <div class="initialInfo">
+                          <h4 class="initialInfoTit">프로젝트 상태</h4>
+                          <div class="textProject blockList">
+                            <div>
+                              <input type="radio" name="pClass" id="kosaY">
+                              <label for="kosaY">프로젝트를 계획 중 (내부 계획수립 또는 고객사 제안 단계)</label>
+                            </div>
+                            <div>
+                              <input type="radio" name="pClass" id="kosaN">
+                              <label for="kosaN">프로젝트를 착수 준비 중</label>
+                            </div>
+                            <div>
+                              <input type="radio" name="pClass" id="kosaY">
+                              <label for="kosaY">프로젝트를 착수 및 요구사항을 분석 중 </label>
+                            </div>
+                            <div>
+                              <input type="radio" name="pClass" id="kosaN">
+                              <label for="kosaN">요구사항 분석 또는 설계 문서 작성 완료</label>
+                            </div>
+                            <div>
+                              <input type="radio" name="pClass" id="kosaN">
+                              <label for="kosaN">프로젝트 진행 중 </label>
+                              </ㅇ>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="initialInfo">
+                          <h4 class="initialInfoTit">기획상태</h4>
+                          <div class="textProject blockList">
+                            <div>
+                              <input type="checkbox" name="pPStatus" id="pPStatus01">
+                              <label for="pPStatus01">기획 전</label>
+                            </div>
+                            <div>
+                              <input type="checkbox" name="pPStatus" id="pPStatus02">
+                              <label for="pPStatus02">요구사항정의서 완료</label>
+                            </div>
+                            <div>
+                              <input type="checkbox" name="pPStatus" id="pPStatus03">
+                              <label for="pPStatus03">제안요청서 완료</label>
+                            </div>
+                            <div>
+                              <input type="checkbox" name="pPStatus" id="pPStatus04">
+                              <label for="pPStatus04">메뉴구조도(IA) 작성 완료</label>
+                            </div>
+                            <div>
+                              <input type="checkbox" name="pPStatus" id="pPStatus05">
+                              <label for="pPStatus05">화면설계서(스토리보드, 와이어프레임) 작성 중</label>
+                            </div>
+                            <div>
+                              <input type="checkbox" name="pPStatus" id="pPStatus06">
+                              <label for="pPStatus06">화면설계서 완료</label>
+                            </div>
+                            <div>
+                              <input type="checkbox" name="pPStatus" id="pPStatus07">
+                              <label for="pPStatus07">프로토타입(프로젝트 모델 결과물) 완료</label>
+                            </div>
+                            <div>
+                              <input type="checkbox" name="pPStatus" id="pPStatus08">
+                              <label for="pPStatus08">
+                                <input type="text" placeholder="디자인 시안 확정" class="cTextInput">
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="tab2" class="box">
+                      <div class="processCotent">
+                        <div class="initialInfo">
+                          <h4 class="detailInfo">프로젝트 관련 자료</h4>
+                          <p class="dDesc">
+                            아이디어 또는 필요한 내용을 정리한 문서를 추가해 주세요.<br>
+                            프로젝트 프로젝트 조건 산정에 활용되며, 문서 및 이미지 파일만 추가 가능합니다.
+                          </p>
+                          <!-- 20200722 -->
+                          <div class="textProject_add">
+                            <div class="wrap">
+                              <article>
+                                <img src="../../admin_img/file_up.png" alt="파입 업로드 이미지">
+                                <span>프로젝트과업지시서.hwp</span>
+                              </article>
+                              <article>
+                                <span>212,540</span> kbyte
+                                <span class="btn">
+                                  <a href="#">
+                                    <img src="../../admin_img/regist_close_btn.png" alt="닫기">
+                                  </a>
+                                </span>
+                              </article>
+                            </div>
+                          </div>
+                          <!-- 20200722 -->
+                          <div class="textProject fileProject">
+                            <label for="fileUpload" class="noneLabel">
+                              <div class="fileDesc">
+                                <p class="fileUploadDesc">최대 50Mbyte까지 첨부 가능합니다. </p>
+                                <label for="fileUpload" class="fileUploadBtn">파일선택</label>
+                              </div>
+                            </label>
+                            <input type="file" name="fileUpload" id="fileUpload" multiple>
+                          </div>
+                        </div>
+                        <!--자료 공개 대상-->
+                        <div class="initialInfo">
+                          <h4 class="detailInfo">자료 공개 대상</h4>
+                          <div class="textProject blockList">
+                            <p>
+                              <input type="radio" name="pClass" id="kosaY">
+                              <label for="kosaY">위프 한정 공개 – 자료가 공개되지 않으며, 업무 범위 정리에 활용됩니다</label>
+                            </p>
+                            <!--p>
+                                                <input type="radio" name="pClass" id="kosaN">
+                                                <label for="kosaN">위프, 미팅 예정 클라이언트 – 미팅 예정 클라이언트의 분석과 제안을 받아볼 수 있습니다.
+                                                </label>
+                                            </p-->
+                            <p>
+                              <input type="radio" name="pClass" id="kosaY2">
+                              <label for="kosaY2">전체 공개 – 모든 클라이언트에게 분석과 제안을 받아 볼 수 있습니다.</label>
+                            </p>
+                          </div>
+                        </div>
+                        <!--자료 공개 대상 end -->
+        
+                        <!--상세 업무 내용 -->
+                        <div class="initialInfo">
+                          <h4 class="detailInfo">상세 업무 내용</h4>
+                          <ul>
+                            <li class="detailJobDesc">
+                              필요한 내용을 작성해주시면 위프가 정리를 도와드립니다.
+                            </li>
+                            <li class="detailJobDesc">
+                              업무 내용을 상세하게 작성해주실수록, 더 적합한 파트너를 만날 수 있습니다.
+                            </li>
+                            <li class="detailJobDesc">
+                              파트너가 알아야 할 유의사항(필수 사항, 전문 경험 등)도 함께 작성해 주세요.
+                            </li>
+                            <li class="detailJobDesc danger">
+                              프로젝트의 현재 상황, 상세한 업무 내용 등을 적어 주세요!
+                            </li>
+                          </ul>
+                          <div class="textProject blockList">
+                            <textarea rows="4" cols="50" class="msg"
+                              placeholder="데이터베이스 모니터링 툴 디자인입니다.&#10;필요 요소 : 기본 디자인 및 ui/ux작업 분량 : 주로 차트, 그래프로약 25 페이지 전후, PC view만 작업함&#10;사용툴 : Ai, PSD&#10;현재 개발자분이 기능을 구현하고 있습니다. &#10;기본 배치(레이아웃)은 잡혀있는 상황입니다."></textarea>
+                            <span class="txt">
+                              147/5,000
+                            </span>
+                          </div>
+                        </div>
+        
+                        <div class="initialInfo">
+                          <h3 class="detailInfo">유의사항 &amp; 향후계획</h3>
+                          <h4 class="initialInfoTit">참고자료</h4>
+                          <!-- 20200722 -->
+                          <div class="textProject_add">
+                            <div class="wrap">
+                              <article>
+                                <img src="../../admin_img/file_up.png" alt="파입 업로드 이미지">
+                                <span>프로젝트과업지시서.hwp</span>
+                              </article>
+                              <article>
+                                <span>212,540</span> kbyte
+                                <span class="btn">
+                                  <a href="#">
+                                    <img src="../../admin_img/regist_close_btn.png" alt="닫기">
+                                  </a>
+                                </span>
+                              </article>
+                            </div>
+                          </div>
+                          <div class="textProject_add">
+                            <div class="wrap">
+                              <article>
+                                <img src="../../admin_img/file_up.png" alt="파입 업로드 이미지">
+                                <span>프로젝트과업지시서.hwp</span>
+                              </article>
+                              <article>
+                                <span>212,540</span> kbyte
+                                <span class="btn">
+                                  <a href="#">
+                                    <img src="../../admin_img/regist_close_btn.png" alt="닫기">
+                                  </a>
+                                </span>
+                              </article>
+                            </div>
+                          </div>
+                          <!-- 20200722 -->
+                          <div class="textProject fileProject">
+                            <label for="fileUpload" class="noneLabel">
+                              <div class="fileDesc">
+                                <p class="fileUploadDesc">최대 50Mbyte까지 첨부 가능합니다. </p>
+                                <label for="fileUpload" class="fileUploadBtn">파일선택</label>
+                              </div>
+                            </label>
+                            <input type="file" name="fileUpload" id="fileUpload" multiple>
+                          </div>
+        
+                          <h4 class="initialInfoTit">유의사항</h4>
+                          <div class="textProject pl20">
+                            <input type="text" placeholder="장비 지참">
+                          </div>
+                        </div>
+                        <div class="initialInfo">
+                          <h4 class="initialInfoTit">향후계획</h4>
+                          <div class="textProject pl20">
+                            <input type="text" placeholder="향후 고도화를 위한 아웃소싱 계획이 있습니다.">
+                          </div>
+                        </div>
+        
+                        <div class="initialInfo">
+                          <h3 class="detailInfo">프로젝트 진행 정보</h3>
+                          <h4 class="initialInfoTit">인터뷰방식</h4>
+                          <div class="textProject blockList">
+                            <input type="radio" name="pClass" id="kosaY3">
+                            <label for="kosaY3">오프라인</label>
+                            <input type="radio" name="pClass" id="kosaN3">
+                            <label for="kosaN3">온라인(카카오톡, 메신저, 화상미팅 등)</label>
+                            <input type="radio" name="pClass" id="kosaY4">
+                            <label for="kosaY4">유선(전화)</label>
+                          </div>
+                        </div>
+        
+                        <div class="initialInfo">
+                          <h3 class="detailInfo">전문기술</h3>
+                          <!--<h4 class="initialInfoTit">전문기술</h4>-->
+                          <div class="textProject fileProject">
+                            <div class="fileDesc">
+                              <p class="fileUploadDesc">JSP, Oracle</p>
+                              <label for="fileUpload" class="fileUploadBtn">파일선택</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="tab3" class="box">
+                      <div class="processCotent">
+                        <div class="initialInfo">
+                            <h4 class="detailInfo">
+                                지출 가능 예산
+                                <img src="../../admin_img/bg_wrap_mi.png" alt="Question" class="qIcon" />
+                            </h4>
+                            <p class="dDesc">
+                                지출 가능 예산은 파트너 1인당 월 단위로 지급받는 실수령액이며, 사업소득(3.3%)이 포함된 금액입니다. 위프의 중개수수료(5%)는 별도입니다.
+                            </p>
+                            <div class="textProject calBudget">
+                                <ul>
+                                    <li>
+                                        <ul class="calBudgetLi">
+                                            <li class="roundInput career_sel"> <!-- class명 추가 0807 -->
+                                                <select name="" id="">
+                                                    <option>초급(3년 미만)</option>
+                                                </select>
+                                            </li>
+                                            <li class="roundInput">
+                                                <input type="text" placeholder="2" class="sm" /> 명
+                                            </li>
+                                            월
+                                            <li class="roundInput">
+                                                <select name="" id="">
+                                                    <option>300만원</option>
+                                                    <option>400만원</option>
+                                                    <option>500만원</option>
+                                                    <option>600만원</option>
+                                                </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기" />
+                                            </li>
+                                            ~
+                                            <li class="roundInput">
+                                                <select name="" id="">
+                                                    <option>300만원</option>
+                                                    <option>400만원</option>
+                                                    <option>500만원</option>
+                                                    <option>600만원</option>
+                                                </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기" />
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../../admin_img/minusBtn.png" alt="삭제" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="calBudgetLi">
+                                            <li class="roundInput career_sel"> <!-- class명 추가 0807 -->
+                                                <select name="" id="">
+                                                    <option>중급(3년~6년)</option>
+                                                </select>
+                                            </li>
+                                            <li class="roundInput">
+                                                <input type="text" placeholder="2" class="sm" /> 명
+                                            </li>
+                                            월
+                                            <li class="roundInput">
+                                                <select name="" id="">
+                                                    <option>300만원</option>
+                                                    <option>400만원</option>
+                                                    <option>500만원</option>
+                                                    <option>600만원</option>
+                                                </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기" />
+                                            </li>
+                                            ~
+                                            <li class="roundInput">
+                                                <select name="" id="">
+                                                    <option>300만원</option>
+                                                    <option>400만원</option>
+                                                    <option>500만원</option>
+                                                    <option>600만원</option>
+                                                </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기" />
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../../admin_img/minusBtn.png" alt="삭제" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="calBudgetLi">
+                                            <li class="roundInput career_sel"> <!-- class명 추가 0807 -->
+                                                <select name="" id="">
+                                                    <option>고급(6년~9년)</option>
+                                                </select>
+                                            </li>
+                                            <li class="roundInput">
+                                                <input type="text" placeholder="2" class="sm" /> 명
+                                            </li>
+                                            월
+                                            <li class="roundInput">
+                                                <select name="" id="">
+                                                    <option>300만원</option>
+                                                    <option>400만원</option>
+                                                    <option>500만원</option>
+                                                    <option>600만원</option>
+                                                </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기" />
+                                            </li>
+                                            ~
+                                            <li class="roundInput">
+                                                <select name="" id="">
+                                                    <option>300만원</option>
+                                                    <option>400만원</option>
+                                                    <option>500만원</option>
+                                                    <option>600만원</option>
+                                                </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기" />
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../../admin_img/minusBtn.png" alt="삭제" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="calBudgetLi">
+                                            <li class="roundInput career_sel"> <!-- class명 추가 0807 -->
+                                                <select name="" id="">
+                                                    <option>특급(9년 이상)</option>
+                                                </select>
+                                            </li>
+                                            <li class="roundInput">
+                                                <input type="text" placeholder="2" class="sm" /> 명
+                                            </li>
+                                            월
+                                            <li class="roundInput">
+                                                <select name="" id="">
+                                                    <option>300만원</option>
+                                                    <option>400만원</option>
+                                                    <option>500만원</option>
+                                                    <option>600만원</option>
+                                                </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기" />
+                                            </li>
+                                            ~
+                                            <li class="roundInput">
+                                                <select name="" id="">
+                                                    <option>300만원</option>
+                                                    <option>400만원</option>
+                                                    <option>500만원</option>
+                                                    <option>600만원</option>
+                                                </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기" />
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../../admin_img/minusBtn.png" alt="삭제" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="../../admin_img/addIcon.png" alt="추가" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--프로젝트 예상 기간-->
+                        <div class="initialInfo">
+                            <h4 class="detailInfo">프로젝트 예상 기간</h4>
+                            <p class="dDesc">
+                                프리랜서가 프로젝트에 투입되는 예상 기간입니다. 해당 날짜에 프로젝트 시작이 가능한 프리랜서들이 지원하게 됩니다.
+                            </p>
+                            <div class="textProject calBudget">
+                                <ul>
+                                    <li>
+                                        <ul class="calBudgetLi">
+                                            <li class="flex1">
+                                                시작일
+                                            </li>
+                                            <li class="roundInput flex1 mr10">
+                                                <input type="text" placeholder="2020.09.01" class="day_input" />
+                                            </li>
+                                            <!-- <img src="../../../img/date.png" alt="" style="width:auto"> -->
+                                            <span class="ml20 mr10">~</span>
+                                            <li class="flex1 pr0">
+                                                종료일
+                                            </li>
+                                            <li class="roundInput flex1">
+                                                <input type="text" placeholder="2020.09.01" class="day_input" />
+                                            </li>
+                                            <!-- <img src="../../../img/date.png" alt="" style="width:auto" /> -->
+                                            <li class="flex2">
+                                                프로젝트 예상 기간
+                                            </li>
+                                            <li class="roundInput flex1">
+                                                <input type="text" placeholder="" class="" /> 일
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+                                <input type="checkbox" name="pPdate" id="pPdate01" />
+                                <label for="pPdate01">프로젝트 착수 일자의 협의가 가능합니다. </label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="pPdate" id="pPdate02" />
+                                <label for="pPdate02">계약 체결 이후, 즉시 시작하길 희망합니다. </label>
+                            </p>
+                        </div>
+                        <!--프로젝트 예상 기간 end -->
+
+                        <!--프로젝트 근무 장소  -->
+                        <div class="initialInfo">
+                            <h4 class="initialInfoTit detailInfo">프로젝트 근무 장소</h4>
+                            <div class="textProject">
+                                <div class="tPtime">
+                                    <ul class="selectList">
+                                        <p class="cTextInputL"> 시/도</p>
+                                        <li>
+                                            <select name="pAddress" id="pAddress01">
+                                                <option>지역선택</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <img src="../../admin_img/faq_arr_down.png" alt="더보기" />
+                                        </li>
+                                        &nbsp;&nbsp;시/군/구&nbsp;&nbsp;
+                                        <li>
+                                            <select name="pAddress" id="pAddress02">
+                                                <option>지역선택</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                                        </li>
+                                        <input type="checkbox" name="pAddress" id="pAddress03" />
+                                        <label for="pAddress03">숙소 제공</label>
+                                </div>
+                                <div class="tPtime">
+                                    <p class="cTextInputL">근무장소</p>
+                                    <input type="text" placeholder="프로젝트 진행시 근무할 상세주소를 적어 주세요!" class="cTextInput"
+                                        id="pAddress04" />
+                                </div>
+                            </div>
+                        </div>
+                        <!--프로젝트 근무 장소 end  -->
+
+                        <!--근무 시간-->
+                        <div class="initialInfo">
+                            <h4 class="initialInfoTit detailInfo">근무시간</h4>
+                            <div class="textProject">
+                                <div class="tPtime">
+                                    <input type="radio" name="tPtime" id="tPtime01" />
+                                    <label for="tPtime01">오전 9시 ~ 오후 6시</label>
+                                    <input type="radio" name="tPtime" id="tPtime02" />
+                                    <label for="tPtime02">오전 10시 ~ 오후 7시 </label>
+                                </div>
+                                <div class="tPtime">
+                                    <input type="radio" name="tPtime" id="tPtime03" />
+                                    <label for="tPtime03">직접지정</label>
+                                    <ul class="selectList sel">
+                                        <li>
+                                            <select name="" id="">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                            </select>
+                                            <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                                        </li>&nbsp;시&nbsp;
+                                        <li>
+                                            <select name="" id="">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                                <option>31</option>
+                                                <option>32</option>
+                                                <option>33</option>
+                                                <option>34</option>
+                                                <option>35</option>
+                                                <option>36</option>
+                                                <option>37</option>
+                                                <option>38</option>
+                                                <option>39</option>
+                                                <option>40</option>
+                                                <option>41</option>
+                                                <option>42</option>
+                                                <option>43</option>
+                                                <option>44</option>
+                                                <option>45</option>
+                                                <option>46</option>
+                                                <option>47</option>
+                                                <option>48</option>
+                                                <option>49</option>
+                                                <option>50</option>
+                                                <option>51</option>
+                                                <option>52</option>
+                                                <option>53</option>
+                                                <option>54</option>
+                                                <option>55</option>
+                                                <option>56</option>
+                                                <option>57</option>
+                                                <option>58</option>
+                                                <option>59</option>
+                                                <option>60</option>
+                                            </select>
+                                            <img src="../../admin_img/faq_arr_down.png" alt="더보기" />
+                                        </li>&nbsp;분&nbsp;
+                                        <span class="blank"> ~ </span>
+                                        <li>
+                                            <select name="" id="">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                            </select>
+                                            <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                                        </li>&nbsp;시&nbsp;
+                                        <li>
+                                            <select name="" id="">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                                <option>31</option>
+                                                <option>32</option>
+                                                <option>33</option>
+                                                <option>34</option>
+                                                <option>35</option>
+                                                <option>36</option>
+                                                <option>37</option>
+                                                <option>38</option>
+                                                <option>39</option>
+                                                <option>40</option>
+                                                <option>41</option>
+                                                <option>42</option>
+                                                <option>43</option>
+                                                <option>44</option>
+                                                <option>45</option>
+                                                <option>46</option>
+                                                <option>47</option>
+                                                <option>48</option>
+                                                <option>49</option>
+                                                <option>50</option>
+                                                <option>51</option>
+                                                <option>52</option>
+                                                <option>53</option>
+                                                <option>54</option>
+                                                <option>55</option>
+                                                <option>56</option>
+                                                <option>57</option>
+                                                <option>58</option>
+                                                <option>59</option>
+                                                <option>60</option>
+                                            </select>
+                                            <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                                        </li>&nbsp;분&nbsp;
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--근무 시간 end-->
+
+                        <!--추가 근무 지원-->
+                        <div class="initialInfo">
+                            <h4 class="initialInfoTit detailInfo">추가 근무 지원</h4>
+                            <div class="textProject">
+
+                                <ul class="addSup">
+                                    <li>
+                                        <ul class="addSupList">
+                                            <li class="addSupListDesc">
+                                                프로젝트 야간 근무를 필요시 요청할 수 있습니다.
+                                            </li>
+                                            <li class="yes">
+                                                <input type="radio" name="pClass" id="kosaN" />
+                                                <label for="kosaN">예</label>
+                                            </li>
+                                            <li class="no">
+                                                <input type="radio" name="pClass" id="kosaN" />
+                                                <label for="kosaN">아니오</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <ul class="addSup">
+                                    <li>
+                                        <ul class="addSupList">
+                                            <li class="addSupListDesc">
+                                                프로젝트 주말 근무를 필요시 요청할 수 있습니다.
+                                            </li>
+                                            <li class="yes">
+                                                <input type="radio" name="pClass" id="kosaN" />
+                                                <label for="kosaN">예</label>
+                                            </li>
+                                            <li class="no">
+                                                <input type="radio" name="pClass" id="kosaN" />
+                                                <label for="kosaN">아니오</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <ul class="addSup">
+                                    <li>
+                                        <ul class="addSupList">
+                                            <li class="addSupListDesc">
+                                                프로젝트 근무에 필요한 장비 지원합니다.
+                                            </li>
+                                            <li class="yes">
+                                                <input type="radio" name="pClass" id="kosaN" />
+                                                <label for="kosaN">예</label>
+                                            </li>
+                                            <li class="no">
+                                                <input type="radio" name="pClass" id="kosaN" />
+                                                <label for="kosaN">아니오</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <ul class="addSup">
+                                    <li>
+                                        <ul class="addSupList">
+                                            <li class="addSupListDesc">
+                                                프로젝트 근무할 때 개인장비 지참이 가능합니다.
+                                            </li>
+                                            <li class="yes">
+                                                <input type="radio" name="pClass" id="kosaN" />
+                                                <label for="kosaN">예</label>
+                                            </li>
+                                            <li class="no">
+                                                <input type="radio" name="pClass" id="kosaN" />
+                                                <label for="kosaN">아니오</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <ul class="addSup">
+                                    <li>
+                                        <ul class="addSupList">
+                                            <li class="addSupListDesc">
+                                                프로젝트 근무할 때 식사 지원이 가능합니다.
+                                            </li>
+                                            <li class="yes">
+                                                <input type="radio" name="gFood" id="gFood_Y" />
+                                                <label for="gFood_Y" class="alignC">예 (
+                                                    <input type="checkbox" name="lunc" id="lunc" />
+                                                    <label for="lunc">점심</label>
+                                                    <input type="checkbox" name="din" id="din" />
+                                                    <label for="din">저녁)</label>
+                                                </label>
+                                            </li>
+                                            <li class="no">
+                                                <input type="radio" name="gFood" id="gFood_N" />
+                                                <label for="gFood_N">아니오</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div id="tab4" class="box">
+                      <div class="processCotent">
+                        <div class="initialInfo">
+                          <h4 class="initialInfoTit">지원자 모집 마감일 &#8277;</h4>
+                          <div class="textProject">
+                            <ul class="deadline">
+                              <li class="deadlineTit">마감일</li>
+                              <li class="roundInputch">
+                                <input type="text" class="day_input" placeholder="2020-05-05"> <!--클래스명 datepicker 추가-->
+                              </li>
+        
+                              <!-- <img src="../../../img/date.png" alt="" style="width:auto"> -->
+                              <li class="deadlineDesc">
+                                <p>지원자를 모집하는 기간은 최대 14일까지 가능합니다.</p>
+                                <p>지원자 모집 기간 중에도 프리랜서 선정과 계약 진행이 가능합니다.</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="initialInfo">
+                          <h4 class="initialInfoTit">정부사업 여부</h4>
+                          <div class="textProject">
+                            <input type="radio" name="gov01" id="gov01_1">
+                            <label for="gov01_1">예(정부지원사업 또는 연구과제)</label>
+                            <input type="radio" name="gov01" id="gov01_2">
+                            <label for="gov01_2">아니오</label>
+                          </div>
+                        </div>
+                        <div class="initialInfo">
+                          <h4 class="detailInfo">프리랜서 지원 전 질문</h4>
+                          <p class="dDesc">
+                            프리랜서가 프로젝트에 지원할 때 답변해야 할 질문을 작성해 주세요.<br>
+                            최대 5개까지 입력 가능합니다.클라이언트님이 프리랜서를 선정할 때 지원서와 함께 답변 내용을 검토할 수 있습니다.
+                          </p>
+                          <!-- D :: appliListBtnl class="on"일때 상태 변화 -->
+                          <div class="textProject freeApplicant">
+                            <ul class="appliList">
+                              <li class="appliListDesc">
+                                유사한 프로젝트를 수행한 경험이 있으신가요? 기술해 주세요!
+                              </li>
+                              <li class="appliListBtn">
+                                <input type="checkbox" name="" id="appliListBtn01_1">
+                                <label for="appliListBtn01_1" class="appliListBtnl on">비노출</label>
+                              </li>
+                            </ul>
+                            <ul class="appliList">
+                              <li class="appliListDesc">
+                                유사한 기술을 사용하여 프로젝트를 수행한 경험이 있나요?
+                              </li>
+                              <li class="appliListBtn">
+                                <input type="checkbox" name="" id="appliListBtn01_2">
+                                <label for="appliListBtn01_2" class="appliListBtnl">비노출</label>
+                              </li>
+                            </ul>
+                            <ul class="appliList">
+                              <li class="appliListDesc">
+                                이 프로젝트를 성공적으로 수행할 수 있는 제안이 있나요?
+                              </li>
+                              <li class="appliListBtn">
+                                <input type="checkbox" name="" id="appliListBtn01_3">
+                                <label for="appliListBtn01_3" class="appliListBtnl ">비노출</label>
+                              </li>
+                            </ul>
+                            <ul class="appliList">
+                              <li class="appliListDesc">
+                                지방 근무가 가능하신가요? 숙소제공합니다.
+                              </li>
+                              <li class="appliListBtn appliListBtn2"> <!--appliListBtn2 클래스추가 0807-->
+                                <a href="#">
+                                  <img src="../../admin_img/minusBtn2.png" alt="삭제">
+                                </a>
+                                <a href="#">
+                                  <img src="../../admin_img/addIcon.png" alt="추가">
+                                </a>
+                              </li>
+                            </ul>
+                            <ul class="appliList">
+                              <li class="appliListDesc">
+                                <input type="text" placeholder="질문을 입력해주세요.">
+                              </li>
+                              <li class="appliListBtn appliListBtn2"> <!--appliListBtn2 클래스추가 0807-->
+                                <a href="#">
+                                  <img src="../../admin_img/minusBtn2.png" alt="삭제">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- div class="initialInfo">
+                                      <h4 class="initialInfoTit">프로젝트 지원 필수요건</h4>
+                                      <p class="dDesc">
+                                            아래 조건에 맞는 아웃소싱 가능한 지원자를 받습니다. (복수선택 가능)
+                                        </p>
+                                      <div class="textProject blockList">
+                                          <div>
+                                              <input type="checkbox" name="pNeedCon" id="pNeedCon01">
+                                              <label for="pNeedCon01">개인 또는 팀 가능</label>
+                                          </div>
+                                          <div>
+                                              <input type="checkbox" name="pNeedCon" id="pNeedCon02">
+                                              <label for="pNeedCon02">사업자 가능 (세금계산서 발행)
+                                                  <input type="radio" name="pNeedCon02_con" id="pNeedCon02_con01">
+                                                  <label for="pNeedCon02_con01">개인사업자</label>
+                                                  <input type="radio" name="pNeedCon02_con" id="pNeedCon02_con02">
+                                                  <label for="pNeedCon02_con02">법인사업자</label>
+                                              </label>
+                                          </div>
+                                          <div>
+                                              <input type="checkbox" name="pNeedCon" id="pNeedCon03">
+                                              <label for="pNeedCon03">업력 1년 이상</label>
+                                          </div>
+                                          <div>
+                                              <input type="checkbox" name="pNeedCon" id="pNeedCon04">
+                                              <label for="pNeedCon04">보증보험 발급 가능</label>
+                                          </div>
+                                          <div>
+                                              <input type="checkbox" name="pNeedCon" id="pNeedCon05">
+                                              <label for="pNeedCon05">
+                                                  <input type="text" placeholder="직접입력" class="cTextInput">
+                                              </label>
+                                          </div>
+                                      </div>
+                                      </!-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+
+
+</html>

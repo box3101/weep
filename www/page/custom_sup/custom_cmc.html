@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+    <title>weep</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="../../img/logo.png">
+    <meta property="og:image:type" content="../../image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/@default.css" />
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.js"></script>
+</head>
+
+<body>
+    <div id="header" class="sub_header">
+        <div class="inner clearfix">
+            <h1 class="logo">
+                <a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+            </h1>
+            <ul id="main_gnb">
+                <li>
+                    <a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+                </li>
+                <li>
+                    <a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+                </li>
+                <li>
+                    <a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+                </li>
+                <li>
+                    <a href="/page/partner_sch/partner.html">파트너 검색</a>
+                </li>
+                <li>
+                    <a href="#">WEE.P 소개
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="clearfix small-txt">
+                <li>
+                    <a href="#">이용안내</a>
+                </li>
+                <li>
+                    <a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+                </li>
+            </ul>
+
+            <ul class="util clear">
+                <li>
+                    <a href="/page/login/login01.html">로그인</a>
+                </li>
+                <li>
+                    <a href="/page/login/login02.html">회원가입</a>
+                </li>
+
+                <div class="memberImg">
+                    <img src="/img/bg_member.png" alt="회원가입혜택">
+                </div>
+            </ul>
+            <ul class="login-util clear">
+                <li>
+                    <a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지"
+                                class="member-img"></span>홍길동</a>
+                    <ul class="member-menu">
+                        <li>
+                            <a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+                        </li>
+                        <li>
+                            <a href="">로그아웃</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <nav id="navi" style="top: 186px;">
+        <div class="project">
+            <div class="project-con">
+                <h2>최근 본 프로젝트 <span class="num">5</span></h2>
+                <ul>
+                    <li>
+                        <a href="#" class="on">비상주 오프라인 매장</a>
+                    </li>
+                    <li>
+                        <a href="#">안드로이드 프론트</a>
+                    </li>
+                    <li>
+                        <a href="#">비상주 오프라인 매장</a>
+                    </li>
+                    <li>
+                        <a href="#">인천국제공항</a>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">더보기</a>
+                </div>
+            </div>
+            <div class="freelan-con">
+                <h2>최근 본 프리랜서 <span class="num">2</span></h2>
+                <ul>
+
+                    <li>
+                        <a href="#" class="on">김철수</a>
+                    </li>
+                    <li>
+                        <a href="#">홍길동</a>
+                    </li>
+                    <li>
+                        <a href="#">비상주</a>
+                    </li>
+                    <li>
+                        <a href="#">김길동</a>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">더보기</a>
+                </div>
+            </div>
+        </div>
+        <ul class="banner">
+            <li>
+                <a href="#">
+                    <img src="img/navi_banner01.png" alt="네비배너1">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var scroll = $(this).scrollTop();
+                var navi_top = $("#navi").offset().top;
+
+                console.log(scroll);
+                console.log(navi_top);
+
+                if (scroll > 186) {
+                    $("#navi").css({
+                        "position": "fixed",
+                        "top": "20px"
+                    })
+                } else {
+                    $("#navi").css({
+                        "position": "absolute",
+                        "top": "186px"
+                    })
+                }
+            })
+        })
+    </script>
+
+    <div id="sub_contents">
+        <div class="sub_tit">
+            <div class="inner">
+                <h1>고객지원</h1>
+            </div>
+        </div>
+
+        <div id="sub_content" class="custom_sch">
+            <div class="inner">
+                <div class="left_menu">
+                    <ul>
+                        <li>
+                            <a href="../../page/custom_sup/custom_sup01.html">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="../../page/custom_sup/custom_sup02.html">뉴스/언론</a>
+                        </li>
+                        <li>
+                            <a class="on" href="../../page/custom_sup/custom_cmc.html">CMC 멤버쉽</a>
+                        </li>
+                        <li>
+                            <a href="../../page/custom_sup/event.html">이벤트</a>
+                        </li>
+                        <li>
+                            <a href="../../page/custom_sup/custom_sup03.html">자주 찾는 질문</a>
+                        </li>
+                        <li>
+                            <a href="../../page/custom_sup/custom_sup04.html">온라인 1:1 문의</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content_info">
+                    <div class="content">
+                        <div class="page-top">
+                            <div class="page-title">
+                              <h2>이용안내</h2>
+                            </div>
+                        </div>
+                        <div class="custom_sch">
+                            <ul class="custom_tabs type-cmc">
+                                <li>
+                                    <a href="#tab1" class="on">CMC멤버쉽 소개</a>
+                                </li>
+                                <li>
+                                    <a href="#tab2">운영진/멘토</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab1" class="tab-content hidden">
+                            <div class="mbrship-top">
+                                <p class="mbrship-txt">
+                                    위프는 업계최초로 CMC멤버쉽을 운영합니다. CMC는 ‘Career Management Center’의 약자로서 프리랜서의 커리어를</br>
+                                    집중 관리해주는 전문 지원센터로 전문 컨설턴트가 프리랜서의 업무를 효과적으로 지원하는 역할을 수행합니다.
+                                </p>
+                            </div>
+                            <div class="mbrship-intro-wrap">
+                                <h3 class="mbrship-intro-tit">CMC 멤버쉽 제공서비스</h3>
+                                <ul class="mbrship-intro-list">
+                                    <li class="mbrship-intro-box">
+                                        <div class="mbrship-box-img">
+                                            <img src="../../img/ico_mbrship_01.png" alt="커리어관리 아이콘"/>
+                                        </div>
+                                        <h4 class="mbrship-box-tit">프리랜서 커리어관리</h4>
+                                        <p class="mbrship-box-txt">
+                                            프로젝트의 종료 전 신규프로젝트를 제안하여 지속적인 업무진행이</br>
+                                            가능하도록 지원합니다. 전문가 멘토링과 1:1 업무코칭 서비스를</br>
+                                            통하여 단계적인 목표달성이 가능합니다.
+                                        </p>
+                                    </li>
+                                    <li class="mbrship-intro-box">
+                                        <div class="mbrship-box-img">
+                                            <img src="../../img/ico_mbrship_02.png" alt="업무지원 아이콘"/>
+                                        </div>
+                                        <h4 class="mbrship-box-tit">프리랜서 업무지원</h4>
+                                        <p class="mbrship-box-txt">
+                                            위프의 프리랜서 회원이 파견 및 아웃소싱 업무 중 발생할 수 있는</br>
+                                            고충이나 문제사항에 대하여 담당매니저가 지속적으로 지원서비스를</br>
+                                            제공합니다.
+                                        </p>
+                                    </li>
+                                    <li class="mbrship-intro-box">
+                                        <div class="mbrship-box-img">
+                                            <img src="../../img/ico_mbrship_03.png" alt="교육지원 아이콘"/>
+                                        </div>
+                                        <h4 class="mbrship-box-tit">프리랜서 교육지원</h4>
+                                        <p class="mbrship-box-txt type-ready">
+                                            <strong>준비중</strong>
+                                        </p>
+                                    </li>
+                                    <li class="mbrship-intro-box">
+                                        <div class="mbrship-box-img">
+                                            <img src="../../img/ico_mbrship_04.png" alt="에스크로 아이콘"/>
+                                        </div>
+                                        <h4 class="mbrship-box-tit">에스크로 시스템</h4>
+                                        <p class="mbrship-box-txt">
+                                            기업과의 비용관련 문제가 발생하지 않도록 위프 자체적으로</br>
+                                            에스크로 시스템을 구축하여 업무 외의 부분에서 문제가 발생하지</br>
+                                            않도록 합니다.
+                                        </p>
+                                    </li>
+                                    <li class="mbrship-intro-box">
+                                        <div class="mbrship-box-img">
+                                            <img src="../../img/ico_mbrship_05.png" alt="복지서비스 아이콘"/>
+                                        </div>
+                                        <h4 class="mbrship-box-tit">프리랜서 복지서비스</h4>
+                                        <p class="mbrship-box-txt type-ready">
+                                            <strong>준비중</strong>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="mbrship-bot">
+                                    <div class="mbrship-bot-box">
+                                        <p class="mbrship-bot-tit">CMC멤버쉽 이용권한</p>
+                                        <p class="mbrship-bot-txt">위 회원 특권은 회원가입 후 매칭이 1회 이상 완료된 프리랜서에 한해 부여됩니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab-content hidden">
+                            <div class="mbrship-top">
+                                <p class="mbrship-txt size--basic">
+                                    CMC멤버십에서 전문적인 멘토링서비스를 위해 위프는 다음과 같은 전문 Consultant를 운영합니다.
+                                </p>
+                            </div>
+                            <div class="mbrship-card-wrap">
+                                <ul class="mbrship-card-list">
+                                    <li class="mbrship-card">
+                                        <div class="mbrship-card-left">
+                                            <span class="mbrship-card-job">센터장</span>
+                                            <span class="mbrship-card-name">유영복 상무이사</span>
+                                        </div>
+                                        <div class="mbrship-card-right">
+                                            <ul class="mbrship-txt-list">
+                                                <li class="mbrship-list-txt">IT업계 20년 이상 근무경력 보유</li>
+                                                <li class="mbrship-list-txt">현재 (주)케이엘큐브 AI사업본부장</li>
+                                                <li class="mbrship-list-txt">K-Car e-Commerce 플랫폼 구축</li>
+                                                <li class="mbrship-list-txt">KB국민은행 WM상품 비대면채널 플랫폼 구축</li>
+                                                <li class="mbrship-list-txt">NH농협은행 통합스마트뱅킹 구축</li>
+                                                <li class="mbrship-list-txt">고용노동부 임금정보시스템 고도화 구축</li>
+                                                <li class="mbrship-list-txt">한국의료관광 온라인플랫폼 구축 (5개국어)</li>
+                                                <li class="mbrship-list-txt">한국사회적기업진흥원 기업통합정보시스템 구축</li>
+                                                <li class="mbrship-list-txt">한국고용정보원 직업훈련관리 포털시스템 구축</li>
+                                                <li class="mbrship-list-txt">(주)도시공유플랫폼 AI연구소장 역임</li>
+                                                <li class="mbrship-list-txt">(주)KT 통신망사업본부 근무</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mbrship-card">
+                                        <div class="mbrship-card-left">
+                                            <span class="mbrship-card-job">멘토링&업무코칭</span>
+                                            <span class="mbrship-card-name">노준철 이사</span>
+                                        </div>
+                                        <div class="mbrship-card-right">
+                                            <ul class="mbrship-txt-list">
+                                                <li class="mbrship-list-txt">IT업계 20년 이상 근무경력 보유</li>
+                                                <li class="mbrship-list-txt">현재 (주)케이엘큐브 weep사업본부 이사</li>
+                                                <li class="mbrship-list-txt">전북은행 스마트뱅킹 고도화 구축</li>
+                                                <li class="mbrship-list-txt">서울지하철 노선 알리미 App구축</li>
+                                                <li class="mbrship-list-txt">한국고용정보원 HRD시스템 구축</li>
+                                                <li class="mbrship-list-txt">한국의료관광 온라인플랫폼 구축 (5개국어)</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mbrship-card">
+                                        <div class="mbrship-card-left">
+                                            <span class="mbrship-card-job">멘토링&업무코칭</span>
+                                            <span class="mbrship-card-name">김승호 본부장</span>
+                                        </div>
+                                        <div class="mbrship-card-right">
+                                            <ul class="mbrship-txt-list">
+                                                <li class="mbrship-list-txt">IT업계 20년 이상 근무경력 보유</li>
+                                                <li class="mbrship-list-txt">현재 (주)케이엘큐브 weep사업본부장</li>
+                                                <li class="mbrship-list-txt">동원그룹 Robotic Process Automation 개발 및 운영</li>
+                                                <li class="mbrship-list-txt">동원그룹 챗봇, OCR, AI 연계 프로젝트 수행</li>
+                                                <li class="mbrship-list-txt">동원그룹 차세대 통합물류시스템 구축</li>
+                                                <li class="mbrship-list-txt">동원그룹 경영정보시스템 개발 및 운영</li>
+                                                <li class="mbrship-list-txt">서울시 농수산식품공사 전산시스템 개선</li>
+                                                <li class="mbrship-list-txt">대한제분(주) 영업관리시스템 개발 및 운영</li>
+                                                <li class="mbrship-list-txt">(주)동원엔터프라이즈 AI추진팀 차장 역임</li>
+                                                <li class="mbrship-list-txt">(주)동원엔터프라이즈 IT본부 시스템운영팀장 역임</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mbrship-card">
+                                        <div class="mbrship-card-left">
+                                            <span class="mbrship-card-job">멘토링&업무코칭</span>
+                                            <span class="mbrship-card-name">장유리 과장</span>
+                                        </div>
+                                        <div class="mbrship-card-right">
+                                            <ul class="mbrship-txt-list">
+                                                <li class="mbrship-list-txt">현재 (주)케이엘큐브 weep사업본부 매니저</li>
+                                                <li class="mbrship-list-txt">Wee.p플랫폼 구축 기획 참여</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer_inner">
+            <div class="inner">
+                <div class="wrap">
+                    <div class="left">
+                        <div class="f_logo">
+                            <img src="img/f_logo_new.png" alt="">
+                            <p>주식회사 케이엘큐브</p>
+                        </div>
+                        <div class="contact">
+                            <span class="bar">지원센터:  02-3442-5001</span>
+                            <span>운영시간 : 평일 09:00~18:00 / 주말.공휴일 휴무</span>
+                        </div>
+                        <div class="address">
+                            <span class="bar">대표 : 하윤호</span><span class="bar">개인정보보호책임자 : 유영복</span><span>사업자등록번호 : 154-81-00795</span><br/>
+                            <span class="bar">주소 : 서울시 강남구 선릉로 133길 4 아이큐빌딩 3층</span><span>통신판매업신고 : 제 2020-서울강남-02210 호<span>
+                        </div>
+                    </div>
+                    <div class="right help">
+                        <div>
+                            <p><a href="#!">회사소개</a></p>
+                            <p><a href="#!">지원센터</a></p>
+                        </div>
+                        <div>
+                            <p><a href="#!">프로젝트 문의</a></p>
+                            <p><a href="#!">프리랜서 문의</a></p>
+                        </div>
+                        <div>
+                            <p><a href="/page/service/agreement.html">이용약관</a></p>
+                            <p><a href="/page/service/privacy.html">개인정보처리방침</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="f_bottom">
+                <p class="copy"> Copyright © 2020 WEEP. Inc. All rights reserved.</p>
+                <p>위프는 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가 부담하고, 이에 대하여 위프인은 일체 책임지지 않습니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

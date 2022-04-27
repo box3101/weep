@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head style="overflow-y:hidden;">
+    <title>AM00607</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:image:type" content="/image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/project_reg.css">
+    <link rel="stylesheet" href="../../css/datepicker.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/customTab.js"></script>
+    <script type="text/javascript" src="../../js/sideBar_toggle.js"></script>
+    <script type="text/javascript" src="../../js/admin_common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script> 
+    <script>
+        $(function () {
+           //datepicker 
+           $(".day_input").datepicker({
+              language: 'en',
+              autoClose: true,
+              dateFormat:'yyyy.mm.dd'
+              //minDate: new Date()
+           });
+        });
+    </script>
+</head>
+
+
+<body>
+<!-- admin_header : S ---------->
+<div id="header">
+    <div class="adminLogo">
+        <a href="/admin/main.html"><img src="../../admin_img/admin_logo.png" alt="관리자메인으로 바로가기"></a>
+    </div>
+    <ul id="adminGnb">
+        <li>
+            <a href="../../page/AM00100/AM00101.html">프로젝트</a>
+        </li>
+        <li>
+            <a href="../../page/AM00200/AM00201.html">아웃소싱</a>
+        </li>
+        <li>
+            <a href="../../page/AM00300/AM00301.html">프리랜서</a>
+        </li>
+        <li>
+            <a href="../../page/AM00400/AM00401.html">파트너</a>
+        </li>
+        <li>
+            <a href="../../page/AM00500/AM00500.html">클라이언트</a>
+        </li>
+        <li class="on">
+            <a href="../../page/AM00600/AM00601.html">매니저</a>
+        </li>
+        <li>
+            <a href="../../page/AM00700/AM00701.html">회원</a>
+        </li>
+        <li>
+            <a href="../../page/AM00800/AM00801.html">계약</a>
+        </li>
+        <li>
+            <a href="../../page/AM00900/AM00901.html">정산</a>
+        </li>
+        <li>
+            <a href="../../page/AM01000/AM01001.html">유료상품</a>
+        </li>
+        <li>
+            <a href="../../page/AM01200/AM01201.html">사이트관리</a>
+        </li>
+    </ul>
+</div>
+<!-- admin_header : E ---------->
+
+<!-- admin_wrapper : S ---------->
+<div class="wrapper clearfix">
+<!-- admin_sidebar : S ---->
+        <div id="sidebar">
+            <div class="info">
+                <div class="info_icon">
+                    <button id="sidebarCollapse">
+                    </button>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <span data-tooltip-text="홈버튼">
+                            <img src="../../admin_img/left_home_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <span data-tooltip-text="잠금버튼">
+                            <img src="../../admin_img/left_lock_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <span data-tooltip-text="마이페이지">
+                            <img src="../../admin_img/my_page_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="../../page/AM01100/AM01101.html">
+                        <span data-tooltip-text="현황 및 통계">
+                            <img src="../../admin_img/AM01100_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="../../page/AM01300/AM01301.html">
+                        <span data-tooltip-text="게시판 관리">
+                            <img src="../../admin_img/AM01300_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="../../page/AM01400/AM01401.html">
+                        <span data-tooltip-text="시스템 관리">
+                            <img src="../../admin_img/AM01400_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        <div class="nav_side">
+            <div class="SNB_title">
+                <img src="../../admin_img/admin_leftLnb.png" alt="">
+                <h1>매니저관리</h1>
+            </div>
+            <ul class="SNB">
+                <li class="on"><a href="../../page/AM00600/AM00601.html">업무관리</a></li>
+                <li><a href="../../page/AM00600/AM00611.html">계약관리</a></li>
+                <li><a href="../../page/AM00600/AM00621.html">완료 프로젝트</a></li>
+                <li><a href="../../page/AM00600/AM00631.html">완료 아웃소싱</a></li>
+                <li><a href="../../page/AM00600/AM00641.html">현황&등록</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- admin_sidebar : E ---->
+
+<!-- admin_contents : S ---->
+    <div id="contents">
+        <div class="inner">
+            <div class="title clearfix">
+                <h2>진행업무</h2>
+                <ul class="breadcrumb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">매니저 관리</a></li>
+                    <li><a href="../../page/AM00600/AM00601.html">업무관리</a></li>
+                    <li><a href="../../page/AM00600/AM00602.html">아웃소싱</a></li>
+                </ul>
+            </div>
+            <div class="tapBox">
+                <ul class="tab liN5">
+                    <li><a href="../../page/AM00600/AM00602.html">클라이언트</a></li>
+                    <li><a href="../../page/AM00600/AM00606.html">프로젝트</a></li>
+                    <li class="on"><a href="../../page/AM00600/AM00607.html">아웃소싱</a></li>
+                    <li><a href="../../page/AM00600/AM00608.html">프리랜서</a></li>
+                    <li><a href="../../page/AM00600/AM00609.html">파트너</a></li>
+                </ul>
+            </div>
+            <section class="content_detail02 clearfix">
+                <div class="lef">
+                    <form action="">
+                        <table class="detail">
+                            <caption class="hidden"></caption>
+                            <tbody>
+                                <tr>
+                                    <th>매니저</th>
+                                    <td>김담당(damdangk)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="ref">
+                    <div class="btn_exel"><a href="">위프톡</a></div>
+                </div>
+            </section>
+            <div class="searchBox clearfix">
+                <div class="searchOption">
+                    <div class="option_calender">
+                        <span class="w100">기간</span>
+                        <select class="w120 mr5" name="" id="" title="등록일을 선택해주세요">
+                            <option value="">등록일</option>
+                            <option value="">마감일</option>
+                        </select>
+                        <input type="text" class="day_input w120" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                        
+                        <span class="mr8 ml8">~</span>
+                        <input type="text" class="day_input w120" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요.">
+                        
+                        <ul class="calender_radio">
+                            <li>
+                                <input type="radio" name="term" id="OTD" value="당일">
+                                <label for="OTD"><span>당일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day1" value="1일">
+                                <label for="day1"><span>1일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day7" value="7일">
+                                <label for="day7"><span>7일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day10" value="10일">
+                                <label for="day10"><span>10일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day15" value="15일">
+                                <label for="day15"><span>15일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month1" value="1개월">
+                                <label for="month1"><span>1개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month3" value="3개월">
+                                <label for="month3"><span>3개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month6" value="6개월">
+                                <label for="month6"><span>6개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="whole" value="전체">
+                                <label for="whole"><span>전체</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="option_name">
+                        <div class="lef wAuto"> 
+                            <span class="w100">업무 배정상태</span>
+                        </div>
+                        <div class="ref wAuto">
+                            <div class="opName_wrap w892">
+                                <input type="radio" name="T" id="T1">
+                                <label for="T1" class="checkL ">전체</label>
+                                <input type="radio" name="T" id="T2">
+                                <label for="T2" class="checkL ">승인대기</label>
+                                <input type="radio" name="T" id="T3">
+                                <label for="T3" class="checkL">모집중</label>
+                                <input type="radio" name="T" id="T4">
+                                <label for="T5" class="checkL">계약대기</label>
+                                <input type="radio" name="T" id="T6">
+                                <label for="T6" class="checkL">계약완료</label>
+                                <input type="radio" name="T" id="T7">
+                                <label for="T7" class="checkL">진행중</label>
+                                <input type="radio" name="T" id="T8">
+                                <label for="T8" class="checkL">완료</label>
+                                <input type="radio" name="T" id="T9">
+                                <label for="T9" class="checkL">취소</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option_name">
+                        <div class="lef wAuto">
+                            <span class="w100">구분</span>
+                            <div class="opName_wrap w270 ml3">
+                                <input type="radio" name="M" id="M1">
+                                <label for="M1" class="checkL">전체</label>
+                                <input type="radio" name="M" id="M2">
+                                <label for="M2" class="checkL">정상</label>
+                                <input type="radio" name="M" id="M3">
+                                <label for="M3" class="checkL">정지</label>
+                            </div>
+                        </div>
+                        <div class="ref wAuto"> 
+                            <span class="w72"><label for="">검색</label></span>
+                            <input type="text" id="" class="w500" placeholder="클라이언트명, 제목, 계약자명 조회가능">
+                        </div>
+                    </div>
+                </div>
+                <div class="ref">
+                        <div class="btn_search">
+                            <a href="">검색</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="tableBox">
+                <div class="list_number clearfix">
+                    <div class="lef">
+                        <p>총 <span class="c_orange">50</span>건</p>
+                    </div>
+                    <div class="ref">
+                        <select name="" id="">
+                            <option value="" selected>보기</option>
+                            <option value="">10</option>
+                            <option value="">15</option>
+                            <option value="">20</option>
+                            <option value="">25</option>
+                            <option value="">30</option>
+                        </select>
+                    </div>
+                </div>
+                <form action="">
+                    <table summery="">
+                        <caption class="hidden"></caption>
+                        <thead>
+                            <th>
+                                <input type="checkbox" name="c1" id="c1">
+                                <label for="c1"></label>
+                            </th>
+                            <th>번호</th>
+                            <th>구분</th>
+                            <th>프로젝트명</th>
+                            <th>모집</th>
+                            <th>마감일</th>
+                            <th>지원자</th>
+                            <th>찜</th>
+                            <th>등록일</th>
+                            <th>상태</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c2">
+                                    <label for="c2"></label>
+                                </td>
+                                <td>100</td>
+                                <td>프로젝트</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]
+                                        오프라인 매장 주문 플랫폼 Admin Front-end 개발</a>
+                                </td>
+                                <td>12명</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><a href="../../page/AM00600/AM00604.html">103</a></td>
+                                <td><a href="../../page/AM00600/AM00605.html">77</a></td>
+                                <td>2020-00-00 00:00</td>
+                                <td>
+                                    <select name="" id="">
+                                    </select>
+                                    <div class="btn_table03"><a href="#">저장</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c3">
+                                    <label for="c3"></label>
+                                </td>
+                                <td>99</td>
+                                <td>프로젝트</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]
+                                        오프라인 매장 주문 플랫폼 Admin Front-end 개발</a>
+                                </td>
+                                <td>12명</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><a href="../../page/AM00600/AM00604.html">103</a></td>
+                                <td><a href="../../page/AM00600/AM00605.html">77</a></td>
+                                <td>2020-00-00 00:00</td>
+                                <td>
+                                    <select name="" id="">
+                                    </select>
+                                    <div class="btn_table03"><a href="#">저장</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c4">
+                                    <label for="c4"></label>
+                                </td>
+                                <td>98</td>
+                                <td>프로젝트</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]
+                                        오프라인 매장 주문 플랫폼 Admin Front-end 개발</a>
+                                </td>
+                                <td>12명</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><a href="../../page/AM00600/AM00604.html">103</a></td>
+                                <td><a href="../../page/AM00600/AM00605.html">77</a></td>
+                                <td>2020-00-00 00:00</td>
+                                <td>
+                                    <select name="" id="">
+                                    </select>
+                                    <div class="btn_table03"><a href="#">저장</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c5">
+                                    <label for="c5"></label>
+                                </td>
+                                <td>97</td>
+                                <td>프로젝트</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]
+                                        오프라인 매장 주문 플랫폼 Admin Front-end 개발</a>
+                                </td>
+                                <td>12명</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><a href="../../page/AM00600/AM00604.html">103</a></td>
+                                <td><a href="../../page/AM00600/AM00605.html">77</a></td>
+                                <td>2020-00-00 00:00</td>
+                                <td>
+                                    <select name="" id="">
+                                    </select>
+                                    <div class="btn_table03"><a href="#">저장</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c6">
+                                    <label for="c6"></label>
+                                </td>
+                                <td>96</td>
+                                <td>프로젝트</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]
+                                        오프라인 매장 주문 플랫폼 Admin Front-end 개발</a>
+                                </td>
+                                <td>12명</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><a href="../../page/AM00600/AM00604.html">103</a></td>
+                                <td><a href="../../page/AM00600/AM00605.html">77</a></td>
+                                <td>2020-00-00 00:00</td>
+                                <td>
+                                    <select name="" id="">
+                                    </select>
+                                    <div class="btn_table03"><a href="#">저장</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c7">
+                                    <label for="c7"></label>
+                                </td>
+                                <td>95</td>
+                                <td>프로젝트</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]
+                                        오프라인 매장 주문 플랫폼 Admin Front-end 개발</a>
+                                </td>
+                                <td>12명</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><a href="../../page/AM00600/AM00604.html">103</a></td>
+                                <td><a href="../../page/AM00600/AM00605.html">77</a></td>
+                                <td>2020-00-00 00:00</td>
+                                <td>
+                                    <select name="" id="">
+                                    </select>
+                                    <div class="btn_table03"><a href="#">저장</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c8">
+                                    <label for="c8"></label>
+                                </td>
+                                <td>94</td>
+                                <td>프로젝트</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]
+                                        오프라인 매장 주문 플랫폼 Admin Front-end 개발</a>
+                                </td>
+                                <td>12명</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><a href="../../page/AM00600/AM00604.html">103</a></td>
+                                <td><a href="../../page/AM00600/AM00605.html">77</a></td>
+                                <td>2020-00-00 00:00</td>
+                                <td>
+                                    <select name="" id="">
+                                    </select>
+                                    <div class="btn_table03"><a href="#">저장</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c9">
+                                    <label for="c9"></label>
+                                </td>
+                                <td>93</td>
+                                <td>프로젝트</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]
+                                        오프라인 매장 주문 플랫폼 Admin Front-end 개발</a>
+                                </td>
+                                <td>12명</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><a href="../../page/AM00600/AM00604.html">103</a></td>
+                                <td><a href="../../page/AM00600/AM00605.html">77</a></td>
+                                <td>2020-00-00 00:00</td>
+                                <td>
+                                    <select name="" id="">
+                                    </select>
+                                    <div class="btn_table03"><a href="#">저장</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c10">
+                                    <label for="c10"></label>
+                                </td>
+                                <td>92</td>
+                                <td>프로젝트</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]
+                                        오프라인 매장 주문 플랫폼 Admin Front-end 개발</a>
+                                </td>
+                                <td>12명</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><a href="../../page/AM00600/AM00604.html">103</a></td>
+                                <td><a href="../../page/AM00600/AM00605.html">77</a></td>
+                                <td>2020-00-00 00:00</td>
+                                <td>
+                                    <select name="" id="">
+                                    </select>
+                                    <div class="btn_table03"><a href="#">저장</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c11">
+                                    <label for="c11"></label>
+                                </td>
+                                <td>91</td>
+                                <td>프로젝트</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]
+                                        오프라인 매장 주문 플랫폼 Admin Front-end 개발</a>
+                                </td>
+                                <td>12명</td>
+                                <td>2020-00-00 00:00</td>
+                                <td><a href="../../page/AM00600/AM00604.html">103</a></td>
+                                <td><a href="../../page/AM00600/AM00605.html">77</a></td>
+                                <td>2020-00-00 00:00</td>
+                                <td>
+                                    <select name="" id="">
+                                    </select>
+                                    <div class="btn_table03"><a href="#">저장</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="table_bot clearfix">
+                    <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                </div>
+                <div class="table_pagination">
+                    <ul class="pagination">
+                        <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""/></a></li>
+                        <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""/></a></li>
+                        <li class="active"><a href="" class="on">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">6</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">8</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">10</a></li>
+                        <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""/></a></li>
+                        <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- admin_contents : E ---->
+</div>
+<!-- admin_wrapper : E ---------->
+</body>
+</html>

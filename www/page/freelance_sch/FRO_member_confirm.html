@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head>
+    <title>회원인증 관리</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="../../img/logo.png">
+    <meta property="og:image:type" content="../../image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
+    <!--datepicker 플러그인 소스-->
+    <link rel="stylesheet" href="../../css/@default.css" />
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/datepicker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
+    <!--datepicker 플러그인 소스-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+
+<body>
+    <div id="header" class="sub_header">
+        <div class="inner clearfix">
+            <h1 class="logo">
+                <a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+            </h1>
+            <ul id="main_gnb">
+                <li>
+                    <a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+                </li>
+                <li>
+                    <a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+                </li>
+                <li>
+                    <a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+                </li>
+                <li>
+                    <a href="/page/partner_sch/partner.html">파트너 검색</a>
+                </li>
+                <li>
+                    <a href="#">WEE.P 소개
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="clearfix small-txt">
+                <li>
+                    <a href="#">이용안내</a>
+                </li>
+                <li>
+                    <a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+                </li>
+            </ul>
+
+            <ul class="util clear">
+                <li>
+                    <a href="/page/login/login01.html">로그인</a>
+                </li>
+                <li>
+                    <a href="/page/login/login02.html">회원가입</a>
+                </li>
+
+                <div class="memberImg">
+                    <img src="/img/bg_member.png" alt="회원가입혜택">
+                </div>
+            </ul>
+            <ul class="login-util clear">
+                <li>
+                    <a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지"
+                                class="member-img"></span>홍길동</a>
+                    <ul class="member-menu">
+                        <li>
+                            <a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+                        </li>
+                        <li>
+                            <a href="">로그아웃</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="sub_contents">
+        <div class="sub_tit">
+            <div class="inner">
+                <h1>마이페이지</h1>
+            </div>
+        </div>
+        <div id="sub_content">
+            <div class="inner">
+                <div class="left_menu">
+                    <ul>
+                        <li>
+                            <a href="/page/freelance_sch/FRO0511.html">나의 정보/설정</a>
+                        </li>
+                        <li>
+                            <a href="/page/freelance_sch/FRO_member_confirm.html" class="on">회원인증 관리</a>
+                        </li>
+                        <li>
+                            <a href="/page/freelance_sch/FRO0521.html">이력서 관리</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch03.html">나의 문의 내역</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch04.html">나의 결제 내역</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch05.html">보유 캐시 / 충전</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch06.html">적립금 내역</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch06.html">쿠폰 관리</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch06.html">광고 신청/관리</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch06.html">수익 관리</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch06.html">비밀번호 변경</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right_content">
+                    <div class="page-top">
+                        <div class="page-title">
+                            <h2>회원인증 관리</h2>
+                        </div>
+                    </div>
+                    <div class="confirm-top">
+                        <div class="text-box">
+                            <i></i>
+                            <p>안전한 프로젝트 계약을 위해 사업자등록증을 통한 신원하고 있으며, 개인정보취급방침에 의거하여 관리되고 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="page-sub-title">등록 문서 안내</div>
+                    <div class="confirm-info">
+                        <ol>
+                            <li>
+                                <div class="num">1. 클라이언트회원 인증 서류</div>
+                                <table class="table table-bordered table-fixed">
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>클라이언트 회원</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">제출서류</td>
+                                            <td class="text-center">사업자 등록증</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <div class="num">2. 서류 등록 절차</div>
+                                <div class="text-box">
+                                    <p>• 서류 등록이 완료 되면 담당 매니저를 통해 계약서 작성이 진행되며, 계약이 진행됩니다.</p>
+                                    <p>• 회원 인증정보가 변경 되시거나 진행상황을 확인하고자 하실 경우 고객만족센터로 연락 주시면 신속히 처리해드리도록 하겠습니다.</p>
+                                    <div>
+                                        &gt;  고객만족센터 : 02) 1588-1588 <br>
+                                        &gt;  E-mail문의 : support@weep.co.kr
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="num">3 인증 서류</div>
+                                <div class="row row-0">
+                                    <div class="col">
+                                        <input type="text" class="form-control bd-r-0" placeholder="사업자등록증.jpg">
+                                        <input type="file" id="file1" class="sr-only">
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#file1" class="btn btn-lg btn-outline-dark" data-event="file">파일첨부</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="num">4. 세금계산서 발급 이메일</div>
+                                <input type="text" class="form-control" placeholder="세금계산서 발행 이메일 주소를 입력해 주세요!">
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="text-center m-t-40">
+                        <a href="" class="btn btn-lg btn-dark min-w-170px">문서 제출</a>
+                    </div>
+
+                    <script>
+                        $('[data-event="file"]').on('click',function(e){
+                            e.preventDefault();
+                            $($(this).attr('href')).click();
+                        });
+                    </script>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer_info">
+            <div id="footer">
+                <div class="footer_top">
+                    <div class="inner">
+                        <ul>
+                            <li>
+                                <a href="#">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="#"> 프로젝트 문의</a>
+                            </li>
+                            <li>
+                                <a href="#"> 프리랜서 문의</a>
+                            </li>
+                            <li>
+                                <a href="#">인재채용</a>
+                            </li>
+                            <li>
+                                <a href="#">이용약관 </a>
+                            </li>
+                            <li>
+                                <a href="#">개인정보처리방침 </a>
+                            </li>
+                            <li>
+                                <a href="#">고객센터</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer_inner">
+                    <div class="inner">
+                        <div class="wrap">
+                            <article>
+                                <div class="f_logo">
+                                    <img src="../..//img/f_logo.png" alt="">
+                                </div>
+                                <address>
+                                    주식회사 케이엘큐브 <br>
+                                    대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                                    사업자등록번호: 100-11-22203 <br>
+                                    통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                                    호스팅 사업자: Amazon Web Service(AWS)
+                                </address>
+                            </article>
+                            <article class="right">
+                                <h2>IT잡스 SNS 채널</h2>
+                                <ul class="sns">
+                                    <li>
+                                        <a href="#">
+                                            <img src="../../img/f_sns01.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../../img/f_sns02.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../../img/f_sns03.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../../img/f_sns04.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="phone">
+                                    <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_bottom">
+                    <div class="inner">
+                        <p>
+                            잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각
+                            판매자가
+                            부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+                        </p>
+                        <p class="copy">
+                            Copyright © 2020 Jons In. Inc. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+    <title>쿠폰 관리</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="../../img/logo.png">
+    <meta property="og:image:type" content="../../image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/datepicker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/@default.css" />
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+
+<body>
+    <div id="header" class="sub_header">
+        <div class="inner clearfix">
+            <h1 class="logo">
+                <a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+            </h1>
+            <ul id="main_gnb">
+                <li>
+                    <a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+                </li>
+                <li>
+                    <a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+                </li>
+                <li>
+                    <a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+                </li>
+                <li>
+                    <a href="/page/partner_sch/partner.html">파트너 검색</a>
+                </li>
+                <li>
+                    <a href="#">WEE.P 소개
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="clearfix small-txt">
+                <li>
+                    <a href="#">이용안내</a>
+                </li>
+                <li>
+                    <a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+                </li>
+            </ul>
+
+            <ul class="util clear">
+                <li>
+                    <a href="/page/login/login01.html">로그인</a>
+                </li>
+                <li>
+                    <a href="/page/login/login02.html">회원가입</a>
+                </li>
+
+                <div class="memberImg">
+                    <img src="/img/bg_member.png" alt="회원가입혜택">
+                </div>
+            </ul>
+            <ul class="login-util clear">
+                <li>
+                    <a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지"
+                                class="member-img"></span>홍길동</a>
+                    <ul class="member-menu">
+                        <li>
+                            <a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+                        </li>
+                        <li>
+                            <a href="">로그아웃</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="sub_contents">
+        <div class="sub_tit">
+            <div class="inner">
+                <h1>마이페이지</h1>
+            </div>
+        </div>
+        <div id="sub_content">
+            <div class="inner">
+                <div class="left_menu">
+                    <ul>
+                        <li>
+                            <a href="/page/project_sch/project_sch.html">나의 정보/설정</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch02-1.html">이력서 관리</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch03.html">나의 문의 내역</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch04.html">나의 결제 내역</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch05.html">보유 캐시 / 충전</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch06.html">적립금 내역</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch06.html" class="on">쿠폰 관리</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch06.html">광고 신청/관리</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch06.html">수익 관리</a>
+                        </li>
+                        <li>
+                            <a href="/page/project_sch/project_sch06.html">비밀번호 변경</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <div class="cash_wrap coupon-wrap">
+                        <div class="title" style="margin-top: 0;">
+                            <h2 class="littleTit2">보유 쿠폰</h2>
+                        </div>
+                        <div id="" class="fund_area">
+                            <div class="coupon-search">
+                                <p class="cou-desc">쿠폰코드 입력하세요.</p>
+                                <div class="cou-sear-wrap clearfix">
+                                    <input type="text">
+                                    <button type="submit">쿠폰등록</button>
+                                </div>
+                            </div>
+                            <div class="fund_search_wrap">
+                                <form action="">
+                                    <div class="board-search m-b-30">
+                                        <div class="row row-10 align-items-center">
+                                            <div class="col">
+                                                <input type="text" placeholder="" class="form-control datepicker-here">
+                                            </div>
+                                            <div class="col-auto">~</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="" class="form-control datepicker-here">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" placeholder="" class="form-control">
+                                            </div>
+                                            <div class="col-auto">
+                                                <a href="javascript:;" class="btn btn-lg btn-dark">검색</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="fund_result">
+                                    <table>
+                                        <colgroup>
+                                            <col width="20%" />
+                                            <col width="20%" />
+                                            <col width="20%" />
+                                            <col width="20%" />
+                                            <col width="20%" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th class="num">번호</th>
+                                                <th class="type">쿠폰명</th>
+                                                <th class="price">유효기간</th>
+                                                <th class="date1">사용일</th>
+                                                <!-- <th class="date2">잔액</th> -->
+                                                <th class="status">쿠폰상태</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>상품 구매 사용</td>
+                                                <td>55,000원</td>
+                                                <td>2020-06-11</td>
+                                                <td class="my_status"><span class="my_btn_suc my_btn">사용완료</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>수수료 입금 적립</td>
+                                                <td>55,000원</td>
+                                                <td>2020-06-11</td>
+                                                <td class="my_status"><span class="my_btn_ing my_btn">기간완료</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>상위노출 상품 1주일 권 구입</td>
+                                                <td>55,000원</td>
+                                                <td>2020-06-11</td>
+                                                <td class="my_status"><span class="my_btn_cancel my_btn">미사용</span></td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                    <table class="no_table">
+                                        <colgroup>
+                                            <col width="16.66666667%" />
+                                            <col width="16.66666667%" />
+                                            <col width="16.66666667%" />
+                                            <col width="16.66666667%" />
+                                            <col width="16.66666667%" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th class="num">번호</th>
+                                                <th class="type">쿠폰명</th>
+                                                <th class="price">유효기간</th>
+                                                <th class="date1">사용일</th>
+                                                <!-- <th class="date2">잔액</th> -->
+                                                <th class="status">쿠폰상태</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="no_result">
+                                                <td colspan="6"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--paging 수정::200807 -->
+                                    <div class="paging_wrap">
+                                        <div class="paging">
+                                            <div class="page_prev">
+                                                <a class="page_prev_link" href="#">
+                                                    <i class="fas fa-angle-double-left"></i>
+                                                </a>
+                                                <a class="page_prev_link" href="#">
+                                                    <i class="fas fa-angle-left"></i>
+                                                </a>
+                                            </div>
+                                            <div class="page_num">
+                                                <a href="#" class="page_num_link on">1</a>
+                                                <a href="#" class="page_num_link">2</a>
+                                                <a href="#" class="page_num_link">3</a>
+                                                <a href="#" class="page_num_link">4</a>
+                                                <a href="#" class="page_num_link">5</a>
+                                            </div>
+                                            <div class="page_next">
+                                                <a href="#" class="page_next_link">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                                <a href="#" class="page_next_link">
+                                                    <i class="fas fa-angle-double-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weep-cash-desc">
+                                <h3>꼭 확인해 주세요!</h3>
+                                <div class="cash-desc-list">
+                                    <ul>
+                                        <li>주문 1회당 쿠폰 1개에 한하여 적용되며, 타 이벤트 할인과 중복 적용되지 않습니다. </li>
+                                        <li>서비스 구매 시 총 결제 금액에서 할인이 적용되며, 쿠폰 금액 이상 구매 시 적용 가능합니다. </li>
+                                        <li>구매 금액에 따라 조건에 맞는 쿠폰을 발급받아 사용할 수 있으며, 할인 쿠폰별로 적용 대상이 다를 수 있습니다. </li>
+                                        <li>쿠폰 사용 후 다른 쿠폰으로의 변경은 불가합니다. </li>
+                                        <li>쿠폰을 적용하신 주문 건이 유효기간 이후 취소되는 경우, 복구가 불가합니다. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(function () {
+                    //datepicker
+                    $(".datepicker-here").datepicker({
+                        //language: 'en',
+                        autoClose: true,
+                        dateFormat: 'yyyy.mm.dd'
+                        //minDate: new Date()
+                    });
+                });
+            </script>
+            <div id="footer_info">
+                <div id="footer">
+                    <div class="footer_top">
+                        <div class="inner">
+                            <ul>
+                                <li>
+                                    <a href="#">회사소개</a>
+                                </li>
+                                <li>
+                                    <a href="#"> 프로젝트 문의</a>
+                                </li>
+                                <li>
+                                    <a href="#"> 프리랜서 문의</a>
+                                </li>
+                                <li>
+                                    <a href="#">인재채용</a>
+                                </li>
+                                <li>
+                                    <a href="#">이용약관 </a>
+                                </li>
+                                <li>
+                                    <a href="#">개인정보처리방침 </a>
+                                </li>
+                                <li>
+                                    <a href="#">고객센터</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer_inner">
+                        <div class="inner">
+                            <div class="wrap">
+                                <article>
+                                    <div class="f_logo">
+                                        <img src="../..//img/f_logo.png" alt="">
+                                    </div>
+                                    <address>
+                                        주식회사 케이엘큐브 <br>
+                                        대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                                        사업자등록번호: 100-11-22203 <br>
+                                        통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                                        호스팅 사업자: Amazon Web Service(AWS)
+                                    </address>
+                                </article>
+                                <article class="right">
+                                    <h2>IT잡스 SNS 채널</h2>
+                                    <ul class="sns">
+                                        <li>
+                                            <a href="#">
+                                                <img src="../../img/f_sns01.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="../../img/f_sns02.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="../../img/f_sns03.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="../../img/f_sns04.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="phone">
+                                        <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer_bottom">
+                        <div class="inner">
+                            <p>
+                                잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각
+                                판매자가
+                                부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+                            </p>
+                            <p class="copy">
+                                Copyright © 2020 Jons In. Inc. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+
+</html>

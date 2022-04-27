@@ -1,0 +1,2953 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+    <title>아웃소싱 맞춤검색</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="../../img/logo.png">
+    <meta property="og:image:type" content="../../image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/@default.css" />
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+	<link rel="stylesheet" href="../../css/jquery.mCustomScrollbar.css">
+
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.js"></script>
+</head>
+
+<body>
+	<div id="header" class="sub_header">
+		<div class="inner clearfix">
+			<h1 class="logo">
+				<a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+			</h1>
+			<ul id="main_gnb">
+				<li>
+					<a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+				</li>
+				<li>
+					<a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+				</li>
+				<li>
+					<a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+				</li>
+				<li>
+					<a href="/page/partner_sch/partner.html">파트너 검색</a>
+				</li>
+				<li>
+					<a href="#">WEE.P 소개
+					</a>
+				</li>
+
+			</ul>
+			<ul class="clearfix small-txt">
+				<li>
+					<a href="#">이용안내</a>
+				</li>
+				<li>
+					<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+				</li>
+			</ul>
+
+			<ul class="util clear">
+				<li>
+					<a href="/page/login/login01.html">로그인</a>
+				</li>
+				<li>
+					<a href="#">회원가입</a>
+				</li>
+
+				<div class="memberImg">
+					<img src="/img/bg_member.png" alt="회원가입혜택">
+				</div>
+			</ul>
+			<ul class="login-util clear">
+				<li>
+					<a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지" class="member-img"></span>홍길동</a>
+					<ul class="member-menu">
+						<li>
+							<a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+						</li>
+						<li>
+							<a href="">로그아웃</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<nav id="navi" style="top: 186px;">
+		<div class="project">
+			<div class="project-con">
+				<h2>최근 본 프로젝트 <span class="num">5</span></h2>
+				<ul>
+					<li>
+						<a href="#" class="on">비상주 오프라인 매장</a>
+					</li>
+					<li>
+						<a href="#">안드로이드 프론트</a>
+					</li>
+					<li>
+						<a href="#">비상주 오프라인 매장</a>
+					</li>
+					<li>
+						<a href="#">인천국제공항</a>
+					</li>
+				</ul>
+				<div class="more">
+					<a href="">더보기</a>
+				</div>
+			</div>
+			<div class="freelan-con">
+				<h2>최근 본 프리랜서 <span class="num">2</span></h2>
+				<ul>
+
+					<li>
+						<a href="#" class="on">김철수</a>
+					</li>
+					<li>
+						<a href="#">홍길동</a>
+					</li>
+					<li>
+						<a href="#">비상주</a>
+					</li>
+					<li>
+						<a href="#">김길동</a>
+					</li>
+				</ul>
+				<div class="more">
+					<a href="">더보기</a>
+				</div>
+			</div>
+		</div>
+		<ul class="banner">
+			<li>
+				<a href="#">
+					<img src="img/navi_banner01.png" alt="네비배너1">
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<script>
+		$(function () {
+			$(window).scroll(function () {
+				var scroll = $(this).scrollTop();
+				var navi_top = $("#navi").offset().top;
+
+				console.log(scroll);
+				console.log(navi_top);
+
+				if (scroll > 186) {
+					  $("#navi").css({
+							"position": "fixed",
+							"top": "20px"
+					  })
+				} else {
+					  $("#navi").css({
+							"position": "absolute",
+							"top": "186px"
+					  })
+				}
+			})
+		})
+	</script>
+
+    <div id="sub_contents" class="outsourcing-sch"> <!--outsourcing-sch class 추가 0918 -->
+        <div class="sub_tit">
+            <div class="inner">
+                <h1>아웃소싱 검색</h1>
+            </div>
+        </div>
+
+        <div id="sub_content" style="background-color:#f4f5f7">
+            <div class="inner">
+                <div class="left_menu">
+                    <ul>
+                        <li>
+                            <a class="on" href="../../page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+                        </li>
+                        <li>
+                            <a href="../../page/outsourcing/outsourcing02-1.html">아웃소싱 관리</a>
+                            <ul class="sub_menu">
+                                <li><a href="../../page/outsourcing/outsourcing02-1.html">관심 아웃소싱</a></li>
+                                <li><a href="../../page/outsourcing/outsourcing02-2.html">오늘 본 아웃소싱</a></li>
+                                <li><a href="../../page/outsourcing/outsourcing02-3.html">나를 찜한 아웃소싱</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../page/outsourcing/outsourcing03.html">지원한 아웃소싱</a>
+                        </li>
+                        <li>
+                            <a href="../../page/outsourcing/outsourcing04.html">인터뷰 예약 아웃소싱</a>
+                        </li>
+                        <li>
+                            <a href="../../page/outsourcing/outsourcing05.html">추천받은 아웃소싱</a>
+                        </li>
+                        <li>
+                            <a href="../../page/outsourcing/outsourcing06.html">자주찾는질문</a>
+                        </li>
+
+                        <div class="ple_sch">
+                            <a href="#">
+                                <img src="../../img/ple_sch.png" alt="">
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+
+
+				<!-- ------------------------ 아웃소싱 검색 -------------------------------- -->
+
+				<div class="content_info search_box searchBoxNew">
+					<div class="content">
+						<div id="tab1">
+							<h1 class="custom_tit">
+								<span class="left">
+									맞춤검색
+								</span>
+								<span class="right">
+									<span class="rec_save">
+										최근검색/저장한 조건
+										<a href="#!">11건</a>
+									</span>
+								</span>
+							</h1>
+						</div>
+
+						<div class="search_tab_wrap outsourcing">
+							<dl class="sch_tab method"><!-- 진행방식 -->
+								<dt><a href="#!">진행방식</a></dt>
+								<dd class="ly_sub_depth1">
+									<div class="ly_cont">
+										<dl class="sch_detail single">
+											<dt class="away">1차메뉴</dt>
+											<dd class="nano_scroll nano2">
+												<div class="cate_cont">
+													<ul class="cate1_wrap">
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_meth" id="out_meth_all" value="" />
+																<label for="out_meth_all" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	전체
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_meth" id="out_meth1" value="" />
+																<label for="out_meth1" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	상주
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_meth" id="out_meth2" value="" />
+																<label for="out_meth2" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	반상주
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_meth" id="out_meth3" value="" />
+																<label for="out_meth3" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	도급(원격)
+																</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</dd>
+										</dl>
+									</div>
+								</dd>
+							</dl>
+							<dl class="sch_tab job"><!-- 업무범위 -->
+								<dt><a href="#!">업무범위</a></dt>
+								<dd class="ly_sub_depth1">
+									<div class="ly_cont">
+										<dl class="sch_detail single">
+											<dt class="away">1차메뉴</dt>
+											<dd class="nano_scroll nano2">
+												<div class="cate_cont">
+													<ul class="cate1_wrap">
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_job" id="out_job_all" value="" />
+																<label for="out_job_all" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	턴키(전체)
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_job" id="out_job1" value="" />
+																<label for="out_job1" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	기획
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_job" id="out_job2" value="" />
+																<label for="out_job2" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	디자인
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_job" id="out_job3" value="" />
+																<label for="out_job3" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	퍼블리싱
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_job" id="out_job3" value="" />
+																<label for="out_job3" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	개발
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_job" id="out_job4" value="" />
+																<label for="out_job4" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	운영
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_job" id="out_job5" value="" />
+																<label for="out_job5" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	유지보수
+																</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</dd>
+										</dl>
+									</div>
+								</dd>
+							</dl>
+							<dl class="sch_tab field"><!-- 수행분야 -->
+								<dt><a href="#!">수행분야</a></dt>
+								<dd class="ly_sub_depth1">
+									<div class="ly_cont">
+										<dl class="sch_detail single">
+											<dt class="away">1차메뉴</dt>
+											<dd class="nano_scroll nano2">
+												<div class="cate_cont">
+													<ul class="cate1_wrap">
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_field" id="out_field1" value="" />
+																<label for="out_field1" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	공공
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_field" id="out_field2" value="" />
+																<label for="out_field2" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	민간
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_field" id="out_field3" value="" />
+																<label for="out_field3" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	커머스
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_field" id="out_field4" value="" />
+																<label for="out_field4" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	은행
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_field" id="out_field5" value="" />
+																<label for="out_field5" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	카드사
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_field" id="out_field6" value="" />
+																<label for="out_field6" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	증권사
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_field" id="out_field7" value="" />
+																<label for="out_field7" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	보험사
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="radio" name="out_field" id="out_field8" value="" />
+																<label for="out_field8" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	기타
+																</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</dd>
+										</dl>
+									</div>
+								</dd>
+							</dl>
+							<dl class="sch_tab area"><!-- 업무지역 -->
+								<dt><a href="#!">업무지역</a></dt>
+								<dd class="ly_sub_depth1">
+									<div class="ly_cont">
+										<dl class="sch_detail single">
+											<dt class="away">1차메뉴</dt>
+											<dd class="nano_scroll nano2">
+												<div class="cate_cont">
+													<ul>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area_all" value="" />
+																<label for="out_area_all" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	전국
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area1" value="" />
+																<label for="out_area1" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	서울
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area2" value="" />
+																<label for="out_area2" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	경기
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area3" value="" />
+																<label for="out_area3" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	인천
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area4" value="" />
+																<label for="out_area4" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	대전
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area5" value="" />
+																<label for="out_area5" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	세종
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area6" value="" />
+																<label for="out_area6" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	충남
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area7" value="" />
+																<label for="out_area7" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	충북
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area8" value="" />
+																<label for="out_area8" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	광주
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area9" value="" />
+																<label for="out_area9" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	전남
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area10" value="" />
+																<label for="out_area10" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	전북
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area11" value="" />
+																<label for="out_area11" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	대구
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area12" value="" />
+																<label for="out_area12" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	경북
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area13" value="" />
+																<label for="out_area13" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	부산
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area14" value="" />
+																<label for="out_area14" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	울산
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area16" value="" />
+																<label for="out_area16" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	강원
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_area" id="out_area17" value="" />
+																<label for="out_area17" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	제주
+																</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</dd><!-- 1차 -->
+										</dl><!-- sch_detail -->
+									</div>
+								</dd>
+							</dl><!-- sch_tab -->
+
+
+							<dl class="sch_tab career"><!-- 경력 -->
+								<dt><a href="#!">경력</a></dt>
+								<dd class="ly_sub_depth1">
+									<div class="ly_cont">
+										<dl class="sch_detail single">
+											<dt class="away">1차메뉴</dt>
+											<dd class="nano_scroll nano2">
+												<div class="cate_cont">
+													<ul>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_career" id="out_career_all" value="" />
+																<label for="out_career_all" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	전체
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_career" id="out_career1" value="" />
+																<label for="out_career1" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	20년~
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_career" id="out_career2" value="" />
+																<label for="out_career2" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	15년~20년
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_career" id="out_career3" value="" />
+																<label for="out_career3" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	10년~15년
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_career" id="out_career4" value="" />
+																<label for="out_career4" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	5년~10년
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_career" id="out_career5" value="" />
+																<label for="out_career5" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	3년~5년
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_career" id="out_career6" value="" />
+																<label for="out_career6" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	1년~3년
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="out_career" id="out_career7" value="" />
+																<label for="out_career7" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	신입
+																</label>
+															</div>
+														</li>
+													</ul>
+
+												</div>
+											</dd><!-- 1차 -->
+										</dl><!-- sch_detail -->
+									</div>
+								</dd>
+							</dl><!-- sch_tab -->
+
+
+							<!-- 아웃소싱비용 -->
+							<dl class="sch_tab salary">
+								<dt><a href="#!">아웃소싱비용</a></dt>
+								<dd class="ly_sub_depth1">
+									<div class="ly_cont">
+										<dl class="sch_detail single">
+											<dt class="away">1차메뉴</dt>
+											<dd class="nano_scroll nano2">
+												<div class="cate_cont">
+													<ul>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="" id="out_salary_all" value="" />
+																<label for="out_salary_all" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	전체
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="" id="out_salary1" value="" />
+																<label for="out_salary1" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	30,000만원~
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="" id="out_salary2" value="" />
+																<label for="out_salary2" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	10,000~30,000만원
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="" id="out_salary3" value="" />
+																<label for="out_salary3" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	7,000~10,000만원
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="" id="out_salary4" value="" />
+																<label for="out_salary4" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	5,000~7,000만원
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="" id="out_salary5" value="" />
+																<label for="out_salary5" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	4,000~5,000만원
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="" id="out_salary6" value="" />
+																<label for="out_salary6" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	2,000~3,000만원
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="" id="out_salary7" value="" />
+																<label for="out_salary7" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	1,000~2,000만원
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="" id="out_salary8" value="" />
+																<label for="out_salary8" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	500~1,000만원
+																</label>
+															</div>
+														</li>
+														<li class="item">
+															<div class="chk_wrap">
+																<input type="checkbox" name="" id="out_salary9" value="" />
+																<label for="out_salary9" class="chk_lb">
+																	<span class="chk_icon"></span>
+																	300만원 이하
+																</label>
+															</div>
+														</li>
+													</ul>
+
+												</div>
+											</dd><!-- 1차 -->
+										</dl><!-- sch_detail -->
+									</div>
+								</dd>
+							</dl><!-- sch_tab -->
+						</div><!-- search_tab_wrap -->
+
+						<div class="dvcondition">
+								<div class="dv_lists">
+									<span>
+										기획
+										<a href="#">
+											<img src="../../img/dv_close.png" alt="삭제">
+										</a>
+									</span>
+									<span>
+										웹프로그래머
+										<a href="#">
+											<img src="../../img/dv_close.png" alt="삭제">
+										</a>
+									</span>
+									<span>
+										웹프로그래머
+										<a href="#">
+											<img src="../../img/dv_close.png" alt="삭제">
+										</a>
+									</span>
+									<span>
+										10~15년
+										<a href="#">
+											<img src="../../img/dv_close.png" alt="삭제">
+										</a>
+									</span>
+									<span>
+										디자인
+										<a href="#">
+											<img src="../../img/dv_close.png" alt="삭제">
+										</a>
+									</span>
+								</div>
+								<div class="init">
+									<span>
+										<a href="#">
+											<img src="../../img/init_close.png" alt="초기화">
+											선택초기화
+										</a>
+									</span>
+									<span>
+										<a href="#">
+											<img src="../../img/init_save.png" alt="저장">
+											조건저장
+										</a>
+									</span>
+								</div>
+							</div>
+
+					</div>
+
+				</div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div id="profile_wrap02" class="project_sch">
+            <div class="inner">
+                <h1 class="pageh1">TOP 아웃소싱</h1>
+
+                <div class="wrap">
+                    <article>
+                        <div>
+                            <div class="lefts">
+                                <h2 class="pro_header">
+                                    <span class="left">
+                                        <p>
+                                            5월 5일 마감
+                                            <span class="date">D-12</span>
+                                        </p>
+                                    </span>
+                                    <span class="right">
+                                        <span class="dif_de">개발</span>
+                                        <span class="a1">모집중</span>
+                                        <span class="a2">NEW</span>
+                                        <a href="#">
+                                            <img src="../../img/star.png" alt="별">
+                                        </a>
+                                    </span>
+                                </h2>
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                                <div class="info_wrap">
+                                    <span>
+                                        <img src="../../img/info_img01.png" alt="모집">
+                                        <b>모집</b>
+                                        <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                    </span>
+                                    <!-- <span>
+                                    <img src="../../img/info_img02.png" alt="모집">
+                                    <b>분야</b>
+                                    개발PL, 개발
+                                </span> -->
+                                    <span>
+                                        <img src="../../img/support.png" alt="지원">
+                                        <b>지원자수</b>
+                                        <span class="num">1</span>명
+                                    </span>
+                                </div>
+                                <div class="price_wrap">
+                                    <a href="#" class="price">
+                                        <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                                    </a>
+                                    <a href="#" class="dates">
+                                        <img src="../../img/pro_time.png" alt="">
+                                        <span>
+                                            6월 중순 ∼9월 하순
+                                            <span class="da">(4.5개월)</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div class="left">
+
+                            <div class="right">
+                                <div class="skills">
+                                    <span class="path">
+                                        개발 &gt; 앱
+                                    </span>
+                                    <span class="skill">
+                                        HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                    </span>
+                                </div>
+
+                                <div class="way">
+                                    <dl>
+                                        <dt>진행 방식</dt>
+                                        <dd>
+                                            최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>근무지역</dt>
+                                        <dd>
+                                            서울시 4호선 충무로역 2번 출구 3분 거리
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!-- <div class="pro_profile_wrap">
+                            <div class="profile" style="background-image: url(../../img/face.png);">
+                            </div>
+                            <div class="name">
+                                KIKI_92
+                                <span>서울</span>
+                            </div>
+                            <div class="company">
+                                <a href="#">회사소개 ⇢</a>
+                            </div>
+                        </div> -->
+
+                    </article>
+                    <article>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_pb">퍼블리셔</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <h3>
+                            <a href="#">
+                                <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                            </a>
+                        </h3>
+                        <div class="info_wrap">
+                            <span>
+                                <img src="../../img/info_img01.png" alt="모집">
+                                <b>모집</b>
+                                <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                            </span>
+                            <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                            <span>
+                                <img src="../../img/support.png" alt="지원">
+                                <b>지원자수</b>
+                                <span class="num">1</span>명
+                            </span>
+                        </div>
+                        <div class="price_wrap">
+                            <a href="#" class="price">
+                                <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                            </a>
+                            <a href="#" class="dates">
+                                <img src="../../img/pro_time.png" alt="">
+                                <span>
+                                    6월 중순 ∼9월 하순
+                                    <span class="da">(4.5개월)</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="skills">
+                            <span class="path">
+                                개발 &gt; 앱
+                            </span>
+                            <span class="skill">
+                                HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                            </span>
+                        </div>
+
+                        <div class="way">
+                            <dl>
+                                <dt>진행 방식</dt>
+                                <dd>
+                                    최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>근무지역</dt>
+                                <dd>
+                                    서울시 4호선 충무로역 2번 출구 3분 거리
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="pro_profile_wrap">
+                            <div class="profile" style="background-image: url(../../img/face.png);">
+                            </div>
+                            <div class="name">
+                                KIKI_92
+                                <span>서울</span>
+                            </div>
+                            <div class="company">
+                                <a href="#">회사소개 ⇢</a>
+                            </div>
+                        </div>
+
+
+                    </article>
+                    <article>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_plan">기획</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <h3>
+                            <a href="#">
+                                <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                            </a>
+                        </h3>
+                        <div class="info_wrap">
+                            <span>
+                                <img src="../../img/info_img01.png" alt="모집">
+                                <b>모집</b>
+                                <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                            </span>
+                            <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                            <span>
+                                <img src="../../img/support.png" alt="지원">
+                                <b>지원자수</b>
+                                <span class="num">1</span>명
+                            </span>
+                        </div>
+                        <div class="price_wrap">
+                            <a href="#" class="price">
+                                <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                            </a>
+                            <a href="#" class="dates">
+                                <img src="../../img/pro_time.png" alt="">
+                                <span>
+                                    6월 중순 ∼9월 하순
+                                    <span class="da">(4.5개월)</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="skills">
+                            <span class="path">
+                                개발 &gt; 앱
+                            </span>
+                            <span class="skill">
+                                HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                            </span>
+                        </div>
+
+                        <div class="way">
+                            <dl>
+                                <dt>진행 방식</dt>
+                                <dd>
+                                    최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>근무지역</dt>
+                                <dd>
+                                    서울시 4호선 충무로역 2번 출구 3분 거리
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="pro_profile_wrap">
+                            <div class="profile" style="background-image: url(../../img/face.png);">
+                            </div>
+                            <div class="name">
+                                KIKI_92
+                                <span>서울</span>
+                            </div>
+                            <div class="company">
+                                <a href="#">회사소개 ⇢</a>
+                            </div>
+                        </div>
+
+
+                    </article>
+                    <article>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_disign">디자인</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <h3>
+                            <a href="#">
+                                <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                            </a>
+                        </h3>
+                        <div class="info_wrap">
+                            <span>
+                                <img src="../../img/info_img01.png" alt="모집">
+                                <b>모집</b>
+                                <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                            </span>
+                            <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                            <span>
+                                <img src="../../img/support.png" alt="지원">
+                                <b>지원자수</b>
+                                <span class="num">1</span>명
+                            </span>
+                        </div>
+                        <div class="price_wrap">
+                            <a href="#" class="price">
+                                <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                            </a>
+                            <a href="#" class="dates">
+                                <img src="../../img/pro_time.png" alt="">
+                                <span>
+                                    6월 중순 ∼9월 하순
+                                    <span class="da">(4.5개월)</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="skills">
+                            <span class="path">
+                                개발 &gt; 앱
+                            </span>
+                            <span class="skill">
+                                HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                            </span>
+                        </div>
+
+                        <div class="way">
+                            <dl>
+                                <dt>진행 방식</dt>
+                                <dd>
+                                    최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>근무지역</dt>
+                                <dd>
+                                    서울시 4호선 충무로역 2번 출구 3분 거리
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="pro_profile_wrap">
+                            <div class="profile" style="background-image: url(../../img/face.png);">
+                            </div>
+                            <div class="name">
+                                KIKI_92
+                                <span>서울</span>
+                            </div>
+                            <div class="company">
+                                <a href="#">회사소개 ⇢</a>
+                            </div>
+                        </div>
+
+
+                    </article>
+                    <article>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_pb">퍼블리셔</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <h3>
+                            <a href="#">
+                                <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                            </a>
+                        </h3>
+                        <div class="info_wrap">
+                            <span>
+                                <img src="../../img/info_img01.png" alt="모집">
+                                <b>모집</b>
+                                <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                            </span>
+                            <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                            <span>
+                                <img src="../../img/support.png" alt="지원">
+                                <b>지원자수</b>
+                                <span class="num">1</span>명
+                            </span>
+                        </div>
+                        <div class="price_wrap">
+                            <a href="#" class="price">
+                                <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                            </a>
+                            <a href="#" class="dates">
+                                <img src="../../img/pro_time.png" alt="">
+                                <span>
+                                    6월 중순 ∼9월 하순
+                                    <span class="da">(4.5개월)</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="skills">
+                            <span class="path">
+                                개발 &gt; 앱
+                            </span>
+                            <span class="skill">
+                                HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                            </span>
+                        </div>
+
+                        <div class="way">
+                            <dl>
+                                <dt>진행 방식</dt>
+                                <dd>
+                                    최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>근무지역</dt>
+                                <dd>
+                                    서울시 4호선 충무로역 2번 출구 3분 거리
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="pro_profile_wrap">
+                            <div class="profile" style="background-image: url(../../img/face.png);">
+                            </div>
+                            <div class="name">
+                                KIKI_92
+                                <span>서울</span>
+                            </div>
+                            <div class="company">
+                                <a href="#">회사소개 ⇢</a>
+                            </div>
+                        </div>
+
+
+                    </article>
+                    <article>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <h3>
+                            <a href="#">
+                                <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                            </a>
+                        </h3>
+                        <div class="info_wrap">
+                            <span>
+                                <img src="../../img/info_img01.png" alt="모집">
+                                <b>모집</b>
+                                <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                            </span>
+                            <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                            <span>
+                                <img src="../../img/support.png" alt="지원">
+                                <b>지원자수</b>
+                                <span class="num">1</span>명
+                            </span>
+                        </div>
+                        <div class="price_wrap">
+                            <a href="#" class="price">
+                                <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                            </a>
+                            <a href="#" class="dates">
+                                <img src="../../img/pro_time.png" alt="">
+                                <span>
+                                    6월 중순 ∼9월 하순
+                                    <span class="da">(4.5개월)</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="skills">
+                            <span class="path">
+                                개발 &gt; 앱
+                            </span>
+                            <span class="skill">
+                                HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                            </span>
+                        </div>
+
+                        <div class="way">
+                            <dl>
+                                <dt>진행 방식</dt>
+                                <dd>
+                                    최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>근무지역</dt>
+                                <dd>
+                                    서울시 4호선 충무로역 2번 출구 3분 거리
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="pro_profile_wrap">
+                            <div class="profile" style="background-image: url(../../img/face.png);">
+                            </div>
+                            <div class="name">
+                                KIKI_92
+                                <span>서울</span>
+                            </div>
+                            <div class="company">
+                                <a href="#">회사소개 ⇢</a>
+                            </div>
+                        </div>
+
+
+                    </article>
+                    <article>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <h3>
+                            <a href="#">
+                                <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                            </a>
+                        </h3>
+                        <div class="info_wrap">
+                            <span>
+                                <img src="../../img/info_img01.png" alt="모집">
+                                <b>모집</b>
+                                <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                            </span>
+                            <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                            <span>
+                                <img src="../../img/support.png" alt="지원">
+                                <b>지원자수</b>
+                                <span class="num">1</span>명
+                            </span>
+                        </div>
+                        <div class="price_wrap">
+                            <a href="#" class="price">
+                                <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                            </a>
+                            <a href="#" class="dates">
+                                <img src="../../img/pro_time.png" alt="">
+                                <span>
+                                    6월 중순 ∼9월 하순
+                                    <span class="da">(4.5개월)</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="skills">
+                            <span class="path">
+                                개발 &gt; 앱
+                            </span>
+                            <span class="skill">
+                                HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                            </span>
+                        </div>
+
+                        <div class="way">
+                            <dl>
+                                <dt>진행 방식</dt>
+                                <dd>
+                                    최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>근무지역</dt>
+                                <dd>
+                                    서울시 4호선 충무로역 2번 출구 3분 거리
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="pro_profile_wrap">
+                            <div class="profile" style="background-image: url(../../img/face.png);">
+                            </div>
+                            <div class="name">
+                                KIKI_92
+                                <span>서울</span>
+                            </div>
+                            <div class="company">
+                                <a href="#">회사소개 ⇢</a>
+                            </div>
+                        </div>
+
+
+                    </article>
+                    <article>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <h3>
+                            <a href="#">
+                                <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                            </a>
+                        </h3>
+                        <div class="info_wrap">
+                            <span>
+                                <img src="../../img/info_img01.png" alt="모집">
+                                <b>모집</b>
+                                <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                            </span>
+                            <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                            <span>
+                                <img src="../../img/support.png" alt="지원">
+                                <b>지원자수</b>
+                                <span class="num">1</span>명
+                            </span>
+                        </div>
+                        <div class="price_wrap">
+                            <a href="#" class="price">
+                                <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                            </a>
+                            <a href="#" class="dates">
+                                <img src="../../img/pro_time.png" alt="">
+                                <span>
+                                    6월 중순 ∼9월 하순
+                                    <span class="da">(4.5개월)</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="skills">
+                            <span class="path">
+                                개발 &gt; 앱
+                            </span>
+                            <span class="skill">
+                                HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                            </span>
+                        </div>
+
+                        <div class="way">
+                            <dl>
+                                <dt>진행 방식</dt>
+                                <dd>
+                                    최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>근무지역</dt>
+                                <dd>
+                                    서울시 4호선 충무로역 2번 출구 3분 거리
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="pro_profile_wrap">
+                            <div class="profile" style="background-image: url(../../img/face.png);">
+                            </div>
+                            <div class="name">
+                                KIKI_92
+                                <span>서울</span>
+                            </div>
+                            <div class="company">
+                                <a href="#">회사소개 ⇢</a>
+                            </div>
+                        </div>
+
+
+                    </article>
+					<article>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <h3>
+                            <a href="#">
+                                <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                            </a>
+                        </h3>
+                        <div class="info_wrap">
+                            <span>
+                                <img src="../../img/info_img01.png" alt="모집">
+                                <b>모집</b>
+                                <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                            </span>
+                            <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                            <span>
+                                <img src="../../img/support.png" alt="지원">
+                                <b>지원자수</b>
+                                <span class="num">1</span>명
+                            </span>
+                        </div>
+                        <div class="price_wrap">
+                            <a href="#" class="price">
+                                <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                            </a>
+                            <a href="#" class="dates">
+                                <img src="../../img/pro_time.png" alt="">
+                                <span>
+                                    6월 중순 ∼9월 하순
+                                    <span class="da">(4.5개월)</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="skills">
+                            <span class="path">
+                                개발 &gt; 앱
+                            </span>
+                            <span class="skill">
+                                HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                            </span>
+                        </div>
+
+                        <div class="way">
+                            <dl>
+                                <dt>진행 방식</dt>
+                                <dd>
+                                    최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>근무지역</dt>
+                                <dd>
+                                    서울시 4호선 충무로역 2번 출구 3분 거리
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="pro_profile_wrap">
+                            <div class="profile" style="background-image: url(../../img/face.png);">
+                            </div>
+                            <div class="name">
+                                KIKI_92
+                                <span>서울</span>
+                            </div>
+                            <div class="company">
+                                <a href="#">회사소개 ⇢</a>
+                            </div>
+                        </div>
+
+
+                    </article>
+					<article>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <h3>
+                            <a href="#">
+                                <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                            </a>
+                        </h3>
+                        <div class="info_wrap">
+                            <span>
+                                <img src="../../img/info_img01.png" alt="모집">
+                                <b>모집</b>
+                                <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                            </span>
+                            <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                            <span>
+                                <img src="../../img/support.png" alt="지원">
+                                <b>지원자수</b>
+                                <span class="num">1</span>명
+                            </span>
+                        </div>
+                        <div class="price_wrap">
+                            <a href="#" class="price">
+                                <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                            </a>
+                            <a href="#" class="dates">
+                                <img src="../../img/pro_time.png" alt="">
+                                <span>
+                                    6월 중순 ∼9월 하순
+                                    <span class="da">(4.5개월)</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="skills">
+                            <span class="path">
+                                개발 &gt; 앱
+                            </span>
+                            <span class="skill">
+                                HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                            </span>
+                        </div>
+
+                        <div class="way">
+                            <dl>
+                                <dt>진행 방식</dt>
+                                <dd>
+                                    최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>근무지역</dt>
+                                <dd>
+                                    서울시 4호선 충무로역 2번 출구 3분 거리
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="pro_profile_wrap">
+                            <div class="profile" style="background-image: url(../../img/face.png);">
+                            </div>
+                            <div class="name">
+                                KIKI_92
+                                <span>서울</span>
+                            </div>
+                            <div class="company">
+                                <a href="#">회사소개 ⇢</a>
+                            </div>
+                        </div>
+
+
+                    </article>
+                    <!--paging 수정::200807 -->
+					<div class="paging_wrap">
+                    <div class="paging">
+                        <div class="page_prev">
+                            <a class="page_prev_link" href="#">
+								<i class="fas fa-angle-double-left"></i>
+                            </a>
+                            <a class="page_prev_link" href="#">
+								<i class="fas fa-angle-left"></i>
+                            </a>
+                        </div>
+                        <div class="page_num">
+                            <a href="#" class="page_num_link on">1</a>
+                            <a href="#" class="page_num_link">2</a>
+                            <a href="#" class="page_num_link">3</a>
+                            <a href="#" class="page_num_link">4</a>
+                            <a href="#" class="page_num_link">5</a>
+                        </div>
+                        <div class="page_next">
+                            <a href="#" class="page_next_link">
+								<i class="fas fa-angle-right"></i>
+                            </a>
+                            <a href="#" class="page_next_link">
+								<i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+					</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sub_banner">
+            <div class="inner">
+                <img src="../../img/sub_banner.png" alt="서브배너">
+            </div>
+        </div>
+
+        <div id="sub_top_people">
+            <div class="inner">
+                <div class="top_sch">
+                    <div class="fl">
+                        총 <span>1,234</span>개
+                    </div>
+                    <div class="fr">
+                        <div class="put_wrap">
+                            <input type="text" placeholder="결과 내 재검색">
+                            <a href="#" class="search_btn">
+                                <img src="../../img/top_sch_btn.png" alt="찾기버튼이미지">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sch_menu">
+                    <div class="lef">
+                        <a href="#">최신순↓ <span>·</span> </a>
+
+                        <a href="#">등록일순</a> <span>·</span>
+                        <a href="#">수정일순</a> <span>·</span>
+                        <a href="#">예상금액순</a> <span>·</span>
+                        <a href="#">마감순</a>
+                    </div>
+                    <div class="ref">
+                        <span>
+                            <select name="" id="">
+                                <option value="">근무형태</option>
+                            </select>
+                        </span>
+                        <span>
+                            <select name="" id="">
+                                <option value="">업데이트일</option>
+                            </select>
+                        </span>
+                        <span>
+                            <select name="" id="">
+                                <option value="">등록일 순</option>
+                            </select>
+                        </span>
+                        <span>
+                            <select name="" id="">
+                                <option value="">보기</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <ul class="project_card_list">
+                    <li>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <div class="wrap">
+                            <div class="lef">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                                <div class="info_wrap">
+                                    <span>
+                                        <img src="../../img/info_img01.png" alt="모집">
+                                        <b>모집</b>
+                                        <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                    </span>
+                                    <span>
+                                        <img src="../../img/support.png" alt="지원">
+                                        <b>지원자수</b>
+                                        <span class="num">1</span>명
+                                    </span>
+                                </div>
+                                <div class="price_wrap">
+                                    <a href="#" class="price">
+                                        <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                                    </a>
+                                    <a href="#" class="dates">
+                                        <img src="../../img/pro_time.png" alt="">
+                                        <span>
+                                            6월 중순 ∼9월 하순
+                                            <span class="da">(4.5개월)</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="pro_profile_wrap">
+                                    <div class="profile" style="background-image: url(../../img/face.png);">
+                                    </div>
+                                    <div class="name">
+                                        KIKI_92
+                                        <span>서울</span>
+                                    </div>
+                                    <div class="company">
+                                        <a href="#">회사소개 ⇢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref">
+                                <div class="skills">
+                                    <span class="path">
+                                        개발 &gt; 앱
+                                    </span>
+                                    <span class="skill">
+                                        HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                    </span>
+                                </div>
+                                <div class="way">
+                                    <dl>
+                                        <dt>진행 방식</dt>
+                                        <dd>
+                                            최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>근무지역</dt>
+                                        <dd>
+                                            서울시 4호선 충무로역 2번 출구 3분 거리
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <div class="wrap">
+                            <div class="lef">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                                <div class="info_wrap">
+                                    <span>
+                                        <img src="../../img/info_img01.png" alt="모집">
+                                        <b>모집</b>
+                                        <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                    </span>
+                                    <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                                    <span>
+                                        <img src="../../img/support.png" alt="지원">
+                                        <b>지원자수</b>
+                                        <span class="num">1</span>명
+                                    </span>
+                                </div>
+                                <div class="price_wrap">
+                                    <a href="#" class="price">
+                                        <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                                    </a>
+                                    <a href="#" class="dates">
+                                        <img src="../../img/pro_time.png" alt="">
+                                        <span>
+                                            6월 중순 ∼9월 하순
+                                            <span class="da">(4.5개월)</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="pro_profile_wrap">
+                                    <div class="profile" style="background-image: url(../../img/face.png);">
+                                    </div>
+                                    <div class="name">
+                                        KIKI_92
+                                        <span>서울</span>
+                                    </div>
+                                    <div class="company">
+                                        <a href="#">회사소개 ⇢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref">
+                                <div class="skills">
+                                    <span class="path">
+                                        개발 &gt; 앱
+                                    </span>
+                                    <span class="skill">
+                                        HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                    </span>
+                                </div>
+                                <div class="way">
+                                    <dl>
+                                        <dt>진행 방식</dt>
+                                        <dd>
+                                            최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>근무지역</dt>
+                                        <dd>
+                                            서울시 4호선 충무로역 2번 출구 3분 거리
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <div class="wrap">
+                            <div class="lef">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                                <div class="info_wrap">
+                                    <span>
+                                        <img src="../../img/info_img01.png" alt="모집">
+                                        <b>모집</b>
+                                        <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                    </span>
+                                    <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                                    <span>
+                                        <img src="../../img/support.png" alt="지원">
+                                        <b>지원자수</b>
+                                        <span class="num">1</span>명
+                                    </span>
+                                </div>
+                                <div class="price_wrap">
+                                    <a href="#" class="price">
+                                        <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                                    </a>
+                                    <a href="#" class="dates">
+                                        <img src="../../img/pro_time.png" alt="">
+                                        <span>
+                                            6월 중순 ∼9월 하순
+                                            <span class="da">(4.5개월)</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="pro_profile_wrap">
+                                    <div class="profile" style="background-image: url(../../img/face.png);">
+                                    </div>
+                                    <div class="name">
+                                        KIKI_92
+                                        <span>서울</span>
+                                    </div>
+                                    <div class="company">
+                                        <a href="#">회사소개 ⇢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref">
+                                <div class="skills">
+                                    <span class="path">
+                                        개발 &gt; 앱
+                                    </span>
+                                    <span class="skill">
+                                        HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                    </span>
+                                </div>
+                                <div class="way">
+                                    <dl>
+                                        <dt>진행 방식</dt>
+                                        <dd>
+                                            최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>근무지역</dt>
+                                        <dd>
+                                            서울시 4호선 충무로역 2번 출구 3분 거리
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <div class="wrap">
+                            <div class="lef">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                                <div class="info_wrap">
+                                    <span>
+                                        <img src="../../img/info_img01.png" alt="모집">
+                                        <b>모집</b>
+                                        <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                    </span>
+                                    <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                                    <span>
+                                        <img src="../../img/support.png" alt="지원">
+                                        <b>지원자수</b>
+                                        <span class="num">1</span>명
+                                    </span>
+                                </div>
+                                <div class="price_wrap">
+                                    <a href="#" class="price">
+                                        <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                                    </a>
+                                    <a href="#" class="dates">
+                                        <img src="../../img/pro_time.png" alt="">
+                                        <span>
+                                            6월 중순 ∼9월 하순
+                                            <span class="da">(4.5개월)</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="pro_profile_wrap">
+                                    <div class="profile" style="background-image: url(../../img/face.png);">
+                                    </div>
+                                    <div class="name">
+                                        KIKI_92
+                                        <span>서울</span>
+                                    </div>
+                                    <div class="company">
+                                        <a href="#">회사소개 ⇢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref">
+                                <div class="skills">
+                                    <span class="path">
+                                        개발 &gt; 앱
+                                    </span>
+                                    <span class="skill">
+                                        HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                    </span>
+                                </div>
+                                <div class="way">
+                                    <dl>
+                                        <dt>진행 방식</dt>
+                                        <dd>
+                                            최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>근무지역</dt>
+                                        <dd>
+                                            서울시 4호선 충무로역 2번 출구 3분 거리
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+					<li>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <div class="wrap">
+                            <div class="lef">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                                <div class="info_wrap">
+                                    <span>
+                                        <img src="../../img/info_img01.png" alt="모집">
+                                        <b>모집</b>
+                                        <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                    </span>
+                                    <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                                    <span>
+                                        <img src="../../img/support.png" alt="지원">
+                                        <b>지원자수</b>
+                                        <span class="num">1</span>명
+                                    </span>
+                                </div>
+                                <div class="price_wrap">
+                                    <a href="#" class="price">
+                                        <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                                    </a>
+                                    <a href="#" class="dates">
+                                        <img src="../../img/pro_time.png" alt="">
+                                        <span>
+                                            6월 중순 ∼9월 하순
+                                            <span class="da">(4.5개월)</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="pro_profile_wrap">
+                                    <div class="profile" style="background-image: url(../../img/face.png);">
+                                    </div>
+                                    <div class="name">
+                                        KIKI_92
+                                        <span>서울</span>
+                                    </div>
+                                    <div class="company">
+                                        <a href="#">회사소개 ⇢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref">
+                                <div class="skills">
+                                    <span class="path">
+                                        개발 &gt; 앱
+                                    </span>
+                                    <span class="skill">
+                                        HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                    </span>
+                                </div>
+                                <div class="way">
+                                    <dl>
+                                        <dt>진행 방식</dt>
+                                        <dd>
+                                            최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>근무지역</dt>
+                                        <dd>
+                                            서울시 4호선 충무로역 2번 출구 3분 거리
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+					<li>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <div class="wrap">
+                            <div class="lef">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                                <div class="info_wrap">
+                                    <span>
+                                        <img src="../../img/info_img01.png" alt="모집">
+                                        <b>모집</b>
+                                        <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                    </span>
+                                    <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                                    <span>
+                                        <img src="../../img/support.png" alt="지원">
+                                        <b>지원자수</b>
+                                        <span class="num">1</span>명
+                                    </span>
+                                </div>
+                                <div class="price_wrap">
+                                    <a href="#" class="price">
+                                        <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                                    </a>
+                                    <a href="#" class="dates">
+                                        <img src="../../img/pro_time.png" alt="">
+                                        <span>
+                                            6월 중순 ∼9월 하순
+                                            <span class="da">(4.5개월)</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="pro_profile_wrap">
+                                    <div class="profile" style="background-image: url(../../img/face.png);">
+                                    </div>
+                                    <div class="name">
+                                        KIKI_92
+                                        <span>서울</span>
+                                    </div>
+                                    <div class="company">
+                                        <a href="#">회사소개 ⇢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref">
+                                <div class="skills">
+                                    <span class="path">
+                                        개발 &gt; 앱
+                                    </span>
+                                    <span class="skill">
+                                        HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                    </span>
+                                </div>
+                                <div class="way">
+                                    <dl>
+                                        <dt>진행 방식</dt>
+                                        <dd>
+                                            최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>근무지역</dt>
+                                        <dd>
+                                            서울시 4호선 충무로역 2번 출구 3분 거리
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+					<li>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <div class="wrap">
+                            <div class="lef">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                                <div class="info_wrap">
+                                    <span>
+                                        <img src="../../img/info_img01.png" alt="모집">
+                                        <b>모집</b>
+                                        <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                    </span>
+                                    <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                                    <span>
+                                        <img src="../../img/support.png" alt="지원">
+                                        <b>지원자수</b>
+                                        <span class="num">1</span>명
+                                    </span>
+                                </div>
+                                <div class="price_wrap">
+                                    <a href="#" class="price">
+                                        <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                                    </a>
+                                    <a href="#" class="dates">
+                                        <img src="../../img/pro_time.png" alt="">
+                                        <span>
+                                            6월 중순 ∼9월 하순
+                                            <span class="da">(4.5개월)</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="pro_profile_wrap">
+                                    <div class="profile" style="background-image: url(../../img/face.png);">
+                                    </div>
+                                    <div class="name">
+                                        KIKI_92
+                                        <span>서울</span>
+                                    </div>
+                                    <div class="company">
+                                        <a href="#">회사소개 ⇢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref">
+                                <div class="skills">
+                                    <span class="path">
+                                        개발 &gt; 앱
+                                    </span>
+                                    <span class="skill">
+                                        HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                    </span>
+                                </div>
+                                <div class="way">
+                                    <dl>
+                                        <dt>진행 방식</dt>
+                                        <dd>
+                                            최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>근무지역</dt>
+                                        <dd>
+                                            서울시 4호선 충무로역 2번 출구 3분 거리
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+					<li>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <div class="wrap">
+                            <div class="lef">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                                <div class="info_wrap">
+                                    <span>
+                                        <img src="../../img/info_img01.png" alt="모집">
+                                        <b>모집</b>
+                                        <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                    </span>
+                                    <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                                    <span>
+                                        <img src="../../img/support.png" alt="지원">
+                                        <b>지원자수</b>
+                                        <span class="num">1</span>명
+                                    </span>
+                                </div>
+                                <div class="price_wrap">
+                                    <a href="#" class="price">
+                                        <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                                    </a>
+                                    <a href="#" class="dates">
+                                        <img src="../../img/pro_time.png" alt="">
+                                        <span>
+                                            6월 중순 ∼9월 하순
+                                            <span class="da">(4.5개월)</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="pro_profile_wrap">
+                                    <div class="profile" style="background-image: url(../../img/face.png);">
+                                    </div>
+                                    <div class="name">
+                                        KIKI_92
+                                        <span>서울</span>
+                                    </div>
+                                    <div class="company">
+                                        <a href="#">회사소개 ⇢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref">
+                                <div class="skills">
+                                    <span class="path">
+                                        개발 &gt; 앱
+                                    </span>
+                                    <span class="skill">
+                                        HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                    </span>
+                                </div>
+                                <div class="way">
+                                    <dl>
+                                        <dt>진행 방식</dt>
+                                        <dd>
+                                            최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>근무지역</dt>
+                                        <dd>
+                                            서울시 4호선 충무로역 2번 출구 3분 거리
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+					<li>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <div class="wrap">
+                            <div class="lef">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                                <div class="info_wrap">
+                                    <span>
+                                        <img src="../../img/info_img01.png" alt="모집">
+                                        <b>모집</b>
+                                        <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                    </span>
+                                    <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                                    <span>
+                                        <img src="../../img/support.png" alt="지원">
+                                        <b>지원자수</b>
+                                        <span class="num">1</span>명
+                                    </span>
+                                </div>
+                                <div class="price_wrap">
+                                    <a href="#" class="price">
+                                        <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                                    </a>
+                                    <a href="#" class="dates">
+                                        <img src="../../img/pro_time.png" alt="">
+                                        <span>
+                                            6월 중순 ∼9월 하순
+                                            <span class="da">(4.5개월)</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="pro_profile_wrap">
+                                    <div class="profile" style="background-image: url(../../img/face.png);">
+                                    </div>
+                                    <div class="name">
+                                        KIKI_92
+                                        <span>서울</span>
+                                    </div>
+                                    <div class="company">
+                                        <a href="#">회사소개 ⇢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref">
+                                <div class="skills">
+                                    <span class="path">
+                                        개발 &gt; 앱
+                                    </span>
+                                    <span class="skill">
+                                        HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                    </span>
+                                </div>
+                                <div class="way">
+                                    <dl>
+                                        <dt>진행 방식</dt>
+                                        <dd>
+                                            최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>근무지역</dt>
+                                        <dd>
+                                            서울시 4호선 충무로역 2번 출구 3분 거리
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+					<li>
+                        <h2 class="pro_header">
+                            <span class="left">
+                                <p>
+                                    5월 5일 마감
+                                    <span class="date">D-12</span>
+                                </p>
+                            </span>
+                            <span class="right">
+                                <span class="dif_de">개발</span>
+                                <span class="a1">모집중</span>
+                                <span class="a2">NEW</span>
+                                <a href="#">
+                                    <img src="../../img/star.png" alt="별">
+                                </a>
+                            </span>
+                        </h2>
+                        <div class="wrap">
+                            <div class="lef">
+                                <h3>
+                                    <a href="#">
+                                        <span>[비상주]</span> 오프라인 매장 주문 플랫폼 Admin Front-end 개발
+                                    </a>
+                                </h3>
+                                <div class="info_wrap">
+                                    <span>
+                                        <img src="../../img/info_img01.png" alt="모집">
+                                        <b>모집</b>
+                                        <span class="num">4</span>명 (고급 PL 1명,중급 1명,초급 2명,특급 1명)
+                                    </span>
+                                    <!-- <span>
+                                <img src="../../img/info_img02.png" alt="모집">
+                                <b>분야</b>
+                                개발PL, 개발
+                            </span> -->
+                                    <span>
+                                        <img src="../../img/support.png" alt="지원">
+                                        <b>지원자수</b>
+                                        <span class="num">1</span>명
+                                    </span>
+                                </div>
+                                <div class="price_wrap">
+                                    <a href="#" class="price">
+                                        <img src="../../img/pro_price.png" alt="     ">월 <span>5,000,000 ~ 10,000,000</span>원
+                                    </a>
+                                    <a href="#" class="dates">
+                                        <img src="../../img/pro_time.png" alt="">
+                                        <span>
+                                            6월 중순 ∼9월 하순
+                                            <span class="da">(4.5개월)</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="pro_profile_wrap">
+                                    <div class="profile" style="background-image: url(../../img/face.png);">
+                                    </div>
+                                    <div class="name">
+                                        KIKI_92
+                                        <span>서울</span>
+                                    </div>
+                                    <div class="company">
+                                        <a href="#">회사소개 ⇢</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref">
+                                <div class="skills">
+                                    <span class="path">
+                                        개발 &gt; 앱
+                                    </span>
+                                    <span class="skill">
+                                        HTML5, CSS3, Typescript, React, GraphQL, Apollo Client
+                                    </span>
+                                </div>
+                                <div class="way">
+                                    <dl>
+                                        <dt>진행 방식</dt>
+                                        <dd>
+                                            최초 오프라인 미팅 - 사무실위치 : 경기도 군포시 당정로 부근입니다. - 주1회 정기적인 미팅 - 원격, 재택근무
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>근무지역</dt>
+                                        <dd>
+                                            서울시 4호선 충무로역 2번 출구 3분 거리
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--paging 수정::200807 -->
+				<div class="paging_wrap">
+                    <div class="paging">
+                        <div class="page_prev">
+                            <a class="page_prev_link" href="#">
+								<i class="fas fa-angle-double-left"></i>
+                            </a>
+                            <a class="page_prev_link" href="#">
+								<i class="fas fa-angle-left"></i>
+                            </a>
+                        </div>
+                        <div class="page_num">
+                            <a href="#" class="page_num_link on">1</a>
+                            <a href="#" class="page_num_link">2</a>
+                            <a href="#" class="page_num_link">3</a>
+                            <a href="#" class="page_num_link">4</a>
+                            <a href="#" class="page_num_link">5</a>
+                        </div>
+                        <div class="page_next">
+                            <a href="#" class="page_next_link">
+								<i class="fas fa-angle-right"></i>
+                            </a>
+                            <a href="#" class="page_next_link">
+								<i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_info">
+        <div id="footer">
+            <div class="footer_top">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <a href="#">회사소개</a>
+                        </li>
+                        <li>
+                            <a href="#"> 아웃소싱 문의</a>
+                        </li>
+                        <li>
+                            <a href="#"> 프리랜서 문의</a>
+                        </li>
+                        <li>
+                            <a href="#">인재채용</a>
+                        </li>
+                        <li>
+                            <a href="#">이용약관 </a>
+                        </li>
+                        <li>
+                            <a href="#">개인정보처리방침 </a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_inner">
+                <div class="inner">
+                    <div class="wrap">
+                        <article>
+                            <div class="f_logo">
+                                <img src="../..//img/f_logo.png" alt="">
+                            </div>
+                            <address>
+                                주식회사 케이엘큐브 <br>
+                                대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                                사업자등록번호: 100-11-22203 <br>
+                                통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                                호스팅 사업자: Amazon Web Service(AWS)
+                            </address>
+                        </article>
+                        <article class="right">
+                            <h2>IT잡스 SNS 채널</h2>
+                            <ul class="sns">
+                                <li>
+                                    <a href="#">
+                                        <img src="../../img/f_sns01.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../../img/f_sns02.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../../img/f_sns03.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../../img/f_sns04.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="phone">
+                                <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="inner">
+                    <p>
+                        잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가
+                        부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+                    </p>
+                    <p class="copy">
+                        Copyright © 2020 Jons In. Inc. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    $(function(){
+        $('.nano').click(function(){
+            $('.nano').parent('dd').siblings('dt').removeClass('on');
+            $(this).parent('dd').siblings('dt').addClass('on');
+            $('.nano').removeClass('on');
+            $(this).addClass('on');
+            $('.nano').parent('dd').removeClass('on');
+            $(this).parent('dd').addClass('on');
+            //$(this).toggleClass('on');
+        })
+
+		$('.inner .content_info .firstFloor dl dt').click(function(){
+			$(this).parent('dl').siblings('dl').find('dt').removeClass('on')
+			$(this).parent('dl').siblings('dl').find('dd').removeClass('on')
+			$(this).toggleClass('on')
+			$(this).siblings('dd').toggleClass('on');
+			$(this).siblings('dd').find('.nano').toggleClass('on');
+			$(this).parent('dl').siblings('dl').find('dd .nano').removeClass('on')
+		})
+
+		$(".nano > ul, #demo2 > ul, #scrolls3 > ul").mCustomScrollbar({
+			//axis:"y", // vertical and horizontal scrollbar
+			theme: "minimal-dark",
+			scrollInertia:800
+			//mouseWheelPixels: '100px'
+		});
+    })
+    </script>
+</body>
+
+
+</html>

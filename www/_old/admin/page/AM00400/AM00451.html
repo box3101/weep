@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head style="overflow-y:hidden;">
+    <title>AM00451</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:image:type" content="/image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/project_reg.css">
+    <link rel="stylesheet" href="../../css/datepicker.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/customTab.js"></script>
+    <script type="text/javascript" src="../../js/sideBar_toggle.js"></script>
+    <script type="text/javascript" src="../../js/admin_common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script> 
+    <script>
+        $(function () {
+           //datepicker 
+           $(".day_input").datepicker({
+              language: 'en',
+              autoClose: true,
+              dateFormat:'yyyy.mm.dd'
+              //minDate: new Date()
+           });
+        });
+    </script>
+</head>
+
+
+<body>
+<!-- admin_header : S ---------->
+<div id="header">
+    <div class="adminLogo">
+        <a href="/admin/main.html"><img src="../../admin_img/admin_logo.png" alt="관리자메인으로 바로가기"></a>
+    </div>
+    <ul id="adminGnb">
+        <li>
+            <a href="../../page/AM00100/AM00101.html">프로젝트</a>
+        </li>
+        <li>
+            <a href="../../page/AM00200/AM00201.html">아웃소싱</a>
+        </li>
+        <li>
+            <a href="../../page/AM00300/AM00301.html">프리랜서</a>
+        </li>
+        <li class="on">
+            <a href="../../page/AM00400/AM00401.html">파트너</a>
+        </li>
+        <li>
+            <a href="../../page/AM00500/AM00500.html">클라이언트</a>
+        </li>
+        <li>
+            <a href="../../page/AM00600/AM00601.html">매니저</a>
+        </li>
+        <li>
+            <a href="../../page/AM00700/AM00701.html">회원</a>
+        </li>
+        <li>
+            <a href="../../page/AM00800/AM00801.html">계약</a>
+        </li>
+        <li>
+            <a href="../../page/AM00900/AM00901.html">정산</a>
+        </li>
+        <li>
+            <a href="../../page/AM01000/AM01001.html">유료상품</a>
+        </li>
+        <li>
+            <a href="../../page/AM01200/AM01201.html">사이트관리</a>
+        </li>
+    </ul>
+</div>
+<!-- admin_header : E ---------->
+
+<!-- admin_wrapper : S ---------->
+<div class="wrapper clearfix">
+<!-- admin_sidebar : S ---->
+        <div id="sidebar">
+            <div class="info">
+                <div class="info_icon">
+                    <button id="sidebarCollapse">
+                    </button>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <span data-tooltip-text="홈버튼">
+                            <img src="../../admin_img/left_home_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <span data-tooltip-text="잠금버튼">
+                            <img src="../../admin_img/left_lock_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <span data-tooltip-text="마이페이지">
+                            <img src="../../admin_img/my_page_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="../../page/AM01100/AM01101.html">
+                        <span data-tooltip-text="현황 및 통계">
+                            <img src="../../admin_img/AM01100_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="../../page/AM01300/AM01301.html">
+                        <span data-tooltip-text="게시판 관리">
+                            <img src="../../admin_img/AM01300_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="../../page/AM01400/AM01401.html">
+                        <span data-tooltip-text="시스템 관리">
+                            <img src="../../admin_img/AM01400_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        <div class="nav_side">
+            <div class="SNB_title">
+                <img src="../../admin_img/admin_leftLnb.png" alt="">
+                <h1>파트너관리</h1>
+            </div>
+            <ul class="SNB">
+                <li><a href="../../page/AM00400/AM00401.html">파트너 등록현황</a></li>
+                <li><a href="../../page/AM00400/AM00411.html">파트너 찜 관리</a></li>
+                <li>
+                    <a href="#none">인터뷰 관리</a>
+                    <ul class="sub_SNB">
+                        <li><a href="../../page/AM00400/AM00421.html">인터뷰 요청</a></li>
+                        <li><a href="../../page/AM00400/AM00423.html">인터뷰 취소</a></li>
+                        <li><a href="../../page/AM00400/AM00424.html">인터뷰 확정</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../page/AM00400/AM00441.html">프리랜서 계약관리</a></li>
+                <li class="on"><a href="../../page/AM00400/AM00451.html">프리랜서 추천관리</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- admin_sidebar : E ---->
+
+<!-- admin_contents : S ---->
+    <div id="contents">
+        <div class="inner">
+            <div class="title clearfix">
+                <h2>파트너 추천관리</h2>
+                <ul class="breadcrumb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">파트너 관리</a></li>
+                    <li><a href="#">파트너 추천관리</a></li>
+                </ul>
+            </div>
+            <div class="tapBox">
+                <ul class="tab02 clearfix">
+                    <li class="on"><a href="#">전체</a></li>
+                    <li><a href="#">PM/업무/컨설팅</a></li>
+                    <li><a href="#">기획</a></li>
+                    <li><a href="#">디자인</a></li>
+                    <li><a href="#">퍼블리싱</a></li>
+                    <li><a href="#">개발</a></li>
+                    <li><a href="#">서버/보안</a></li>
+                </ul>
+            </div>
+            <div class="searchBox clearfix">
+                <div class="searchOption">
+                    <div class="option_calender">
+                        <select name="" id="" title="등록일을 선택해주세요">
+                            <option value="">등록일</option>
+                            <option value="">마감일</option>
+                            <option value="">찜할일</option>
+                        </select>
+                        <input type="text" class="day_input" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요."/>
+                        
+                        <span class="mr5 ml5">~</span>
+                        <input type="text" class="day_input" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요."/>
+                        
+                        <ul class="calender_radio">
+                            <li>
+                                <input type="radio" name="term" id="OTD" value="당일">
+                                <label for="OTD"><span>당일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day1" value="1일">
+                                <label for="day1"><span>1일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day7" value="7일">
+                                <label for="day7"><span>7일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day10" value="10일">
+                                <label for="day10"><span>10일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day15" value="15일">
+                                <label for="day15"><span>15일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month1" value="1개월">
+                                <label for="month1"><span>1개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month3" value="3개월">
+                                <label for="month3"><span>3개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month6" value="6개월">
+                                <label for="month6"><span>6개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="whole" value="전체">
+                                <label for="whole"><span>전체</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="option_name">
+                        <div class="lef"> 
+                            <span><label for="">클라이언트 아이디</label></span>
+                            <input type="text" id="">
+                        </div>
+                        <div class="ref">
+                            <span class="w130"><label for="">클라이언트명</label></span>
+                            <input type="text" id=""> 
+                        </div>
+                    </div>
+                    <div class="option_name">
+                        <span><label for="">이력서명(키워드)</label></span>
+                        <input type="text" id="">
+                    </div>
+                </div>
+                <div class="ref">
+                        <div class="btn_search">
+                            <a href="">검색</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="tableBox">
+                <div class="list_number clearfix">
+                    <div class="lef">
+                            <p>총 <span class="c_orange">50</span>건</p>
+                        </div>
+                    <div class="ref">
+                            <select name="" id="">
+                                <option value="" selected>보기</option>
+                                <option value="">10</option>
+                                <option value="">15</option>
+                                <option value="">20</option>
+                                <option value="">25</option>
+                                <option value="">30</option>
+                            </select>
+                        </div>
+                </div>
+                <form action="">
+                    <table summery="">
+                        <caption class="hidden"></caption>
+                        <thead>
+                            <th>
+                                <input type="checkbox" name="c1" id="c1">
+                                <label for="c1"></label>
+                            </th>
+                            <th>번호</th>
+                            <th>구분</th>
+                            <th>아이디</th>
+                            <th>파트너</th>
+                            <th>이력서명</th>
+                            <th>클라이언트명</th>
+                            <th>프로젝트명</th>
+                            <th>추천일시</th>
+                            <th>관리</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c1">
+                                    <label for="c1"></label>
+                                </td>
+                                <td>100</td>
+                                <td>PM/업무/컨설팅</td>
+                                <td>jobsin</td>
+                                <td>홍길동(41)</td>
+                                <td class="td_popup">
+                                    <a href="javascript:openWindowPop('../../page/popup/popup_resume.html', 'popup');">프로젝트에 최선을 다해서 임하겠습니다.</a>
+                                </td>
+                                <td>위프랑</td>
+                                <td class="td_popup">
+                                        <a href="javascript:openWindowPop('../../page/popup/popup_project.html', 'popup');">[상주]
+                                            오프라인 매장 주문 플랫폼 Admin Front-end 개발</a>
+                                    </td>
+                                <td>2020-06-21<br>18:00</td>
+                                <td>
+                                    <div class="btn_table02"><a onclick="confirm_cancle02()" style="cursor:pointer" class="orange">삭제</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c1">
+                                    <label for="c1"></label>
+                                </td>
+                                <td>99</td>
+                                <td>기획</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c1">
+                                    <label for="c1"></label>
+                                </td>
+                                <td>98</td>
+                                <td>디자인</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c1">
+                                    <label for="c1"></label>
+                                </td>
+                                <td>97</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c1">
+                                    <label for="c1"></label>
+                                </td>
+                                <td>96</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c1">
+                                    <label for="c1"></label>
+                                </td>
+                                <td>95</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c1">
+                                    <label for="c1"></label>
+                                </td>
+                                <td>94</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c1">
+                                    <label for="c1"></label>
+                                </td>
+                                <td>93</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c1">
+                                    <label for="c1"></label>
+                                </td>
+                                <td>92</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="c1">
+                                    <label for="c1"></label>
+                                </td>
+                                <td>91</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="table_bot clearfix">
+                    <div class="btn_exel"><a href="#" onclick="confirm_cancle02()" style="cursor:pointer">선택삭제</a></div>
+                    <div class="btn_exel mr5"><a href="#">엑셀다운로드</a></div>
+                </div>
+                <div class="table_pagination">
+                    <ul class="pagination">
+                        <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""/></a></li>
+                        <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""/></a></li>
+                        <li class="active"><a href="" class="on">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">6</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">8</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">10</a></li>
+                        <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""/></a></li>
+                        <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- admin_contents : E ---->
+</div>
+<!-- admin_wrapper : E ---------->
+<script>
+    function confirm_cancle() {
+        var confirm_cancle = confirm("프로젝트 지원건이 확인전이므로\n취소하실 수 있습니다\n\n취소하겠습니까?");
+ 
+        if ( confirm_cancle == true ) {
+            alert("프로젝트 지원이 취소되었습니다.");
+        } else if ( confirm_cancle == false ) {
+        }
+    }
+    function confirm_cancle02() {
+        var confirm_cancle = confirm("삭제하시겠습니까?");
+ 
+        if ( confirm_cancle == true ) {
+            alert("삭제되었습니다.");
+        } else if ( confirm_cancle == false ) {
+        }
+    }
+</script>
+<script>
+    function openWindowPop(url, name) {
+        var options = 'top=0, left=0, width=1260, height=800, status=no, menubar=no, toolbar=no, resizable=no scrollbars=1';
+        window.open(url, name, options);
+    }
+</script>
+</body>
+</html>

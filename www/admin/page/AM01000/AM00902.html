@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head style="overflow-y:hidden;">
+    <title>AM00902</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:image:type" content="/image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> <!--datepicker 플러그인-->
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> <!--datepicker 플러그인-->
+    <script>
+        $(function () {
+            //datepicker 
+            $(".calender_img").flatpickr({
+                //mode: 'range',
+                dateFormat: "Y.m.d"
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+<!-- admin_header : S ---------->
+<div id="header">
+    <div class="adminLogo">
+        <a href="http://127.0.0.1:5501/admin/main.html"><img src="../../admin_img/admin_logo.png" alt="관리자메인으로 바로가기"></a>
+    </div>
+    <ul id="adminGnb">
+        <li>
+            <a href="../../page/AM00100/AM00101.html">프로젝트관리</a>
+        </li>
+        <li>
+            <a href="../../page/AM00200/AM00201.html">아웃소싱관리</a>
+        </li>
+        <li>
+            <a href="../../page/AM00300/AM00301.html">프리랜서관리</a>
+        </li>
+        <li>
+            <a href="../../page/AM00400/AM00401.html">파트너관리</a>
+        </li>
+        <li>
+                <a href="../../page/AM00500/AM00500.html">클라이언트관리</a>
+            </li>
+        <li>
+            <a href="../../page/AM00600/AM00601.html">매니저관리</a>
+        </li>
+        <li>
+            <a href="../../page/AM00700/AM00701.html">회원관리</a>
+        </li>
+        <li>
+            <a href="../../page/AM00800/AM00801.html">계약관리</a>
+        </li>
+        <li class="on">
+            <a href="../../page/AM00900/AM00901.html">정산관리</a>
+        </li>
+        <li>
+            <a href="../../page/AM01000/AM01001.html">유료상품관리</a>
+        </li>
+        <li>
+            <a href="../../page/AM01100/AM01101.html">현황/통계</a>
+        </li>
+        <li>
+            <a href="../../page/AM01200/AM01201.html">사이트관리</a>
+        </li>
+        <li>
+            <a href="../../page/AM01300/AM01301.html">게시판관리</a>
+        </li>
+        <li>
+            <a href="../../page/AM00100/AM01401.html">시스템(설정)관리</a>
+        </li>
+    </ul>
+</div>
+<!-- admin_header : E ---------->
+
+<!-- admin_wrapper : S ---------->
+<div class="wrapper clearfix">
+<!-- admin_sidebar : S ---->
+    <div id="sidebar">
+        <div class="info">
+                <div class="info_icon">
+                    <button id="sidebarCollapse">
+                        <img src="../../admin_img/sideBar_toggle.png" alt="">
+                    </button>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/left_home_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/left_lock_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/my_page_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/AM01100_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/AM01300_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/AM01400_icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+        <div class="nav_side">
+            <div class="SNB_title">
+                <img src="../../admin_img/admin_leftLnb.png" alt="">
+                <h1>정산관리</h1>
+            </div>
+            <ul class="SNB">
+                <li class="on"><a href="../../page/AM00900/AM00901.html">정산현황내역</a></li>
+                <li><a href="../../page/AM00900/AM00911.html">결제내역관리</a></li>
+                <li><a href="../../page/AM00900/AM00921.html">적립금관리</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- admin_sidebar : E ---->
+
+<!-- admin_contents : S ---->
+    <div id="contents">
+        <div class="inner">
+            <div class="title clearfix borderB">
+                <h2>정산현황내역</h2>
+                <ul class="breadcrumb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">계약 관리</a></li>
+                    <li><a href="#">정산현황내역</a></li>
+                </ul>
+            </div>
+            <div class="tapBox">
+                <ul class="tab_4depth">
+                    <li><a href="../../page/AM00900/AM00901.html">프로젝트 정산</a></li>
+                    <span></span>
+                    <li class="on"><a href="../../page/AM00900/AM00902.html">아웃소싱 정산</a></li>
+                    <span></span>
+                    <li><a href="../../page/AM00900/AM00903.html">프리랜서 정산</a></li>
+                    <span></span>
+                    <li><a href="../../page/AM00900/AM00904.html">파트너 정산</a></li>
+                </ul>
+            </div>
+            <div class="searchBox clearfix">
+                <div class="searchOption">
+                    <div class="option_calender">
+                        <span class="mr30">기간</span>
+                        <input type="text" class="day_input" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요." />
+                        
+                        <span class="mr20 ml20">~</span>
+                        <input type="text" class="day_input" placeholder="2017-06-01" title="년,월.일별 날짜를 입력해주세요." />
+                        
+                        <ul class="calender_radio">
+                            <li>
+                                <input type="radio" name="term" id="OTD" value="당일">
+                                <label for="OTD"><span>당일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day1" value="1일">
+                                <label for="day1"><span>1일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day7" value="7일">
+                                <label for="day7"><span>7일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day10" value="10일">
+                                <label for="day10"><span>10일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="day15" value="15일">
+                                <label for="day15"><span>15일</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month1" value="1개월">
+                                <label for="month1"><span>1개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month3" value="3개월">
+                                <label for="month3"><span>3개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="month6" value="6개월">
+                                <label for="month6"><span>6개월</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="term" id="whole" value="전체">
+                                <label for="whole"><span>전체</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_search03 mr30">
+                    <a href="">검색</a>
+                </div>
+            </div>
+            <div class="tableBox mb30">
+                <div class="list_number clearfix">
+                    <div class="lef">
+                        <span>2020년 6월 1일</span>~<span>2020년 9월 1일</span>
+                    </div>
+                </div>
+                <form action="">
+                    <table summery="">
+                        <caption class="hidden"></caption>
+                        <thead>
+                            <th>수입 총액</th>
+                            <th>지출 총액</th>
+                            <th>수익 총액</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10,000,000원</td>
+                                <td>8,000,000원</td>
+                                <td>2,000,000원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="tableBox mb30">
+                <div class="list_number clearfix">
+                    <div class="lef">
+                        <h3>수입내역</h3>
+                    </div>
+                </div>
+                <form action="">
+                    <table summery="">
+                        <caption class="hidden"></caption>
+                        <thead>
+                            <th>NO</th>
+                            <th>일시</th>
+                            <th>구분</th>
+                            <th>내용</th>
+                            <th>금액(부가세포함)</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2020-06-21 ~ 2020-10-20 10:00</td>
+                                <td>아웃소싱 선수금</td>
+                                <td>[아이티산업] 홈페이지 구축</td>
+                                <td>5,000,000원</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2020-06-21 ~ 2020-10-20 10:00</td>
+                                <td>아웃소싱 선수금</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>2020-06-21 ~ 2020-10-20 10:00</td>
+                                <td>아웃소싱 잔금</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>2020-06-21 ~ 2020-10-20 10:00</td>
+                                <td>아웃소싱 수수료</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="table_pagination">
+                    <ul class="pagination">
+                        <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""/></a></li>
+                        <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""/></a></li>
+                        <li class="active"><a href="" class="on">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">6</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">8</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">10</a></li>
+                        <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""/></a></li>
+                        <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tableBox mb30">
+                <div class="list_number clearfix">
+                    <div class="lef">
+                        <h3>지출내역</h3>
+                    </div>
+                </div>
+                <form action="">
+                    <table summery="">
+                        <caption class="hidden"></caption>
+                        <thead>
+                            <th>NO</th>
+                            <th>일시</th>
+                            <th>구분</th>
+                            <th>내용</th>
+                            <th>금액(부가세포함)</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2020-06-21 ~ 2020-10-20 10:00</td>
+                                <td>아웃소싱 선수금</td>
+                                <td>[아이티산업] 홈페이지 구축</td>
+                                <td>5,000,000원</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2020-06-21 ~ 2020-10-20 10:00</td>
+                                <td>아웃소싱 선수금</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>2020-06-21 ~ 2020-10-20 10:00</td>
+                                <td>아웃소싱 잔금</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>2020-06-21 ~ 2020-10-20 10:00</td>
+                                <td>파견수수료</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="table_pagination">
+                    <ul class="pagination">
+                        <li class="pager mr3"><a href=""><img src="../../admin_img/btn_page_first.png" alt=""/></a></li>
+                        <li class="pager mr10"><a href=""><img src="../../admin_img/btn_page_pre.png" alt=""/></a></li>
+                        <li class="active"><a href="" class="on">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">6</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">8</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">10</a></li>
+                        <li class="pager ml10 mr3"><a href=""><img src="../../admin_img/btn_page_next.png" alt=""/></a></li>
+                        <li class="pager"><a href=""><img src="../../admin_img/btn_page_last.png" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    function openWindowPop(url, name) {
+        var options = 'top=0, left=0, width=1260, height=800, status=no, menubar=no, toolbar=no, resizable=no scrollbars=1';
+        window.open(url, name, options);
+    }
+</script>
+<!-- admin_contents : E ---->
+</div>
+<!-- admin_wrapper : E ---------->
+</body>
+</html>

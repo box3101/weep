@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+  <title>이력서 관리</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="U잡스">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="../../img/logo.png">
+  <meta property="og:image:type" content="../../image/png">
+  <meta property="og:image:width" content="173">
+  <meta property="og:image:height" content="65">
+  <meta property="og:description" content="">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> <!--datepicker 플러그인 소스-->
+  <link rel="stylesheet" href="../../css/@default.css" />
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/font.css">
+  <link rel="stylesheet" href="../../css/swiper.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="../../js/slick.min.js"></script>
+  <script type="text/javascript" src="../../js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> <!--datepicker 플러그인 소스-->
+  <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+
+<body>
+	<div id="header" class="sub_header">
+		<div class="inner clearfix">
+			<h1 class="logo">
+				<a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+			</h1>
+			<ul id="main_gnb">
+				<li>
+					<a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+				</li>
+				<li>
+					<a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+				</li>
+				<li>
+					<a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+				</li>
+				<li>
+					<a href="/page/partner_sch/partner.html">파트너 검색</a>
+				</li>
+				<li>
+					<a href="#">WEE.P 소개
+					</a>
+				</li>
+
+			</ul>
+			<ul class="clearfix small-txt">
+				<li>
+					<a href="#">이용안내</a>
+				</li>
+				<li>
+					<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+				</li>
+			</ul>
+
+			<ul class="util clear">
+				<li>
+					<a href="/page/login/login01.html">로그인</a>
+				</li>
+				<li>
+					<a href="/page/login/login02.html">회원가입</a>
+				</li>
+
+				<div class="memberImg">
+					<img src="/img/bg_member.png" alt="회원가입혜택">
+				</div>
+			</ul>
+			<ul class="login-util clear">
+				<li>
+					<a href="javascript:;"><span><img src="/img/@img-profile.png" alt="회원이미지" class="member-img"></span>홍길동</a>
+					<ul class="member-menu">
+						<li>
+							<a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+						</li>
+						<li>
+							<a href="">로그아웃</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+    <div id="sub_contents">
+      <div class="sub_tit">
+        <div class="inner">
+          <h1>마이페이지</h1>
+        </div>
+      </div>
+	<div class="image_popup">
+		<div class="title">
+			<h2>이미지 업로드</h2>
+			<a href="javascript:;" class="pop_close"></a>
+		</div>
+		<form action="" method="post">
+			<div class="image_file">
+				<div class="file_row clearfix">
+					<input type="text" class="upload_text" readonly="readonly">
+					<div class="upload-btn_wrap">
+						<button type="button" title="파일찾기">
+							<span>찾아보기</span>
+						</button>
+						<input type="file" class="input_file" title="파일찾기">
+					</div>
+				</div>
+				<p class="desc">
+					권장 사진 사이즈는 108*132픽셀이며, Gif, jpg, jpge 이미지 파일만 등록 가능합니다. <br>
+					파일 선택 후 마우스를 드래그하여 사진크기를 편집하세요.
+				</p>
+			</div>
+			<div class="images_ex">
+				<img src="../../img/file_ex_img.jpg" alt="">
+			</div>
+			<div class="upload_btn">
+				<button type="submit">등록하기</button>
+			</div>
+		</form>
+	</div>
+	<div class="black_screen"></div>
+    <div id="sub_content">
+        <div class="inner">
+          <div class="left_menu">
+            <ul>
+              <li>
+                <a href="/page/freelance_sch/FRO0511.html" class="on">나의 정보/설정</a>
+			  </li>
+			  <li>
+                <a href="/page/freelance_sch/FRO_member_confirm.html">회원인증 관리</a>
+              </li>
+              <li>
+                <a href="/page/freelance_sch/FRO0521.html" class="on">이력서 관리</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch03.html">나의 문의 내역</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch04.html">나의 결제 내역</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch05.html">보유 캐시 / 충전</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch06.html">적립금 내역</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch06.html">쿠폰 관리</a>
+              </li>
+			  <li>
+                <a href="/page/project_sch/project_sch06.html">광고 신청/관리</a>
+              </li>
+			  <li>
+                <a href="/page/project_sch/project_sch06.html">수익 관리</a>
+              </li>
+			  <li>
+                <a href="/page/project_sch/project_sch06.html">비밀번호 변경</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="resume_wrap">
+			<div class="title">
+				<h2 class="littleTit2">이력서</h2>
+				<div class="btn_wrap">
+					<a href="#none">
+						<img src="../../img/free_self_btn.png" alt="이력서 보기 버튼" />
+					</a>
+					<a href="./FRO0522.html" class="ml5">
+						<img src="../../img/modify_btn.png" alt="수정 버튼" />
+					</a>
+				</div>
+			</div>
+			<div class="resume_main">
+				<h2>기획, PM, 사업관리 외에도 맡은 바 업무를 기대 이상으로 수행합니다.기획, PM, 사업관리 외에도 맡은 바 업무를 기대 이상으로 수행합니다.</h2>
+				<div class="resume_info clearfix">
+					<div class="person_img"><img src="/img/@img-profile.png" alt=""></div>
+					<div class="person_txt">
+						<div class="p_title clearfix">
+							<div class="left clearfix">
+								<div class="name">홍길동</div>
+								<div class="sex">남</div>
+								<div class="birth">1977년,</div>
+								<div class="age">41세</div>
+							</div>
+							<div class="right clearfix">
+								<div class="job">개발자</div>
+								<div class="job_career">10년 6개월</div>
+							</div>
+						</div>
+						<div class="bottom_t">
+							<ul class="clearfix">
+								<li>
+									<dl>
+										<dt>전화번호</dt>
+										<dd>010-0000-0000</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>메일주소</dt>
+										<dd>비공개</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>주소</dt>
+										<dd>서울시 중량구 공덕동 서울시 중량구 공덕동서울시 중량구 공덕동</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab_list">
+				<ul class="clearfix">
+					<li class="on"><a href="">자기소개</a></li>
+					<li><a href="">수행 프로젝트</a></li>
+					<li><a href="">보유 기술</a></li>
+					<li><a href="">경력 정보</a></li>
+					<li><a href="">포트폴리오</a></li>
+					<li><a href="">인터뷰</a></li>
+				</ul>
+			</div>
+			<!-- 학력사항 -->
+			<div class="academic info">
+				<div class="info_top fle">
+					<h2 class="fw">
+						학력사항
+					</h2>
+				</div>
+				<ul class="lists">
+					<li class="fle">
+						<div class="lef">
+							<h2>2020.01 ~ 현재
+								<p>
+									졸업예정
+								</p>
+							</h2>
+						</div>
+						<div class="ref">
+							<h2>
+								서울모대학원(院) (석사과정)
+								<span>컴퓨터공확과</span>
+							</h2>
+							<ul>
+								<li>
+									<dl>
+										<dt style="width:46px;">
+											학점
+										</dt>
+										<dd>
+											<span>4.35</span> / 4.5
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="fle">
+						<div class="lef">
+							<h2>
+								2020.01 ~ 현재
+								<p class="yel">
+									졸업
+								</p>
+							</h2>
+						</div>
+						<div class="ref">
+							<h2>
+								서울모대학교
+								<span>경영학과</span>
+							</h2>
+							<ul>
+								<li>
+									<dl>
+										<dt style="width:46px;">
+											학점
+										</dt>
+										<dd>
+											<span>4.35</span> / 4.5
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="fle">
+						<div class="lef">
+							<h2>2020.01 ~ 현재
+								<p class="yel">
+									졸업
+								</p>
+							</h2>
+						</div>
+						<div class="ref">
+							<h2>
+								대전고등학교
+								<span>이과계열</span>
+							</h2>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 학력사항 -->
+
+			<!-- 자격증 -->
+			<div class="certi_wrap info">
+				<div class="info_top fle">
+					<h2 class="fw">
+						자격증
+					</h2>
+				</div>
+				<ul class="lists">
+					<li class="fle">
+						<div class="lef">
+							<h2>2020.01 </h2>
+						</div>
+						<div class="ref">
+							<h2>
+								정보처리기사
+								<span>한국산업인력관리공단</span>
+							</h2>
+						</div>
+					</li>
+					<li class="fle">
+						<div class="lef">
+							<h2>2020.06</h2>
+						</div>
+						<div class="ref">
+							<h2>
+								정보처리산업기사
+								<span>한국산업인력관리공단</span>
+							</h2>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 자격증 -->
+
+			<!-- 희망근무조건 -->
+			<div class="info">
+				<div class="info_top fle">
+					<h2 class="fw">
+						희망근무조건
+					</h2>
+				</div>
+				<div class="fw_table">
+					<dl>
+						<dt>고용형태</dt>
+						<dd>정규직, 계약직, 파트너, 아웃소싱
+						</dd>
+					</dl>
+					<dl>
+						<dt>희망보수</dt>
+						<dd>서울전지역, 경기 광명시, 경기 안산시 단원구, 경기 수원시 권선구
+
+						</dd>
+					</dl>
+					<dl>
+						<dt>희망근무지</dt>
+						<dd>희망월급여 500 ∼ 600만원
+						</dd>
+					</dl>
+					<dl>
+						<dt>수행가능직무</dt>
+						<dd>웹기획.PM, 모바일기획, 서비스기획, 콘텐츠기획
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- 희망근무조건 -->
+
+			<!-- 경력사항 -->
+			<div class="career_wrap info">
+				<div class="top">
+					<div class="fle">
+						<h2>경력사항
+							<span>12년 4개월</span>
+						</h2>
+					</div>
+				</div>
+				<div class="">
+					<ul class="lists">
+						<li class="fle">
+							<div class="lef">
+								<h2>2020.01 ~ 현재
+									<p>
+										재직증중
+									</p>
+								</h2>
+							</div>
+							<div class="ref">
+								<h2>
+									㈜케이비시스템즈
+								</h2>
+								<ul>
+									<li>
+										<dl>
+											<dt>
+												·근무부서
+											</dt>
+											<dd>
+												시스템개발부
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>
+												·직위
+											</dt>
+											<dd>
+												부장
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>
+												·담당업무
+											</dt>
+											<dd>
+												PM, 기획총괄, 웹기획
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>
+												·연봉
+											</dt>
+											<dd>
+												3,000만원
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>
+												·업무성과
+											</dt>
+											<dd>
+												팀장으로서 사업을 성공적으로 수행하였으며, 팀원들을 잘 관리하여 프로젝트들을 <br> 다양하게 일정 차질 없이 프로젝트를 수행하였습니다.
+											</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="fle">
+							<div class="lef">
+								<h2>2020.06 ~ 2017.02</h2>
+							</div>
+							<div class="ref">
+								<h2>
+									㈜한국정보시스템
+								</h2>
+								<ul>
+									<li>
+										<dl>
+											<dt>
+												·근무부서
+											</dt>
+											<dd>
+												시스템개발부
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>
+												·직위
+											</dt>
+											<dd>
+												부장
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>
+												·연봉
+											</dt>
+											<dd>
+												3,000만원
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												·업무성과
+											</dt>
+											<dd>
+												팀장으로서 사업을 성공적으로 수행하였으며, 팀원들을 잘 관리하여 프로젝트들을 <br> 다양하게 일정 차질 없이 프로젝트를 수행하였습니다.
+											</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 수행프로젝트 -->
+			<div class="project_wrap info">
+				<div class="info">
+                    <div class="info_top fle">
+                        <h2>
+                            수행프로젝트
+                        </h2>
+                    </div>
+                    <ul class="lists">
+                        <li class="fle">
+                            <div class="lef">
+                                <h2>2020.01 ~ 현재
+                                    <p>
+                                        수행 중
+                                    </p>
+                                </h2>
+                            </div>
+                            <div class="ref">
+                                <h2>
+                                    등기빅데이터 시스템 구축 사업
+                                    <span>대법원</span>
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·역할
+                                                </dt>
+                                            <dd>
+                                                기획
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·성과
+                                                </dt>
+                                            <dd>
+                                                기획 기획업무 및 디자인 작업 일정관리 등 프로젝트 초기에 일정이 지연되지 않도록 함
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·개발환경
+                                                </dt>
+                                            <dd>
+                                                Window NT, Oracle, JSP, Eclipse, 전자정부프레임웍
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="fle">
+                            <div class="lef">
+                                <h2>2020.01 ~ 현재</h2>
+                            </div>
+                            <div class="ref">
+                                <h2>
+                                    한국관광공사 의료관광 플랫폼 구축 사업
+                                    <span>한국관광공사</span>
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·역할
+                                                </dt>
+                                            <dd>
+                                                기획
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·성과
+                                                </dt>
+                                            <dd>
+                                                기획 기획업무 및 디자인 작업
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·개발환경
+                                                </dt>
+                                            <dd>
+                                                Window NT, Oracle, JSP, Eclipse,
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="fle">
+                            <div class="lef">
+                                <h2>2018.01 ~ 현재
+                                    <p>
+                                        수행 중
+                                    </p>
+                                </h2>
+                            </div>
+                            <div class="ref">
+                                <h2>
+                                    등기빅데이터 시스템 구축 사업
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·역할
+                                                </dt>
+                                            <dd>
+                                                기획
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·성과
+                                                </dt>
+                                            <dd>
+                                                기획 기획업무 및 디자인 작업 일정관리 등
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·개발환경
+                                                </dt>
+                                            <dd>
+                                                Window NT, Oracle, JSP, Eclipse, 전자정부프레임웍
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="fle">
+                            <div class="lef">
+                                <h2>2020.01 ~ 현재
+                                    <p>
+                                        수행 중
+                                    </p>
+                                </h2>
+                            </div>
+                            <div class="ref">
+                                <h2>
+                                    등기빅데이터 시스템 구축 사업
+                                    <span>대법원</span>
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·역할
+                                                </dt>
+                                            <dd>
+                                                기획
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·성과
+                                                </dt>
+                                            <dd>
+                                                기획 기획업무 및 디자인 작업 일정관리 등 프로젝트 초기에 일정이 지연되지 않도록 함
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·개발환경
+                                                </dt>
+                                            <dd>
+                                                Window NT, Oracle, JSP, Eclipse, 전자정부프레임웍
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="fle">
+                            <div class="lef">
+                                <h2>2020.01 ~ 현재
+                                    <p>
+                                        수행 중
+                                    </p>
+                                </h2>
+                            </div>
+                            <div class="ref">
+                                <h2>
+                                    등기빅데이터 시스템 구축 사업
+                                    <span>대법원</span>
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·역할
+                                                </dt>
+                                            <dd>
+                                                기획
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·성과
+                                                </dt>
+                                            <dd>
+                                                기획 기획업무 및 디자인 작업 일정관리 등 프로젝트 초기에 일정이 지연되지 않도록 함
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                    ·개발환경
+                                                </dt>
+                                            <dd>
+                                                Window NT, Oracle, JSP, Eclipse, 전자정부프레임웍
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+			<!-- //수행프로젝트 -->
+
+			<!-- 보유기술 -->
+			<div class="tech_wrap info">
+				<div class="info_top fle">
+					<h2>
+						보유기술
+					</h2>
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>구분</th>
+							<th>분야</th>
+							<th>세부기술</th>
+							<th>경력기간</th>
+							<th>숙련도</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>개발</td>
+							<td>응용프로그램</td>
+							<td>JSP</td>
+							<td>5년 ~ 7년</td>
+							<td>상</td>
+						</tr>
+						<tr>
+							<td>개발</td>
+							<td>DBMS</td>
+							<td>Maria</td>
+							<td>5년 ~ 7년</td>
+							<td>상</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //보유기술 -->
+
+			<!-- 자기소개 -->
+			<div class="self_wrap info">
+				<div class="info_top fle">
+					<h2>
+						자기소개
+					</h2>
+				</div>
+				<div class="self_info">
+					<div class="top">
+						<h2>
+							기획 경력 20년차로 공공기관, 금융기관, 커머스 등 다수의 프로젝트를 수행
+						</h2>
+						<div class="info">
+							프로젝트에 임할 때는 회사의 사업적인 측면에서 고민합니다. <br> 주어진 자원에서 가장 효율적인 업무를 추진하며, <br> 함께 하는 구성원들의 입장과 역할을
+							존중하며 협력하여 프로젝트를 진행합니다.
+							<br><br> [장점 10가지] <br> 1. 경험이 많습니다. <br> PM(크고 작은 프로젝트, 공공기관, 대기업, 중소기업 등)으로서, <br>
+							기획자(웹기획, 광고기획, 사업기획, 서비스기획, 운영기획 등등)로서, <br> 다양한 분야(SI, 웹, 모바일, 앱(APP) 등)에, <br> 조직관리(소규모
+							프로젝트, 대형 프로젝트, 회사 팀 운영 등등)에서도 <br> 제안작업(공공프로젝트 제안작업
+							다수 진행, 프로젝트 제안서, 서비스 제안서, 운영/사업 <br> 제안서 등)에서도 리스크관리(다양한 사업의 책임자로 프로젝트 수행합니다.
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //자기소개 -->
+
+			<!-- 인터뷰 -->
+			<div class="inter_wrap info">
+				<div class="info_top fle">
+					<h2>
+						인터뷰
+					</h2>
+				</div>
+				<div class="info2">
+					<ul>
+						<li>
+							<p class="qxt">
+								<img src="../../img/fre_qu.png" alt="질문 아이콘">
+								대학때부터 이 전공으로 쭉 공부 해오신 건가요?
+							</p>
+							<p class="axt">
+								대학때부터 IT업계의 각종 공모전에 참여하고 수상하였으며 항상 더 노력하고 있습니다.
+							</p>
+						</li>
+						<li>
+							<p class="qxt">
+								<img src="../../img/fre_qu.png" alt="질문 아이콘">
+								대학때부터 이 전공으로 쭉 공부 해오신 건가요?
+							</p>
+							<p class="axt">
+								대학때부터 IT업계의 각종 공모전에 참여하고 수상하였으며 항상 더 노력하고 있습니다.
+							</p>
+						</li>
+						<li>
+							<p class="qxt">
+								<img src="../../img/fre_qu.png" alt="질문 아이콘">
+								프리랜서로서 자신을 어필할 수 있는 키워드 5가지만 적어주세요.
+							</p>
+							<p class="axt">
+								디자인 / 퍼포먼스 / 노력 / 실천 / 성실
+							</p>
+						</li>
+						<li>
+							<p class="qxt">
+								<img src="../../img/fre_qu.png" alt="질문 아이콘">
+								프리랜서(업체독립) 전향 이유는? 프리랜서(업체독립)를 한다고 했을 때의 주위의 반응은 어땠나요?
+							</p>
+							<p class="axt">
+								직장을 다니면서도 프리랜서를 같이 병행했습니다. 거의 대부분의 프리랜서들은 직장을 병행합니다. <br>
+								현재는 휴식중이라 프리랜서만 하고 있습니다.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //인터뷰 -->
+        </div>
+    </div>
+
+
+  <div id="footer_info">
+    <div id="footer">
+      <div class="footer_top">
+        <div class="inner">
+          <ul>
+            <li>
+              <a href="#">회사소개</a>
+            </li>
+            <li>
+              <a href="#"> 프로젝트 문의</a>
+            </li>
+            <li>
+              <a href="#"> 프리랜서 문의</a>
+            </li>
+            <li>
+              <a href="#">인재채용</a>
+            </li>
+            <li>
+              <a href="#">이용약관 </a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침 </a>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_inner">
+        <div class="inner">
+          <div class="wrap">
+            <article>
+              <div class="f_logo">
+                <img src="../..//img/f_logo.png" alt="">
+              </div>
+              <address>
+                주식회사 케이엘큐브 <br>
+                대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                사업자등록번호: 100-11-22203 <br>
+                통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                호스팅 사업자: Amazon Web Service(AWS)
+              </address>
+            </article>
+            <article class="right">
+              <h2>IT잡스 SNS 채널</h2>
+              <ul class="sns">
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns01.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns02.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns03.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns04.png" alt="">
+                  </a>
+                </li>
+              </ul>
+              <div class="phone">
+                <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="inner">
+          <p>
+            잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가
+            부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+          </p>
+          <p class="copy">
+            Copyright © 2020 Jons In. Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+
+</html>

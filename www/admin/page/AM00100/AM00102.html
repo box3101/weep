@@ -1,0 +1,2552 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head style="overflow-y:hidden;">
+    <title>AM00102</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:image:type" content="/image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/project_reg.css">
+    <link rel="stylesheet" href="../../css/datepicker.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/customTab.js"></script>
+    <script type="text/javascript" src="../../js/sideBar_toggle.js"></script>
+    <script type="text/javascript" src="../../js/admin_common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script> 
+    <script>
+        $(function () {
+           //datepicker 
+           $(".day_input").datepicker({
+              language: 'en',
+              autoClose: true,
+              dateFormat:'yyyy.mm.dd'
+              //minDate: new Date()
+           });
+        });
+    </script>
+</head>
+
+
+<body>
+<!-- admin_header : S ---------->
+<div id="header">
+  <div class="adminLogo">
+      <a href="/admin/main.html"><img src="../../admin_img/admin_logo.png" alt="관리자메인으로 바로가기"></a>
+  </div>
+  <ul id="adminGnb">
+      <li class="on">
+          <a href="../../page/AM00100/AM00101.html">프로젝트</a>
+      </li>
+      <li>
+          <a href="../../page/AM00200/AM00201.html">아웃소싱</a>
+      </li>
+      <li>
+          <a href="../../page/AM00300/AM00301.html">프리랜서</a>
+      </li>
+      <li>
+          <a href="../../page/AM00400/AM00401.html">파트너</a>
+      </li>
+      <li>
+          <a href="../../page/AM00500/AM00500.html">클라이언트</a>
+      </li>
+      <li>
+          <a href="../../page/AM00600/AM00601.html">매니저</a>
+      </li>
+      <li>
+          <a href="../../page/AM00700/AM00701.html">회원</a>
+      </li>
+      <li>
+          <a href="../../page/AM00800/AM00801.html">계약</a>
+      </li>
+      <li>
+          <a href="../../page/AM00900/AM00901.html">정산</a>
+      </li>
+      <li>
+          <a href="../../page/AM01000/AM01001.html">유료상품</a>
+      </li>
+      <li>
+          <a href="../../page/AM01200/AM01201.html">사이트관리</a>
+      </li>
+  </ul>
+</div>
+<!-- admin_header : E ---------->
+
+<!-- admin_wrapper : S ---------->
+<div class="wrapper clearfix">
+<!-- admin_sidebar : S ---->
+    <div id="sidebar">
+        <div class="info">
+            <div class="info_icon">
+                <button id="sidebarCollapse">
+                </button>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="홈버튼">
+                        <img src="../../admin_img/left_home_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="잠금버튼">
+                        <img src="../../admin_img/left_lock_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="">
+                    <span data-tooltip-text="마이페이지">
+                        <img src="../../admin_img/my_page_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                <a href="../../page/AM01100/AM01101.html">
+                    <span data-tooltip-text="현황 및 통계">
+                        <img src="../../admin_img/AM01100_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="info_icon">
+                    <a href="../../page/AM01300/AM01301.html">
+                        <span data-tooltip-text="게시판 관리">
+                            <img src="../../admin_img/AM01300_icon.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            <div class="info_icon">
+                <a href="../../page/AM01400/AM01401.html">
+                    <span data-tooltip-text="시스템 관리">
+                        <img src="../../admin_img/AM01400_icon.png" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="nav_side">
+            <div class="SNB_title">
+                <img src="../../admin_img/admin_leftLnb.png" alt="">
+                <h1>프로젝트관리</h1>
+            </div>
+            <ul class="SNB">
+                <li class="on"><a href="../../page/AM00100/AM00101.html">프로젝트 등록현황</a></li>
+                <li><a href="../../page/AM00100/AM00111.html">프로젝트 지원관리</a></li>
+                <li><a href="../../page/AM00100/AM00121.html">프로젝트 찜 관리</a></li><li>
+                    <a href="#none" onclick="">인터뷰 관리</a>
+                    <ul class="sub_SNB">
+                        <li><a href="../../page/AM00100/AM00131.html">인터뷰 요청</a></li>
+                        <li><a href="../../page/AM00100/AM00133.html">인터뷰 취소</a></li>
+                        <li><a href="../../page/AM00100/AM00134.html">인터뷰 확정</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../page/AM00100/AM00151.html">프로젝트 계약관리</a></li>
+                <li><a href="../../page/AM00100/AM00161.html">프로젝트 추천관리</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- admin_sidebar : E ---->
+
+<!-- admin_contents : S ---->
+    <div id="contents">
+        <div class="inner_reg">
+            <div class="title clearfix">
+                <h2>프로젝트 내용</h2>
+                <ul class="breadcrumb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="../../page/AM00100/AM00101.html">프로젝트 전체</a></li>
+                    <li><a href="#">프로젝트 내용</a></li>
+                </ul>
+            </div>
+            <div id="project_Step_total">
+	
+                <div class="content_info step Step1" id="project_Step1" style="display:none">
+                  <h2 class="littleTit"><nm class="projectSelectNm">프로젝트</nm>등록</h2>
+                  <div class="content">
+                      <div class="processCotent">
+                          <div class="cProcessBox">
+                              <ul class="cProcess">
+                                  <li>
+                                      <h4 class="cProcessTit"><nm class="projectSelectNm">프로젝트</nm><br>유형선택</h4>
+                                      <span class="uBar"></span>
+                                      <p class="desc"><nm class="projectSelectNm">프로젝트</nm>에 적합한 작업자를<br> 모집하기 위해<br> <nm class="projectSelectNm">프로젝트</nm> 진행 방식을 선택해 주세요.
+                                      </p>
+                                  </li>
+                                  <li>
+                        <div class="step1_1 cPBtnBox on" onclick="fn_C_chk1(1, this)" id="Cid_t6_chk1_1">
+                                       <img src="../../admin_img/circle_icon.png" alt="icon">
+                                       <p class="cPBtnBoxTit">상주하여<br>업무를 수행</p>
+                                       <p class="cPBtnBoxDesc">인력을 기간 단위로 구인</p>
+                                       <a class="cPBtn"><nm class="projectSelectNm">프로젝트</nm>(파견)</a>
+                                    </div>
+                                  </li>
+                                  <li>
+                          <div class="step1_1 cPBtnBox" onclick="fn_C_chk1(1, this)" id="Cid_t6_chk1_2">
+                                       <img src="../../admin_img/circle_icon.png" alt="icon">
+                                       <p class="cPBtnBoxTit">비상주로<br>업무를 수행</p>
+                                       <p class="cPBtnBoxDesc"><nm class="projectSelectNm">프로젝트</nm> 단위로 계약</p>
+                                       <a class="cPBtn">아웃소싱</a>
+                                     </div>
+                                 </li>
+                             </ul>
+                             <p class="notice">
+                              <img src="../../admin_img/noticeIcon.png" alt="icon">&nbsp;<nm class="projectSelectNm">프로젝트</nm>에 적합한 작업자를 모집하기 위해 <nm class="projectSelectNm">프로젝트</nm> 진행 방식을 선택해 주세요.
+                             </p>
+                          </div>
+                          <div class="cProcessBox">
+                              <ul class="cProcess">
+                                  <li>
+                                      <h4 class="cProcessTit"><nm class="projectSelectNm">프로젝트</nm><br>진행방식</h4>
+                                      <span class="uBar"></span>
+                                  </li>
+                                  <li class="cPMethodBox">
+                                      <ul class="cPMethod">
+                                          <li class="step1_2 on" onclick="fn_C_chk1(2, this)" id="Cid_t6_chk2_1">
+                            <img alt="icon" src="../../admin_img/circle_icon2.png">
+                            &nbsp;신규 <nm class="projectSelectNm">프로젝트</nm>를 진행하려 합니다.
+                                          </li>
+                                          <li class="step1_2" onclick="fn_C_chk1(2, this)" id="Cid_t6_chk2_2">
+                                            <img alt="icon" src="../../admin_img/circle_icon.png">
+                            &nbsp;운영중인 서비스의 리뉴얼 또는 유지보수를 하려 합니다.
+                                          </li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </div>
+            
+                           
+                         <div class="btnBox">
+                            <a href="javascript:;" class="btn01 bgBlack Step1" onclick="fn_C_nextStep('Back2')">다음</a>
+                         </div>
+                      </div>
+                  </div>
+                </div>
+            
+                <div class="content_info step Step2" id="project_Step2" style="">
+                  <h2 class="littleTit"><nm class="projectSelectNm">프로젝트</nm> 기본 정보</h2>
+                  <div class="content">
+                    <ul class="proLnb">
+                        <li class="on">
+                            <img src="../../admin_img/input_check_on.png" alt="">&nbsp;기본정보
+                        </li>
+                        <li>
+                            <img src="../../admin_img/input_check_off.png" alt="">&nbsp;상세정보
+                        </li>
+                        <li>
+                            <img src="../../admin_img/input_check_off.png" alt="">&nbsp;수행조건
+                        </li>
+                        <li>
+                            <img src="../../admin_img/input_check_off.png" alt="">&nbsp;모집요건
+                        </li>
+                        <li>
+                            <img src="../../admin_img/input_check_off.png" alt="">&nbsp;등록완료
+                        </li>
+                    </ul>
+                    <div class="processCotent">
+                      <div class="initialInfo">
+                        <h4 class="initialInfoTit"><nm class="projectSelectNm">프로젝트</nm> 제목 <span class="required">*</span></h4>
+                        <div class="textProject on">
+                          <input type="text" autocomplete="off" name="Cid_t6_projectNm" placeholder="제목을 입력해 주세요!" id="Cid_t6_projectNm1" value="중견컴퍼니 서버 교체 사업">
+                        </div>
+                      </div>
+            
+                      <div class="initialInfo project">
+                        <h4 class="initialInfoTit"><nm class="projectSelectNm">프로젝트</nm> 형태 <span class="required">*</span></h4>
+                        <div class="textProject">
+                            <input type="radio" name="real_Cnm_t6_devType" id="Cid_t6_devType1" value="RESIDENT" checked="checked"><label for="Cid_t6_devType1">상주</label>
+                            <input type="radio" name="real_Cnm_t6_devType" id="Cid_t6_devType2" value="VIRTUAL"><label for="Cid_t6_devType2">비상주</label>
+                            <input type="radio" name="real_Cnm_t6_devType" id="Cid_t6_devType3" value="HOME"><label for="Cid_t6_devType3">재택</label>
+                            <input type="radio" name="real_Cnm_t6_devType" id="Cid_t6_devType4" value="HALF"><label for="Cid_t6_devType4">반상주</label>
+                            <input type="radio" name="real_Cnm_t6_devType" id="Cid_t6_devType5" value="DISP"><label for="Cid_t6_devType5">파견</label>
+                        </div>
+                      </div>
+            
+                      <div class="initialInfo out" style="display: none;">
+                        <h4 class="initialInfoTit"><nm class="projectSelectNm">프로젝트</nm> 진행방식 <span class="required">*</span></h4>
+                        <div class="textProject">
+                            <input type="radio" name="real_Cnm_t6_devType2" id="Cid_t6_devType11" value="RESIDENT" checked="checked"><label for="Cid_t6_devType11">상주</label>
+                            <input type="radio" name="real_Cnm_t6_devType2" id="Cid_t6_devType12" value="VIRTUAL"><label for="Cid_t6_devType12">비상주</label>
+                            <input type="radio" name="real_Cnm_t6_devType2" id="Cid_t6_devType13" value="HOME"><label for="Cid_t6_devType13">재택</label>
+                            <input type="radio" name="real_Cnm_t6_devType2" id="Cid_t6_devType14" value="HALF"><label for="Cid_t6_devType14">반상주</label>
+                            <input type="radio" name="real_Cnm_t6_devType2" id="Cid_t6_devType15" value="REMOTE"><label for="Cid_t6_devType15">도급(원격)</label>
+                        </div>
+                      </div>
+            
+                      <div class="initialInfo">
+                        <h4 class="initialInfoTit"><nm class="projectSelectNm">프로젝트</nm> 수행분야 <span class="required">*</span></h4>
+                        <div class="textProject" id="project_pDivide_div">
+                            <input type="radio" name="real_Cnm_t6_pDivide" value="GOV" id="Cid_t6_pDivide1"><label for="Cid_t6_pDivide1">공공</label>
+                            <input type="radio" name="real_Cnm_t6_pDivide" value="COM" id="Cid_t6_pDivide2"><label for="Cid_t6_pDivide2">민간</label>
+                            <input type="radio" name="real_Cnm_t6_pDivide" value="COMM" id="Cid_t6_pDivide3"><label for="Cid_t6_pDivide3">커머스</label>
+                            <input type="radio" name="real_Cnm_t6_pDivide" value="BANK" id="Cid_t6_pDivide4"><label for="Cid_t6_pDivide4">은행</label>
+                            <input type="radio" name="real_Cnm_t6_pDivide" value="CARD" id="Cid_t6_pDivide6"><label for="Cid_t6_pDivide6">카드사</label>
+                            <input type="radio" name="real_Cnm_t6_pDivide" value="STOCK" id="Cid_t6_pDivide5"><label for="Cid_t6_pDivide5">증권사</label>
+                            <input type="radio" name="real_Cnm_t6_pDivide" value="INSURE" id="Cid_t6_pDivide7"><label for="Cid_t6_pDivide7">보험사</label>
+                            <input type="radio" name="real_Cnm_t6_pDivide" value="OTHER" id="Cid_t6_pDivide8" checked="checked"><label for="Cid_t6_pDivide8">기타</label>
+                        </div>
+                  </div>
+            
+                  <script>
+                    $(function(){
+                      $("#project_pDivide_div").find("input[type=radio]").click(function(){
+                        // alert("==1=="+$(this).val());
+                      });
+                    });
+                  </script>
+            
+                      <div class="initialInfo field project">
+                          <h4 class="initialInfoTit"><nm class="projectSelectNm">프로젝트</nm> 분류 <span class="required">*</span></h4>
+                          <div class="textProject" id="project_pPart_div">
+                              <input type="checkbox" name="Cnm_t6_pPart" id="Cid_t6_pPart1" value="OFFICE" onchange="fn_pPart_check();"><label for="Cid_t6_pPart1">PM/사업관리/컨설팅</label>
+                              <input type="checkbox" name="Cnm_t6_pPart" id="Cid_t6_pPart2" value="PLAN" onchange="fn_pPart_check();"><label for="Cid_t6_pPart2">기획</label>
+                              <input type="checkbox" name="Cnm_t6_pPart" id="Cid_t6_pPart3" value="DESIGN" onchange="fn_pPart_check();"><label for="Cid_t6_pPart3">디자인</label>
+                              <input type="checkbox" name="Cnm_t6_pPart" id="Cid_t6_pPart4" value="PUB" onchange="fn_pPart_check();"><label for="Cid_t6_pPart4">퍼블리싱</label>
+                              <input type="checkbox" name="Cnm_t6_pPart" id="Cid_t6_pPart5" value="DEV" onchange="fn_pPart_check();"><label for="Cid_t6_pPart5">개발</label>
+                      <input type="checkbox" name="Cnm_t6_pPart" id="Cid_t6_pPart6" value="SERVER" onchange="fn_pPart_check();" checked="checked"><label for="Cid_t6_pPart6">네트워크/서버/보안</label>
+                    </div>
+                      </div>
+                      <div class="initialInfo detail_sel project">
+                          <h4 class="initialInfoTit"><nm class="projectSelectNm">프로젝트</nm> 상세업무 <span class="required">*</span></h4>
+                          <div class="textProject detail_project detail_OFFICE" style="display:none;">
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail1_2" value="OFFICE_ALL">
+                                  <label for="Cid_t6_pPartDetail1_2">전체</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail1_23" value="OFFICE_PMO">
+                                  <label for="Cid_t6_pPartDetail1_23">PMO</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail1_24" value="OFFICE_PM">
+                                  <label for="Cid_t6_pPartDetail1_24">PM</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail1_25" value="OFFICE_P" checked="checked">
+                                  <label for="Cid_t6_pPartDetail1_25">품질관리</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail1_26" value="OFFICE_C">
+                                  <label for="Cid_t6_pPartDetail1_26">ISP/제안/컨설팅</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail1_27" value="OFFICE_B">
+                                  <label for="Cid_t6_pPartDetail1_27">사업관리</label>
+                              
+                          </div>
+                          <div class="textProject detail_project detail_PLAN" style="display:none;">
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_1" value="PLAN_ALL">
+                                  <label for="Cid_t6_pPartDetail2_1">전체</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_12" value="PLAN_W">
+                                  <label for="Cid_t6_pPartDetail2_12">웹기획</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_13" value="PLAN_UI">
+                                  <label for="Cid_t6_pPartDetail2_13">UI설계</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_14" value="PLAN_ST">
+                                  <label for="Cid_t6_pPartDetail2_14">스토리보드</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_15" value="PLAN_R">
+                                  <label for="Cid_t6_pPartDetail2_15">유지보수 </label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_16" value="PLAN_P">
+                                  <label for="Cid_t6_pPartDetail2_16">기획PL</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_17" value="PLAN_M">
+                                  <label for="Cid_t6_pPartDetail2_17">모바일기획</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_18" value="PLAN_G">
+                                  <label for="Cid_t6_pPartDetail2_18">게임기획</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_19" value="PLAN_D">
+                                  <label for="Cid_t6_pPartDetail2_19">정보설계</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_20" value="PLAN_C">
+                                  <label for="Cid_t6_pPartDetail2_20">콘텐츠기획</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_21" value="PLAN_B">
+                                  <label for="Cid_t6_pPartDetail2_21">업무시스템기획(백오피스)</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail2_22" value="PLAN_APP">
+                                  <label for="Cid_t6_pPartDetail2_22">앱기획</label>
+                              
+                          </div>
+                          <div class="textProject detail_project detail_DESIGN" style="display:none;">
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_4" value="DESIGN_ALL">
+                                  <label for="Cid_t6_pPartDetail3_4">전체</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_40" value="DESIGN_WU">
+                                  <label for="Cid_t6_pPartDetail3_40">웹UI</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_41" value="DESIGN_WEB">
+                                  <label for="Cid_t6_pPartDetail3_41">웹디자인</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_42" value="DESIGN_UI">
+                                  <label for="Cid_t6_pPartDetail3_42">UI·UX디자인</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_43" value="DESIGN_SYS">
+                                  <label for="Cid_t6_pPartDetail3_43">업무시스템디자인</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_44" value="DESIGN_STH">
+                                  <label for="Cid_t6_pPartDetail3_44">Sketch</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_45" value="DESIGN_R">
+                                  <label for="Cid_t6_pPartDetail3_45">유지보수 </label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_46" value="DESIGN_PL">
+                                  <label for="Cid_t6_pPartDetail3_46">디자인PL</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_47" value="DESIGN_P">
+                                  <label for="Cid_t6_pPartDetail3_47">포토샵</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_48" value="DESIGN_MU">
+                                  <label for="Cid_t6_pPartDetail3_48">모바일UI</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_49" value="DESIGN_I">
+                                  <label for="Cid_t6_pPartDetail3_49">일러스트레이터</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_50" value="DESIGN_GUI">
+                                  <label for="Cid_t6_pPartDetail3_50">GUI 디자인</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_51" value="DESIGN_G">
+                                  <label for="Cid_t6_pPartDetail3_51">게임디자인</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail3_52" value="DESIGN_APP">
+                                  <label for="Cid_t6_pPartDetail3_52">앱(APP)디자인</label>
+                              
+                          </div>
+                          <div class="textProject detail_project detail_PUB" style="display:none;">
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail4_0" value="PUB_ALL">
+                                  <label for="Cid_t6_pPartDetail4_0">전체</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail4_6" value="PUB_WS">
+                                  <label for="Cid_t6_pPartDetail4_6">웹표준</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail4_7" value="PUB_WA">
+                                  <label for="Cid_t6_pPartDetail4_7">웹접근성</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail4_8" value="PUB_R">
+                                  <label for="Cid_t6_pPartDetail4_8">유지보수 </label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail4_9" value="PUB_PL">
+                                  <label for="Cid_t6_pPartDetail4_9">퍼블리싱PL</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail4_10" value="PUB_MT">
+                                  <label for="Cid_t6_pPartDetail4_10">웹</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail4_11" value="PUB_M">
+                                  <label for="Cid_t6_pPartDetail4_11">모바일</label>
+                              
+                          </div>
+                          <div class="textProject detail_project detail_DEV" style="display:none;">
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_3" value="DEV_ALL">
+                                  <label for="Cid_t6_pPartDetail5_3">전체</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_28" value="DEV_W">
+                                  <label for="Cid_t6_pPartDetail5_28">웹프로그래머</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_29" value="DEV_SYS">
+                                  <label for="Cid_t6_pPartDetail5_29">시스템프로그래머</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_30" value="DEV_PL">
+                                  <label for="Cid_t6_pPartDetail5_30">개발PL</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_31" value="DEV_N">
+                                  <label for="Cid_t6_pPartDetail5_31">네트워크·서버·보안</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_32" value="DEV_HS">
+                                  <label for="Cid_t6_pPartDetail5_32">하드웨어·소프트웨어</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_33" value="DEV_HELP">
+                                  <label for="Cid_t6_pPartDetail5_33">전산·IT기술지원</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_34" value="DEV_G">
+                                  <label for="Cid_t6_pPartDetail5_34">게임</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_35" value="DEV_E">
+                                  <label for="Cid_t6_pPartDetail5_35">ERP·시스템분석·설계</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_36" value="DEV_DB">
+                                  <label for="Cid_t6_pPartDetail5_36">DBA·데이터베이스</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_37" value="DEV_APP">
+                                  <label for="Cid_t6_pPartDetail5_37">모바일 APP</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_38" value="DEV_AI">
+                                  <label for="Cid_t6_pPartDetail5_38">인공지능AI·빅데이터</label>
+                              
+                                <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail5_39" value="DEV_A">
+                                  <label for="Cid_t6_pPartDetail5_39">응용프로그래머</label>
+                              
+                    </div>
+                    <div class="textProject detail_project detail_SERVER">
+                      
+                        <input type="checkbox" name="Cnm_t6_pPartDetail" id="Cid_t6_pPartDetail6_5" value="SERVER_SERVER" checked="checked">
+                          <label for="Cid_t6_pPartDetail6_5">네트워크/서버/보안</label>
+                      
+                   </div>
+                   </div>
+            
+                  <!--
+                  P031	아웃소싱분야	OUT_APPC	애플리케이션
+                  P031	아웃소싱분야	OUT_APPL	응용프로그램
+                  P031	아웃소싱분야	OUT_COMM	커머스,쇼핑몰
+                  P031	아웃소싱분야	OUT_GAME	게임
+                  P031	아웃소싱분야	OUT_GENERAL	일반소프트웨어
+                  P031	아웃소싱분야	OUT_WEB	웹
+            
+                  P032	아웃소싱상세	OUT_DESIGN	디자인
+                  P032	아웃소싱상세	OUT_DEV	개발
+                  P032	아웃소싱상세	OUT_PLAN	기획
+                  P032	아웃소싱상세	OUT_PUB	퍼블리싱
+                  P032	아웃소싱상세	OUT_REAL	운영
+                  P032	아웃소싱상세	OUT_REPAIR	유지보수
+                  P032	아웃소싱상세	OUT_TURNK	턴키
+                  -->
+            
+                  <div class="initialInfo field out" style="display: none;">
+                    <h4 class="initialInfoTit">아웃소싱 분류 <span class="required">*</span></h4>
+                    <div class="textProject" id="project_pPart_div">
+                              <input type="checkbox" name="Cnm_t6_pPart2" id="Cid_t6_pPart11" value="OFFICE"><label for="Cid_t6_pPart11">PM/사업관리/컨설팅</label>
+                              <input type="checkbox" name="Cnm_t6_pPart2" id="Cid_t6_pPart12" value="PLAN"><label for="Cid_t6_pPart12">기획</label>
+                              <input type="checkbox" name="Cnm_t6_pPart2" id="Cid_t6_pPart13" value="DESIGN"><label for="Cid_t6_pPart13">디자인</label>
+                              <input type="checkbox" name="Cnm_t6_pPart2" id="Cid_t6_pPart14" value="PUB"><label for="Cid_t6_pPart14">퍼블리싱</label>
+                              <input type="checkbox" name="Cnm_t6_pPart2" id="Cid_t6_pPart15" value="DEV"><label for="Cid_t6_pPart15">개발</label>
+                              <input type="checkbox" name="Cnm_t6_pPart2" id="Cid_t6_pPart16" value="REAL"><label for="Cid_t6_pPart16">운영</label>
+                      <input type="checkbox" name="Cnm_t6_pPart2" id="Cid_t6_pPart17" value="REPAIR"><label for="Cid_t6_pPart17">유지보수</label>
+                    </div>
+                  </div>
+            
+                        <div class="initialInfo">
+                              <h4 class="initialInfoTit"><nm class="projectSelectNm">프로젝트</nm> 진행 분류 </h4>
+                              <div class="textProject">
+                                  <input type="radio" name="real_Cnm_t6_pProcess" id="Cid_t6_pProcess1" onclick="fn_C_chk3('1')" value="NEW" checked="checked"><label for="Cid_t6_pProcess1" class="vm">신규 <nm class="projectSelectNm">프로젝트</nm></label>
+                                  <input type="radio" name="real_Cnm_t6_pProcess" id="Cid_t6_pProcess2" onclick="fn_C_chk3('2')" value="DELAY"><label for="Cid_t6_pProcess2" class="vm"><nm class="projectSelectNm">프로젝트</nm> 연장 </label>
+                                  <input type="radio" name="real_Cnm_t6_pProcess" id="Cid_t6_pProcess3" onclick="fn_C_chk3('3')" value="ADD"><label for="Cid_t6_pProcess3" class="vm">추가 인력 투입</label>
+                                  <input type="radio" name="real_Cnm_t6_pProcess" id="Cid_t6_pProcess4" onclick="fn_C_chk3('4')" value="DIRECT">
+                                  <label for="Cid_t6_pProcess4">
+                                      <input type="text" autocomplete="off" placeholder="직접입력" class="cTextInput" name="Cnm_t6_pProcessDetail" id="Cid_t6_pProcess4-1" value="">
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="initialInfo">
+                              <h4 class="initialInfoTit"><nm class="projectSelectNm">프로젝트</nm> 상태</h4>
+                              <div class="textProject blockList">
+                                  <div>
+                                      <input type="radio" name="Cnm_t6_pStatus" id="Cid_t6_pStatus1" value="PLAN"><label for="Cid_t6_pStatus1"><nm class="projectSelectNm">프로젝트</nm>를 계획 중(내부 계획수립 또는 고객사 제안 단계)</label>
+                                  </div>
+                                  <div>
+                                      <input type="radio" name="Cnm_t6_pStatus" id="Cid_t6_pStatus2" value="START"><label for="Cid_t6_pStatus2"><nm class="projectSelectNm">프로젝트</nm>를 착수 준비 중</label>
+                                  </div>
+                                  <div>
+                                      <input type="radio" name="Cnm_t6_pStatus" id="Cid_t6_pStatus3" value="REQUEST"><label for="Cid_t6_pStatus3"><nm class="projectSelectNm">프로젝트</nm>를 착수 및 요구사항을 분석 중 </label>
+                                  </div>
+                                  <div>
+                                      <input type="radio" name="Cnm_t6_pStatus" id="Cid_t6_pStatus4" value="DESIGN"><label for="Cid_t6_pStatus4">요구사항 분석 또는 설계 문서 작성 완료</label>
+                                  </div>
+                                  <div>
+                                      <input type="radio" name="Cnm_t6_pStatus" id="Cid_t6_pStatus5" value="PROCESS" checked="checked"><label for="Cid_t6_pStatus5"><nm class="projectSelectNm">프로젝트</nm> 진행 중 </label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="initialInfo">
+                              <h4 class="initialInfoTit">기획상태</h4>
+                              <div class="textProject blockList">
+                                  <div>
+                                      <input type="checkbox" name="Cnm_t6_pPlanStatus" id="Cid_t6_pPlanStatus1" value="B"><label for="Cid_t6_pPlanStatus1">기획 전</label>
+                                  </div>
+                                  <div>
+                                      <input type="checkbox" name="Cnm_t6_pPlanStatus" id="Cid_t6_pPlanStatus2" value="R" checked="checked"><label for="Cid_t6_pPlanStatus2">요구사항정의서 완료</label>
+                                  </div>
+                                  <div>
+                                      <input type="checkbox" name="Cnm_t6_pPlanStatus" id="Cid_t6_pPlanStatus3" value="RC"><label for="Cid_t6_pPlanStatus3">제안요청서 완료</label>
+                                  </div>
+                                  <div>
+                                      <input type="checkbox" name="Cnm_t6_pPlanStatus" id="Cid_t6_pPlanStatus4" value="IA"><label for="Cid_t6_pPlanStatus4">메뉴구조도(IA) 작성 완료</label>
+                                  </div>
+                                  <div>
+                                      <input type="checkbox" name="Cnm_t6_pPlanStatus" id="Cid_t6_pPlanStatus5" value="S"><label for="Cid_t6_pPlanStatus5">화면설계서(스토리보드, 와이어프레임) 작성 중</label>
+                                  </div>
+                                  <div>
+                                      <input type="checkbox" name="Cnm_t6_pPlanStatus" id="Cid_t6_pPlanStatus6" value="SC"><label for="Cid_t6_pPlanStatus6">화면설계서 완료</label>
+                                  </div>
+                                  <div>
+                                      <input type="checkbox" name="Cnm_t6_pPlanStatus" id="Cid_t6_pPlanStatus7" value="P"><label for="Cid_t6_pPlanStatus7">프로토타입(<nm class="projectSelectNm">프로젝트</nm> 모델 결과물) 완료</label>
+                                  </div>
+                                  <div>
+                                      <input type="checkbox" name="Cnm_t6_pPlanStatus" id="Cid_t6_pPlanStatus8" onclick="fn_C_chk4('8')" value="DIRECT">
+                                      <label for="Cid_t6_pPlanStatus8"><input type="text" autocomplete="off" placeholder="직접입력" class="cTextInput" id="Cid_t6_pPlanStatus8-1" name="Cnm_t6_pPlanStatusDetail" value=""></label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="initialInfo out" style="display: none;">
+                                <h4 class="initialInfoTit"><nm class="projectSelectNm">프로젝트</nm> 인력 상황</h4>
+                                <div class="textProject blockList it-check-list">
+                                    <div class="chk-box01 it-chk-box">
+                                        <p>IT <nm class="projectSelectNm">프로젝트</nm> 경험 인력 보유</p>
+                                        <div class="chk-area">
+                                            <ul>
+                                                <li>
+                                                    <input type="radio" name="real_Cnm_t6_pPersonIt" id="Cid_t6_pPersonIt1" class="" value="Y" checked="checked">
+                                                    <label for="Cid_t6_pPersonIt1">IT <nm class="projectSelectNm">프로젝트</nm> 경험이 있는 인력이 있습니다.</label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="real_Cnm_t6_pPersonIt" id="Cid_t6_pPersonIt1" class="" value="Y" checked="checked">
+                                                    <input type="radio" name="real_Cnm_t6_pPersonIt" id="Cid_t6_pPersonIt2" class="" value="N" checked="checked">
+                                                    <label for="Cid_t6_pPersonIt2">IT <nm class="projectSelectNm">프로젝트</nm> 경험이 있는 인력이 없습니다.</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="chk-box02 it-chk-box">
+                                        <p>협업 가능 인력</p>
+                                        <div class="chk-area">
+                                            <span>
+                                                <input type="checkbox" id="Cid_t6_pPersonType1" name="Cnm_t6_pPersonType" value="OFFICE">
+                                                <label for="Cid_t6_pPersonType1">PM</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" id="Cid_t6_pPersonType2" name="Cnm_t6_pPersonType" value="PLAN">
+                                                <label for="Cid_t6_pPersonType2">기획자</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" id="Cid_t6_pPersonType3" name="Cnm_t6_pPersonType" value="DESIGN">
+                                                <label for="Cid_t6_pPersonType3">디자이너</label>
+                                                </span>
+                                            <span>
+                                                <input type="checkbox" id="Cid_t6_pPersonType4" name="Cnm_t6_pPersonType" value="PUB">
+                                                <label for="Cid_t6_pPersonType4">퍼블리셔</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" id="Cid_t6_pPersonType5" name="Cnm_t6_pPersonType" value="DEV">
+                                                <label for="Cid_t6_pPersonType5">개발자</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" id="Cid_t6_pPersonType6" name="Cnm_t6_pPersonType" value="SERVER">
+                                                <label for="Cid_t6_pPersonType6">네트워크/서버/보안</label>
+                                            </span>
+            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            
+                               <div class="btnBox">
+                                   <a href="javascript:;" class="btn01 bgBlack Step2" onclick="fn_C_nextStep('Back2')">이전</a>
+                                <a href="javascript:;" class="btn01 Step3" onclick="fn_C_nextStep('Save3')">수정</a>
+                                    <a href="javascript:;" class="btn01 bgBlack Step3" onclick="fn_C_nextStep('Back3')">다음</a>
+                           </div>
+                           
+                           
+                      </div>
+                    </div>
+                </div>
+            
+                <div class="content_info step Step3" id="project_Step3" style="display:none">
+                        <h2 class="littleTit"><nm class="projectSelectNm">프로젝트</nm> 상세 정보</h2>
+                        <div class="content">
+                            <ul class="proLnb">
+                                <li class="on">
+                                    <img src="../../admin_img/input_check_on.png" alt="">&nbsp;기본정보
+                                </li>
+                                <li class="on">
+                                    <img src="../../admin_img/input_check_on.png" alt="">&nbsp;상세정보
+                                </li>
+                                <li>
+                                    <img src="../../admin_img/input_check_off.png" alt="">&nbsp;수행조건
+                                </li>
+                                <li>
+                                    <img src="../../admin_img/input_check_off.png" alt="">&nbsp;모집요건
+                                </li>
+                                <li>
+                                    <img src="../../admin_img/input_check_off.png" alt="">&nbsp;등록완료
+                                </li>
+                            </ul>
+                            <div class="processCotent">
+                                <div class="initialInfo">
+                                    <h4 class="detailInfo"><nm class="projectSelectNm">프로젝트</nm> 관련 자료</h4>
+                                    <p class="dDesc">아이디어 또는 필요한 내용을 정리한 문서를 추가해 주세요.<br><nm class="projectSelectNm">프로젝트</nm> <nm class="projectSelectNm">프로젝트</nm> 조건 산정에 활용되며, 문서 및 이미지 파일만 추가 가능합니다.</p>
+                                    <!-- 파일 list -->
+                                    <div id="File_div_projectLabel_1">
+                                        
+                                    </div>
+                                    <!-- 파일업로드 로직 -->
+                                    <div id="File_div_projectFile_1">
+                                        <div class="textProject fileProject" id="fileUpload_first1_file">
+                                            <div class="fileDesc">
+                                                <p class="fileUploadDesc" id="fileUpload_first1_p">최대 50Mbyte까지 첨부 가능합니다. </p>
+                                                <label for="fileUpload_first1" class="fileUploadBtn">파일선택</label>
+                                            </div>
+                                            <input type="file" name="fileUpload1" id="fileUpload_first1" class="upload-hidden fileClass fileupload1" multiple="" onchange="fn_M_fileChange(this, fn_M_fileUpload_callback);" fileidx="1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="initialInfo">
+                                    <h4 class="detailInfo">자료 공개 대상 <span class="required">*</span></h4>
+                                    <div class="textProject blockList">
+                                        <p>
+                                            <input type="radio" name="Cnm_t6_pOpen" id="Cid_t6_pOpen1" value="W">
+                                            <label for="Cid_t6_pOpen1">위프 한정 공개 – 자료가 공개되지 않으며, 업무 범위 정리에 활용됩니다</label>
+                                        </p>
+                                        <p>
+                                            <input type="radio" name="Cnm_t6_pOpen" id="Cid_t6_pOpen2" value="C">
+                                            <label for="Cid_t6_pOpen2">위프, 미팅 예정 클라이언트 – 미팅 예정 클라이언트의 분석과 제안을 받아볼 수 있습니다.
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <input type="radio" name="Cnm_t6_pOpen" id="Cid_t6_pOpen3" value="A" checked="checked">
+                                            <label for="Cid_t6_pOpen3">전체 공개 – 모든 클라이언트에게 분석과 제안을 받아 볼 수 있습니다.</label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="initialInfo">
+                                    <h4 class="detailInfo">상세 업무 내용 <span class="required">*</span></h4>
+                                    <ul>
+                                        <li class="detailJobDesc">필요한 내용을 작성해주시면 위프가 정리를 도와드립니다.</li>
+                                        <li class="detailJobDesc">업무 내용을 상세하게 작성해주실수록, 더 적합한 파트너를 만날 수 있습니다.</li>
+                                        <li class="detailJobDesc">파트너가 알아야 할 유의사항(필수 사항, 전문 경험 등)도 함께 작성해 주세요.</li>
+                                        <li class="detailJobDesc danger"><nm class="projectSelectNm">프로젝트</nm>의 현재 상황, 상세한 업무 내용 등을 적어 주세요!</li>
+                                    </ul>
+                                    <div class="textProject blockList">
+                                        <textarea onkeyup="fn_textarea_text_check(this)" id="Cid_t6_pText" name="Cnm_t6_pText" rows="4" cols="50" class="msg" placeholder="데이터베이스 모니터링 툴 디자인입니다.
+                                        필요 요소 : 기본 디자인 및 ui/ux작업 분량 : 주로 차트, 그래프로약 25 페이지 전후, PC view만 작업함
+                                        사용툴 : Ai, PSD현재 개발자분이 기능을 구현하고 있기본 배치(레이아웃)은 잡혀있는 상황입니다.">서버 교체 진행 업무 </textarea>
+                                        <span class="txt" id="Cid_t6_pText_cnt">0/5,000</span>
+                                    </div>
+                                </div>
+        
+                        <script>
+                            function fn_textarea_text_check(th){
+                                var id = $(th).attr("id");
+                                var v = $(th).val();
+                                var len = v.length;
+                                if(len>5000){
+                                return false;
+                                }
+                                $("#"+id+"_cnt").text(len+"/5,000");
+                            }
+                        </script>
+        
+                                <div class="initialInfo">
+                                    <h3 class="detailInfo">유의사항 &amp; 향후계획</h3>
+                                    <h4 class="initialInfoTit">참고자료</h4>
+        
+                                 <!-- 유의사항 파일 라벨 -->
+                                    <div id="File_div_projectLabel_2">
+                                        
+                                    </div>
+        
+                                 <!-- 유의사항 파일 업로드 -->
+                                    <div id="File_div_projectFile_2">
+                                        <div class="textProject fileProject" id="fileUpload_first2_file">
+                                                <div class="fileDesc">
+                                                    <p class="fileUploadDesc" id="fileUpload_first2_p">최대 50Mbyte까지 첨부 가능합니다. </p>
+                                                    <label for="fileUpload_first2" class="fileUploadBtn">파일선택</label>
+                                                </div>
+                                            <input type="file" name="fileUpload2" id="fileUpload_first2" class="upload-hidden fileClass fileupload2" multiple="" onchange="fn_M_fileChange(this, fn_M_fileUpload_callback);" fileidx="2">
+                                        </div>
+                                    </div>
+                                    <h4 class="initialInfoTit initialInfoTit2">유의사항</h4>
+                                    <div class="textProject pl20">
+                                        <input type="text" autocomplete="off" placeholder="장비 지참" name="Cnm_t6_pIssue" value="">
+                                    </div>
+                                </div>
+        
+                                <div class="initialInfo">
+                                    <h4 class="initialInfoTit">향후계획</h4>
+                                    <div class="textProject pl20">
+                                        <input type="text" autocomplete="off" placeholder="향후 고도화를 위한 아웃소싱 계획이 있습니다." name="Cnm_t6_pFuture" id="Cid_t6_pFuture" value="">
+                                    </div>
+                                </div>
+        
+                                <div class="initialInfo">
+                                    <h3 class="detailInfo project"><nm class="projectSelectNm">프로젝트</nm> 진행 정보</h3>
+                                    <h4 class="initialInfoTit">인터뷰방식 <span class="required">*</span></h4>
+                                    <div class="textProject blockList">
+                                            <input type="radio" name="Cnm_t6_pInterviewType" id="Cid_t6_pInterviewType1" value="OFF" checked="checked"><label for="Cid_t6_pInterviewType1">오프라인</label>
+                                            <input type="radio" name="Cnm_t6_pInterviewType" id="Cid_t6_pInterviewType2" value="ON"><label for="Cid_t6_pInterviewType2">온라인(카카오톡, 메신저, 화상미팅 등)</label>
+                                            <input type="radio" name="Cnm_t6_pInterviewType" id="Cid_t6_pInterviewType3" value="LINE"><label for="Cid_t6_pInterviewType3">유선(전화)</label>
+                                    </div>
+                                    <div class="textProject blockList">
+                                        <textarea rows="4" onkeyup="fn_textarea_text_check(this)" cols="50" class="msg" placeholder="미팅 내용
+                                        " name="Cnm_t6_pMeetingText" id="Cid_t6_pMeetingText">미팅합시다</textarea>
+                                        <span class="txt" id="Cid_t6_pMeetingText_cnt">0/5,000</span>
+                                    </div>
+                                </div>
+        
+                                <div class="initialInfo out" style="display: none;">
+                                    <h3 class="detailInfo"><nm class="projectSelectNm">프로젝트</nm> 미팅 정보</h3>
+                                    <div class="meeting-wrap it-check-list">
+                                        <div class="meeting-con">
+                                            <h4 class="initialInfoTit">사전미팅방식</h4>
+                                            <div class="textProject blockList">
+                                                <input type="radio" name="real_Cnm_t6_pBeforeMeeting" id="Cid_t6_pBeforeMeeting1" value="OFF">
+                                                <label for="Cid_t6_pBeforeMeeting1">오프라인</label>
+                                                <input type="radio" name="real_Cnm_t6_pBeforeMeeting" id="Cid_t6_pBeforeMeeting2" value="ON">
+                                                <label for="Cid_t6_pBeforeMeeting2">온라인(카카오톡, 메신저, 화상미팅 등)</label>
+                                                <input type="radio" name="real_Cnm_t6_pBeforeMeeting" id="Cid_t6_pBeforeMeeting3" value="LINE" checked="checked">
+                                                <label for="Cid_t6_pBeforeMeeting3">유선(전화)</label>
+                                            </div>
+                                        </div>
+        
+                                        <div class="meeting-con">
+                                            <h4 class="initialInfoTit">진행 중 미팅 방식</h4>
+                                            <div class="textProject blockList">
+                                                <input type="radio" name="real_Cnm_t6_pProcessMeeting" id="Cid_t6_pProcessMeeting1" value="OFF">
+                                                <label for="Cid_t6_pProcessMeeting1">오프라인</label>
+                                                <input type="radio" name="real_Cnm_t6_pProcessMeeting" id="Cid_t6_pProcessMeeting2" value="ON">
+                                                <label for="Cid_t6_pProcessMeeting2">온라인(카카오톡, 메신저, 화상미팅 등)</label>
+                                                <input type="radio" name="real_Cnm_t6_pProcessMeeting" id="Cid_t6_pProcessMeeting3" value="LINE" checked="checked">
+                                                <label for="Cid_t6_pProcessMeeting3">유선(전화)</label>
+                                            </div>
+                                         </div>
+        
+                                        <div class="meeting-con">
+                                            <h4 class="initialInfoTit">미팅 위치</h4>
+                                            <div class="textProject blockList">
+                                                <input type="radio" name="real_Cnm_t6_pMeetingLocation" id="Cid_t6_pMeetingLocation1" value="OFFICE">
+                                                <label for="Cid_t6_pMeetingLocation1">클라이언트 사무실</label>
+                                                <input type="radio" name="real_Cnm_t6_pMeetingLocation" id="Cid_t6_pMeetingLocation2" value="DIRECT" checked="checked">
+                                                <label for="Cid_t6_pMeetingLocation2">직접입력</label>
+                                                <input type="text" autocomplete="off" placeholder="" class="txt-input" name="Cid_t6_pMeetingLocationText" id="Cid_t6_pMeetingLocationText1" value="">
+                                            </div>
+                                        </div>
+        
+                                        <div class="meeting-con out" style="display: none;">
+                                            <h4 class="initialInfoTit"><nm class="projectSelectNm">프로젝트</nm> 진행 중 미팅</h4>
+                                            <div class="textProject blockList">
+                                                <input type="radio" name="real_Cnm_t6_pMeetingTimes" id="Cid_t6_pMeetingTimes1" value="W1">
+                                                <label for="Cid_t6_pMeetingTimes1">주1회</label>
+                                                <input type="radio" name="real_Cnm_t6_pMeetingTimes" id="Cid_t6_pMeetingTimes2" value="W2">
+                                                <label for="Cid_t6_pMeetingTimes2">주2회</label>
+                                                <input type="radio" name="real_Cnm_t6_pMeetingTimes" id="Cid_t6_pMeetingTimes3" value="W23">
+                                                <label for="Cid_t6_pMeetingTimes3">주3회</label>
+                                                <input type="radio" name="real_Cnm_t6_pMeetingTimes" id="Cid_t6_pMeetingTimes4" value="W3">
+                                                <label for="Cid_t6_pMeetingTimes4">주4회</label>
+                                                <input type="radio" name="real_Cnm_t6_pMeetingTimes" id="Cid_t6_pMeetingTimes5" value="W4">
+                                                <label for="Cid_t6_pMeetingTimes5">주5회</label>
+                                                <input type="radio" name="real_Cnm_t6_pMeetingTimes" id="Cid_t6_pMeetingTimes6" value="W5">
+                                                <label for="Cid_t6_pMeetingTimes6">주2~3회</label>
+                                                <input type="radio" name="real_Cnm_t6_pMeetingTimes" id="Cid_t6_pMeetingTimes7" value="WA" checked="checked">
+                                                <label for="Cid_t6_pMeetingTimes7">필요시 요청</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="initialInfo">
+                                    <h4 class="initialInfoTit">전문기술 <span class="required">*</span></h4>
+                                    <div class="textProject fileProject">
+                                        <div class="fileDesc">
+                                            <input type="text" autocomplete="off" class="fileUploadDesc" name="Cnm_t6_pSkills" id="Cid_t6_pSkills" value="서버 운반">
+                                            <a href="javascript:;" onclick="fn_t6_selectSkill()" class="fileUploadBtn fileUploadBtn2">기술선택</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <script>
+                                        // 전문기술 선택창
+                                        function fn_t6_selectSkill(){
+                                            var params = {}
+                                            params.layerId = "pop_userSkills";
+                                            params.url = "/front/client/t6_m1/pop1";
+                                            fn_openPop(params);
+                                        }
+                                    </script>
+        
+                                    
+                                <div class="btnBox">
+                                    <a href="javascript:;" class="btn01 bgBlackStep3" onclick="fn_C_nextStep('Back3')">이전</a>
+                                    <a href="javascript:;" class="btn01 Step4" onclick="fn_C_nextStep('Save4')">수정</a>
+                                    <a href="javascript:;" class="btn01 bgBlack Step4" onclick="fn_C_nextStep('Back4')">다음</a>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                </div>
+            
+                <div class="content_info step Step4" id="project_Step4" style="display:none">
+                    <h2 class="littleTit"><nm class="projectSelectNm">프로젝트</nm> 수행조건</h2>
+                    <div class="content">
+                        <ul class="proLnb">
+                            <li class="on">
+                                <img src="../../admin_img/input_check_on.png" alt="">&nbsp;기본정보
+                            </li>
+                            <li class="on">
+                                <img src="../../admin_img/input_check_on.png" alt="">&nbsp;상세정보
+                            </li>
+                            <li class="on">
+                                <img src="../../admin_img/input_check_on.png" alt="">&nbsp;수행조건
+                            </li>
+                            <li>
+                                <img src="../../admin_img/input_check_off.png" alt="">&nbsp;모집요건
+                            </li>
+                            <li>
+                                <img src="../../admin_img/input_check_off.png" alt="">&nbsp;등록완료
+                            </li>
+                        </ul>
+        
+                        <div class="processCotent">
+                            <div class="initialInfo project">
+                                <h4 class="detailInfo">지출 가능 예산 <span class="required">*</span>
+                                    <img src="../../admin_img/bg_wrap_mi.png" alt="Question" class="qIcon">
+                                </h4>
+                                <p class="dDesc">지출 가능 예산은 파트너 1인당 월 단위로 지급받는 실수령액이며, 사업소득(3.3%)이 포함된 금액입니다. 위프의 중개수수료(10%)는 별도입니다.</p>
+                                <div class="textProject calBudget" id="Cid_div_budget">
+                                    <ul id="Cid_t6_m1_budget_Ul">
+                            
+                            
+                            <li id="Cid_t6_m1_budget_Li_first1" class="Cid_t6_m1_budget_Li_Cnt">
+                                <ul class="calBudgetLi">
+                                <li class="roundInput">
+                                    <select name="Cid_t6_budget_part" key="part">
+                                                            <option value="OFFICE" hidden="hidden">PM/사업관리/컨설팅</option>
+                                                            <option value="PLAN" hidden="hidden">기획</option>
+                                                            <option value="DESIGN" hidden="hidden">디자인</option>
+                                                            <option value="PUB" hidden="hidden">퍼블리싱</option>
+                                                            <option value="DEV" hidden="hidden">개발</option>
+                                                            <option value="SERVER">네트워크/서버/보안</option>
+                                                        </select>
+                                </li>
+                                <li class="roundInput">
+                                    <select name="Cid_t6_budget_grade" key="grade">
+                                    <option value="g1">초급(3년 미만)</option>
+                                    <option value="g2">중급</option>
+                                    <option value="g3">고급</option>
+                                    <option value="g4">특급</option>
+                                    </select>
+                                </li>
+                                <li class="roundInput">
+                                    <input type="text" autocomplete="off" class="sm" name="Cid_t6_budget_personCnt" key="personCnt" value="1"> 명
+                                </li>
+                                월
+                                <li class="roundInput">
+                                    <select name="Cid_t6_budget_smoney" key="smoney">
+                                        <option value="200">200만원</option>
+                                        <option value="300">300만원</option>
+                                        <option value="400">400만원</option>
+                                        <option value="500">500만원</option>
+                                        <option value="600">600만원</option>
+                                        <option value="700">700만원</option>
+                                        <option value="800">800만원</option>
+                                        <option value="900">900만원</option>
+                                        <option value="1000">1,000만원 이상</option>
+                                    </select>
+                                    <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                                </li>
+                                ~
+                                <li class="roundInput">
+                                    <select name="Cid_t6_budget_emoney" key="emoney">
+                                        <option value="200">200만원</option>
+                                        <option value="300">300만원</option>
+                                        <option value="400">400만원</option>
+                                        <option value="500">500만원</option>
+                                        <option value="600">600만원</option>
+                                        <option value="700">700만원</option>
+                                        <option value="800">800만원</option>
+                                        <option value="900">900만원</option>
+                                        <option value="1000">1,000만원 이상</option>
+                                    </select>
+                                    <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                                </li>
+                                <li class="C_t6_mi_budget_buttonLi">
+                                    <a onclick="fn_C_addBudget(2, 'Cid_t6_m1_budget_Li_first1');">
+                                        <img src="../../admin_img/minusBtn.png" alt="삭제">
+                                    </a>
+                                    <a onclick="fn_C_addBudget(1, this);" class="C_t6_mi_budget_addButton">
+                                        <img src="../../admin_img/addIcon.png" alt="추가">
+                                    </a>
+                                </li>
+                                </ul>
+                            </li>
+                            
+                                    </ul>
+                                </div>
+                    </div>
+        
+                    <!-- 아웃소싱 부분-->
+                            <div class="initialInfo out" style="display: none;">
+                                <h4 class="detailInfo">지출 가능 예산 (아웃소싱) <span class="required">*</span>
+                                    <img src="../../admin_img/bg_wrap_mi.png" alt="Question" class="qIcon">
+                                </h4>
+                                <p class="dDesc">지출 가능 예산은 파트너 1인당 월 단위로 지급받는 실수령액이며, 사업소득(3.3%)이 포함된 금액입니다. 위프의 중개수수료(10%)는 별도입니다.</p>
+                                <div class="price-wrap">
+                                    <ul class="clearfix">
+                                    <li>
+                                        <p class="tit"><nm class="projectSelectNm">프로젝트</nm> 예상 금액</p>
+                                    </li>
+                                    <li>
+                                        <div class="price-input">
+                                        ₩ <input type="text" autocomplete="off" name="Cid_t6_pBudget" id="Cid_t6_pBudget1" value="" numberonly="" won=""> 원
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="pr-desc">예상 결제 금액 : <span>11,000,000</span> (부가가치세 10% 포함)</p>
+                                    </li>
+                                    </ul>
+                                </div>
+                                <p class="check_p">
+                                    <input type="radio" name="real_Cnm_t6_pBudgetStatus" id="Cid_t6_pBudgetStatus1" class="" value="ABLE">
+                                    <label for="Cid_t6_pBudgetStatus1" class="w100"><nm class="projectSelectNm">프로젝트</nm> 예산의 조율이 가능합니다.</label>
+                                </p>
+                                <p class="check_p">
+                                    <input type="radio" name="real_Cnm_t6_pBudgetStatus" id="Cid_t6_pBudgetStatus2" class="" value="CONSULT" checked="checked">
+                                    <label for="Cid_t6_pBudgetStatus2" class="w100"><nm class="projectSelectNm">프로젝트</nm> 예산 관련 위프의 상담이 필요합니다.</label>
+                                </p>
+                                <p class="dDesc02">※ 상담후 예산이 결정된후 지정된 예산금액으로 노출됩니다.</p>
+                    </div>
+        
+                            <div class="initialInfo">
+                            <h4 class="detailInfo"><nm class="projectSelectNm">프로젝트</nm> 예상 기간 <span class="required">*</span></h4>
+                                <p class="dDesc">프리랜서가 <nm class="projectSelectNm">프로젝트</nm>에 투입되는 예상 기간입니다. 해당 날짜에 <nm class="projectSelectNm">프로젝트</nm> 시작이 가능한 프리랜서들이 지원하게 됩니다.</p>
+                                <div class="textProject calBudget">
+                                    <ul>
+                                        <li>
+                                            <ul class="calBudgetLi">
+                                                <li class="flex1">시작일</li>
+                                                <li class="roundInput flex1 mr10">
+                                                <input type="text" autocomplete="off" class="datepicker-here" name="Cnm_t6_pStartDt" id="Cid_t6_pStartDt1" value="20201208" readonly="">
+                                                </li>
+                                                <span class="ml20 mr10">~</span>
+                                                <li class="flex1 pr0">종료일</li>
+                                                <li class="roundInput flex1">
+                                                    <input type="text" autocomplete="off" class="datepicker-here" name="Cnm_t6_pEndDt" id="Cid_t6_pEndDt1" value="20201216" onchange="fn_C_t6_calDate();" readonly="">
+                                                </li>
+                                                <li class="flex2"><nm class="projectSelectNm">프로젝트</nm> 예상 기간</li>
+                                                <li class="roundInput flex1">
+                                                    <input type="text" autocomplete="off" class="" name="Cnm_t6_pDuring" id="Cid_t6_pDuring1" value="8" onclick="fn_C_t6_calDate();">일
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <script>
+                                //날짜 계산
+                            function fn_C_t6_calDate(){
+                                var st = $("#Cid_t6_pStartDt1").val();
+                                var et = $("#Cid_t6_pEndDt1").val();
+                                if(st ==""){
+                                alert("프로젝트 시작날짜를 입력하세요.");
+                                $("#Cid_t6_pStartDt1").focus();
+                                return false;
+                                }
+                                if(et ==""){
+                                alert("프로젝트 종료날짜를 입력하세요.");
+                                $("#Cid_t6_pEndDt1").focus();
+                                return false;
+                                }
+                                st = st.replace(/\./gi, "");
+                                et = et.replace(/\./gi, "");
+                                var diff= fn_date_diffDay(st, et);
+                                $("#Cid_t6_pDuring1").val(diff);
+                            }
+                                </script>
+                                <p class="check_p">
+                                <input type="radio" name="Cnm_t6_pDateStatus" id="Cid_t6_pDateStatus1" value="ABLE"><label for="Cid_t6_pDateStatus1"><nm class="projectSelectNm">프로젝트</nm> 착수 일자의 협의가 가능합니다. </label>
+                                </p>
+                                <p class="check_p">
+                                <input type="radio" name="Cnm_t6_pDateStatus" id="Cid_t6_pDateStatus2" value="NOW"><label for="Cid_t6_pDateStatus2">계약 체결 이후, 즉시 시작하길 희망합니다. </label>
+                                </p>
+                    </div>
+        
+        
+                    <div class="initialInfo">
+                        <h4 class="initialInfoTit detailInfo"><nm class="projectSelectNm">프로젝트</nm> 근무 장소 <span class="required">*</span></h4>
+                        <div class="textProject">
+                            <div class="tPtime">
+                            <ul class="selectList">
+                            <p class="cTextInputL"> 시/도</p>
+                            <li>
+                                <select name="Cnm_t6_pDevAddr1" onchange="fn_C_t6_changeArea(this);">
+                                <option value="">선택</option>
+                                <option value="강원도">강원도</option>
+                                <option value="경기도" selected="selected">경기도</option>
+                                <option value="경상남도">경상남도</option>
+                                <option value="경상북도">경상북도</option>
+                                <option value="광주광역시">광주광역시</option>
+                                <option value="대구광역시">대구광역시</option>
+                                <option value="대전광역시">대전광역시</option>
+                                <option value="부산광역시">부산광역시</option>
+                                <option value="서울특별시">서울특별시</option>
+                                <option value="세종특별자치시">세종특별자치시</option>
+                                <option value="울산광역시">울산광역시</option>
+                                <option value="인천광역시">인천광역시</option>
+                                <option value="전라남도">전라남도</option>
+                                <option value="전라북도">전라북도</option>
+                                <option value="제주특별자치도">제주특별자치도</option>
+                                <option value="충청남도">충청남도</option>
+                                <option value="충청북도">충청북도</option>
+                                </select>
+                                <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                            </li>
+                            <script>
+                            // 지역 데이터 DB 데이터로 세팅하기
+                            $(function(){
+                                var addr1 = "경기도";
+                                if(addr1 !=""){
+                                $("input[name=Cnm_t6_pDevAddr2]").css("display", "none");
+                                $("#Cnm_t6_pDevAddr2_"+addr1).css("display", "");
+                                }
+                            });
+                            </script>
+                            &nbsp;&nbsp;시/군/구&nbsp;&nbsp;
+                            <li>
+                                <select class="subArea" name="Cnm_t6_pDevAddr2">
+                                <option value="">지역선택</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_강원도">
+                                    <option value="">선택</option>
+                                    <option value="강릉시">강릉시</option>
+                                    <option value="고성군">고성군</option>
+                                    <option value="동해시">동해시</option>
+                                    <option value="삼척시">삼척시</option>
+                                    <option value="속초시">속초시</option>
+                                    <option value="양구군">양구군</option>
+                                    <option value="양양군">양양군</option>
+                                    <option value="영월군">영월군</option>
+                                    <option value="원주시">원주시</option>
+                                    <option value="인제군">인제군</option>
+                                    <option value="전체" selected="selected">전체</option>
+                                    <option value="정선군">정선군</option>
+                                    <option value="철원군">철원군</option>
+                                    <option value="춘천시">춘천시</option>
+                                    <option value="태백시">태백시</option>
+                                    <option value="평창군">평창군</option>
+                                    <option value="홍천군">홍천군</option>
+                                    <option value="화천군">화천군</option>
+                                    <option value="횡성군">횡성군</option>
+                                </select>
+                                
+                                <select class="subArea" style="" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_경기도">
+                                    <option value="">선택</option>
+                                    <option value="가평군">가평군</option>
+                                    <option value="고양시">고양시</option>
+                                    <option value="과천시">과천시</option>
+                                    <option value="광명시">광명시</option>
+                                    <option value="광주시">광주시</option>
+                                    <option value="구리시">구리시</option>
+                                    <option value="군포시">군포시</option>
+                                    <option value="김포시">김포시</option>
+                                    <option value="남양주시">남양주시</option>
+                                    <option value="동두천시">동두천시</option>
+                                    <option value="부천시">부천시</option>
+                                    <option value="성남시">성남시</option>
+                                    <option value="수원시">수원시</option>
+                                    <option value="시흥시">시흥시</option>
+                                    <option value="안산시">안산시</option>
+                                    <option value="안성시">안성시</option>
+                                    <option value="안양시">안양시</option>
+                                    <option value="양주시">양주시</option>
+                                    <option value="양평군">양평군</option>
+                                    <option value="여주시">여주시</option>
+                                    <option value="연천군">연천군</option>
+                                    <option value="오산시">오산시</option>
+                                    <option value="용인시">용인시</option>
+                                    <option value="의왕시">의왕시</option>
+                                    <option value="의정부시">의정부시</option>
+                                    <option value="이천시">이천시</option>
+                                    <option value="전체" selected="selected">전체</option>
+                                    <option value="파주시">파주시</option>
+                                    <option value="평택시">평택시</option>
+                                    <option value="포천시">포천시</option>
+                                    <option value="하남시">하남시</option>
+                                    <option value="화성시">화성시</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_경상남도">
+                                    <option value="">선택</option>
+                                    <option value="거제시">거제시</option>
+                                    <option value="거창군">거창군</option>
+                                    <option value="고성군">고성군</option>
+                                    <option value="김해시">김해시</option>
+                                    <option value="남해군">남해군</option>
+                                    <option value="밀양시">밀양시</option>
+                                    <option value="사천시">사천시</option>
+                                    <option value="산청군">산청군</option>
+                                    <option value="양산시">양산시</option>
+                                    <option value="의령군">의령군</option>
+                                    <option value="전체" selected="selected">전체</option>
+                                    <option value="진주시">진주시</option>
+                                    <option value="창녕군">창녕군</option>
+                                    <option value="창원시">창원시</option>
+                                    <option value="통영시">통영시</option>
+                                    <option value="하동군">하동군</option>
+                                    <option value="함안군">함안군</option>
+                                    <option value="함양군">함양군</option>
+                                    <option value="합천군">합천군</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_경상북도">
+                                    <option value="">선택</option>
+                                    <option value="경산시">경산시</option>
+                                    <option value="경주시">경주시</option>
+                                    <option value="고령군">고령군</option>
+                                    <option value="구미시">구미시</option>
+                                    <option value="군위군">군위군</option>
+                                    <option value="김천시">김천시</option>
+                                    <option value="문경시">문경시</option>
+                                    <option value="봉화군">봉화군</option>
+                                    <option value="상주시">상주시</option>
+                                    <option value="성주군">성주군</option>
+                                    <option value="안동시">안동시</option>
+                                    <option value="영덕군">영덕군</option>
+                                    <option value="영양군">영양군</option>
+                                    <option value="영주시">영주시</option>
+                                    <option value="영천시">영천시</option>
+                                    <option value="예천군">예천군</option>
+                                    <option value="울릉군">울릉군</option>
+                                    <option value="울진군">울진군</option>
+                                    <option value="의성군">의성군</option>
+                                    <option value="전체" selected="selected">전체</option>
+                                    <option value="청도군">청도군</option>
+                                    <option value="청송군">청송군</option>
+                                    <option value="칠곡군">칠곡군</option>
+                                    <option value="포항시">포항시</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_광주광역시">
+                                    <option value="">선택</option>
+                                    <option value="광산구">광산구</option>
+                                    <option value="광주시 전체">광주시 전체</option>
+                                    <option value="남구">남구</option>
+                                    <option value="동구">동구</option>
+                                    <option value="북구">북구</option>
+                                    <option value="서구">서구</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_대구광역시">
+                                    <option value="">선택</option>
+                                    <option value="남구">남구</option>
+                                    <option value="달서구">달서구</option>
+                                    <option value="달성군">달성군</option>
+                                    <option value="대구시 전체">대구시 전체</option>
+                                    <option value="동구">동구</option>
+                                    <option value="북구">북구</option>
+                                    <option value="서구">서구</option>
+                                    <option value="수성구">수성구</option>
+                                    <option value="중구">중구</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_대전광역시">
+                                    <option value="">선택</option>
+                                    <option value="대덕구">대덕구</option>
+                                    <option value="대전시 전체">대전시 전체</option>
+                                    <option value="동구">동구</option>
+                                    <option value="서구">서구</option>
+                                    <option value="유성구">유성구</option>
+                                    <option value="중구">중구</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_부산광역시">
+                                    <option value="">선택</option>
+                                    <option value="강서구">강서구</option>
+                                    <option value="금정구">금정구</option>
+                                    <option value="기장군">기장군</option>
+                                    <option value="남구">남구</option>
+                                    <option value="동구">동구</option>
+                                    <option value="동래구">동래구</option>
+                                    <option value="부산시 전체">부산시 전체</option>
+                                    <option value="부산진구">부산진구</option>
+                                    <option value="북구">북구</option>
+                                    <option value="사상구">사상구</option>
+                                    <option value="사하구">사하구</option>
+                                    <option value="서구">서구</option>
+                                    <option value="수영구">수영구</option>
+                                    <option value="연제구">연제구</option>
+                                    <option value="영도구">영도구</option>
+                                    <option value="중구">중구</option>
+                                    <option value="해운대구">해운대구</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_서울특별시">
+                                    <option value="">선택</option>
+                                    <option value="강남구">강남구</option>
+                                    <option value="강동구">강동구</option>
+                                    <option value="강북구">강북구</option>
+                                    <option value="강서구">강서구</option>
+                                    <option value="관악구">관악구</option>
+                                    <option value="광진구">광진구</option>
+                                    <option value="구로구">구로구</option>
+                                    <option value="금천구">금천구</option>
+                                    <option value="노원구">노원구</option>
+                                    <option value="도봉구">도봉구</option>
+                                    <option value="동대문구">동대문구</option>
+                                    <option value="동작구">동작구</option>
+                                    <option value="마포구">마포구</option>
+                                    <option value="서대문구">서대문구</option>
+                                    <option value="서울시 전체">서울시 전체</option>
+                                    <option value="서초구">서초구</option>
+                                    <option value="성동구">성동구</option>
+                                    <option value="성북구">성북구</option>
+                                    <option value="송파구">송파구</option>
+                                    <option value="양천구">양천구</option>
+                                    <option value="영등포구">영등포구</option>
+                                    <option value="용산구">용산구</option>
+                                    <option value="은평구">은평구</option>
+                                    <option value="종로구">종로구</option>
+                                    <option value="중구">중구</option>
+                                    <option value="중랑구">중랑구</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_세종특별자치시">
+                                    <option value="">선택</option>
+                                    <option value="세종특별자치시">세종특별자치시</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_울산광역시">
+                                    <option value="">선택</option>
+                                    <option value="남구">남구</option>
+                                    <option value="동구">동구</option>
+                                    <option value="북구">북구</option>
+                                    <option value="울주군">울주군</option>
+                                    <option value="전체" selected="selected">전체</option>
+                                    <option value="중구">중구</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_인천광역시">
+                                    <option value="">선택</option>
+                                    <option value="강화군">강화군</option>
+                                    <option value="계양구">계양구</option>
+                                    <option value="남동구">남동구</option>
+                                    <option value="동구">동구</option>
+                                    <option value="미추홀구">미추홀구</option>
+                                    <option value="부평구">부평구</option>
+                                    <option value="서구">서구</option>
+                                    <option value="연수구">연수구</option>
+                                    <option value="옹진군">옹진군</option>
+                                    <option value="전체" selected="selected">전체</option>
+                                    <option value="중구">중구</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_전라남도">
+                                    <option value="">선택</option>
+                                    <option value="강진군">강진군</option>
+                                    <option value="고흥군">고흥군</option>
+                                    <option value="곡성군">곡성군</option>
+                                    <option value="광양시">광양시</option>
+                                    <option value="구례군">구례군</option>
+                                    <option value="나주시">나주시</option>
+                                    <option value="담양군">담양군</option>
+                                    <option value="목포시">목포시</option>
+                                    <option value="무안군">무안군</option>
+                                    <option value="보성군">보성군</option>
+                                    <option value="순천시">순천시</option>
+                                    <option value="신안군">신안군</option>
+                                    <option value="여수시">여수시</option>
+                                    <option value="영광군">영광군</option>
+                                    <option value="영암군">영암군</option>
+                                    <option value="완도군">완도군</option>
+                                    <option value="장성군">장성군</option>
+                                    <option value="장흥군">장흥군</option>
+                                    <option value="전체" selected="selected">전체</option>
+                                    <option value="진도군">진도군</option>
+                                    <option value="함평군">함평군</option>
+                                    <option value="해남군">해남군</option>
+                                    <option value="화순군">화순군</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_전라북도">
+                                    <option value="">선택</option>
+                                    <option value="고창군">고창군</option>
+                                    <option value="군산시">군산시</option>
+                                    <option value="김제시">김제시</option>
+                                    <option value="남원시">남원시</option>
+                                    <option value="무주군">무주군</option>
+                                    <option value="부안군">부안군</option>
+                                    <option value="순창군">순창군</option>
+                                    <option value="완주군">완주군</option>
+                                    <option value="익산시">익산시</option>
+                                    <option value="임실군">임실군</option>
+                                    <option value="장수군">장수군</option>
+                                    <option value="전라북도 전체">전라북도 전체</option>
+                                    <option value="전주시">전주시</option>
+                                    <option value="정읍시">정읍시</option>
+                                    <option value="진안군">진안군</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_제주특별자치도">
+                                    <option value="">선택</option>
+                                    <option value="서귀포시">서귀포시</option>
+                                    <option value="전체" selected="selected">전체</option>
+                                    <option value="제주시">제주시</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_충청남도">
+                                    <option value="">선택</option>
+                                    <option value="계룡시">계룡시</option>
+                                    <option value="공주시">공주시</option>
+                                    <option value="금산군">금산군</option>
+                                    <option value="논산시">논산시</option>
+                                    <option value="당진시">당진시</option>
+                                    <option value="보령시">보령시</option>
+                                    <option value="부여군">부여군</option>
+                                    <option value="서산시">서산시</option>
+                                    <option value="서천군">서천군</option>
+                                    <option value="아산시">아산시</option>
+                                    <option value="예산군">예산군</option>
+                                    <option value="전체" selected="selected">전체</option>
+                                    <option value="천안시">천안시</option>
+                                    <option value="청양군">청양군</option>
+                                    <option value="태안군">태안군</option>
+                                    <option value="홍성군">홍성군</option>
+                                </select>
+                                
+                                <select class="subArea" style="display:none" name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_충청북도">
+                                    <option value="">선택</option>
+                                    <option value="괴산군">괴산군</option>
+                                    <option value="단양군">단양군</option>
+                                    <option value="보은군">보은군</option>
+                                    <option value="영동군">영동군</option>
+                                    <option value="옥천군">옥천군</option>
+                                    <option value="음성군">음성군</option>
+                                    <option value="전체" selected="selected">전체</option>
+                                    <option value="제천시">제천시</option>
+                                    <option value="증평군">증평군</option>
+                                    <option value="진천군">진천군</option>
+                                    <option value="청주시">청주시</option>
+                                    <option value="충주시">충주시</option>
+                                </select>
+                                
+                                <!--
+                                <select name="Cnm_t6_pDevAddr2" id="Cnm_t6_pDevAddr2_1">
+                                    <option value="">지역선택</option>
+                                </select>
+                            -->
+                                <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                            </li>
+                            </ul>
+                            <input type="checkbox" name="Cnm_t6_pHotelYn" id="Cid_t6_pHotelYn1" value="Y">
+                                        <label for="Cid_t6_pHotelYn1">숙소 제공</label>
+                        </div>
+                        <div class="tPtime">
+                            <p class="cTextInputL">근무장소</p>
+                            <input type="text" autocomplete="off" placeholder="직접입력" class="cTextInput" name="Cnm_t6_pDevAddr3" id="Cnm_t6_pDevAddr3_1" value="">
+                        </div>
+                        </div>
+                    </div>
+        
+                            <div class="initialInfo">
+                                <h4 class="initialInfoTit detailInfo">근무시간 <span class="required">*</span></h4>
+                                <div class="textProject">
+                                    <div class="tPtime">
+                                        <input type="radio" name="real_Cnm_t6_pWorkTime" id="Cid_t6_pWorkTime1" value="TIME1" checked="checked"><label for="Cid_t6_pWorkTime1">오전 9시 ~ 오후 6시</label>
+                                        <input type="radio" name="real_Cnm_t6_pWorkTime" id="Cid_t6_pWorkTime2" value="TIME2"><label for="Cid_t6_pWorkTime2">오전 10시 ~ 오후 7시 </label>
+                                    </div>
+                                    <div class="tPtime">
+                                        <input type="radio" name="real_Cnm_t6_pWorkTime" id="Cid_t6_pWorkTime3" value="DIRECT"><label for="Cid_t6_pWorkTime3">직접지정</label>
+                                        <ul class="selectList sel">
+                                            <li>
+                                            <select name="Cnm_t6_pWorkTimeDetail">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                                            </li>&nbsp;&nbsp;&nbsp;시&nbsp;
+                                            <li>
+                                                <select name="Cnm_t6_pWorkTimeDetail">
+                                                    <option value="10">10</option>
+                                                    <option value="20">20</option>
+                                                    <option value="30">30</option>
+                                                    <option value="40">40</option>
+                                                    <option value="50">50</option>
+                                                </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                                            </li>&nbsp;&nbsp;&nbsp;분&nbsp; ~
+                                            <li>
+                                                <select name="Cnm_t6_pWorkTimeDetail">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                                            </li>&nbsp;&nbsp;&nbsp;시&nbsp;
+                                            <li>
+                                                <select name="Cnm_t6_pWorkTimeDetail">
+                                                    <option value="10">10</option>
+                                                    <option value="20">20</option>
+                                                    <option value="30">30</option>
+                                                    <option value="40">40</option>
+                                                    <option value="50">50</option>
+                                                </select>
+                                                <img src="../../admin_img/faq_arr_down.png" alt="더보기">
+                                            </li>&nbsp;&nbsp;&nbsp;분&nbsp;
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="initialInfo">
+                                <h4 class="initialInfoTit detailInfo">추가 근무 지원 <span class="required">*</span></h4>
+                                <div class="textProject">
+                                    <ul class="addSup">
+                                        <li>
+                                            <ul class="addSupList">
+                                                <li class="addSupListDesc"><nm class="projectSelectNm">프로젝트</nm> 야간 근무를 필요시 요청할 수 있습니다. </li>
+                                                <li class="yes">
+                                                    <input type="radio" name="real_Cnm_t6_pAdd1" id="Cid_t6_pAdd1_1" value="Y"><label for="Cid_t6_pAdd1_1">예</label>
+                                                </li>
+                                                <li class="no">
+                                                    <input type="radio" name="real_Cnm_t6_pAdd1" id="Cid_t6_pAdd1_2" value="N" checked="checked"><label for="Cid_t6_pAdd1_2">아니오</label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="addSup">
+                                        <li>
+                                            <ul class="addSupList">
+                                                <li class="addSupListDesc"><nm class="projectSelectNm">프로젝트</nm> 주말 근무를 필요시 요청할 수 있습니다.</li>
+                                                <li class="yes">
+                                                    <input type="radio" name="real_Cnm_t6_pAdd2" id="Cid_t6_pAdd2_1" value="Y"><label for="Cid_t6_pAdd2_1">예</label>
+                                                </li>
+                                                <li class="no">
+                                                    <input type="radio" name="real_Cnm_t6_pAdd2" id="Cid_t6_pAdd2_2" value="N" checked="checked"><label for="Cid_t6_pAdd2_2">아니오</label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="addSup">
+                                        <li>
+                                            <ul class="addSupList">
+                                                <li class="addSupListDesc"><nm class="projectSelectNm">프로젝트</nm> 근무에 필요한 장비 지원합니다.</li>
+                                                <li class="yes">
+                                                    <input type="radio" name="real_Cnm_t6_pAdd3" id="Cid_t6_pAdd3_1" value="Y" checked="checked"><label for="Cid_t6_pAdd3_1">예</label>
+                                                </li>
+                                                <li class="no">
+                                                    <input type="radio" name="real_Cnm_t6_pAdd3" id="Cid_t6_pAdd3_2" value="N"><label for="Cid_t6_pAdd3_2">아니오</label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="addSup">
+                                        <li>
+                                            <ul class="addSupList">
+                                                <li class="addSupListDesc"><nm class="projectSelectNm">프로젝트</nm> 근무할 때 개인장비 지참이 가능합니다.</li>
+                                                <li class="yes">
+                                                    <input type="radio" name="real_Cnm_t6_pAdd4" id="Cid_t6_pAdd4_1" value="Y"><label for="Cid_t6_pAdd4_1">예</label>
+                                                </li>
+                                                <li class="no">
+                                                    <input type="radio" name="real_Cnm_t6_pAdd4" id="Cid_t6_pAdd4_2" value="N" checked="checked"><label for="Cid_t6_pAdd4_2">아니오</label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="addSup">
+                                        <li>
+                                            <ul class="addSupList">
+                                                <li class="addSupListDesc"><nm class="projectSelectNm">프로젝트</nm> 근무할 때 식사 지원이 가능합니다.</li>
+                                                <li class="yes">
+                                                    <input type="radio" name="real_Cnm_t6_pAdd5" id="Cid_t6_pAdd5_1" onclick="fn_C_chk5(this)" value="Y">
+                                                    <label for="Cid_t6_pAdd5_1" class="alignC">예 (
+                                                        <input type="checkbox" name="Cnm_t6_pAdd5_1" id="Cid_t6_pAdd5_1_1" value="Y1" onclick="fn_C_chk5(this)">
+                                                        <label for="Cid_t6_pAdd5_1_1">점심</label>
+                                                        <input type="checkbox" name="Cnm_t6_pAdd5_1" id="Cid_t6_pAdd5_1_2" value="Y2" onclick="fn_C_chk5(this)">
+                                                        <label for="Cid_t6_pAdd5_1_2">저녁)</label>
+                                                    </label>
+                                                </li>
+                                                <li class="no">
+                                                    <input type="radio" name="real_Cnm_t6_pAdd5" id="Cid_t6_pAdd5_2" onclick="fn_C_chk5(this)" value="N" checked="checked">
+                                                    <label for="Cid_t6_pAdd5_2">아니오</label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    
+                                    <div class="btnBox">
+                                        <a href="javascript:;" class="btn01 bgBlackStep4" onclick="fn_C_nextStep('Back4')">이전</a>
+                                    <a href="javascript:;" class="btn01 Step5" onclick="fn_C_nextStep('Save5')">수정</a>
+                                        <a href="javascript:;" class="btn01 bgBlack Step5" onclick="fn_C_nextStep('Back5')">다음</a>
+                                </div>
+                                
+                                
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="content_info step Step5" id="project_Step5" style="display:none">
+                    <h2 class="littleTit"><nm class="projectSelectNm">프로젝트</nm> 모집요건</h2>
+                    <div class="content">
+                        <ul class="proLnb">
+                            <li class="on">
+                                <img src="../../admin_img/input_check_on.png" alt="">&nbsp;기본정보
+                            </li>
+                            <li class="on">
+                                <img src="../../admin_img/input_check_on.png" alt="">&nbsp;상세정보
+                            </li>
+                            <li class="on">
+                                <img src="../../admin_img/input_check_on.png" alt="">&nbsp;수행조건
+                            </li>
+                            <li class="on">
+                                <img src="../../admin_img/input_check_on.png" alt="">&nbsp;모집요건
+                            </li>
+                            <li>
+                                <img src="../../admin_img/input_check_off.png" alt="">&nbsp;등록완료
+                            </li>
+                        </ul>
+                        <div class="processCotent">
+                            <div class="initialInfo">
+                                <h4 class="initialInfoTit">지원자 모집 마감일 <span class="required">*</span></h4>
+                                <div class="textProject">
+                                    <ul class="deadline">
+                                        <li class="deadlineTit">마감일</li>
+                                        <li class="roundInputch">
+                                            <input type="text" autocomplete="off" name="Cnm_t6_pApplyEndDt" id="Cid_t6_pApplyEndDt1" class="datepicker-here" value="20201223" readonly="">
+                                        </li>
+                                        <li class="deadlineDesc">
+                                            <p>지원자를 모집하는 기간은 최대 14일까지 가능합니다.</p>
+                                            <p>지원자 모집 기간 중에도 프리랜서 선정과 계약 진행이 가능합니다.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="initialInfo">
+                                <h4 class="initialInfoTit">정부사업 여부</h4>
+                                <div class="textProject">
+                                        <input type="radio" name="Cnm_t6_pGovYn" id="Cid_t6_pGovYn1" value="Y">
+                                        <label for="Cid_t6_pGovYn1">예(정부지원사업 또는 연구과제)</label>
+                                        <input type="radio" name="Cnm_t6_pGovYn" id="Cid_t6_pGovYn2" value="N" checked="checked">
+                                        <label for="Cid_t6_pGovYn2">아니오</label>
+                                </div>
+                            </div>
+                            <div class="initialInfo">
+                                <h4 class="detailInfo"><nm class="projectSelectNm">프로젝트</nm> 지원 전 질문</h4>
+                                <p class="dDesc">프리랜서가 <nm class="projectSelectNm">프로젝트</nm>에 지원할 때 답변해야 할 질문을 작성해 주세요.<br>최대 5개까지 입력 가능합니다.클라이언트님이 프리랜서를 선정할 때 지원서와 함께 답변 내용을 검토할 수 있습니다.</p>
+                                <div class="textProject freeApplicant" id="Cid_t6_m1_freelancerQuestion_div">
+                                    <ul class="appliList">
+                                        <li class="appliListDesc">유사한 <nm class="projectSelectNm">프로젝트</nm>를 수행한 경험이 있으신가요? 기술해 주세요!</li>
+                                        <li class="appliListBtn">
+                                            <input type="checkbox" name="Cnm_t6_pQuestion" id="Cid_t6_pQuestion1_2">
+                                            <label for="Cid_t6_pQuestion1_2">비노출</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="appliList">
+                                        <li class="appliListDesc">유사한 기술을 사용하여 <nm class="projectSelectNm">프로젝트</nm>를 수행한 경험이 있나요?</li>
+                                        <li class="appliListBtn">
+                                            <input type="checkbox" name="Cnm_t6_pQuestion" id="Cid_t6_pQuestion2_2">
+                                            <label for="Cid_t6_pQuestion2_2">비노출</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="appliList">
+                                        <li class="appliListDesc">이 <nm class="projectSelectNm">프로젝트</nm>를 성공적으로 수행할 수 있는 제안이 있나요?</li>
+                                        <li class="appliListBtn">
+                                            <input type="checkbox" name="Cnm_t6_pQuestion" id="Cid_t6_pQuestion3_2">
+                                            <label for="Cid_t6_pQuestion3_2">비노출</label>
+                                        </li>
+                        </ul>
+        
+                            
+                        
+                            <ul class="appliList" id="cid_t6_m1_firstQuestion1">
+                                            <li class="appliListDesc">
+                                                <input type="text" autocomplete="off" placeholder="질문을 입력해주세요." name="Cnm_t6_pQuestion" value="">
+                                            </li>
+                                            <li class="appliListBtn appliListBtn2">
+                                                <a onclick="fn_C_addQeuestion(2, this);" class="C_t6_mi_question_removeButton">
+                                                    <img src="../../admin_img/minusBtn.png" alt="삭제">
+                                                </a>
+                                                <a onclick="fn_C_addQeuestion(1, this)" class="C_t6_mi_question_addButton">
+                                                    <img src="../../admin_img/addIcon.png" alt="추가">
+                                                </a>
+                                            </li>
+                                        </ul>
+                        
+                        </div>
+                            </div>
+                                <div class="initialInfo">
+                                <div class="textProject blockList it-check-list">
+                                <div class="chk-box02 it-chk-box">
+                                    <p> <nm class="projectSelectNm">프로젝트</nm>지원 필수요건</p>
+                                    <p class="desc02">아래 조건에 맞는 아웃소싱 가능한 지원자를 받습니다. (복수선택 가능)</p>
+                                    <div class="chk-area">
+                                        <div>
+                                        <input type="checkbox" name="Cnm_t6_pNessary" id="Cid_t6_pNessary1" value="PERSONAL" checked="checked">
+                                        <label for="Cid_t6_pNessary1">개인 또는 팀 가능</label>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" name="Cnm_t6_pNessary" id="Cid_t6_pNessary2" value="BUSINESS">
+                                        <label for="Cid_t6_pNessary2">사업자 가능 (세금계산서 발행)</label>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" name="Cnm_t6_pNessary" id="Cid_t6_pNessary3" value="YEAR">
+                                        <label for="Cid_t6_pNessary3">업력 1년 이상</label>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" name="Cnm_t6_pNessary" id="Cid_t6_pNessary4" value="INSURE">
+                                        <label for="Cid_t6_pNessary4">보증보험 발급 가능</label>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" name="Cnm_t6_pNessary" id="Cid_t6_pNessary5" value="DIRECT">
+                                        <label for="Cid_t6_pNessary5">기타(직접입력)</label>
+                                        <input type="text" autocomplete="off" placeholder="직접입력" class="txt-input" name="Cnm_t6_pNessaryText" id="Cid_t6_pNessaryText1" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+        
+                        
+                            <div class="btnBox">
+                                <a href="javascript:;" class="btn01 bgBlackStep5" onclick="fn_C_nextStep('Back5')">이전</a>
+                                <a href="javascript:;" class="btn01 Step6" onclick="fn_C_nextStep('Save6')">수정</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            
+                <div class="content_info step Step6" id="project_Step6" style="display:none">
+                    <h2 class="littleTit"><nm class="projectSelectNm">프로젝트</nm> 등록완료</h2>
+                    <div class="content">
+                            <ul class="proLnb">
+                                <li class="on">
+                                    <img src="../../admin_img/input_check_on.png" alt="">&nbsp;기본정보
+                                </li>
+                                <li class="on">
+                                    <img src="../../admin_img/input_check_on.png" alt="">&nbsp;상세정보
+                                </li>
+                                <li class="on">
+                                    <img src="../../admin_img/input_check_on.png" alt="">&nbsp;수행조건
+                                </li>
+                                <li class="on">
+                                    <img src="../../admin_img/input_check_on.png" alt="">&nbsp;모집요건
+                                </li>
+                                <li class="on">
+                                    <img src="../../admin_img/input_check_on.png" alt="">&nbsp;등록완료
+                                </li>
+                            </ul>
+                            <div class="processCotent">
+                                <div class="initialInfo">
+                                    <h4 class="initialInfoTit"><nm class="projectSelectNm">프로젝트</nm><span class="mainC">등록완료</span></h4>
+                                </div>
+                                <div class="projectTab">
+                                    <ul class="projTabRow">
+                                        <li class="projTabTit"><nm class="projectSelectNm">프로젝트</nm>명</li>
+                                        <li class="projTabDesc" id="Cid_t6_m1_projectLastNm"></li>
+                                    </ul>
+                                    <ul class="projTabRow">
+                                        <li class="projTabTit">예상 기간</li>
+                                        <li class="projTabDesc" id="Cid_t6_m1_projectLastDt"></li>
+                                    </ul>
+                                    <ul class="projTabRow out" id="Cid_t6_m1_projectLastMoney_Ul" style="display: none;">
+                                        <li class="projTabTit">예상 금액</li>
+                                        <li class="projTabDesc" id="Cid_t6_m1_projectLastMoney"></li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <div class="comDesc">
+                                    <img src="../../admin_img/checked_reg.png" alt="등록완료" class="comDescImg target">
+                                    <p class="comDescTit"><nm class="projectSelectNm">프로젝트</nm>를 등록해 주셔서 감사합니다. </p>
+                                    <p class="comDescP">등록해 주신 <nm class="projectSelectNm">프로젝트</nm>는 위프(WEE.P)의 내부 검수 후 지원자 모집을 시작하며, <br>검수에는 최대 24시간(업무일 기준)이 소요됩니다.<br>프로젝트 담당매니저가 검토 후 보완사항이 있으면 연락 드립니다.</p>
+                                    
+                                </div>
+                                <ul class="ResProjDescDetail">
+                        <li>모든 <nm class="projectSelectNm">프로젝트</nm>는 위프(WEE.P)의 내부 검수 후 지원자 모집을 시작하며, 검수에는 최대 24시간(업무일 기준)이 소요됩니다.</li>
+                        <li>프로젝트 담당매니저가 검토 후 보완사항이 있으면 연락 드립니다.</li>
+                                    <li>검수 결과는 이메일과 SMS를 통해 발송해 드리며, [<nm class="projectSelectNm">프로젝트</nm>활동&gt;검수 중 <nm class="projectSelectNm">프로젝트</nm>]에서 <nm class="projectSelectNm">프로젝트</nm>를 확인할 수 있습니다.</li>
+                                    <li>문의는 [자주찾는질문] 또는 지원센터를 이용해 주세요. 지원센터 : 02-3442-5001, weep@weep.kr</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            
+              <script>
+                $(document).ready(function () {
+                  sessionStorage.setItem("userNo", null);
+                  setTimeout(function () {
+                    Fn_M_initEvent();
+                    //fn_C_nextStep("Step4");
+                  }, 1000);
+            
+                  var projectType = "DISPATCH";
+                  if(projectType == "DISPATCH" || projectType == "OUT") fn_setting_text(projectType);
+                });
+            
+               // 프로젝트, 아웃소싱에 따른 text 문구 변경하기
+                function fn_setting_text(projectType){
+                    if(projectType =="OUT"){  // 아웃소싱
+                      $(".project").css("display", "none");
+                      $(".out").css("display", "");
+                      $(".projectSelectNm").html("아웃소싱");
+                    }else{
+                      $(".project").css("display", "");
+                      $(".out").css("display", "none");
+                      $(".projectSelectNm").html("프로젝트");
+                    }
+                }
+            
+                // 프로젝트 유형, 진행방식 클래스 변경 (상주, 비상주, 신규, 유지보수)
+                function fn_C_chk1(val, th) {
+                  var id = $(th).attr("id");
+                  if (val == 1) {
+                    $(".step1_1").removeClass("on");
+                    $("#" + id).addClass("on");
+                  } else if (val == 2) {
+                    $(".step1_2").removeClass("on").find("img").attr("src", "../../admin_img/circle_icon.png");
+                    $("#" + id)
+                      .addClass("on")
+                      .find("img")
+                      .attr("src", "../../admin_img/circle_icon2.png");
+                  }
+                }
+            
+                // 프로젝트 진행 분류에서 직접 입력 라디오 선택시
+                function fn_C_chk3(val) {
+                  if (val == 4) {
+                    $("#Cid_t6_pProcess4-1").removeAttr("disabled");
+                  } else {
+                    $("#Cid_t6_pProcess4-1").attr("disabled", "disabled").val("");
+                  }
+                }
+            
+                // 기획 상태에서 직접 입력 라디오 선택
+                function fn_C_chk4(val) {
+                  if ($("#Cid_t6_pPlanStatus8").is(":checked")) {
+                    $("#Cid_t6_pPlanStatus8-1").removeAttr("disabled");
+                  } else {
+                    $("#Cid_t6_pPlanStatus8-1").attr("disabled", "disabled").val("");
+                  }
+                }
+            
+                // 기획 상태에서 직접 입력 라디오 선택
+                function fn_C_chk5(th) {
+                  var v = $(th).val();
+                  if(v == "N"){
+                    $("#Cid_t6_pAdd5_1_1").prop("checked", false);
+                      $("#Cid_t6_pAdd5_1_2").prop("checked", false);
+                  }else{
+                    $("#Cid_t6_pAdd5_1").prop("checked", true);
+                  }
+                }
+            
+                // 지역 변경하기
+                function fn_C_t6_changeArea(th) {
+                  $(".subArea").css("display", "none");
+                  var v = $(th).val();
+                  $("#Cnm_t6_pDevAddr2_" + v).css("display", "");
+                }
+            
+                // 프로젝트 저장하기
+                var clientObj = {};
+                function fn_C_nextStep(step) {
+                  // step 별 보이기 숨기기
+                  var back = step.substring(0, 4);
+                  var one = step.substring(4, 5);
+                  var iStep = Number(one) - 1;
+                  if (back == "Back") {
+                    $(".step").css("display", "none");
+                    $(".Step" + one).css("display", "");
+                    $("html").scrollTop(0);
+                    return false;
+                  }
+            
+                  // 프로젝트 존재 여부 Cid_project1(신규)  Cid_project2(temp)
+                  var cidProject = "project_Step" + iStep;
+                  clientObj = fn_M_getParams(cidProject); // 전체 파라미터 값 가져오기
+                  clientObj.step = iStep; // 단계만 저장
+            
+                  clientObj.projectType = $("#Cid_t6_chk1_1").hasClass("on") ? "DISPATCH" : "OUT"; //프로젝트 유형선택
+                  clientObj.pProcessType = $("#Cid_t6_chk2_1").hasClass("on") ? "NEW" : "REPAIR"; //프로젝트 진행방식
+            
+                   // 프로젝트, 아웃소싱 선택에 따른 항목 변경하기
+                   fn_setting_text(clientObj.projectType);
+            
+                  // text 문구
+                  var textTitle = "프로젝트";
+                  if(clientObj.projectType == "OUT") textTitle = "아웃소싱";
+            
+                  console.log("==============Step1=========="+JSON.stringify(clientObj) );
+            
+                   // ------------ 파라미터 체크하기 [start] -----------
+                  if (step == "Step3" || step == "Save3") {
+                      var pm = clientObj.projectNm;
+                      if (typeof pm == "undefined" || pm == "") {
+                        alert(textTitle+" 제목을 입력해 주세요.");
+                        return false;
+                      }
+            
+                      if(clientObj.projectType=="DISPATCH"){
+                          var pPart = clientObj.pPart;
+                          if(typeof pPart == "undefined" || pPart == ""){
+                            alert("프로젝트 분류를 하나 이상 선택해 주세요.");
+                            return false;
+                          }
+                          var pPartDetail = clientObj.pPartDetail;
+                          var pPartArr = pPart.slice(0,-1).split(":");
+                          for(var i=0; i<pPartArr.length; i++){
+                            if(pPartDetail.indexOf(pPartArr[i]) == -1){
+                              alert("프로젝트 상세업무를 하나 이상 선택해 주세요.");
+                              return false;
+                            }
+                          }
+                      }
+            
+                      // 아웃소싱인 경우
+                      if(clientObj.projectType == "OUT"){
+                        var pPart = clientObj.pPart2;
+                        if(typeof pPart == "undefined" || pPart == ""){
+                            alert("아웃소싱 분류를 하나 이상 선택해 주세요.");
+                            return false;
+                        }
+                        var devType = clientObj.devType2;
+                        clientObj.devType = devType;
+                         clientObj.pPart = pPart;
+                      }
+            
+                      console.log("==============Step3=========="+JSON.stringify(clientObj) );
+                  }
+            
+                  // 파일 업로드 한 후에 uuid 받기
+                  if (step == "Step4" || step == "Save4") {
+                      var pageType = "c_t6_m1";
+                      var f1 = fn_M_saveFile(1, pageType)(); // 클로저 () 로 함수로 실행해야 함
+                      if (!f1.success) {
+                        return false;
+                      }
+                      var f2 = fn_M_saveFile(2, pageType)();
+                      if (!f2.success) {
+                        return false;
+                      }
+                      clientObj.pFileUuid = f1.fileUuid;
+                      clientObj.pIssueFileUuid = f2.fileUuid;
+                  } else {
+                      clientObj.pFileUuid = $("#file_before_file1").val() == null ? "" : $("#file_before_file1").val();
+                      clientObj.pIssueFileUuid = $("#file_before_file2").val() == null ? "" : $("#file_before_file2").val();
+                  }
+            
+                   // 필수값 체크
+                  if(step=="Step4" || step == "Save4"){
+                      if(clientObj.pOpen=="" || clientObj.pOpen==null || typeof clientObj.pOpen=="undefined"){
+                        alert("자료 공개 대상은 필수 값입니다.");
+                        return false;
+                      }
+                      if(clientObj.pText=="" || clientObj.pText==null || typeof clientObj.pText=="undefined"){
+                        alert("상세 업무 내용은 필수 값입니다.");
+                        return false;
+                      }
+                      if (clientObj.projectType=="DISPATCH") {
+                        if (clientObj.pMeetingText=="" || clientObj.pMeetingText==null || typeof clientObj.pMeetingText=="undefined"){
+                          alert("인터뷰 방식은 필수 값입니다.\n미팅 내용을 입력해 주세요.");
+                          return false;
+                        }
+                      }
+                      if(clientObj.pSkills=="" || clientObj.pSkills==null || typeof clientObj.pSkills=="undefined"){
+                        alert("전문기술은 필수 값입니다.");
+                        return false;
+                      }
+            
+                      console.log("==============Step4=========="+JSON.stringify(clientObj) );
+                  }
+            
+                  if (step == "Step5" || step == "Save5") {
+                     if(clientObj.projectType=="DISPATCH"){
+                        // 지출 가능 예산 json 목록 가져오기
+                        var bugetLen = $("select[name=Cid_t6_budget_grade]").length;
+                        clientObj.pBudgetText = fn_M_getParamsJson("Cid_div_budget", bugetLen);
+                        var budArr = JSON.parse(clientObj.pBudgetText);
+                        var check = true;
+                        for(var i=0; i<budArr; i++){
+                          var obj = budArr[i]; 	// pBudgetText: "[{"personCnt":"1","part":"OFFICE","grade":"g1","smoney":"200","emoney":"200"}]"
+                          if(obj.personCnt ==""){
+                            alert(textTitle+" 투입인원을 입력해 주세요.");
+                            check = false;
+                            return false;
+                          }
+                        }
+                        if(!check) return false;
+            
+                        // 프로젝트 인원 구하기
+                        var pBudgetText = clientObj.pBudgetText;
+                        var searchBudgetMin = 90000;
+                        var searchBudgetMax = 0;
+                        var searchBudgetDev = "";
+                        if(typeof pBudgetText !="undefined"){
+                          var pBudgetTextList = JSON.parse(pBudgetText);
+                          var pDevCnt = 0;
+                          for(var i=0; i<pBudgetTextList.length; i++){
+                            var obj = pBudgetTextList[i];
+                            var personCnt = obj.personCnt;
+                            pDevCnt += Number(personCnt);
+                            var smoney = obj.smoney;
+                            var emoney = obj.emoney;
+                            if(searchBudgetMin > Number(smoney)) searchBudgetMin = smoney;
+                            if(searchBudgetMax < Number(emoney)) searchBudgetMax = emoney;
+            
+                            var part = obj.part;
+                            var pText = "";
+                            if(obj.part =="OFFICE") pText = "PM/업무/사업관리";
+                            if(obj.part =="PLAN") pText = "기획";
+                            if(obj.part =="DESIGN") pText = "디자인";
+                            if(obj.part =="PUB") pText = "퍼블";
+                            if(obj.part =="DEV") pText = "개발";
+                            if(obj.part =="SERVER") pText = "네트워크/서버/보안";
+            
+                            var gText = "";
+                            if(obj.grade =="g1") gText = "초급";
+                            if(obj.grade =="g2") gText = "중급";
+                            if(obj.grade =="g3") gText = "고급";
+                            if(obj.grade =="g4") gText = "특급";
+                            searchBudgetDev += pText+"("+gText+" "+personCnt+"명), ";
+                          }
+                          searchBudgetDev = searchBudgetDev.substring(0, searchBudgetDev.length-2);
+                        }else{
+                          pDevCnt = 0;
+                        }
+                        clientObj.pDevCnt = pDevCnt;
+                        clientObj.searchBudgetMin = searchBudgetMin;
+                        clientObj.searchBudgetMax = searchBudgetMax;
+                        clientObj.searchBudgetDev = searchBudgetDev;
+                     }
+            
+                     // 아웃소싱 예상금액
+                     if(clientObj.projectType=="OUT"){
+                       var pBudget = clientObj.pBudget;
+                       if(pBudget ==""){
+                         alert(textTitle+" 예상 금액을 입력해 주세요.");
+                         return false;
+                       }
+                       clientObj.pBudget = pBudget.replace(/\,/gi, "");
+            
+                       var dtCheck = $("input[name=Cnm_t6_pDateStatus]:checked").val();
+                       if(dtCheck==null || dtCheck ==""){
+                         alert("일자 협의를 체크해 주세요..");
+                         return false;
+                       }
+                     }
+            
+                      // 프로젝트 예상 시작일 종료일
+                      var pStartDt = clientObj.pStartDt;
+                      var pEndDt = clientObj.pEndDt;
+                      if(pStartDt =="" || pEndDt ==""){
+                        alert(textTitle+" 시작일과 종료일을 입력해 주세요.");
+                        return false;
+                      }
+                      var st = Number(pStartDt);
+                      var et = Number(pEndDt);
+                      if( et < st ){
+                        alert(textTitle+" 시작일과 종료일을 정확히 입력해 주세요.");
+                        return false;
+                      }
+                      var pDuring = clientObj.pDuring;
+                      var pDuring2 = Number(pDuring);
+                      if(pDuring=="" || pDuring2 < 0 ){
+                        alert("프로젝트 예상기간을 입력해 주세요.");
+                        return false;
+                      }
+                      var today = getTimeStamp(); today = today.substring(0,8);
+                      if( et <  Number(today)){
+                        alert("프로젝트 종료일이 오늘날짜 보다 커야 합니다.");
+                        return false;
+                      }
+            
+                     // 프로젝트 근무 장소 구하기
+                      var pDevAddr1 = clientObj.pDevAddr1;
+                      if(pDevAddr1 ==""){
+                        alert(textTitle+" 근무장소를 선택해 주세요.");
+                        return false;
+                      }
+                      var addr1 = clientObj.pDevAddr1;
+                      clientObj.pDevAddr2 = $("#Cnm_t6_pDevAddr2_"+addr1).val();
+            
+                      clientObj.pText = $("#Cid_t6_pText").val();
+                      clientObj.pMeetingText = $("#Cid_t6_pMeetingText").val();
+            
+                      // 근무시간 직접지정 ex> 07:10:19:30
+                      if (clientObj.pWorkTime == "DIRECT") {
+                        var timeDetail = "";
+                        $("select[name=Cnm_t6_pWorkTimeDetail]").each(function () {
+                            var a = $(this).val();
+                            timeDetail += a + ":";
+                        });
+                        timeDetail = timeDetail.substring(0, timeDetail.length - 1);
+                        clientObj.pWorkTimeDetail = timeDetail;
+                      } else {
+                          clientObj.pWorkTimeDetail = "0:0:0:0";
+                      }
+            
+                      //상세업무내용 식사제공인 경우 점심, 저녁 추가 선택
+                      if (clientObj.pAdd5 == "Y") {
+                        if ($("input:checkbox[id=Cid_t6_pAdd5_1_1]").is(":checked")) {
+                          clientObj.pAdd5 = clientObj.pAdd5 + ":Y1";
+                        }
+                        if ($("input:checkbox[id=Cid_t6_pAdd5_1_2]").is(":checked")) {
+                          clientObj.pAdd5 = clientObj.pAdd5 + ":Y2";
+                        }
+                        clientObj.pAdd5 = clientObj.pAdd5 + ":";
+                      }
+                      console.log("==============Step5=========="+JSON.stringify(clientObj) );
+                  }
+            
+                  if (step == "Step6" || step == "Save6") {
+                      var pQuestionList = [];
+                      $("input[name=Cnm_t6_pQuestion]").each(function (idx) {
+                        var type = $(this).attr("type");
+                        if (type == "checkbox") {
+                          if ($(this).is(":checked")) {
+                            pQuestionList.push("Y");
+                          } else {
+                            pQuestionList.push("N");
+                          }
+                        } else {
+                          var a = $(this).val();
+                          pQuestionList.push(a);
+                        }
+                      });
+                      clientObj.pQuestion = JSON.stringify(pQuestionList);
+            
+                      var pApplyEndDt = clientObj.pApplyEndDt;
+                      if(pApplyEndDt==""){
+                        alert(textTitle+" 모집 마감일을 입력해 주세요..");
+                        return false;
+                      }
+            
+                      var today = getTimeStamp(); today = today.substring(0,8);
+                      if(Number(pApplyEndDt)<Number(today)){
+                        alert("마감일을 정확히 입력해 주세요.");
+                        return false;
+                      }
+            
+                      console.log("==============Step6=========="+JSON.stringify(clientObj) );
+                  }
+            
+                  // 최종 저장 URL
+                  // url = "/front/client/t6_m1_i01";
+                  if (step == "Step6") {
+                    if(!confirm("최종 저장하시겠습니끼?")){
+                      return false;
+                    }
+                    // 저장한것 불러 들인 경우 마지막 단계인 경우 clientObj에 담겨 있지 않다.
+                  var projectType = "";
+                    var nm = $("#Cid_t6_projectNm1").val();
+                    $("#Cid_t6_m1_projectLastNm").text(nm);
+                    var sDt = $("#Cid_t6_pStartDt1").val();
+                    var eDt = $("#Cid_t6_pEndDt1").val();
+                    var du = $("#Cid_t6_pDuring1").val();
+                    sDt = regExp(sDt);
+                    eDt = regExp(eDt);
+                    sDt = sDt.substring(0,4)+"."+sDt.substring(4,6)+"."+sDt.substring(6,8);
+                    eDt = eDt.substring(0,4)+"."+eDt.substring(4,6)+"."+eDt.substring(6,8);
+                    $("#Cid_t6_m1_projectLastDt").text(sDt + " ~ " + eDt + " ( " + du + "일 )");
+            
+                    // 아웃소싱인 경우
+                    if (projectType == "OUT") {
+                      var money = $("input[name=Cid_t6_pBudget]").val();
+                      money = regExp(money);
+                      $("#Cid_t6_m1_projectLastMoney").text(addCommas(money)+"원");
+                    }
+                  }
+            
+                  var editType = "real";
+                  var projectSeq = "382";
+                console.log("==1=="+projectSeq+"/"+editType+"/"+step);
+                  console.log(clientObj);
+            
+                // 실제 데이터 저장하기
+                  if("real" == editType){
+                    var projectSeq = "382";
+                    if(!confirm("수정하시겠습니까?")){
+                      return false;
+                    }
+                    clientObj.seq = projectSeq;
+                    var url = "/front/client/t6_m1_i01_update";
+                    var _callback2 = function (data) {
+                      var obj = JSON.parse(data);
+                      if (obj.result) {
+                    alert("처리 되었습니다.");
+                      }
+                    };
+                      $.ajaxCallBack(url, clientObj, _callback2); // 실데이터 수정하기
+            
+                  }else{
+                    var url = "/front/client/t6_m1_i01";
+                    var _callback = function (data) {
+                      var obj = JSON.parse(data);
+                      if (obj.result) {
+                        $(".step").css("display", "none");
+                        $("." + step).css("display", "");
+                        $("html").scrollTop(0);
+                      }
+                    };
+                      $.ajaxCallBack(url, clientObj, _callback); //저장 ,임시저장
+                  }
+                }
+            
+               // 프로젝트 처음 등록으로 페이지 이동
+              function fn_first_project_go(type){
+                if(type==1) fn_M_changeMenu('C','t6_m2');  // 검수중 프로젝트로
+                if(type==2) fn_M_changeMenu2('C','t6_m1'); // 처음 등록하는 프로젝트로
+              }
+            
+                // 프로젝트 분류 값에 옵션 변경
+                function fn_pPart_check(){
+                  var v = "";
+                    var cklen = $("#project_pPart_div").find("[name='Cnm_t6_pPart']:checked").length;
+                    $("[name='Cid_t6_budget_part']").find('option').attr("hidden", true); // 셀렉트박스 옵션
+                    $(".detail_sel.project").css("display", "none"); // 프로젝트 상세업무
+                    $(".detail_project").css("display", "none"); // 프로젝트 상세업무
+                    if(cklen != 0){
+                      $(".detail_sel.project").css("display", ""); // 프로젝트 상세업무
+                      $("#project_pPart_div").find("[name='Cnm_t6_pPart']:checked").each(function(){
+                        v = $(this).val();
+                        $("[name='Cid_t6_budget_part'] option[value='"+v+"']").attr("hidden", false); // 셀렉트박스 옵션
+                        $(".detail_project.detail_"+v).css("display", ""); // 프로젝트 상세업무
+                      });
+                    }else{
+                      $("[name='Cid_t6_budget_part']").find('option').attr("hidden", false); // 셀렉트박스 옵션
+                    }
+                }
+            
+                // 지출 가능 예산 추가, 삭제하기
+                function fn_C_addBudget(type, th) {
+                  if (type == 2) {
+                    var len = $(".C_t6_mi_budget_addButton").length;
+                    if (len == 1) {
+                      return false;
+                    }
+                    $("#" + th).remove();
+                    $(".C_t6_mi_budget_addButton").css("display", "none");
+                    $(".C_t6_mi_budget_addButton").last().css("display", "");
+                    return false;
+                  }
+            
+                  var uuid = getUuid();
+                  var makeHtml = "";
+                  makeHtml += '  <li id="' + uuid + '">';
+                  makeHtml += '    <ul class="calBudgetLi">';
+                makeHtml += '        <li class="roundInput">';
+                makeHtml += '            <select name="Cid_t6_budget_part" key="part">';
+                makeHtml += '                <option value="OFFICE">PM/사업관리/컨설팅</option>';
+                makeHtml += '                <option value="PLAN">기획</option>';
+                makeHtml += '                <option value="DESIGN">디자인</option>';
+                makeHtml += '                <option value="PUB">퍼블리싱</option>';
+                makeHtml += '                <option value="DEV">개발</option>';
+                makeHtml += '                <option value="SERVER">네트워크/서버/보안</option>';
+                makeHtml += "            </select>";
+                makeHtml += "        </li>";
+            
+                  makeHtml += '        <li class="roundInput">';
+                  makeHtml += '            <select name="Cid_t6_budget_grade" key="grade">';
+                  makeHtml += '                <option value="g1">초급(3년 미만)</option>';
+                  makeHtml += '                <option value="g2">중급</option>';
+                  makeHtml += '                <option value="g3">고급</option>';
+                  makeHtml += '                <option value="g4">특급</option>';
+                  makeHtml += "            </select>";
+                  makeHtml += "        </li>";
+                  makeHtml += '        <li class="roundInput">';
+                  makeHtml += '            <input type="text" value="1" class="sm" name="Cid_t6_budget_personCnt" key="personCnt"/> 명';
+                  makeHtml += "        </li>";
+                  makeHtml += "        월";
+                  makeHtml += '        <li class="roundInput">';
+                  makeHtml += '            <select name="Cid_t6_budget_smoney" key="smoney">';
+                  makeHtml += '                <option value="200">200만원</option>';
+                  makeHtml += '                <option value="300">300만원</option>';
+                  makeHtml += '                <option value="400">400만원</option>';
+                  makeHtml += '                <option value="500">500만원</option>';
+                  makeHtml += '                <option value="600">600만원</option>';
+                  makeHtml += '                <option value="700">700만원</option>';
+                  makeHtml += '                <option value="800">800만원</option>';
+                  makeHtml += '                <option value="900">900만원</option>';
+                  makeHtml += '                <option value="1,000">1,000만원</option>';
+                  makeHtml += "            </select>";
+                  makeHtml += '            <img src="../../admin_img/faq_arr_down.png" alt="더보기">';
+                  makeHtml += "        </li>";
+                  makeHtml += "        ~";
+                  makeHtml += '        <li class="roundInput">';
+                  makeHtml += '            <select name="Cid_t6_budget_emoney" key="emoney">';
+                  makeHtml += '                <option value="200">200만원</option>';
+                  makeHtml += '                <option value="300">300만원</option>';
+                  makeHtml += '                <option value="400">400만원</option>';
+                  makeHtml += '                <option value="500">500만원</option>';
+                  makeHtml += '                <option value="600">600만원</option>';
+                  makeHtml += '                <option value="700">700만원</option>';
+                  makeHtml += '                <option value="800">800만원</option>';
+                  makeHtml += '                <option value="900">900만원</option>';
+                  makeHtml += '                <option value="1,000">1,000만원</option>';
+                  makeHtml += "            </select>";
+                  makeHtml += '            <img src="../../admin_img/faq_arr_down.png" alt="더보기">';
+                  makeHtml += "        </li>";
+                  makeHtml += '        <li class="C_t6_mi_budget_buttonLi">';
+                  makeHtml += "            <a onclick=\"fn_C_addBudget(2, '" + uuid + "');\">";
+                  makeHtml += '                <img src="../../admin_img/minusBtn.png" alt="삭제">';
+                  makeHtml += "            </a>";
+                  makeHtml += '            <a onclick="fn_C_addBudget(1, this);" class="C_t6_mi_budget_addButton">';
+                  makeHtml += '                <img src="../../admin_img/addIcon.png" alt="추가">';
+                  makeHtml += "            </a>";
+                  makeHtml += "        </li>";
+                  makeHtml += "    </ul>";
+                  makeHtml += "</li>";
+                  $("#Cid_t6_m1_budget_Ul").append(makeHtml);
+                  $(th).css("display", "none"); // add 버튼 숨기기
+                  fn_pPart_check(); // 프로젝트 분류 값에 옵션 변경
+                }
+            
+                // 프리랜서 지원 전 질문
+                function fn_C_addQeuestion(type, th) {
+                  var len = $("input[name=Cnm_t6_pQuestion]").length;
+                  if (type == 2) {
+                    if (len == 4) {
+                      return false;
+                    }
+                    if (th == "cid_t6_m1_firstQuestion1") {
+                      return false;
+                    }
+                    $(th).closest("ul").remove();
+                    $(".C_t6_mi_question_addButton").css("display", "none");
+                    $(".C_t6_mi_question_addButton").last().css("display", "");
+                    return false;
+                  }
+                  if (len == 8) {
+                    return false;
+                  }
+                  var makeHtml = "";
+                  makeHtml += '<ul class="appliList">';
+                  makeHtml += '    <li class="appliListDesc">';
+                  makeHtml += '        <input type="text" placeholder="질문을 입력해주세요." name="Cnm_t6_pQuestion">';
+                  makeHtml += "    </li>";
+                  makeHtml += '    <li class="appliListBtn appliListBtn2" class="C_t6_mi_question_removeButton"> ';
+                  makeHtml += '        <a onclick="fn_C_addQeuestion(2, this);">';
+                  makeHtml += '            <img src="../../admin_img/minusBtn.png" alt="삭제">';
+                  makeHtml += "        </a>";
+                  makeHtml += '        <a onclick="fn_C_addQeuestion(1, this)" class="C_t6_mi_question_addButton">';
+                  makeHtml += '            <img src="../../admin_img/addIcon.png" alt="추가">';
+                  makeHtml += "        </a>";
+                  makeHtml += "    </li>";
+                  makeHtml += "</ul>";
+                  $("#Cid_t6_m1_freelancerQuestion_div").append(makeHtml);
+                  $(th).css("display", "none"); // add 버튼 숨기기
+                  if (len > 6) {
+                    $(".C_t6_mi_question_addButton").last().css("display", "none");
+                  }
+                }
+              </script>
+            
+              <script>
+                // 업로드 파일 callback 함수
+                function fn_M_fileUpload_callback(obj) {
+                  /*
+                    id : getUuid() 함수 호출로 생성
+                    id_name : 파일 라벨 이름
+                    id_size : 파일 크기
+                  */
+                  var id = obj.id;
+                  var name = obj.name;
+                  var fileSize = obj.fileSize;
+                  var fileNm = obj.fileNm;
+                  var fileIdx = obj.fileIdx;
+            
+                  var htmlDiv = "";
+                  htmlDiv += '<div class="textProject_add" id="' + id + '_label">';
+                  htmlDiv += '    <div class="wrap">';
+                  htmlDiv += "        <article>";
+                  htmlDiv += '            <img src="../../admin_img/file_up.png" alt="파입 업로드 이미지">';
+                  htmlDiv += "            <span>" + fileNm + "</span>";
+                  htmlDiv += "        </article>";
+                  htmlDiv += "        <article>";
+                  htmlDiv += "            <span>" + fileSize + "</span> kbyte";
+                  htmlDiv += '            <span class="btn">';
+                  htmlDiv += "                    <a onclick=\"fn_M_file_remove('" + id + "',  '')\">";
+                  htmlDiv += '                    <img src="../../admin_img/regist_close_btn.png" alt="닫기">';
+                  htmlDiv += "                </a>";
+                  htmlDiv += "            </span>";
+                  htmlDiv += "        </article>";
+                  htmlDiv += "    </div>";
+                  htmlDiv += "</div>";
+            
+                  $("#File_div_projectLabel_" + fileIdx).append(htmlDiv);
+                  $("#" + id + "_file").css("display", "none");
+            
+                  var uuid2 = getUuid();
+                  var htmlDiv2 = "";
+                  htmlDiv2 += '<div class="textProject fileProject" id="' + uuid2 + '_file">';
+                  htmlDiv2 += '        <div class="fileDesc">';
+                  htmlDiv2 += '            <p class="fileUploadDesc">최대 50Mbyte까지 첨부 가능합니다.</p>';
+                  htmlDiv2 += '            <label for="' + uuid2 + '" class="fileUploadBtn">파일선택</label>';
+                  htmlDiv2 += "        </div>";
+                  htmlDiv2 +=
+                    '    <input type="file" name="fileUpload' +
+                    fileIdx +
+                    '" id="' +
+                    uuid2 +
+                    '" class="upload-hidden fileClass" multiple onchange="fn_M_fileChange(this, fn_M_fileUpload_callback)" fileIdx="' +
+                    fileIdx +
+                    '">';
+                  htmlDiv2 += "</div>";
+                  $("#File_div_projectFile_" + fileIdx).append(htmlDiv2);
+                }
+            
+                // 업로드 파일 삭제하기
+                function fn_M_file_remove(id) {
+                  var subSeq = $("#" + id + "_label").attr("seq");
+                  if (!confirm("정말로 삭제하시겠습니까?")) {
+                    return false;
+                  }
+                  if (subSeq != "" && subSeq != null) {
+                    // 실제 DB에서 삭제함
+                    var params = {};
+                    var url = "/front/common/file/jqueryFileRemove";
+                    params.fileSubSeq = subSeq;
+                    params.removeType = "S";
+                    var _fileCallback = function (data) {
+                      var obj = JSON.parse(data);
+                      if (obj.result) {
+                        $("#" + id + "_label").remove();
+                      }
+                    };
+                    $.ajaxCallBack(url, params, _fileCallback); //저장 ,임시저장 d
+                  } else {
+                    $("#" + id + "_label").remove();
+                    $("#" + id + "_file").remove();
+                  }
+                }
+                // 업로드 파일 DB에 저장하기
+                function fn_M_saveFile(fileIdx, pageType) {
+                  var fileObj = {
+                    success: true,
+                    fileUuid: "",
+                    fileSubSeq: "",
+                  };
+                  try {
+                    // 기존에 저장되어 있는 파일 있는지 여부
+                    var beforeId = "file_before_file" + fileIdx;
+                    var beforeFileUuid = $("#" + beforeId).val() == null ? "" : $("#" + beforeId).val();
+            
+                    // 최종적으로 next 버튼 클릭하면 서버에 전송하고 파일 업로드 함
+                    var len1 = $("#File_div_projectFile_" + fileIdx).find("input[name=fileUpload" + fileIdx + "]").length - 1;
+                    var formData = new FormData();
+                    if (len1 > 0) {
+                      for (var i = 0; i < len1; i++) {
+                        formData.append("uploadfile", $("#File_div_projectFile_" + fileIdx).find("input[name=fileUpload" + fileIdx + "]")[i].files[0]);
+                      }
+                      formData.append("pageType", pageType);
+                      formData.append("beforeFileUuid", beforeFileUuid);
+                      var _fileCallback = function (data) {
+                        var result = data.result;
+                        if (result) {
+                          var fileUuid = data.data.fileUuid;
+                          fileObj.fileUuid = fileUuid;
+                          var fileSubSeq = data.data.fileSubSeq;
+                          fileObj.fileSubSeq = fileSubSeq;
+                        } else {
+                          fileObj.success = false;
+                        }
+                      };
+                      var params = {};
+                      $.fileUpload(formData, _fileCallback);
+                    } else {
+                      fileObj.fileUuid = beforeFileUuid;
+                    }
+                  } catch (e) {}
+                  return function () {
+                    return fileObj;
+                  };
+                }
+              </script>
+            
+              <!-- ------------- 전문기술 layer창[start] ---------------- -->
+              <div id="wrap">
+                <div id="Mid_skill_layerPop" class="overlay recentProject">
+                  <div class="popup">
+                    <a href="#none" class="close">×</a>
+                    <div class="top">
+                      <h2>전문기술 layer 창</h2>
+                    </div>
+                    <div class="term_Use">
+                      <a onclick="fn_M_add_skillLayer('JSP')">JSP</a>
+                      <a onclick="fn_M_add_skillLayer('Oracle')">Oracle</a>
+                      <a onclick="fn_M_add_skillLayer('Mysql')">Mysql</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script>
+                // 전문 기술 데이터 넣기
+                function fn_M_add_skillLayer(skill) {
+                  var a = $("#Cid_t6_pSkills").val();
+                  if (a != "") {
+                    a = a + ",";
+                  }
+                  if (a.indexOf(skill) != -1) {
+                    location.href = "#none";
+                    return false;
+                  }
+                  $("#Cid_t6_pSkills").val(a + skill);
+                  location.href = "#none";
+                }
+              </script>
+              <!-- ------------- 전문기술 layer창[end] ---------------- -->
+            
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+
+
+</html>

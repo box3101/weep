@@ -1,0 +1,806 @@
+/*reset*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  ul, li, ol {
+    list-style: none;
+  }
+  
+  .inner {
+    width: 1270px;
+  }
+  
+  div#wrapper{
+    overflow-x: hidden;
+    width: 100%;
+  }
+  /*admin_header----S----*/
+  div#header {
+    background: #e03b3b;
+    height: 80px;
+  }
+  div#header div.adminLogo {
+    float: left;
+  }
+  div#header div.adminLogo a {
+    display: inline-block;
+    width: 275px;
+    height: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 25px 70px;
+  }
+  div#header div.adminLogo a img {
+    max-width: 100%;
+  }
+  div#header ul#adminGnb {
+    float: left;
+  }
+  
+  div#header ul#adminGnb li {
+    float: left;
+  }
+  
+  div#header ul#adminGnb li a {
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    padding: 0px 15px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  div#header ul#adminGnb li a:hover{
+    background-color: #595959;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  
+  
+  header#admin_header.clearfix {
+    background: #e03b3b;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  header#admin_header.clearfix div.adminHeader_inner {
+    width: 1900px;
+    background: #e03b3b;
+  }
+  
+  header#admin_header.clearfix div.adminHeader_inner div.adminLogo {
+    float: left;
+  }
+  
+  header#admin_header.clearfix div.adminHeader_inner div.adminLogo a {
+    display: inline-block;
+    width: 275px;
+    height: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 25px 70px;
+  }
+  
+  header#admin_header.clearfix div.adminHeader_inner div.adminLogo a img {
+    max-width: 100%;
+  }
+  
+  header#admin_header.clearfix div.adminHeader_inner ul#adminGnb {
+    float: left;
+    width: 1600px;
+  }
+  
+  header#admin_header.clearfix div.adminHeader_inner ul#adminGnb li {
+    float: left;
+  }
+  
+  header#admin_header.clearfix div.adminHeader_inner ul#adminGnb li a {
+    color: #ffffff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 80px;
+    padding: 0px 15px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  header#admin_header.clearfix div.adminHeader_inner ul#adminGnb li a:hover {
+    background-color: #595959;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  
+  /*admin_header----E----*/
+  /*adminLeft----S----*/
+  section#adminLeft {
+    position: absolute;
+    height: 100%;
+    width: 275px;
+  }
+  
+  section#adminLeft div.adminInfo {
+    width: 48px;
+    height: 100%;
+    background-color: #303030;
+    float: left;
+  }
+  
+  section#adminLeft div.adminInfo div.home a {
+    padding: 14px;
+    border-bottom: 1px solid #b9b9b9;
+  }
+  
+  section#adminLeft div.adminInfo div.home a:hover img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  section#adminLeft div.adminInfo div.lock a {
+    padding: 14px;
+    border-bottom: 1px solid #b9b9b9;
+  }
+  
+  section#adminLeft div.adminInfo div.lock a:hover img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  section#adminLeft div.adminInfo div.my_page a {
+    padding: 14px;
+    border-bottom: 1px solid #b9b9b9;
+  }
+  
+  section#adminLeft div.adminInfo div.my_page a:hover img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  section#adminLeft div.adminLnb_div {
+    float: right;
+    display: inline-block;
+    width: calc( 100% - 48px);
+    height: 100%;
+    background: #f3f3f3;
+  }
+  
+  section#adminLeft div.adminLnb_div div.adminLnb_title {
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  section#adminLeft div.adminLnb_div div.adminLnb_title img {
+    margin-bottom: 20px;
+    top: 4px;
+    position: relative;
+  }
+  
+  section#adminLeft div.adminLnb_div div.adminLnb_title h1 {
+    font-size: 26px;
+    font-weight: 800;
+  }
+  
+  section#adminLeft div.adminLnb_div ul.adminLnb li {
+    text-align: left;
+  }
+  
+  section#adminLeft div.adminLnb_div ul.adminLnb li a {
+    display: inline-block;
+    width: 100%;
+    height: 65px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 25px;
+    line-height: 65px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #575656;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  section#adminLeft div.adminLnb_div ul.adminLnb li a:hover {
+    color: #ffffff;
+    background: #e03b3b;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  section#adminLeft div.adminLnb_div ul.adminLnb li ul.two_depth {
+    display: none;
+  }
+  
+  section#adminLeft div.adminLnb_div ul.adminLnb li.on a {
+    color: #ffffff;
+    background: #e03b3b;
+  }
+  
+  section#adminLeft div.adminLnb_div ul.adminLnb li.on a ul.two_depth {
+    display: inline-block;
+  }
+  
+  section#adminLeft div.adminLnb_div ul.adminLnb li.on a ul.two_depth li a {
+    background: #575656 !important;
+    color: #ffffff;
+  }
+  
+  /*adminLeft----E----*/
+  /*adminLogin----S----*/
+  section#adminLogin {
+    margin-left: 275px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: calc( 100% - 275px);
+    position: relative;
+    padding-top: 150px;
+  }
+  
+  section#adminLogin .login_inner {
+    margin: 0px 200px 0px;
+    width: 980px;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_title {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_title h2 {
+    display: inline-block;
+    font-size: 28px;
+    height: 28px;
+    font-weight: 700;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input {
+    float: left;
+    padding-top: 45px;
+    padding-left: 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #fafafa;
+    border: 1px solid #e7e7e7;
+    width: calc(980px - 467px);
+    height: 601px;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.loginNotice h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.loginNotice ul {
+    margin-bottom: 20px;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.loginNotice ul li {
+    line-height: 25px;
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.loginNotice div.tel {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #e9d8d9;
+    text-align: center;
+    width: 410px;
+    height: 70px;
+    margin-bottom: 50px;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.loginNotice div.tel span {
+    line-height: 70px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.adminLogin_form {
+    width: 410px;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.adminLogin_form h3 {
+    margin-bottom: 14px;
+    color: #9c1010;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.adminLogin_form input {
+    width: 408px;
+    height: 55px;
+    margin-bottom: 8px;
+    text-indent: 15px;
+    border: 1px solid #e7e7e7;
+    padding: 0;
+    color: #bbbbbb;
+    font-size: 16px;
+    -webkit-box-shadow: 3px 3px 5px 0px #eded;
+            box-shadow: 3px 3px 5px 0px #eded;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.adminLogin_form div.loginBtn a {
+    display: inline-block;
+    width: 410px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #ff3b3b;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.adminLogin_form div.loginBtn a:hover {
+    font-weight: 900;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.adminLogin_form div.form_bot {
+    text-align: center;
+    width: 100%;
+    padding-left: 24px;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.adminLogin_form div.form_bot a {
+    color: #999999;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.adminLogin_form div.form_bot a:nth-of-type(1) {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.adminLogin_form div.form_bot a:nth-of-type(1)::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 15px;
+    background-color: #999999;
+    position: absolute;
+    right: -13px;
+    top: 3px;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_input div.adminLogin_form div.form_bot a:hover {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+  
+  section#adminLogin .login_inner article.adminLogin_banner {
+    float: right;
+  }
+  
+  /*adminLogin----E----*/
+  /*adminProjectM_RS----S----*/
+  section#adminContent {
+    margin-left: 275px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: calc( 100% - 275px);
+    position: relative;
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+  
+  section#adminContent div.inner {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  section#adminContent div.inner div.content_top.clearfix h2 {
+    float: left;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  section#adminContent div.inner div.content_top.clearfix div.content_info {
+    float: right;
+  }
+  
+  section#adminContent div.inner div.content_top.clearfix ul.third_depth_tap.clearfix {
+    float: left;
+    margin-bottom: 30px;
+  }
+  
+  section#adminContent div.inner div.content_top.clearfix ul.third_depth_tap.clearfix li.on a {
+    height: 60px;
+    background: #343434;
+    border: 1px solid #343434;
+    color: #fed0d0;
+  }
+  
+  section#adminContent div.inner div.content_top.clearfix ul.third_depth_tap.clearfix li.on a:hover {
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    text-decoration: underline;
+    font-weight: 500;
+    color: #fed0d0;
+  }
+  
+  section#adminContent div.inner div.content_top.clearfix ul.third_depth_tap.clearfix li {
+    float: left;
+  }
+  
+  section#adminContent div.inner div.content_top.clearfix ul.third_depth_tap.clearfix li a {
+    display: inline-block;
+    width: 210px;
+    height: 60px;
+    color: #343434;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    line-height: 62px;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  
+  section#adminContent div.inner div.content_top.clearfix ul.third_depth_tap.clearfix li a:hover {
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 17px;
+    color: #222222;
+  }
+  
+  section#adminContent div.inner div.content_search {
+    width: 100%;
+    height: 175px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 35px 85px 35px 75px;
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 35px;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main {
+    width: 85%;
+    float: left;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.input_calender {
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin-bottom: 12px;
+    width: 940px;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.input_calender select {
+    height: 30px;
+    width: 160px;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.input_calender input {
+    height: 30px;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.input_calender input.day_input {
+    width: 110px;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 10px;
+    margin-right: 4px;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.input_calender img.calender_img {
+    vertical-align: middle;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.input_calender div.dayBtn {
+    display: inline-block;
+    float: right;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.input_calender div.dayBtn input {
+    padding: 8px 8px;
+    border: 1px solid #343434;
+    font-size: 13px;
+    line-height: 13px;
+    background-color: #ffffff !important;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.searchInput_01 {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 4px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.searchInput_01 span {
+    display: inline-block;
+    float: left;
+    width: 110px;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.searchInput_01 input {
+    width: 330px;
+    float: right;
+    height: 30px;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.searchInput_02 {
+    float: right;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 4px;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.searchInput_02 span {
+    display: inline-block;
+    float: left;
+    width: 110px;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.searchInput_02 input {
+    width: 330px;
+    float: right;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30px;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.searchInput_03 {
+    width: 100%;
+    float: right;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.searchInput_03 span {
+    float: left;
+    line-height: 30px;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_main div.searchInput_03 input {
+    width: 830px;
+    float: right;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 30px;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_submit {
+    float: right;
+  }
+  
+  section#adminContent div.inner div.content_search div.search_submit input {
+    background: #7f7f7f;
+    width: 145px;
+    height: 115px;
+    float: right;
+    color: #fff;
+    font-size: 18px;
+    line-height: 115px;
+    font-weight: 700;
+    border: 0;
+  }
+  
+  section#adminContent div.inner div.main_content span {
+    float: left;
+    line-height: 30px;
+  }
+  
+  section#adminContent div.inner div.main_content div.list_number {
+    float: right;
+    margin-bottom: 15px;
+    height: 30px;
+  }
+  
+  section#adminContent div.inner div.main_content div.list_number span {
+    margin-right: 20px;
+    line-height: 30px;
+  }
+  
+  section#adminContent div.inner div.main_content div.list_number select {
+    width: 70px;
+    height: 100%;
+  }
+  
+  section#adminContent div.inner div.main_content form {
+    margin-bottom: 20px;
+  }
+  
+  section#adminContent div.inner div.main_content form table {
+    border-top: 2px solid #222222;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  section#adminContent div.inner div.main_content form table thead tr th {
+    background: #fafafa;
+    height: 55px;
+    line-height: 55px;
+    border: 1px solid #efefef;
+  }
+  
+  section#adminContent div.inner div.main_content form table tbody tr td {
+    height: 55px;
+    text-align: center;
+    border: 1px solid #efefef;
+  }
+  
+  section#adminContent div.inner div.main_content div.exelBtn {
+    display: inline-block;
+    float: right;
+    margin-bottom: 50px;
+  }
+  
+  section#adminContent div.inner div.main_content div.exelBtn a {
+    display: inline-block;
+    background: #595959;
+    color: #ffff;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging {
+    position: relative;
+    clear: both;
+    left: 35%;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 30px;
+    z-index: 1;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging span {
+    float: left;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging span a {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    color: #424242;
+    font-size: 12px;
+    font-family: "Nanum Gothic";
+    border-radius: 5px;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging span a:hover {
+    background: #3a3a3a;
+    color: #ffffff;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging span a.on {
+    background: #3a3a3a;
+    color: #ffffff;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging span.page_moveBtn {
+    float: left;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging span.page_moveBtn a {
+    border: 1px solid #8b8b8b;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging span.page_moveBtn a img {
+    vertical-align: middle;
+    max-width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging span.page_moveBtn:nth-of-type(1) a {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging span.page_moveBtn:nth-of-type(2) a {
+    border-radius: 0 5px 5px 0;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging span.page_moveBtn:nth-last-of-type(1) a {
+    border-radius: 0 5px 5px 0;
+  }
+  
+  section#adminContent div.inner div.main_content div.admin_paging span.page_moveBtn:nth-last-of-type(2) a {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  /*adminProjectM_RS----E----*/
+  div.input_ID span.label_projectKeyword {
+    width: 140px;
+  }
+  
+  div.input_ID input#projectKeyword {
+    width: calc(100% - 150px);
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+  }
+  
+  .btn a {
+    display: inline-block;
+    width: 90px;
+    height: 36px;
+    margin-bottom: 3px;
+    background: #7f7f7f;
+    font-size: 15px;
+    line-height: 37px;
+  }
+  
+  .btn a:hover {
+    background: #e03b3b;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  
+  .btn02 {
+    display: inline-block;
+  }
+  
+  .btn02 a {
+    display: inline-block;
+    width: 70px;
+    height: 22px;
+    margin-bottom: 3px;
+    background: #7f7f7f;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  
+  .red {
+    background-color: #e03b3b !important;
+  }
+  
+  .pr28 {
+    padding-right: 28px;
+  }
+  
+  .w801 {
+    width: 801px !important;
+  }

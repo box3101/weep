@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <title>위프(WEEP) IT인력중개플랫폼</title>
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="assets/css/stylesheet.css" />
+  <script src="assets/js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-box">
+        <h2 class="page-tit">로그인</h2>
+        <button type="button" class="btn-page-back"><span class="ir">뒤로</span></button>
+        <button class="btn-gnb" type="button"><span class="ir">전체메뉴</span></button>
+      </div>
+      <div class="gnb-wrap">
+        <div class="gnb-box">
+          <div class="members">
+            <span class="img-logo">wee.p</span>
+            <button class="btn-close" type="button">메뉴닫기</button>
+          </div>
+          <div class="links">
+            <div class="link-login"><a href="#none">로그인</a></div>
+            <div class="link-join"><a href="#none">회원가입</a></div>
+          </div>
+          <nav class="gnb">
+            <ul class="main-menu">
+              <li>
+                <a class="depth1" href="#none">프로젝트 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">아웃소싱 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">프리랜서 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">파트너 검색</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">WEE.P 소개</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="side-menu">
+              <li>
+                <a class="depth1" href="#none">위프 이용안내</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="depth1" href="#none">위프 지원센터</a>
+                <ul class="depth2">
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                  <li><a href="#none">sub_menu</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="boards">
+            <a href="#none">1:1 온라인 문의</a>
+            <a href="#none">자주찾는질문</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //HEADER -->
+
+    <div class="contents" data-name="login">
+      <nav class="tabmenu type1">
+        <ul>
+          <li class="active" data-tab="free"><a href="#none">프리랜서 회원</a></li>
+          <!-- 활성화시 li에 'active' 클래스추가-->
+          <li data-tab="partner"><a href="#none">파트너 회원</a></li>
+          <li data-tab="client"><a href="#none">클라이언트 회원</a></li>
+        </ul>
+      </nav>
+
+      <!-- 프리랜서 회원 -->
+      <section id="free" class="tab-content active">
+        <div class="login-desc">
+          <em>위프</em>에 로그인 하셔서<br>
+          많은 서비스를 누려보세요!
+        </div>
+        <form action="">
+          <fieldset>
+            <legend>프리랜서 로그인 정보입력</legend>
+            <div class="inputbox">
+              <input type="text" placeholder="아이디" title="아이디">
+            </div>
+            <div class="inputbox none-label f-pw">
+              <input type="password" placeholder="비밀번호" id="pw">
+              <label for="pw">비밀번호</label>
+              <span class="btn-eye"><span class="ir">비밀번호 보기</span></span>
+            </div>
+            <div class="side">
+              <div class="checkbox">
+                <input type="checkbox" id="chk" />
+                <label for="chk">로그인 상태 유지</label>
+              </div>
+              <div class="right">
+                <a href="#none">아이디 찾기</a>
+                <a href="#none">비밀번호 찾기</a>
+              </div>
+            </div>
+            <button class="btn type-r" type="button">로그인</button>
+          </fieldset>
+        </form>
+        <div class="sns-area">
+          <p class="desc">SNS계정으로 간편하게 로그인하세요.</p>
+          <ul class="sns-box">
+            <li class="kakao"><a href="#none">카카오톡 바로가기</a></li>
+            <li class="blog"><a href="#none">네이버 바로가기</a></li>
+          </ul>
+        </div>
+        <a class="link-join" href="#none">아직 회원이 아니세요? <em>회원가입</em></a>
+      </section>
+      <!-- //프리랜서 회원 -->
+
+      <!-- 파트너 회원 -->
+      <section id="partner" class="tab-content">
+        <div class="login-desc">
+          <em>위프</em>에 로그인 하셔서<br>
+          많은 서비스를 누려보세요!
+        </div>
+        <form action="">
+          <fieldset>
+            <legend>프리랜서 로그인 정보입력</legend>
+            <div class="inputbox">
+              <input type="text" placeholder="아이디" title="아이디">
+            </div>
+            <div class="inputbox none-label f-pw">
+              <input type="password" placeholder="비밀번호" id="pw">
+              <label for="pw">비밀번호</label>
+              <span class="btn-eye"><span class="ir">비밀번호 보기</span></span>
+            </div>
+            <div class="side">
+              <div class="checkbox">
+                <input type="checkbox" id="chk" />
+                <label for="chk">로그인 상태 유지</label>
+              </div>
+              <div class="right">
+                <a href="#none">아이디 찾기</a>
+                <a href="#none">비밀번호 찾기</a>
+              </div>
+            </div>
+            <button class="btn type-r" type="button">로그인</button>
+          </fieldset>
+        </form>
+        <a class="link-join" href="#none">아직 회원이 아니세요? <em>회원가입</em></a>
+      </section>
+      <!-- //파트너 회원 -->
+
+      <!-- 클라이언트 회원 -->
+      <section id="client" class="tab-content">
+        <div class="login-desc">
+          <em>위프</em>에 로그인 하셔서<br>
+          많은 서비스를 누려보세요!
+        </div>
+        <form action="">
+          <fieldset>
+            <legend>프리랜서 로그인 정보입력</legend>
+            <div class="inputbox">
+              <input type="text" placeholder="아이디" title="아이디">
+            </div>
+            <div class="inputbox none-label f-pw">
+              <input type="password" placeholder="비밀번호" id="pw">
+              <label for="pw">비밀번호</label>
+              <span class="btn-eye"><span class="ir">비밀번호 보기</span></span>
+            </div>
+            <div class="side">
+              <div class="checkbox">
+                <input type="checkbox" id="chk" />
+                <label for="chk">로그인 상태 유지</label>
+              </div>
+              <div class="right">
+                <a href="#none">아이디 찾기</a>
+                <a href="#none">비밀번호 찾기</a>
+              </div>
+            </div>
+            <button class="btn type-r" type="button">로그인</button>
+          </fieldset>
+        </form>
+        <a class="link-join" href="#none">아직 회원이 아니세요? <em>회원가입</em></a>
+      </section>
+      <!-- //클라이언트 회원 -->
+    </div>
+  </div>
+
+  <!-- layer-popup-wrap -->
+  <div class="popup-wrap">
+    <div id="login-alert01" class="popup">
+      <div class="popup-contents">
+        <div>개인정보 보호를 위해<br> 본인 기기에서만 사용하세요.</div>
+        <div class="txt-sm">이 기능을 이용함으로써 발생하는<br>보안 문제의 책임은 이용자에게 있습니다.</div>
+      </div>
+      <div class="popup-buttons">
+        <a class="btn-cancle" href="#none" onclick="popup_hide(this)">취소</a>
+        <a class="btn-submit" href="#none">확인</a>
+      </div>
+    </div>
+    <div id="login-alert02" class="popup">
+      <div class="popup-contents">
+        <div>올바른 아이디와 패스워드를<br>입력해 주세요!</div>
+      </div>
+      <div class="popup-buttons">
+        <a class="btn-submit" href="#none" onclick="popup_hide(this)">확인</a>
+      </div>
+    </div>
+  </div>
+  <!-- //layer-popup-wrap -->
+
+  <script src="assets/js/common.js"></script>
+  <script>
+    tabmenuActive(); // 상단탭메뉴.
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head style="overflow-y:hidden;">
+    <title>AM00742</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="U잡스">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:image:type" content="/image/png">
+    <meta property="og:image:width" content="173">
+    <meta property="og:image:height" content="65">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/project_reg.css">
+    <link rel="stylesheet" href="../../css/datepicker.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/customTab.js"></script>
+    <script type="text/javascript" src="../../js/sideBar_toggle.js"></script>
+    <script type="text/javascript" src="../../js/admin_common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script> 
+    <script>
+        $(function () {
+           //datepicker 
+           $(".day_input").datepicker({
+              language: 'en',
+              autoClose: true,
+              dateFormat:'yyyy.mm.dd'
+              //minDate: new Date()
+           });
+        });
+    </script>
+</head>
+
+
+<body>
+    <!-- admin_header : S ---------->
+    <div id="header">
+        <div class="adminLogo">
+            <a href="/admin/main.html"><img src="../../admin_img/admin_logo.png" alt="관리자메인으로 바로가기"></a>
+        </div>
+        <ul id="adminGnb">
+            <li>
+                <a href="../../page/AM00100/AM00101.html">프로젝트</a>
+            </li>
+            <li>
+                <a href="../../page/AM00200/AM00201.html">아웃소싱</a>
+            </li>
+            <li>
+                <a href="../../page/AM00300/AM00301.html">프리랜서</a>
+            </li>
+            <li>
+                <a href="../../page/AM00400/AM00401.html">파트너</a>
+            </li>
+            <li>
+                <a href="../../page/AM00500/AM00500.html">클라이언트</a>
+            </li>
+            <li>
+                <a href="../../page/AM00600/AM00601.html">매니저</a>
+            </li>
+            <li class="on">
+                <a href="../../page/AM00700/AM00701.html">회원</a>
+            </li>
+            <li>
+                <a href="../../page/AM00800/AM00801.html">계약</a>
+            </li>
+            <li>
+                <a href="../../page/AM00900/AM00901.html">정산</a>
+            </li>
+            <li>
+                <a href="../../page/AM01000/AM01001.html">유료상품</a>
+            </li>
+            <li>
+                <a href="../../page/AM01200/AM01201.html">사이트관리</a>
+            </li>
+        </ul>
+    </div>
+    <!-- admin_header : E ---------->
+
+    <!-- admin_wrapper : S ---------->
+    <div class="wrapper clearfix">
+        <!-- admin_sidebar : S ---->
+        <div id="sidebar">
+            <div class="info">
+                <div class="info_icon">
+                    <button id="sidebarCollapse">
+                    </button>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/left_home_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/left_lock_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/my_page_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/AM01100_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/AM01300_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="info_icon">
+                    <a href="">
+                        <img src="../../admin_img/AM01400_icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="nav_side">
+                <div class="SNB_title">
+                    <img src="../../admin_img/admin_leftLnb.png" alt="">
+                    <h1>회원관리</h1>
+                </div>
+                <ul class="SNB">
+                    <li><a href="../../page/AM00700/AM00701.html">회원목록</a></li>
+                    <li><a href="../../page/AM00700/AM00711.html">휴면회원</a></li>
+                    <li><a href="../../page/AM00700/AM00721.html">탈퇴회원</a></li>
+                    <li><a href="../../page/AM00700/AM00731.html">프리랜서 SMS/메일링</a></li>
+                    <li class="on"><a href="../../page/AM00700/AM00741.html">아웃소싱 SMS/메일링</a></li>
+                    <li><a href="../../page/AM00700/AM00751.html">클라이언트 SMS/메일링</a></li>
+                    <li><a href="../../page/AM00700/AM00761.html">휴면회원설정</a></li>
+                    <li><a href="../../page/AM00700/AM00771.html">비밀번호변경 설정</a></li>
+                    <li><a href="../../page/AM00700/AM00781.html">위프톡 관리</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- admin_sidebar : E ---->
+
+        <!-- admin_contents : S ---->
+        <div id="contents">
+            <div class="inner">
+                <div class="title clearfix">
+                    <h2>아웃소싱 SMS/메일링</h2>
+                    <ul class="breadcrumb">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">아웃소싱 SMS/메일링</a></li>
+                        <li><a href="#">SMS</a></li>
+                    </ul>
+                </div>
+                <div class="tapBox">
+                    <ul class="tab liN2">
+                        <li><a href="../../page/AM00700/AM00741.html">SMS</a></li>
+                        <li class="on"><a href="../../page/AM00700/AM00742.html">메일링</a></li>
+                    </ul>
+                </div>
+                <div class="subContent mb30">
+                    <div class="title_wrap">
+                        <h5>개별/전체메일 발송</h5>
+                    </div>
+                    <div class="subContent_table">
+                        <form action="">
+                            <table>
+                                <caption></caption>
+                                <tr>
+                                    <th>제목</th>
+                                    <td>
+                                        <input type="text" class="mb16" placeholder="위프 이메일 제목입니다.">
+                                        <p>※ 정보통신망법에 따라 영리목적의 광고성 정보 발송 시 사전 수신동의한 회원을 대상으로 해야 하며,제목에 (광고)를 표시해야 합니다.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>발송자 이메일</th>
+                                    <td>
+                                        <input type="text" placeholder="weep@weep.kr">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>대상회원 선택</th>
+                                    <td>
+                                        <ul>
+                                            <li class="mb6">
+                                                <input type="checkbox" name="" id="f01">
+                                                <label for="f01" class="radioL">회원직접선택</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="f02">
+                                                <label for="f02" class="radioL">전체회원</label>
+                                            </li>
+                                            <li class="mb30 pl20">
+                                                <input type="checkbox" name="" id="f03">
+                                                <label for="f03" class="checkL">수신동의한 회원에게만 발송</label>
+                                            </li>
+                                            <li>
+                                                <p>※ 정보통신망법에 따라 수신거부한 회원에게는 광고성정보를 발송할 수 없으며, 위반 시 과태료가 부과됩니다.</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>내용</th>
+                                    <td>
+                                        <form action=""></form>
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>수신동의</th>
+                                    <td>
+                                        <ul>
+                                            <li class="mb10 clearfix">
+                                                <div class="lef">
+                                                    <input type="checkbox" name="" id="agree01">
+                                                    <label for="agree01" class="checkL mr25">수신동의문구를 메일에 포함합니다.</label>
+                                                </div>
+                                                <div class="ref">
+                                                    <div class="btn_reset"><a href="">내용초기화</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <form action=""></form>
+                                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>수신거부</th>
+                                    <td>
+                                        <ul>
+                                            <li class="mb10 clearfix">
+                                                <div class="lef">
+                                                    <input type="checkbox" name="" id="agree02">
+                                                    <label for="agree02" class="checkL mr25">수신동의문구를 메일에 포함합니다.</label>
+                                                </div>
+                                                <div class="ref">
+                                                    <div class="btn_reset"><a href="">내용초기화</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <form action=""></form>
+                                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <div class="subContent mb50">
+                    <ul class="sub_detail">
+                        <li>· 수신동의 및 수신거부 내용 수정 후 발송 시, 수정된 내용이 저장됩니다.</li>
+                        <li>· [내용 초기화] 체크 시, 기본 제공 내용으로 초기화됨과 동시에 이전에 수정한 내용은 삭제됩니다.</li>
+                        <li>· 치환코드 안내- 치환코드 : {rc_today}, 설명 : 오늘 날짜 YYYY년MM월DD일- 치환코드 : {rc_refusalKo}, 설명 : 수신거부{rc_refusalEn}, 설명 : click here</li>
+                    </ul>
+                </div>
+                <div class="subContent mb50 center">
+                    <div class="btn_MAIL orange"><a href="">메일발송</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- admin_contents : E ---->
+    </div>
+    <!-- admin_wrapper : E ---------->
+    <script>
+        function confirm_cancle() {
+            var confirm_cancle = confirm("프로젝트 지원건이 확인전이므로\n취소하실 수 있습니다\n\n취소하겠습니까?");
+     
+            if ( confirm_cancle == true ) {
+                alert("프로젝트 지원이 취소되었습니다.");
+            } else if ( confirm_cancle == false ) {
+            }
+        }
+        function confirm_cancle02() {
+            var confirm_cancle = confirm("삭제하시겠습니까?");
+     
+            if ( confirm_cancle == true ) {
+                alert("삭제되었습니다.");
+            } else if ( confirm_cancle == false ) {
+            }
+        }
+    </script>
+    <script>
+        function openWindowPop(url, name) {
+            var options = 'top=0, left=0, width=1260, height=800, status=no, menubar=no, toolbar=no, resizable=no scrollbars=1';
+            window.open(url, name, options);
+        }
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y: hidden;">
+    <title>weep</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:title" content="weep" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="../../img/logo.png" />
+    <meta property="og:image:type" content="../../image/png" />
+    <meta property="og:image:width" content="173" />
+    <meta property="og:image:height" content="65" />
+    <meta property="og:description" content="" />
+
+    <link rel="stylesheet" href="../../css/@default.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/font.css" />
+    <link rel="stylesheet" href="../../css/swiper.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.js"></script>
+</head>
+
+<body>
+    <div id="header" class="sub_header">
+        <div class="inner clearfix">
+            <h1 class="logo">
+                <a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+            </h1>
+            <ul id="main_gnb">
+                <li>
+                    <a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+                </li>
+                <li>
+                    <a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+                </li>
+                <li>
+                    <a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+                </li>
+                <li>
+                    <a href="/page/partner_sch/partner.html">파트너 검색</a>
+                </li>
+                <li>
+                    <a href="#">WEE.P 소개
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="clearfix small-txt">
+                <li>
+                    <a href="#">이용안내</a>
+                </li>
+                <li>
+                    <a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+                </li>
+            </ul>
+
+            <ul class="util clear">
+                <li>
+                    <a href="/page/login/login01.html">로그인</a>
+                </li>
+                <li>
+                    <a href="/page/login/login02.html">회원가입</a>
+                </li>
+
+                <div class="memberImg">
+                    <img src="/img/bg_member.png" alt="회원가입혜택">
+                </div>
+            </ul>
+            <ul class="login-util clear">
+                <li>
+                    <a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지"
+                                class="member-img"></span>홍길동</a>
+                    <ul class="member-menu">
+                        <li>
+                            <a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+                        </li>
+                        <li>
+                            <a href="">로그아웃</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="login01">
+        <div class="join">
+            <div class="tab">
+                <ul>
+                    <li>
+                        <a href="#tab1" class="on">프리랜서 회원</a>
+                    </li>
+                    <li>
+                        <a href="#tab2">파트너 회원</a>
+                    </li>
+                    <li>
+                        <a href="#tab3">클라이언트 회원</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 프리랜서 회원 -->
+            <div id="tab1" class="hidden">
+                <div class="inner">
+                    <div class="sns_wrap">
+                        <h2>SNS를 사용하고 계신가요?</h2>
+                        <p>사용하고 계신 계정을 통한 간편로그인으로 이용하실수 있습니다.</p>
+                        <ul class="sns">
+                            <li>
+                                <a href="#"><img src="../../img/tab_naver.png" alt="네이버 아이디로 로그인" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../../img/tab_kakao.png" alt="카카오톡 아이디로 로그인" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../../img/weep_signup.png" alt="위프에 회원가입하기" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="members_wrap">
+                        <div class="tit">
+                            <p class="welcome">회원가입하고 다양한 혜택을 누리세요!</p>
+                        </div>
+                        <ul class="input_wrap">
+                            <li>
+                                <input type="text" placeholder="이름(실명) *" class="form-control">
+                                <div class="notice_msg failure" id="notice_msg_pwd" style="display: block;">
+                                    <p>필수 정보입니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="text" placeholder="아이디 *" class="form-control">
+                            </li>
+                            <li>
+                                <div class="row row-0 align-items-center">
+                                    <div class="col">
+                                        <div class="form-control-wrap">
+                                            <input type="password" placeholder="비밀번호(6~16자의 영문, 숫자, 특수기호) * " class="form-control">
+                                            <div class="input-help">
+                                                <i class="icon-help"><span class="sr-only">물음표</span></i>
+                                                <div class="death">
+                                                    <h3>안전한 비밀번호 작성법</h3>
+                                                    6~16자의 영문 대소문, 숫자, 특수기호만 사용가능 (공백입력 불가) <br>
+                                                    3자 이상 연속 영문/숫자 조합은 사용불가 (AAA. 111) <br>
+                                                    아이디, 반복되는 영문/숫자 조합은 사용불가 (1234, ABCD) <br>
+                                                    키보드의 연속 패턴은 사용하지 마세요. (ASDF) <br>
+                                                    비밀번호는 주기적으로 변경하여 안전하게 관리하기
+                                                </div>
+                                            </div>
+											
+                                            <a class="input-eye">
+                                                <i class="icon-eye"><span class="sr-only">보이기/숨김 토글</span></i>
+                                            </a>
+                                        </div>
+
+                                        <script>
+                                            $(function () {
+                                                $(".input-help").on("mouseenter", function () {
+                                                    $(".death").show();
+                                                });
+                                                $(".input-help").on("mouseleave", function () {
+                                                    $(".death").hide();
+                                                });
+
+												// 2020-12-17 
+												$('.input-eye').click(function () {
+													$(this).toggleClass('on');
+													if ($(this).hasClass('on') == true) {
+														$(this).siblings('input').attr('type', 'text');
+													} else {
+														$(this).siblings('input').attr('type', 'password');
+													}
+												});
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+								<!-- 2020-12-17 추가 { -->
+								<div class="form-control-wrap">
+									<input type="password" placeholder="비밀번호 확인" class="form-control">
+									<a class="input-eye">
+										<i class="icon-eye"><span class="sr-only">보이기/숨김 토글</span></i>
+									</a>
+								</div>
+								<!-- } 2020-12-17 추가 -->
+                            </li>
+                            <li>
+                                <input type="text" placeholder="이메일 *" class="form-control">
+                            </li>
+                            <li>
+                                <div class="row row-0 align-items-center">
+                                    <div class="col">
+                                        <input type="text" placeholder="휴대폰 번호 *" class="form-control">
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#" class="btn btn-lg btn-gray w-110px">인증번호 전송</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row-0 align-items-center">
+                                    <div class="col">
+                                        <input type="text" placeholder="인증번호 *" class="form-control">
+                                    </div>
+                                    <div class="col-auto">
+                                        <a hef="#" class="btn btn-lg btn-gray w-110px">확인</a>
+                                    </div>
+                                </div>
+                                <p class="text-help">인증번호~~~ 남은시간 <span class="text-orange">0:00</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="personal">
+                        <div class="tit">약관 동의</div>
+                        <div class="agree_wrap">
+                            <div class="agree_top">
+                                <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                    <input type="checkbox"><span>모두 동의합니다.</span><i></i>
+                                </label>
+                                <p>필수동의 항목 및 개인정보 수집 및 이용 동의(선택),<br> 마케팅 정보 수신(선택)에 모두 동의합니다.</p>
+                            </div>
+                            <div class="agree_info">
+                                <ul>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[필수] 이용약관 동의</span><i></i>
+                                        </label>
+                                        <span>
+                                        <a href="#" class="text-underline">보기</a>
+                                    </li>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[필수] 이용약관 동의</span><i></i>
+                                        </label>
+                                        <a href="#" class="text-underline">보기</a>
+                                    </li>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[선택] 마케팅 정보 이메일 수신 동의</span><i></i>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[선택] 마케팅 정보 SMS 수신 동의</span><i></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-lg btn-dark btn-block">가입하기</a>
+                </div>
+            </div>
+            <!-- 프리랜서 회원 -->
+            <!-- 파트너 회원 -->
+            <div id="tab2" class="hidden">
+                <div class="inner">
+                    <div class="members_wrap">
+                        <div class="tit">
+                            <h2>파트너 정보</h2>
+                        </div>
+                        <div class="out_input">
+                            <label class="custom-control custom-control-radio">
+                                <input type="radio" name="team" id="z1" checked><span>팀(개인)</span><i></i>
+                            </label>
+                            <label class="custom-control custom-control-radio">
+                                <input type="radio" name="team" id="z2"><span>개인사업자</span><i></i>
+                            </label>
+                            <label class="custom-control custom-control-radio">
+                                <input type="radio" name="team" id="z3"><span>법인사업자</span><i></i>
+                            </label>
+                        </div>
+
+                        <!-- 팀 -->
+                        <div class="team_wrap outs">
+                            <ul class="input_wrap">
+                                <li>
+                                    <input type="text" placeholder="생년월일(대표) *" class="form-control">
+                                </li>
+                                <li>
+                                    <input type="text" placeholder="팀(개인)명  *" class="form-control">
+                                </li>
+                                <li>
+                                    <input type="text" placeholder="대표자명 *" class="form-control">
+                                </li>
+                                <li>
+                                    <div class="row row-0 align-items-center">
+                                        <div class="col">
+                                            <input type="text" placeholder="주소 *" class="form-control">
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#" class="btn btn-lg btn-gray w-110px">주소검색</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="text" placeholder="상세주소" class="form-control">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 팀 -->
+                        <!-- 개인사업자 -->
+                        <div class="indi_wrap outs">
+                            <ul class="input_wrap">
+                                <li>
+                                    <input type="text" placeholder="사업자번호 * " class="form-control">
+                                </li>
+                                <li>
+                                    <input type="text" placeholder="회사명  *" class="form-control">
+                                </li>
+                                <li>
+                                    <input type="text" placeholder="대표자명 *" class="form-control">
+                                </li>
+                                <li>
+                                    <div class="row row-0 align-items-center">
+                                        <div class="col">
+                                            <input type="text" placeholder="주소 *" class="form-control">
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#" class="btn btn-lg btn-gray w-110px">주소검색</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- 개인사업자 -->
+                        <!-- 법인사업자 -->
+                        <div class="art_wrap outs">
+                            <ul class="input_wrap">
+                                <li>
+                                    <input type="text" placeholder="사업자번호 * " class="form-control">
+                                </li>
+                                <li>
+                                    <input type="text" placeholder="회사명  *" class="form-control">
+                                </li>
+                                <li>
+                                    <input type="text" placeholder="대표자명 *" class="form-control">
+                                </li>
+                                <li>
+                                    <div class="row row-0 align-items-center">
+                                        <div class="col">
+                                            <input type="text" placeholder="주소 *" class="form-control">
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#" class="btn btn-lg btn-gray w-110px">주소검색</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 법인사업자 -->
+
+                        <script>
+                            $(function () {
+                                $(".indi_wrap").hide();
+                                $(".art_wrap").hide();
+
+                                $('[name="team"]').on("change", function () {
+                                    $(".outs").hide();
+                                    if($('[name="team"]:checked').is('#z1')){
+                                        $("div.team_wrap").show();
+                                    }else if($('[name="team"]:checked').is('#z2')){
+                                        $("div.indi_wrap").show();
+
+                                    }else if($('[name="team"]:checked').is('#z3')){
+                                        $("div.art_wrap").show();
+                                    }
+                                });
+                            });
+                        </script>
+                    </div>
+                    <div class="members_wrap">
+                        <div class="tit">
+                            <h2>프로젝트 담당자 정보</h2>
+                        </div>
+                        <ul class="input_wrap">
+                            <li>
+                                <input type="text" placeholder="담당자명 *" class="form-control">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="아이디 *" class="form-control">
+                            </li>
+                            <li>
+                                <div class="row row-0 align-items-center">
+                                    <div class="col">
+                                        <div class="form-control-wrap">
+                                            <input type="password" placeholder="비밀번호(6~16자의 영문, 숫자, 특수기호) * " class="form-control">
+                                            <div class="input-help">
+                                                <i class="icon-help"><span class="sr-only">물음표</span></i>
+                                                <div class="death">
+                                                    <h3>안전한 비밀번호 작성법</h3>
+                                                    6~16자의 영문 대소문, 숫자, 특수기호만 사용가능 (공백입력 불가) <br>
+                                                    3자 이상 연속 영문/숫자 조합은 사용불가 (AAA. 111) <br>
+                                                    아이디, 반복되는 영문/숫자 조합은 사용불가 (1234, ABCD) <br>
+                                                    키보드의 연속 패턴은 사용하지 마세요. (ASDF) <br>
+                                                    비밀번호는 주기적으로 변경하여 안전하게 관리하기
+                                                </div>
+                                            </div>
+                                            <a class="input-eye">
+                                                <i class="icon-eye"><span class="sr-only">보이기/숨김 토글</span></i>
+                                            </a>
+                                        </div>
+
+                                        <script>
+                                            $(function () {
+                                                $(".input-help").on("mouseenter", function () {
+                                                    $(".death").show();
+                                                });
+                                                $(".input-help").on("mouseleave", function () {
+                                                    $(".death").hide();
+                                                });
+                                                /*
+                                                $('.input-eye').on('click', function () {
+                                                    $('.input.password').toggleClass('active');
+                                                    if ($('.input.password').hasClass('active') ==
+                                                        true) {
+                                                        $(this).find('.fa-eye').attr('class',
+                                                            "fa fa-eye-slash fa-lg").parents(
+                                                            '.input').find('#password').attr('type',
+                                                            "text");
+                                                    } else {
+                                                        $(this).find('.fa-eye-slash').attr('class',
+                                                                "fa fa-eye fa-lg").parents('.input')
+                                                            .find('#password').attr('type', 'password');
+                                                    }
+                                                }); */
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="password" placeholder="비밀번호 확인" class="form-control">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="회사전화번호 *" class="form-control">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="이메일 *" class="form-control">
+                            </li>
+                            <li>
+                                <div class="row row-0 align-items-center">
+                                    <div class="col">
+                                        <input type="text" placeholder="휴대폰 번호 *" class="form-control">
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#" class="btn btn-lg btn-gray w-110px">인증번호 전송</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row-0 align-items-center">
+                                    <div class="col">
+                                        <input type="text" placeholder="인증번호 *" class="form-control">
+                                    </div>
+                                    <div class="col-auto">
+                                        <a hef="#" class="btn btn-lg btn-gray w-110px">확인</a>
+                                    </div>
+                                </div>
+                                <p class="text-help">인증번호~~~ 남은시간 <span class="text-orange">0:00</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="personal">
+                        <div class="tit">약관 동의</div>
+                        <div class="agree_wrap">
+                            <div class="agree_top">
+                                <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                    <input type="checkbox"><span>모두 동의합니다.</span><i></i>
+                                </label>
+                                <p>필수동의 항목 및 개인정보 수집 및 이용 동의(선택),<br> 마케팅 정보 수신(선택)에 모두 동의합니다.</p>
+                            </div>
+                            <div class="agree_info">
+                                <ul>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[필수] 이용약관 동의</span><i></i>
+                                        </label>
+                                        <span>
+                                        <a href="#" class="text-underline">보기</a>
+                                    </li>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[필수] 이용약관 동의</span><i></i>
+                                        </label>
+                                        <a href="#" class="text-underline">보기</a>
+                                    </li>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[선택] 마케팅 정보 이메일 수신 동의</span><i></i>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[선택] 마케팅 정보 SMS 수신 동의</span><i></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-lg btn-dark btn-block">가입하기</a>
+                </div>
+            </div>
+            <!-- 파트너 회원 -->
+            <!-- 클라이언트 회원 -->
+            <div id="tab3" class="hidden">
+                <div class="inner">
+                    <div class="members_wrap">
+                        <div class="tit">
+                            <h2>클라이언트정보</h2>
+                        </div>
+                        <ul class="input_wrap">
+                            <li>
+                                <select name="" id="" class="form-control d-block w-100p">
+                                    <option value="">클라이언트형태 *</option>
+                                    <option value="">대 클라이언트</option>
+                                    <option value="">중견 클라이언트 </option>
+                                    <option value="">SI 클라이언트 </option>
+                                    <option value="">웹에이전시 </option>
+                                    <option value="">개인사업자 </option>
+                                </select>
+                            </li>
+                            <li>
+                                <input type="text" placeholder="사업자번호 *" class="form-control">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="회사명 *" class="form-control">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="대표자명 *" class="form-control">
+                            </li>
+                            <li>
+                                <div class="row row-0 align-items-center">
+                                    <div class="col">
+                                        <input type="text" placeholder="회사주소 *" class="form-control">
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#" class="btn btn-lg btn-gray w-110px">주소검색</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="text" placeholder="상세주소" class="form-control">
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="members_wrap">
+                        <div class="tit">
+                            <h2>인사담당자 정보</h2>
+                        </div>
+                        <ul class="input_wrap">
+                            <li>
+                                <input type="text" placeholder="인사담당자 정보" class="form-control">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="아이디 *" class="form-control">
+                            </li>
+                            <li>
+                                <div class="row row-0 align-items-center">
+                                    <div class="col">
+                                        <div class="form-control-wrap">
+                                            <input type="password" placeholder="비밀번호(6~16자의 영문, 숫자, 특수기호) * " class="form-control">
+                                            <div class="input-help">
+                                                <i class="icon-help"><span class="sr-only">물음표</span></i>
+                                                <div class="death">
+                                                    <h3>안전한 비밀번호 작성법</h3>
+                                                    6~16자의 영문 대소문, 숫자, 특수기호만 사용가능 (공백입력 불가) <br>
+                                                    3자 이상 연속 영문/숫자 조합은 사용불가 (AAA. 111) <br>
+                                                    아이디, 반복되는 영문/숫자 조합은 사용불가 (1234, ABCD) <br>
+                                                    키보드의 연속 패턴은 사용하지 마세요. (ASDF) <br>
+                                                    비밀번호는 주기적으로 변경하여 안전하게 관리하기
+                                                </div>
+                                            </div>
+                                            <a class="input-eye">
+                                                <i class="icon-eye"><span class="sr-only">보이기/숨김 토글</span></i>
+                                            </a>
+                                        </div>
+
+                                        <script>
+                                            $(function () {
+                                                $(".input-help").on("mouseenter", function () {
+                                                    $(".death").show();
+                                                });
+                                                $(".input-help").on("mouseleave", function () {
+                                                    $(".death").hide();
+                                                });
+                                                /*
+                                                $('.input-eye').on('click', function () {
+                                                    $('.input.password').toggleClass('active');
+                                                    if ($('.input.password').hasClass('active') ==
+                                                        true) {
+                                                        $(this).find('.fa-eye').attr('class',
+                                                            "fa fa-eye-slash fa-lg").parents(
+                                                            '.input').find('#password').attr('type',
+                                                            "text");
+                                                    } else {
+                                                        $(this).find('.fa-eye-slash').attr('class',
+                                                                "fa fa-eye fa-lg").parents('.input')
+                                                            .find('#password').attr('type', 'password');
+                                                    }
+                                                }); */
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="password" placeholder="비밀번호 확인" class="form-control">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="회사전화번호 *" class="form-control">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="이메일 *" class="form-control">
+                            </li>
+                            <li>
+                                <div class="row row-0 align-items-center">
+                                    <div class="col">
+                                        <input type="text" placeholder="휴대폰 번호 *" class="form-control">
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#" class="btn btn-lg btn-gray w-110px">인증번호 전송</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row-0 align-items-center">
+                                    <div class="col">
+                                        <input type="text" placeholder="인증번호 *" class="form-control">
+                                    </div>
+                                    <div class="col-auto">
+                                        <a hef="#" class="btn btn-lg btn-gray w-110px">확인</a>
+                                    </div>
+                                </div>
+                                <p class="text-help">인증번호~~~ 남은시간 <span class="text-orange">0:00</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="personal">
+                        <div class="tit">약관 동의</div>
+                        <div class="agree_wrap">
+                            <div class="agree_top">
+                                <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                    <input type="checkbox"><span>모두 동의합니다.</span><i></i>
+                                </label>
+                                <p>필수동의 항목 및 개인정보 수집 및 이용 동의(선택),<br> 마케팅 정보 수신(선택)에 모두 동의합니다.</p>
+                            </div>
+                            <div class="agree_info">
+                                <ul>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[필수] 이용약관 동의</span><i></i>
+                                        </label>
+                                        <span>
+                                        <a href="#" class="text-underline">보기</a>
+                                    </li>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[필수] 이용약관 동의</span><i></i>
+                                        </label>
+                                        <a href="#" class="text-underline">보기</a>
+                                    </li>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[선택] 마케팅 정보 이메일 수신 동의</span><i></i>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="custom-control custom-control-checkbox custom-control-checkbox-square">
+                                            <input type="checkbox"><span>[선택] 마케팅 정보 SMS 수신 동의</span><i></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-lg btn-dark btn-block">가입하기</a>
+                </div>
+            </div>
+            <!-- 클라이언트 회원 -->
+            <!-- 프리랜서 회원 -->
+        </div>
+
+        <script>
+            $(function () {
+            $('.tab a').on('click',function(e){
+                e.preventDefault();
+                var $t = $($(this).attr('href'));
+
+                $(this).parent().siblings().find('a').removeClass('on');
+                $(this).addClass('on');
+
+                $t.siblings('[id^=tab]').hide();
+                $t.fadeIn(150);
+            });
+        });
+        </script>
+    </div>
+
+    <div id="footer">
+        <div class="footer_top">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#"> 프로젝트 문의</a>
+                    </li>
+                    <li>
+                        <a href="#"> 프리랜서 문의</a>
+                    </li>
+                    <li>
+                        <a href="#">인재채용</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관 </a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보처리방침 </a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+
+                <div class="site_map">
+                    <select name="" id="">
+                        <option value="">SITE MAP</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_inner">
+            <div class="inner">
+                <div class="wrap">
+                    <article>
+                        <div class="f_logo">
+                            <img src="../../img/f_logo.png" alt="">
+                        </div>
+                        <address>
+                            주식회사 케이엘큐브 <br>
+                            대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                            사업자등록번호: 100-11-22203 <br>
+                            통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                            호스팅 사업자: Amazon Web Service(AWS)
+                        </address>
+                    </article>
+                    <article class="right">
+                        <h2>IT위프 SNS 채널</h2>
+                        <ul class="sns">
+                            <li>
+                                <a href="#">
+                                    <img src="../../img/f_sns01.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../../img/f_sns02.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../../img/f_sns03.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../../img/f_sns04.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="phone">
+                            <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="inner">
+                <p>
+                    위프는 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가 부담하고,
+                    이에
+                    대하여 위프인은 일체 책임지지 않습니다.
+                </p>
+                <p class="copy">
+                    Copyright © 2020 Jons In. Inc. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 회사주소 찾기 팝업 -->
+    <div id="adress_pop" class="overlay">
+        <div class="popup">
+            <a href="#none" class="close">×</a>
+            <h2>주소찾기</h2>
+            <div class="info">
+                <div class="fle">
+                    <div class="lef">
+                        <div class="wrap">
+                            <dl class="w50">
+                                <dt>시도</dt>
+                                <dd>
+                                    <select name="" id="">
+                                        <option value="">선택</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl class="w50">
+                                <dt>시군구</dt>
+                                <dd>
+                                    <select name="" id="">
+                                        <option value="">선택</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>
+                                    <select name="" id="">
+                                        <option value="">선택</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                        </div>
+                        <p class="tit">
+                            * 찾으시는 시도와 시군구를 선택 후, 주소를 검색하세요.
+                        </p>
+                        <p class="txt">
+                            예)테헤란로, 삼성동, 송암빌딩, 반포 자이아파트
+                        </p>
+                        <div class="btn_wrap">
+                            <a href="#" class="btn">취소</a><a href="#" class="btn on">저장</a>
+                        </div>
+                    </div>
+                    <div class="ref">
+                        <input type="button" value="검색" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 회사주소 찾기 팝업 -->
+    <!-- 아이디 찾기 -->
+    <div id="find_id" class="overlay">
+        <div class="popup">
+            <ul class="find_id">
+                <li>
+                    <a href="#">프리랜서 회원</a>
+                </li>
+                <li>
+                    <a href="#">아웃소싱 회원</a>
+                </li>
+                <li>
+                    <a href="#">클라이언트 회원</a>
+                </li>
+            </ul>
+            <a href="#none" class="close">×</a>
+            <h2>아이디 찾기</h2>
+
+
+            <div class="info">
+                <div class="fle">
+                    <div class="lef">
+                        <div class="wrap">
+                            <dl class="w50">
+                                <dt>시도</dt>
+                                <dd>
+                                    <select name="" id="">
+                                        <option value="">선택</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl class="w50">
+                                <dt>시군구</dt>
+                                <dd>
+                                    <select name="" id="">
+                                        <option value="">선택</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>
+                                    <select name="" id="">
+                                        <option value="">선택</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                        </div>
+                        <p class="tit">
+                            * 찾으시는 시도와 시군구를 선택 후, 주소를 검색하세요.
+                        </p>
+                        <p class="txt">
+                            예)테헤란로, 삼성동, 송암빌딩, 반포 자이아파트
+                        </p>
+                        <div class="btn_wrap">
+                            <a href="#" class="btn">취소</a><a href="#" class="btn on">저장</a>
+                        </div>
+                    </div>
+                    <div class="ref">
+                        <input type="button" value="검색" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 아이디 찾기 -->
+
+    <!-- <script>
+        $(function () {
+            // $("#header_info").load("../../inc/header.html"); //파일내용을 불러와서 includeLoad에 뿌려준다.
+            $("#footer_info").load("../../inc/footer.html"); //파일내용을 불러와서 includeLoad에 뿌려준다.
+        });
+    </script> -->
+</body>
+
+</html>

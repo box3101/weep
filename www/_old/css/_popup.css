@@ -1,0 +1,361 @@
+.overlay div.popup h2 {
+  padding-bottom: 19px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.overlay div.popup h2 p.info {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.overlay div.popup div.info {
+  margin-top: 15px;
+}
+
+div#freelance_form_comple.overlay div.infos {
+  text-align: center;
+}
+
+div#freelance_form_comple.overlay div.infos h2 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #333;
+  font-weight: 300;
+  border: none;
+}
+
+div#freelance_form_comple.overlay div.infos h2 b {
+  font-weight: 500;
+}
+
+div#freelance_form_comple.overlay div.infos ul.btn_wrap {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+div#freelance_form_comple.overlay div.infos ul.btn_wrap li a.btn01 {
+  width: 190px;
+}
+
+div#freelance_form_comple.overlay div.infos ul.btn_wrap li a.btn01.on {
+  margin-right: 10px;
+}
+
+div#freelance_form.overlay div.popup ul.info {
+  opacity: 1;
+}
+
+div#freelance_form.overlay div.popup ul.info li {
+  padding: 32px 0;
+  box-sizing: border-box;
+}
+
+div#freelance_form.overlay div.popup ul.info li div.lef {
+  text-align: center;
+  line-height: 51px;
+  margin-bottom: 20px;
+}
+
+div#freelance_form.overlay div.popup ul.info li div.lef p {
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+div#freelance_form.overlay div.popup ul.info li div.lef p img {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+div#freelance_form.overlay div.popup ul.info li div.ref {
+  opacity: 1;
+  text-align: center;
+}
+
+.pop05 ul.info {background-color:#red;}
+.pop05 ul.info li {padding: 30px 0;}
+.pop05 ul.info li .lef {float: left;}
+.pop05 ul.info li .lef p {}
+.pop05 ul.info li .ref {float: right;}
+
+
+div#saveProfile.overlay div.popup {
+  padding: 0;
+  width: 638px;
+  max-width: none !important;
+}
+
+div#saveProfile.overlay div.popup a.close {
+  color: #fff;
+}
+
+div#saveProfile.overlay div.popup div.top {
+  background: #f8a03c;
+  color: #fff;
+  padding: 50px 35px 30px 35px;
+  box-sizing: border-box;
+}
+
+div#saveProfile.overlay div.popup div.top h2 {
+  font-weight: bold;
+  color: #fff;
+  border-bottom: none;
+}
+
+div#saveProfile.overlay div.popup div.top p {
+  font-weight: 400;
+  font-size: 16px;
+  font-letter-spacing: -0.5px;
+  padding-top: 20px;
+}
+
+div#saveProfile.overlay div.popup div.info {
+  text-align: center;
+}
+
+div#saveProfile.overlay div.popup div.info p.tit {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+
+div#saveProfile.overlay div.popup div.info p.tit span {
+  font-weight: bold;
+}
+
+div#saveProfile.overlay div.popup div.info ul {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div#saveProfile.overlay div.popup div.info ul li {
+  display: inline-block;
+  width: 40%;
+}
+
+div#saveProfile.overlay div.popup div.info ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ddd;
+  padding: 20px 35px;
+  border-radius: 10px;
+  color: #333;
+  margin: 5px;
+}
+
+div#saveProfile.overlay div.popup div.info ul li a img {
+  margin-right: 5px;
+}
+
+div#saveProfile.overlay div.popup div.info ul li a:hover {
+  border: 2px solid #f8a03c;
+}
+
+div#saveProfile.overlay div.popup .goBtn {
+  text-align: center;
+  width: 35%;
+  padding: 20px 35px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 45px;
+}
+
+div#checkProject.overlay {
+  min-width: 600px;
+}
+
+div#checkProject.overlay .top h2 {
+  border-bottom: 1px solid #333;
+}
+
+div#checkProject.overlay input {
+  opacity: 1;
+  display: none;
+}
+
+div#checkProject.overlay input:checked+label {
+  background: url(/img/bg_radio_gender_on.png) no-repeat;
+  opacity: 1;
+  padding-left: 15px;
+  vertical-align: middle;
+  font-size: 14px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-position: left center;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+div#checkProject.overlay label {
+  background: url(/img/bg_radio_gender_off.png) no-repeat;
+  opacity: 1;
+  padding-left: 15px;
+  vertical-align: middle;
+  font-size: 14px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-position: left center;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+div#checkProject.overlay label input,
+div#checkProject.overlay label label {
+  opacity: 1;
+}
+
+div#checkProject.overlay .inputInfo li {
+  padding: 15px 0;
+}
+
+div#checkProject.overlay .inputInfo .infoName {
+  border-bottom: 1px solid #ddd;
+}
+
+div#checkProject.overlay .inputInfo .infoName .emTit {
+  display: inline-block;
+}
+
+div#checkProject.overlay .inputInfo .emTit {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+div#checkProject.overlay .inputInfo .inputSty {
+  display: block;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+div#checkProject.overlay .inputInfo .exDdate {
+  display: inline-block;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef {
+  width: 80%;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl.w50 {
+  float: left;
+  width: 50%;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl.w50 dt {
+  float: left;
+  margin-right: 15px;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl.w50 dd select {
+  width: 115px;
+  height: 34px;
+  border: solid 1px #bbbbbb;
+  background-color: #ffffff;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl dt {
+  float: left;
+  margin-right: 15px;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.wrap dl dd select {
+  width: 308px;
+  height: 34px;
+  border: solid 1px #bbbbbb;
+  background-color: #ffffff;
+  padding-left: 12px;
+  color: #999999;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef p.tit {
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #666666;
+  padding-left: 50px;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef p.txt {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #999;
+  padding-left: 50px;
+  letter-spacing: 0.3px;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.btn_wrap {
+  margin-top: 35px;
+  position: relative;
+  left: 50%;
+  width: 100%;
+  transform: translate(-23.5px);
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.btn_wrap a.btn {
+  width: 63px;
+  height: 27px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: #999999;
+  text-align: center;
+  margin: 0 4px;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.lef div.btn_wrap a.btn.on {
+  background: #f8a03c;
+  color: #ffffff;
+  border: #f8a03c;
+}
+
+div#adress_pop.overlay div.popup div.info div.fle div.ref input {
+  width: 88px;
+  height: 84px;
+  background-color: #f8a03c;
+  color: #fff;
+  border: none;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.term_Use {
+      font-size: 14px;
+      font-weight: normal;
+      padding: 30px 0; box-sizing: border-box;
+}
+/*# sourceMappingURL=_popup.css.map */

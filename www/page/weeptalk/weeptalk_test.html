@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+  <title>U잡스</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="U잡스">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="../../img/logo.png">
+  <meta property="og:image:type" content="../../image/png">
+  <meta property="og:image:width" content="173">
+  <meta property="og:image:height" content="65">
+  <meta property="og:description" content="">
+
+  <link rel="stylesheet" href="../../css/@default.css" />
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/font.css">
+  <link rel="stylesheet" href="../../css/weeptalk.css">
+  <link rel="stylesheet" href="../../css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+
+  <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="../../js/slick.min.js"></script>
+  <script type="text/javascript" src="../../js/swiper.min.js"></script>
+  <script type="text/javascript" src="../../js/main.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/simplebar@5.2.0/dist/simplebar.min.js"></script>
+</head>
+
+<body>
+	<div id="header" class="sub_header">
+		<div class="inner clearfix">
+			<h1 class="logo">
+				<a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+			</h1>
+			<ul id="main_gnb">
+				<li>
+					<a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+				</li>
+				<li>
+					<a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+				</li>
+				<li>
+					<a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+				</li>
+				<li>
+					<a href="/page/partner_sch/partner.html">파트너 검색</a>
+				</li>
+				<li>
+					<a href="#">WEE.P 소개
+					</a>
+				</li>
+
+			</ul>
+			<ul class="clearfix small-txt">
+				<li>
+					<a href="#">이용안내</a>
+				</li>
+				<li>
+					<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+				</li>
+			</ul>
+
+			<ul class="util clear">
+				<li>
+					<a href="/page/login/login01.html">로그인</a>
+				</li>
+				<li>
+					<a href="/page/login/login02.html">회원가입</a>
+				</li>
+
+				<div class="memberImg">
+					<img src="/img/bg_member.png" alt="회원가입혜택">
+				</div>
+			</ul>
+			<ul class="login-util clear">
+				<li>
+					<a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지" class="member-img"></span>홍길동</a>
+					<ul class="member-menu">
+						<li>
+							<a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+						</li>
+						<li>
+							<a href="">로그아웃</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+    </div>
+    <nav id="navi" style="top: 186px; position: absolute;">
+        <div class="project">
+            <div class="project-con">
+                <h2>최근 본 프로젝트 <span class="num">5</span></h2>
+                <ul>
+                    <li>
+                        <a href="#" class="on">비상주 오프라인 매장</a>
+                    </li>
+                    <li>
+                        <a href="#">안드로이드 프론트</a>
+                    </li>
+                    <li>
+                        <a href="#">비상주 오프라인 매장</a>
+                    </li>
+                    <li>
+                        <a href="#">인천국제공항</a>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">더보기</a>
+                </div>
+            </div>
+            <div class="freelan-con">
+                <h2>최근 본 프리랜서 <span class="num">2</span></h2>
+                <ul>
+
+                    <li>
+                        <a href="#" class="on">김철수</a>
+                    </li>
+                    <li>
+                        <a href="#">홍길동</a>
+                    </li>
+                    <li>
+                        <a href="#">비상주</a>
+                    </li>
+                    <li>
+                        <a href="#">김길동</a>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">더보기</a>
+                </div>
+            </div>
+        </div>
+        <ul class="banner">
+            <li>
+                <a href="#">
+                    <img src="img/navi_banner01.png" alt="네비배너1">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var scroll = $(this).scrollTop();
+                var navi_top = $("#navi").offset().top;
+
+                console.log(scroll);
+                console.log(navi_top);
+
+                if (scroll > 186) {
+                    $("#navi").css({
+                        "position": "fixed",
+                        "top": "20px"
+                    })
+                } else {
+                    $("#navi").css({
+                        "position": "absolute",
+                        "top": "186px"
+                    })
+                }
+            })
+        })
+    </script>
+
+    <div id="sub_contents" style="background-color:#f4f5f7">
+      <div id="sub_content" class="weeptalk-contents">
+        <div class="weeptalk-inner">
+            <div class="weeptalk-wrap">
+                <div class="weeptalk-wrap-list">
+                    <div class="weeptalk-tab">
+                        <ul>
+                            <li>
+                                <a href="#tab1" class="weeptalk-tab-list on">
+                                    <img class="weeptalk-tab-img" src="../../img/weeptalk_ico_list.png" alt="대화상대 아이콘"/>
+                                    <span>대화상대</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab2" class="weeptalk-tab-list">
+                                    <img class="weeptalk-tab-img" src="../../img/weeptalk_ico_chat.png" alt="최근대화목록 아이콘"/>
+                                    <span>최근 대화 목록</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab1">
+                        <div class="weeptalk-tab-content">
+                            <div class="weeptalk-searchBox">
+                                <input type="text" class="weeptalk-input-type" placeholder="대화상대 검색 (아이디, 이름)"/> 
+                                <a href="" class="weeptalk-find" title="검색버튼"></a>
+                            </div>
+                            <ul class="wrap-user-list weeptalk-scroll">
+                                <li class="user">
+                                    <div class="user-wrap">
+                                    <a class="like-star" href="javascript:;">
+                                        <i class="icon-star on"></i>
+                                    </a>
+                                    <div class="user-face">
+                                        <a href="">
+                                        <img src="../../img/weeptalk_face02.png" alt="대화상대 지정이미지"/>
+                                        </a>
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="user-name">Client01</div>
+                                        <div class="user-group">클라이언트</div>
+                                    </div>
+                                    <div class="weeptalk-btn-detail">
+                                        <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                    </div>
+                                    </div>
+                                    <ul class="user-detail">
+                                    <li class="detail-list">
+                                        <div class="detail-wrap">
+                                        <span class="detail-wrap-group">[비상주]</span>
+                                        <span class="detail-wrap-title">오프라인 매장 주문 플랫폼 위프 lorem</span>
+                                        <div class="weeptalk-btn-detail" title="세부사항 열기 버튼">
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                        </div>
+                                        <ul class="detail-depth">
+                                        <li class="detail-depth-list">
+                                            <div class="detail-depth-face">
+                                            <img src="../../img/weeptalk_face02.png" alt="해당 프로젝드 프리랜서 얼굴"/>
+                                            </div>
+                                            <div class="detail-depth-name">홍길동</div>
+                                            <a class="like-star" href="javascript:;">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                        </li>
+                                        <li class="detail-depth-list">
+                                            <div class="detail-depth-face">
+                                            <img src="../../img/weeptalk_face02.png" alt="해당 프로젝드 프리랜서 얼굴"/>
+                                            </div>
+                                            <div class="detail-depth-name">홍길동</div>
+                                            <a class="like-star" href="javascript:;">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                        </li>
+                                        </ul>
+                                    </li>
+                                    <li class="detail-list">
+                                        <div class="detail-wrap">
+                                        <span class="detail-wrap-group">[비상주]</span>
+                                        <span class="detail-wrap-title">오프라인 매장 주문 플랫폼 위프 lorem</span>
+                                        <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                        </div>
+                                    </li>
+                                    <li class="detail-list">
+                                        <div class="detail-wrap">
+                                        <span class="detail-wrap-group">[비상주]</span>
+                                        <span class="detail-wrap-title">오프라인 매장 주문 플랫폼 위프 lorem</span>
+                                        <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                </li>
+                                <li class="user">
+                                    <div class="user-wrap">
+                                        <a class="like-star" href="javascript:;">
+                                        <i class="icon-star on"></i>
+                                        </a>
+                                        <div class="user-face">
+                                        <a href="">
+                                            <img src="../../img/weeptalk_face02.png" alt="대화상대 지정이미지"/>
+                                        </a>
+                                        </div>
+                                        <div class="user-info">
+                                        <div class="user-name">Client01</div>
+                                        <div class="user-group">클라이언트</div>
+                                        </div>
+                                        <div class="weeptalk-btn-detail">
+                                        <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="user-detail">
+                                        <li class="detail-list">
+                                        <div class="detail-wrap">
+                                            <span class="detail-wrap-group">[비상주]</span>
+                                            <span class="detail-wrap-title">오프라인 매장 주문 플랫폼 위프 lorem</span>
+                                            <div class="weeptalk-btn-detail" title="세부사항 열기 버튼">
+                                            <a href="javascript:;"></a>
+                                            </div>
+                                        </div>
+                                        <ul class="detail-depth">
+                                            <li class="detail-depth-list">
+                                            <div class="detail-depth-face">
+                                                <img src="../../img/weeptalk_face02.png" alt="해당 프로젝드 프리랜서 얼굴"/>
+                                            </div>
+                                            <div class="detail-depth-name">홍길동</div>
+                                            <a class="like-star" href="javascript:;">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            </li>
+                                            <li class="detail-depth-list">
+                                            <div class="detail-depth-face">
+                                                <img src="../../img/weeptalk_face02.png" alt="해당 프로젝드 프리랜서 얼굴"/>
+                                            </div>
+                                            <div class="detail-depth-name">홍길동</div>
+                                            <a class="like-star" href="javascript:;">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            </li>
+                                        </ul>
+                                        </li>
+                                        <li class="detail-list">
+                                        <div class="detail-wrap">
+                                            <span class="detail-wrap-group">[비상주]</span>
+                                            <span class="detail-wrap-title">오프라인 매장 주문 플랫폼 위프 lorem</span>
+                                            <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                            </div>
+                                        </div>
+                                        </li>
+                                        <li class="detail-list">
+                                        <div class="detail-wrap">
+                                            <span class="detail-wrap-group">[비상주]</span>
+                                            <span class="detail-wrap-title">오프라인 매장 주문 플랫폼 위프 lorem</span>
+                                            <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                            </div>
+                                        </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="user">
+                                    <div class="user-wrap">
+                                        <a class="like-star" href="javascript:;">
+                                        <i class="icon-star on"></i>
+                                        </a>
+                                        <div class="user-face">
+                                        <a href="">
+                                            <img src="../../img/weeptalk_face02.png" alt="대화상대 지정이미지"/>
+                                        </a>
+                                        </div>
+                                        <div class="user-info">
+                                        <div class="user-name">Client01</div>
+                                        <div class="user-group">클라이언트</div>
+                                        </div>
+                                        <div class="weeptalk-btn-detail">
+                                        <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="user-detail">
+                                        <li class="detail-list">
+                                        <div class="detail-wrap">
+                                            <span class="detail-wrap-group">[비상주]</span>
+                                            <span class="detail-wrap-title">오프라인 매장 주문 플랫폼 위프 lorem</span>
+                                            <div class="weeptalk-btn-detail" title="세부사항 열기 버튼">
+                                            <a href="javascript:;"></a>
+                                            </div>
+                                        </div>
+                                        <ul class="detail-depth">
+                                            <li class="detail-depth-list">
+                                            <div class="detail-depth-face">
+                                                <img src="../../img/weeptalk_face02.png" alt="해당 프로젝드 프리랜서 얼굴"/>
+                                            </div>
+                                            <div class="detail-depth-name">홍길동</div>
+                                            <a class="like-star" href="javascript:;">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            </li>
+                                            <li class="detail-depth-list">
+                                            <div class="detail-depth-face">
+                                                <img src="../../img/weeptalk_face02.png" alt="해당 프로젝드 프리랜서 얼굴"/>
+                                            </div>
+                                            <div class="detail-depth-name">홍길동</div>
+                                            <a class="like-star" href="javascript:;">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            </li>
+                                        </ul>
+                                        </li>
+                                        <li class="detail-list">
+                                        <div class="detail-wrap">
+                                            <span class="detail-wrap-group">[비상주]</span>
+                                            <span class="detail-wrap-title">오프라인 매장 주문 플랫폼 위프 lorem</span>
+                                            <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                            </div>
+                                        </div>
+                                        </li>
+                                        <li class="detail-list">
+                                        <div class="detail-wrap">
+                                            <span class="detail-wrap-group">[비상주]</span>
+                                            <span class="detail-wrap-title">오프라인 매장 주문 플랫폼 위프 lorem</span>
+                                            <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                            </div>
+                                        </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="user">
+                                    <div class="user-wrap">
+                                        <a class="like-star" href="javascript:;">
+                                            <i class="icon-star"></i>
+                                        </a>
+                                        <div class="user-face">
+                                            <img src="../../img/weeptalk_face01.png" alt="대화상대 지정이미지"/>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Client01</div>
+                                            <div class="user-group">클라이언트</div>
+                                        </div>
+                                        <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user">
+                                    <div class="user-wrap">
+                                        <a class="like-star" href="javascript:;">
+                                            <i class="icon-star"></i>
+                                        </a>
+                                        <div class="user-face">
+                                            <img src="../../img/weeptalk_face01.png" alt="대화상대 지정이미지"/>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Client01</div>
+                                            <div class="user-group">클라이언트</div>
+                                        </div>
+                                        <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user">
+                                    <div class="user-wrap">
+                                        <a class="like-star" href="javascript:;">
+                                            <i class="icon-star"></i>
+                                        </a>
+                                        <div class="user-face">
+                                            <img src="../../img/weeptalk_face01.png" alt="대화상대 지정이미지"/>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Client01</div>
+                                            <div class="user-group">클라이언트</div>
+                                        </div>
+                                        <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user">
+                                    <div class="user-wrap">
+                                        <a class="like-star" href="javascript:;">
+                                            <i class="icon-star"></i>
+                                        </a>
+                                        <div class="user-face">
+                                            <img src="../../img/weeptalk_face01.png" alt="대화상대 지정이미지"/>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Client01</div>
+                                            <div class="user-group">클라이언트</div>
+                                        </div>
+                                        <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user">
+                                    <div class="user-wrap">
+                                        <a class="like-star" href="javascript:;">
+                                            <i class="icon-star"></i>
+                                        </a>
+                                        <div class="user-face">
+                                            <img src="../../img/weeptalk_face01.png" alt="대화상대 지정이미지"/>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Client01</div>
+                                            <div class="user-group">클라이언트</div>
+                                        </div>
+                                        <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user">
+                                    <div class="user-wrap">
+                                        <a class="like-star" href="javascript:;">
+                                            <i class="icon-star"></i>
+                                        </a>
+                                        <div class="user-face">
+                                            <img src="../../img/weeptalk_face01.png" alt="대화상대 지정이미지"/>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Client01</div>
+                                            <div class="user-group">클라이언트</div>
+                                        </div>
+                                        <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user">
+                                    <div class="user-wrap">
+                                        <a class="like-star" href="javascript:;">
+                                            <i class="icon-star"></i>
+                                        </a>
+                                        <div class="user-face">
+                                            <img src="../../img/weeptalk_face01.png" alt="대화상대 지정이미지"/>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Client01</div>
+                                            <div class="user-group">클라이언트</div>
+                                        </div>
+                                        <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user">
+                                    <div class="user-wrap">
+                                        <a class="like-star" href="javascript:;">
+                                            <i class="icon-star"></i>
+                                        </a>
+                                        <div class="user-face">
+                                            <img src="../../img/weeptalk_face01.png" alt="대화상대 지정이미지"/>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Client01</div>
+                                            <div class="user-group">클라이언트</div>
+                                        </div>
+                                        <div class="weeptalk-btn-detail">
+                                            <a href="javascript:;" title="세부사항 열기 버튼"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab2" class="hidden">
+                        <div class="weeptalk-tab-content">
+                            <div class="weeptalk-searchBox">
+                                <input type="text" class="weeptalk-input-type02" placeholder="전체 메시지"/>
+                                <a href=""  class="weeptalk-find">
+                                    <img class="weeptalk-find-img" src="../../img/weeptalk_ico_find.png" alt="검색 아이콘"/>
+                                </a>
+                            </div>
+                            <ul class="wrap-user-list weeptalk-scroll recent-list ">
+                                <li class="user">
+                                    <div class="user-wrap">
+                                        <div class="like-star">
+                                            <a href="javascript:;">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                        </div>
+                                        <div class="user-face">
+                                            <a href="javascript:;" class="weeptalk-btn-popup">
+                                                <img src="../../img/weeptalk_face02.png" alt="대화상대 지정이미지"/>
+                                            </a>
+                                        </div>
+                                        <div class="weeptalk-popup weeptalk-popup-wrap02">
+                                            <div class="btn-popup-close">
+                                                <a href="javascript:;" title="팝업창 닫기 버튼"></a>
+                                            </div>
+                                            <ul class="popup-setting">
+                                                <li class="popup-setting-list">
+                                                    <a href="">설정</a>
+                                                </li>
+                                                <li class="popup-setting-list">
+                                                    <a href="" class="chat-out">
+                                                        채팅방 나가기
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Client01</div>
+                                            <div class="user-last-text">10개 완료 입니다.</div>
+                                        </div>
+                                        <div class="user-last-time">오전 00:00</div>
+                                    </div>
+                                    <div class="task-time">
+                                        <div class="weeptalk-btn-detail02">
+                                            <a href="javascript:;" title="대화상대관련 상세시간 버튼"></a>
+                                        </div>
+                                        <form action="">
+                                            <table class="task-time-table">
+                                                <caption></caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>연락가능시간</th>
+                                                        <td>00시~00시</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>최근 답변일</th>
+                                                        <td>0000.00.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <script>
+                        $(function () {
+                            /*----- TAB : BUTTON ------------------------- START -------------------------*/
+                            $('.weeptalk-tab a').on('click',function(e){
+                                e.preventDefault();
+                                var $t = $($(this).attr('href'));
+            
+                                $(this).parent().siblings().find('a').removeClass('on');
+                                $(this).addClass('on');
+            
+                                $t.siblings('[id^=tab]').hide();
+                                $t.fadeIn(200);
+                            });
+                            /*----- TAB : BUTTON -------------------------  END  -------------------------*/
+
+                            /*----- TAB : tab01. class="conversationPartner-detail" 열기-닫기 ------------------------- START -------------------------*/
+                            $('.weeptalk-btn-detail a').on('click',function(e){
+                                e.preventDefault();
+                                var $detailWrap = $(this).parent().parent().siblings();
+                                    $detailList = $(this).parent().parent().parent();
+                                if($detailList.hasClass('on')){
+                                  $detailList.removeClass('on');
+                                  $detailWrap.slideUp(0);
+                                }else{
+                                  $detailList.addClass('on');
+                                  $detailWrap.slideDown(200);
+                                }
+                            });
+                            /*----- TAB : tab01. class="conversationPartner-detail" 열기-닫기 -------------------------  END  -------------------------*/
+
+                            /*----- TAB : tab02. class="task-time" 열기-닫기 ------------------------- START -------------------------*/
+                            $('.weeptalk-btn-detail02 a').on('click',function(e){
+                                e.preventDefault();
+                                var $timeList = $(this).parent().parent();
+                                    $detailTime = $(this).parent().siblings().find(".task-time-table");
+                                if($timeList.hasClass('on')){
+                                  $detailTime.fadeOut(0);
+                                  $timeList.removeClass('on');
+                                }else{
+                                  $timeList.addClass('on');
+                                  $detailTime.fadeIn(200);
+                                }
+                            });
+                            /*----- TAB : tab02. class="task-time" 열기-닫기 -------------------------  END  -------------------------*/
+                        });
+                    </script>
+                </div>
+                <div class="weeptalk-wrap-chat">
+                  <!-- 채팅창 상단 ------------------------- START --------------------------->
+                  <div class="weeptalk-chat-top">
+                    <div class="chat-top-face">
+                      <img src="../../img/weeptalk_face01.png" alt="대화상대 지정이미지"/>
+                    </div>
+                    <div class="chat-top-wrap-name">
+                      <span class="chat-top-name">강참치 팀장</span>
+                    </div>
+                    <div class="chat-top-home">
+                      <a href="javascript:;" title="채팅상대 홈 버튼"></a>
+                    </div>
+                    <div class="wrap-chat-out">
+                        <a href="" class="chat-out">
+                            채팅방 나가기
+                        </a>
+                    </div>
+                  </div>
+                  <!-- 채팅창 상단 -------------------------  END  --------------------------->
+                  <div class="weeptalk-chat-content">
+                    <div class="chat_wrap">
+                      <!-- 채팅창 채팅내용 동적생성 구간 ------------------------- START --------------------------->  
+                      <div class="chat live weeptalk-scroll">
+                          <ul>
+                            <!-- 동적 생성 -->
+                            <!-- 발신자는 li class="sent", 수신자의 경우 li class="recieved", 채팅날짜 li class="center" 에 위치 // 발신자, 수신자 => class="sender"-->
+                            <li class="sent">
+                                <div class="sender">
+                                    <span>사용자</span>
+                                </div>
+                                <div class="message">
+                                    <span>동적생성 구간에 고정으로 레이어를 넣은 test 페이지입니다.</span>
+                                    <p class="chat-time-send">오후23:53</p>
+                                </div>
+                            </li>
+                            <li class="recieved">
+                                <div class="sender">
+                                    <span>상대방</span>
+                                </div>
+                                <div class="message">
+                                    <span>
+                                        사용자는 li class "sent", 수신자는 li class "recieved"로 존재하며. 해당 class를 제외한 나머지 형태는 모두 동일합니다.
+                                    </span>
+                                    <p class="chat-time-send">오후23:53</p>
+                                </div>
+                            </li>
+                            <li class="recieved">
+                                <div class="sender">
+                                    <span>상대방</span>
+                                </div>
+                                <div class="message">
+                                    <span>
+                                        css는 사용자 li class "sent", 수신자 li class "recieved" 로 구분하여 모두 구성되어있으니 script는 모두 변경하셔도됩니다.
+                                    </span>
+                                    <p class="chat-time-send">오후23:53</p>
+                                </div>
+                            </li>
+                            <li class="recieved">
+                                <div class="sender">
+                                    <span>상대방</span>
+                                </div>
+                                <div class="message">
+                                    <span>
+                                        가져오는 채팅 li 구성은 class="chat format" // 뿌려지는 쪽은 class="chat live"
+                                    </span>
+                                    <p class="chat-time-send">오후23:53</p>
+                                </div>
+                            </li>
+                            <li class="recieved">
+                                <div class="sender">
+                                    <span>상대방</span>
+                                </div>
+                                <div class="message">
+                                    <span>
+                                        발신 시간은 현재시간 기준으로 입력되며 간단한 script로 구현한 상태. 오늘 날짜 는 li class "center"에 구성하였으며, script는 미지정 상태.
+                                    </span>
+                                    <p class="chat-time-send">오후23:53</p>
+                                </div>
+                            </li>
+                            <li class="center">
+                                <div class="chat-day">
+                                    <span class="chat-day-num">2021.02.14</span>
+                                    <span class="chat-day-text">SUN</span>
+                                </div>
+                            </li>
+                            <li class="sent">
+                                <div class="sender">
+                                    <span>
+                                        <img src="../../img/@img-profile.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="message">
+                                    <span>
+                                        현재 채팅 프로필 이미지는 text로 구성되어있으나, span안에 img로 변경 시, 해당 li에 맞게 맞춰놨습니다.
+                                        .chat_wrap > .sender > span > img  우측 사용자이미지 참고
+                                    </span>
+                                    <p class="chat-time-send">오후23:53</p>
+                                </div>
+                            </li>
+                            <li class="sent">
+                                <div class="sender">
+                                    <span>
+                                        <img src="../../img/@img-profile.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="message">
+                                    <span>
+                                        채팅 전송키는 enter, 입력칸 오른쪽 버튼으로 설정했으며, 줄바꿈은 enter + shiftkey로 설정해놓은 상태입니다.
+                                    </span>
+                                    <p class="chat-time-send">오후23:53</p>
+                                </div>
+                            </li>
+                            <li class="center">
+                                <div class="chat-day">
+                                    <span class="chat-day-num">2021.02.15</span>
+                                    <span class="chat-day-text">(월)</span>
+                                </div>
+                            </li>
+                            <li class="sent">
+                                <div class="sender">
+                                    <span>
+                                        <img src="../../img/@img-profile.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="message">
+                                    <span>
+                                        <div class="chat-file-upload">
+                                            <span class="chat-file-name">요구사항정의서</span>
+                                            <span class="chat-file-capacity">228</span>
+                                            <span class="chat-file-unit">KB</span>
+                                            <a class="chat-file-download"></a>
+                                        </div>
+                                    </span>
+                                    <p class="chat-time-send">오전04:10</p>
+                                </div>
+                            </li>
+                            <li class="sent">
+                                <div class="sender">
+                                    <span>
+                                        <img src="../../img/@img-profile.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="message">
+                                    <span>
+                                        채팅 메시지와 함께 넣은 케이스 testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+                                        <div class="chat-file-upload">
+                                            <span class="chat-file-name">요구사항정의서</span>
+                                            <span class="chat-file-capacity">228</span>
+                                            <span class="chat-file-unit">KB</span>
+                                            <a class="chat-file-download"></a>
+                                        </div>
+                                    </span>
+                                    <p class="chat-time-send">오전04:20</p>
+                                </div>
+                            </li>
+                            <li class="recieved">
+                                <div class="sender">
+                                    <span>
+                                        <img src="../../img/@img-profile.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="message">
+                                    <span>
+                                        대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text대량 텍스트 text
+                                    </span>
+                                    <p class="chat-time-send">오전04:20</p>
+                                </div>
+                            </li>
+                          </ul>
+                      </div>
+                      <!-- 채팅창 채팅내용 동적생성 구간 -------------------------  END  --------------------------->  
+
+                      <!-- 채팅창 채팅내용에 적용할 FORM 구간 ------------------------- START --------------------------->  
+                      <div class="chat format">
+                        <ul>
+                            <li>
+                                <div class="sender">
+                                    <span></span>
+                                </div>
+                                <div class="message">
+                                    <span></span>
+                                    <p class="chat-time-send"></p>
+                                </div>
+                            </li>
+                        </ul>
+                      </div>
+                      <!-- 채팅창 채팅내용에 적용할 FORM 구간 -------------------------  END  --------------------------->  
+
+                      <!-- format -->
+
+                      <!-- 채팅창 하단 ------------------------- START --------------------------->  
+                      <div class="chat-wrap-textarea">
+                        <div class="chat-filebox"> 
+                          <label for="exFile"></label> 
+                          <input type="file" id="exFile" class="chat-file"/>
+                        </div>
+                        <textarea placeholder="메시지를 입력하세요"></textarea>
+                        <div class="weeptalk-btn-send">
+                          <a href="javascript:;"></a>
+                        </div>
+                      </div>
+                      <!-- 채팅창 하단 -------------------------  END  --------------------------->  
+                    </div>
+                  </div>
+                </div>
+                <script>
+                  $(function () {
+                      $('a.weeptalk-btn-popup').on('click',function(e){
+                          e.preventDefault();
+                          var $weepPop = $(this).parent().siblings(".weeptalk-popup")
+
+                          if($weepPop.hasClass('on')){
+                            $weepPop.removeClass('on');
+                          }else{
+                            $weepPop.addClass("on")
+                          }
+                      });
+                      $('.btn-popup-close > a').on('click',function(e){
+                          e.preventDefault();
+                          var $closePop = $(this).parent().parent();
+                          
+                          $closePop.removeClass('on');
+                      });
+                  });
+                </script>
+                <script>
+                  const Chat = (function(){
+                      const myName = "blue";
+
+                      // 스크롤바 아래 고정
+                      $('div.chat').scrollTop($('div.chat').prop('scrollHeight'));
+
+                      // init 함수
+                      function init() {
+                          // enter 키 이벤트
+                          $(document).on('keydown', '.chat-wrap-textarea textarea', function(e){
+                              if(e.keyCode == 13 && !e.shiftKey) {
+                                  e.preventDefault();
+                                  const message = $(this).val();
+                  
+                                  // 메시지 전송
+                                  sendMessage(message);
+                                  // 입력창 clear
+                                  clearTextarea();
+                              }
+                          });
+                          // weeptalk-btn-send 버튼 클릭 시 전송 이벤트
+                          $(document).on('click', '.weeptalk-btn-send a', function(e){
+                              e.preventDefault();
+                              const message = $('.chat-wrap-textarea textarea').val();
+
+                              // 메시지 전송
+                              sendMessage(message);
+                              // 입력창 clear
+                              clearTextarea();
+                          });
+                      }
+                      // 메세지 태그 생성
+                      function createMessageTag(LR_className, senderName, message, currentTime) {
+                          // 형식 가져오기
+                          let chatLi = $('div.chat.format ul li').clone();
+                  
+                          // 값 채우기
+                          chatLi.addClass(LR_className);
+                          chatLi.find('.sender span').text(senderName);
+                          chatLi.find('.message span').text(message);
+                          chatLi.find('.message .chat-time-send').text(currentTime);
+                          
+                          return chatLi;
+                      }
+                  
+                      // 메세지 태그 append
+                      function appendMessageTag(LR_className, senderName, message, currentTime) {
+                          const chatLi = createMessageTag(LR_className, senderName, message, currentTime);
+                  
+                          $('div.chat:not(.format) ul').append(chatLi);
+                  
+                          // append 시, 스크롤바 아래 고정
+                          $('div.chat').scrollTop($('div.chat').prop('scrollHeight'));
+                      }
+                  
+                      // 메세지 전송
+                      function sendMessage(message) {
+
+                          // 메세지 시간
+                          const d = new Date(); 
+                          const nowHour = d.getHours();
+                          const nowMt = d.getMinutes();
+                          if ( nowHour <= 12  &&  nowHour  >= 0 ) {
+                            var currentTime = "오전" + ("00" + d.getHours()).slice(-2) + ":" + ("00" + d.getMinutes()).slice(-2);
+                          } else if(  nowHour >= 12  &&  nowHour  < 24  ) {
+                            var currentTime = "오후" + d.getHours() + ":" + d.getMinutes();
+                          }
+
+                          // 서버에 전송하는 코드로 후에 대체필요
+                          const data = {
+                              "senderName"    : "사용자",
+                              "message"       : message,
+                              "currentTime"   : currentTime,
+                          };
+                          // 통신하는 기능이 없으므로 여기서 receive
+                          resive(data);
+                      }
+                  
+                      // 메세지 입력박스 내용 지우기
+                      function clearTextarea() {
+                          $('.chat-wrap-textarea textarea').val('');
+                      }
+                  
+                      // 메세지 수신
+                      function resive(data) {
+                          const LR = (data.senderName != myName)? "recieved" : "sent";
+                          appendMessageTag("sent", data.senderName, data.message, data.currentTime);
+                      }
+                  
+                      return {
+                          'init': init
+                      };
+                  })();
+                  $(function(){
+                      Chat.init();
+                  });
+
+                </script>
+                <!--
+                <script type="text/javascript"> 
+                    var d = new Date(); 
+                    var nowHour = d.getHours();
+                    var nowMt = d.getMinutes();
+                    var result = document.getElementsByClassName("chat live").last(); 
+                    if ( nowHour <= 12  &&  nowHour  >= 0 ) {
+                      var currentTime = "오전" + ("00" + d.getHours()).slice(-2) + ":" + ("00" + d.getMinutes()).slice(-2);
+                    } else if(  nowHour >= 12  &&  nowHour  < 24  ) {
+                      var currentTime = "오후" + d.getHours() + ":" + d.getMinutes();
+                    }
+                    result.innerHTML = currentTime; 
+                </script>
+                -->
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer_info">
+      <div id="footer">
+        <div class="footer_top">
+          <div class="inner">
+            <ul>
+              <li>
+                <a href="#">회사소개</a>
+              </li>
+              <li>
+                <a href="#"> 프로젝트 문의</a>
+              </li>
+              <li>
+                <a href="#"> 프리랜서 문의</a>
+              </li>
+              <li>
+                <a href="#">인재채용</a>
+              </li>
+              <li>
+                <a href="#">이용약관 </a>
+              </li>
+              <li>
+                <a href="#">개인정보처리방침 </a>
+              </li>
+              <li>
+                <a href="#">고객센터</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer_inner">
+          <div class="inner">
+            <div class="wrap">
+              <article>
+                <div class="f_logo">
+                  <img src="../..//img/f_logo.png" alt="">
+                </div>
+                <address>
+                  주식회사 케이엘큐브 <br>
+                  대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                  사업자등록번호: 100-11-22203 <br>
+                  통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                  호스팅 사업자: Amazon Web Service(AWS)
+                </address>
+              </article>
+              <article class="right">
+                <h2>IT잡스 SNS 채널</h2>
+                <ul class="sns">
+                  <li>
+                    <a href="#">
+                      <img src="../../img/f_sns01.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../../img/f_sns02.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../../img/f_sns03.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../../img/f_sns04.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+                <div class="phone">
+                  <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_bottom">
+          <div class="inner">
+            <p>
+              잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가
+              부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+            </p>
+            <p class="copy">
+              Copyright © 2020 Jons In. Inc. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+
+</html>

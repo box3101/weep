@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--  권장되는 방식 -->
+
+<head style="overflow-y:hidden;">
+  <title>나의 정보/설정 (클라이언트/파트너 법인)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="U잡스">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="../../img/logo.png">
+  <meta property="og:image:type" content="../../image/png">
+  <meta property="og:image:width" content="173">
+  <meta property="og:image:height" content="65">
+  <meta property="og:description" content="">
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> --> <!--datepicker 플러그인 소스-->
+  <link rel="stylesheet" href="../../css/@default.css" />
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/font.css">
+  <link rel="stylesheet" href="../../css/swiper.min.css">
+  <link rel="stylesheet" href="../../css/datepicker.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/334d6efb93.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="../../js/slick.min.js"></script>
+  <script type="text/javascript" src="../../js/swiper.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> --> <!--datepicker 플러그인 소스-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script>
+  <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+
+<body>
+	<div id="header" class="sub_header">
+		<div class="inner clearfix">
+			<h1 class="logo">
+				<a href="/"><img src="/img/logo-new.png" alt="로고 이미지"></a>
+			</h1>
+			<ul id="main_gnb">
+				<li>
+					<a href="/page/project_sch/project_sch.html">프로젝트 검색 </a>
+				</li>
+				<li>
+					<a href="/page/outsourcing/outsourcing_sch.html">아웃소싱 검색</a>
+				</li>
+				<li>
+					<a href="/page/freelance_sch/freelance_sch.html">프리랜서 검색</a>
+				</li>
+				<li>
+					<a href="/page/partner_sch/partner.html">파트너 검색</a>
+				</li>
+				<li>
+					<a href="#">WEE.P 소개
+					</a>
+				</li>
+
+			</ul>
+			<ul class="clearfix small-txt">
+				<li>
+					<a href="#">이용안내</a>
+				</li>
+				<li>
+					<a href="/page/custom_sup/custom_sup01.html">지원센터</a>
+				</li>
+			</ul>
+
+			<ul class="util clear">
+				<li>
+					<a href="/page/login/login01.html">로그인</a>
+				</li>
+				<li>
+					<a href="/page/login/login02.html">회원가입</a>
+				</li>
+
+				<div class="memberImg">
+					<img src="/img/bg_member.png" alt="회원가입혜택">
+				</div>
+			</ul>
+			<ul class="login-util clear">
+				<li>
+					<a href="javascript:;"><span><img src="/img/resume_img.jpg" alt="회원이미지" class="member-img"></span>홍길동</a>
+					<ul class="member-menu">
+						<li>
+							<a href="/page/freelance_sch/FRO0511.html">프로필 관리</a>
+						</li>
+						<li>
+							<a href="">로그아웃</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+
+    <div id="sub_contents">
+      <div class="sub_tit">
+        <div class="inner">
+          <h1>마이페이지</h1>
+        </div>
+      </div>
+	<div class="image_popup">
+		<div class="title">
+			<h2>이미지 업로드</h2>
+			<a href="javascript:;" class="pop_close"></a>
+		</div>
+		<div class="image_file">
+			<div class="file_row clearfix">
+				<input type="text" class="upload_text" readonly="readonly">
+			<div class="upload-btn_wrap">
+				<button type="button" title="파일찾기">
+					<span>찾아보기</span>
+				</button>
+				<input type="file" class="input_file" title="파일찾기">
+			</div>
+		</div>
+		<p class="desc">
+		권장 사진 사이즈는 108*132픽셀이며, Gif, jpg, jpge 이미지 파일만 등록 가능합니다. <br>
+		파일 선택 후 마우스를 드래그하여 사진크기를 편집하세요.
+		</p>
+		</div>
+		<div class="images_wrap clearfix">
+			<div class="images_ex images_ex01" id="sourceImage">
+				<h3>원본사진</h3>
+				<div class="empty_box"></div>
+			</div>
+			<div class="images_ex images_ex02" id="targetImage">
+				<h3>이력서용 사진</h3>
+				<div class="empty_box"></div>
+			</div>
+		</div>
+		<div class="upload_btn">
+			<button type="button" id="previewBtn">미리보기</button>
+			<button type="button" id="adjustBtn">등록하기</button>
+		</div>
+	</div>
+	<div class="black_screen"></div>
+    <div id="sub_content">
+        <div class="inner">
+          <div class="left_menu">
+            <ul>
+              <li>
+                <a href="/page/freelance_sch/FRO0511.html" class="on">나의 정보/설정</a>
+			  </li>
+			  <li>
+                <a href="/page/freelance_sch/FRO_member_confirm.html">회원인증 관리</a>
+              </li>
+              <li>
+                <a href="/page/freelance_sch/FRO0521.html">이력서 관리</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch03.html">나의 문의 내역</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch04.html">나의 결제 내역</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch05.html">보유 캐시 / 충전</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch06.html">적립금 내역</a>
+              </li>
+              <li>
+                <a href="/page/project_sch/project_sch06.html">쿠폰 관리</a>
+              </li>
+			  <li>
+                <a href="/page/project_sch/project_sch06.html">광고 신청/관리</a>
+              </li>
+			  <li>
+                <a href="/page/project_sch/project_sch06.html">수익 관리</a>
+              </li>
+			  <li>
+                <a href="/page/project_sch/project_sch06.html">비밀번호 변경</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="free_info">
+			<div class="title">
+				<h2 class="littleTit2">나의 정보/설정</h2>
+			</div>
+			<div class="profile_info client-info clearfix">
+				<div class="person">
+					<div class="img">
+						<div class="img_detail">
+							<img src="../../img/ganadong.png" alt="">
+						</div>
+						<a href="javascript:;" class="img_change_btn"><img src="../../img/camera_icon.png" alt=""></a>
+					</div>
+					<div class="txt">
+						<p><strong>(주)아이엔티</strong>님</p>
+						<!-- <a href="">이력서 보기</a> -->
+					</div>
+				</div>
+				<div class="person_list">
+					<ul class="clearfix">
+						<li>
+							<div class="num red">11</div>
+							<p>지원완료</p>
+							<div class="bullon_txt">오늘지원 <span>1</span>건</div>
+						</li>
+						<li>
+							<div class="num orange">21</div>
+							<p>인터뷰 요청</p>
+						</li>
+						<li>
+							<div class="num">17</div>
+							<p>인터뷰 예약</p>
+						</li>
+						<li>
+							<div class="num">50</div>
+							<p>찜한 프리랜서</p>
+						</li>
+						<li>
+							<div class="num">17</div>
+							<p>찜한 파트너</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<form action="" method="post">
+                <div id="Mid_myinfo_div">
+                    <div class="basic_wrap">
+                        <h3>기본정보
+                            <div class="title_desc"><span>*</span>필수입력</div>
+                        </h3>
+                        <div class="basic_info">
+                            <ul>
+                                <li class="clearfix">
+                                    <div class="basic_name">
+                                        <label for="bn">팀(개인명)<span class="required_icon">*</span></label>
+                                        <input type="text" name="" value="TEAM" placeholder=""/>
+                                    </div>
+                                    <div class="basic_birth">
+                                        <label for="bb">생년월일<span class="required_icon">*</span></label>
+                                        <input type="text" name="" value="" id="bb" class="datepicker-here" data-language='en' placeholder="2020.00.00" required>
+                                    </div>
+									<div class="basic_name">
+                                        <label for="bs">대표자명<span class="required_icon">*</span></label>
+                                        <input type="text" name="" value="" placeholder="" readonly="">
+                                    </div>
+                                </li>   
+								<li class="clearfix">
+                                    <div class="basic_name">
+                                        <label for="bn">회사명<span class="required_icon">*</span></label>
+                                        <input type="text" name="" value="COMPANY" placeholder=""/>
+                                    </div>
+                                    <div class="basic_crn">
+                                        <label for="bn">사업자번호<span class="required_icon">*</span></label>
+                                        <input type="text" name="" value="" placeholder=""/>
+                                    </div>
+									<div class="basic_name">
+                                        <label for="bs">대표자명<span class="required_icon">*</span></label>
+                                        <input type="text" name="" value="" placeholder="" readonly="">
+                                    </div>
+                                </li>   
+                                <li class="clearfix">
+									<div class="basic_sex flex3">
+										<label for="bs">성별<span class="required_icon">*</span></label>
+										<select name="" id="">
+											<option value="">선택</option>
+											<option value="M" selected="selected">남자</option>
+											<option value="F">여자</option>
+										</select>
+									</div>
+									<div class="basic_job flex3">
+										<label for="bj">직군<span class="required_icon">*</span></label>
+										<select name="">
+											<option value="">선택</option>
+                                            <option value="SERVER" selected="selected">네트워크/서버/보안</option>
+                                            <option value="PUB">퍼블리셔</option>
+                                            <option value="PLAN">기획자</option>
+                                            <option value="OFFICE">PM/업무/컨설팅</option>
+                                            <option value="DEV">개발자</option>
+                                            <option value="DESIGN">디자이너</option>
+										</select>
+									</div>
+									<div class="basic_level flex3">
+										<label for="bl">등급<span class="required_icon">*</span></label>
+										<select name="">
+											<option value="">선택</option>
+                                            <option value="G4">특급</option>
+                                            <option value="G3" selected="selected">고급</option>
+                                            <option value="G2">중급</option>
+                                            <option value="G1">초급</option>
+                                            <option value="G0">신입</option>
+										</select>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="basic_partner">
+                                        <div class="box-select-data">
+                                            <label for="coml">파트너 형태<span class="required_icon">*</span></label>
+                                        </div>
+                                        <div class="out_input">
+                                            <label class="custom-control custom-control-radio" for="com1">
+                                                <input type="radio" id="com1" name="com" value="" checked=""><span>팀(개인)</span><i></i>
+                                            </label>
+                                            <label class="custom-control custom-control-radio" for="com2">
+                                                <input type="radio" id="com2" name="com" value=""><span>개인사업자</span><i></i>
+                                            </label>
+                                            <label class="custom-control custom-control-radio" for="com3">
+                                                <input type="radio" id="com3" name="com" value=""><span>법인사업자</span><i></i>
+                                            </label>
+                                        </div>
+                                    </div>
+									<div class="basic_time flex3">
+										<label for="bt">연락 가능 시간 설정</label>
+										<div class="sel_box clearfix">
+											<select name="">
+												<option value="">선택</option>
+                                                <option value="0800">08:00</option>
+                                                <option value="0830">08:30</option>
+                                                <option value="0900" selected="selected">09:00</option>
+                                                <option value="0930">09:30</option>
+                                                <option value="1000">10:00</option>
+                                                <option value="1030">10:30</option>
+                                                <option value="1100">11:00</option>
+                                                <option value="1130">11:30</option>
+                                                <option value="1200">12:00</option>
+                                                <option value="1230">12:30</option>
+                                                <option value="1300">13:00</option>
+                                                <option value="1330">13:30</option>
+                                                <option value="1400">14:00</option>
+                                                <option value="1430">14:30</option>
+                                                <option value="1500">15:00</option>
+                                                <option value="1530">15:30</option>
+                                                <option value="1600">16:00</option>
+                                                <option value="1630">16:30</option>
+                                                <option value="1700">17:00</option>
+                                                <option value="1730">17:30</option>
+                                                <option value="1800">18:00</option>
+                                                <option value="1830">18:30</option>
+                                                <option value="1900">19:00</option>
+                                                <option value="1930">19:30</option>
+                                                <option value="2000">20:00</option>
+                                                <option value="2030">20:30</option>
+                                                <option value="2100">21:00</option>
+											</select>
+											<div class="middle">~</div>
+											<select name="">
+												<option value="">선택</option>
+                                                <option value="0800">08:00</option>
+                                                <option value="0830">08:30</option>
+                                                <option value="0900">09:00</option>
+                                                <option value="0930">09:30</option>
+                                                <option value="1000">10:00</option>
+                                                <option value="1030">10:30</option>
+                                                <option value="1100">11:00</option>
+                                                <option value="1130">11:30</option>
+                                                <option value="1200">12:00</option>
+                                                <option value="1230">12:30</option>
+                                                <option value="1300">13:00</option>
+                                                <option value="1330">13:30</option>
+                                                <option value="1400">14:00</option>
+                                                <option value="1430">14:30</option>
+                                                <option value="1500">15:00</option>
+                                                <option value="1530">15:30</option>
+                                                <option value="1600">16:00</option>
+                                                <option value="1630">16:30</option>
+                                                <option value="1700">17:00</option>
+                                                <option value="1730">17:30</option>
+                                                <option value="1800" selected="selected">18:00</option>
+                                                <option value="1830">18:30</option>
+                                                <option value="1900">19:00</option>
+                                                <option value="1930">19:30</option>
+                                                <option value="2000">20:00</option>
+                                                <option value="2030">20:30</option>
+                                                <option value="2100">21:00</option>
+											</select>
+										</div>
+									</div>
+                                    <div class="basic_homepage flex3">
+                                        <label for="bh">홈페이지</label>
+                                        <div class="clearfix port_div">
+                                            <input type="text" name="Mnm_homepage" value="" id="bh" class="w283" placeholder="http://">
+                                        </div>
+                                    </div>	
+								</li>
+								<li class="clearfix">
+                                    <div class="basic_address">
+                                        <label for="ba">회사 주소</label>
+                                        <div class="add_wrap clearfix">
+                                            <input type="text" name="Mnm_addr" value="[16537] 경기 수원시 영통구 인계로 219" placeholder="기본주소" disabled="">
+                                            <a onclick="openDaumZipAddress(_returnPostData); return false;">주소찾기</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="basic_address2">
+                                        <input type="text" name="Mnm_addrDetail" value="6동" placeholder="나머지주소">
+                                    </div>
+                                </li>
+								<li class="basic-subtitle">
+									<h3 class="mb0">담당자 정보</h3>
+								</li>
+								<li class="clearfix">
+									<div class="basic_name flex3">
+                                        <label for="bs">담당자명<span class="required_icon">*</span></label>
+                                        <input type="text" name="" value="" placeholder="" readonly="">
+                                    </div>
+									<div class="basic_name flex3">
+                                        <label for="bs">담당부서<span class="required_icon">*</span></label>
+                                        <input type="text" name="" value="" placeholder="" readonly="">
+                                    </div>
+									<div class="basic_email flex3">
+                                        <label for="be">이메일<span class="required_icon">*</span></label>
+                                        <input type="text" name="" value="1111@naver.com" placeholder=""/>
+                                    </div>					
+                                </li>
+                                <li class="clearfix">
+                                    <div class="basic_phone">
+                                        <label for="bh">휴대폰<span class="required_icon">*</span></label>
+                                        <div class="phone_wrap clearfix">
+                                            <input type="text" name="" value="" placeholder="">
+                                            <a href="javascript:;" class="refresh_btn" onclick="fn_L_confirmNumber(1);">인증번호</a>
+                                        </div>
+                                    </div>
+                                    <div class="basic_homepage" style="display:none;" id="pwdLeft_time">
+                                        <label for="bh"> 휴대폰 인증<span class="required_icon">*</span>
+                                            &nbsp;&nbsp;<span id="">잔여시간: <span class="required_icon Lid_timeLeft"></span> </span>
+                                        </label>
+                                        <div class="clearfix port_div">
+                                            <input type="text" name="" value="" id="bh" placeholder="인증번호를 입력하세요." required="">
+                                            <a href="javascript:;" class="refresh_btn" onclick="fn_L_confirmNumber(2);">확인</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+				<div class="time_wrap">
+					<h3>연락 가능 시간 설정</h3>
+					<div class="time_con">
+						<ul>
+							<li>
+								<span class="radio_wrap">
+									<input type="radio" name="agree" value="" id="a1">
+									<label for="a1">프로젝트 지원 중</label>
+								</span>
+								<span class="check_wrap">
+									(
+									<input type="checkbox" name="" value="" id="a11">
+									<label for="a11">즉시 투입 가능</label>
+									<input type="checkbox" name="" value="" id="a12">
+									<label for="a12">면접 후 협의</label>
+									<input type="checkbox" name="" value="" id="a13">
+									<label for="a13">입력</label>
+									<input type="text" name="" value="" id="" class="text_input">
+									)
+								</span>
+							</li>
+							<li>
+								<input type="radio" name="agree" value="" id="a2">
+								<label for="a2">프로젝트 진행 중</label>
+							</li>
+							<li>
+								<input type="radio" name="agree" value="" id="a3">
+								<label for="a3">휴가 중</label>
+							</li>
+							<li>
+								<input type="radio" name="agree" value="" id="a4">
+								<label for="a4">프로젝트 지원 의사 없음</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="alarm_wrap">
+					<h3>알림설정</h3>
+					<div class="alarm_wrap2">
+						<div class="alarm_con">
+							<div class="title clearfix">
+								<div class="left">
+									<h4>아웃소싱 요청</h4>
+								</div>
+								<div class="right clearfix">
+									<h4>SMS</h4>
+									<h4>이메일</h4>
+								</div>
+							</div>
+							<div class="alarm_detail">
+								<div class="row">
+									<div class="left">지원한 프로젝트 인터뷰 요청</div>
+									<div class="right clearfix">
+										<div class="use">
+											<label><input id="check" type="checkbox"><i></i></label>
+										</div>
+										<div class="use">
+											<label><input id="check" type="checkbox"><i></i></label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="left">지원한 프로젝트 면접 요청</div>
+									<div class="right clearfix">
+										<div class="use">
+											<label><input id="check" type="checkbox" name=""><i></i></label>
+										</div>
+										<div class="use">
+											<label><input id="check" type="checkbox" name=""><i></i></label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="left">지원한 프로젝트 면접 요청</div>
+									<div class="right clearfix">
+										<div class="use">
+											<label><input id="check" type="checkbox" name=""><i></i></label>
+										</div>
+										<div class="use">
+											<label><input id="check" type="checkbox" name=""><i></i></label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="left">찜한 프로젝트 인터뷰 요청</div>
+									<div class="right clearfix">
+										<div class="use">
+											<label><input id="check" type="checkbox" name=""><i></i></label>
+										</div>
+										<div class="use">
+											<label><input id="check" type="checkbox" name=""><i></i></label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="left">찜한 프로젝트 인터뷰 면접 요청</div>
+									<div class="right clearfix">
+										<div class="use">
+											<label><input id="check" type="checkbox" name=""><i></i></label>
+										</div>
+										<div class="use">
+											<label><input id="check" type="checkbox" name=""><i></i></label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="left">매니저 스마트 매칭 인터뷰 요청</div>
+									<div class="right clearfix">
+										<div class="use">
+											<label><input id="check" type="checkbox" name=""><i></i></label>
+										</div>
+										<div class="use">
+											<label><input id="check" type="checkbox" name=""><i></i></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="alarm_con alarm_con2">
+							<div class="title clearfix">
+								<div class="left">
+									<h4>쿠폰 혜택</h4>
+								</div>
+								<div class="right clearfix">
+									<h4>SMS</h4>
+									<h4>이메일</h4>
+								</div>
+							</div>
+							<div class="alarm_detail">
+								<div class="row">
+									<div class="left">이벤트/쿠폰 등의 할인 혜택 알림</div>
+									<div class="right clearfix">
+										<div class="use">
+											<label><input id="check" type="checkbox"><i></i></label>
+										</div>
+										<div class="use">
+											<label><input id="check" type="checkbox"><i></i></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+        </div>
+        <div class="session_wrap">
+          <a class="session_btn" href="#">회원탈퇴</a>
+        </div>
+				<div class="confirm_wrap">
+					<button type="submit">확인</button>
+				</div>
+			</form>
+        </div>
+    </div>
+
+    </div>
+
+<script>
+$(function(){
+	$('.basic_info .refresh_btn').click(function(){
+		$('.basic_info .certi_div').show();
+	});
+
+	var port_input = $('.port_div').html();
+
+	$('.btn_wrap .plusBtn').click(function(){
+		//alert();
+		$('.port_div').append(port_input);
+	})
+
+	$('.btn_wrap .minusBtn').click(function(){
+		//alert();
+		$('.port_div span:last-child').remove();
+	})
+
+	$('#a13').click(function(){
+		if($(this).is(":checked")){
+			$('.text_input').show();
+		}else{
+			$('.text_input').hide();
+		}
+	})
+
+	//$('.upload_text').val('미리보여줄 텍스트.');
+	$('.input_file').change(function(){
+		var i = $(this).val();
+		$('.upload_text').val(i);
+	});
+
+	$('.img_change_btn').click(function(){
+		$('.image_popup, .black_screen').fadeIn(300);
+	})
+
+	$('.pop_close').click(function(){
+		$('.image_popup, .black_screen').fadeOut(300);
+	})
+
+	$(".datepicker-here").datepicker({
+		//language: 'en',
+		autoClose: true,
+		dateFormat:'yyyy.mm.dd'
+		//minDate: new Date()
+	});
+})
+</script>
+  <div id="footer_info">
+    <div id="footer">
+      <div class="footer_top">
+        <div class="inner">
+          <ul>
+            <li>
+              <a href="#">회사소개</a>
+            </li>
+            <li>
+              <a href="#"> 프로젝트 문의</a>
+            </li>
+            <li>
+              <a href="#"> 프리랜서 문의</a>
+            </li>
+            <li>
+              <a href="#">인재채용</a>
+            </li>
+            <li>
+              <a href="#">이용약관 </a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침 </a>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_inner">
+        <div class="inner">
+          <div class="wrap">
+            <article>
+              <div class="f_logo">
+                <img src="../..//img/f_logo.png" alt="">
+              </div>
+              <address>
+                주식회사 케이엘큐브 <br>
+                대표이사: 박대표 ㅣ 개인정보보호책임 : 유영복 <br>
+                사업자등록번호: 100-11-22203 <br>
+                통신판매업신고: 제2020-서울강남-01211 호 1577-1472 ㅣ support@jobsin.biz <br>
+                호스팅 사업자: Amazon Web Service(AWS)
+              </address>
+            </article>
+            <article class="right">
+              <h2>IT잡스 SNS 채널</h2>
+              <ul class="sns">
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns01.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns02.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns03.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../img/f_sns04.png" alt="">
+                  </a>
+                </li>
+              </ul>
+              <div class="phone">
+                <img src="../../img/f_pon.png" alt=""> 02-3211-0114
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="inner">
+          <p>
+            잡스인은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br> 따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가
+            부담하고, 이에 대하여 잡스인은 일체 책임지지 않습니다.
+          </p>
+          <p class="copy">
+            Copyright © 2020 Jons In. Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+
+</html>
